@@ -1,0 +1,98 @@
+---
+title: "Step 3: Confidence Tuning"
+description: "The pre-flight check to ensure total synchronization"
+sidebarTitle: "Confidence Tuning"
+---
+
+**Goal**: Quantitatively verify that both you and the AI are ready for implementation.
+
+## The Confidence Prompt
+
+Ask the AI for a **quantitative confidence score** (0-100%) and a list of remaining ambiguities.
+
+### Example Prompt
+```
+On a scale of 0-100%, how confident are you that:
+1. You understand the requirements completely
+2. The proposed plan will work
+3. You've identified all edge cases
+4. There are no missing dependencies
+
+For each area below 95%, what specifically is unclear?
+```
+
+### What You're Looking For
+- ✅ **90-100%**: Ready to proceed
+- ⚠️ **70-89%**: Specific gaps identified, address them
+- ❌ **Below 70%**: Not ready, more exploration needed
+
+## Closing the Loop
+
+Use the AI to **review its own plan** to surface edge cases or missing error handling that you might have overlooked.
+
+### Self-Review Prompts
+
+**Edge Case Discovery**
+```
+"Review this plan and list all edge cases we haven't discussed.
+What could go wrong? What assumptions are we making?"
+```
+
+**Error Handling Check**
+```
+"For each step in the plan, what errors could occur?
+Do we have a strategy for handling each one?"
+```
+
+**Integration Points**
+```
+"What external systems or modules does this touch?
+What happens if any of them are unavailable?"
+```
+
+**Performance Considerations**
+```
+"Are there any performance implications we haven't addressed?
+What happens under high load?"
+```
+
+## The 90-95% Rule
+
+Guidelines for iterating on the plan until a **high confidence score** is reached.
+
+### Iteration Process
+
+1. **Ask for confidence score** → Note areas below 95%
+2. **Address each gap** → Discuss, decide, document
+3. **Re-check confidence** → Score should increase
+4. **Repeat until 90-95%** → Ready for implementation
+
+### When to Stop Iterating
+
+You've reached the point of diminishing returns when:
+- Confidence is consistently 90-95%
+- No new ambiguities are being surfaced
+- Further discussion is speculative, not actionable
+- You have a clear implementation plan
+
+**Important**: 100% confidence is a red flag—it means you or the AI is overconfident. 90-95% is the sweet spot.
+
+## Total Sync Checklist
+
+Before moving to implementation, verify:
+
+- [ ] AI has read all relevant files
+- [ ] Architecture is clearly understood
+- [ ] Dependencies are identified
+- [ ] Edge cases are documented
+- [ ] Error handling strategy is defined
+- [ ] Testing approach is clear
+- [ ] Naming conventions are agreed upon
+- [ ] Confidence score is 90-95%
+- [ ] No major ambiguities remain
+
+**If any item is unchecked**: Go back to Bootstrapping or Idea Shaping.
+
+---
+
+**Key Principle**: The Rehearsal is complete when both human and AI have 90-95% confidence. Not before. Not at 100%.

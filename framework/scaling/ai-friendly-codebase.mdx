@@ -1,0 +1,255 @@
+---
+title: "Cultivating an AI-Friendly Codebase"
+description: "Building artifacts that enable instant AI context"
+sidebarTitle: "AI-Friendly Codebase"
+---
+
+**Goal**: Evolve the codebase into a **better collaborator** where artifacts enable instant AI context bootstrapping.
+
+## Written Context over Tribal Knowledge
+
+Leaders must encourage a culture of maintaining **high-level documentation** that allows AI to bootstrap context instantly.
+
+### The Problem with Tribal Knowledge
+
+**Tribal knowledge** lives only in people's heads:
+- ❌ Disappears when people leave
+- ❌ Inaccessible to new team members
+- ❌ Invisible to AI assistants
+- ❌ Leads to repeated mistakes
+
+**Written context** persists and scales:
+- ✅ Survives team changes
+- ✅ Onboards new members quickly
+- ✅ Enables AI to understand constraints
+- ✅ Creates institutional memory
+
+## Essential Artifacts for AI
+
+### 1. Architecture.md
+
+**Purpose**: High-level system overview for quick context
+
+```markdown
+# System Architecture
+
+## Overview
+This is a microservices-based e-commerce platform with:
+- React frontend (port 3000)
+- Node.js API gateway (port 8000)
+- Python recommendation service (port 8001)
+- PostgreSQL database
+- Redis cache
+
+## Key Design Decisions
+
+### Why microservices?
+We chose microservices to enable independent scaling
+and team autonomy. Trade-off: Added complexity in
+deployment and debugging.
+
+### Why PostgreSQL?
+Strong ACID guarantees for financial transactions.
+Trade-off: More expensive to scale than NoSQL.
+
+## System Boundaries
+- Frontend: Only UI logic, no business rules
+- API Gateway: Authentication, routing, rate limiting
+- Services: Domain-specific business logic
+- Database: Single source of truth
+
+## Integration Points
+- Payment: Stripe API
+- Email: SendGrid
+- Analytics: Segment
+- Monitoring: Datadog
+```
+
+**When to use**: Every bootstrapping session should start with reading this file.
+
+### 2. Specification Files (spec.md or feature.md)
+
+**Purpose**: Detailed feature requirements and constraints
+
+```markdown
+# User Authentication System
+
+## Requirements
+- Email/password login
+- OAuth (Google, GitHub)
+- 2FA via TOTP
+- Session timeout: 24 hours
+- Password requirements: 12+ chars, mixed case, numbers
+
+## Constraints
+- Must work with existing user table
+- Cannot break mobile app (v2.1.0+)
+- GDPR compliant data handling
+- Max login attempts: 5 per hour
+
+## Edge Cases
+- User changes email during active session
+- OAuth provider is down
+- User has 2FA but loses device
+- Concurrent logins from different devices
+```
+
+**When to create**: For any feature that will take >1 day to implement.
+
+### 3. DECISIONS.md
+
+**Purpose**: Document key technical decisions and their rationale
+
+```markdown
+# Architectural Decision Records
+
+## ADR-001: Why We Use Redux Instead of Context API
+**Date**: 2024-01-15
+**Status**: Accepted
+
+**Context**: Need state management for complex app state
+
+**Decision**: Use Redux Toolkit over React Context API
+
+**Rationale**:
+- Time-travel debugging is valuable for bug reproduction
+- Middleware ecosystem (thunks, sagas) provides flexibility
+- Team already familiar with Redux patterns
+
+**Consequences**:
+- More boilerplate than Context
+- Learning curve for new developers
+- Worth it for our scale and complexity
+
+**Alternatives Considered**:
+- React Context API (too limited for our needs)
+- MobX (team lacks experience)
+- Zustand (too new, small ecosystem)
+```
+
+**When to update**: After every major technical decision.
+
+### 4. GOTCHAS.md
+
+**Purpose**: Document project-specific pitfalls and solutions
+
+```markdown
+# Known Gotchas and Pitfalls
+
+## Database Gotchas
+
+### Race Condition in Order Processing
+**Problem**: Orders can be processed twice if user clicks fast
+**Solution**: Use SELECT FOR UPDATE lock in transaction
+**Example**: See `services/orders/create.ts:45`
+
+### Slow Query on User Dashboard
+**Problem**: JOIN across 5 tables without indexes
+**Solution**: Use materialized view that refreshes hourly
+**Location**: `migrations/015_dashboard_view.sql`
+
+## Authentication Gotchas
+
+### Session Cookie Not Working in Safari
+**Problem**: SameSite=None requires Secure flag
+**Solution**: Ensure HTTPS in production, use Lax in dev
+**Config**: `config/session.ts:12`
+
+## Deployment Gotchas
+
+### Environment Variables Not Loading
+**Problem**: .env file ignored in Docker
+**Solution**: Use --env-file flag or ENV in Dockerfile
+**Documentation**: `deployment/README.md`
+```
+
+**When to update**: Immediately after debugging a non-obvious issue.
+
+## Artifacts for the Future
+
+When a project-specific pitfall is identified during debugging, **document it immediately** so future AI interactions are smoother.
+
+### The Documentation Loop
+
+1. **Encounter Problem**: Hit a weird bug or edge case
+2. **Debug and Solve**: Figure out the root cause and fix
+3. **Document Immediately**: Add to GOTCHAS.md
+4. **Update AI Context**: Next AI session will know about this
+
+### Example: From Debugging to Documentation
+
+**During debugging**:
+```
+"Why is the authentication failing in production but working locally?"
+[30 minutes of investigation]
+"Ah! SameSite cookie issue with Safari and cross-origin requests"
+```
+
+**Document immediately**:
+```markdown
+## Auth Gotcha: Safari Cookie Issue
+**Problem**: Auth works locally but fails in Safari on production
+**Cause**: SameSite=None requires Secure flag (HTTPS)
+**Solution**: Set sameSite:'none', secure:true for production
+**Location**: config/session.ts:12
+**Date Discovered**: 2024-01-28
+```
+
+**Next AI session**:
+```
+"Before implementing auth, read GOTCHAS.md to avoid known pitfalls."
+AI reads the file and proactively suggests: "I see we've had Safari
+cookie issues before. I'll make sure to set SameSite and Secure flags."
+```
+
+## Code for Collaborators
+
+The goal is to evolve the codebase so that **artifacts left behind improve the process for the whole team**.
+
+### The Virtuous Cycle
+
+1. **Engineer encounters challenge** → Solves it with AI
+2. **Documents solution** → Updates GOTCHAS.md or ADR
+3. **Next engineer** → AI reads docs, avoids same pitfall
+4. **Team knowledge compounds** → Institutional memory grows
+
+### Cultural Shift Required
+
+**Old mindset**: "I'll just remember this"
+**New mindset**: "I'll document this for future-me and the AI"
+
+**Old mindset**: "Documentation is separate from coding"
+**New mindset**: "Documentation IS part of the deliverable"
+
+**Old mindset**: "Only code matters"
+**New mindset**: "Context artifacts multiply AI effectiveness"
+
+## Maintaining Documentation Health
+
+### Documentation Debt is Technical Debt
+
+Treat outdated documentation as **bugs**:
+- Schedule regular documentation reviews
+- Update docs when changing code
+- Mark deprecated sections clearly
+- Remove outdated information
+
+### Documentation Checklist for PRs
+
+- [ ] Architecture.md updated if system structure changed
+- [ ] Spec files updated if requirements changed
+- [ ] DECISIONS.md updated for new technical decisions
+- [ ] GOTCHAS.md updated if non-obvious issues found
+- [ ] README updated if setup process changed
+
+### Documentation Quality Metrics
+
+Track documentation health:
+- Last updated date for each artifact
+- Coverage: do all major systems have docs?
+- Accuracy: audit against actual code
+- Usefulness: does AI successfully use these artifacts?
+
+---
+
+**Key Principle**: Written context beats tribal knowledge. Document for future-you, future-teammates, and future-AI. The artifacts you leave behind multiply everyone's effectiveness.

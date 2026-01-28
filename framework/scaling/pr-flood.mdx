@@ -1,0 +1,71 @@
+---
+title: "Taming the 'PR Flood'"
+description: "Shifting AI from coder to reviewer to handle the review bottleneck"
+sidebarTitle: "PR Flood"
+---
+
+**The Problem**: As individual productivity increases (3x–10x), the volume of Pull Requests (PRs) multiplies, creating a bottleneck for human reviewers.
+
+**The Solution**: Shift the AI's role from just a "coder" to a "reviewer" to act as an automated first line of defense.
+
+## The "Living" Rulebook
+
+Teams must codify tribal knowledge into a **REVIEW_RULES.md** file in the repository root. This turns unwritten preferences into a tangible asset the AI can enforce.
+
+### Example REVIEW_RULES.md
+```markdown
+# Code Review Rules
+
+## Architecture
+- All API endpoints must include rate limiting
+- Database queries must use the query builder (no raw SQL)
+
+## Security
+- Never log sensitive data (passwords, tokens, PII)
+- All user input must be validated
+
+## Testing
+- All new features require integration tests
+- Test coverage must not decrease
+```
+
+## Agentic Review Workflows
+
+Use a **REVIEW_PROCESS.md** to define a step-by-step agentic routine for the AI, such as:
+
+1. **Checking out branches**
+2. **Triaging issues** (P0 to P2)
+3. **Summarizing findings** before a human looks at the code
+
+### Example REVIEW_PROCESS.md
+```markdown
+# Automated Review Process
+
+## Phase 1: Setup
+1. Checkout the PR branch
+2. Read all modified files
+3. Review the PR description
+
+## Phase 2: Automated Checks
+1. Run linter and report violations
+2. Run type checker and report errors
+3. Run test suite and note failures
+
+## Phase 3: Rule Enforcement
+1. Load REVIEW_RULES.md
+2. Check each rule against changes
+3. Categorize violations by severity:
+   - P0 (Critical): Security, data integrity
+   - P1 (Important): Architecture, performance
+   - P2 (Minor): Style, documentation
+
+## Phase 4: Summary
+1. Generate review summary with:
+   - Total issues found by priority
+   - Pass/fail recommendation
+   - Top 3 issues to address
+```
+
+---
+
+**Key Takeaway**: Codify tribal knowledge into enforceable rules. AI handles the "tedious nits" so humans can focus on architecture and taste.

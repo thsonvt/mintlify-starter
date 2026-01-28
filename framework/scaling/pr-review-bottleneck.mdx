@@ -1,0 +1,237 @@
+---
+title: "Taming the 'PR Flood'"
+description: "Using AI as automated first-line code reviewer"
+sidebarTitle: "PR Review"
+---
+
+**The Problem**: As individual productivity increases (3x–10x), the volume of Pull Requests multiplies, creating a **bottleneck for human reviewers**.
+
+## The Review Bottleneck
+
+### Before AI Workflow
+- Engineer writes code: 8 hours
+- Human reviews: 2 hours per reviewer
+- Result: Sustainable workload
+
+### After AI Workflow
+- Engineer writes code with AI: 1 hour (8x faster)
+- Can now do 8 PRs in the same time
+- Human reviewers: Still 2 hours per PR
+- Result: **16 hours of review work vs 8 hours before**
+
+**The bottleneck shifts from writing to reviewing.**
+
+## The Solution: AI as First-Line Reviewer
+
+Shift the AI's role from just a "coder" to a **"reviewer"** to act as an automated first line of defense.
+
+### The Two-Tier Review System
+
+**Tier 1: AI Review (Automated)**
+- Style and formatting
+- Common patterns and anti-patterns
+- Missing tests or documentation
+- Basic security checks
+- Convention adherence
+
+**Tier 2: Human Review (Strategic)**
+- Architectural alignment
+- Domain expertise
+- Invisible constraints
+- Long-term maintainability
+- Taste and judgment
+
+**Result**: Humans focus on what they're uniquely good at.
+
+## The "Living" Rulebook: REVIEW_RULES.md
+
+Teams must **codify tribal knowledge** into a `REVIEW_RULES.md` file in the repository root.
+
+### Why This Matters
+
+**Before**: Tribal knowledge exists only in reviewers' heads
+- New team members don't know the rules
+- Inconsistent reviews across reviewers
+- AI has no access to team conventions
+
+**After**: Rules are explicit and enforceable
+- AI applies rules consistently
+- New team members can read and learn
+- Rules evolve with the team
+
+### REVIEW_RULES.md Template
+
+```markdown
+# Code Review Rules
+
+## Architecture Rules
+- All API endpoints must include rate limiting
+- Database queries must use the query builder (no raw SQL)
+- External API calls must have timeout configuration
+
+## Code Quality Rules
+- Functions should not exceed 50 lines
+- Cyclomatic complexity should stay below 10
+- All public APIs must have JSDoc comments
+
+## Testing Rules
+- All new features require integration tests
+- Test coverage must not decrease
+- E2E tests required for user-facing features
+
+## Security Rules
+- Never log sensitive data (passwords, tokens, PII)
+- All user input must be validated
+- External data must be sanitized
+
+## Performance Rules
+- Database queries must be indexed
+- Images must be optimized before upload
+- API responses should be paginated for large datasets
+
+## Documentation Rules
+- README must be updated for new features
+- API changes require changelog entry
+- Breaking changes need migration guide
+```
+
+### Enforcing the Rules
+
+Ask the AI to review against these rules:
+
+```
+"Please review this PR against our REVIEW_RULES.md.
+For each rule violated, provide:
+1. The specific rule
+2. Where it's violated (file:line)
+3. How to fix it
+4. Severity (critical/important/minor)"
+```
+
+## Agentic Review Workflows: REVIEW_PROCESS.md
+
+Define a **step-by-step agentic routine** for the AI to follow during reviews.
+
+### REVIEW_PROCESS.md Template
+
+```markdown
+# Automated Review Process
+
+## Phase 1: Setup
+1. Checkout the PR branch
+2. Read all modified files
+3. Review the PR description
+4. Check linked issues
+
+## Phase 2: Automated Checks
+1. Run linter and report violations
+2. Run type checker and report errors
+3. Run test suite and note failures
+4. Check test coverage changes
+
+## Phase 3: Rule Enforcement
+1. Load REVIEW_RULES.md
+2. Check each rule against changes
+3. Categorize violations by severity:
+   - P0 (Critical): Security, data integrity
+   - P1 (Important): Architecture, performance
+   - P2 (Minor): Style, documentation
+
+## Phase 4: Code Analysis
+1. Identify potential bugs
+2. Check for missing error handling
+3. Review edge case coverage
+4. Validate input sanitization
+
+## Phase 5: Summary
+1. Generate review summary with:
+   - Total issues found by priority
+   - Pass/fail recommendation
+   - Top 3 issues to address
+   - Estimated time to fix
+2. Post review comment to PR
+```
+
+### Implementing the Workflow
+
+Create a review automation:
+
+```bash
+# .github/workflows/ai-review.yml
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  ai-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run AI Review
+        run: |
+          ai-reviewer \
+            --process REVIEW_PROCESS.md \
+            --rules REVIEW_RULES.md \
+            --pr ${{ github.event.pull_request.number }}
+```
+
+## Issue Triaging: P0 to P2
+
+Use **severity levels** to prioritize review findings:
+
+### P0 (Critical) - Must Fix Before Merge
+- Security vulnerabilities
+- Data integrity risks
+- Breaking changes without migration path
+- Critical bugs in production code
+
+### P1 (Important) - Should Fix Before Merge
+- Architectural violations
+- Performance regressions
+- Missing error handling
+- Incomplete test coverage
+
+### P2 (Minor) - Can Fix Later
+- Style inconsistencies
+- Minor documentation gaps
+- Optimization opportunities
+- Code clarity improvements
+
+### Review Decision Matrix
+
+| Priority | Count | Decision |
+|----------|-------|----------|
+| P0 > 0 | Any | ❌ Block merge |
+| P0 = 0, P1 > 5 | Many | ⚠️ Review required |
+| P0 = 0, P1 ≤ 5 | Few | ✅ Approved with comments |
+| All P2 | Only minor | ✅ Auto-approve |
+
+## The Human Review Layer
+
+After AI review, humans focus on:
+
+### What AI Can't Judge
+- Is this the right solution to the problem?
+- Does this align with our product vision?
+- Will the team understand this in 6 months?
+- Are there business constraints we're missing?
+- Does this create the right abstractions?
+
+### Example Human Review Prompt
+```
+"AI review found 0 P0 issues, 2 P1 issues, 5 P2 issues.
+
+P1 issues:
+1. Missing timeout on external API call (api.ts:45)
+2. Database query not using index (users.ts:78)
+
+I'm approving the P1 fixes. Now please review from an
+architectural perspective: does this solution fit our
+long-term direction?"
+```
+
+---
+
+**Key Principle**: Codify tribal knowledge, automate enforcement, free humans for strategic review. The "tedious nits" are AI's domain.

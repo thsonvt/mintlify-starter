@@ -1,0 +1,75 @@
+---
+title: "Step 1: Bootstrapping"
+description: "Building the AI's world through explicit context management"
+sidebarTitle: "Bootstrapping"
+---
+
+**Goal**: Build the AI's understanding of your codebase before asking it to make changes.
+
+## The "Refresh" Prompt
+
+Participants must learn to **explicitly direct the AI** to build its own context rather than relying on "magic" retrieval.
+
+### Example Prompt
+```
+Before we start, please:
+1. Read the main entry point (src/index.ts)
+2. Review the authentication module (src/auth/)
+3. Check the database schema (prisma/schema.prisma)
+4. Summarize the current architecture
+```
+
+**Why this works**: You're giving the AI a clear roadmap instead of hoping it finds the right files.
+
+## Verifying the Summary
+
+The engineer must **review the AI's summary** of the code to ensure it isn't:
+- ❌ Looking at deprecated files
+- ❌ Missing key dependencies
+- ❌ Misunderstanding the architecture
+
+### Red Flags to Watch For
+- AI mentions files that don't exist
+- AI describes patterns that aren't actually used
+- AI misses critical dependencies or integrations
+
+## Watching Tool Calls
+
+Senior engineers should **monitor the AI's "work"**—the files it reads and searches it runs—to spot when it's on the wrong track early.
+
+### What to Monitor
+- Which files is it reading?
+- What search queries is it running?
+- Is it exploring the right parts of the codebase?
+
+**Pro tip**: If the AI is reading irrelevant files, interrupt and redirect immediately.
+
+## Managing Context Rot
+
+Techniques for preventing the AI's reasoning from degrading as the context window fills up:
+
+### Strategy 1: Architecture Files
+Maintain high-level `architecture.md` files that provide:
+- System overview
+- Key design decisions
+- Important constraints
+- Module relationships
+
+### Strategy 2: Break Into Smaller Steps
+Instead of one massive task, break into digestible chunks:
+- ✅ "First, let's update the auth middleware"
+- ✅ "Next, we'll add the new endpoint"
+- ✅ "Finally, update the tests"
+
+**Why**: Keeps the context focused and prevents drift.
+
+### Strategy 3: Periodic Resets
+For long sessions, periodically:
+1. Summarize progress
+2. Start a fresh conversation
+3. Provide the summary as context
+4. Continue with clear focus
+
+---
+
+**Key Principle**: The AI's context is YOUR responsibility. Manage it actively, not passively.

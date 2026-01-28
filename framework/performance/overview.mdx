@@ -1,0 +1,41 @@
+---
+title: "Module 3: Performance & Polish"
+description: "Fast execution and layered quality verification"
+sidebarTitle: "Overview"
+---
+
+After the Rehearsal achieves 90-95% confidence, the workflow shifts to **fast execution** followed by **layered polish**.
+
+## Time Distribution
+
+- **Performance (Execution)**: ~5% of total time
+- **Polish (AI + Human Review)**: ~20% of total time
+
+**Why so fast?** When the plan is solid, implementation becomes straightforward.
+
+## Essential Topics for Delivery
+
+| Topic | Key Takeaway |
+|-------|--------------|
+| **Observation vs. Autonomy** | Implementation is a "coherent dream"; you must watch the first few seconds carefully |
+| **Holistic Review** | AI is better at reviewing a finished file than it is at writing it line-by-line |
+| **Layered Polishing** | Separate high-level structural fixes from low-level linting to avoid confusing the model |
+| **Agentic Mechanics** | Use the AI to interact with tools like `gh` (GitHub CLI) to automate the "boring" parts of the finish line |
+
+## The Four Steps
+
+### [The Performance: Execution](/framework/performance/execution)
+Active observation as the AI implements the vetted plan
+
+### [The Polish: Pass 1 (AI Self-Review)](/framework/performance/polish-ai-review)
+AI performs holistic review and identifies gaps before human review
+
+### [The Polish: Pass 2 (Human Review)](/framework/performance/polish-human-review)
+Engineer applies taste, judgment, and catches invisible constraints
+
+### [Shipping the Work](/framework/performance/shipping)
+Automated commit messages, PR descriptions, and final delivery
+
+---
+
+**Key Principle**: Performance is fast because the Rehearsal was thorough. Polish is layered to maintain quality without chaos.

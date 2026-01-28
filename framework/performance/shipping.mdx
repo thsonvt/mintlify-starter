@@ -1,0 +1,197 @@
+---
+title: "Shipping the Work"
+description: "Automated commit messages, PR descriptions, and delivery"
+sidebarTitle: "Shipping"
+---
+
+**Goal**: Use AI to handle the cognitive overhead of documenting and delivering the work.
+
+## Automated Accounting
+
+The AI handles the **cognitive gear-shift** of writing descriptive commit messages and Pull Request (PR) descriptions.
+
+**Why this matters**: Your brain is in "implementation mode"—switching to "documentation mode" is expensive.
+
+## Writing Commit Messages
+
+Ask the AI to generate commit messages based on the chat history.
+
+### Example Prompt
+```
+Please write a conventional commit message for these changes.
+Format: <type>(<scope>): <subject>
+
+Types: feat, fix, refactor, docs, test, chore
+Keep subject under 72 characters.
+Include a body that explains the "why" behind the changes.
+```
+
+### What Good Commit Messages Look Like
+
+**Bad**:
+```
+fix: updates
+```
+
+**Good**:
+```
+feat(auth): add JWT refresh token rotation
+
+Implements automatic token rotation to improve security.
+Refresh tokens now expire after 7 days and are rotated
+on each use. Adds middleware to handle token validation
+and renewal transparently.
+
+Closes #123
+```
+
+### Automated Message Generation
+
+For work done in a single chat session:
+```
+"Based on our conversation, generate a commit message
+that summarizes what we implemented and why."
+```
+
+For work spanning multiple sessions:
+```
+"Run 'git diff main' and summarize all changes on this
+branch into a comprehensive commit message."
+```
+
+## Contextual Commits
+
+For work spanning **multiple sessions**, ensure the AI has full context.
+
+### The Problem
+AI only sees the current chat—it doesn't know about earlier sessions.
+
+### The Solution
+Prompt the AI to run `git diff` to see all changes:
+
+```
+"Run 'git diff main...HEAD' to see all changes on this branch.
+Then write a commit message that covers everything, not just
+what we discussed in this session."
+```
+
+### What This Prevents
+- Incomplete commit messages
+- Missing context from earlier work
+- Commits that don't reflect full scope
+
+## Writing PR Descriptions
+
+Generate comprehensive PR descriptions from the full context.
+
+### PR Description Template
+```
+"Please write a pull request description with:
+
+## Summary
+Brief overview of what this PR does
+
+## Changes
+Detailed list of changes made
+
+## Testing
+How this was tested
+
+## Screenshots (if applicable)
+Any visual changes
+
+## Checklist
+- [ ] Tests pass
+- [ ] Documentation updated
+- [ ] No breaking changes (or documented)
+```
+
+### Example Prompt
+```
+"Based on our complete conversation and the git diff,
+please write a comprehensive PR description following
+the template above. Focus on the 'why' and 'what',
+not just the 'how'."
+```
+
+## Using GitHub CLI (`gh`)
+
+Leverage the AI to interact with **`gh` (GitHub CLI)** for automated workflows.
+
+### Creating PRs Automatically
+
+```
+"Use the gh CLI to:
+1. Create a new PR from this branch
+2. Use the PR description we just wrote
+3. Add labels: 'enhancement', 'needs-review'
+4. Request review from @teammate
+5. Link to issue #123"
+```
+
+### What the AI Generates
+```bash
+gh pr create \
+  --title "feat(auth): add JWT refresh token rotation" \
+  --body "$(cat pr-description.md)" \
+  --label enhancement,needs-review \
+  --reviewer teammate \
+  --web
+```
+
+**Pro tip**: Review the command before execution (remember: shell commands can't be undone).
+
+## Agentic Mechanics
+
+Use AI to automate the **"boring" parts** of the finish line:
+
+### Automate These Tasks
+- ✅ Write commit messages
+- ✅ Generate PR descriptions
+- ✅ Update changelogs
+- ✅ Create release notes
+- ✅ Update documentation
+- ✅ Run final checks (tests, linting)
+
+### Keep Human Control Over
+- ❌ Merging to main/master
+- ❌ Production deployments
+- ❌ Breaking changes
+- ❌ Security-sensitive operations
+
+## Pre-Ship Checklist
+
+Before shipping, verify:
+
+- [ ] All tests pass locally
+- [ ] Linting passes
+- [ ] Type checking passes
+- [ ] No debug statements or console.logs
+- [ ] Git diff reviewed manually
+- [ ] Commit message is descriptive
+- [ ] PR description is comprehensive
+- [ ] Breaking changes are documented
+- [ ] CI/CD pipeline will pass
+
+**If anything fails**: Fix before shipping, don't "fix it later."
+
+## The Final Push
+
+### Standard Workflow
+```bash
+# AI helps generate
+git commit -m "feat(auth): add JWT refresh token rotation
+
+Implements automatic token rotation for improved security.
+[full description]"
+
+# AI helps create PR
+gh pr create --web
+
+# Human reviews and merges
+# (Keep final merge control)
+```
+
+---
+
+**Key Principle**: AI handles documentation overhead. You maintain control over delivery decisions. Automate the boring, control the critical.

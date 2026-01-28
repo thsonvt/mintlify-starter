@@ -1,0 +1,114 @@
+---
+title: "The Performance: Execution"
+description: "Active observation as AI implements the vetted plan"
+sidebarTitle: "Execution"
+---
+
+**Time Investment**: ~5% of total workflow
+
+Once the Rehearsal reaches 90-95% confidence, the engineer's role shifts from **collaborator** to **active observer**.
+
+## The Switch to Observer
+
+Your role during execution:
+- ✅ Monitor progress and tool calls
+- ✅ Watch for signs of trouble early
+- ✅ Interrupt if the AI goes off-track
+- ❌ Not hands-off autonomy—active observation
+
+**Mindset shift**: From "let me think with you" to "let me watch you work."
+
+## Direct Implementation
+
+The implementation prompt should be **simple and direct**.
+
+### Example Prompt
+```
+Based on our plan, please implement this feature cleanly,
+concisely, and elegantly. Follow the architecture we discussed.
+```
+
+### What "Clean, Concise, Elegant" Means
+- **Clean**: No dead code, no debug statements
+- **Concise**: Minimal complexity, no over-engineering
+- **Elegant**: Readable, maintainable, idiomatic
+
+**Pro tip**: Reference the confidence-tuned plan explicitly to keep the AI grounded.
+
+## Active Observation
+
+Watch for **signs of trouble**:
+
+### Red Flag #1: Repetitive Behavior
+The AI keeps trying the same edit multiple times
+
+**What it means**: Context window is full or it's confused
+**What to do**: Stop and refresh context
+
+### Red Flag #2: File Edit Struggles
+The AI can't successfully edit a specific file
+
+**What it means**: File too large, syntax issues, or model confusion
+**What to do**: Break into smaller edits or provide file structure
+
+### Red Flag #3: Off-Plan Implementation
+The AI is making changes not in the rehearsed plan
+
+**What it means**: Lost track of the plan or misunderstood
+**What to do**: Interrupt and re-anchor to the plan
+
+### Red Flag #4: Stale Information
+The AI references old file contents or deprecated patterns
+
+**What it means**: Context hasn't been refreshed
+**What to do**: Re-run bootstrapping to rebuild context
+
+## Interrupting for Quality
+
+**Critical rule**: If implementation goes off the rails, **stop immediately**.
+
+### When to Interrupt
+
+- Context window is full (model becoming incoherent)
+- Stale information being used
+- Multiple failed edit attempts
+- Deviating from the rehearsed plan
+
+### How to Interrupt
+```
+Stop. Let's pause here.
+[Explain what went wrong]
+[Provide corrective guidance]
+Let's refresh context and try again.
+```
+
+**Don't let it spiral**: Five minutes of bad output requires an hour of cleanup.
+
+## A Word of Caution: Shell Commands
+
+⚠️ **CRITICAL SAFETY RULE**
+
+- ✅ Code changes can be rolled back via git
+- ❌ Shell/terminal commands **cannot** be undone
+- 🚨 Terminal commands require **hyper-vigilance**
+
+### High-Risk Commands
+- `rm -rf` (deletion)
+- `git push --force` (history rewriting)
+- Database migrations (schema changes)
+- Deployment scripts (production changes)
+- `npm publish` (package publication)
+
+### Safety Protocol for Shell Commands
+
+1. **Read the command** before execution
+2. **Understand what it does**
+3. **Verify it matches the plan**
+4. **Check for destructive operations**
+5. **Only then approve**
+
+**Best practice**: Ask the AI to explain risky commands before running them.
+
+---
+
+**Key Principle**: Implementation is a "coherent dream"—watch the first few seconds carefully. If it starts wrong, it won't self-correct.

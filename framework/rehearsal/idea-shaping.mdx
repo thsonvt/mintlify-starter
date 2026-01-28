@@ -1,0 +1,108 @@
+---
+title: "Step 2: Idea Shaping"
+description: "Design and constraint exploration before implementation"
+sidebarTitle: "Idea Shaping"
+---
+
+**Goal**: Collaborate with the AI on design decisions before writing any code.
+
+## Moving to "Idea Space"
+
+The critical instruction to use:
+
+> **"Don't make any code changes yet, just propose a plan"**
+
+### Why This Matters
+- Prevents premature implementation
+- Keeps the AI in exploration mode
+- Allows you to course-correct before code is written
+- Reduces "helpful" refactors that break things
+
+## Operating at Every Level
+
+The senior engineer must guide the AI across **multiple architectural levels**:
+
+### Level 1: Architecture
+- How does this fit into the overall system?
+- What modules/services are affected?
+- Are there cross-cutting concerns?
+
+### Level 2: Dependencies
+- What existing code do we need to modify?
+- What new dependencies might we need?
+- Are there circular dependency risks?
+
+### Level 3: Style Conventions
+- What patterns does this codebase follow?
+- Are there established conventions to match?
+- What's the testing strategy?
+
+### Level 4: Naming Details
+- What naming conventions are used?
+- How should new functions/variables be named?
+- Does this match the existing vocabulary?
+
+## Connecting the Dots
+
+Instead of taking a "leap of faith" with a confident-sounding AI, **ground suggestions in your own knowledge**:
+
+### Ask for Alternatives
+```
+"What are 2-3 different approaches we could take here?
+What are the trade-offs of each?"
+```
+
+### Request Pros and Cons
+```
+"You suggested using Redis for caching.
+What are the downsides? What alternatives exist?"
+```
+
+### Challenge Assumptions
+```
+"You assumed we need real-time updates.
+Can we use polling instead? What would that look like?"
+```
+
+**Key insight**: The AI doesn't know your constraints—you must surface them through questions.
+
+## Creating Spec Documents
+
+Know when to move a long chat-based plan into a **durable spec.md file** for larger features.
+
+### When to Create a Spec
+- Feature will take >1 day to implement
+- Multiple engineers need to understand the plan
+- The design needs stakeholder review
+- You'll need to reference it across sessions
+
+### Spec Template
+```markdown
+# Feature: [Name]
+
+## Problem
+What problem does this solve?
+
+## Solution
+High-level approach
+
+## Architecture
+How does this fit into the system?
+
+## Implementation Plan
+1. Step 1
+2. Step 2
+3. Step 3
+
+## Edge Cases
+What could go wrong?
+
+## Testing Strategy
+How will we verify correctness?
+```
+
+**Pro tip**: Ask the AI to generate the spec from your conversation, then review and refine it.
+
+---
+
+**Key Principle**: Design in "idea space" with full flexibility. Lock it in before moving to "code space" where changes are expensive.

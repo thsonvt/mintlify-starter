@@ -1,0 +1,149 @@
+---
+title: "The Polish: Pass 2 (Human Review)"
+description: "Engineer applies taste, judgment, and domain expertise"
+sidebarTitle: "Human Review"
+---
+
+**Goal**: Apply your unique expertise and judgment that the AI cannot replicate.
+
+## The Final Arbiter
+
+The engineer applies **unique taste and judgment** to the diffs, focusing on:
+- Architecture alignment
+- "Invisible constraints" the AI might have missed
+- Domain-specific best practices
+- Long-term maintainability
+
+**Your role**: Catch what the AI fundamentally cannot know or reason about.
+
+## What to Focus On
+
+### 1. Architectural Alignment
+- Does this match our system's design principles?
+- Will this be maintainable 6 months from now?
+- Does it create technical debt?
+- Is it consistent with existing patterns?
+
+### 2. Invisible Constraints
+Things the AI can't know:
+- Unwritten team conventions
+- Historical decisions and context
+- Political/organizational constraints
+- Performance requirements from experience
+- Security policies not in documentation
+
+### 3. Domain Expertise
+- Does this make sense for our specific use case?
+- Are there edge cases from production experience?
+- Will this scale with our traffic patterns?
+- Does it align with business logic nuances?
+
+### 4. Code Review Standards
+- Readability for your team
+- Testability and debugging ease
+- Error messages that actually help
+- Documentation that adds value
+
+## Training Foresight
+
+Significant divergences between the plan and the code are **learning moments**.
+
+### When Code Deviates from Plan
+
+**Don't just fix it—understand it**:
+
+```
+"I notice the implementation differs from our plan here.
+Why did this happen? What did we miss in the Rehearsal?"
+```
+
+### Common Root Causes
+
+**Missing Context**: AI didn't have critical information
+- **Fix**: Update bootstrapping process to include this
+
+**Ambiguous Plan**: Plan wasn't specific enough
+- **Fix**: Add more detail to future plan specifications
+
+**Constraint Discovery**: Found a limitation during implementation
+- **Fix**: Note this constraint for future reference
+
+**Model Limitation**: AI made a reasoning error
+- **Fix**: Add validation checkpoint for this type of work
+
+### Creating a Feedback Loop
+
+Document patterns you discover:
+1. What went wrong
+2. Why it went wrong
+3. How to prevent it next time
+
+**Pro tip**: Keep a `lessons-learned.md` file for recurring patterns.
+
+## Collaborative Debugging
+
+If testing reveals bugs, use the AI for **root cause analysis (RCA)** before jumping to fixes.
+
+### The RCA Protocol
+
+**Step 1: Provide Evidence**
+```
+"The tests are failing with this error:
+[paste full error message]
+
+Here's the relevant test output:
+[paste test output]
+
+Here's a screenshot of the behavior:
+[attach screenshot if applicable]
+```
+
+**Step 2: Request Analysis**
+```
+"Please analyze the root cause of this failure.
+Don't suggest a fix yet—just identify why this is happening."
+```
+
+**Step 3: Validate Understanding**
+Review the AI's analysis. Does it make sense?
+- ✅ If yes → Ask for fix proposal
+- ❌ If no → Provide more context or correct the understanding
+
+**Step 4: Collaborative Fix**
+```
+"That analysis makes sense. Please propose 2-3
+approaches to fix this, with pros and cons for each."
+```
+
+### Why This Works Better
+
+**Bad approach**: "This is broken, fix it"
+- AI guesses randomly
+- May fix symptoms, not root cause
+- Likely to introduce new bugs
+
+**Good approach**: Evidence → Analysis → Understanding → Targeted Fix
+- AI reasons through the problem
+- Identifies actual root cause
+- Proposes thoughtful solutions
+
+## The Review Checklist
+
+Before approving the implementation:
+
+- [ ] Matches the original plan's intent
+- [ ] Handles all identified edge cases
+- [ ] Error handling is comprehensive
+- [ ] No obvious security issues
+- [ ] Performance is acceptable
+- [ ] Code is readable and maintainable
+- [ ] Tests cover critical paths
+- [ ] No "magic" that team won't understand
+- [ ] Documentation is adequate
+- [ ] Aligns with team conventions
+
+**If any item fails**: Don't merge. Address the gap.
+
+---
+
+**Key Principle**: You are the final arbiter. The AI executed the plan—you ensure it's actually correct, complete, and maintainable.
