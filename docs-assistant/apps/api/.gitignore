@@ -1,0 +1,8 @@
+# Environment secrets
+.dev.vars
+
+# Build output
+dist/
+
+# Dependencies
+node_modules/
