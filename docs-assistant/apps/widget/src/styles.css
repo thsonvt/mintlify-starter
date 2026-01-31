@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the widget */
+.tl-widget {
+  @apply font-sans;
+}
+
+.tl-search-input {
+  @apply w-full px-4 py-3 text-lg border border-gray-300 rounded-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  @apply placeholder-gray-400;
+}
+
+.tl-filter-tag {
+  @apply inline-flex items-center px-3 py-1 text-sm rounded-full cursor-pointer;
+  @apply transition-colors duration-150;
+}
+
+.tl-filter-tag-inactive {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+}
+
+.tl-filter-tag-active {
+  @apply bg-blue-500 text-white;
+}
+
+.tl-result-card {
+  @apply p-4 border border-gray-200 rounded-lg hover:border-blue-300;
+  @apply transition-colors duration-150 cursor-pointer;
+}
+
+.tl-diataxis-badge {
+  @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded;
+}
+
+.tl-diataxis-tutorial {
+  @apply bg-green-100 text-green-800;
+}
+
+.tl-diataxis-how-to {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.tl-diataxis-reference {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.tl-diataxis-explanation {
+  @apply bg-amber-100 text-amber-800;
+}
+
+/* Gap matrix styles */
+.tl-gap-cell {
+  @apply w-8 h-8 rounded flex items-center justify-center text-xs font-medium;
+}
+
+.tl-gap-zero {
+  @apply bg-red-100 text-red-600;
+}
+
+.tl-gap-low {
+  @apply bg-amber-100 text-amber-700;
+}
+
+.tl-gap-medium {
+  @apply bg-blue-100 text-blue-700;
+}
+
+.tl-gap-high {
+  @apply bg-green-100 text-green-700;
+}

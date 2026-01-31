@@ -68,6 +68,26 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Knowledge Base",
+        "groups": [
+          {
+            "group": "Research",
+            "icon": "magnifying-glass",
+            "pages": [
+              "kb/search",
+              "kb/browse"
+            ]
+          },
+          {
+            "group": "Planning",
+            "icon": "chart-bar",
+            "pages": [
+              "kb/content-gaps"
+            ]
+          }
+        ]
       }
     ]
   },

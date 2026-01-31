@@ -1,0 +1,81 @@
+---
+title: 'Content Gaps'
+description: 'Identify opportunities for new content based on coverage analysis'
+icon: 'chart-bar'
+---
+
+# Content Gap Analysis
+
+Identify which topics need more content and what types (tutorial, how-to, reference, explanation) are missing.
+
+<iframe
+  src="https://thought-leadership-widget.vercel.app/?tab=gaps"
+  width="100%"
+  height="700"
+  style={{ border: 'none', borderRadius: '8px' }}
+/>
+
+## Understanding the Matrix
+
+The gap dashboard shows a **topic × content type** matrix:
+
+<Steps>
+  <Step title="Red cells (0)">
+    No content exists for this topic/type combination — **opportunity!**
+  </Step>
+  <Step title="Yellow cells (1-2)">
+    Light coverage — consider adding more
+  </Step>
+  <Step title="Blue cells (3-5)">
+    Good coverage
+  </Step>
+  <Step title="Green cells (6+)">
+    Strong coverage — focus elsewhere
+  </Step>
+</Steps>
+
+## Using Gaps for Content Planning
+
+### 1. Find High-Value Opportunities
+
+Look for topics with:
+- **High total coverage** but **missing types** — readers are interested, but specific formats are missing
+- Example: "AI Agents" has 14 articles but 0 reference docs
+
+### 2. Convert Existing Content
+
+Use the Diátaxis conversion patterns:
+
+| From | To | Strategy |
+|------|------|----------|
+| Explanation → Tutorial | Turn concepts into hands-on lessons |
+| Explanation → How-to | Extract actionable steps from theory |
+| Tutorial → Reference | Document the specifics introduced |
+| How-to → Explanation | Add context and reasoning |
+
+### 3. Track Your Progress
+
+Use the `my_content` table to track:
+- Ideas sourced from scraped articles
+- Drafts in progress
+- Published content
+
+<Note>
+  The gap dashboard automatically updates as new content is scraped. Check back weekly to see how coverage evolves.
+</Note>
+
+## Content Creation Workflow
+
+```mermaid
+graph LR
+    A[Browse Gaps] --> B[Pick Topic + Type]
+    B --> C[Search Related Articles]
+    C --> D[Extract Key Quotes]
+    D --> E[Write Draft]
+    E --> F[Publish to Mintlify]
+    F --> A
+```
+
+<Card title="Start Creating" icon="pen" href="/kb/search">
+  Use semantic search to find source material for your next piece
+</Card>
