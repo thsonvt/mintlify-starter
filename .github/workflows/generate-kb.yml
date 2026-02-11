@@ -1,0 +1,98 @@
+name: Generate Knowledge Base
+
+on:
+  # Run daily at 8am UTC
+  schedule:
+    - cron: '0 8 * * *'
+
+  # Allow manual triggering from Actions tab
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'Force regenerate all articles'
+        required: false
+        default: 'false'
+        type: boolean
+
+  # Run on push to main when Supabase schema changes
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate-kb-mdx.mjs'
+      - 'scripts/package.json'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm ci || npm install
+
+      - name: Generate KB MDX files
+        working-directory: scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: node generate-kb-mdx.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "### Changed files:" >> $GITHUB_STEP_SUMMARY
+            git diff --cached --name-only >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Count articles for commit message
+          ARTICLE_COUNT=$(find kb/articles -name "*.mdx" 2>/dev/null | wc -l | tr -d ' ')
+          AUTHOR_COUNT=$(find kb/authors -name "*.mdx" 2>/dev/null | wc -l | tr -d ' ')
+          TOPIC_COUNT=$(find kb/topics -name "*.mdx" 2>/dev/null | wc -l | tr -d ' ')
+
+          git commit -m "chore(kb): sync knowledge base content
+
+          Generated from Supabase:
+          - $ARTICLE_COUNT articles
+          - $AUTHOR_COUNT authors
+          - $TOPIC_COUNT topics
+
+          [skip ci]"
+
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Knowledge Base Generation Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Content Type | Count |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Articles | $(find kb/articles -name '*.mdx' 2>/dev/null | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Authors | $(find kb/authors -name '*.mdx' 2>/dev/null | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Topics | $(find kb/topics -name '*.mdx' 2>/dev/null | wc -l) |" >> $GITHUB_STEP_SUMMARY
