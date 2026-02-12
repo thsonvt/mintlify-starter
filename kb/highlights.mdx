@@ -1,0 +1,193 @@
+---
+title: 'My Highlights'
+description: 'View and manage all your saved highlights across articles'
+icon: 'bookmark'
+---
+
+<div id="highlights-app">
+  <div style={{ padding: '40px 20px', textAlign: 'center', color: '#6b7280' }}>
+    Loading your highlights...
+  </div>
+</div>
+
+<script dangerouslySetInnerHTML={{ __html: `
+  // Wait for highlights auth to be ready
+  function initHighlightsPage() {
+    const app = document.getElementById('highlights-app');
+    if (!app) return;
+
+    const API_URL = window.location.hostname === 'localhost'
+      ? 'http://localhost:8787'
+      : 'https://thought-leadership-api.thsonvt.workers.dev';
+
+    // Check auth state
+    async function checkAuth() {
+      if (!window.highlightsAuth) {
+        setTimeout(checkAuth, 100);
+        return;
+      }
+
+      if (!window.highlightsAuth.isAuthenticated()) {
+        renderSignIn();
+        window.addEventListener('highlights-auth-change', (e) => {
+          if (e.detail.user) loadHighlights();
+          else renderSignIn();
+        });
+      } else {
+        loadHighlights();
+      }
+    }
+
+    function renderSignIn() {
+      app.innerHTML = \`
+        <div style="padding: 60px 20px; text-align: center;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="1.5" style="margin-bottom: 16px;">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg>
+          <h2 style="margin: 0 0 8px 0; color: #111827; font-size: 20px;">Sign in to view highlights</h2>
+          <p style="margin: 0 0 20px 0; color: #6b7280;">Your highlights are synced across devices when signed in.</p>
+          <button onclick="window.highlightsAuth?.openModal('signin')" style="padding: 10px 20px; background: #10b981; color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer;">
+            Sign in
+          </button>
+        </div>
+      \`;
+    }
+
+    async function loadHighlights() {
+      app.innerHTML = '<div style="padding: 40px 20px; text-align: center; color: #6b7280;">Loading...</div>';
+
+      const token = await window.highlightsAuth?.getToken();
+      if (!token) {
+        renderSignIn();
+        return;
+      }
+
+      try {
+        const response = await fetch(API_URL + '/api/highlights', {
+          headers: { 'Authorization': 'Bearer ' + token }
+        });
+
+        if (!response.ok) throw new Error('Failed to load');
+
+        const data = await response.json();
+        renderHighlights(data.highlights || []);
+
+      } catch (err) {
+        console.error('Load error:', err);
+        app.innerHTML = '<div style="padding: 40px; text-align: center; color: #dc2626;">Failed to load highlights</div>';
+      }
+    }
+
+    function renderHighlights(highlights) {
+      if (highlights.length === 0) {
+        app.innerHTML = \`
+          <div style="padding: 60px 20px; text-align: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="1.5" style="margin-bottom: 16px;">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+            <h2 style="margin: 0 0 8px 0; color: #111827; font-size: 20px;">No highlights yet</h2>
+            <p style="margin: 0; color: #6b7280;">Start reading articles and highlight passages that resonate with you.</p>
+            <a href="/kb/browse" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #10b981; color: white; border-radius: 8px; text-decoration: none; font-weight: 500;">
+              Browse articles
+            </a>
+          </div>
+        \`;
+        return;
+      }
+
+      // Group by article
+      const byArticle = {};
+      highlights.forEach(h => {
+        if (!byArticle[h.article_id]) {
+          byArticle[h.article_id] = [];
+        }
+        byArticle[h.article_id].push(h);
+      });
+
+      const articleCount = Object.keys(byArticle).length;
+
+      app.innerHTML = \`
+        <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <span style="font-size: 24px; font-weight: 600; color: #111827;">\${highlights.length}</span>
+            <span style="color: #6b7280; margin-left: 4px;">highlights across</span>
+            <span style="font-weight: 600; color: #111827;">\${articleCount}</span>
+            <span style="color: #6b7280;">articles</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <input type="text" id="hl-search" placeholder="Search highlights..." style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px; width: 200px;">
+            <select id="hl-filter" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px; background: white;">
+              <option value="all">All highlights</option>
+              <option value="with-notes">With notes</option>
+            </select>
+          </div>
+        </div>
+        <div id="hl-list"></div>
+      \`;
+
+      const listEl = document.getElementById('hl-list');
+      const searchEl = document.getElementById('hl-search');
+      const filterEl = document.getElementById('hl-filter');
+
+      function render(filtered) {
+        listEl.innerHTML = filtered.map(h => \`
+          <div style="padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 12px; background: white;">
+            <div style="font-size: 15px; color: #374151; line-height: 1.6; margin-bottom: 8px;">
+              <span style="color: #10b981;">"</span>\${escapeHtml(h.selected_text)}<span style="color: #10b981;">"</span>
+            </div>
+            \${h.note ? \`<div style="padding: 8px 12px; background: #f9fafb; border-radius: 6px; font-size: 13px; color: #6b7280; font-style: italic; margin-bottom: 8px;">\${escapeHtml(h.note)}</div>\` : ''}
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #9ca3af;">
+              <a href="/kb/articles/\${h.article_id}" style="color: #10b981; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                View article
+              </a>
+              <span>\${new Date(h.created_at).toLocaleDateString()}</span>
+            </div>
+          </div>
+        \`).join('') || '<div style="padding: 40px; text-align: center; color: #6b7280;">No matching highlights</div>';
+      }
+
+      function applyFilters() {
+        const search = searchEl.value.toLowerCase();
+        const filter = filterEl.value;
+
+        let filtered = highlights;
+
+        if (filter === 'with-notes') {
+          filtered = filtered.filter(h => h.note);
+        }
+
+        if (search) {
+          filtered = filtered.filter(h =>
+            h.selected_text.toLowerCase().includes(search) ||
+            (h.note && h.note.toLowerCase().includes(search))
+          );
+        }
+
+        render(filtered);
+      }
+
+      searchEl.oninput = applyFilters;
+      filterEl.onchange = applyFilters;
+
+      render(highlights);
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    checkAuth();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHighlightsPage);
+  } else {
+    initHighlightsPage();
+  }
+` }} />

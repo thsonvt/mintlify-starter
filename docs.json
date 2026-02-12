@@ -81,6 +81,13 @@
             ]
           },
           {
+            "group": "Personal",
+            "icon": "bookmark",
+            "pages": [
+              "kb/highlights"
+            ]
+          },
+          {
             "group": "Planning",
             "icon": "chart-bar",
             "pages": [
