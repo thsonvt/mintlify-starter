@@ -738,11 +738,20 @@
 
   // Load highlights for current article
   async function loadHighlights() {
+    console.log('[Sidebar] loadHighlights called');
     const articleId = getArticleId();
-    if (!articleId) return;
+    console.log('[Sidebar] articleId:', articleId);
+
+    if (!articleId) {
+      console.log('[Sidebar] No articleId, skipping');
+      return;
+    }
 
     const token = await window.highlightsAuth?.getToken();
+    console.log('[Sidebar] Got token:', !!token);
+
     if (!token) {
+      console.log('[Sidebar] No token, clearing highlights');
       highlights = [];
       updateToggleButton();
       renderSidebar();
@@ -750,28 +759,36 @@
     }
 
     try {
-      const response = await fetch(
-        `${API_URL}/api/highlights?article_id=${encodeURIComponent(articleId)}`,
-        {
-          headers: { 'Authorization': `Bearer ${token}` },
-        }
-      );
+      const url = `${API_URL}/api/highlights?article_id=${encodeURIComponent(articleId)}`;
+      console.log('[Sidebar] Fetching:', url);
 
-      if (!response.ok) throw new Error('Failed to load');
+      const response = await fetch(url, {
+        headers: { 'Authorization': `Bearer ${token}` },
+      });
+
+      console.log('[Sidebar] Response status:', response.status);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('[Sidebar] Error response:', errorText);
+        throw new Error('Failed to load');
+      }
 
       const data = await response.json();
+      console.log('[Sidebar] Got data:', data);
       highlights = data.highlights || [];
 
       updateToggleButton();
       renderSidebar();
 
       // Render highlights on page
+      console.log('[Sidebar] Rendering', highlights.length, 'highlights');
       highlights.forEach(h => {
         window.highlightsTooltip?.renderHighlight(h);
       });
 
     } catch (err) {
-      console.error('Load highlights error:', err);
+      console.error('[Sidebar] Load highlights error:', err);
     }
   }
 
@@ -836,9 +853,11 @@
 
   // Handle navigation to new page
   function handleNavigation() {
+    console.log('[Sidebar] handleNavigation, path:', window.location.pathname);
     const toggleBtn = document.querySelector('.hl-sidebar-toggle');
 
     if (isArticlePage()) {
+      console.log('[Sidebar] On article page');
       // Show/create toggle button on article pages
       if (!toggleBtn) {
         createToggleButton();
@@ -847,8 +866,13 @@
       }
 
       // Load highlights when auth is ready
-      if (window.highlightsAuth?.isAuthenticated()) {
+      const isAuthed = window.highlightsAuth?.isAuthenticated();
+      console.log('[Sidebar] isAuthenticated:', isAuthed);
+
+      if (isAuthed) {
         loadHighlights();
+      } else {
+        console.log('[Sidebar] Not authenticated, skipping loadHighlights');
       }
     } else {
       // Hide toggle button on non-article pages

@@ -13,23 +13,42 @@ icon: 'bookmark'
 <script dangerouslySetInnerHTML={{ __html: `
   // Wait for highlights auth to be ready
   function initHighlightsPage() {
+    console.log('[MyHighlights] initHighlightsPage called');
     const app = document.getElementById('highlights-app');
-    if (!app) return;
+    if (!app) {
+      console.log('[MyHighlights] No app element found');
+      return;
+    }
 
     const API_URL = window.location.hostname === 'localhost'
       ? 'http://localhost:8787'
       : 'https://thought-leadership-api.thsonvt.workers.dev';
 
+    console.log('[MyHighlights] API_URL:', API_URL);
+
     // Check auth state
+    let checkCount = 0;
     async function checkAuth() {
+      checkCount++;
+      console.log('[MyHighlights] checkAuth attempt:', checkCount, 'highlightsAuth exists:', !!window.highlightsAuth);
+
       if (!window.highlightsAuth) {
+        if (checkCount > 50) {
+          console.error('[MyHighlights] Gave up waiting for highlightsAuth after 50 attempts');
+          app.innerHTML = '<div style="padding: 40px; text-align: center; color: #dc2626;">Auth system failed to load. Please refresh the page.</div>';
+          return;
+        }
         setTimeout(checkAuth, 100);
         return;
       }
 
-      if (!window.highlightsAuth.isAuthenticated()) {
+      const isAuthed = window.highlightsAuth.isAuthenticated();
+      console.log('[MyHighlights] isAuthenticated:', isAuthed);
+
+      if (!isAuthed) {
         renderSignIn();
         window.addEventListener('highlights-auth-change', (e) => {
+          console.log('[MyHighlights] auth-change event:', e.detail);
           if (e.detail.user) loadHighlights();
           else renderSignIn();
         });
@@ -39,6 +58,7 @@ icon: 'bookmark'
     }
 
     function renderSignIn() {
+      console.log('[MyHighlights] Rendering sign-in UI');
       app.innerHTML = \`
         <div style="padding: 60px 20px; text-align: center;">
           <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="1.5" style="margin-bottom: 16px;">
@@ -54,27 +74,39 @@ icon: 'bookmark'
     }
 
     async function loadHighlights() {
+      console.log('[MyHighlights] loadHighlights called');
       app.innerHTML = '<div style="padding: 40px 20px; text-align: center; color: #6b7280;">Loading...</div>';
 
       const token = await window.highlightsAuth?.getToken();
+      console.log('[MyHighlights] Got token:', !!token);
+
       if (!token) {
+        console.log('[MyHighlights] No token, showing sign-in');
         renderSignIn();
         return;
       }
 
       try {
+        console.log('[MyHighlights] Fetching highlights from:', API_URL + '/api/highlights');
         const response = await fetch(API_URL + '/api/highlights', {
           headers: { 'Authorization': 'Bearer ' + token }
         });
 
-        if (!response.ok) throw new Error('Failed to load');
+        console.log('[MyHighlights] Response status:', response.status);
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error('[MyHighlights] Error response:', errorText);
+          throw new Error('Failed to load');
+        }
 
         const data = await response.json();
+        console.log('[MyHighlights] Got highlights:', data);
         renderHighlights(data.highlights || []);
 
       } catch (err) {
-        console.error('Load error:', err);
-        app.innerHTML = '<div style="padding: 40px; text-align: center; color: #dc2626;">Failed to load highlights</div>';
+        console.error('[MyHighlights] Load error:', err);
+        app.innerHTML = '<div style="padding: 40px; text-align: center; color: #dc2626;">Failed to load highlights. Check console for details.</div>';
       }
     }
 

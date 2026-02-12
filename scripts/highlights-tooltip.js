@@ -401,6 +401,7 @@
 
     // Check auth
     const isAuthed = window.highlightsAuth?.isAuthenticated();
+    console.log('[Highlights] User authenticated:', isAuthed);
 
     if (!isAuthed) {
       tooltip.innerHTML = `
@@ -410,6 +411,14 @@
         <div class="hl-tooltip-arrow"></div>
       `;
     } else {
+      // Ensure tooltip has the correct content (may have been showing sign-in message)
+      if (!tooltip.querySelector('[data-action="highlight"]')) {
+        // Recreate the tooltip content
+        tooltip.remove();
+        tooltip = createTooltip();
+        console.log('[Highlights] Recreated tooltip with highlight buttons');
+      }
+
       // Reset to default state
       tooltip.classList.remove('note-mode');
       const textarea = tooltip.querySelector('textarea');
@@ -466,19 +475,38 @@
 
   // Save highlight to API
   async function saveHighlight(note = null) {
-    if (!currentSelection) return;
+    console.log('[Highlights] saveHighlight called, note:', !!note);
+
+    if (!currentSelection) {
+      console.log('[Highlights] No currentSelection, aborting');
+      return;
+    }
 
     const articleId = getArticleId();
+    console.log('[Highlights] articleId:', articleId);
+
     if (!articleId) {
       showError('Could not determine article ID');
       return;
     }
 
     const token = await window.highlightsAuth?.getToken();
+    console.log('[Highlights] Got token:', !!token);
+
     if (!token) {
       showError('Please sign in first');
       return;
     }
+
+    const payload = {
+      article_id: articleId,
+      xpath: currentSelection.xpath,
+      start_offset: currentSelection.startOffset,
+      end_offset: currentSelection.endOffset,
+      selected_text: currentSelection.text,
+      note: note || undefined,
+    };
+    console.log('[Highlights] Sending payload:', payload);
 
     try {
       const response = await fetch(`${API_URL}/api/highlights`, {
@@ -487,22 +515,20 @@
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`,
         },
-        body: JSON.stringify({
-          article_id: articleId,
-          xpath: currentSelection.xpath,
-          start_offset: currentSelection.startOffset,
-          end_offset: currentSelection.endOffset,
-          selected_text: currentSelection.text,
-          note: note || undefined,
-        }),
+        body: JSON.stringify(payload),
       });
+
+      console.log('[Highlights] Response status:', response.status);
 
       if (!response.ok) {
         const data = await response.json();
+        console.log('[Highlights] Error response:', data);
         throw new Error(data.error || 'Failed to save highlight');
       }
 
-      const { highlight } = await response.json();
+      const data = await response.json();
+      console.log('[Highlights] Success response:', data);
+      const { highlight } = data;
 
       // Render the highlight immediately
       renderHighlight(highlight);
@@ -513,8 +539,10 @@
       hideTooltip();
       window.getSelection()?.removeAllRanges();
 
+      console.log('[Highlights] Highlight saved successfully!');
+
     } catch (err) {
-      console.error('Save highlight error:', err);
+      console.error('[Highlights] Save highlight error:', err);
       showError(err.message || 'Failed to save');
     }
   }

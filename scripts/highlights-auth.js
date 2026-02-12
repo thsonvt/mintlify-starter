@@ -667,11 +667,36 @@
       injectStyles();
       createAuthButton();
       await initSupabase();
+      console.log('[HighlightsAuth] Initialized, user:', currentUser?.email);
     },
     getUser: () => currentUser,
     getToken: async () => {
-      const { data: { session } } = await supabase?.auth.getSession() || {};
-      return session?.access_token || null;
+      // Wait for supabase to be initialized if not yet ready
+      if (!supabase) {
+        console.log('[HighlightsAuth] getToken called before init, waiting...');
+        let waitCount = 0;
+        while (!supabase && waitCount < 50) {
+          await new Promise(r => setTimeout(r, 100));
+          waitCount++;
+        }
+        if (!supabase) {
+          console.error('[HighlightsAuth] Supabase never initialized');
+          return null;
+        }
+      }
+
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        if (error) {
+          console.error('[HighlightsAuth] getSession error:', error);
+          return null;
+        }
+        console.log('[HighlightsAuth] getToken returning token:', !!session?.access_token);
+        return session?.access_token || null;
+      } catch (err) {
+        console.error('[HighlightsAuth] getToken exception:', err);
+        return null;
+      }
     },
     openModal: openAuthModal,
     isAuthenticated: () => !!currentUser,
