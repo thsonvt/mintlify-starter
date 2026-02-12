@@ -280,7 +280,6 @@
   function getSelectionInfo() {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed || !selection.rangeCount) {
-      console.log('[Highlights] No valid selection');
       return null;
     }
 
@@ -288,7 +287,6 @@
     const text = selection.toString().trim();
 
     if (!text || text.length > MAX_SELECTION_LENGTH) {
-      console.log('[Highlights] Text empty or too long:', text?.length);
       return null;
     }
 
@@ -297,8 +295,6 @@
     if (container.nodeType === Node.TEXT_NODE) {
       container = container.parentElement;
     }
-
-    console.log('[Highlights] Container:', container?.tagName, container?.className);
 
     // Check if selection is in an excluded area (nav, sidebar, toc, etc.)
     const isExcludedArea = container.closest('nav') ||
@@ -309,23 +305,7 @@
                            container.closest('[class*="navigation"]');
 
     if (isExcludedArea) {
-      console.log('[Highlights] Selection in excluded area');
       return null;
-    }
-
-    // Find the prose/article content wrapper by going UP from the container
-    // This ensures we find the wrapper that actually contains the selection
-    const articleContent = container.closest('article') ||
-                          container.closest('[class*="prose"]') ||
-                          container.closest('[class*="markdown"]') ||
-                          container.closest('main');
-
-    console.log('[Highlights] Article content (closest):', articleContent?.tagName, articleContent?.className);
-
-    // If no content wrapper found, check if we're at least in the main content area
-    if (!articleContent) {
-      // Allow if not in excluded area - might be a simple page structure
-      console.log('[Highlights] No article wrapper found, but not excluded - allowing');
     }
 
     // Get XPath to the start container's element
@@ -382,15 +362,11 @@
 
   // Show tooltip
   function showTooltip() {
-    console.log('[Highlights] showTooltip called');
-
     if (!tooltip) {
       tooltip = createTooltip();
-      console.log('[Highlights] Created tooltip element');
     }
 
     const selectionInfo = getSelectionInfo();
-    console.log('[Highlights] selectionInfo:', selectionInfo);
 
     if (!selectionInfo) {
       hideTooltip();
@@ -401,7 +377,6 @@
 
     // Check auth
     const isAuthed = window.highlightsAuth?.isAuthenticated();
-    console.log('[Highlights] User authenticated:', isAuthed);
 
     if (!isAuthed) {
       tooltip.innerHTML = `
@@ -416,7 +391,6 @@
         // Recreate the tooltip content
         tooltip.remove();
         tooltip = createTooltip();
-        console.log('[Highlights] Recreated tooltip with highlight buttons');
       }
 
       // Reset to default state
@@ -475,24 +449,15 @@
 
   // Save highlight to API
   async function saveHighlight(note = null) {
-    console.log('[Highlights] saveHighlight called, note:', !!note);
-
-    if (!currentSelection) {
-      console.log('[Highlights] No currentSelection, aborting');
-      return;
-    }
+    if (!currentSelection) return;
 
     const articleId = getArticleId();
-    console.log('[Highlights] articleId:', articleId);
-
     if (!articleId) {
       showError('Could not determine article ID');
       return;
     }
 
     const token = await window.highlightsAuth?.getToken();
-    console.log('[Highlights] Got token:', !!token);
-
     if (!token) {
       showError('Please sign in first');
       return;
@@ -506,7 +471,6 @@
       selected_text: currentSelection.text,
       note: note || undefined,
     };
-    console.log('[Highlights] Sending payload:', payload);
 
     try {
       const response = await fetch(`${API_URL}/api/highlights`, {
@@ -518,16 +482,12 @@
         body: JSON.stringify(payload),
       });
 
-      console.log('[Highlights] Response status:', response.status);
-
       if (!response.ok) {
         const data = await response.json();
-        console.log('[Highlights] Error response:', data);
         throw new Error(data.error || 'Failed to save highlight');
       }
 
       const data = await response.json();
-      console.log('[Highlights] Success response:', data);
       const { highlight } = data;
 
       // Render the highlight immediately
@@ -539,10 +499,8 @@
       hideTooltip();
       window.getSelection()?.removeAllRanges();
 
-      console.log('[Highlights] Highlight saved successfully!');
-
     } catch (err) {
-      console.error('[Highlights] Save highlight error:', err);
+      console.error('Save highlight error:', err);
       showError(err.message || 'Failed to save');
     }
   }
@@ -559,10 +517,7 @@
         null
       );
       const element = result.singleNodeValue;
-      if (!element) {
-        console.log('[Highlights] renderHighlight: Element not found for XPath:', highlight.xpath);
-        return;
-      }
+      if (!element) return;
 
       // Collect all text nodes that need highlighting
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
@@ -590,8 +545,6 @@
         currentOffset = nodeEnd;
       }
 
-      console.log('[Highlights] renderHighlight: Found', nodesToHighlight.length, 'text nodes to highlight');
-
       // Wrap each text node segment (process in reverse to avoid offset issues)
       let firstMark = null;
       for (let i = nodesToHighlight.length - 1; i >= 0; i--) {
@@ -617,13 +570,12 @@
           };
         } catch (wrapErr) {
           // surroundContents can fail if range crosses element boundaries
-          console.warn('[Highlights] Could not wrap text node:', wrapErr.message);
         }
       }
 
       return firstMark;
     } catch (err) {
-      console.error('[Highlights] Render highlight error:', err);
+      console.error('Render highlight error:', err);
     }
   }
 
@@ -637,8 +589,6 @@
 
   // Handle mouseup to show tooltip
   function handleMouseUp(e) {
-    console.log('[Highlights] mouseup event on:', e.target?.tagName);
-
     // Ignore if clicking inside tooltip
     if (tooltip?.contains(e.target)) return;
 
@@ -646,7 +596,6 @@
     setTimeout(() => {
       const selection = window.getSelection();
       const hasSelection = selection && !selection.isCollapsed && selection.toString().trim();
-      console.log('[Highlights] Has selection:', hasSelection, selection?.toString()?.slice(0, 50));
 
       if (hasSelection) {
         showTooltip();
@@ -722,8 +671,6 @@
   function checkAndLoadHighlights() {
     if (!isArticlePage()) return;
     // Tooltip functionality is already active via global listeners
-    // This hook can be used to trigger highlight loading if needed
-    console.log('[Highlights] Article page detected:', window.location.pathname);
   }
 
   // Public API

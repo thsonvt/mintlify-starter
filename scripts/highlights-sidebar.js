@@ -462,11 +462,7 @@
 
   // Render sidebar content
   function renderSidebar() {
-    console.log('[Sidebar] renderSidebar called, sidebar exists:', !!sidebar, 'highlights:', highlights.length);
-    if (!sidebar) {
-      console.log('[Sidebar] No sidebar element, skipping render');
-      return;
-    }
+    if (!sidebar) return;
 
     const content = sidebar.querySelector('.hl-sidebar-content');
     const countEl = sidebar.querySelector('.count');
@@ -474,7 +470,6 @@
     countEl.textContent = highlights.length;
 
     if (highlights.length === 0) {
-      console.log('[Sidebar] No highlights to show');
       content.innerHTML = `
         <div class="hl-sidebar-empty">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -664,7 +659,6 @@
 
       // Remove ALL marks from DOM (multi-node highlights have multiple marks)
       const marks = document.querySelectorAll(`mark[data-highlight-id="${highlight.id}"]`);
-      console.log('[Sidebar] Removing', marks.length, 'mark elements for highlight:', highlight.id);
       marks.forEach(mark => {
         const text = document.createTextNode(mark.textContent);
         mark.parentNode.replaceChild(text, mark);
@@ -747,20 +741,11 @@
 
   // Load highlights for current article
   async function loadHighlights() {
-    console.log('[Sidebar] loadHighlights called');
     const articleId = getArticleId();
-    console.log('[Sidebar] articleId:', articleId);
-
-    if (!articleId) {
-      console.log('[Sidebar] No articleId, skipping');
-      return;
-    }
+    if (!articleId) return;
 
     const token = await window.highlightsAuth?.getToken();
-    console.log('[Sidebar] Got token:', !!token);
-
     if (!token) {
-      console.log('[Sidebar] No token, clearing highlights');
       highlights = [];
       updateToggleButton();
       renderSidebar();
@@ -768,36 +753,28 @@
     }
 
     try {
-      const url = `${API_URL}/api/highlights?article_id=${encodeURIComponent(articleId)}`;
-      console.log('[Sidebar] Fetching:', url);
+      const response = await fetch(
+        `${API_URL}/api/highlights?article_id=${encodeURIComponent(articleId)}`,
+        {
+          headers: { 'Authorization': `Bearer ${token}` },
+        }
+      );
 
-      const response = await fetch(url, {
-        headers: { 'Authorization': `Bearer ${token}` },
-      });
-
-      console.log('[Sidebar] Response status:', response.status);
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('[Sidebar] Error response:', errorText);
-        throw new Error('Failed to load');
-      }
+      if (!response.ok) throw new Error('Failed to load');
 
       const data = await response.json();
-      console.log('[Sidebar] Got data:', data);
       highlights = data.highlights || [];
 
       updateToggleButton();
       renderSidebar();
 
       // Render highlights on page
-      console.log('[Sidebar] Rendering', highlights.length, 'highlights');
       highlights.forEach(h => {
         window.highlightsTooltip?.renderHighlight(h);
       });
 
     } catch (err) {
-      console.error('[Sidebar] Load highlights error:', err);
+      console.error('Load highlights error:', err);
     }
   }
 
@@ -807,12 +784,10 @@
   let currentPath = '';
 
   function init() {
-    console.log('[Sidebar] init called');
     injectStyles();
 
     // Set up global event listeners once
     if (!globalListenersSetup) {
-      console.log('[Sidebar] Setting up global event listeners');
       // Listen for auth changes
       window.addEventListener('highlights-auth-change', (e) => {
         if (e.detail.user) {
@@ -831,13 +806,9 @@
 
       // Listen for new highlights
       window.addEventListener('highlight-created', (e) => {
-        console.log('[Sidebar] highlight-created event received:', e.detail);
-        console.log('[Sidebar] Current highlights count before:', highlights.length);
         highlights.unshift(e.detail);
-        console.log('[Sidebar] Current highlights count after:', highlights.length);
         updateToggleButton();
         renderSidebar();
-        console.log('[Sidebar] Sidebar rendered');
       });
 
       // Listen for highlight clicks
@@ -868,11 +839,9 @@
 
   // Handle navigation to new page
   function handleNavigation() {
-    console.log('[Sidebar] handleNavigation, path:', window.location.pathname);
     const toggleBtn = document.querySelector('.hl-sidebar-toggle');
 
     if (isArticlePage()) {
-      console.log('[Sidebar] On article page');
       // Show/create toggle button on article pages
       if (!toggleBtn) {
         createToggleButton();
@@ -881,13 +850,8 @@
       }
 
       // Load highlights when auth is ready
-      const isAuthed = window.highlightsAuth?.isAuthenticated();
-      console.log('[Sidebar] isAuthenticated:', isAuthed);
-
-      if (isAuthed) {
+      if (window.highlightsAuth?.isAuthenticated()) {
         loadHighlights();
-      } else {
-        console.log('[Sidebar] Not authenticated, skipping loadHighlights');
       }
     } else {
       // Hide toggle button on non-article pages
