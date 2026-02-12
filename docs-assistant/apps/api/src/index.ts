@@ -15,6 +15,33 @@ interface Env {
   OPENAI_API_KEY: string;
 }
 
+interface Highlight {
+  id: string;
+  user_id: string;
+  article_id: string;
+  xpath: string;
+  start_offset: number;
+  end_offset: number;
+  selected_text: string;
+  note: string | null;
+  share_id: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+interface CreateHighlightRequest {
+  article_id: string;
+  xpath: string;
+  start_offset: number;
+  end_offset: number;
+  selected_text: string;
+  note?: string;
+}
+
+interface UpdateHighlightRequest {
+  note?: string;
+}
+
 interface SearchRequest {
   query: string;
   filters?: {
@@ -40,6 +67,8 @@ interface Article {
   diataxis_type: string;
   tags: string[];
   similarity?: number;
+  mdx_path?: string;
+  source_type?: string;
 }
 
 interface FilterOptions {
@@ -63,9 +92,23 @@ const app = new Hono<{ Bindings: Env }>();
 // CORS middleware
 app.use('/*', cors({
   origin: '*',
-  allowMethods: ['GET', 'POST', 'OPTIONS'],
+  allowMethods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
   allowHeaders: ['Content-Type', 'Authorization'],
 }));
+
+// Helper to extract user from JWT token
+async function getUserFromToken(
+  supabase: SupabaseClient,
+  authHeader: string | undefined
+): Promise<{ id: string } | null> {
+  if (!authHeader?.startsWith('Bearer ')) return null;
+
+  const token = authHeader.slice(7);
+  const { data: { user }, error } = await supabase.auth.getUser(token);
+
+  if (error || !user) return null;
+  return { id: user.id };
+}
 
 // Health check
 app.get('/', (c) => {
@@ -124,6 +167,17 @@ app.post('/api/search', async (c) => {
       return c.json({ error: 'Search failed', details: error.message }, 500);
     }
 
+    // Helper to generate MDX path from title and ID
+    const generateMdxPath = (title: string, id: string): string => {
+      const slug = title
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/[-\s]+/g, '-')
+        .slice(0, 60);
+      const urlHash = id.slice(0, 8);
+      return `/kb/articles/${slug}-${urlHash}`;
+    };
+
     // Format results
     const results: Article[] = (data || []).map((row: any) => ({
       id: row.id,
@@ -138,6 +192,8 @@ app.post('/api/search', async (c) => {
       diataxis_type: row.diataxis_type,
       tags: row.tags || [],
       similarity: Math.round(row.similarity * 100) / 100,
+      mdx_path: row.mdx_path || generateMdxPath(row.title, row.id),
+      source_type: 'knowledge-base',
     }));
 
     return c.json({
@@ -333,6 +389,262 @@ app.get('/api/article/:id', async (c) => {
 
   } catch (err) {
     console.error('Article error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+// ============================================
+// HIGHLIGHTS API
+// ============================================
+
+/**
+ * GET /api/highlights
+ * Get all highlights for the authenticated user
+ * Optional: ?article_id=xxx to filter by article
+ */
+app.get('/api/highlights', async (c) => {
+  const env = c.env;
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+
+    if (!user) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    const articleId = c.req.query('article_id');
+
+    let query = supabase
+      .from('highlights')
+      .select('*')
+      .eq('user_id', user.id)
+      .order('created_at', { ascending: false });
+
+    if (articleId) {
+      query = query.eq('article_id', articleId);
+    }
+
+    const { data, error } = await query;
+
+    if (error) {
+      console.error('Highlights fetch error:', error);
+      return c.json({ error: 'Failed to fetch highlights' }, 500);
+    }
+
+    return c.json({ highlights: data || [] });
+
+  } catch (err) {
+    console.error('Highlights error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * POST /api/highlights
+ * Create a new highlight
+ */
+app.post('/api/highlights', async (c) => {
+  const env = c.env;
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+
+    if (!user) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    const body = await c.req.json<CreateHighlightRequest>();
+
+    // Validate required fields
+    if (!body.article_id || !body.xpath || body.start_offset === undefined ||
+        body.end_offset === undefined || !body.selected_text) {
+      return c.json({ error: 'Missing required fields' }, 400);
+    }
+
+    // Validate text length (max 500 chars)
+    if (body.selected_text.length > 500) {
+      return c.json({ error: 'Selection too long (max 500 characters)' }, 400);
+    }
+
+    const { data, error } = await supabase
+      .from('highlights')
+      .insert({
+        user_id: user.id,
+        article_id: body.article_id,
+        xpath: body.xpath,
+        start_offset: body.start_offset,
+        end_offset: body.end_offset,
+        selected_text: body.selected_text,
+        note: body.note || null,
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Highlight create error:', error);
+      return c.json({ error: 'Failed to create highlight' }, 500);
+    }
+
+    return c.json({ highlight: data }, 201);
+
+  } catch (err) {
+    console.error('Create highlight error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * PATCH /api/highlights/:id
+ * Update a highlight (note only)
+ */
+app.patch('/api/highlights/:id', async (c) => {
+  const env = c.env;
+  const highlightId = c.req.param('id');
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+
+    if (!user) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    const body = await c.req.json<UpdateHighlightRequest>();
+
+    const { data, error } = await supabase
+      .from('highlights')
+      .update({ note: body.note ?? null })
+      .eq('id', highlightId)
+      .eq('user_id', user.id)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Highlight update error:', error);
+      return c.json({ error: 'Failed to update highlight' }, 500);
+    }
+
+    if (!data) {
+      return c.json({ error: 'Highlight not found' }, 404);
+    }
+
+    return c.json({ highlight: data });
+
+  } catch (err) {
+    console.error('Update highlight error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * DELETE /api/highlights/:id
+ * Delete a highlight
+ */
+app.delete('/api/highlights/:id', async (c) => {
+  const env = c.env;
+  const highlightId = c.req.param('id');
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+
+    if (!user) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    const { error } = await supabase
+      .from('highlights')
+      .delete()
+      .eq('id', highlightId)
+      .eq('user_id', user.id);
+
+    if (error) {
+      console.error('Highlight delete error:', error);
+      return c.json({ error: 'Failed to delete highlight' }, 500);
+    }
+
+    return c.json({ success: true });
+
+  } catch (err) {
+    console.error('Delete highlight error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * POST /api/highlights/:id/share
+ * Generate a share link for a highlight
+ */
+app.post('/api/highlights/:id/share', async (c) => {
+  const env = c.env;
+  const highlightId = c.req.param('id');
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+
+    if (!user) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    // Generate a short share ID
+    const shareId = crypto.randomUUID().slice(0, 12);
+
+    const { data, error } = await supabase
+      .from('highlights')
+      .update({ share_id: shareId })
+      .eq('id', highlightId)
+      .eq('user_id', user.id)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Share highlight error:', error);
+      return c.json({ error: 'Failed to share highlight' }, 500);
+    }
+
+    if (!data) {
+      return c.json({ error: 'Highlight not found' }, 404);
+    }
+
+    return c.json({
+      highlight: data,
+      share_url: `/shared/${shareId}`,
+    });
+
+  } catch (err) {
+    console.error('Share highlight error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * GET /api/shared/:shareId
+ * Get a shared highlight (public, no auth required)
+ */
+app.get('/api/shared/:shareId', async (c) => {
+  const env = c.env;
+  const shareId = c.req.param('shareId');
+
+  try {
+    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+
+    const { data, error } = await supabase
+      .from('highlights')
+      .select('id, article_id, xpath, start_offset, end_offset, selected_text, note, created_at')
+      .eq('share_id', shareId)
+      .single();
+
+    if (error || !data) {
+      return c.json({ error: 'Shared highlight not found' }, 404);
+    }
+
+    return c.json({ highlight: data });
+
+  } catch (err) {
+    console.error('Get shared highlight error:', err);
     return c.json({ error: 'Internal server error' }, 500);
   }
 });

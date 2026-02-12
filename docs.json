@@ -6,7 +6,7 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#2563EB",
     "light": "#3B82F6",
@@ -64,7 +64,7 @@
               "framework/scaling/overview",
               "framework/scaling/pr-flood",
               "framework/scaling/ai-friendly-codebase",
-              "framework/scaling/leadership"
+              "framework/scaling/leadership-adoption"
             ]
           }
         ]
@@ -96,10 +96,11 @@
     "github": "https://github.com/beyondvibecoding"
   },
   "seo": {
-    "indexHiddenPages": false
+    "indexHiddenPages": true
   },
   "feedback": {
     "thumbsRating": true,
     "suggestEdit": true
-  }
+  },
+  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js"]
 }
