@@ -279,18 +279,26 @@
   // Get selection info (XPath, offsets, text)
   function getSelectionInfo() {
     const selection = window.getSelection();
-    if (!selection || selection.isCollapsed || !selection.rangeCount) return null;
+    if (!selection || selection.isCollapsed || !selection.rangeCount) {
+      console.log('[Highlights] No valid selection');
+      return null;
+    }
 
     const range = selection.getRangeAt(0);
     const text = selection.toString().trim();
 
-    if (!text || text.length > MAX_SELECTION_LENGTH) return null;
+    if (!text || text.length > MAX_SELECTION_LENGTH) {
+      console.log('[Highlights] Text empty or too long:', text?.length);
+      return null;
+    }
 
     // Find the container element
     let container = range.commonAncestorContainer;
     if (container.nodeType === Node.TEXT_NODE) {
       container = container.parentElement;
     }
+
+    console.log('[Highlights] Container:', container?.tagName, container?.className);
 
     // Make sure selection is within article content
     // Mintlify uses various structures, so check multiple selectors
@@ -301,6 +309,8 @@
                           document.querySelector('main') ||
                           document.querySelector('#content');
 
+    console.log('[Highlights] Article content found:', articleContent?.tagName, articleContent?.className);
+
     // If no content wrapper found, allow selection anywhere except nav/header/footer
     const isExcludedArea = container.closest('nav') ||
                            container.closest('header') ||
@@ -308,8 +318,14 @@
                            container.closest('[class*="sidebar"]') ||
                            container.closest('[class*="toc"]');
 
-    if (isExcludedArea) return null;
-    if (articleContent && !articleContent.contains(container)) return null;
+    if (isExcludedArea) {
+      console.log('[Highlights] Selection in excluded area');
+      return null;
+    }
+    if (articleContent && !articleContent.contains(container)) {
+      console.log('[Highlights] Selection not in article content');
+      return null;
+    }
 
     // Get XPath to the start container's element
     let startElement = range.startContainer;
@@ -365,11 +381,16 @@
 
   // Show tooltip
   function showTooltip() {
+    console.log('[Highlights] showTooltip called');
+
     if (!tooltip) {
       tooltip = createTooltip();
+      console.log('[Highlights] Created tooltip element');
     }
 
     const selectionInfo = getSelectionInfo();
+    console.log('[Highlights] selectionInfo:', selectionInfo);
+
     if (!selectionInfo) {
       hideTooltip();
       return;
@@ -565,13 +586,18 @@
 
   // Handle mouseup to show tooltip
   function handleMouseUp(e) {
+    console.log('[Highlights] mouseup event on:', e.target?.tagName);
+
     // Ignore if clicking inside tooltip
     if (tooltip?.contains(e.target)) return;
 
     // Small delay to let selection finalize
     setTimeout(() => {
       const selection = window.getSelection();
-      if (selection && !selection.isCollapsed && selection.toString().trim()) {
+      const hasSelection = selection && !selection.isCollapsed && selection.toString().trim();
+      console.log('[Highlights] Has selection:', hasSelection, selection?.toString()?.slice(0, 50));
+
+      if (hasSelection) {
         showTooltip();
       } else {
         hideTooltip();
