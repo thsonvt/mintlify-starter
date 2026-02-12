@@ -293,10 +293,23 @@
     }
 
     // Make sure selection is within article content
+    // Mintlify uses various structures, so check multiple selectors
     const articleContent = document.querySelector('article') ||
                           document.querySelector('[class*="prose"]') ||
-                          document.querySelector('main');
-    if (!articleContent?.contains(container)) return null;
+                          document.querySelector('[class*="markdown"]') ||
+                          document.querySelector('[class*="content"]') ||
+                          document.querySelector('main') ||
+                          document.querySelector('#content');
+
+    // If no content wrapper found, allow selection anywhere except nav/header/footer
+    const isExcludedArea = container.closest('nav') ||
+                           container.closest('header') ||
+                           container.closest('footer') ||
+                           container.closest('[class*="sidebar"]') ||
+                           container.closest('[class*="toc"]');
+
+    if (isExcludedArea) return null;
+    if (articleContent && !articleContent.contains(container)) return null;
 
     // Get XPath to the start container's element
     let startElement = range.startContainer;
@@ -576,30 +589,64 @@
     }
   }
 
-  // Initialize
-  function init() {
-    if (!isArticlePage()) return;
+  // Track if we've set up global listeners
+  let globalListenersSetup = false;
+  let currentPath = '';
 
+  // Initialize or re-initialize on navigation
+  function init() {
+    // Always inject styles (idempotent)
     injectStyles();
 
-    document.addEventListener('mouseup', handleMouseUp);
-    document.addEventListener('click', handleClick);
+    // Set up global listeners once
+    if (!globalListenersSetup) {
+      document.addEventListener('mouseup', handleMouseUp);
+      document.addEventListener('click', handleClick);
 
-    // Hide on scroll
-    let scrollTimeout;
-    window.addEventListener('scroll', () => {
-      if (tooltip?.classList.contains('visible') && !isNoteMode) {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(hideTooltip, 100);
-      }
-    }, { passive: true });
+      // Handle scroll
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        if (tooltip?.classList.contains('visible') && !isNoteMode) {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(hideTooltip, 100);
+        }
+      }, { passive: true });
 
-    // Keyboard shortcut: Escape to close
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && tooltip?.classList.contains('visible')) {
-        hideTooltip();
-      }
-    });
+      // Keyboard shortcut: Escape to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && tooltip?.classList.contains('visible')) {
+          hideTooltip();
+        }
+      });
+
+      // Watch for client-side navigation (Mintlify SPA)
+      const observer = new MutationObserver(() => {
+        if (window.location.pathname !== currentPath) {
+          currentPath = window.location.pathname;
+          // Small delay to let page render
+          setTimeout(checkAndLoadHighlights, 100);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      // Also listen for popstate (browser back/forward)
+      window.addEventListener('popstate', () => {
+        setTimeout(checkAndLoadHighlights, 100);
+      });
+
+      globalListenersSetup = true;
+    }
+
+    currentPath = window.location.pathname;
+    checkAndLoadHighlights();
+  }
+
+  // Check if we're on article page and load highlights
+  function checkAndLoadHighlights() {
+    if (!isArticlePage()) return;
+    // Tooltip functionality is already active via global listeners
+    // This hook can be used to trigger highlight loading if needed
+    console.log('[Highlights] Article page detected:', window.location.pathname);
   }
 
   // Public API

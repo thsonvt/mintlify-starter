@@ -776,44 +776,88 @@
   }
 
   // Initialize
+  // Track initialization state
+  let globalListenersSetup = false;
+  let currentPath = '';
+
   function init() {
-    if (!isArticlePage()) return;
-
     injectStyles();
-    createToggleButton();
 
-    // Load highlights when auth is ready
-    if (window.highlightsAuth?.isAuthenticated()) {
-      loadHighlights();
-    }
+    // Set up global event listeners once
+    if (!globalListenersSetup) {
+      // Listen for auth changes
+      window.addEventListener('highlights-auth-change', (e) => {
+        if (e.detail.user) {
+          if (isArticlePage()) loadHighlights();
+        } else {
+          highlights = [];
+          updateToggleButton();
+          renderSidebar();
+          // Remove all highlights from DOM
+          document.querySelectorAll('.user-highlight').forEach(mark => {
+            const text = document.createTextNode(mark.textContent);
+            mark.parentNode.replaceChild(text, mark);
+          });
+        }
+      });
 
-    // Listen for auth changes
-    window.addEventListener('highlights-auth-change', (e) => {
-      if (e.detail.user) {
-        loadHighlights();
-      } else {
-        highlights = [];
+      // Listen for new highlights
+      window.addEventListener('highlight-created', (e) => {
+        highlights.unshift(e.detail);
         updateToggleButton();
         renderSidebar();
-        // Remove all highlights from DOM
-        document.querySelectorAll('.user-highlight').forEach(mark => {
-          const text = document.createTextNode(mark.textContent);
-          mark.parentNode.replaceChild(text, mark);
-        });
+      });
+
+      // Listen for highlight clicks
+      window.addEventListener('highlight-clicked', (e) => {
+        showPopover(e.detail.highlight, e.detail.element);
+      });
+
+      // Watch for client-side navigation (Mintlify SPA)
+      const observer = new MutationObserver(() => {
+        if (window.location.pathname !== currentPath) {
+          currentPath = window.location.pathname;
+          setTimeout(handleNavigation, 100);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      // Also listen for popstate
+      window.addEventListener('popstate', () => {
+        setTimeout(handleNavigation, 100);
+      });
+
+      globalListenersSetup = true;
+    }
+
+    currentPath = window.location.pathname;
+    handleNavigation();
+  }
+
+  // Handle navigation to new page
+  function handleNavigation() {
+    const toggleBtn = document.querySelector('.hl-sidebar-toggle');
+
+    if (isArticlePage()) {
+      // Show/create toggle button on article pages
+      if (!toggleBtn) {
+        createToggleButton();
+      } else {
+        toggleBtn.style.display = 'flex';
       }
-    });
 
-    // Listen for new highlights
-    window.addEventListener('highlight-created', (e) => {
-      highlights.unshift(e.detail);
-      updateToggleButton();
-      renderSidebar();
-    });
-
-    // Listen for highlight clicks
-    window.addEventListener('highlight-clicked', (e) => {
-      showPopover(e.detail.highlight, e.detail.element);
-    });
+      // Load highlights when auth is ready
+      if (window.highlightsAuth?.isAuthenticated()) {
+        loadHighlights();
+      }
+    } else {
+      // Hide toggle button on non-article pages
+      if (toggleBtn) {
+        toggleBtn.style.display = 'none';
+      }
+      closeSidebar();
+      highlights = [];
+    }
   }
 
   // Public API

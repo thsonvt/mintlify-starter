@@ -432,21 +432,9 @@
       }
     });
 
-    // Insert into navbar
-    const navbar = document.querySelector('nav') ||
-                   document.querySelector('[class*="navbar"]') ||
-                   document.querySelector('header');
-    if (navbar) {
-      // Try to find a good spot in the navbar
-      const navRight = navbar.querySelector('[class*="right"]') ||
-                       navbar.querySelector('[class*="actions"]') ||
-                       navbar;
-      navRight.appendChild(container);
-    } else {
-      // Fallback: fixed position
-      container.style.cssText = 'position: fixed; top: 16px; right: 16px; z-index: 1000;';
-      document.body.appendChild(container);
-    }
+    // Use fixed position for reliability across Mintlify's client-side navigation
+    container.style.cssText = 'position: fixed; top: 16px; right: 70px; z-index: 999990;';
+    document.body.appendChild(container);
 
     return container;
   }
