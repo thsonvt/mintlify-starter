@@ -424,6 +424,9 @@
     }
     sidebar.classList.add('open');
     isOpen = true;
+
+    // Always render current highlights when opening
+    renderSidebar();
   }
 
   // Close sidebar
@@ -459,7 +462,11 @@
 
   // Render sidebar content
   function renderSidebar() {
-    if (!sidebar) return;
+    console.log('[Sidebar] renderSidebar called, sidebar exists:', !!sidebar, 'highlights:', highlights.length);
+    if (!sidebar) {
+      console.log('[Sidebar] No sidebar element, skipping render');
+      return;
+    }
 
     const content = sidebar.querySelector('.hl-sidebar-content');
     const countEl = sidebar.querySelector('.count');
@@ -467,6 +474,7 @@
     countEl.textContent = highlights.length;
 
     if (highlights.length === 0) {
+      console.log('[Sidebar] No highlights to show');
       content.innerHTML = `
         <div class="hl-sidebar-empty">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -798,10 +806,12 @@
   let currentPath = '';
 
   function init() {
+    console.log('[Sidebar] init called');
     injectStyles();
 
     // Set up global event listeners once
     if (!globalListenersSetup) {
+      console.log('[Sidebar] Setting up global event listeners');
       // Listen for auth changes
       window.addEventListener('highlights-auth-change', (e) => {
         if (e.detail.user) {
@@ -820,9 +830,13 @@
 
       // Listen for new highlights
       window.addEventListener('highlight-created', (e) => {
+        console.log('[Sidebar] highlight-created event received:', e.detail);
+        console.log('[Sidebar] Current highlights count before:', highlights.length);
         highlights.unshift(e.detail);
+        console.log('[Sidebar] Current highlights count after:', highlights.length);
         updateToggleButton();
         renderSidebar();
+        console.log('[Sidebar] Sidebar rendered');
       });
 
       // Listen for highlight clicks
