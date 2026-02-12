@@ -102,5 +102,5 @@
     "thumbsRating": true,
     "suggestEdit": true
   },
-  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js"]
+  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js", "/scripts/highlights-tooltip.js", "/scripts/highlights-sidebar.js"]
 }
