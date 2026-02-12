@@ -96,18 +96,29 @@ app.use('/*', cors({
   allowHeaders: ['Content-Type', 'Authorization'],
 }));
 
-// Helper to extract user from JWT token
-async function getUserFromToken(
-  supabase: SupabaseClient,
+// Helper to get authenticated Supabase client and user from JWT token
+async function getAuthenticatedClient(
+  env: Env,
   authHeader: string | undefined
-): Promise<{ id: string } | null> {
+): Promise<{ supabase: SupabaseClient; user: { id: string } } | null> {
   if (!authHeader?.startsWith('Bearer ')) return null;
 
   const token = authHeader.slice(7);
+
+  // Create Supabase client with the user's access token
+  // This ensures auth.uid() works correctly in RLS policies
+  const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY, {
+    global: {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  });
+
   const { data: { user }, error } = await supabase.auth.getUser(token);
 
   if (error || !user) return null;
-  return { id: user.id };
+  return { supabase, user: { id: user.id } };
 }
 
 // Health check
@@ -406,12 +417,13 @@ app.get('/api/highlights', async (c) => {
   const env = c.env;
 
   try {
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
-    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
 
-    if (!user) {
+    if (!auth) {
       return c.json({ error: 'Unauthorized' }, 401);
     }
+
+    const { supabase, user } = auth;
 
     const articleId = c.req.query('article_id');
 
@@ -448,12 +460,13 @@ app.post('/api/highlights', async (c) => {
   const env = c.env;
 
   try {
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
-    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
 
-    if (!user) {
+    if (!auth) {
       return c.json({ error: 'Unauthorized' }, 401);
     }
+
+    const { supabase, user } = auth;
 
     const body = await c.req.json<CreateHighlightRequest>();
 
@@ -504,12 +517,13 @@ app.patch('/api/highlights/:id', async (c) => {
   const highlightId = c.req.param('id');
 
   try {
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
-    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
 
-    if (!user) {
+    if (!auth) {
       return c.json({ error: 'Unauthorized' }, 401);
     }
+
+    const { supabase, user } = auth;
 
     const body = await c.req.json<UpdateHighlightRequest>();
 
@@ -547,12 +561,13 @@ app.delete('/api/highlights/:id', async (c) => {
   const highlightId = c.req.param('id');
 
   try {
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
-    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
 
-    if (!user) {
+    if (!auth) {
       return c.json({ error: 'Unauthorized' }, 401);
     }
+
+    const { supabase, user } = auth;
 
     const { error } = await supabase
       .from('highlights')
@@ -582,12 +597,13 @@ app.post('/api/highlights/:id/share', async (c) => {
   const highlightId = c.req.param('id');
 
   try {
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
-    const user = await getUserFromToken(supabase, c.req.header('Authorization'));
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
 
-    if (!user) {
+    if (!auth) {
       return c.json({ error: 'Unauthorized' }, 401);
     }
+
+    const { supabase, user } = auth;
 
     // Generate a short share ID
     const shareId = crypto.randomUUID().slice(0, 12);
