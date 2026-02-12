@@ -559,26 +559,46 @@
         null
       );
       const element = result.singleNodeValue;
-      if (!element) return;
+      if (!element) {
+        console.log('[Highlights] renderHighlight: Element not found for XPath:', highlight.xpath);
+        return;
+      }
 
-      // Find the text node and wrap the selection
+      // Collect all text nodes that need highlighting
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
       let currentOffset = 0;
       let node;
+      const nodesToHighlight = [];
 
       while ((node = walker.nextNode())) {
         const nodeLength = node.textContent.length;
         const nodeStart = currentOffset;
         const nodeEnd = currentOffset + nodeLength;
 
-        // Check if this node contains the highlight
+        // Check if this node overlaps with the highlight range
         if (nodeEnd > highlight.start_offset && nodeStart < highlight.end_offset) {
-          const range = document.createRange();
-
           // Calculate offsets within this node
           const startInNode = Math.max(0, highlight.start_offset - nodeStart);
           const endInNode = Math.min(nodeLength, highlight.end_offset - nodeStart);
 
+          nodesToHighlight.push({ node, startInNode, endInNode });
+        }
+
+        // Stop if we've passed the highlight end
+        if (nodeStart >= highlight.end_offset) break;
+
+        currentOffset = nodeEnd;
+      }
+
+      console.log('[Highlights] renderHighlight: Found', nodesToHighlight.length, 'text nodes to highlight');
+
+      // Wrap each text node segment (process in reverse to avoid offset issues)
+      let firstMark = null;
+      for (let i = nodesToHighlight.length - 1; i >= 0; i--) {
+        const { node, startInNode, endInNode } = nodesToHighlight[i];
+
+        try {
+          const range = document.createRange();
           range.setStart(node, startInNode);
           range.setEnd(node, endInNode);
 
@@ -588,20 +608,22 @@
           mark.dataset.highlightId = highlight.id;
 
           range.surroundContents(mark);
+          firstMark = mark;
 
           // Add click handler for popover
           mark.onclick = (e) => {
             e.stopPropagation();
             showHighlightPopover(highlight, mark);
           };
-
-          break;
+        } catch (wrapErr) {
+          // surroundContents can fail if range crosses element boundaries
+          console.warn('[Highlights] Could not wrap text node:', wrapErr.message);
         }
-
-        currentOffset = nodeEnd;
       }
+
+      return firstMark;
     } catch (err) {
-      console.error('Render highlight error:', err);
+      console.error('[Highlights] Render highlight error:', err);
     }
   }
 
