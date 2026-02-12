@@ -662,12 +662,13 @@
       renderSidebar();
       updateToggleButton();
 
-      // Remove mark from DOM
-      const mark = document.querySelector(`mark[data-highlight-id="${highlight.id}"]`);
-      if (mark) {
+      // Remove ALL marks from DOM (multi-node highlights have multiple marks)
+      const marks = document.querySelectorAll(`mark[data-highlight-id="${highlight.id}"]`);
+      console.log('[Sidebar] Removing', marks.length, 'mark elements for highlight:', highlight.id);
+      marks.forEach(mark => {
         const text = document.createTextNode(mark.textContent);
         mark.parentNode.replaceChild(text, mark);
-      }
+      });
 
     } catch (err) {
       console.error('Delete error:', err);
