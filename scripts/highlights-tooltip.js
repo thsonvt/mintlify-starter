@@ -300,31 +300,32 @@
 
     console.log('[Highlights] Container:', container?.tagName, container?.className);
 
-    // Make sure selection is within article content
-    // Mintlify uses various structures, so check multiple selectors
-    const articleContent = document.querySelector('article') ||
-                          document.querySelector('[class*="prose"]') ||
-                          document.querySelector('[class*="markdown"]') ||
-                          document.querySelector('[class*="content"]') ||
-                          document.querySelector('main') ||
-                          document.querySelector('#content');
-
-    console.log('[Highlights] Article content found:', articleContent?.tagName, articleContent?.className);
-
-    // If no content wrapper found, allow selection anywhere except nav/header/footer
+    // Check if selection is in an excluded area (nav, sidebar, toc, etc.)
     const isExcludedArea = container.closest('nav') ||
                            container.closest('header') ||
                            container.closest('footer') ||
                            container.closest('[class*="sidebar"]') ||
-                           container.closest('[class*="toc"]');
+                           container.closest('[class*="toc"]') ||
+                           container.closest('[class*="navigation"]');
 
     if (isExcludedArea) {
       console.log('[Highlights] Selection in excluded area');
       return null;
     }
-    if (articleContent && !articleContent.contains(container)) {
-      console.log('[Highlights] Selection not in article content');
-      return null;
+
+    // Find the prose/article content wrapper by going UP from the container
+    // This ensures we find the wrapper that actually contains the selection
+    const articleContent = container.closest('article') ||
+                          container.closest('[class*="prose"]') ||
+                          container.closest('[class*="markdown"]') ||
+                          container.closest('main');
+
+    console.log('[Highlights] Article content (closest):', articleContent?.tagName, articleContent?.className);
+
+    // If no content wrapper found, check if we're at least in the main content area
+    if (!articleContent) {
+      // Allow if not in excluded area - might be a simple page structure
+      console.log('[Highlights] No article wrapper found, but not excluded - allowing');
     }
 
     // Get XPath to the start container's element
