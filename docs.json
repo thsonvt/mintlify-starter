@@ -12,14 +12,6 @@
     "light": "#3B82F6",
     "dark": "#1E40AF"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "GitHub",
-        "href": "https://github.com/yourusername/beyond-vibe-coding"
-      }
-    ]
-  },
   "navigation": {
     "tabs": [
       {
@@ -109,5 +101,5 @@
     "thumbsRating": true,
     "suggestEdit": true
   },
-  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js", "/scripts/highlights-tooltip.js", "/scripts/highlights-sidebar.js"]
+  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js", "/scripts/highlights-storage.js", "/scripts/highlights-tooltip.js", "/scripts/highlights-sidebar.js"]
 }

@@ -4,11 +4,6 @@
  */
 
 (function() {
-  // Configuration
-  const API_URL = window.location.hostname === 'localhost'
-    ? 'http://localhost:8787'
-    : 'https://thought-leadership-api.thsonvt.workers.dev';
-
   // State
   let sidebar = null;
   let highlights = [];
@@ -233,6 +228,25 @@
         color: #dc2626;
       }
 
+      .hl-sidebar-item-btn.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .hl-sidebar-item.pending {
+        border-color: #fef3c7;
+        background: #fffbeb;
+      }
+
+      .hl-sidebar-item-pending {
+        font-size: 11px;
+        color: #92400e;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
       .hl-sidebar-item-btn svg {
         width: 14px;
         height: 14px;
@@ -301,6 +315,58 @@
 
       .hl-popover-btn.danger:hover {
         background: #fef2f2;
+      }
+
+      /* Offline toast */
+      .hl-offline-toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 999999;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .hl-offline-toast.visible {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      .hl-offline-toast svg {
+        color: #fbbf24;
+      }
+
+      /* Sync status indicator */
+      .hl-sidebar-sync-status {
+        padding: 8px 12px;
+        background: #fffbeb;
+        border-bottom: 1px solid #fef3c7;
+        font-size: 12px;
+        color: #92400e;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .hl-sidebar-sync-status.synced {
+        background: #ecfdf5;
+        border-color: #d1fae5;
+        color: #065f46;
+      }
+
+      .hl-sidebar-sync-status svg {
+        width: 14px;
+        height: 14px;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -427,6 +493,11 @@
 
     // Always render current highlights when opening
     renderSidebar();
+
+    // Show sync status if offline
+    if (window.highlightsStorage && !window.highlightsStorage.isOnline()) {
+      updateSyncStatus(false);
+    }
   }
 
   // Close sidebar
@@ -481,8 +552,17 @@
       return;
     }
 
-    content.innerHTML = highlights.map(h => `
-      <div class="hl-sidebar-item" data-id="${h.id}">
+    content.innerHTML = highlights.map(h => {
+      const isPending = h._pending || (h.id && h.id.startsWith('temp_'));
+      return `
+      <div class="hl-sidebar-item${isPending ? ' pending' : ''}" data-id="${h.id}">
+        ${isPending ? `<div class="hl-sidebar-item-pending">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          Pending sync
+        </div>` : ''}
         <div class="hl-sidebar-item-text">${escapeHtml(h.selected_text)}</div>
         ${h.note ? `<div class="hl-sidebar-item-note">${escapeHtml(h.note)}</div>` : ''}
         <div class="hl-sidebar-item-actions">
@@ -493,7 +573,7 @@
             </svg>
             Edit
           </button>
-          <button class="hl-sidebar-item-btn" data-action="share" title="Share">
+          <button class="hl-sidebar-item-btn${isPending ? ' disabled' : ''}" data-action="share" title="${isPending ? 'Sync required to share' : 'Share'}">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="18" cy="5" r="3"/>
               <circle cx="6" cy="12" r="3"/>
@@ -512,7 +592,7 @@
           </button>
         </div>
       </div>
-    `).join('');
+    `}).join('');
 
     // Add click handlers
     content.querySelectorAll('.hl-sidebar-item').forEach(item => {
@@ -576,29 +656,27 @@
     const note = prompt('Edit note:', highlight.note || '');
     if (note === null) return; // Cancelled
 
-    const token = await window.highlightsAuth?.getToken();
-    if (!token) return;
-
     try {
-      const response = await fetch(`${API_URL}/api/highlights/${highlight.id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({ note: note || null }),
-      });
-
-      if (!response.ok) throw new Error('Failed to update');
+      // Update via storage layer (works offline)
+      const updated = await window.highlightsStorage.updateHighlight(highlight.id, { note: note || null });
 
       // Update local state
-      highlight.note = note || null;
+      const idx = highlights.findIndex(h => h.id === highlight.id);
+      if (idx !== -1) {
+        highlights[idx] = updated;
+      }
       renderSidebar();
 
       // Update mark class
-      const mark = document.querySelector(`mark[data-highlight-id="${highlight.id}"]`);
-      if (mark) {
+      const marks = document.querySelectorAll(`mark[data-highlight-id="${highlight.id}"]`);
+      marks.forEach(mark => {
         mark.classList.toggle('has-note', !!note);
+        mark.classList.toggle('pending-sync', updated._pending);
+      });
+
+      // Show offline indicator if not online
+      if (!window.highlightsStorage.isOnline()) {
+        showOfflineToast('Note updated offline');
       }
 
     } catch (err) {
@@ -607,10 +685,26 @@
     }
   }
 
-  // Share highlight
+  // Share highlight (requires online - generates server-side URL)
   async function shareHighlight(highlight) {
+    // Check if online
+    if (!window.highlightsStorage?.isOnline()) {
+      alert('Sharing requires an internet connection. Please try again when online.');
+      return;
+    }
+
+    // Check if highlight is synced (not pending)
+    if (highlight._pending || highlight.id.startsWith('temp_')) {
+      alert('Please wait for this highlight to sync before sharing.');
+      return;
+    }
+
     const token = await window.highlightsAuth?.getToken();
     if (!token) return;
+
+    const API_URL = window.location.hostname === 'localhost'
+      ? 'http://localhost:8787'
+      : 'https://thought-leadership-api.thsonvt.workers.dev';
 
     try {
       const response = await fetch(`${API_URL}/api/highlights/${highlight.id}/share`, {
@@ -639,18 +733,9 @@
   async function deleteHighlight(highlight) {
     if (!confirm('Delete this highlight?')) return;
 
-    const token = await window.highlightsAuth?.getToken();
-    if (!token) return;
-
     try {
-      const response = await fetch(`${API_URL}/api/highlights/${highlight.id}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-        },
-      });
-
-      if (!response.ok) throw new Error('Failed to delete');
+      // Delete via storage layer (works offline)
+      await window.highlightsStorage.deleteHighlight(highlight.id);
 
       // Remove from local state
       highlights = highlights.filter(h => h.id !== highlight.id);
@@ -663,6 +748,11 @@
         const text = document.createTextNode(mark.textContent);
         mark.parentNode.replaceChild(text, mark);
       });
+
+      // Show offline indicator if not online
+      if (!window.highlightsStorage.isOnline()) {
+        showOfflineToast('Deleted offline');
+      }
 
     } catch (err) {
       console.error('Delete error:', err);
@@ -739,13 +829,12 @@
     }
   }
 
-  // Load highlights for current article
+  // Load highlights for current article (from local storage)
   async function loadHighlights() {
     const articleId = getArticleId();
     if (!articleId) return;
 
-    const token = await window.highlightsAuth?.getToken();
-    if (!token) {
+    if (!window.highlightsAuth?.isAuthenticated()) {
       highlights = [];
       updateToggleButton();
       renderSidebar();
@@ -753,17 +842,17 @@
     }
 
     try {
-      const response = await fetch(
-        `${API_URL}/api/highlights?article_id=${encodeURIComponent(articleId)}`,
-        {
-          headers: { 'Authorization': `Bearer ${token}` },
+      // Wait for storage to be ready
+      if (!window.highlightsStorage) {
+        let waitCount = 0;
+        while (!window.highlightsStorage && waitCount < 50) {
+          await new Promise(r => setTimeout(r, 100));
+          waitCount++;
         }
-      );
+      }
 
-      if (!response.ok) throw new Error('Failed to load');
-
-      const data = await response.json();
-      highlights = data.highlights || [];
+      // Load from local storage (works offline)
+      highlights = await window.highlightsStorage.getHighlights(articleId);
 
       updateToggleButton();
       renderSidebar();
@@ -776,6 +865,60 @@
     } catch (err) {
       console.error('Load highlights error:', err);
     }
+  }
+
+  // Update sync status in sidebar header
+  function updateSyncStatus(online) {
+    if (!sidebar) return;
+
+    let statusEl = sidebar.querySelector('.hl-sidebar-sync-status');
+
+    if (online) {
+      // Remove offline status if exists
+      if (statusEl) statusEl.remove();
+    } else {
+      // Show offline status
+      if (!statusEl) {
+        statusEl = document.createElement('div');
+        statusEl.className = 'hl-sidebar-sync-status';
+        const header = sidebar.querySelector('.hl-sidebar-header');
+        header.insertAdjacentElement('afterend', statusEl);
+      }
+      statusEl.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M1 1l22 22"/>
+          <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+          <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+        </svg>
+        Offline - changes will sync when connected
+      `;
+    }
+  }
+
+  // Show offline toast message
+  function showOfflineToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'hl-offline-toast';
+    toast.innerHTML = `
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M1 1l22 22"/>
+        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+        <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+        <line x1="12" y1="20" x2="12.01" y2="20"/>
+      </svg>
+      ${message}
+    `;
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => toast.classList.add('visible'));
+
+    setTimeout(() => {
+      toast.classList.remove('visible');
+      setTimeout(() => toast.remove(), 300);
+    }, 2000);
   }
 
   // Initialize
@@ -814,6 +957,45 @@
       // Listen for highlight clicks
       window.addEventListener('highlight-clicked', (e) => {
         showPopover(e.detail.highlight, e.detail.element);
+      });
+
+      // Listen for sync events to refresh highlights
+      window.addEventListener('highlights-synced', () => {
+        if (isArticlePage() && window.highlightsAuth?.isAuthenticated()) {
+          loadHighlights();
+        }
+      });
+
+      window.addEventListener('highlights-full-synced', () => {
+        if (isArticlePage() && window.highlightsAuth?.isAuthenticated()) {
+          loadHighlights();
+        }
+      });
+
+      // Listen for ID mapping (temp ID -> server ID)
+      window.addEventListener('highlight-id-mapped', (e) => {
+        const { tempId, serverId } = e.detail;
+        // Update marks in DOM
+        const marks = document.querySelectorAll(`mark[data-highlight-id="${tempId}"]`);
+        marks.forEach(mark => {
+          mark.dataset.highlightId = serverId;
+          mark.classList.remove('pending-sync');
+        });
+        // Update local state
+        const idx = highlights.findIndex(h => h.id === tempId);
+        if (idx !== -1) {
+          highlights[idx].id = serverId;
+          highlights[idx]._pending = false;
+        }
+      });
+
+      // Listen for online/offline status
+      window.addEventListener('highlights-online', () => {
+        updateSyncStatus(true);
+      });
+
+      window.addEventListener('highlights-offline', () => {
+        updateSyncStatus(false);
       });
 
       // Watch for client-side navigation (Mintlify SPA)

@@ -6,10 +6,6 @@
 
 (function() {
   // Configuration
-  const API_URL = window.location.hostname === 'localhost'
-    ? 'http://localhost:8787'
-    : 'https://thought-leadership-api.thsonvt.workers.dev';
-
   const MAX_SELECTION_LENGTH = 500;
 
   // State
@@ -188,6 +184,41 @@
 
       .user-highlight.has-note {
         border-bottom-style: dashed;
+      }
+
+      /* Offline indicator */
+      .hl-offline-indicator {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 999999;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .hl-offline-indicator.visible {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      .hl-offline-indicator svg {
+        color: #fbbf24;
+      }
+
+      /* Pending sync indicator on highlights */
+      .user-highlight.pending-sync {
+        border-bottom-style: dotted;
+        border-bottom-color: #fbbf24;
       }
     `;
     document.head.appendChild(styles);
@@ -447,7 +478,7 @@
     }
   }
 
-  // Save highlight to API
+  // Save highlight (local first via storage layer, syncs when online)
   async function saveHighlight(note = null) {
     if (!currentSelection) return;
 
@@ -457,8 +488,8 @@
       return;
     }
 
-    const token = await window.highlightsAuth?.getToken();
-    if (!token) {
+    // Check if user is authenticated
+    if (!window.highlightsAuth?.isAuthenticated()) {
       showError('Please sign in first');
       return;
     }
@@ -473,28 +504,28 @@
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/highlights`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || 'Failed to save highlight');
+      // Wait for storage to be ready
+      if (!window.highlightsStorage) {
+        let waitCount = 0;
+        while (!window.highlightsStorage && waitCount < 50) {
+          await new Promise(r => setTimeout(r, 100));
+          waitCount++;
+        }
       }
 
-      const data = await response.json();
-      const { highlight } = data;
+      // Save via storage layer (works offline)
+      const highlight = await window.highlightsStorage.saveHighlight(payload);
 
       // Render the highlight immediately
       renderHighlight(highlight);
 
       // Dispatch event for sidebar
       window.dispatchEvent(new CustomEvent('highlight-created', { detail: highlight }));
+
+      // Show offline indicator if not online
+      if (!window.highlightsStorage.isOnline()) {
+        showOfflineIndicator();
+      }
 
       hideTooltip();
       window.getSelection()?.removeAllRanges();
@@ -503,6 +534,36 @@
       console.error('Save highlight error:', err);
       showError(err.message || 'Failed to save');
     }
+  }
+
+  // Show brief offline indicator
+  function showOfflineIndicator() {
+    const indicator = document.createElement('div');
+    indicator.className = 'hl-offline-indicator';
+    indicator.innerHTML = `
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M1 1l22 22"/>
+        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+        <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+        <line x1="12" y1="20" x2="12.01" y2="20"/>
+      </svg>
+      Saved offline
+    `;
+    document.body.appendChild(indicator);
+
+    // Animate in
+    requestAnimationFrame(() => {
+      indicator.classList.add('visible');
+    });
+
+    // Remove after 2 seconds
+    setTimeout(() => {
+      indicator.classList.remove('visible');
+      setTimeout(() => indicator.remove(), 300);
+    }, 2000);
   }
 
   // Render a single highlight on the page

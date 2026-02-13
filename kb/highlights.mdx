@@ -16,9 +16,13 @@ icon: 'bookmark'
     const app = document.getElementById('highlights-app');
     if (!app) return;
 
+    // API URL only needed for fallback
     const API_URL = window.location.hostname === 'localhost'
       ? 'http://localhost:8787'
       : 'https://thought-leadership-api.thsonvt.workers.dev';
+
+    // Check if offline
+    const isOffline = () => window.highlightsStorage && !window.highlightsStorage.isOnline();
 
     // Check auth state
     let checkCount = 0;
@@ -43,6 +47,17 @@ icon: 'bookmark'
       } else {
         loadHighlights();
       }
+
+      // Listen for sync events to refresh data
+      window.addEventListener('highlights-synced', loadHighlights);
+      window.addEventListener('highlights-full-synced', loadHighlights);
+
+      // Listen for online status changes
+      window.addEventListener('highlights-online', () => {
+        const banner = document.querySelector('.hl-offline-banner');
+        if (banner) banner.remove();
+        loadHighlights();
+      });
     }
 
     function renderSignIn() {
@@ -63,26 +78,53 @@ icon: 'bookmark'
     async function loadHighlights() {
       app.innerHTML = '<div style="padding: 40px 20px; text-align: center; color: #6b7280;">Loading...</div>';
 
-      const token = await window.highlightsAuth?.getToken();
-      if (!token) {
+      if (!window.highlightsAuth?.isAuthenticated()) {
         renderSignIn();
         return;
       }
 
       try {
-        const response = await fetch(API_URL + '/api/highlights', {
-          headers: { 'Authorization': 'Bearer ' + token }
-        });
+        // Wait for storage to be ready
+        if (!window.highlightsStorage) {
+          let waitCount = 0;
+          while (!window.highlightsStorage && waitCount < 50) {
+            await new Promise(r => setTimeout(r, 100));
+            waitCount++;
+          }
+        }
 
-        if (!response.ok) throw new Error('Failed to load');
+        // Load from local storage (works offline)
+        const highlights = await window.highlightsStorage.getAllHighlights();
 
-        const data = await response.json();
-        renderHighlights(data.highlights || []);
+        // Show offline indicator if needed
+        if (isOffline()) {
+          showOfflineBanner();
+        }
+
+        renderHighlights(highlights);
 
       } catch (err) {
         console.error('Load error:', err);
         app.innerHTML = '<div style="padding: 40px; text-align: center; color: #dc2626;">Failed to load highlights.</div>';
       }
+    }
+
+    function showOfflineBanner() {
+      const existing = document.querySelector('.hl-offline-banner');
+      if (existing) return;
+
+      const banner = document.createElement('div');
+      banner.className = 'hl-offline-banner';
+      banner.innerHTML = \`
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M1 1l22 22"/>
+          <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+          <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+        </svg>
+        You're offline. Showing cached highlights.
+      \`;
+      banner.style.cssText = 'padding: 10px 16px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 8px; margin-bottom: 16px; font-size: 13px; color: #92400e; display: flex; align-items: center; gap: 8px;';
+      app.insertBefore(banner, app.firstChild);
     }
 
     function renderHighlights(highlights) {
@@ -137,8 +179,11 @@ icon: 'bookmark'
       const filterEl = document.getElementById('hl-filter');
 
       function render(filtered) {
-        listEl.innerHTML = filtered.map(h => \`
-          <div style="padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 12px; background: white;">
+        listEl.innerHTML = filtered.map(h => {
+          const isPending = h._pending || (h.id && h.id.startsWith('temp_'));
+          return \`
+          <div style="padding: 16px; border: 1px solid \${isPending ? '#fef3c7' : '#e5e7eb'}; border-radius: 8px; margin-bottom: 12px; background: \${isPending ? '#fffbeb' : 'white'};">
+            \${isPending ? '<div style="font-size: 11px; color: #92400e; margin-bottom: 8px; display: flex; align-items: center; gap: 4px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Pending sync</div>' : ''}
             <div style="font-size: 15px; color: #374151; line-height: 1.6; margin-bottom: 8px;">
               <span style="color: #10b981;">"</span>\${escapeHtml(h.selected_text)}<span style="color: #10b981;">"</span>
             </div>
@@ -154,7 +199,7 @@ icon: 'bookmark'
               <span>\${new Date(h.created_at).toLocaleDateString()}</span>
             </div>
           </div>
-        \`).join('') || '<div style="padding: 40px; text-align: center; color: #6b7280;">No matching highlights</div>';
+        \`}).join('') || '<div style="padding: 40px; text-align: center; color: #6b7280;">No matching highlights</div>';
       }
 
       function applyFilters() {
