@@ -74,57 +74,86 @@
     });
   }
 
-  // Generic store operations
-  async function getStore(storeName, mode = 'readonly') {
-    const database = await initDB();
-    const tx = database.transaction(storeName, mode);
-    return tx.objectStore(storeName);
-  }
-
+  // Generic store operations - fixed to avoid async Promise executor anti-pattern
   async function getAllFromStore(storeName) {
-    return new Promise(async (resolve, reject) => {
-      const store = await getStore(storeName);
-      const request = store.getAll();
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
+    const database = await initDB();
+    return new Promise((resolve, reject) => {
+      try {
+        const tx = database.transaction(storeName, 'readonly');
+        const store = tx.objectStore(storeName);
+        const request = store.getAll();
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = () => reject(request.error);
+        tx.onerror = () => reject(tx.error);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 
   async function getFromStore(storeName, key) {
-    return new Promise(async (resolve, reject) => {
-      const store = await getStore(storeName);
-      const request = store.get(key);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
+    const database = await initDB();
+    return new Promise((resolve, reject) => {
+      try {
+        const tx = database.transaction(storeName, 'readonly');
+        const store = tx.objectStore(storeName);
+        const request = store.get(key);
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+        tx.onerror = () => reject(tx.error);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 
   async function putInStore(storeName, data) {
-    return new Promise(async (resolve, reject) => {
-      const store = await getStore(storeName, 'readwrite');
-      const request = store.put(data);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
+    const database = await initDB();
+    return new Promise((resolve, reject) => {
+      try {
+        const tx = database.transaction(storeName, 'readwrite');
+        const store = tx.objectStore(storeName);
+        const request = store.put(data);
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+        tx.onerror = () => reject(tx.error);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 
   async function deleteFromStore(storeName, key) {
-    return new Promise(async (resolve, reject) => {
-      const store = await getStore(storeName, 'readwrite');
-      const request = store.delete(key);
-      request.onsuccess = () => resolve();
-      request.onerror = () => reject(request.error);
+    const database = await initDB();
+    return new Promise((resolve, reject) => {
+      try {
+        const tx = database.transaction(storeName, 'readwrite');
+        const store = tx.objectStore(storeName);
+        const request = store.delete(key);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error);
+        tx.onerror = () => reject(tx.error);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 
   // Get highlights by article ID
   async function getByIndex(storeName, indexName, value) {
-    return new Promise(async (resolve, reject) => {
-      const store = await getStore(storeName);
-      const index = store.index(indexName);
-      const request = index.getAll(value);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
+    const database = await initDB();
+    return new Promise((resolve, reject) => {
+      try {
+        const tx = database.transaction(storeName, 'readonly');
+        const store = tx.objectStore(storeName);
+        const index = store.index(indexName);
+        const request = index.getAll(value);
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = () => reject(request.error);
+        tx.onerror = () => reject(tx.error);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 
