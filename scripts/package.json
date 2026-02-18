@@ -1,0 +1,17 @@
+{
+  "name": "mintlify-kb-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scripts for generating Knowledge Base MDX files from Supabase",
+  "scripts": {
+    "generate": "node generate-kb-mdx.mjs",
+    "generate:watch": "nodemon generate-kb-mdx.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

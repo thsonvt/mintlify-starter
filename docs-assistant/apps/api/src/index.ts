@@ -69,6 +69,8 @@ interface Article {
   similarity?: number;
   mdx_path?: string;
   source_type?: string;
+  matching_excerpt?: string;
+  fragment?: string;
 }
 
 interface FilterOptions {
@@ -161,23 +163,6 @@ app.post('/api/search', async (c) => {
     });
     const queryEmbedding = embeddingResponse.data[0].embedding;
 
-    // Call Supabase RPC function for vector search
-    const { data, error } = await supabase.rpc('match_articles', {
-      query_embedding: queryEmbedding,
-      match_threshold: 0.3,
-      match_count: limit,
-      filter_authors: filters.authors?.length ? filters.authors : null,
-      filter_topics: filters.topics?.length ? filters.topics : null,
-      filter_diataxis_type: filters.diataxis_type || null,
-      filter_date_from: filters.date_from || null,
-      filter_date_to: filters.date_to || null,
-    });
-
-    if (error) {
-      console.error('Supabase error:', error);
-      return c.json({ error: 'Search failed', details: error.message }, 500);
-    }
-
     // Helper to generate MDX path from title and ID
     const generateMdxPath = (title: string, id: string): string => {
       const slug = title
@@ -189,23 +174,70 @@ app.post('/api/search', async (c) => {
       return `/kb/articles/${slug}-${urlHash}`;
     };
 
-    // Format results
-    const results: Article[] = (data || []).map((row: any) => ({
-      id: row.id,
-      url: row.url,
-      title: row.title,
-      author: row.author,
-      author_id: row.author_id,
-      published: row.published,
-      summary: row.summary,
-      topics: row.topics || [],
-      key_quotes: row.key_quotes || [],
-      diataxis_type: row.diataxis_type,
-      tags: row.tags || [],
-      similarity: Math.round(row.similarity * 100) / 100,
-      mdx_path: row.mdx_path || generateMdxPath(row.title, row.id),
-      source_type: 'knowledge-base',
-    }));
+    // Helper to build a Text Fragment from chunk text (first 8 words)
+    const buildFragment = (text: string): string => {
+      const words = text.replace(/\s+/g, ' ').trim().split(' ').slice(0, 8).join(' ');
+      return encodeURIComponent(words);
+    };
+
+    // Search at chunk level — returns top 20 chunks across all articles
+    const { data: chunks, error } = await supabase.rpc('match_chunks', {
+      query_embedding: queryEmbedding,
+      match_threshold: 0.3,
+      match_count: 20,
+    });
+
+    if (error) {
+      console.error('Supabase error:', error);
+      return c.json({ error: 'Search failed', details: error.message }, 500);
+    }
+
+    // Group by article_id — keep the highest-similarity chunk per article
+    const bestByArticle = new Map<string, any>();
+    for (const chunk of (chunks || [])) {
+      const existing = bestByArticle.get(chunk.article_id);
+      if (!existing || chunk.similarity > existing.similarity) {
+        bestByArticle.set(chunk.article_id, chunk);
+      }
+    }
+
+    // Fetch full article metadata for the matched articles
+    const articleIds = Array.from(bestByArticle.keys()).slice(0, limit);
+    const { data: articles, error: articleError } = await supabase
+      .from('articles')
+      .select('id, url, title, author, author_id, published, summary, topics, key_quotes, diataxis_type, tags, mdx_path')
+      .in('id', articleIds);
+
+    if (articleError) {
+      console.error('Article fetch error:', articleError);
+      return c.json({ error: 'Search failed', details: articleError.message }, 500);
+    }
+
+    // Merge chunk data with article metadata, sorted by similarity descending
+    const results: Article[] = (articles || [])
+      .map((article: any) => {
+        const chunk = bestByArticle.get(article.id);
+        const excerpt = (chunk.content as string).replace(/\s+/g, ' ').trim().slice(0, 200);
+        return {
+          id: article.id,
+          url: article.url,
+          title: article.title,
+          author: article.author,
+          author_id: article.author_id,
+          published: article.published,
+          summary: article.summary,
+          topics: article.topics || [],
+          key_quotes: article.key_quotes || [],
+          diataxis_type: article.diataxis_type,
+          tags: article.tags || [],
+          similarity: Math.round(chunk.similarity * 100) / 100,
+          mdx_path: article.mdx_path || generateMdxPath(article.title, article.id),
+          source_type: 'knowledge-base',
+          matching_excerpt: excerpt,
+          fragment: buildFragment(chunk.content),
+        };
+      })
+      .sort((a: Article, b: Article) => (b.similarity ?? 0) - (a.similarity ?? 0));
 
     return c.json({
       query,
