@@ -680,9 +680,17 @@
     const typeClass = isFramework ? 'framework' : (isOffline ? 'offline' : 'knowledge-base');
     const typeLabel = isFramework ? 'Framework' : (isOffline ? 'Offline' : 'KB');
     const title = highlightMatch(result.title, query);
-    const snippet = result.summary ? highlightMatch(result.summary.slice(0, 150), query) : '';
     const path = result.path || '#';
     const matchScore = result.similarity ? Math.round(result.similarity * 100) + '%' : '';
+
+    // Prefer paragraph-level excerpt from chunk search; fall back to article summary
+    let snippetHtml = '';
+    if (result.matching_excerpt) {
+      snippetHtml = `<div class="kw-search-result-snippet">"${escapeHtml(result.matching_excerpt)}"</div>`;
+    } else if (result.summary) {
+      const fallback = highlightMatch(result.summary.slice(0, 150), query);
+      snippetHtml = `<div class="kw-search-result-snippet">${fallback}...</div>`;
+    }
 
     return `
       <a href="${escapeHtml(path)}" class="kw-search-result ${index === activeIndex ? 'active' : ''}" data-index="${index}">
@@ -695,7 +703,7 @@
             <span class="kw-search-result-type ${typeClass}">${typeLabel}</span>
           </div>
           <div class="kw-search-result-meta">${escapeHtml(result.author || '')} ${matchScore ? '· ' + matchScore + ' match' : ''}</div>
-          ${snippet ? `<div class="kw-search-result-snippet">${snippet}...</div>` : ''}
+          ${snippetHtml}
         </div>
       </a>
     `;
@@ -731,7 +739,7 @@
   function navigateToResult(result) {
     const path = result.path || result.url || '#';
 
-    // Save to recent searches
+    // Save plain path to recent searches (no fragment — clean link for revisits)
     const existing = recentSearches.findIndex(s => s.path === path);
     if (existing !== -1) {
       recentSearches.splice(existing, 1);
@@ -746,7 +754,10 @@
 
     closeSearch();
 
-    // Navigate locally (all results should link to local MDX now)
-    window.location.href = path;
+    // Build navigation URL — append Text Fragment when available so the browser
+    // scrolls to and highlights the matching paragraph natively.
+    // Falls back to plain path for offline results and Firefox (no fragment support).
+    const url = result.fragment ? `${path}#:~:text=${result.fragment}` : path;
+    window.location.href = url;
   }
 })();
