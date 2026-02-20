@@ -140,6 +140,10 @@
       "destination": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-a07c05eb",
+      "destination": "/kb/articles/engineering-a07c05eb"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-b51d03eb",
       "destination": "/kb/articles/building-agents-with-the-claude-agent-sdk-b51d03eb"
     },
@@ -252,6 +256,10 @@
       "destination": "/kb/articles/archive-by-year-43b5fbec"
     },
     {
+      "source": "/kb/articles/jesse-chen-63033226",
+      "destination": "/kb/articles/massively-parallel-procrastination-63033226"
+    },
+    {
       "source": "/kb/articles/jesse-chen-70a35cc7",
       "destination": "/kb/articles/crypto-scammers-are-using-my-name-dont-fall-for-it-70a35cc7"
     },
@@ -304,6 +312,10 @@
       "destination": "/kb/articles/building-software-we-love-71f9429a"
     },
     {
+      "source": "/kb/articles/kieran-klaassen-8293fcc7",
+      "destination": "/kb/articles/hi-kieran-klaassen-8293fcc7"
+    },
+    {
       "source": "/kb/articles/kieran-klaassen-938c0c61",
       "destination": "/kb/articles/how-ai-reflects-the-way-my-brain-works-938c0c61"
     },
@@ -340,6 +352,14 @@
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2afb2858",
+      "destination": "/kb/articles/sequoia-ceo-coach-why-its-never-been-easier-to-start-a-compa-2afb2858"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-2f3d6bbc",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-35ea6c02",
       "destination": "/kb/articles/building-ai-product-sense-part-2-35ea6c02"
     },
@@ -348,8 +368,20 @@
       "destination": "/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4239abb4",
+      "destination": "/kb/articles/-community-wisdom-how-pms-are-using-ai-coding-tools-implemen-4239abb4"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4de3be9c",
       "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-5062827b",
+      "destination": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-5062827b"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-52ad310d",
+      "destination": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-5e969a97",
@@ -358,6 +390,14 @@
     {
       "source": "/kb/articles/lenny-rachitsky-72ada27f",
       "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-8c13973d",
+      "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9c26a6a0",
+      "destination": "/kb/articles/head-of-claude-code-what-happens-after-coding-is-solved-bori-9c26a6a0"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-9cbc3674",
@@ -412,6 +452,10 @@
       "destination": "/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb"
     },
     {
+      "source": "/kb/articles/simon-willison-4dd505b8",
+      "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
+    },
+    {
       "source": "/kb/articles/simon-willison-59bcb94a",
       "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
     },
@@ -428,6 +472,10 @@
       "destination": "/kb/articles/an-ai-agent-published-a-hit-piece-on-me-5e365fb0"
     },
     {
+      "source": "/kb/articles/simon-willison-5fd79031",
+      "destination": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031"
+    },
+    {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
     },
@@ -436,8 +484,16 @@
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
     },
     {
+      "source": "/kb/articles/simon-willison-92e1146e",
+      "destination": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e"
+    },
+    {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9bb99b58",
+      "destination": "/kb/articles/a-quote-from-thariq-shihipar-9bb99b58"
     },
     {
       "source": "/kb/articles/simon-willison-9cb198d9",
@@ -456,6 +512,14 @@
       "destination": "/kb/articles/quoting-thomas-ptacek-a4d04dbc"
     },
     {
+      "source": "/kb/articles/simon-willison-a581c385",
+      "destination": "/kb/articles/a-quote-from-martin-fowler-a581c385"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a6d5bdba",
+      "destination": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba"
+    },
+    {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
@@ -472,8 +536,16 @@
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
     {
+      "source": "/kb/articles/simon-willison-cffdf1dd",
+      "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
+    },
+    {
       "source": "/kb/articles/simon-willison-d234ac03",
       "destination": "/kb/articles/introducing-the-codex-app-d234ac03"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d3069d40",
+      "destination": "/kb/articles/gemini-31-pro-d3069d40"
     },
     {
       "source": "/kb/articles/simon-willison-da1b9f87",
@@ -484,12 +556,28 @@
       "destination": "/kb/articles/january-sponsors-only-newsletter-is-out-ea3d9c15"
     },
     {
+      "source": "/kb/articles/simon-willison-f6ef390b",
+      "destination": "/kb/articles/rodney-v040-f6ef390b"
+    },
+    {
       "source": "/kb/articles/simon-willison-f73e70a3",
       "destination": "/kb/articles/introducing-deno-sandbox-f73e70a3"
     },
     {
+      "source": "/kb/articles/simon-willison-f8eb5057",
+      "destination": "/kb/articles/typing-without-having-to-type-f8eb5057"
+    },
+    {
       "source": "/kb/articles/swyx-09329b6c",
       "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-126b8d87",
+      "destination": "/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
+    },
+    {
+      "source": "/kb/articles/swyx-19c500da",
+      "destination": "/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
     },
     {
       "source": "/kb/articles/swyx-20d4d25a",
@@ -500,8 +588,20 @@
       "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
     },
     {
+      "source": "/kb/articles/swyx-44bb07f5",
+      "destination": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5"
+    },
+    {
       "source": "/kb/articles/swyx-50b11fd3",
       "destination": "/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+    },
+    {
+      "source": "/kb/articles/swyx-52976c37",
+      "destination": "/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37"
+    },
+    {
+      "source": "/kb/articles/swyx-6a6656f2",
+      "destination": "/kb/articles/bitter-lessons-in-venture-vs-growth-anthropic-vs-openai-noam-6a6656f2"
     },
     {
       "source": "/kb/articles/swyx-6aaa9578",
@@ -534,6 +634,14 @@
     {
       "source": "/kb/articles/swyx-8b5d31f4",
       "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
+    },
+    {
+      "source": "/kb/articles/swyx-90022aa3",
+      "destination": "/kb/articles/ainews-new-gemini-3-deep-think-anthropic-30b-380b-gpt-53-cod-90022aa3"
+    },
+    {
+      "source": "/kb/articles/swyx-907a164c",
+      "destination": "/kb/articles/ainews-why-openai-should-build-slack-907a164c"
     },
     {
       "source": "/kb/articles/swyx-91fc2890",

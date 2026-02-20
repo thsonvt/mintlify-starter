@@ -1,0 +1,79 @@
+---
+title: 'Rodney v0.4.0'
+description: 'Rodney v0.4.0 introduces several new features for the CLI tool, including improved error handling, new commands for testing, and enhanced support for '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-17'
+sourceUrl: 'https://simonwillison.net/2026/Feb/17/rodney/#atom-everything'
+topics: ["browser-automation","cli-tools","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/17/rodney/#atom-everything) · 17/02/2026
+</Info>
+
+## Summary
+
+Rodney v0.4.0 introduces several new features for the CLI tool, including improved error handling, new commands for testing, and enhanced support for Windows.
+
+## Key Insights
+
+> "Errors now use exit code 2, which means exit code 1 is just for check failures."
+>
+> — Release notes for Rodney v0.4.0
+
+> "New rodney assert command for running JavaScript tests, exit code 1 if they fail."
+>
+> — Feature addition in Rodney v0.4.0
+
+> "I've been using Showboat to create demos of new features."
+>
+> — Author's experience with the tool
+
+## Topics
+
+- [browser-automation](/kb/topics/browser-automation)
+- [cli-tools](/kb/topics/cli-tools)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+17th February 2026 Rodney v0.4.0. My Rodney CLI tool for browser automation attracted quite the flurry of PRs since I announced it last week. Here are the release notes for the just-released v0.4.0: Errors now use exit code 2, which means exit code 1 is just for for check failures. #15 New rodney assert command for running JavaScript tests, exit code 1 if they fail. #19 New directory-scoped sessions with --local/--global flags. #14 New reload --hard and clear-cache commands. #17 New rodney start --show option to make the browser window visible. Thanks, Antonio Cuni. #13 New rodney connect PORT command to debug an already-running Chrome instance. Thanks, Peter Fraenkel. #12 New RODNEY_HOME environment variable to support custom state directories. Thanks, Senko Rašić. #11 New --insecure flag to ignore certificate errors. Thanks, Jakub Zgoliński. #10 Windows support: avoid Setsid on Windows via build-tag helpers. Thanks, adm1neca. #18 Tests now run on windows-latest and macos-latest in addition to Linux. I've been using Showboat to create demos of new features - here those are for rodney assert, rodney reload --hard, rodney exit codes, and rodney start --local. The rodney assert command is pretty neat: you can now Rodney to test a web app through multiple steps in a shell script that looks something like this (adapted from the README): #!/bin/bash set -euo pipefail FAIL=0 check() &#123; if ! "$@"; then echo "FAIL: $*" FAIL=1 fi &#125; rodney start rodney open "https://example.com" rodney waitstable # Assert elements exist check rodney exists "h1" # Assert key elements are visible check rodney visible "h1" check rodney visible "#main-content" # Assert JS expressions check rodney assert 'document.title' 'Example Domain' check rodney assert 'document.querySelectorAll("p").length' '2' # Assert accessibility requirements check rodney ax-find --role navigation rodney stop if [ "$FAIL" -ne 0 ]; then echo "Some checks failed" exit 1 fi echo "All checks passed"
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 59% similar
+  </Card>
+  <Card
+    title="TIL: Running OpenClaw in Docker"
+    icon="newspaper"
+    href="/kb/articles/til-running-openclaw-in-docker-5a8c245b"
+  >
+    Simon Willison · how-to · 44% similar
+  </Card>
+  <Card
+    title="How this visually impaired engineer uses Claude Code to make his life more accessible | Joe McCormick"
+    icon="newspaper"
+    href="/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
+  >
+    Lenny Rachitsky · how-to · 42% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/17/rodney/#atom-everything](https://simonwillison.net/2026/Feb/17/rodney/#atom-everything).
+</Note>

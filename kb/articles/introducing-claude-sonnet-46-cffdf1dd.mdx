@@ -1,0 +1,80 @@
+---
+title: 'Introducing Claude Sonnet 4.6'
+description: 'Claude Sonnet 4.6 has been released, offering competitive performance with a reliable knowledge cutoff and new features, while maintaining affordable '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-17'
+sourceUrl: 'https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything'
+topics: ["ai-models","anthropic","sonnet-4-6","opus-4-5"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything) · 17/02/2026
+</Info>
+
+## Summary
+
+Claude Sonnet 4.6 has been released, offering competitive performance with a reliable knowledge cutoff and new features, while maintaining affordable pricing.
+
+## Key Insights
+
+> "Sonnet 4.6 is out today, and Anthropic claim it offers similar performance to November's Opus 4.5."
+>
+> — Introduction of Claude Sonnet 4.6
+
+> "Sonnet 4.6 has a 'reliable knowledge cutoff' of August 2025."
+>
+> — Comparison of knowledge cutoffs between models
+
+> "Sonnet 4.6 apparently loves top hats!"
+>
+> — Observation from generated SVG output
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [anthropic](/kb/topics/anthropic)
+- [sonnet-4-6](/kb/topics/sonnet-4-6)
+- [opus-4-5](/kb/topics/opus-4-5)
+
+---
+
+## Full Article
+
+17th February 2026 Introducing Claude Sonnet 4.6 (via) Sonnet 4.6 is out today, and Anthropic claim it offers similar performance to November's Opus 4.5 while maintaining the Sonnet pricing of $3/million input and $15/million output tokens (the Opus models are $5/$25). Here's the system card PDF. Sonnet 4.6 has a "reliable knowledge cutoff" of August 2025, compared to Opus 4.6's May 2025 and Haiku 4.5's February 2025. Both Opus and Sonnet default to 200,000 max input tokens but can stretch to 1 million in beta and at a higher cost. I just released llm-anthropic 0.24 with support for both Sonnet 4.6 and Opus 4.6. Claude Code did most of the work - the new models had a fiddly amount of extra details around adaptive thinking and no longer supporting prefixes, as described in Anthropic's migration guide. Here's what I got from: uvx --with llm-anthropic llm 'Generate an SVG of a pelican riding a bicycle' -m claude-sonnet-4.6 The SVG comments include: &lt;!-- Hat (fun accessory) --> I tried a second time and also got a top hat. Sonnet 4.6 apparently loves top hats! For comparison, here's the pelican Opus 4.5 drew me in November: And here's Anthropic's current best pelican, drawn by Opus 4.6 on February 5th: Opus 4.6 produces the best pelican beak/pouch. I do think the top hat from Sonnet 4.6 is a nice touch though.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Claude Sonnet 4.6: clean upgrade of 4.5, mostly better with some caveats"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
+  >
+    Swyx · reference · 76% similar
+  </Card>
+  <Card
+    title="[AINews] Anthropic's Agent Autonomy study"
+    icon="newspaper"
+    href="/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
+  >
+    Swyx · explanation · 60% similar
+  </Card>
+  <Card
+    title="SWE-bench February 2026 leaderboard update"
+    icon="newspaper"
+    href="/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031"
+  >
+    Simon Willison · reference · 53% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything](https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything).
+</Note>
