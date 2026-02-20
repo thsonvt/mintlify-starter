@@ -1,0 +1,90 @@
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm ci || npm install
+
+      - name: Scrape sources
+        working-directory: scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scrape-sources.mjs
+
+      - name: Index chunks
+        working-directory: scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node index-chunks.mjs
+
+      - name: Generate MDX files
+        working-directory: scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: node generate-kb-mdx.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          ARTICLE_COUNT=$(find kb/articles -name "*.mdx" 2>/dev/null | wc -l | tr -d ' ')
+          CHUNK_COUNT=$(grep -c "" scripts/index-chunks.mjs 2>/dev/null || echo "?")
+
+          git commit -m "chore(kb): daily pipeline — ${ARTICLE_COUNT} articles
+
+          [skip ci]"
+
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Daily Content Pipeline Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Scrape sources | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| Index chunks | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| Generate MDX | ✅ |" >> $GITHUB_STEP_SUMMARY
+          echo "| Articles | $(find kb/articles -name '*.mdx' 2>/dev/null | wc -l) |" >> $GITHUB_STEP_SUMMARY

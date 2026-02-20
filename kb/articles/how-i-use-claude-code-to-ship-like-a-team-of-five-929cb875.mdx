@@ -1,0 +1,165 @@
+---
+title: 'How I Use Claude Code to Ship Like a Team of Five'
+description: 'Every piece of code I’ve shipped in the last two months was written by AI. ![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/upl'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-01-26'
+sourceUrl: 'https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa'
+topics: ["Claude Code","Agent-Native Architecture","AI Agents"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa) · 26/01/2026
+</Info>
+
+## Summary
+
+Every piece of code I’ve shipped in the last two months was written by AI. ![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3900/full_page_cover_How_I_Use_Claude_Code_to_Ship_Like_a_Team_of_Five(2).png)
+
+## Key Insights
+
+> "Every piece of code I’ve shipped in the last two months was written by AI."
+>
+> — Highlighting the significant role of AI in coding tasks.
+
+> "Claude Code is the first tool that makes everyday coding genuinely optional."
+>
+> — Emphasizing the transformative impact of Claude Code on software development.
+
+> "Instead of thinking about files and functions—the letters and words of code—you think about the story you’re trying to tell."
+>
+> — Describing the shift from traditional coding to managing AI-driven development.
+
+## Topics
+
+- [Claude Code](/kb/topics/claude-code)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [AI Agents](/kb/topics/ai-agents)
+
+---
+
+## Full Article
+
+```
+# How I Use Claude Code to Ship Like a Team of Five
+```
+
+**Author**: Dan Shipper (Every)  
+**Published**: 2026-01-26  
+**Source**: [https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa](https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa)
+
+---
+
+![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3900/full_page_cover_How_I_Use_Claude_Code_to_Ship_Like_a_Team_of_Five(2).png)
+
+***[Kieran Klaassen](https://every.to/@kieran_1355)****, the general manager of Every’s AI email assistant* ***[Cora](https://cora.computer/)****, coined the term compound engineering—the practice of using AI agents to build software systems that get smarter with every task. While we’re on our Think Week offsite this week, we’re resurfacing his work on this theme, which encapsulates one of the biggest shifts in software development. In this first piece, he reveals how his role as a developer has changed from writing code to managing code-writing agents. Plus: The custom commands and frameworks that enable one person to ship like a team.—[Kate Lee](https://every.to/on-every/kate-lee-joins-every-as-editor-in-chief)*
+
+Every piece of code I’ve shipped in the last two months was written by AI. Not assisted by AI. Written by AI.
+
+```
+[Claude Code](https://every.to/context-window/vibe-check-claude-3-7-sonnet-and-claude-code) opens 100 percent of my pull requests, and I haven’t typed a function in weeks. And I’m shipping faster than ever.
+```
+
+In February, I watched Claude Code burn through $5 in tokens to make a simple change in the code of **[Cora](https://cora.computer/)**, our AI-powered email assistant—something that I could have typed myself for free in 30 seconds. It was like hiring a Michelin-caliber pastry chef to butter toast. I wrote it off as an expensive toy.
+
+Now that it’s included with a Claude subscription, it’s turned me from a programmer into an engineering manager overnight, running a team of AI developers who never sleep, never complain about my nitpicks, and occasionally outsmart me.
+
+Claude Code is the first tool that makes everyday coding genuinely optional. The mundane act of typing out implementation details is becoming as obsolete as manual typesetting. What remains valuable is having a perspective on system architecture, taste, product thinking—the uniquely human skills that turn good software into great products. Claude Code makes this shift practical: You define the outcome; it handles the implementation.
+
+The shift from doing the work to directing it changes how we make software. Instead of planning implementation details, we’re designing product specifications and code outcomes. Clear communication and system thinking matter more than memorizing syntax or debugging tricks. Features that took a week to code ship in an afternoon of thoughtful delegation. This is a different way of building software entirely.
+
+## **Multi-step debugging like a senior engineer**
+
+I understood what’s special about Claude Code when I encountered the kind of problem that would make most developers cry.
+
+Our solid queue jobs—the background workers that clean up data and handle tasks while the app is running—had stopped doing their job: The queue would grow out of control and Cora would crash. But everything looked perfect: The code was correct, the logs showed nothing wrong. Even Claude Code was initially stumped.
+
+At some point I told Claude Code: “If you cannot figure this out, probably it’s related to something on production, ” the live environment where users interact with our app, not our development setup where we test changes.
+
+I asked Claude Code to look into the source code of the Ruby gem, a third-party code library we were using as part of the Cora app. It methodically walked through thousands of lines of someone else’s code, step by step, and discovered something we’d have never found otherwise: The jobs were trying to line up under a different queue name in production, like packages being sent to the wrong warehouse. I might have been able to find it myself, after hours of digging through unfamiliar code. But Claude Code turned what could have been a daunting archaeological expedition into a guided tour, and we worked through the problem together. The AI did the research and dug through the source code, and we jointly came to the conclusion.
+
+As it turned out, there was no bug in our code. It was a mismatch between our development setup and the live website. But being able to work through that systematically was a breakthrough.
+
+## **From programmer to orchestra conductor**
+
+Claude Code’s superpower is parallel processing—the ability to work on multiple tasks simultaneously without getting confused or mixing up contexts. My monitor looks like mission control: multiple Claude Code tabs, each working on different features through separate git worktrees, meaning I can have Claude modify five different versions of our codebase simultaneously and get clean, review-ready code.
+
+```
+[![Running four parallel Claude Code agents in Warp, an AI-enabled terminal, doing different work at the same time. Source: The author.](https://d24ovhgu8s7341.cloudfront.net/uploads/editor/posts/3704/optimized_29541227-ae71-4d86-a85e-cc3f446ee55a.jpg)](https://d24ovhgu8s7341.cloudfront.net/uploads/editor/posts/3704/optimized_29541227-ae71-4d86-a85e-cc3f446ee55a.jpg)
+```
+
+Running four parallel Claude Code agents in Warp, an AI-enabled terminal, doing different work at the same time. Source: The author.
+
+In order to function like this successfully, you have to unlearn how you code. You need to think more like an engineering manager or tech lead rather than an individual contributor. The mental shift is profound. Instead of thinking about files and functions—the letters and words of code— you think about the story you’re trying to tell, the feature specifications you need to give it, and the outcomes you’re looking for. You want to remove yourself as a micromanager of your own code and adopt a stance of trusting your team—with proper checks and balances like code reviews and tests, of course.
+
+This shift matters most when you’re running on fumes. “My brain is dead but this is the issue” is a prompt I’ve used with Claude Code after a long day, and it works. Every small decision (“should this variable be called ‘user’ or ‘customer’?”) drains mental energy. By day’s end, you’re making important architectural decisions on 5 percent battery.
+
+Claude Code lets you offload the implementation details when you need your remaining focus for the hard problems, or when you just need to step away and let your subconscious work.
+
+## **The friction factor: Why I use Claude Code every day**
+
+Plenty of AI tools write code. Claude Code is unique because of what it doesn’t make you do.
+
+Compare Claude Code to the alternatives:
+
+---
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Every piece of code I’ve shipped in the last two months was written by AI.
+
+*Context: Highlighting the significant role of AI in coding tasks.*
+
+> Claude Code is the first tool that makes everyday coding genuinely optional.
+
+*Context: Emphasizing the transformative impact of Claude Code on software development.*
+
+> Instead of thinking about files and functions—the letters and words of code—you think about the story you’re trying to tell.
+
+*Context: Describing the shift from traditional coding to managing AI-driven development.*
+
+## Related Topics
+
+- [[topics/claude-code]]
+- [[topics/agent-native-architecture]]
+- [[topics/ai-agents]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 86% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+  >
+    Lenny Rachitsky · how-to · 84% similar
+  </Card>
+  <Card
+    title="I Stopped Reading Code. My Code Reviews Got Better."
+    icon="newspaper"
+    href="/kb/articles/i-stopped-reading-code-my-code-reviews-got-better-2e6d3626"
+  >
+    Dan Shipper (Every) · explanation · 82% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa](https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five-6f23f136-52ab-455f-a997-101c071613aa).
+</Note>

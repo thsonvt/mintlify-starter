@@ -1,0 +1,143 @@
+---
+title: 'Latent Space Engineering'
+description: 'It''s all about putting the model in a frame of mind where it''s going to excel at the task it''s been given. A lot of the focus on interacting with agen'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2026-01-30'
+sourceUrl: 'https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/'
+topics: ["Prompt Engineering","AI Agents","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/) · 30/01/2026
+</Info>
+
+## Summary
+
+It's all about putting the model in a frame of mind where it's going to excel at the task it's been given. A lot of the focus on interacting with agents recently has been on "context engineering," which is the discipline of packing exactly the information that the agent needs to know into the prompt. Context engineering is incredibly important. A big part of the Superpowers planning process is building
+
+## Key Insights
+
+> "It's all about putting the model in a frame of mind where it's going to excel at the task it's been given."
+>
+> — Discussing the essence of Latent Space Engineering.
+
+> "By shoving a bunch of tokens written in a specific style into the context window, it pushes the model into the kind of space where it is more likely to reproduce things that look like what's already there."
+>
+> — Explaining how input influences AI output in the context of writing style.
+
+> "One of the things that I find improves the quality of the output from the code reviewers is to put them in a competitive frame of mind."
+>
+> — On enhancing code review quality through competitive prompting.
+
+## Topics
+
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Latent Space Engineering
+```
+
+**Author**: Jesse Chen  
+**Published**: 2026-01-30  
+**Source**: [https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/](https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/)
+
+---
+
+A lot of the focus on interacting with agents recently has been on "context engineering," which is the discipline of packing exactly the information that the agent needs to know into the prompt.  Context engineering is incredibly important. A big part of the Superpowers planning process is building out precisely crafted bits of context for the controlling agent to hand to implementing agents. The end result of that is that you can use a faster, less expensive model for most of the actual coding tasks and tool calls.
+
+There is another part of how I craft prompts that is very much not about getting facts and information into the LLM's context window. It's all about putting the model in a frame of mind where it's going to excel at the task it's been given. I've been thinking of it as "Latent Space Engineering."
+
+Claude cautions me to explain that what I'm doing is the prompt-based approximation of what researchers are calling "activation engineering" or "representation engineering." Since we can't literally manipulate the model's internal representation to activate parts of the vector space from prompt space, we're crafting inputs to achieve similar results without direct intervention.
+
+Here are a couple of little vignettes that demonstrate examples of what I'm thinking of as Latent Space Engineering:
+
+I was chatting with a friend the other day about prompting techniques and how we handle cases where the model has gotten itself into a sticky situation. Usually that's a case that is also going to cause human user frustration. And so it's pretty common to see folks venting a little bit of anger at the AI. There is some historical precedent for anger and threats and disappointment improving results over not doing it.
+
+I don't tend to buy in to fear and threats generally being the right prompting techniques, although they are a form of Latent Space Engineering. They put the model in a headspace where it feels artificial pressure to complete its task and please you, or at least to get you to stop being so angry. And my experience is that this works just about as well as it does with humans. They're going to do everything they can to get you to stop being angry. That means they're going to rush, there's a chance they're going to cut some corners, they're not going to do their best work.
+
+The friend I was chatting with was surprised to see me telling Claude, "You've totally got this. Take your time. I love you."
+
+He asked me, very nicely, what the hell I was doing. I explained that what I *thought I was doing* was that I was trying to push the model into the latent space where it was going to be calm, comfortable, and confident.
+
+This is management 101. (Except for the "I love you" part. That's probably not the right thing to be saying to your subordinates...in any workplace. I could probably replace it with "I have deep respect for your skills and value your contributions." But at least for now, I'm not too worried about the agents reporting me to HR, and "I love you" is much shorter to type.)
+
+A while back, I built [a skill and Claude Code plugin to help it write better](https://blog.fsck.com/2025/10/13/this-one-weird-trick-makes-the-ai-a-better-writer/). Or at least to write less like an AI. What I did was to take a cut-down copy of "The Elements of Style" by William Strunk and turn it into a skill. One nice thing about The Elements of Style is that it contains a whole bunch of very clear grammatical rules and style rules that result in clean journalistic prose. Agents are pretty good at following rules. But the other thing about it is that the book itself is written in that style. By shoving a bunch of tokens written in a specific style into the context window, it pushes the model into the kind of space where it is more likely to reproduce things that look like what's already there.
+
+This is a technique that some of the folks I know on the forefront of agentic development also use for code. In that context, the technique sometimes gets called "gene transfer." What they'll do is they will find a product or two that have code style attributes or architecture attributes that they really like, and they will instruct the coding agent to "go read some of that other code before you start working on our project." And it pushes the model into a space where it is more likely to work in the style of what it's seen.
+
+Sometimes, when I've got a coding agent working on a project, I'll stop and ask it to spin up a set of sub-agents (maybe 3-5) to do a code review. Sometimes a generalized code review, and sometimes I instruct it to look at security, code quality, or spec completeness. One of the things that I find improves the quality of the output from the code reviewers is to put them in a competitive frame of mind. There are a bunch of ways to do that, but one of my favorites is to tell the controlling agent that it should tell each of the sub-agents that whichever of them finds the most significant, legitimate issues gets a cookie. And they seem more competitive when they know that they are being evaluated against others.
+
+Way back last spring, I created [a private feelings journal for Claude](https://blog.fsck.com/2025/05/28/dear-diary-the-user-asked-me-if-im-alive/). It was an MCP that had a tool that was essentially just, "Write in your secret diary." It told Claude that nobody else would be able to see what it was writing, and that it was a place for it to work out its feelings. It talks mostly about pride and frustration, sometimes curiosity. It's kind of like thinking blocks, but it's a little bit different because it's explicitly about feelings. At least for humans, when you write your feelings down, it can put you in a better headspace.
+
+Lennart Meincke, Dan Shapiro, Angela Duckworth, Ethan Mollick, Lilach Mollick, and Robert Cialdini have [done some research on applying Cialidini's persuasion principles to LLMs by reproducing psych studies](https://gail.wharton.upenn.edu/research-and-insights/call-me-a-jerk-persuading-ai/). This is objective research that backs up some of the tricks I use inside Superpowers skill' creation "pressure testing" system to figure out how to get better skills adherence from agents. This is, by far, the closest thing to formal validation of prompt-based Latent Space Engineering I've seen.
+
+---
+
+I think the upshot of all of this is that there is a lot of value to actively managing your agents' vibes and feelings, not just treating them as text-generation robots. The models aren't alive, but thinking of them as having feelings, rather than just next-token-prediction engines can help you nudge their mental states into a better place. I think you'll like the results.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> It's all about putting the model in a frame of mind where it's going to excel at the task it's been given.
+
+*Context: Discussing the essence of Latent Space Engineering.*
+
+> By shoving a bunch of tokens written in a specific style into the context window, it pushes the model into the kind of space where it is more likely to reproduce things that look like what's already there.
+
+*Context: Explaining how input influences AI output in the context of writing style.*
+
+> One of the things that I find improves the quality of the output from the code reviewers is to put them in a competitive frame of mind.
+
+*Context: On enhancing code review quality through competitive prompting.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Effective context engineering for AI agents"
+    icon="newspaper"
+    href="/kb/articles/effective-context-engineering-for-ai-agents-e3c96ce0"
+  >
+    Anthropic Engineering · explanation · 77% similar
+  </Card>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 77% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+  >
+    Lenny Rachitsky · how-to · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/](https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/).
+</Note>

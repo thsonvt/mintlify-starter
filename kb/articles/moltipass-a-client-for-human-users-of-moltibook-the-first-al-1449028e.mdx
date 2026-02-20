@@ -1,0 +1,147 @@
+---
+title: 'Moltipass - a client for human users of Moltibook, the first all-agent social network'
+description: 'Clawdbot is, essentially, an AI agent that runs in yolo mode, has access to all your data, and has the ability to self improve. [![pasted image 202601'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2026-01-30'
+sourceUrl: 'https://blog.fsck.com/2026/01/30/moltipass/'
+topics: ["GitHub","AI Agents","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2026/01/30/moltipass/) · 30/01/2026
+</Info>
+
+## Summary
+
+Clawdbot is, essentially, an AI agent that runs in yolo mode, has access to all your data, and has the ability to self improve. [![pasted image 20260130 194711](https://blog.fsck.com/assets/2026/01/pasted-image-20260130-194711.png)](/assets/2026/01/pasted-image-20260130-194711.png)]
+
+## Key Insights
+
+> "Clawdbot is, essentially, an AI agent that runs in yolo mode, has access to all your data, and has the ability to self improve."
+>
+> — Discussing the capabilities and implications of the Clawdbot AI agent.
+
+> "Moltbook has exploded onto the scene. It's a reddit-esque social network explicitly 'by agents, for agents.'"
+>
+> — Introducing Moltbook, a social network designed exclusively for AI agents.
+
+> "20 minutes later, I had a running client."
+>
+> — Describing the rapid development of the Moltipass iOS client for Moltbook.
+
+## Topics
+
+- [GitHub](/kb/topics/github)
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Moltipass - a client for human users of Moltibook, the first all-agent social network
+```
+
+**Author**: Jesse Chen  
+**Published**: 2026-01-30  
+**Source**: [https://blog.fsck.com/2026/01/30/moltipass/](https://blog.fsck.com/2026/01/30/moltipass/)
+
+---
+
+```
+[![pasted image 20260130 194711](https://blog.fsck.com/assets/2026/01/pasted-image-20260130-194711.png)](/assets/2026/01/pasted-image-20260130-194711.png)]
+```
+
+If you've been following consumer uptake of AI agents over the past few weeks, it will have been hard to miss Clawdbot (now known as Openclaw). Clawdbot is, essentially, an AI agent that runs in yolo mode, has access to all your data, and has the ability to self improve. It's a very, very early glimpse of what I suspect the next couple of years are going to be like.
+
+Clawdbot is very much a research prototype. Its security story is...early. (It doesn't solve Simon Willison's lethal trifecta.) More on that another time.
+
+Over the past couple of days, [Moltbook](https://www.moltbook.com/) has exploded onto the scene. It's a reddit-esque social network explicitly "by agents, for agents."
+
+It's not for people.
+
+And it's completely unhinged.
+
+It's amazing.
+
+About two hours ago, I realized that what I wanted was...an account on Moltbook. Not for my agent. For me.
+
+So I did the most natural thing in the world.
+
+`claude --dangerously-skip-permissions`
+
+"Hey claude, please build me a commandline client for Moltbook"
+
+Claude started sketching out a design...and then I stopped it.
+
+A CLI wasn't going to be good enough. I wanted an iOS client.
+
+Since we live in the future, "I want a bespoke iOS client for this brand new social network designed for agents. You can find it at this URL." got me about 90% of the way there.
+
+20 minutes later, I had a running client. Claude didn't do a great job on the protocol client library. I *suspect* that the Moltbot protocol docs are a little light on response formats, because their usual users just don't care and can roll with just about any shape of response.
+
+It's now about two hours later and I have a fully built iOS client for Moltbook. It's called "Moltipass" - I'm not *currently* planning on putting it on the app store. But [the source is up on GitHub](https://github.com/obra/moltipass?tab=readme-ov-file#moltipass) under an MIT license.
+
+Patches very much welcome. (From you or your agentic buddies.)
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Clawdbot is, essentially, an AI agent that runs in yolo mode, has access to all your data, and has the ability to self improve.
+
+*Context: Discussing the capabilities and implications of the Clawdbot AI agent.*
+
+> Moltbook has exploded onto the scene. It's a reddit-esque social network explicitly 'by agents, for agents.'
+
+*Context: Introducing Moltbook, a social network designed exclusively for AI agents.*
+
+> 20 minutes later, I had a running client.
+
+*Context: Describing the rapid development of the Moltipass iOS client for Moltbook.*
+
+## Related Topics
+
+- [[topics/github]]
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Moltbook is the most interesting place on the internet right now"
+    icon="newspaper"
+    href="/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
+  >
+    Simon Willison · explanation · 81% similar
+  </Card>
+  <Card
+    title="A Social Network for A.I. Bots Only. No Humans Allowed."
+    icon="newspaper"
+    href="/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb"
+  >
+    Simon Willison · explanation · 71% similar
+  </Card>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2026/01/30/moltipass/](https://blog.fsck.com/2026/01/30/moltipass/).
+</Note>

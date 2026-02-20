@@ -1,0 +1,135 @@
+---
+title: 'Introducing the Codex app'
+description: 'Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled. Introducing the Codex app OpenAI just released a new macOS app for'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-02'
+sourceUrl: 'https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything'
+topics: ["AI Agents","Agent-Native Architecture","OpenAI API"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything) · 02/02/2026
+</Info>
+
+## Summary
+
+Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled. Introducing the Codex app OpenAI just released a new macOS app for their Codex coding agent. I've had a few days of preview access - it's a solid app that provides a nice UI over the capabilities of the Codex CLI agent and adds some interesting new features, most notably first-class support for Skil
+
+## Key Insights
+
+> "Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled."
+>
+> — Highlighting the rapid adoption and usage growth of Codex.
+
+> "Codex is built on a simple premise: everything is controlled by code."
+>
+> — Explaining the foundational philosophy behind Codex.
+
+> "it's taking us some time to get really solid sandboxing working on Windows."
+>
+> — Discussing the technical challenges of bringing Codex to Windows.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [OpenAI API](/kb/topics/openai-api)
+
+---
+
+## Full Article
+
+```
+# Introducing the Codex app
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-02  
+**Source**: [https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything](https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything)
+
+---
+
+&lt;p>&lt;strong>&lt;a href="https://openai.com/index/introducing-the-codex-app/">Introducing the Codex app&lt;/a>&lt;/strong>&lt;/p>
+OpenAI just released a new macOS app for their Codex coding agent. I've had a few days of preview access - it's a solid app that provides a nice UI over the capabilities of the Codex CLI agent and adds some interesting new features, most notably first-class support for &lt;a href="https://developers.openai.com/codex/skills">Skills&lt;/a>, and &lt;a href="https://developers.openai.com/codex/app/automations">Automations&lt;/a> for running scheduled tasks.&lt;/p>
+&lt;p>&lt;img alt="Screenshot of a macOS desktop application with a dark sidebar and light main content area. Left sidebar shows navigation items &quot;New thread&quot;, &quot;Automations&quot;, &quot;Skills&quot;, and a &quot;Threads&quot; section containing two project folders: &quot;local-codex-scratch&quot; with tasks &quot;Reply to greeting task 2h&quot; and &quot;List Codex.app contents 3h&quot;, and &quot;shot-scraper&quot; with tasks &quot;Validate tests on dependency... 3h&quot;, &quot;Document shot-scraper CLI usage 18h&quot; (highlighted), and &quot;Run this: uv run pytest -x 1d&quot;. Bottom left shows &quot;Personal&quot;. Top bar displays &quot;Document shot-scraper CLI usage shot-scraper&quot; with &quot;Open&quot; and &quot;Commit&quot; dropdown buttons. Main content shows a conversation: user message &quot;Build a skill describing how to use the shot-scraper CLI tool&quot; followed by assistant responses: &quot;I'll use the skill-creator skill, scan the repo for existing shot-scraper docs/commands, then draft a concise skill in this workspace and sanity-check it.&quot; then &quot;I've confirmed the skill-creator scripts exist. Next I'll inspect the CLI entrypoint and docs, then scaffold a skill under skills/ in this repo.&quot; then &quot;I've scaffolded skills/shot-scraper-cli/. I'll now replace the template SKILL.md with a task-focused skill and add a compact CLI reference under references/.&quot; then &quot;I'll run the skill packager/validator next to ensure the new skill structure is valid.&quot; then &quot;Done — I created and packaged the skill. Key outputs: • Skill definition: SKILL.md • Compact reference: cli-reference.md • Packaged skill: shot-scraper-cli.skill&quot;. Bottom shows input field with placeholder &quot;Ask for follow-up changes&quot;, &quot;+ Custom Medium&quot; dropdown, and &quot;Local&quot; and &quot;main&quot; branch indicators." src="https://static.simonwillison.net/static/2026/codex-app.jpg" />&lt;/p>
+&lt;p>The app is built with Electron and Node.js. Automations track their state in a SQLite database - here's what that looks like if you explore it with &lt;code>uvx datasette ~/.codex/sqlite/codex-dev.db&lt;/code>:&lt;/p>
+&lt;p>&lt;img alt="Database schema documentation on light gray background showing three tables: &quot;automation_runs&quot; (teal underlined link) with italic columns &quot;thread_id, automation_id, status, read_at, thread_title, source_cwd, inbox_title, inbox_summary, created_at, updated_at, archived_user_message, archived_assistant_message, archived_reason&quot; and &quot;1 row&quot;; &quot;automations&quot; (teal underlined link) with italic columns &quot;id, name, prompt, status, next_run_at, last_run_at, cwds, rrule, created_at, updated_at&quot; and &quot;1 row&quot;; &quot;inbox_items&quot; (teal underlined link) with italic columns &quot;id, title, description, thread_id, read_at, created_at&quot; and &quot;0 rows&quot;." src="https://static.simonwillison.net/static/2026/codex-dev-sqlite.jpg" />&lt;/p>
+&lt;p>Here’s an interactive copy of that database &lt;a href="https://lite.datasette.io/?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsimonw%2F274c4ecfaf959890011810e6881864fe%2Fraw%2F51fdf25c9426b76e9693ccc0d9254f64ceeef819%2Fcodex-dev.db#/codex-dev">in Datasette Lite&lt;/a>.&lt;/p>
+&lt;p>The announcement gives us a hint at some usage numbers for Codex overall - the holiday spike is notable:&lt;/p>
+&lt;blockquote>
+&lt;p>Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled, and in the past month, more than a million developers have used Codex.&lt;/p>
+&lt;/blockquote>
+&lt;p>Automations are currently restricted in that they can only run when your laptop is powered on. OpenAI promise that cloud-based automations are coming soon, which will resolve this limitation.&lt;/p>
+&lt;p>They chose Electron so they could target other operating systems in the future, with Windows “&lt;a href="https://news.ycombinator.com/item?id=46859054#46859673">coming very soon&lt;/a>”. OpenAI’s Alexander Embiricos noted &lt;a href="https://news.ycombinator.com/item?id=46859054#46859693">on the Hacker News thread&lt;/a> that:&lt;/p>
+&lt;blockquote>
+&lt;p>it's taking us some time to get really solid sandboxing working on Windows, where there are fewer OS-level primitives for it.&lt;/p>
+&lt;/blockquote>
+&lt;p>Like Claude Code, Codex is really a general agent harness disguised as a tool for programmers. OpenAI acknowledge that here:&lt;/p>
+&lt;blockquote>
+&lt;p>Codex is built on a simple premise: everything is controlled by code. The better an agent is at reasoning about and producing code, the more capable it becomes across all forms of technical and knowledge work. [...] We’ve focused on making Codex the best coding agent, which has also laid the foundation for it to become a strong agent for a broad range of knowledge work tasks that extend beyond writing code.&lt;/p>
+&lt;/blockquote>
+&lt;p>Claude Code had to &lt;a href="https://simonwillison.net/2026/Jan/12/claude-cowork/">rebrand to Cowork&lt;/a> to better cover the general knowledge work case. OpenAI can probably get away with keeping the Codex name for both.&lt;/p>
+&lt;p>OpenAI have made Codex available to free and &lt;a href="https://simonwillison.net/2026/Jan/16/chatgpt-ads/">Go&lt;/a> plans for "a limited time" (update: Sam Altman &lt;a href="https://x.com/sama/status/2018437537103269909">says two months&lt;/a>) during which they are also doubling the rate limits for paying users.
+
+    &lt;p>Tags: &lt;a href="https://simonwillison.net/tags/sandboxing">sandboxing&lt;/a>, &lt;a href="https://simonwillison.net/tags/sqlite">sqlite&lt;/a>, &lt;a href="https://simonwillison.net/tags/ai">ai&lt;/a>, &lt;a href="https://simonwillison.net/tags/datasette">datasette&lt;/a>, &lt;a href="https://simonwillison.net/tags/electron">electron&lt;/a>, &lt;a href="https://simonwillison.net/tags/openai">openai&lt;/a>, &lt;a href="https://simonwillison.net/tags/generative-ai">generative-ai&lt;/a>, &lt;a href="https://simonwillison.net/tags/llms">llms&lt;/a>, &lt;a href="https://simonwillison.net/tags/ai-agents">ai-agents&lt;/a>, &lt;a href="https://simonwillison.net/tags/coding-agents">coding-agents&lt;/a>, &lt;a href="https://simonwillison.net/tags/codex-cli">codex-cli&lt;/a>&lt;/p>
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled.
+
+*Context: Highlighting the rapid adoption and usage growth of Codex.*
+
+> Codex is built on a simple premise: everything is controlled by code.
+
+*Context: Explaining the foundational philosophy behind Codex.*
+
+> it's taking us some time to get really solid sandboxing working on Windows.
+
+*Context: Discussing the technical challenges of bringing Codex to Windows.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+- [[topics/openai-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="OpenAI Gave Us a Glimpse Into Their AI Coding Playbook"
+    icon="newspaper"
+    href="/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
+  >
+    Dan Shipper (Every) · explanation · 79% similar
+  </Card>
+  <Card
+    title="Introducing GPT‑5.3‑Codex‑Spark"
+    icon="newspaper"
+    href="/kb/articles/introducing-gpt53codexspark-a1ad656f"
+  >
+    Simon Willison · explanation · 77% similar
+  </Card>
+  <Card
+    title="Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days"
+    icon="newspaper"
+    href="/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
+  >
+    Lenny Rachitsky · explanation · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything](https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything).
+</Note>

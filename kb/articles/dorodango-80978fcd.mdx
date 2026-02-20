@@ -1,0 +1,160 @@
+---
+title: 'Dorodango'
+description: 'I''ve realized that I have two primary ways that I''m building software with AI. I''ve realized that I have two primary ways that I''m building software w'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2026-02-10'
+sourceUrl: 'https://blog.fsck.com/2026/02/10/dorodango/'
+topics: ["Prompt Engineering","AI Agents","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2026/02/10/dorodango/) · 10/02/2026
+</Info>
+
+## Summary
+
+I've realized that I have two primary ways that I'm building software with AI. I've realized that I have two primary ways that I'm building software with AI.
+
+## Key Insights
+
+> "I've realized that I have two primary ways that I'm building software with AI."
+>
+> — Introduction to the two main approaches the author uses in AI-driven software development.
+
+> "That's what often gets called 'fast waterfall' style development."
+>
+> — Describing a development process heavily reliant on upfront design and AI implementation.
+
+> "I find myself engaging in software Dorodango pretty much every day."
+>
+> — Comparing the process of refining software with AI to the art of polishing mud balls.
+
+## Topics
+
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Dorodango
+```
+
+**Author**: Jesse Chen  
+**Published**: 2026-02-10  
+**Source**: [https://blog.fsck.com/2026/02/10/dorodango/](https://blog.fsck.com/2026/02/10/dorodango/)
+
+---
+
+I've realized that I have two primary ways that I'm building software with AI.
+
+The first is the one that Superpowers excels at. I'll spend a significant amount of time up front thinking through exactly what I want to build. Usually this is in conversation with the brainstorming skill. When I say "a significant amount of time," sometimes that's five minutes for a tiny little thing. And sometimes it's four-plus hours over the course of a day as we rigorously explore a problem space and what the solution looks like. The output of that is often an initial spec document that is many thousands of lines long and covers all sorts of details about the implementation.
+
+From there, I can ask Claude or Codex to write out an implementation plan. That implementation plan might run for anywhere between a few minutes and 7-8 hours. The end result is, ideally, a fully baked, usable implementation.
+
+When it's done, I ask it to prove to me that the implementation works. Typically that's by asking it to run through end-to-end test scenarios and to take screenshots, transcripts, or screen recordings of the work and to present them to me in a directory.
+
+Doing this with an orchestrator I've been working on last week, I woke up to find Codex telling me that it had successfully completed the project with a pointer to where on disk I could find the movie of all the screenshots it had taken. It was named something like "e2e-test-full-run-33.mp4"
+
+..."run 33"
+
+I poked around a little bit. And indeed, there were artifacts from run 1 through run 32. Run 1 didn't even start. But as the agent worked through problems one-by-one, it managed to get further and further each time. And by run 33, it worked. Pretty cool.
+
+Sometimes things don't go as planned and the product that comes out the other end is really not what I wanted or needed. At that point, the right thing to do is usually to start over from the original specs (and possibly the wrong code) and restart the spec and design process. Then implement again from scratch. There are absolutely projects that I've run through this process five or six times as I figured out what I actually wanted or the right way to explain what I was going for.
+
+That's what often gets called 'fast waterfall' style development. Big up-front design and then a complete implementation with...no intermediate steps. Agents have made this process viable, sort of.
+
+And then there's the other modality. This is the one that Superpowers doesn't (currently) provide a ton of process support for.
+
+Often I'll have a feature request for a working product. Usually this is something small, like "oh, the panel should be on the left" or "let's change streaming mode output so that instead of chunking by token, it chunks by sentence."
+
+This is typically something that's a relatively small change that the agent can probably one-shot from a one or two-line prompt.
+
+The way I do it is usually by having the product open, looking at it, asking Claude to make the change, and looking at it again.
+
+It's basically a "polishing" workflow. Ideally, everything I'm changing should have been part of the original spec, but the changes are usually too small to make it worthwhile to run through a rebuild or a "serious" change cycle.
+
+As I was thinking about how to explain this flow, I was reminded of the Japanese art of Dorodango.
+
+Dorodango is, essentially, the process of polishing a ball of dirt into a beautiful, high-gloss sphere. The result is genuinely amazing.
+
+If you look at [the Wikipedia article](https://en.wikipedia.org/wiki/Dorodango), it starts with this disambiguation statement:
+
+> "Mud ball" redirects here. For the computer code style, see [Big Ball of Mud](https://en.wikipedia.org/wiki/Spaghetti_code#Big_Ball_of_Mud)
+
+And there's something beautiful and...right about that.
+
+There's definitely a perception I've heard from folks who haven't spent a lot of time with the tools that the output of coding agents is always going to be a classical big ball of mud -- a horrible monstrosity with no clear architecture...just a jumbled mess of code that kind of somehow does the thing.
+
+It's not *true*, but that's what many folks think. So why not lean into it?
+
+I find myself engaging in software Dorodango pretty much every day.
+
+```
+[![pasted image 20260210 141022](https://blog.fsck.com/assets/2026/02/pasted-image-20260210-141022.png)](/assets/2026/02/pasted-image-20260210-141022.png)
+```
+*[Photo by Asturio Cantabrio - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=94863887]*
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> I've realized that I have two primary ways that I'm building software with AI.
+
+*Context: Introduction to the two main approaches the author uses in AI-driven software development.*
+
+> That's what often gets called 'fast waterfall' style development.
+
+*Context: Describing a development process heavily reliant on upfront design and AI implementation.*
+
+> I find myself engaging in software Dorodango pretty much every day.
+
+*Context: Comparing the process of refining software with AI to the art of polishing mud balls.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 77% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 75% similar
+  </Card>
+  <Card
+    title="Latent Space Engineering"
+    icon="newspaper"
+    href="/kb/articles/latent-space-engineering-e9ce28f5"
+  >
+    Jesse Chen · explanation · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2026/02/10/dorodango/](https://blog.fsck.com/2026/02/10/dorodango/).
+</Note>

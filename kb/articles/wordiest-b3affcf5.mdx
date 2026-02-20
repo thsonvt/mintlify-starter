@@ -1,0 +1,190 @@
+---
+title: 'Wordiest'
+description: 'This whole time, I have written zero lines of code. I have read zero lines of code. My all-time favorite word game is called ''Wordiest''. It was an ear'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2025-12-20'
+sourceUrl: 'https://blog.fsck.com/2025/12/20/wordiest/'
+topics: ["OpenAI API","Prompt Engineering","Mobile Development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2025/12/20/wordiest/) · 20/12/2025
+</Info>
+
+## Summary
+
+This whole time, I have written zero lines of code. I have read zero lines of code. My all-time favorite word game is called 'Wordiest'. It was an earlyish Android game with a pretty simple mechanic: You get 14 Scrabble-style tiles and need to make the two highest-scoring words you can. Wordiest had a really nice visualization showing how you scored relative to 100 other previous p
+
+## Key Insights
+
+> "This whole time, I have written zero lines of code. I have read zero lines of code."
+>
+> — Describing the process of using OpenAI's tools to recreate Wordiest without directly coding.
+
+> "My intuition for what's easy and what's hard is completely shot."
+>
+> — Reflecting on the unexpected challenges and ease of using AI for development tasks.
+
+> "He, very graciously, gave me his blessing to release this new version of Wordiest."
+>
+> — Discussing obtaining permission from the original Wordiest developer to release the recreated version.
+
+## Topics
+
+- [OpenAI API](/kb/topics/openai-api)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Mobile Development](/kb/topics/mobile-development)
+
+---
+
+## Full Article
+
+```
+# Wordiest
+```
+
+**Author**: Jesse Chen  
+**Published**: 2025-12-20  
+**Source**: [https://blog.fsck.com/2025/12/20/wordiest/](https://blog.fsck.com/2025/12/20/wordiest/)
+
+---
+
+My all-time favorite word game is called 'Wordiest'. It was an earlyish Android game with a pretty simple mechanic: You get 14 Scrabble-style tiles and need to make the two highest-scoring words you can. Wordiest had a really nice visualization showing how you scored relative to 100 other previous players. It was implemented with a cached word and score database that worked entirely offline. It was *ideal* for long plane flights.
+
+A number of years ago, I switched my primary phone to iOS. Wordiest was one of the few things I missed from Android. Somewhere along the way, the developer, "Concreterose" shut down. Google pulled Wordiest from the play store. And that was that.
+
+Sometime early this year, I decided to build a new version of Wordiest as a mobile-first web app. I called it [Anagrammatic](https://anagrammatic.org). I spent a couple weeks on it. It was ok. Getting the drag and drop right was a pain in the neck. But it basically worked. It wasn't as fun as Wordiest and didn't have the cool after-game visualization of how you did relative to all those other players.
+
+Late last week, OpenAI shipped ChatGPT 5.2. They claimed that it was really good at code. Looking around for tasks to throw at it, I decided it was time to try a "too-hard" task.
+
+Friday night, I downloaded a copy of the packaged Android APK for the last release of Wordiest and handed it to Codex + ChatGPT 5.2:
+
+```
+[![pasted image 20251218 152252](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152252.png)](/assets/2025/12/pasted-image-20251218-152252.png)
+```
+
+Once I gave it the reverse engineering tools, it got to work. After about half an hour, I had a playable version of the core game.
+
+The funniest moment of the whole experience was just after I told it that I wanted 100% parity with the Android implementation. It stopped me and asked if we really wanted to add ads and an in-app purchase to remove those ads. I gave it permission to skip that.
+
+```
+[![pasted image 20251218 153124](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-153124.png)](/assets/2025/12/pasted-image-20251218-153124.png)
+```
+
+A few more hours of Codex grinding and occasionally checking in with me and...we were basically done.
+
+```
+Android:
+
+[![pasted image 20251218 152704](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152704.png)](/assets/2025/12/pasted-image-20251218-152704.png)
+
+iOS:
+
+[![pasted image 20251218 152636](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152636.png)](/assets/2025/12/pasted-image-20251218-152636.png)
+
+Android:
+
+[![pasted image 20251218 152726](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152726.png)](/assets/2025/12/pasted-image-20251218-152726.png)
+
+iOS:
+
+[![pasted image 20251218 152821](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152821.png)](/assets/2025/12/pasted-image-20251218-152821.png)
+```
+
+This whole time, I have written zero lines of code. I have read zero lines of code.
+
+I've made some high-level architectural decisions and I've done some play-testing.
+
+You can read [the implementation plans Codex put together](https://github.com/obra/wordiest/tree/main/docs/plans).
+
+About 80% of my "person-time" on this project has been working through glitches in the tile shapes that GPT 5.2 built. The first version of the tiles was almost right...but not perfect. I spent a couple of hours (while I was doing other work) checking in on its many, many failing attempts to fix the tile borders before it finally nailed them. I should have kept screenshots. There were a bunch of hilarious mistakes.
+
+This is one of the weirdest things about using agentic development tools. My intuition for what's easy and what's hard is completely shot.
+
+Reverse engineer an Android game, figure out all the gameplay, every layout weird, every UI behavior, the compressed wordlist, and the score formats.
+
+"No problem."
+
+Port all of that to Swift and SpriteKit?
+
+"Piece of cake."
+
+Now, center the letter a little bit better and make the rounded border on the tile have space for tile bonuses?
+
+"I'm trying boss, but this is really, really hard. I don't know what I'm doing wrong. I'll keep at it. But yikes."
+
+But, at the end of the day, I had a playable recreation of the Wordiest I knew and loved. The only question was...what could I do with it?
+
+I reached out to Wordiest's author, Darrell Anderson. He, very graciously, gave me his blessing to release this new version of Wordiest and even told me a bit about how he'd built the cool offline scoring system back in the day.
+
+Over the past couple days, I've had a few friends playing the TestFlight version of the game. My dad told me that it works much better than the web based version I built last spring. Then I had to explain to him that I didn't actually do any of the engineering.
+
+Wednesday afternoon, I threw caution to the wind and sent "Wordiest Classic" to the Apple App Store's notoriously fickle review process. I didn't expect much, but figured that they'd give me a list of tasks to work through if I wanted to distribute Wordiest publicly.
+
+I was not expecting the response Apple sent a day later.
+```
+[![pasted image 20251218 152126](https://blog.fsck.com/assets/2025/12/pasted-image-20251218-152126.png)](/assets/2025/12/pasted-image-20251218-152126.png)
+```
+
+You can check out the source at or you can just [download and play the game on your iPhone](https://apps.apple.com/app/wordiest-classic/id6756533498).
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> This whole time, I have written zero lines of code. I have read zero lines of code.
+
+*Context: Describing the process of using OpenAI's tools to recreate Wordiest without directly coding.*
+
+> My intuition for what's easy and what's hard is completely shot.
+
+*Context: Reflecting on the unexpected challenges and ease of using AI for development tasks.*
+
+> He, very graciously, gave me his blessing to release this new version of Wordiest.
+
+*Context: Discussing obtaining permission from the original Wordiest developer to release the recreated version.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/prompt-engineering]]
+- [[topics/mobile-development]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 69% similar
+  </Card>
+  <Card
+    title="How to Build Agent-native: Lessons From Four Apps"
+    icon="newspaper"
+    href="/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
+  >
+    Dan Shipper (Every) · explanation · 67% similar
+  </Card>
+  <Card
+    title="Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days"
+    icon="newspaper"
+    href="/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
+  >
+    Lenny Rachitsky · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2025/12/20/wordiest/](https://blog.fsck.com/2025/12/20/wordiest/).
+</Note>

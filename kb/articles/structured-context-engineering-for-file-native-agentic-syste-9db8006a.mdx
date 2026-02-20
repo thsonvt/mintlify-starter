@@ -1,0 +1,126 @@
+---
+title: 'Structured Context Engineering for File-Native Agentic Systems'
+description: 'Using SQL generation as a proxy for programmatic agent operations, we present a systematic study of context engineering for structured dat'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-09'
+sourceUrl: 'https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything'
+topics: ["Agent-Native Architecture","AI Agents","Prompt Engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything) · 09/02/2026
+</Info>
+
+## Summary
+
+Using SQL generation as a proxy for programmatic agent operations, we present a systematic study of context engineering for structured dat
+
+## Key Insights
+
+> "Using SQL generation as a proxy for programmatic agent operations, we present a systematic study of context engineering for structured data."
+>
+> — Introduction to the research focus on SQL generation for agent operations.
+
+> "The biggest impact was the models themselves - with frontier models beating the leading open source models."
+>
+> — Highlighting the significant performance difference between frontier and open source models.
+
+> "The 'grep tax' emerged as schema size scaled."
+>
+> — Discussing the increased token consumption by models when using TOON format at larger scales.
+
+## Topics
+
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+
+---
+
+## Full Article
+
+```
+# Structured Context Engineering for File-Native Agentic Systems
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-09  
+**Source**: [https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything](https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything)
+
+---
+
+**[Structured Context Engineering for File-Native Agentic Systems](https://arxiv.org/abs/2602.05447)**
+
+New paper by Damon McMillan exploring challenging LLM context tasks involving large SQL schemas (up to 10,000 tables) across different models and file formats:
+> Using SQL generation as a proxy for programmatic agent operations, we present a systematic study of context engineering for structured data, comprising 9,649 experiments across 11 models, 4 formats (YAML, Markdown, JSON, Token-Oriented Object Notation [TOON]), and schemas ranging from 10 to 10,000 tables.
+
+Unsurprisingly, the biggest impact was the models themselves - with frontier models (Opus 4.5, GPT-5.2, Gemini 2.5 Pro) beating the leading open source models (DeepSeek V3.2, Kimi K2, Llama 4).
+
+Those frontier models benefited from filesystem based context retrieval, but the open source models had much less convincing results with those, which reinforces my feeling that the filesystem coding agent loops aren't handled as well by open weight models just yet. The [Terminal Bench 2.0](https://www.tbench.ai/leaderboard/terminal-bench/2.0) leaderboard is still dominated by Anthropic, OpenAI and Gemini.
+
+The "grep tax" result against [TOON](https://github.com/toon-format/toon) was an interesting detail. TOON is meant to represent structured data in as few tokens as possible, but it turns out the model's unfamiliarity with that format led to them spending significantly more tokens over multiple iterations trying to figure it out:
+
+![Screenshot of a figure from a research paper. Introductory text reads: "As schema size increased, TOON showed dramatically increased token consumption for Claude models despite being ~25% smaller in file size. Scale experiments used Claude models only." Below is "Figure 7: The 'Grep Tax' - TOON Token Overhead at Scale", a bar chart with a logarithmic y-axis labeled "Tokens" comparing YAML (teal) and TOON (purple) at two schema sizes: S5 (500 tables) and S9 (10,000 tables). At S5, TOON is +138% more tokens than YAML (~1,100 vs ~450). At S9, TOON is +740% more tokens (~50,000 vs ~7,000). Below the chart, explanatory text reads: "The 'grep tax' emerged as schema size scaled. At S5 (500 tables), TOON consumed 138% more tokens than YAML; at S9 (10,000 tables), this grew to 740%. Root cause: models lacked familiarity with TOON's syntax and could not construct effective refinement patterns."](https://static.simonwillison.net/static/2026/grep-tax.jpg)
+
+Via [@omarsar0](https://twitter.com/omarsar0/status/2020150077637997013)
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Using SQL generation as a proxy for programmatic agent operations, we present a systematic study of context engineering for structured data.
+
+*Context: Introduction to the research focus on SQL generation for agent operations.*
+
+> The biggest impact was the models themselves - with frontier models beating the leading open source models.
+
+*Context: Highlighting the significant performance difference between frontier and open source models.*
+
+> The 'grep tax' emerged as schema size scaled.
+
+*Context: Discussing the increased token consumption by models when using TOON format at larger scales.*
+
+## Related Topics
+
+- [[topics/agent-native-architecture]]
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Effective context engineering for AI agents"
+    icon="newspaper"
+    href="/kb/articles/effective-context-engineering-for-ai-agents-e3c96ce0"
+  >
+    Anthropic Engineering · explanation · 69% similar
+  </Card>
+  <Card
+    title="GLM-5: From Vibe Coding to Agentic Engineering"
+    icon="newspaper"
+    href="/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI and Anthropic go to war: Claude Opus 4.6 vs GPT 5.3 Codex"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything](https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything).
+</Note>

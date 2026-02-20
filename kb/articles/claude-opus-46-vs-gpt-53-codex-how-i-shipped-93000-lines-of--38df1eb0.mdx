@@ -1,0 +1,196 @@
+---
+title: 'Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days'
+description: 'I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly component'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-02-11'
+sourceUrl: 'https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how'
+topics: ["Prompt Engineering","OpenAI API","Anthropic API"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how) · 11/02/2026
+</Info>
+
+## Summary
+
+I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components. I put the newest AI coding models from OpenAI and Anthropic head-to-head, testing them on real engineering work I’m actually doing. I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components. Through side-by
+
+## Key Insights
+
+> "I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components."
+>
+> — Introduction to the comparative analysis between the two AI models.
+
+> "Why Codex excels at code review but struggles with creative, greenfield work."
+>
+> — Discussing the strengths and limitations of Codex in specific coding tasks.
+
+> "The surprising way Opus and Codex complement each other in a real-world engineering workflow."
+>
+> — Exploring the synergy between Opus and Codex when used together.
+
+## Topics
+
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [OpenAI API](/kb/topics/openai-api)
+- [Anthropic API](/kb/topics/anthropic-api)
+
+---
+
+## Full Article
+
+```
+# Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days
+```
+
+**Author**: Lenny Rachitsky  
+**Published**: 2026-02-11  
+**Source**: [https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how](https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how)
+
+---
+
+I put the newest AI coding models from OpenAI and Anthropic head-to-head, testing them on real engineering work I’m actually doing. I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components. Through side-by-side experiments, I break down where each model shines—creative development versus code review—and share how I’m thinking about combining them to build a more effective AI engineering stack.
+
+**Listen on [YouTube](https://youtu.be/01zAtSYNlvY), [Spotify](https://open.spotify.com/episode/1bckzBFSswPdilhjJJZlms), or [Apple Podcasts](https://podcasts.apple.com/us/podcast/claude-opus-4-6-vs-gpt-5-3-codex-how-i-shipped-93-000/id1809663079?i=1000749248436)**
+
+### What you’ll learn:
+
+1. The strengths and weaknesses of OpenAI’s Codex vs. Anthropic’s Opus for different coding tasks
+2. How I shipped 44 PRs containing 98 commits across 1,088 files in just five days using these models
+3. Why Codex excels at code review but struggles with creative, greenfield work
+4. The surprising way Opus and Codex complement each other in a real-world engineering workflow
+5. How to use Git concepts like work trees to maximize productivity with AI coding assistants
+6. Why Opus 4.6 Fast might be worth the 6x price increase (but be careful with your token budget)
+
+---
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!Y0wp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc57265ea-6b92-4839-9fad-955065be7fe0_1340x396.png)](https://substackcdn.com/image/fetch/$s_!Y0wp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc57265ea-6b92-4839-9fad-955065be7fe0_1340x396.png)
+```
+
+### Brought to you by:
+
+**[WorkOS](https://workos.com/?utm_source=lennys_howiai&utm_medium=podcast&utm_campaign=q22025)**—Make your app enterprise-ready today
+
+### In this episode, we cover:
+
+([00:00](https://www.youtube.com/watch?v=01zAtSYNlvY)) Introduction to new AI coding models
+
+([02:13](https://www.youtube.com/watch?v=01zAtSYNlvY&t=133s)) My test methodology for comparing models
+
+([03:30](https://www.youtube.com/watch?v=01zAtSYNlvY&t=210s)) Codex’s unique features: Git primitives, skills, and automations
+
+([09:05](https://www.youtube.com/watch?v=01zAtSYNlvY&t=545s)) Testing GPT-5.2 Codex on a website redesign task
+
+([10:40](https://www.youtube.com/watch?v=01zAtSYNlvY&t=640s)) Challenges with Codex’s literal interpretation of prompts
+
+([15:00](https://www.youtube.com/watch?v=01zAtSYNlvY&t=900s)) Comparing the before and after with Codex
+
+([16:23](https://www.youtube.com/watch?v=01zAtSYNlvY&t=983s)) Testing Opus 4.6 on the same website redesign task
+
+([20:56](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1256s)) Comparing the visual results of both models
+
+([21:30](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1290s)) Real-world engineering impact: 44 PRs in five days
+
+([23:03](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1383s)) Refactoring components with Opus 4.6
+
+([24:30](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1470s)) Using Codex for code review and architectural analysis
+
+([26:55](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1615s)) Cost considerations for Opus 4.6 Fast
+
+([28:52](https://www.youtube.com/watch?v=01zAtSYNlvY&t=1732s)) Conclusion
+
+### Tools referenced:
+
+• OpenAI’s GPT-5.3 Codex: 
+
+• Anthropic’s Claude Opus 4.6: 
+
+• Cursor: 
+
+• GitHub: 
+
+### Other references:
+
+• Tailwind CSS: 
+
+• Git: 
+
+• Bugbot: 
+
+### 
+
+### Where to find Claire Vo:
+
+```
+ChatPRD: 
+
+Website: 
+
+LinkedIn: 
+
+X: 
+```
+
+Production and marketing by . For inquiries about sponsoring the podcast, email jordan@penname.co.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components.
+
+*Context: Introduction to the comparative analysis between the two AI models.*
+
+> Why Codex excels at code review but struggles with creative, greenfield work.
+
+*Context: Discussing the strengths and limitations of Codex in specific coding tasks.*
+
+> The surprising way Opus and Codex complement each other in a real-world engineering workflow.
+
+*Context: Exploring the synergy between Opus and Codex when used together.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/openai-api]]
+- [[topics/anthropic-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+  >
+    Lenny Rachitsky · how-to · 82% similar
+  </Card>
+  <Card
+    title="How Every Is Harnessing the World-changing Shift of Opus 4.5"
+    icon="newspaper"
+    href="/kb/articles/how-every-is-harnessing-the-world-changing-shift-of-opus-45-b1aa53b4"
+  >
+    Dan Shipper (Every) · explanation · 81% similar
+  </Card>
+  <Card
+    title="How to build your own AI developer tools with Claude Code | CJ Hess (Tenex)"
+    icon="newspaper"
+    href="/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
+  >
+    Lenny Rachitsky · how-to · 80% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how](https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how).
+</Note>

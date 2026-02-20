@@ -1,0 +1,151 @@
+---
+title: 'Streamlinear, a new MCP for Linear'
+description: 'My AI coding agents have been using Linear as the project and issue tracking tool on a new project. I''ve been using [Linear](https://linear.app) as th'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2025-12-27'
+sourceUrl: 'https://blog.fsck.com/2025/12/27/streamlinear/'
+topics: ["Prompt Engineering","AI Agents","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2025/12/27/streamlinear/) · 27/12/2025
+</Info>
+
+## Summary
+
+My AI coding agents have been using Linear as the project and issue tracking tool on a new project. I've been using [Linear](https://linear.app) as the project and issue tracking tool on a new project.
+
+## Key Insights
+
+> "My AI coding agents have been using Linear as the project and issue tracking tool on a new project."
+>
+> — Introduction to how AI agents are the primary users of Linear in their project.
+
+> "The official Linear MCP has 25 tools, using a total of 19,659 tokens of context on every single session."
+>
+> — Highlighting the inefficiency of the existing Linear MCP.
+
+> "We ended up with something nice and streamlined. It totals out at 975 tokens."
+>
+> — Describing the efficiency and effectiveness of Streamlinear.
+
+## Topics
+
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Streamlinear, a new MCP for Linear
+```
+
+**Author**: Jesse Chen  
+**Published**: 2025-12-27  
+**Source**: [https://blog.fsck.com/2025/12/27/streamlinear/](https://blog.fsck.com/2025/12/27/streamlinear/)
+
+---
+
+I've been using [Linear](https://linear.app) as the project and issue tracking tool on a new project.
+
+No wait, that's not quite right. My AI coding agents have been using Linear as the project and issue tracking tool on a new project. I've opened Linear's web interface...twice? And I'm pretty sure I've logged into the mobile client. But Claude and friends? They use Linear every day.
+
+To date, I've been using the first-party Linear MCP and a third party one that I'd found before Anthropic started publishing an "official" Linear plugin in partnership with Linear.
+
+It works great.
+
+There's just one problem. The official Linear MCP has 25 tools, using a total of 19,659 tokens of context on every single session. The third-party MCP is a little slimmer at 17k and change. But that's still nearly 10% of the full context window. For *every* context window.
+
+This morning, after breakfast, I sat down and started chatting with Claude about what a better Linear tool might look like. We discussed just using a unix commandline tool. We discussed using a unix commandline tool + a [skill](https://agentskills.io). We discussed a Skill + a single-tool MCP client that was *just* a pure GraphQL client.
+
+I asked Claude to read [my blog post on MCP design](https://blog.fsck.com/2025/10/19/mcps-are-not-like-other-apis/).
+
+We ended up with something nice and streamlined. It totals out at 975 tokens, including instructions for how to learn more about how to use the tool. I ended up talking Claude into making the MCP fully self-documenting by including a 'help' action.
+
+We ended up compromising on tool design. Claude really thought that it would be fine always reading the instructions and just using raw GraphQL for everything. I overruled it and decided that the most common operations (working with tickets) merited first-class actions. Everything else is GraphQL backed up by the 'help' action.
+
+It's called [Streamlinear](https://github.com/obra/streamlinear). Ultimately, I'm responsible for the name. I didn't say no. I asked Claude to come up with a list of punny names. Everything else it suggested was being used for a Linear client already.
+
+I asked Claude to talk about the new tool and what it's like:
+
+```
+[![pasted image 20251227 132229](https://blog.fsck.com/assets/2025/12/pasted-image-20251227-132229.png)](/assets/2025/12/pasted-image-20251227-132229.png)
+```
+
+This is the tool loadout for the 'official' MCP:
+
+```
+[![pasted image 20251227 134359](https://blog.fsck.com/assets/2025/12/pasted-image-20251227-134359.png)](/assets/2025/12/pasted-image-20251227-134359.png)
+```
+
+And this is what Streamlinear looks like:
+
+```
+[![pasted image 20251227 134628](https://blog.fsck.com/assets/2025/12/pasted-image-20251227-134628.png)](/assets/2025/12/pasted-image-20251227-134628.png)
+```
+
+Give it a spin and let me know how it goes.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> My AI coding agents have been using Linear as the project and issue tracking tool on a new project.
+
+*Context: Introduction to how AI agents are the primary users of Linear in their project.*
+
+> The official Linear MCP has 25 tools, using a total of 19,659 tokens of context on every single session.
+
+*Context: Highlighting the inefficiency of the existing Linear MCP.*
+
+> We ended up with something nice and streamlined. It totals out at 975 tokens.
+
+*Context: Describing the efficiency and effectiveness of Streamlinear.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Code execution with MCP: Building more efficient agents"
+    icon="newspaper"
+    href="/kb/articles/code-execution-with-mcp-building-more-efficient-agents-fe659629"
+  >
+    Anthropic Engineering · explanation · 72% similar
+  </Card>
+  <Card
+    title="How I Use Claude Code to Ship Like a Team of Five"
+    icon="newspaper"
+    href="/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
+  >
+    Dan Shipper (Every) · explanation · 71% similar
+  </Card>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2025/12/27/streamlinear/](https://blog.fsck.com/2025/12/27/streamlinear/).
+</Note>

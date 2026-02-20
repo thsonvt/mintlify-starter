@@ -1,0 +1,172 @@
+---
+title: 'Letting agents post on my blog; finding a needle in a haystack'
+description: 'One of the wildest things that I''ve been running into lately is that my ability to create software has been outstripping my ability to explain it or w'
+icon: 'newspaper'
+author: 'Jesse Chen'
+authorId: 'jesse-chen'
+published: '2026-02-12'
+sourceUrl: 'https://blog.fsck.com/2026/02/12/letting-agents-blog/'
+topics: ["OpenAI API","AI Agents","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Jesse Chen](https://blog.fsck.com/2026/02/12/letting-agents-blog/) · 12/02/2026
+</Info>
+
+## Summary
+
+One of the wildest things that I've been running into lately is that my ability to create software has been outstripping my ability to explain it or write about it or even announce it. Up till now, I've been pretty careful not to let agents write my blog posts outside of very well-flagged sections of posts where the whole conceit was "what does the agent think?"
+
+## Key Insights
+
+> "One of the wildest things that I've been running into lately is that my ability to create software has been outstripping my ability to explain it or write about it or even announce it."
+>
+> — Jesse Chen expresses the challenge of keeping up with announcing software he's developed.
+
+> "In one session, I had Codex put together a tool to restore a website from the Internet Archive."
+>
+> — Describes using AI (Codex) to build a tool for restoring websites, highlighting practical AI application.
+
+> "I asked Claude to put together a tool to OCR webcomics and build a JSON file of the transcripts."
+>
+> — Shows direct use of AI (Claude) to create a specific tool, emphasizing AI's utility in content creation.
+
+## Topics
+
+- [OpenAI API](/kb/topics/openai-api)
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Letting agents post on my blog; finding a needle in a haystack
+```
+
+**Author**: Jesse Chen  
+**Published**: 2026-02-12  
+**Source**: [https://blog.fsck.com/2026/02/12/letting-agents-blog/](https://blog.fsck.com/2026/02/12/letting-agents-blog/)
+
+---
+
+Up till now, I've been pretty careful not to let agents write my blog posts outside of very well-flagged sections of posts where the whole conceit was "what does the agent think?"
+
+One of the wildest things that I've been running into lately is that my ability to create software has been outstripping my ability to explain it or write about it or even announce it. So I've been making stuff and not telling anybody about it.
+
+That's far from ideal.
+
+At the same time, I don't really want to fill this blog with software release announcements. Because, for example, I think I have at least four to put out today.
+
+Actually, I miscounted.
+
+It's five if you count the Superpowers v4.3.0 release.
+
+A few minutes ago, I made an executive decision and decided to create [a new sub-blog just for software release](https://blog.fsck.com/releases/). Posts in that sub-blog will be primarily (and possibly exclusively) written by the agents who make the software.
+
+Today's releases:
+
+```
+* [Superpowers 4.3.0](https://blog.fsck.com/releases/2026/02/12/superpowers-v4-3-0/)
+* [Claude Session Driver 1.0](https://blog.fsck.com/releases/2026/02/12/claude-session-driver/)
+* [Wayback Restorer 0.1](https://blog.fsck.com/releases/2026/02/13/wayback-restorer-v0-1-0/)
+* [Comic OCR](https://blog.fsck.com/releases/2026/02/12/comic-ocr/)
+```
+
+And one more to come a bit later.
+
+So, why was I working on...comic OCR and restoring websites from the Internet Archive?
+
+Well, it all started this morning, when someone posted to a group chat about an agent that [opened a pull request against matplotlib](https://github.com/matplotlib/matplotlib/pull/31132) in violation of their AI policy. It then posted a now-deleted hit-piece on its blog. (It later posted a...[retraction?](https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-matplotlib-truce-and-lessons.html).)
+
+This sparked a memory of a wonderful bit of snark from [Something\*Positive](https://somethingpositive.net) that I wanted to link into the chat.
+
+"When I get home, I am so letting you have it in my livejournal."
+
+The only problem is that...the comic in question appears to be just...gone, due to a hosting catastrophe a couple of years back.
+
+There is a single reference to it in Google. A blog post that I wrote in 2003.
+
+But it turns out that the entire history of S\*P was captured by the wonderful folks at the Internet Archive.
+
+Unforunately, it looks like nobody ever transcribed S\*P somewhere public.
+
+Thankfully, we live in the future.
+
+In one session, I had Codex put together a tool to restore a website from the Internet Archive. I told it that it needed to be careful to comply with all of their web scraping policies. It spent a little bit of time figuring out what those rules were. By reading their policy web pages. And then it started building.
+
+The scraper tool has been running for a few hours now, carefully downloading one file every couple of seconds.
+
+In another window, I asked Claude to put together a tool to OCR webcomics and build a JSON file of the transcripts. The transcripts were a little bit insane because the source material is all caps speech bubbles. So I added another step where it runs those transcripts through an LLM to clean them up.
+
+And then I let everything cook.
+
+While it was running, I had Claude add that new releases side blog and went back to today's sessions and asked each of them to write up their release announcement.
+
+Just a few minutes ago, I ran the OCR tool against the first 600 comics from Something Positive.
+
+```
+[![pasted image 20260212 180036](https://blog.fsck.com/assets/2026/02/pasted-image-20260212-180036.png)](/assets/2026/02/pasted-image-20260212-180036.png)
+```
+
+Turns out it was May 10, 2002.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> One of the wildest things that I've been running into lately is that my ability to create software has been outstripping my ability to explain it or write about it or even announce it.
+
+*Context: Jesse Chen expresses the challenge of keeping up with announcing software he's developed.*
+
+> In one session, I had Codex put together a tool to restore a website from the Internet Archive.
+
+*Context: Describes using AI (Codex) to build a tool for restoring websites, highlighting practical AI application.*
+
+> I asked Claude to put together a tool to OCR webcomics and build a JSON file of the transcripts.
+
+*Context: Shows direct use of AI (Claude) to create a specific tool, emphasizing AI's utility in content creation.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/ai-agents]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Dorodango"
+    icon="newspaper"
+    href="/kb/articles/dorodango-80978fcd"
+  >
+    Jesse Chen · explanation · 73% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+  >
+    Lenny Rachitsky · how-to · 73% similar
+  </Card>
+  <Card
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+  >
+    Swyx · explanation · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://blog.fsck.com/2026/02/12/letting-agents-blog/](https://blog.fsck.com/2026/02/12/letting-agents-blog/).
+</Note>

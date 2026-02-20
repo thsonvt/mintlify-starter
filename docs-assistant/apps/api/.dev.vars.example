@@ -1,4 +1,7 @@
 # Copy to .dev.vars for local development
-SUPABASE_URL=https://evqsckxouvkdlxcvntvu.supabase.co
+SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+ADMIN_USER_IDS=uuid-1,uuid-2
 OPENAI_API_KEY=sk-...
+ADMIN_USER_EMAILS=admin@example.com

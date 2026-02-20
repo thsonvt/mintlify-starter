@@ -1,0 +1,142 @@
+---
+title: 'cysqlite - a new sqlite driver'
+description: 'Charles explains his discomfort with the sqlite3 implementation at length - that library provides two different variants neither of which exactly matc'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-11'
+sourceUrl: 'https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything'
+topics: ["Python Programming","WebAssembly","Cython","SQLite"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything) · 11/02/2026
+</Info>
+
+## Summary
+
+Charles explains his discomfort with the sqlite3 implementation at length - that library provides two different variants neither of which exactly match the autocommit mechanism in SQLite itself. Charles Leifer has been maintaining [pysqlite3](https://github.com/coleifer/pysqlite3) - a fork of the Python standard library's `sqlite3` module that makes it much easier to run upgraded SQLite versions - since 2018.
+
+## Key Insights
+
+> "Charles explains his discomfort with the sqlite3 implementation at length - that library provides two different variants neither of which exactly match the autocommit mechanism in SQLite itself."
+>
+> — Discussing the motivation behind cysqlite's development, focusing on transaction handling improvements.
+
+> "I'm particularly excited about the support for custom virtual tables."
+>
+> — Highlighting the new features in cysqlite that are not present in sqlite3.
+
+> "I also learned that wheels like this have to be built for the emscripten version used by that edition of Pyodide."
+>
+> — Sharing insights from the process of making cysqlite available as a WASM build for Pyodide.
+
+## Topics
+
+- [Python Programming](/kb/topics/python-programming)
+- [WebAssembly](/kb/topics/webassembly)
+- [Cython](/kb/topics/cython)
+- [SQLite](/kb/topics/sqlite)
+
+---
+
+## Full Article
+
+# cysqlite - a new sqlite driver
+
+**Author**: Simon Willison  
+**Published**: 2026-02-11  
+**Source**: [https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything](https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything)
+
+---
+
+**[cysqlite - a new sqlite driver](https://charlesleifer.com/blog/cysqlite---a-new-sqlite-driver/)**
+
+Charles Leifer has been maintaining [pysqlite3](https://github.com/coleifer/pysqlite3) - a fork of the Python standard library's `sqlite3` module that makes it much easier to run upgraded SQLite versions - since 2018.
+
+He's been working on a ground-up [Cython](https://cython.org/) rewrite called [cysqlite](https://github.com/coleifer/cysqlite) for almost as long, but it's finally at a stage where it's ready for people to try out.
+
+The biggest change from the `sqlite3` module involves transactions. Charles explains his discomfort with the `sqlite3` implementation at length - that library provides two different variants neither of which exactly match the autocommit mechanism in SQLite itself.
+
+I'm particularly excited about the support for [custom virtual tables](https://cysqlite.readthedocs.io/en/latest/api.html#tablefunction), a feature I'd love to see in `sqlite3` itself.
+
+`cysqlite` provides a Python extension compiled from C, which means it normally wouldn't be available in Pyodide. I [set Claude Code on it](https://github.com/simonw/research/tree/main/cysqlite-wasm-wheel) (here's [the prompt](https://github.com/simonw/research/pull/79#issue-3923792518)) and it built me [cysqlite-0.1.4-cp311-cp311-emscripten\_3\_1\_46\_wasm32.whl](https://github.com/simonw/research/blob/main/cysqlite-wasm-wheel/cysqlite-0.1.4-cp311-cp311-emscripten_3_1_46_wasm32.whl), a 688KB wheel file with a WASM build of the library that can be loaded into Pyodide like this:
+
+```
+import micropip
+await micropip.install(
+    "https://simonw.github.io/research/cysqlite-wasm-wheel/cysqlite-0.1.4-cp311-cp311-emscripten_3_1_46_wasm32.whl"
+)
+import cysqlite
+print(cysqlite.connect(":memory:").execute(
+    "select sqlite_version()"
+).fetchone())
+
+```
+(I also learned that wheels like this have to be built for the emscripten version used by that edition of Pyodide - my experimental wheel loads in Pyodide 0.25.1 but fails in 0.27.5 with a `Wheel was built with Emscripten v3.1.46 but Pyodide was built with Emscripten v3.1.58` error.)
+
+You can try my wheel in [this new Pyodide REPL](https://7ebbff98.tools-b1q.pages.dev/pyodide-repl) i had Claude build as a mobile-friendly alternative to Pyodide's [own hosted console](https://pyodide.org/en/stable/console.html).
+
+I also had Claude build [this demo page](https://simonw.github.io/research/cysqlite-wasm-wheel/demo.html) that executes the original test suite in the browser and displays the results:
+
+![Screenshot of the cysqlite WebAssembly Demo page with a dark theme. Title reads ](https://static.simonwillison.net/static/2026/cysqlite-tests.jpg)
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Charles explains his discomfort with the sqlite3 implementation at length - that library provides two different variants neither of which exactly match the autocommit mechanism in SQLite itself.
+
+*Context: Discussing the motivation behind cysqlite's development, focusing on transaction handling improvements.*
+
+> I'm particularly excited about the support for custom virtual tables.
+
+*Context: Highlighting the new features in cysqlite that are not present in sqlite3.*
+
+> I also learned that wheels like this have to be built for the emscripten version used by that edition of Pyodide.
+
+*Context: Sharing insights from the process of making cysqlite available as a WASM build for Pyodide.*
+
+## Related Topics
+
+- [[topics/python-programming]]
+- [[topics/webassembly]]
+- [[topics/cython]]
+- [[topics/sqlite]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything](https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything).
+</Note>

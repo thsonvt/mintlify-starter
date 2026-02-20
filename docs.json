@@ -83,7 +83,8 @@
             "group": "Planning",
             "icon": "chart-bar",
             "pages": [
-              "kb/content-gaps"
+              "kb/content-gaps",
+              "kb/admin-suggestions"
             ]
           }
         ]
@@ -101,5 +102,470 @@
     "thumbsRating": true,
     "suggestEdit": true
   },
-  "js": ["/scripts/search-index-data.js", "/scripts/keyword-search.js", "/scripts/highlights-auth.js", "/scripts/highlights-storage.js", "/scripts/highlights-tooltip.js", "/scripts/highlights-sidebar.js"]
+  "js": [
+    "/scripts/search-index-data.js",
+    "/scripts/keyword-search.js",
+    "/scripts/date-format.js",
+    "/scripts/highlights-auth.js",
+    "/scripts/highlights-storage.js",
+    "/scripts/highlights-pages.js",
+    "/scripts/highlights-tooltip.js",
+    "/scripts/highlights-sidebar.js",
+    "/scripts/suggest-source.js",
+    "/scripts/admin-suggestions.js"
+  ],
+  "redirects": [
+    {
+      "source": "/kb/articles/anthropic-engineering-0558c7ed",
+      "destination": "/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-4750b99f",
+      "destination": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-62f3f369",
+      "destination": "/kb/articles/effective-harnesses-for-long-running-agents-62f3f369"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-67d63c59",
+      "destination": "/kb/articles/building-a-c-compiler-with-a-team-of-parallel-claudes-67d63c59"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-69a2bb9a",
+      "destination": "/kb/articles/writing-effective-tools-for-agents-with-agents-69a2bb9a"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-6c56c360",
+      "destination": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-b51d03eb",
+      "destination": "/kb/articles/building-agents-with-the-claude-agent-sdk-b51d03eb"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-b981d03f",
+      "destination": "/kb/articles/designing-ai-resistant-technical-evaluations-b981d03f"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-c5880594",
+      "destination": "/kb/articles/a-postmortem-of-three-recent-issues-c5880594"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-c5a03109",
+      "destination": "/kb/articles/introducing-advanced-tool-use-on-the-claude-developer-platfo-c5a03109"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-de14e41c",
+      "destination": "/kb/articles/demystifying-evals-for-ai-agents-de14e41c"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-e3c96ce0",
+      "destination": "/kb/articles/effective-context-engineering-for-ai-agents-e3c96ce0"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-ec5f034f",
+      "destination": "/kb/articles/quantifying-infrastructure-noise-in-agentic-coding-evals-ec5f034f"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-f5037c39",
+      "destination": "/kb/articles/desktop-extensions-one-click-mcp-server-installation-for-cla-f5037c39"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-fe659629",
+      "destination": "/kb/articles/code-execution-with-mcp-building-more-efficient-agents-fe659629"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-118be905",
+      "destination": "/kb/articles/stop-coding-and-start-planning-118be905"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-150690ee",
+      "destination": "/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-26bb66b9",
+      "destination": "/kb/articles/compound-engineering-the-definitive-guide-26bb66b9"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-2e6d3626",
+      "destination": "/kb/articles/i-stopped-reading-code-my-code-reviews-got-better-2e6d3626"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-3d5bc9df",
+      "destination": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-716f6ab5",
+      "destination": "/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-929cb875",
+      "destination": "/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-943b66e6",
+      "destination": "/kb/articles/what-the-team-behind-cursor-knows-about-the-future-of-code-943b66e6"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-9cd24849",
+      "destination": "/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-a5a5dffc",
+      "destination": "/kb/articles/compound-engineering-make-every-unit-of-work-compound-into-t-a5a5dffc"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-b1aa53b4",
+      "destination": "/kb/articles/how-every-is-harnessing-the-world-changing-shift-of-opus-45-b1aa53b4"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-b9266aa5",
+      "destination": "/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-cb38bd6d",
+      "destination": "/kb/articles/agent-native-architectures-how-to-build-apps-after-code-ends-cb38bd6d"
+    },
+    {
+      "source": "/kb/articles/dan-shipper-every-e8afce40",
+      "destination": "/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-0efafc8a",
+      "destination": "/kb/articles/i-started-a-company-0efafc8a"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-135ce2cf",
+      "destination": "/kb/articles/streamlinear-a-new-mcp-for-linear-135ce2cf"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-1449028e",
+      "destination": "/kb/articles/moltipass-a-client-for-human-users-of-moltibook-the-first-al-1449028e"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-2b98b393",
+      "destination": "/kb/articles/speedrunning-agentic-software-engineering-management-2b98b393"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-43b5fbec",
+      "destination": "/kb/articles/archive-by-year-43b5fbec"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-70a35cc7",
+      "destination": "/kb/articles/crypto-scammers-are-using-my-name-dont-fall-for-it-70a35cc7"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-80978fcd",
+      "destination": "/kb/articles/dorodango-80978fcd"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-b3affcf5",
+      "destination": "/kb/articles/wordiest-b3affcf5"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-b7fabfc2",
+      "destination": "/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-e8429f3c",
+      "destination": "/kb/articles/prompt-injection-attacks-in-the-wild-e8429f3c"
+    },
+    {
+      "source": "/kb/articles/jesse-chen-e9ce28f5",
+      "destination": "/kb/articles/latent-space-engineering-e9ce28f5"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-000cf924",
+      "destination": "/kb/articles/capturing-flow-with-voice-memos-and-ai-000cf924"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-320bff3c",
+      "destination": "/kb/articles/whispers-of-silence-sharing-my-musical-self-expression-320bff3c"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-33fd5010",
+      "destination": "/kb/articles/finding-freedom-in-structure-33fd5010"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-483ac01f",
+      "destination": "/kb/articles/the-importance-of-value-alignment-in-teams-483ac01f"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-4d2027e9",
+      "destination": "/kb/articles/the-joy-of-micro-improvement-4d2027e9"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-522d554b",
+      "destination": "/kb/articles/unlocking-ideas-522d554b"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-71f9429a",
+      "destination": "/kb/articles/building-software-we-love-71f9429a"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-938c0c61",
+      "destination": "/kb/articles/how-ai-reflects-the-way-my-brain-works-938c0c61"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-9b79fedb",
+      "destination": "/kb/articles/systems-structure-and-creative-freedom-9b79fedb"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-a73d5fa6",
+      "destination": "/kb/articles/tooltailor-simplifying-ruby-json-schema-creation-a73d5fa6"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-c3357720",
+      "destination": "/kb/articles/enthusiasm-c3357720"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-d2ef7b7e",
+      "destination": "/kb/articles/filtering-noise-with-supercollider-d2ef7b7e"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-ef296f82",
+      "destination": "/kb/articles/silencing-your-inner-critic-ef296f82"
+    },
+    {
+      "source": "/kb/articles/kieran-klaassen-fad3e6d4",
+      "destination": "/kb/articles/grounding-ideas-in-writing-fad3e6d4"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-0a3d6458",
+      "destination": "/kb/articles/building-ai-product-sense-part-2-0a3d6458"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-160e48b9",
+      "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-35ea6c02",
+      "destination": "/kb/articles/building-ai-product-sense-part-2-35ea6c02"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-38df1eb0",
+      "destination": "/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-4de3be9c",
+      "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-5e969a97",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-automate-the-tasks-you-hate-anyone-ca-5e969a97"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-72ada27f",
+      "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9cbc3674",
+      "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-b21fa5af",
+      "destination": "/kb/articles/engineers-are-becoming-sorcerers-the-future-of-software-deve-b21fa5af"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-db8b7ca4",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+    },
+    {
+      "source": "/kb/articles/naveen-naidu-102162fc",
+      "destination": "/kb/articles/the-year-i-almost-quit-102162fc"
+    },
+    {
+      "source": "/kb/articles/naveen-naidu-42baf7f6",
+      "destination": "/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0b7f8147",
+      "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
+    },
+    {
+      "source": "/kb/articles/simon-willison-192d4e92",
+      "destination": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2d77e434",
+      "destination": "/kb/articles/kkp-mug-by-karen-james-2d77e434"
+    },
+    {
+      "source": "/kb/articles/simon-willison-30c19547",
+      "destination": "/kb/articles/quoting-brandon-sanderson-30c19547"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3a313e08",
+      "destination": "/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3a64ad66",
+      "destination": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+    },
+    {
+      "source": "/kb/articles/simon-willison-46db46c4",
+      "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4973cabb",
+      "destination": "/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-59bcb94a",
+      "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-59ce28ba",
+      "destination": "/kb/articles/vouch-59ce28ba"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5a8c245b",
+      "destination": "/kb/articles/til-running-openclaw-in-docker-5a8c245b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5e365fb0",
+      "destination": "/kb/articles/an-ai-agent-published-a-hit-piece-on-me-5e365fb0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-715c2eb4",
+      "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-86aff01b",
+      "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-97a8866c",
+      "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9cb198d9",
+      "destination": "/kb/articles/cysqlite-a-new-sqlite-driver-9cb198d9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9db8006a",
+      "destination": "/kb/articles/structured-context-engineering-for-file-native-agentic-syste-9db8006a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a1ad656f",
+      "destination": "/kb/articles/introducing-gpt53codexspark-a1ad656f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a4d04dbc",
+      "destination": "/kb/articles/quoting-thomas-ptacek-a4d04dbc"
+    },
+    {
+      "source": "/kb/articles/simon-willison-acb02cac",
+      "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
+    },
+    {
+      "source": "/kb/articles/simon-willison-af1ea9b9",
+      "destination": "/kb/articles/quoting-steve-yegge-af1ea9b9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c0d75f4e",
+      "destination": "/kb/articles/covering-electricity-price-increases-from-our-data-centers-c0d75f4e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c548126a",
+      "destination": "/kb/articles/skills-in-openai-api-c548126a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d234ac03",
+      "destination": "/kb/articles/introducing-the-codex-app-d234ac03"
+    },
+    {
+      "source": "/kb/articles/simon-willison-da1b9f87",
+      "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ea3d9c15",
+      "destination": "/kb/articles/january-sponsors-only-newsletter-is-out-ea3d9c15"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f73e70a3",
+      "destination": "/kb/articles/introducing-deno-sandbox-f73e70a3"
+    },
+    {
+      "source": "/kb/articles/swyx-09329b6c",
+      "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-20d4d25a",
+      "destination": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a"
+    },
+    {
+      "source": "/kb/articles/swyx-41a159da",
+      "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
+    },
+    {
+      "source": "/kb/articles/swyx-50b11fd3",
+      "destination": "/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+    },
+    {
+      "source": "/kb/articles/swyx-6aaa9578",
+      "destination": "/kb/articles/ainews-spacexai-grok-imagine-api-the-1-video-model-best-pric-6aaa9578"
+    },
+    {
+      "source": "/kb/articles/swyx-6b0d2516",
+      "destination": "/kb/articles/ainews-sam-altmans-ai-combinator-6b0d2516"
+    },
+    {
+      "source": "/kb/articles/swyx-75c7e173",
+      "destination": "/kb/articles/ainews-moltbook-the-first-social-network-for-ai-agents-clawd-75c7e173"
+    },
+    {
+      "source": "/kb/articles/swyx-78eca57f",
+      "destination": "/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+    },
+    {
+      "source": "/kb/articles/swyx-7ed14561",
+      "destination": "/kb/articles/the-first-mechanistic-interpretability-frontier-lab-myra-den-7ed14561"
+    },
+    {
+      "source": "/kb/articles/swyx-815e6177",
+      "destination": "/kb/articles/captaining-imo-gold-deep-think-on-policy-rl-feeling-the-agi--815e6177"
+    },
+    {
+      "source": "/kb/articles/swyx-8a8141ef",
+      "destination": "/kb/articles/-automating-science-world-models-scientific-taste-agent-loop-8a8141ef"
+    },
+    {
+      "source": "/kb/articles/swyx-8b5d31f4",
+      "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
+    },
+    {
+      "source": "/kb/articles/swyx-91fc2890",
+      "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
+    },
+    {
+      "source": "/kb/articles/swyx-afdf8983",
+      "destination": "/kb/articles/ainews-anthropic-launches-the-mcp-apps-open-spec-in-claudeai-afdf8983"
+    },
+    {
+      "source": "/kb/articles/swyx-b9a15207",
+      "destination": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207"
+    },
+    {
+      "source": "/kb/articles/swyx-be70bd66",
+      "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-cae196a7",
+      "destination": "/kb/articles/ainews-ai-vs-saas-the-unreasonable-effectiveness-of-centrali-cae196a7"
+    },
+    {
+      "source": "/kb/articles/swyx-ee58e399",
+      "destination": "/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+    },
+    {
+      "source": "/kb/articles/swyx-f8f06b12",
+      "destination": "/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
+    },
+    {
+      "source": "/kb/articles/swyx-f99e1824",
+      "destination": "/kb/articles/ainews-elevenlabs-500m-series-d-at-11b-cerebras-1b-series-h--f99e1824"
+    }
+  ]
 }

@@ -1,0 +1,160 @@
+---
+title: 'Introducing Deno Sandbox'
+description: 'Here''s a new hosted sandbox product from the Deno team. Introducing Deno Sandbox Here''s a new hosted sandbox product from the Deno team. It''s actually'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-03'
+sourceUrl: 'https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything'
+topics: ["Python","Deno","Security","Sandboxing"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything) · 03/02/2026
+</Info>
+
+## Summary
+
+Here's a new hosted sandbox product from the Deno team. Introducing Deno Sandbox Here's a new hosted sandbox product from the Deno team. It's actually unrelated to Deno itself - this is part of their Deno Deploy SaaS platform. As such, you don't even need to use JavaScript to access it - you can create and execute code in a hosted sandbox using their den
+
+## Key Insights
+
+> "Here's a new hosted sandbox product from the Deno team."
+>
+> — Introduction to Deno Sandbox as part of Deno Deploy.
+
+> "Sandboxe instances can have up to 4GB of RAM, get 2 vCPUs, 10GB of ephemeral storage."
+>
+> — Describing the technical specifications and capabilities of the sandbox instances.
+
+> "My favorite feature is the way it handles API secrets."
+>
+> — Highlighting the secure handling of API secrets within the sandbox.
+
+## Topics
+
+- [Python](/kb/topics/python)
+- [Deno](/kb/topics/deno)
+- [Security](/kb/topics/security)
+- [Sandboxing](/kb/topics/sandboxing)
+
+---
+
+## Full Article
+
+```
+# Introducing Deno Sandbox
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-03  
+**Source**: [https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything](https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything)
+
+---
+
+&lt;p>&lt;strong>&lt;a href="https://deno.com/blog/introducing-deno-sandbox">Introducing Deno Sandbox&lt;/a>&lt;/strong>&lt;/p>
+Here's a new hosted sandbox product from the Deno team. It's actually unrelated to Deno itself - this is part of their Deno Deploy SaaS platform. As such, you don't even need to use JavaScript to access it - you can create and execute code in a hosted sandbox using their &lt;a href="https://pypi.org/project/deno-sandbox/">deno-sandbox&lt;/a> Python library like this:&lt;/p>
+&lt;div class="highlight highlight-source-shell">&lt;pre>&lt;span class="pl-k">export&lt;/span> DENO_DEPLOY_TOKEN=&lt;span class="pl-s">&lt;span class="pl-pds">"&lt;/span>... API token ...&lt;span class="pl-pds">"&lt;/span>&lt;/span>
+uv run --with deno-sandbox python&lt;/pre>&lt;/div>
+&lt;p>Then:&lt;/p>
+&lt;pre>&lt;span class="pl-k">from&lt;/span> &lt;span class="pl-s1">deno_sandbox&lt;/span> &lt;span class="pl-k">import&lt;/span> &lt;span class="pl-v">DenoDeploy&lt;/span>
+
+&lt;span class="pl-s1">sdk&lt;/span> &lt;span class="pl-c1">=&lt;/span> &lt;span class="pl-en">DenoDeploy&lt;/span>()
+
+&lt;span class="pl-k">with&lt;/span> &lt;span class="pl-s1">sdk&lt;/span>.&lt;span class="pl-c1">sandbox&lt;/span>.&lt;span class="pl-c1">create&lt;/span>() &lt;span class="pl-k">as&lt;/span> &lt;span class="pl-s1">sb&lt;/span>:
+    &lt;span class="pl-c"># Run a shell command&lt;/span>
+    &lt;span class="pl-s1">process&lt;/span> &lt;span class="pl-c1">=&lt;/span> &lt;span class="pl-s1">sb&lt;/span>.&lt;span class="pl-c1">spawn&lt;/span>(
+        &lt;span class="pl-s">"echo"&lt;/span>, &lt;span class="pl-s1">args&lt;/span>&lt;span class="pl-c1">=&lt;/span>[&lt;span class="pl-s">"Hello from the sandbox!"&lt;/span>]
+    )
+    &lt;span class="pl-s1">process&lt;/span>.&lt;span class="pl-c1">wait&lt;/span>()
+    &lt;span class="pl-c"># Write and read files&lt;/span>
+    &lt;span class="pl-s1">sb&lt;/span>.&lt;span class="pl-c1">fs&lt;/span>.&lt;span class="pl-c1">write_text_file&lt;/span>(
+        &lt;span class="pl-s">"/tmp/example.txt"&lt;/span>, &lt;span class="pl-s">"Hello, World!"&lt;/span>
+    )
+    &lt;span class="pl-en">print&lt;/span>(&lt;span class="pl-s1">sb&lt;/span>.&lt;span class="pl-c1">fs&lt;/span>.&lt;span class="pl-c1">read_text_file&lt;/span>(
+        &lt;span class="pl-s">"/tmp/example.txt"&lt;/span>
+    ))&lt;/pre>
+&lt;p>There’s a JavaScript client library as well. The underlying API isn’t documented yet but appears &lt;a href="https://tools.simonwillison.net/zip-wheel-explorer?package=deno-sandbox#deno_sandbox/sandbox.py--L187">to use WebSockets&lt;/a>.&lt;/p>
+&lt;p>There’s a lot to like about this system. Sandboxe instances can have up to 4GB of RAM, get 2 vCPUs, 10GB of ephemeral storage, can mount persistent volumes and can use snapshots to boot pre-configured custom images quickly. Sessions can last up to 30 minutes and are billed by CPU time, GB-h of memory and volume storage usage.&lt;/p>
+&lt;p>When you create a sandbox you can configure network domains it’s allowed to access.&lt;/p>
+&lt;p>My favorite feature is the way it handles API secrets.&lt;/p>
+&lt;pre>&lt;span class="pl-k">with&lt;/span> &lt;span class="pl-s1">sdk&lt;/span>.&lt;span class="pl-c1">sandboxes&lt;/span>.&lt;span class="pl-c1">create&lt;/span>(
+    &lt;span class="pl-s1">allowNet&lt;/span>&lt;span class="pl-c1">=&lt;/span>[&lt;span class="pl-s">"api.openai.com"&lt;/span>],
+    &lt;span class="pl-s1">secrets&lt;/span>&lt;span class="pl-c1">=&lt;/span>&#123;
+        &lt;span class="pl-s">"OPENAI_API_KEY"&lt;/span>: &#123;
+            &lt;span class="pl-s">"hosts"&lt;/span>: [&lt;span class="pl-s">"api.openai.com"&lt;/span>],
+            &lt;span class="pl-s">"value"&lt;/span>: &lt;span class="pl-s1">os&lt;/span>.&lt;span class="pl-c1">environ&lt;/span>.&lt;span class="pl-c1">get&lt;/span>(&lt;span class="pl-s">"OPENAI_API_KEY"&lt;/span>),
+        &#125;
+    &#125;,
+) &lt;span class="pl-k">as&lt;/span> &lt;span class="pl-s1">sandbox&lt;/span>:
+    &lt;span class="pl-c"># ... $OPENAI_API_KEY is available&lt;/span>&lt;/pre>
+&lt;p>Within the container that &lt;code>$OPENAI_API_KEY&lt;/code> value is set to something like this:&lt;/p>
+&lt;pre>&lt;code>DENO_SECRET_PLACEHOLDER_b14043a2f578cba...
+&lt;/code>&lt;/pre>
+&lt;p>Outbound API calls to &lt;code>api.openai.com&lt;/code> run through a proxy which is aware of those placeholders and replaces them with the original secret.&lt;/p>
+&lt;p>In this way the secret itself is not available to code within the sandbox, which limits the ability for malicious code (e.g. from a prompt injection) to exfiltrate those secrets.&lt;/p>
+&lt;p>From &lt;a href="https://news.ycombinator.com/item?id=46874097#46874959">a comment on Hacker News&lt;/a> I learned that Fly have a project called &lt;a href="https://github.com/superfly/tokenizer">tokenizer&lt;/a> that implements the same pattern. Adding this to my list of tricks to use with sandoxed environments!
+
+    &lt;p>&lt;small>&lt;/small>Via &lt;a href="https://news.ycombinator.com/item?id=46874097">Hacker News&lt;/a>&lt;/small>&lt;/p>
+
+    &lt;p>Tags: &lt;a href="https://simonwillison.net/tags/python">python&lt;/a>, &lt;a href="https://simonwillison.net/tags/sandboxing">sandboxing&lt;/a>, &lt;a href="https://simonwillison.net/tags/security">security&lt;/a>, &lt;a href="https://simonwillison.net/tags/deno">deno&lt;/a>, &lt;a href="https://simonwillison.net/tags/fly">fly&lt;/a>&lt;/p>
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Here's a new hosted sandbox product from the Deno team.
+
+*Context: Introduction to Deno Sandbox as part of Deno Deploy.*
+
+> Sandboxe instances can have up to 4GB of RAM, get 2 vCPUs, 10GB of ephemeral storage.
+
+*Context: Describing the technical specifications and capabilities of the sandbox instances.*
+
+> My favorite feature is the way it handles API secrets.
+
+*Context: Highlighting the secure handling of API secrets within the sandbox.*
+
+## Related Topics
+
+- [[topics/python]]
+- [[topics/deno]]
+- [[topics/security]]
+- [[topics/sandboxing]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Beyond permission prompts: making Claude Code more secure and autonomous"
+    icon="newspaper"
+    href="/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
+  >
+    Anthropic Engineering · explanation · 69% similar
+  </Card>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 63% similar
+  </Card>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything](https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything).
+</Note>

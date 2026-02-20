@@ -1,0 +1,118 @@
+---
+title: 'TIL: Running OpenClaw in Docker'
+description: 'I''ve been running OpenClaw using Docker on my Mac. TIL: Running OpenClaw in Docker I''ve been running OpenClaw using Docker on my Mac. Here are the fir'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-01'
+sourceUrl: 'https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything'
+topics: ["AI Agents","Docker","OpenClaw"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything) · 01/02/2026
+</Info>
+
+## Summary
+
+I've been running OpenClaw using Docker on my Mac. TIL: Running OpenClaw in Docker I've been running OpenClaw using Docker on my Mac. Here are the first in my ongoing notes on how I set that up and the commands I'm using to administer it. Use their Docker Compose configuration Answering all of those questions Running administrative commands Setting
+
+## Key Insights
+
+> "I've been running OpenClaw using Docker on my Mac."
+>
+> — Introduction to the topic of running OpenClaw in a Docker environment.
+
+> "Here's a screenshot of the web UI that this serves on localhost."
+>
+> — Describing the user interface of OpenClaw when served via Docker.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Docker](/kb/topics/docker)
+- [OpenClaw](/kb/topics/openclaw)
+
+---
+
+## Full Article
+
+```
+# TIL: Running OpenClaw in Docker
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-01  
+**Source**: [https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything](https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything)
+
+---
+
+&lt;p>&lt;strong>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker">TIL: Running OpenClaw in Docker&lt;/a>&lt;/strong>&lt;/p>
+I've been running &lt;a href="https://openclaw.ai/">OpenClaw&lt;/a> using Docker on my Mac. Here are the first in my ongoing notes on how I set that up and the commands I'm using to administer it.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#use-their-docker-compose-configuration">Use their Docker Compose configuration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#answering-all-of-those-questions">Answering all of those questions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#running-administrative-commands">Running administrative commands&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#setting-up-a-telegram-bot">Setting up a Telegram bot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#accessing-the-web-ui">Accessing the web UI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://til.simonwillison.net/llms/openclaw-docker#running-commands-as-root">Running commands as root&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Here's a screenshot of the web UI that this serves on localhost:&lt;/p>
+&lt;p>&lt;img alt="Screenshot of the OpenClaw Gateway Dashboard web interface. Header shows &quot;OpenCLAW GATEWAY DASHBOARD&quot; with a green &quot;Health OK&quot; indicator. Left sidebar contains navigation sections: Chat (Chat highlighted), Control (Overview, Channels, Instances, Sessions, Cron Jobs), Agent (Skills, Nodes), Settings (Config, Debug, Logs), and Resources (Docs). Main content area displays &quot;Chat&quot; with subtitle &quot;Direct gateway chat session for quick interventions.&quot; and &quot;telegram:6580064359&quot; identifier. A user message at 4:08 PM reads &quot;Show me a detailed list of all your available configured tools&quot;. The assistant response states: &quot;Here's the full list of tools I have available in this OpenClaw session (as configured). These are the only ones I can call programmatically:&quot; followed by categorized tools: &quot;File &amp; workspace&quot; (read — Read a file (text or image). Supports offset/limit for large files; write — Create/overwrite a file (creates parent dirs); edit — Precise in-place edit by exact string replacement), &quot;Shell / processes&quot; (exec — Run a shell command (optionally PTY, backgrounding, timeouts); process — Manage running exec sessions (list/poll/log/write/kill/etc.)), &quot;Web&quot; (web_search — Search the web (Brave Search API); web_fetch — Fetch a URL and extract readable content (markdown/text); browser — Control a browser (open/navigate/snapshot/screenshot/act/etc.)), &quot;UI / rendering&quot; (canvas — Present/eval/snapshot a Canvas surface (for node canvases/UI rendering)), and &quot;Devices / nodes&quot; (cut off). Bottom shows message input with placeholder &quot;Message (↵ to send, Shift+↵ for line breaks, paste images)&quot; and &quot;New session&quot; and coral &quot;Send&quot; buttons." src="https://static.simonwillison.net/static/2026/openclaw-web-ui.jpg" />
+
+    &lt;p>Tags: &lt;a href="https://simonwillison.net/tags/ai">ai&lt;/a>, &lt;a href="https://simonwillison.net/tags/docker">docker&lt;/a>, &lt;a href="https://simonwillison.net/tags/til">til&lt;/a>, &lt;a href="https://simonwillison.net/tags/generative-ai">generative-ai&lt;/a>, &lt;a href="https://simonwillison.net/tags/llms">llms&lt;/a>, &lt;a href="https://simonwillison.net/tags/ai-agents">ai-agents&lt;/a>, &lt;a href="https://simonwillison.net/tags/openclaw">openclaw&lt;/a>&lt;/p>
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> I've been running OpenClaw using Docker on my Mac.
+
+*Context: Introduction to the topic of running OpenClaw in a Docker environment.*
+
+> Here's a screenshot of the web UI that this serves on localhost.
+
+*Context: Describing the user interface of OpenClaw when served via Docker.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/docker]]
+- [[topics/openclaw]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Moltbook is the most interesting place on the internet right now"
+    icon="newspaper"
+    href="/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
+  >
+    Simon Willison · explanation · 67% similar
+  </Card>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything](https://simonwillison.net/2026/Feb/1/openclaw-in-docker/#atom-everything).
+</Note>

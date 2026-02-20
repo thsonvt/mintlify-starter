@@ -5,11 +5,17 @@
   "description": "Scripts for generating Knowledge Base MDX files from Supabase",
   "scripts": {
     "generate": "node generate-kb-mdx.mjs",
-    "generate:watch": "nodemon generate-kb-mdx.mjs"
+    "generate:watch": "nodemon generate-kb-mdx.mjs",
+    "scrape": "node scrape-sources.mjs",
+    "index-chunks": "node index-chunks.mjs",
+    "pipeline": "node scrape-sources.mjs && node index-chunks.mjs && node generate-kb-mdx.mjs"
   },
   "dependencies": {
+    "@extractus/article-extractor": "^8.0.0",
     "@supabase/supabase-js": "^2.45.0",
-    "dotenv": "^16.4.0"
+    "dotenv": "^16.4.0",
+    "openai": "^4.0.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.0"

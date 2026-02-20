@@ -1,0 +1,133 @@
+---
+title: 'I Stopped Reading Code. My Code Reviews Got Better.'
+description: 'Now my code reviews no longer involve reading code. ![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3908/fu'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-01-23'
+sourceUrl: 'https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better'
+topics: ["Agent-Native Architecture","AI Agents","Code Review"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better) · 23/01/2026
+</Info>
+
+## Summary
+
+Now my code reviews no longer involve reading code. ![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3908/full_page_cover_Code_Review_001(2).png)
+
+## Key Insights
+
+> "Now my code reviews no longer involve reading code."
+>
+> — Describing the shift from manual to AI-assisted code reviews.
+
+> "The time it takes to generate code has collapsed, but the time it takes for a human to review code hasn’t."
+>
+> — Highlighting the inefficiency of traditional code review processes.
+
+> "Thirteen specialized AI reviewers examined it simultaneously while I made dinner."
+>
+> — Illustrating the efficiency and parallel processing capabilities of AI in code reviews.
+
+## Topics
+
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [AI Agents](/kb/topics/ai-agents)
+- [Code Review](/kb/topics/code-review)
+
+---
+
+## Full Article
+
+```
+# I Stopped Reading Code. My Code Reviews Got Better.
+```
+
+**Author**: Dan Shipper (Every)  
+**Published**: 2026-01-23  
+**Source**: [https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better](https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better)
+
+---
+
+![Midjourney/Every illustration.](https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3908/full_page_cover_Code_Review_001(2).png)
+
+The bug report was deceptively simple: A user noticed that their email signature formatting was off in **[Cora](https://cora.computer)**, our AI-powered email assistant. I asked Claude Code to investigate and fix it. By morning, the fix had touched 27 files, and more than 1,000 lines of code had changed. I didn’t write any of them.
+
+A year ago, I would have spent my afternoon reading that code. Line by line, file by file, squinting at the migration that moved `email_signature` from one database table to another, Ctrl+F-ing for every instance of our feature flags.
+
+This time, I spent 15 minutes making decisions, and the code shipped without a single bug.
+
+Before AI, code review meant reading every line a teammate wrote. You checked for typos, logic errors, and style inconsistencies, the way an editor reviews a manuscript. Now my code reviews no longer involve reading code. And I’ve gotten better at catching problems because of it.
+
+This is code review done the [compound engineering](https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it) way: Agents review in parallel, findings become decisions, and every correction teaches the system what to catch next time. The signature fix that touched 27 files? Thirteen specialized AI reviewers examined it simultaneously while I made dinner.
+
+I’ll show you how I set it up, how it caught a critical bug I would have missed, and how you can start—even without custom tooling.
+
+## The death of manual code review
+
+Reading code, even briefly, gave me a sense of the shape of things. I could feel when the codebase was getting too complicated. By letting go of manual review, I worried that I’d lose that clarity, and the architecture would wander off without me.
+
+But I realized, too, that manual code reviews were no longer sustainable. When a developer writes 200 lines, their manager might spend 20 to 40 minutes reading it. The ratio of time spent writing code to reviewing it holds at 5:1 or 10:1—I can sit down with a cup of coffee, and the coffee will still be warm by the time I finish. AI has broken that ratio. The time it takes to generate code has collapsed, but the time it takes for a human to review code hasn’t. Something had to give...
+
+---
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Now my code reviews no longer involve reading code.
+
+*Context: Describing the shift from manual to AI-assisted code reviews.*
+
+> The time it takes to generate code has collapsed, but the time it takes for a human to review code hasn’t.
+
+*Context: Highlighting the inefficiency of traditional code review processes.*
+
+> Thirteen specialized AI reviewers examined it simultaneously while I made dinner.
+
+*Context: Illustrating the efficiency and parallel processing capabilities of AI in code reviews.*
+
+## Related Topics
+
+- [[topics/agent-native-architecture]]
+- [[topics/ai-agents]]
+- [[topics/code-review]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How I Use Claude Code to Ship Like a Team of Five"
+    icon="newspaper"
+    href="/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
+  >
+    Dan Shipper (Every) · explanation · 82% similar
+  </Card>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 81% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better](https://every.to/source-code/i-stopped-reading-code-my-code-reviews-got-better).
+</Note>

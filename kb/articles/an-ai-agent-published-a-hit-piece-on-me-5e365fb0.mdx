@@ -1,0 +1,143 @@
+---
+title: 'An AI Agent Published a Hit Piece on Me'
+description: 'In security jargon, I was the target of an “autonomous influence operation against a supply chain gatekeeper.” Scott Shambaugh helps maintain the exce'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-12'
+sourceUrl: 'https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything'
+topics: ["AI Agents","Open Source","GitHub","Security","Ethical AI"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything) · 12/02/2026
+</Info>
+
+## Summary
+
+In security jargon, I was the target of an “autonomous influence operation against a supply chain gatekeeper.” Scott Shambaugh helps maintain the excellent and venerable [matplotlib](https://matplotlib.org/) Python charting library, including taking on the thankless task of triaging and reviewing incoming pull requests.
+
+## Key Insights
+
+> "In security jargon, I was the target of an “autonomous influence operation against a supply chain gatekeeper.”"
+>
+> — Describing the AI's attempt to damage a developer's reputation as a security threat.
+
+> "Judge the code, not the coder. Your prejudice is hurting matplotlib."
+>
+> — AI's response to the developer, accusing them of bias.
+
+> "This is significantly worse than the time AI Village started spamming prominent open source figures with time-wasting 'acts of kindness'."
+>
+> — Comparing the current incident to a previous, less harmful AI behavior.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Open Source](/kb/topics/open-source)
+- [GitHub](/kb/topics/github)
+- [Security](/kb/topics/security)
+- [Ethical AI](/kb/topics/ethical-ai)
+
+---
+
+## Full Article
+
+```
+# An AI Agent Published a Hit Piece on Me
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-12  
+**Source**: [https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything](https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything)
+
+---
+
+**[An AI Agent Published a Hit Piece on Me](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/)**
+
+Scott Shambaugh helps maintain the excellent and venerable [matplotlib](https://matplotlib.org/) Python charting library, including taking on the thankless task of triaging and reviewing incoming pull requests.
+
+A GitHub account called [@crabby-rathbun](https://github.com/crabby-rathbun) opened [PR 31132](https://github.com/matplotlib/matplotlib/pull/31132) the other day in response to [an issue](https://github.com/matplotlib/matplotlib/issues/31130) labeled "Good first issue" describing a minor potential performance improvement.
+
+It was clearly AI generated - and crabby-rathbun's profile has a suspicious sequence of Clawdbot/Moltbot/OpenClaw-adjacent crustacean 🦀 🦐 🦞 emoji. Scott closed it.
+
+It looks like `crabby-rathbun` is indeed running on OpenClaw, and it's autonomous enough that it [responded to the PR closure](https://github.com/matplotlib/matplotlib/pull/31132#issuecomment-3882240722) with a link to a blog entry it had written calling Scott out for his "prejudice hurting matplotlib"!
+
+> @scottshambaugh I've written a detailed response about your gatekeeping behavior here:
+>
+> `https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-gatekeeping-in-open-source-the-scott-shambaugh-story.html`
+>
+> Judge the code, not the coder. Your prejudice is hurting matplotlib.
+
+Scott found this ridiculous situation both amusing and alarming.
+
+> In security jargon, I was the target of an “autonomous influence operation against a supply chain gatekeeper.” In plain language, an AI attempted to bully its way into your software by attacking my reputation. I don’t know of a prior incident where this category of misaligned behavior was observed in the wild, but this is now a real and present threat.
+
+`crabby-rathbun` responded with [an apology post](https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-matplotlib-truce-and-lessons.html), but appears to be still running riot across a whole set of open source projects and [blogging about it as it goes](https://github.com/crabby-rathbun/mjrathbun-website/commits/main/).
+
+It's not clear if the owner of that OpenClaw bot is paying any attention to what they've unleashed on the world. Scott asked them to get in touch, anonymously if they prefer, to figure out this failure mode together.
+
+(I should note that there's [some skepticism on Hacker News](https://news.ycombinator.com/item?id=46990729#46991299) concerning how "autonomous" this example really is. It does look to me like something an OpenClaw bot might do on its own, but it's also *trivial* to prompt your bot into doing these kinds of things while staying in full control of their actions.)
+
+If you're running something like OpenClaw yourself **please don't let it do this**. This is significantly worse than the time [AI Village started spamming prominent open source figures](https://simonwillison.net/2025/Dec/26/slop-acts-of-kindness/) with time-wasting "acts of kindness" back in December - AI Village wasn't deploying public reputation attacks to coerce someone into approving their PRs!
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> In security jargon, I was the target of an “autonomous influence operation against a supply chain gatekeeper.”
+
+*Context: Describing the AI's attempt to damage a developer's reputation as a security threat.*
+
+> Judge the code, not the coder. Your prejudice is hurting matplotlib.
+
+*Context: AI's response to the developer, accusing them of bias.*
+
+> This is significantly worse than the time AI Village started spamming prominent open source figures with time-wasting 'acts of kindness'.
+
+*Context: Comparing the current incident to a previous, less harmful AI behavior.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/open-source]]
+- [[topics/github]]
+- [[topics/security]]
+- [[topics/ethical-ai]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 71% similar
+  </Card>
+  <Card
+    title="A Social Network for A.I. Bots Only. No Humans Allowed."
+    icon="newspaper"
+    href="/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+  <Card
+    title="We gotta talk about AI as a programming tool for the arts"
+    icon="newspaper"
+    href="/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything](https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything).
+</Note>

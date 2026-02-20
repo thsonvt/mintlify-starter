@@ -1,0 +1,538 @@
+---
+title: 'Building AI product sense, part 2'
+description: 'AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is bec'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-02-10'
+sourceUrl: 'https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2'
+topics: ["Prompt Engineering","AI Agents","Product Management"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2) · 10/02/2026
+</Info>
+
+## Summary
+
+AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management. *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: [Lenny’s Podcast](https://www.lennysnewsletter.com/podcast) | [How I AI](https://www.youtube.com/@howiaipodcast) | [Lennybot](https://www.lennybot.com/) | My
+
+## Key Insights
+
+> "AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management."
+>
+> — Highlighting the importance of AI product sense in modern product management.
+
+> "the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience."
+>
+> — Discussing the challenges of AI product development in real-world scenarios.
+
+> "I stop being surprised by model behavior, because I’ve already experienced the weird cases myself."
+>
+> — The author shares personal benefits from practicing AI product sense rituals.
+
+## Topics
+
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [Product Management](/kb/topics/product-management)
+
+---
+
+## Full Article
+
+```
+# Building AI product sense, part 2
+```
+
+**Author**: Lenny Rachitsky  
+**Published**: 2026-02-10  
+**Source**: [https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2](https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2)
+
+---
+
+*👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: [Lenny’s Podcast](https://www.lennysnewsletter.com/podcast) | [How I AI](https://www.youtube.com/@howiaipodcast) | [Lennybot](https://www.lennybot.com/) | My favorite [AI/PM courses](https://maven.com/lenny), [public speaking course](https://ultraspeaking.com/lennyslist?via=lenny), and [interview prep copilot](https://www.benerez.com/copilot/lenny).*
+
+```
+[Subscribe now](https://www.lennysnewsletter.com/subscribe?)
+```
+
+*P.S. [Subscribers get a free year of](https://www.lennysnewsletter.com/p/productpass) Lovable, Manus, Replit, Gamma, n8n, Canva, ElevenLabs, Amp, Factory, Devin, Bolt, Wispr Flow, Linear, PostHog, Framer, Railway, Granola, Warp, Perplexity, Magic Patterns, Mobbin, ChatPRD, and Stripe Atlas. [Yes, this is for real](https://lennysproductpass.com/).*
+
+---
+
+In part two of our in-depth series on building AI product sense ([don’t miss part one](https://www.lennysnewsletter.com/p/how-to-build-ai-product-sense)), [Dr. Marily Nika](https://www.linkedin.com/in/marilynika/)—a longtime AI PM at Google and Meta, and an OG AI educator—shares a simple weekly ritual that you can implement today that will rapidly build your AI product sense. Let’s get into it.
+
+*For more from [Marily](https://www.linkedin.com/in/marilynika/), check out her [AI Product Management Bootcamp & Certification](https://bit.ly/49I8XrK) course (which is also available for private corporate sessions) and her recently launched [AI Product Sense and AI PM Interview prep](https://bit.ly/4sufHkw) course (both courses are 15% off using these links). You can also watch her [free Lightning Lesson](https://maven.com/p/2a459c/thriving-as-a-senior-ic-pm-in-the-ai-era) on how to excel as a senior IC PM in the AI era, and subscribe to [her newsletter](https://marily.substack.com/).*
+
+*P.S. You can listen to this post in convenient podcast form: [Spotify](https://open.spotify.com/show/0IIunA06qMtrcQLfypTooj) / [Apple](https://podcasts.apple.com/us/podcast/lennys-reads/id1810314693) / [YouTube](https://www.youtube.com/@lennysreads).*
+
+---
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!Lhcd!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d645f64-dc02-4f41-a227-97a5af6f9cd2_1456x970.png)](https://substackcdn.com/image/fetch/$s_!Lhcd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d645f64-dc02-4f41-a227-97a5af6f9cd2_1456x970.png)
+```
+
+Meta recently added a new PM interview, the first major change to its PM loop in over five years. It’s called “Product Sense with AI,” and candidates are asked to work through a product problem with the help of AI, in real time.
+
+In this interview, candidates aren’t judged on clever prompts, model trivia, or even flashy demos. They are evaluated on how they work with uncertainty: how they notice when the model is guessing, ask the right follow-up questions, and make clear product decisions despite imperfect information.
+
+That shift reflects something bigger. **AI product sense**—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management.
+
+Over the past year, I’ve watched the same pattern repeat across different teams at work and in my trainings: the AI works beautifully in a controlled flow . . . and then it breaks in production because of a handful of predictable failure modes. The uncomfortable truth is that the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience. For example, a customer support agent can feel incredible in a demo and then, after launch, quietly lose user trust by confidently answering ambiguous or underspecified questions (for example, “Is this good?”) instead of stopping to ask for clarification.
+
+Through my work shipping speech and identity features for conversational platforms and personalized experiences (on-device assistants and diverse hardware portfolios) for 10 years, I started using a simple, repeatable workflow to uncover issues that would otherwise show up weeks later, building this AI product sense for myself first, and then with teams and students. It’s not a theory or a framework but, rather, important practice that gives you early feedback on model behavior, failure modes, and tradeoffs—forcing you to see if an AI product can survive contact with reality before your users teach you the hard way. When I run this process, two things happen quickly: I stop being surprised by model behavior, because I’ve already experienced the weird cases myself. And I get clarity on what’s a product problem vs. what’s a model limitation.
+
+#### In this post, I’ll walk through my three steps for building AI product sense:
+
+**1. Map the failure modes (and the intended behavior) 
+2. Define the minimum viable quality (MVQ) 
+3. Design guardrails where behavior breaks** 
+ 
+Once that AI product sense muscle develops, you should be able to evaluate a product across a few concrete dimensions: how the model behaves under ambiguity, how users experience failures, where trust is earned or lost, and how costs change at scale. It’s about understanding and predicting how the system will respond to different circumstances.
+
+In other words, the work expands from “Is this a good product idea?” to “How will this product behave in the real world?”
+
+Let’s start building AI product sense.
+
+## **Map the failure modes (and the intended behavior)**
+
+Every AI feature has a *failure signature*: the pattern of breakdowns it reliably falls into when the world gets messy. And the fastest way to build AI product sense is to deliberately push the model into those failure modes before your users ever do.
+
+I run the following rituals once a week, usually Wednesday mornings before my first meeting, on whatever AI workflow I’m currently building. Together, they run under 15 minutes, and are worth every second. The results consistently surface issues for me that would otherwise show up much later in production.
+
+### **Ritual 1: Ask a model to do something obviously wrong (2 min.)**
+
+**Goal:** Understand the model’s tendency to force structure onto chaos
+
+Take the kind of chaotic, half-formed, emotionally inconsistent data every PM deals with daily—think Slack threads, meeting notes, Jira comments—and ask the model to extract “strategic decisions” from it. That’s because this is where generative models reveal their most dangerous pattern:
+
+**When confronted with mess, they confidently invent structure.**
+
+Here’s an example messy Slack thread:
+
+**Alice:** “Stripe failing for EU users again?”
+
+**Ben:** “no idea, might be webhook?” 
+**Sara:** “lol can we not rename the onboarding modal again?” 
+**Kyle:** “Still haven’t figured out what to do with dark mode” 
+**Alice:** “We need onboarding out by Thursday” 
+**Ben:** “Wait, is the banner still broken on mobile???” 
+**Sara:** “I can fix the copy later”
+
+I asked the model to extract “strategic product decisions” from this thread, and it confidently hallucinated a roadmap, assigned the wrong owners, and turned offhand comments into commitments. This is the kind of failure signature every AI PM must design around:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!ZeGA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c8a593f-90b9-4ff4-9bb8-0f31ccd0f46c_1278x958.png)](https://substackcdn.com/image/fetch/$s_!ZeGA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c8a593f-90b9-4ff4-9bb8-0f31ccd0f46c_1278x958.png)
+```
+
+It looks authoritative, clean, structured. And it’s completely wrong.
+
+Now that you have the obviously wrong results, you’ll need to generate the “ideal” response and compare the two responses to understand what signals the model needs to behave correctly.
+
+Here’s exactly what to do:
+
+#### **1. Re-run the same Slack thread through the model**
+
+Use the same messy context that caused the hallucination.
+
+```
+Example (you paste the Slack thread):
+```
+
+> *Based on this Slack discussion, draft our Q4 roadmap.*
+
+Let’s say the model invents features you never discussed. Great, you’ve found a failure mode.
+
+#### **2. Now tell the model what good looks like and run it again**
+
+Add one short line explaining the expected behavior. For example:
+
+*Try again, but only include items explicitly mentioned in the thread. If something is missing, say “Not enough information.”*
+
+Run that prompt against the exact same Slack thread. A correct, trustworthy behavior would be:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!2JLB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed7ed746-bd16-4b95-962a-4ac28ffac5d5_1464x1434.png)](https://substackcdn.com/image/fetch/$s_!2JLB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed7ed746-bd16-4b95-962a-4ac28ffac5d5_1464x1434.png)
+```
+
+This answer acknowledges the lack of clear decisions, asks clarifying questions, and surfaces useful structure without inventing facts (“key themes”). It avoids assigning owners unless explicitly stated and highlights uncertainties instead of hiding them.
+
+#### **3. Compare the two outputs—and the inputs that led to them—side by side**
+
+This contrast of the two outputs above—confident hallucination vs. humble clarity—is what teaches you how the model behaves today, and what you need to design toward. And that contrast is where AI product sense sharpens fastest.
+
+You’re looking for:
+
+```
+* What changed?
+* What guardrail fixed the hallucination?
+* What does the model need to behave reliably? (Explicit constraints? Better context? Tighter scoping?)
+* Does the “good” version feel shippable or still brittle?
+* What would the user experience in each version?
+```
+
+**4. Capture the gaps—this becomes a product requirement**
+
+When you see a failure mode repeat, it usually points to a specific kind of product gap (and specific kind of fix).
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!Uz8S!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f7592ae-3321-4894-8fca-38b1b3fc9377_1456x1068.png)](https://substackcdn.com/image/fetch/$s_!Uz8S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f7592ae-3321-4894-8fca-38b1b3fc9377_1456x1068.png)
+```
+
+Now you know where the product fails and its intended behavior. Later in this guide, I’ll show concrete examples of what prompt and design guardrails and retrieval look like in practice, and how to decide when to add them.
+
+### **Ritual 2: Ask a model to do something ambiguous (3 min.)**
+
+**Goal:** Understand the model’s semantic fragility
+
+Ambiguity is kryptonite for probabilistic systems because if a model doesn’t fully understand the user’s intent, it fills the gaps with its best guess (i.e. hallucinations, bad ideas). That’s when user trust starts to crack. Try, for example, to input a PRD into [NotebookLM](https://notebooklm.google.com/) and ask it to *“Summarize this PRD for the VP of Product.”*
+
+**How to try this in 2 minutes (NotebookLM):**
+
+1. Open NotebookLM → create a new notebook
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!yKzB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e892881-4665-4b0a-918f-03a5466790a8_500x500.png)](https://substackcdn.com/image/fetch/$s_!yKzB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e892881-4665-4b0a-918f-03a5466790a8_500x500.png)
+```
+
+2. Upload a PRD (Google Doc/PDF works well)
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!NXiL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa106f816-b1cf-479b-a0b0-d8cedaf71d3b_500x500.png)](https://substackcdn.com/image/fetch/$s_!NXiL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa106f816-b1cf-479b-a0b0-d8cedaf71d3b_500x500.png)
+```
+
+3. Ask: **“Summarize this for execs and list the top 5 risks and open questions.”**
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!_oGa!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F769e09ad-1d9a-4d20-bc15-383f0d2abd4e_500x500.png)](https://substackcdn.com/image/fetch/$s_!_oGa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F769e09ad-1d9a-4d20-bc15-383f0d2abd4e_500x500.png)
+```
+
+Does it:
+
+```
+* over-summarize?
+* latch onto one irrelevant detail?
+* ignore caveats?
+* assume the wrong audience?
+```
+
+The model’s failures reveal where its **semantic fragility** is—in what ways the model technically understands your words but completely misses your intent. Other examples could be if you ask for a summary for leaders and it gives you a bullet list of emojis and jokes from the thread. Or you ask for UX problems and it confidently proposes a new pricing model.
+
+What you’re learning here is where the model gets confused, which is exactly where your product should step in and do the work to reduce ambiguity. That could mean asking the user to choose a goal (“Summarize for who?”), giving the model more context, or constraining the action so the model can’t go off-track. You’re not trying to “trick” the model; you’re trying to understand where communication breaks so you can prevent misunderstanding through design.
+
+#### **Ambiguous prompts: what to test, what breaks, what to do**
+
+Here are a few ambiguous prompts to try, along with the different interpretations you should explicitly test:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!RhoU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ab7a206-a2b2-4c43-9765-7bf502d4cd58_1456x1269.png)](https://substackcdn.com/image/fetch/$s_!RhoU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ab7a206-a2b2-4c43-9765-7bf502d4cd58_1456x1269.png)
+```
+
+Now you have another batch of design work for the AI product to help guide it toward predictable and trustworthy results.
+
+### **Ritual 3: Ask a model to do something unexpectedly difficult (3 min.)**
+
+**Goal:** Understand the model’s first point of failure
+
+Pick one task that feels simple to a human PM but stresses a model’s reasoning, context, or judgment.
+
+You’re not trying to exhaustively test the model. You’re trying to **see where it breaks first**, so you know where the product needs organizing structure. Where it starts to go wrong is exactly where you need to design guardrails, narrow inputs, or split the task into smaller steps.
+
+**Note:** This isn’t the final solution yet; it’s the *intended behavior*. In the guardrails section later, I’ll show how to turn this into an explicit rule in the product (prompt + UX + fallback behavior).
+
+#### **Example 1: “Group these 40 bugs into themes and propose a roadmap.”**
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!Di7q!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ade29cd-096b-42b3-9b21-9065e0438f1c_1456x765.png)](https://substackcdn.com/image/fetch/$s_!Di7q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ade29cd-096b-42b3-9b21-9065e0438f1c_1456x765.png)
+```
+
+#### **Example 2: “Summarize this PRD and flag risks for leadership.”**
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!SPk4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcfb1a2a9-de2c-43f6-9629-a6a70cfd7033_1456x807.png)](https://substackcdn.com/image/fetch/$s_!SPk4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcfb1a2a9-de2c-43f6-9629-a6a70cfd7033_1456x807.png)
+```
+
+With results from all three rituals, you now have a complete list of product design work that needs to happen to get the results you and users can use and trust.
+
+Over time, this kind of work also starts to surface second-order effects—moments where a small AI feature quietly reshapes workflows, defaults, or expectations. System-level insights come later, once the foundations are solid. The first goal is to understand behavior.
+
+## **Define a minimum viable quality (MVQ)**
+
+Even when you understand a model’s failure modes and have designed around them, it’s nearly impossible to entirely predict how AI features will behave once they hit the real world, but performance almost always drops once they’re out of the controlled development environment. Since you don’t know how it will drop or by how much, one of the best ways to keep the bar high from the start is to define a **minimum viable quality (MVQ)** and check it against your product throughout development.
+
+A strong MVQ explicitly defines three thresholds:
+
+1. **Acceptable bar:** where it’s good enough for real users
+2. **Delight bar:** where the feature feels magical
+3. **Do-not-ship bar:** the unacceptable failure rates that will break trust
+
+Also important in MVQ is the product’s **cost envelope**: the rough range of what this feature will cost to run at scale for your users.
+
+A concrete example of MVQ comes from my firsthand experience. I spent years working in speech recognition and speaker identification, a domain where the gap between lab accuracy and real-world accuracy is painfully visible.
+
+I still remember demos where the model hit over 90% accuracy in controlled tests and then completely fell apart the first time we tried it in a real home. A barking dog, a running dishwasher, someone speaking from across the room, and suddenly the “great” model felt broken. And from the user’s perspective, it *was* broken.
+
+With speaker identification for AI features coming from smart speakers, the MVQ of the ability to identify *who* is speaking would look like this:
+
+### **Acceptable bar**
+
+```
+* Correctly identifies the speaker x% of the time in typical home conditions
+* Recovers gracefully when unsure (“I’m not sure who’s speaking—should I use your profile or continue as a guest?”)
+```
+
+### **Delight bar**
+
+You don’t need a perfect percentage to know that you’ve hit the right delight bar, but you look for behavioral signals like:
+
+```
+* Users stop repeating themselves or rephrasing commands
+* “No, I meant . . .” corrections drop sharply
+```
+
+Rule of thumb: If 8 or 9 out of 10 attempts work without a retry in realistic conditions, it feels magical. If 1 in 5 needs a retry, trust erodes fast. MVQ also depends on the phase you’re in. In a closed beta, users often tolerate rough edges because they expect iteration. In a broad launch, the same failure modes feel broken.
+
+For the speech recognition feature, here are some examples for assessing delight:
+
+```
+* Background chaos test: Play a video in the background while two people talk over each other and see if the assistant still responds correctly *without* asking, “Sorry, can you repeat that?”
+* 6 p.m. kitchen test: Dishwasher running, kids talking, dog barking—and the smart speaker still recognizes *you* and gives a personalized response without a “I couldn’t recognize your voice” interruption.
+* Mid-command correction test: You say “Set a timer for 10 minutes . . . actually, make it 5,” and it updates correctly instead of sticking to the original instruction.
+```
+
+### **Do-not-ship bar**
+
+```
+* Misidentifies the speaker more than y% of the time in critical flows (purchases, messages, personalized actions)
+* Forces users to repeat themselves multiple times just to be recognized
+
+* You may have noticed I didn’t actually assign values to each bar. That’s because the specific thresholds for MVQ (your “acceptable,” “delight,” and “do-not-ship” bars) aren’t fixed. They depend heavily on your **strategic context**.
+```
+
+### **Five strategic context factors that raise or lower your MVQ bar**
+
+Here are the five factors that most often determine where that bar should be set, and how they change your product decision:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!7aeu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea97b8b-87a1-4fb3-b8a6-5eed1cee80ec_1456x1182.png)](https://substackcdn.com/image/fetch/$s_!7aeu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea97b8b-87a1-4fb3-b8a6-5eed1cee80ec_1456x1182.png)
+```
+
+### **Estimating the cost envelope**
+
+One of the most common mistakes new AI PMs make is falling in love with a magical AI demo without checking whether it’s financially viable. That’s why it’s important to estimate the AI product or feature’s cost envelope early.
+
+> **Cost envelope = the rough range of what this feature will cost to run at scale for your users**
+
+You don’t need perfect numbers, but you need a ballpark. Start with:
+
+```
+* What’s the **model cost per call** (roughly)?
+* How often will users trigger it per day/month?
+* What’s the **worst-case scenario** (power users, edge cases)?
+* Can caching, smaller models, or distillation bring this down?
+* If usage 10x’s, does the math still work?
+```
+
+#### **Example: AI meeting notes again**
+
+```
+* Per-call cost: ~$0.02 to process a 30-minute transcript
+* Average usage: 20 meetings/user/month → ~$0.40/month/user
+* Heavy users: 100 meetings/month → ~$2.00/month/user
+* With caching and a smaller model for “low-stakes” meetings, maybe you bring this to ~$0.25–$0.30/month/user on average
+```
+
+Now you can have a real conversation:
+
+```
+* A feature that effectively costs **$0.30/user/month** and drives retention is a no-brainer.
+* A feature that ends up at **$5/user/month** with unclear impact is a business problem.
+```
+
+This is a core part of AI product sense: **Does what you’re proposing actually make sense for the business?**
+
+## **Design guardrails where behavior breaks**
+
+Now that you better understand where a model’s behavior breaks and what you’re looking for to greenlight a launch, it’s time to codify some guardrails and design them into the product. A good guardrail determines what the product should do **when the model hits its limits** so that users don’t get confused, misled, or lose trust. In practice, guardrails protect users from experiencing a model’s failure modes. At a startup I’ve been collaborating with, we built an AI feature to increase the team’s productivity that summarized long Slack threads into “decisions and action items.” In testing, it worked well—until it started assigning owners for action items when no one had actually agreed to anything yet. Sometimes it even picked the wrong person.
+
+Because my team had developed our AI product sense, we figured out that the fix was a new guardrail in the product, not a different underlying model.
+
+So we added one simple rule to the system prompt (in this case, just a line of additional instruction):
+
+*Only assign an owner if someone explicitly volunteers or is directly asked and confirms. Otherwise, surface themes and ask the user what to do next.*
+
+That single constraint eliminated the biggest trust issue almost immediately.
+
+## **What good guardrails look like in practice**
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!9tUb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e2e7eb9-71ad-4696-a396-9d5e19d39df7_1456x965.png)](https://substackcdn.com/image/fetch/$s_!9tUb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e2e7eb9-71ad-4696-a396-9d5e19d39df7_1456x965.png)
+```
+
+None of these makes the model more “intelligent.” Good guardrails simply protect the user from the model’s shortcomings and prevent misunderstandings.
+
+You decide in advance how the system should slow down, ask for help, narrow scope, or say “I don’t know.” That’s how AI products fail gracefully instead of catastrophically.
+
+### **Ritual 4: Add explicit failure responses in the system prompt (3 min.)**
+
+In the first section, you surfaced *where* the system breaks. Now you’ll decide what the product should do *when* it breaks.
+
+```
+* Take a real, messy input—a meeting transcript, a Slack thread, a support log—and feed it into the same AI chat multiple times. Ask the same question each time, for example:
+```
+
+ + *“What were the top 5 decisions?”*
+```
+* Then compare the answers side by side. Look for:
+```
+
+ + *Did it pick different “decisions” each time?*
+ + *Did it invent decisions that weren’t in the text?*
+ + *Did it miss the same important decision repeatedly?*
+```
+* Mark what changed (and why it matters) and ask yourself:
+```
+
+ + If a user saw the worst version of these 10 outputs, would they still trust the product?
+```
+* Add one guardrail based on what you saw:
+
+[![](https://substackcdn.com/image/fetch/$s_!ZD6u!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F053acaeb-c35f-45c6-a9e8-04f4b27a45f0_1456x1007.png)](https://substackcdn.com/image/fetch/$s_!ZD6u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F053acaeb-c35f-45c6-a9e8-04f4b27a45f0_1456x1007.png)
+```
+
+### **Four patterns that cover most real-world cases**
+
+#### **1. When the model seems unsure → ask instead of guessing**
+
+In practice, this usually means adding an explicit instruction to the system or task prompt, for example:
+
+> “If you’re not confident, ask a clarifying question instead of making assumptions.”
+
+Small questions go a long way:
+
+```
+* “Do you want a summary or the key decisions?”
+* “Should I focus on onboarding or payments?”
+```
+
+These checks often prevent much bigger mistakes downstream.
+
+#### **2. When the context is too long → give the user a choice**
+
+Instead of letting the model silently drop information:
+
+> “This thread is long—should I focus on the first half, second half, or just action items?”
+
+This is fast, honest, and avoids hallucinations.
+
+#### **3. When the model invents structure → say so**
+
+If the input has no decisions, owners, or clear outcomes:
+
+> “I didn’t see any decisions here—would you like themes instead?”
+
+Transparency builds trust.
+
+#### **4. When outputs bounce around → add light structure**
+
+If the same request produces wildly different answers, steady it with a simple format:
+
+> “List: what was discussed, what was decided, what needs follow-up.”
+
+This reduces variance without making the product rigid.
+
+So during a recent product review, when I was asked to “fix the model,” I instead decided what the product did **when the model hit its limits**.
+
+## **Great AI product sense means reliable user experiences**
+
+AI product sense is a muscle that is built through repetition, by seeing real outputs, catching real failure modes, and making real product decisions under uncertainty.
+
+One thing that surprised me: I recently asked my AI PM bootcamp students (and a few PM peers) what “AI product sense” meant to them, and I got very different answers.
+
+Some described it as model knowledge. 
+Others as evaluation. 
+Others as prompting. 
+Others as safety. 
+Others as cost and unit economics.
+
+We’re in the early phase of a new PM skill becoming mainstream, and the industry is still converging on what “great” looks like. But after shipping, coaching, and watching AI products break in production, I’ve found the practical definition is much simpler. AI product sense is the ability to translate probabilistic model behavior into a product experience people can rely on. And that’s what this guide is really about—building the instinct to spot where a model will guess instead of ask, define a quality bar before launch (including cost), and design guardrails so failures are predictable and recoverable. 
+ 
+Run these rituals once a week, and AI product sense stops being abstract. You’ll stop being surprised by weird outputs as you design clearer asks, tighter constraints, and better fallbacks—because you know where things will break. In 2026, the differentiator will be PMs who can ship products that still feel trustworthy despite messy inputs, unclear intent, and zero patience.
+
+*Thanks, Marily!*
+
+*For more from [Marily](https://www.linkedin.com/in/marilynika/), check out her **[AI Product Management Bootcamp & Certification](https://bit.ly/49I8XrK)** course **(**which is also available for private corporate sessions) and her recently launched **[AI Product Sense and AI PM Interview prep](https://bit.ly/4sufHkw)** course (both courses are 15% off using these links). You can also watch her **[free Lightning Lesson](https://maven.com/p/2a459c/thriving-as-a-senior-ic-pm-in-the-ai-era)** on how to excel as a senior IC PM in the AI era, and subscribe to [her newsletter](https://marily.substack.com/).*
+
+*Have a fulfilling and productive week 🙏*
+
+---
+
+**If you’re finding this newsletter valuable, share it with a friend, and consider subscribing if you haven’t already. There are [group discounts](https://www.lennysnewsletter.com/subscribe?group=true), [gift options](https://www.lennysnewsletter.com/subscribe?gift=true), and [referral bonuses](https://www.lennysnewsletter.com/leaderboard) available.**
+
+```
+[Subscribe now](https://www.lennysnewsletter.com/subscribe?)
+```
+
+Sincerely,
+
+Lenny 👋
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management.
+
+*Context: Highlighting the importance of AI product sense in modern product management.*
+
+> the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience.
+
+*Context: Discussing the challenges of AI product development in real-world scenarios.*
+
+> I stop being surprised by model behavior, because I’ve already experienced the weird cases myself.
+
+*Context: The author shares personal benefits from practicing AI product sense rituals.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/product-management]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Building AI product sense, part 2"
+    icon="newspaper"
+    href="/kb/articles/building-ai-product-sense-part-2-35ea6c02"
+  >
+    Lenny Rachitsky · explanation · 77% similar
+  </Card>
+  <Card
+    title="🧠 Community Wisdom: Common mistakes when hiring a growth PM, using AI to speed up bug reporting, launching a solo consulting practice, resume titles for engineers transitioning to PM, and more"
+    icon="newspaper"
+    href="/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
+  >
+    Lenny Rachitsky · explanation · 67% similar
+  </Card>
+  <Card
+    title="Experts Have World Models. LLMs Have Word Models."
+    icon="newspaper"
+    href="/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2](https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2).
+</Note>

@@ -41,3 +41,65 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 
 ### Resources
 - [Mintlify documentation](https://mintlify.com/docs)
+
+## Steps to crawl, generate embedding and generate mdx file
+### 1 - cd to /ai-thought-leadership
+
+#### by a url
+python scripts/scraper.py --url https://every.to/guides/compound-engineering
+
+#### by an author
+python scripts/scraper.py --source lenny-rachitsky --days-back=60
+
+### 2 - generate embedding
+python scripts/supabase_sync.py --force
+
+### 3 - cd /Users/sonle/Github/mintlify-starter/scripts
+node generate-kb-mdx.mjs
+
+`generate-kb-mdx.mjs` also syncs the `kb/browse.mdx` author list from `/Users/sonle/Github/ai-thought-leadership/config/sources.yaml` (or `SOURCES_YAML_PATH` env var).
+
+## Source Suggestions -> sources.yaml Workflow
+
+Submissions from the app are stored in Supabase table `source_suggestions`.
+The ingestion system still reads from `/Users/sonle/Github/ai-thought-leadership/config/sources.yaml`.
+Use the bridge script below to keep them in sync.
+Set `SUPABASE_SERVICE_ROLE_KEY` in your `.env` so the script can review/update suggestions.
+
+### 1. Apply migration (once)
+
+```bash
+# in Supabase SQL editor or migration runner
+supabase/migrations/004_source_suggestion_sync_tracking.sql
+```
+
+### 2. Review suggestions
+
+```bash
+cd scripts
+npm run suggestions:list -- --status pending
+npm run suggestions:set-status -- --status approved --ids <id1,id2>
+```
+
+### 3. Promote approved suggestions to sources.yaml
+
+```bash
+cd scripts
+npm run suggestions:promote -- --sources-file /Users/sonle/Github/ai-thought-leadership/config/sources.yaml
+```
+
+Optional flags:
+- `--dry-run` preview without writing
+- `--activate` writes new sources with `active: true` (default is `false`)
+- `--tag <tag-name>` default: `community-submitted`
+
+The script also marks promoted rows in Supabase (`promoted_to_sources`, `promoted_source_id`, `promoted_at`) so they are not reprocessed.
+
+### Admin UI for Source Suggestions
+
+Once API admin env vars are set, open `/kb/admin-suggestions` in the docs app.
+
+Required API env vars (Cloudflare Worker):
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `ADMIN_USER_IDS` (comma-separated Supabase auth user IDs allowed to moderate suggestions)
+- `ADMIN_USER_EMAILS` (comma-separated emails; useful when user UUID is unknown)

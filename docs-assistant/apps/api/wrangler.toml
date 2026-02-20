@@ -9,3 +9,6 @@ ENVIRONMENT = "development"
 # - SUPABASE_URL
 # - SUPABASE_ANON_KEY
 # - OPENAI_API_KEY
+# - SUPABASE_SERVICE_ROLE_KEY
+# - ADMIN_USER_IDS (comma-separated Supabase auth user IDs)
+# - ADMIN_USER_EMAILS (comma-separated admin emails)

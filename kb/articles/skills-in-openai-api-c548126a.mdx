@@ -1,0 +1,143 @@
+---
+title: 'Skills in OpenAI API'
+description: 'You can now use Skills directly in the OpenAI API with their shell tool. OpenAI''s adoption of Skills continues to gain ground. You can now use Skills '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-11'
+sourceUrl: 'https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything'
+topics: ["OpenAI API","Prompt Engineering","Claude Code"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything) · 11/02/2026
+</Info>
+
+## Summary
+
+You can now use Skills directly in the OpenAI API with their shell tool. OpenAI's adoption of Skills continues to gain ground. You can now use Skills directly in the OpenAI API with their [shell tool](https://developers.openai.com/api/docs/guides/tools-shell/). You can zip skills up and upload them first, but I think an even neater interface is the ability to send skills
+
+## Key Insights
+
+> "You can now use Skills directly in the OpenAI API with their shell tool."
+>
+> — Introduction to using Skills in the OpenAI API.
+
+> "I built that example script after first having Claude Code for web use Showboat to explore the API for me."
+>
+> — Discussing the process of using Claude Code to automate API exploration.
+
+## Topics
+
+- [OpenAI API](/kb/topics/openai-api)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Claude Code](/kb/topics/claude-code)
+
+---
+
+## Full Article
+
+# Skills in OpenAI API
+
+**Author**: Simon Willison  
+**Published**: 2026-02-11  
+**Source**: [https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything](https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything)
+
+---
+
+**[Skills in OpenAI API](https://developers.openai.com/cookbook/examples/skills_in_api)**
+
+OpenAI's adoption of Skills continues to gain ground. You can now use Skills directly in the OpenAI API with their [shell tool](https://developers.openai.com/api/docs/guides/tools-shell/). You can zip skills up and upload them first, but I think an even neater interface is the ability to send skills with the JSON request as inline base64-encoded zip data, as seen [in this script](https://github.com/simonw/research/blob/main/openai-api-skills/openai_inline_skills.py):
+
+```
+r = OpenAI().responses.create(
+    model="gpt-5.2",
+    tools=[
+      {
+        "type": "shell",
+        "environment": {
+          "type": "container_auto",
+          "skills": [
+            {
+              "type": "inline",
+              "name": "wc",
+              "description": "Count words in a file.",
+              "source": {
+                "type": "base64",
+                "media_type": "application/zip",
+                "data": b64_encoded_zip_file,
+              },
+            }
+          ],
+        },
+      }
+    ],
+    input="Use the wc skill to count words in its own SKILL.md file.",
+)
+print(r.output_text)
+
+```
+I built that example script after first having Claude Code for web use [Showboat](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/) to explore the API for me and create [this report](https://github.com/simonw/research/blob/main/openai-api-skills/README.md). My opening prompt for the research project was:
+
+> `Run uvx showboat --help - you will use this tool later`
+>
+> `Fetch https://developers.openai.com/cookbook/examples/skills_in_api.md to /tmp with curl, then read it`
+>
+> `Use the OpenAI API key you have in your environment variables`
+>
+> `Use showboat to build up a detailed demo of this, replaying the examples from the documents and then trying some experiments of your own`
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> You can now use Skills directly in the OpenAI API with their shell tool.
+
+*Context: Introduction to using Skills in the OpenAI API.*
+
+> I built that example script after first having Claude Code for web use Showboat to explore the API for me.
+
+*Context: Discussing the process of using Claude Code to automate API exploration.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/prompt-engineering]]
+- [[topics/claude-code]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Equipping agents for the real world with Agent Skills"
+    icon="newspaper"
+    href="/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+  >
+    Anthropic Engineering · explanation · 72% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+  >
+    Lenny Rachitsky · how-to · 68% similar
+  </Card>
+  <Card
+    title="Moltbook is the most interesting place on the internet right now"
+    icon="newspaper"
+    href="/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
+  >
+    Simon Willison · explanation · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything](https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything).
+</Note>

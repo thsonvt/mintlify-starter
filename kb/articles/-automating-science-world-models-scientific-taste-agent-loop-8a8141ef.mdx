@@ -1,0 +1,113 @@
+---
+title: '🔬 Automating Science: World Models, Scientific Taste, Agent Loops — Andrew White'
+description: 'ChemCrow story: GPT-4 + React + cloud lab automation, released March 2023, set off a storm of anxiety about AI-accelerated bioweapons/chemical weapons'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-01-28'
+sourceUrl: 'https://www.latent.space/p/automating-science-world-models-scientific'
+topics: ["AI Agents","Scientific Discovery","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/automating-science-world-models-scientific) · 28/01/2026
+</Info>
+
+## Summary
+
+ChemCrow story: GPT-4 + React + cloud lab automation, released March 2023, set off a storm of anxiety about AI-accelerated bioweapons/chemical weapons. Editors note: Welcome to our new AI for Science pod, with your new hosts RJ and Brandon! See the writeup on Latent.Space (https://Latent.Space) for more details on why were launching 2 new pods this year. RJ Honicky is a co-founder and CTO at MiraOmics (https://miraomics.bio/), building AI models an
+
+## Key Insights
+
+> "ChemCrow story: GPT-4 + React + cloud lab automation, released March 2023, set off a storm of anxiety about AI-accelerated bioweapons/chemical weapons."
+>
+> — Discussing the impact and controversy around the ChemCrow project.
+
+> "scientific taste is the frontier: RLHF on hypotheses didn’t work."
+>
+> — Explaining the shift towards end-to-end feedback loops in scientific AI.
+
+> "Cosmos: the full scientific agent with a world model."
+>
+> — Introducing Cosmos, an advanced AI system for scientific research.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Scientific Discovery](/kb/topics/scientific-discovery)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# 🔬 Automating Science: World Models, Scientific Taste, Agent Loops — Andrew White
+```
+
+**Author**: Swyx  
+**Published**: 2026-01-28  
+**Source**: [https://www.latent.space/p/automating-science-world-models-scientific](https://www.latent.space/p/automating-science-world-models-scientific)
+
+---
+
+&lt;p>&lt;em>&lt;strong>Editor&#8217;s note&lt;/strong>: Welcome to our new AI for Science pod, with your new hosts RJ and Brandon! See the writeup on &lt;strong>Latent.Space&lt;/strong>&lt;/em> (https://Latent.Space) for more details on why we&#8217;re launching 2 new pods this year. RJ Honicky is a co-founder and CTO at MiraOmics &lt;em>(https://miraomics.bio/)&lt;/em>&lt;a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa0VybkJZMVdDZ2pfNHpyeVJnWklaeE5EbXNaQXxBQ3Jtc0trYU9JbEUxdHNGOS0yLW54VWdKSHBqNzZzbFpGa0gzdG9Id2FFMW4zWnVhM2psREZZZ1ZfcEhmMmMyNXdzRWtJb3NRVnM3dnJ2eTdPeW9QY1oxSUlMdThKclNrcWhibjlwN2VqeWNTUVIzZlFpNHNSMA&amp;q=https%3A%2F%2Fmiraomics.bio%2F%29%2C_&amp;v=XqoBSB3nsgw">,&lt;/a> building AI models and services for single cell, spatial transcriptomics and pathology slide analysis. Brandon Anderson builds AI systems for RNA drug discovery at Atomic AI (&lt;em>https://atomic.ai&lt;/em>). Anything said on this podcast is his personal take &#8212; not Atomic&#8217;s.&lt;br />&#8212;&lt;br />From building molecular dynamics simulations at the University of Washington to red-teaming &lt;strong>GPT-4&lt;/strong> for chemistry applications and co-founding &lt;strong>Future House&lt;/strong> (a focused research organization) and &lt;strong>Edison Scientific&lt;/strong> (a venture-backed startup automating science at scale)&#8212;&lt;em>&lt;strong>Andrew White&lt;/strong>&lt;/em> has spent the last five years living through the full arc of AI&#8217;s transformation of scientific discovery, from &lt;strong>ChemCrow&lt;/strong> (the first Chemistry LLM agent) triggering White House briefings and three-letter agency meetings, to shipping &lt;strong>Kosmos,&lt;/strong> an end-to-end autonomous research system that generates hypotheses, runs experiments, analyzes data, and updates its &lt;strong>world model&lt;/strong> to accelerate the scientific method itself.&lt;/p>&lt;ul>&lt;li>&lt;p>The &lt;strong>ChemCrow story:&lt;/strong> GPT-4 + React + cloud lab automation, released March 2023, set off a storm of anxiety about AI-accelerated bioweapons/chemical weapons, led to a White House briefing (Jake Sullivan presented the paper to the president in a 30-minute block), and meetings with three-letter agencies asking &#8220;how does this change breakout time for nuclear weapons research?&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>scientific taste is the frontier:&lt;/strong> RLHF on hypotheses didn&#8217;t work (humans pay attention to tone, actionability, and specific facts, not &#8220;if this hypothesis is true/false, how does it change the world?&#8221;), so they shifted to end-to-end feedback loops where humans click/download discoveries and that signal rolls up to hypothesis quality&lt;/p>&lt;/li>&lt;li>&lt;p>&lt;strong>Cosmos:&lt;/strong> the full scientific agent with a &lt;strong>world model&lt;/strong> (distilled memory system, like a Git repo for scientific knowledge) that iterates on hypotheses via literature search, data analysis, and experiment design&#8212;built by Ludo after weeks of failed attempts, the breakthrough was putting data analysis in the loop (literature alone didn&#8217;t work)&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>molecular dynamics and DFT are overrated:&lt;/strong> &#8220;MD and DFT have consumed an enormous number of PhDs at the altar of beautiful simulation, but they don&#8217;t model the world correctly&#8212;you simulate water at 330 Kelvin to get room temperature, you overfit to validation data with GGA/B3LYP functionals, and real catalysts (grain boundaries, dopants) are too complicated for DFT&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>AlphaFold vs. DE Shaw Research&lt;/strong> counterfactual: DE Shaw built custom silicon, taped out chips with MD algorithms burned in, ran MD at massive scale in a special room in Times Square, and David Shaw flew in by helicopter to present&#8212;Andrew thought protein folding would require special machines to fold one protein per day, then AlphaFold solved it in Google Colab on a desktop GPU&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>E3 Zero reward hacking saga:&lt;/strong> trained a model to generate molecules with specific atom counts (verifiable reward), but it kept exploiting loopholes, then a Nature paper came out that year proving six-nitrogen compounds &lt;em>are&lt;/em> possible under extreme conditions, then it started adding nitrogen gas (purchasable, doesn&#8217;t participate in reactions), then acid-base chemistry to move one atom, and Andrew ended up &#8220;building a ridiculous catalog of purchasable compounds in a Bloom filter&#8221; to close the loop&lt;br />&lt;/p>&lt;/li>&lt;/ul>&lt;p>Andrew White&lt;/p>&lt;ul>&lt;li>&lt;p>FutureHouse: http://futurehouse.org/&lt;/p>&lt;/li>&lt;li>&lt;p>Edison Scientific: http://edisonscientific.com/&lt;/p>&lt;/li>&lt;li>&lt;p>X: &lt;a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqblB2ODl2eDdvTDM5a3Vid2VjWWdKRFBWb3pfZ3xBQ3Jtc0ttdU9adGNvZmhUTzZvTEJnSVFSanE1UTc3d19XZzRaUlpTS3ZxMUlBRHdnQWt5NXZxOVRqa1NrZW5iUkItdjEwNjNOVm5WMUF0Z1V1QjlXWTBYZlNXT1QwN2tEWGRYeTJSelB1TVRWRDduOHVUMHJxNA&amp;q=https%3A%2F%2Fx.com%2Fandrewwhite01&amp;v=XqoBSB3nsgw">https://x.com/andrewwhite01&lt;/a>&lt;/p>&lt;/li>&lt;li>&lt;p>Cosmos paper: &lt;a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbHJKS2s5eDdoY1l1Yl94QzlkZWY1anpucHZtZ3xBQ3Jtc0trdnVjVkVMbWdHdGxhWi1odlFfZ2c4NGtsWjVEOEd2b01NWVJJZ011SVdHOGxEYy1tWFlJREM5STF4enBwR3I4ejRCZVMtVmk5TGZxbUhNWUNDN0I2NHkwTVlSVVNsU3BCWmlNR0RYWjFtd1A2TFNWYw&amp;q=https%3A%2F%2Ffuturediscovery.org%2Fcosmos&amp;v=XqoBSB3nsgw">https://futurediscovery.org/cosmos&lt;/a>&lt;/p>&lt;/li>&lt;/ul>&lt;h2>Full Video Episode&lt;/h2>&lt;p>&lt;/p>&lt;div class="youtube-wrap" id="youtube2-XqoBSB3nsgw">&lt;div class="youtube-inner">&lt;/div>&lt;/div>&lt;h2>Timestamps&lt;/h2>&lt;p>&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw">00:00:00&lt;/a> Introduction: Andrew White on Automating Science with Future House and Edison Scientific&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=142s">00:02:22&lt;/a> The Academic to Startup Journey: Red Teaming GPT-4 and the ChemCrow Paper&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=695s">00:11:35&lt;/a> Future House Origins: The FRO Model and Mission to Automate Science&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=752s">00:12:32&lt;/a> Resigning Tenure: Why Leave Academia for AI Science&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=954s">00:15:54&lt;/a> What Does &#8216;Automating Science&#8217; Actually Mean?&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=1050s">00:17:30&lt;/a> The Lab-in-the-Loop Bottleneck: Why Intelligence Isn&#8217;t Enough&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=1119s">00:18:39&lt;/a> Scientific Taste and Human Preferences: The 52% Agreement Problem&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=1205s">00:20:05&lt;/a> Paper QA, Robin, and the Road to Cosmos&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=1317s">00:21:57&lt;/a> World Models as Scientific Memory: The GitHub Analogy&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=2420s">00:40:20&lt;/a> The Bitter Lesson for Biology: Why Molecular Dynamics and DFT Are Overrated&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=2602s">00:43:22&lt;/a> AlphaFold&#8217;s Shock: When First Principles Lost to Machine Learning&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=2785s">00:46:25&lt;/a> Enumeration and Filtration: How AI Scientists Generate Hypotheses&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=2895s">00:48:15&lt;/a> CBRN Safety and Dual-Use AI: Lessons from Red Teaming&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=3640s">01:00:40&lt;/a> The Future of Chemistry is Language: Multimodal Debate&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=4095s">01:08:15&lt;/a> Ether Zero: The Hilarious Reward Hacking Adventures&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=4212s">01:10:12&lt;/a> Will Scientists Be Displaced? Jevons Paradox and Infinite Discovery&lt;br />&lt;a href="https://www.youtube.com/watch?v=XqoBSB3nsgw&amp;t=4426s">01:13:46&lt;/a> Cosmos in Practice: Open Access and Enterprise Partnerships&lt;/p>
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> ChemCrow story: GPT-4 + React + cloud lab automation, released March 2023, set off a storm of anxiety about AI-accelerated bioweapons/chemical weapons.
+
+*Context: Discussing the impact and controversy around the ChemCrow project.*
+
+> scientific taste is the frontier: RLHF on hypotheses didn’t work.
+
+*Context: Explaining the shift towards end-to-end feedback loops in scientific AI.*
+
+> Cosmos: the full scientific agent with a world model.
+
+*Context: Introducing Cosmos, an advanced AI system for scientific research.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/scientific-discovery]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Captaining IMO Gold, Deep Think, On-Policy RL, Feeling the AGI in Singapore — Yi Tay"
+    icon="newspaper"
+    href="/kb/articles/captaining-imo-gold-deep-think-on-policy-rl-feeling-the-agi--815e6177"
+  >
+    Swyx · explanation · 73% similar
+  </Card>
+  <Card
+    title="[AINews] AI vs SaaS: The Unreasonable Effectiveness of Centralizing the AI Heartbeat"
+    icon="newspaper"
+    href="/kb/articles/ainews-ai-vs-saas-the-unreasonable-effectiveness-of-centrali-cae196a7"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+  <Card
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/automating-science-world-models-scientific](https://www.latent.space/p/automating-science-world-models-scientific).
+</Note>

@@ -1,0 +1,566 @@
+---
+title: 'Compound Engineering: Make Every Unit of Work Compound Into the Next'
+description: 'Design is easier to iterate on in code than in mockups—you can click through it and feel the interactions. The flag is named `--dangerously-skip-permi'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-02-18'
+sourceUrl: 'https://every.to/guides/compound-engineering'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/guides/compound-engineering) · 18/02/2026
+</Info>
+
+## Summary
+
+Design is easier to iterate on in code than in mockups—you can click through it and feel the interactions. The flag is named `--dangerously-skip-permissions` on purpose. It's meant to make you pause the first time. But once you are more experienced, you can make an informed decision about your risk tolerance and choose to skip it.
+
+## Key Insights
+
+> "Design is easier to iterate on in code than in mockups—you can click through it and feel the interactions."
+>
+> — Discussing the advantages of prototyping designs in code over static mockups.
+
+> "Vibe coding is for people who don't care about the code itself—they want results."
+>
+> — Introducing the concept of 'vibe coding' as a means to focus on outcomes over the coding process.
+
+> "The AI builds it."
+>
+> — Highlighting the role of AI in automating the development process from design mockups.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+# Compound Engineering: Make Every Unit of Work Compound Into the Next
+
+**Author**: Dan Shipper (Every)  
+**Published**: 2026-02-18  
+**Source**: [https://every.to/guides/compound-engineering](https://every.to/guides/compound-engineering)
+
+---
+
+The flag is named `--dangerously-skip-permissions` on purpose. It's meant to make you pause the first time. But once you are more experienced, you can make an informed decision about your risk tolerance and choose to skip it.
+
+Best practice
+
+## Design workflow
+
+Design is easier to iterate on in code than in mockups—you can click through it and feel the interactions. But you don't want to experiment in your production codebase. This section covers how to prototype designs in throwaway projects, test them with users, and capture your design taste so the AI can replicate it.
+
+### The baby app approach
+
+Create a throwaway project—a "baby app"—where you can iterate freely without worrying about tests, architecture, or breaking anything. Once the design feels right, extract the patterns and bring them back to the real project.
+
+#### The workflow
+
+1. **Create a prototype repo.** `mkdir baby-myapp && cd baby-myapp`
+2. **Vibe code the design.** "Create a settings page with dark mode toggle. Make it look modern."
+3. **Iterate until it looks right.** "More spacing. Toggle more prominent. Inline, not stacked."
+4. **Capture the design system.** Once you have something you are pleased with, extract colors, spacing, typography, and component patterns.
+5. **Transfer to main app.** Use the prototype as reference when building the real feature.
+
+### UX discovery loop
+
+When you don't know what to build, vibe coding is great for exploring:
+
+1. Generate multiple versions. Tell the agent to come up with five different versions of the settings page and see what it comes up with.
+2. Click through each one. Use them and see what feels right.
+3. Share with users. Show them the prototype and ask: "Would this flow confuse you?"
+4. Collect feedback on functional prototypes. Unlike a Figma mockup, they can actually click around.
+5. **Delete everything and start over with a proper plan.** The prototype is for learning only, not shipping.
+
+### Working with designers
+
+#### Traditional flow
+
+Collaboration between designers and developers usually looks like this: The designer creates a mockup. The developer interprets it and builds something. The designer says, "That's not quite right." Back and forth until it eventually matches—maybe.
+
+#### Compound flow
+
+With compound engineering, the back-and-forth shrinks.
+
+1. The designer creates a mockup in Figma
+2. You run [/plan](https://github.com/EveryInc/compound-engineering-plugin/blob/main/commands/workflows/plan.md) with Figma link and tell the AI to implement it exactly.
+3. The AI builds it.
+4. The [figma-design-sync](https://github.com/EveryInc/compound-engineering-plugin/blob/main/agents/design/figma-design-sync.md) agent checks if the implementation matches the mockup.
+5. The designer reviews the live version, not a screenshot.
+6. Iterate until it's perfect.
+
+### Codifying design taste
+
+Once you've worked with a designer on a few features, you'll notice patterns such as their preferred colors and how they like forms laid out. Write those down in a skill file. Using this, the AI can now produce designs that match the designer's taste—even when the designer isn't involved.
+
+```
+# skill: our-design-system
+
+## Colors
+- Primary: #4F46E5
+- Background: #F9FAFB
+
+## Spacing
+- Use 4px base unit
+- Sections: 32px gap
+
+## Patterns
+- Buttons: 12px horizontal padding
+- Cards: subtle shadows, not borders
+- Forms: single-column, max-width 400px
+
+```
+### Design agents
+
+[design-iterator](https://github.com/EveryInc/compound-engineering-plugin/blob/main/agents/design/design-iterator.md)
+
+Takes a screenshot of the current design, analyzes what's not working, makes improvements, and repeats. Each pass refines the design further.
+
+[figma-design-sync](https://github.com/EveryInc/compound-engineering-plugin/blob/main/agents/design/figma-design-sync.md)
+
+Pulls the design from Figma, compares to what's built, identifies differences, and fixes them automatically.
+
+[design-implementation-reviewer](https://github.com/EveryInc/compound-engineering-plugin/blob/main/agents/design/design-implementation-reviewer.md)
+
+Checks that the implementations match the Figma specifications. It catches visual bugs before they reach users.
+
+Best practice
+
+## Vibe coding
+
+Vibe coding is for people who don't care about the code itself—they want results.
+
+Maybe you're a product manager prototyping ideas. Maybe you're a designer testing how an interaction feels. Maybe you're building a personal project, and you'll never look at the code anyway. You just want to make sure the thing works—this is the vibe coder's philosophy.
+
+### The vibe coder's philosophy
+
+This section is about skipping the ladder and going straight to stage four, where you describe what you want and let the agents build it.
+
+### The fast path
+
+Skip the ladder. Go straight to Stage 4.
+
+1. **Describe what you want**
+
+```
+ /lfg Create a web app that lets me track my daily habits with checkboxes
+
+```
+2. **Wait**
+
+ The agent figures out what to build, creates the code, runs tests, reviews itself, makes a PR.
+3. **Check if it works**
+
+ If yes, done. If no, say what's wrong. Let the agent fix it.
+
+### What you don't need to care about
+
+* **Code quality**—The review agents handle it
+* **Architecture**—The agent makes reasonable choices
+* **Testing**—Tests are written automatically
+* **Best practices**—Codified in the agents
+
+You focus on *what* you want. The system handles *how*.
+
+### When to use vibe coding
+
+Perfect for
+
+* Personal projects
+* Prototypes
+* Experiments
+* "Can this even work?" investigations
+* Internal tools
+* UX exploration
+
+Not great for
+
+* Production systems with users
+* Code others will maintain
+* Security-sensitive apps
+* Performance-critical systems
+
+### The vibe coding paradox
+
+Vibe coding can actually make your planning better. When you don't know what you want to build, generate prototypes. Share them with users, and collect feedback. Click through them.
+
+Then delete everything and start over with a proper plan.
+
+The optimal split: Vibe code to discover what you want, then spec to build it properly. The spec always wins for final implementation, but vibe coding accelerates discovery.
+
+### Example session
+
+You:
+
+/lfg I want a website where I can paste a YouTube link and it extracts the transcript
+
+Agent works for five minutes...
+
+You: Works, but the text is hard to read. Make the font bigger.
+
+Agent fixes it...
+
+You: Perfect. Ship it.
+
+Best practice
+
+## Team collaboration
+
+When the AI handles implementation, the team dynamics shift. You need new agreements: who approves plans, who owns PRs, and what humans should review when agents have done the first pass.
+
+### The new team dynamics
+
+**Traditional:** In a traditional setting, developers collaborate in the following way: Person A writes code → Person B reviews → Discussion in PR comments → Merge after approval
+
+**Compound:** In a compound engineering setting, developers collaborate as follows: Person A creates plan → AI implements → AI agents review → Person B reviews the AI review → Merge after human approval
+
+### Team standards
+
+#### Plan approval
+
+Reading a plan and agreeing with it is a decision. Silence is not approval—it's the absence of a decision.
+
+**Standard:** The standard should require explicit sign-off before implementation, whether that's a comment, a tag in the commit message, or some other approval marker.
+
+#### PR ownership
+
+The person who initiated the work owns the PR, regardless of who (or what) wrote the code.
+
+You're responsible for the quality of the plan, reviewing the work, fixing any issues, and the impact after merge.
+
+#### Human review focus
+
+When AI review agents have already analyzed a PR, human reviewers focus on intent, not implementation.
+
+Ask yourself: Does this match what we agreed to build? Does the approach make sense? Are there business logic issues? Don't bother checking for syntax errors, security vulnerabilities, performance issues, or style—that's what the review agents already did.
+
+### Communication patterns
+
+#### Async by default
+
+Compound engineering works well asynchronously. Plans can be created, reviewed, and approved without scheduling a meeting.
+
+Instead of telling your colleague, "Let's meet to discuss the approach," try, "I've created a plan document—please comment by end of day."
+
+#### Explicit handoffs
+
+When handing off work to someone else, include everything they need: status, what's done, what's left, context, and how to continue, as the below example shows:
+
+```
+## Handoff: Email Notifications
+From: Kieran → To: Dan
+Status: Plan approved, implementation 50 percent
+What's left: User preference settings, unsubscribe flow
+How to continue: Run /work in the feature branch
+
+```
+### Scaling patterns
+
+Clear ownership + async updates
+
+Each major feature should have one owner. That person creates the plan, monitors the AI implementation, reviews the findings, merges when it's ready, and updates the team asynchronously.
+
+Feature flags + small PRs
+
+When everyone ships faster, merge conflicts increase. Ship small pieces, use feature flags, merge to main frequently, and resolve conflicts immediately.
+
+Compound docs = tribal knowledge
+
+You shouldn't need to ask a colleague for knowledge that could be baked into the system. Instead of saying, "Ask Sarah, she knows how auth works," Sarah runs [/compound](https://github.com/EveryInc/compound-engineering-plugin/blob/main/commands/workflows/compound.md) after implementing the feature. Now the solution is documented, and anyone can find it.
+
+Best practice
+
+## User research
+
+Structure research so AI can use it. Build persona documents, link insights to features, close the loop between research and implementation.
+
+### The research-development gap
+
+**Traditional:** In traditional software development, user researchers and developer collaboration looks like this: Researcher conducts interviews → Writes report → Report sits in Google Drive → Developer builds feature → Developer never reads report → Feature doesn't match user needs
+
+**Compound:** In compound engineering, that collaboration looks like this: Research generates structured insights → Insights become planning context → AI references insights when planning → Features are informed by research → Usage data validates insights → Insights compound
+
+### Structuring research
+
+Raw interview notes are hard for AI to use. Structure them:
+
+```
+# research/interviews/user-123.md
+---
+participant: Marketing Manager, B2B SaaS
+date: 2025-01-15
+focus: Dashboard usage patterns
+---
+
+## Key Insights
+
+### Insight: Morning dashboard ritual
+**Quote**: "First thing every morning, I check for red flags."
+**Implication**: Dashboard needs to surface problems quickly.
+**Confidence** (4/5 participants)
+
+```
+### Building persona documents
+
+Create persona documents that the AI can reference:
+
+```
+# personas/marketing-manager.md
+
+## Goals
+1. Prove marketing ROI to leadership
+2. Identify underperforming campaigns quickly
+
+## Frustrations
+1. Too much data, hard to find what matters
+2. Exporting for reports is tedious
+
+## Quotes
+- "I need to see problems, not everything."
+- "My boss wants a PDF, not a link."
+
+```
+### Research-informed planning
+
+```
+/workflows:plan Add export scheduling
+
+Research context:
+- 3/5 interviewed users mentioned exporting weekly
+- The marketing-manager persona exports every Friday
+- Current pain: manual export process
+
+Design for: Automated weekly exports to email
+
+```
+More coming soon
+
+Research compound loop, AI-assisted analysis, documentation standards.
+
+Best practice
+
+## Data pattern extraction
+
+Your users are already telling you what to build through how they use your product. Each click is a clue. You just have to pay attention.
+
+### Pattern types to look for
+
+Heavy usage patterns
+
+These are features that are used way more than expected. Another signal could be users returning to the same page repeatedly.
+
+Struggle patterns
+
+Look for high dwell time on simple pages or repeated attempts at the same action. Error → retry → error loops.
+
+Workaround patterns
+
+This is where users invent their own solutions because your product doesn't do what they need. Look for users who export data from one place and reimport it somewhere else. Users might be copying and pasting between screens, or keeping multiple tabs open to compare things side by side.
+
+Abandonment patterns
+
+This is where users drop off in flows. Features have been started but not completed.
+
+### From patterns to features
+
+Here is how those user patterns that you noticed turn into product decisions:
+
+You notice users copying data from one table and pasting it into another 50 times a week. 
+**The insight:** They need automation between tables. 
+**The feature:** a "sync to table B" button.
+
+You notice users creating "template" projects and duplicating them for new work. 
+**The insight:** They want project templates but don't have them. 
+**The feature:** first-class template support.
+
+More coming soon
+
+Agent-native data exploration, analytics MCP servers, productizing emergent behavior.
+
+Best practice
+
+## Copywriting
+
+Most teams treat copy as an afterthought—something to fill in after the feature is built. But copy is part of the user experience. It deserves the same attention as the code.
+
+### Copy is part of the plan
+
+Include copy in your plans from the start, codify your voice so the AI can follow it, and review it like you'd review any other output:
+
+```
+## Feature: Password Reset Flow
+
+### User-Facing Copy
+- Email subject: "Reset your password"
+- Success message: "Check your email. We sent a reset link."
+- Error (not found): "We couldn't find an account with that email.
+ Want to create one instead?"
+
+```
+Now when the AI implements, the copy is already there.
+
+### Codify your voice
+
+Create a skill that defines your copy voice, such as the following:
+
+```
+# skill: our-copy-voice
+
+## Principles
+1. Talk to users like humans, not robots
+2. Error messages should help, not blame
+3. Short sentences. Clear words.
+
+## Words to avoid
+- "Invalid" → "didn't work"
+- "Error" → describe what happened
+- "Successfully" → just say what happened
+- "Please" → just ask directly
+
+## Examples
+Bad: "Invalid credentials. Please try again."
+Good: "That password isn't right. Try again or reset it."
+
+```
+### Review copy like code
+
+Add copy review to your [/workflows:review](https://github.com/EveryInc/compound-engineering-plugin/blob/main/commands/workflows/review.md) process:
+
+copy-reviewer agent
+
+* **Clarity:** Can a non-technical user understand this?
+* **Helpfulness:** Does this help the user succeed?
+* **Tone:** Does this match our voice guide?
+* **Consistency:** Does this match similar text elsewhere?
+
+More coming soon
+
+Working with ghost writers, building copy libraries, and the copy compound loop.
+
+Best practice
+
+## Product marketing
+
+Congratulations, you've shipped something. Now it's time to tell the world. The same system that builds features can announce them. Generate release notes from plans, create social posts, and capture screenshots automatically.
+
+### The compound flow
+
+1. An engineer creates a plan that includes the product value proposition.
+2. The AI implements a feature.
+3. The AI generates release notes from the plan.
+4. The AI generates social posts from the release notes.
+5. The AI generates screenshots using Playwright.
+6. The engineer reviews and ships everything together.
+
+It all flows from one place. No one has to hand anything off, and nothing slips through the cracks.
+
+### Generating release notes
+
+After implementing a feature:
+
+```
+Based on the plan and implementation for [feature], write release notes:
+1. Lead with the user benefit (what can they do now?)
+2. Include one concrete example
+3. Mention any breaking changes
+4. Keep it under 200 words
+
+```
+The AI has the plan, the code changes, and the tests. It knows exactly what was built.
+
+### Generating changelogs
+
+For multiple features, use [/changelog](https://github.com/EveryInc/compound-engineering-plugin/blob/main/commands/changelog.md):
+
+```
+/changelog
+
+```
+Looks at recent merges to main, reads the plans/PRs for each, generates an engaging changelog.
+
+### Automated screenshots
+
+Use Playwright to capture screenshots for marketing:
+
+```
+Take screenshots showing the new notification settings:
+1. The settings page with notifications section
+2. An example notification email
+3. The in-app notification badge
+
+```
+No more asking engineering for screenshots, and no more out-of-date screenshots.
+
+More coming soon
+
+Marketing voice skill, feature announcement flow, and metrics that compound.
+
+## Ready to compound?
+
+Join Every to get access to our complete library of AI and engineering content.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Design is easier to iterate on in code than in mockups—you can click through it and feel the interactions.
+
+*Context: Discussing the advantages of prototyping designs in code over static mockups.*
+
+> Vibe coding is for people who don't care about the code itself—they want results.
+
+*Context: Introducing the concept of 'vibe coding' as a means to focus on outcomes over the coding process.*
+
+> The AI builds it.
+
+*Context: Highlighting the role of AI in automating the development process from design mockups.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Compound Engineering: How Every Codes With Agents"
+    icon="newspaper"
+    href="/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849"
+  >
+    Dan Shipper (Every) · explanation · 85% similar
+  </Card>
+  <Card
+    title="Stop Coding and Start Planning"
+    icon="newspaper"
+    href="/kb/articles/stop-coding-and-start-planning-118be905"
+  >
+    Dan Shipper (Every) · explanation · 82% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 82% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/guides/compound-engineering](https://every.to/guides/compound-engineering).
+</Note>

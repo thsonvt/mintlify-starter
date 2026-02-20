@@ -1,0 +1,27 @@
+---
+title: 'Source Suggestions Admin'
+description: 'Review and maintain community-submitted content sources'
+icon: 'shield-check'
+---
+
+# Source Suggestions Admin
+
+Review suggested sources submitted from the app, approve/reject them, and track whether they were promoted to the ingestion source list.
+
+<Info>
+  This page requires an authenticated admin user (configured via <code>ADMIN_USER_IDS</code> in the API).
+</Info>
+
+<div data-source-suggestions-admin></div>
+
+## Promotion workflow
+
+1. Approve valid suggestions on this page.
+2. Promote approved suggestions into `/Users/sonle/Github/ai-thought-leadership/config/sources.yaml` using:
+
+```bash
+cd /Users/sonle/Github/mintlify-starter/scripts
+npm run suggestions:promote -- --sources-file /Users/sonle/Github/ai-thought-leadership/config/sources.yaml
+```
+
+3. Use "Mark promoted" here to keep tracking state aligned when needed.

@@ -13,6 +13,10 @@ interface Env {
   SUPABASE_URL: string;
   SUPABASE_ANON_KEY: string;
   OPENAI_API_KEY: string;
+  SUPABASE_SERVICE_ROLE_KEY?: string;
+  SUPABASE_SERVICE_KEY?: string;
+  ADMIN_USER_IDS?: string;
+  ADMIN_USER_EMAILS?: string;
 }
 
 interface Highlight {
@@ -88,6 +92,9 @@ interface ContentGap {
   explanation: number;
 }
 
+type SuggestionStatus = 'pending' | 'approved' | 'rejected';
+const VALID_SUGGESTION_STATUSES: SuggestionStatus[] = ['pending', 'approved', 'rejected'];
+
 // Initialize Hono app
 const app = new Hono<{ Bindings: Env }>();
 
@@ -102,7 +109,7 @@ app.use('/*', cors({
 async function getAuthenticatedClient(
   env: Env,
   authHeader: string | undefined
-): Promise<{ supabase: SupabaseClient; user: { id: string } } | null> {
+): Promise<{ supabase: SupabaseClient; user: { id: string; email?: string } } | null> {
   if (!authHeader?.startsWith('Bearer ')) return null;
 
   const token = authHeader.slice(7);
@@ -120,7 +127,78 @@ async function getAuthenticatedClient(
   const { data: { user }, error } = await supabase.auth.getUser(token);
 
   if (error || !user) return null;
-  return { supabase, user: { id: user.id } };
+  return { supabase, user: { id: user.id, email: user.email || undefined } };
+}
+
+function parseAdminUserIds(raw: string | undefined): Set<string> {
+  return new Set(
+    (raw || '')
+      .split(',')
+      .map((x) => x.trim())
+      .filter(Boolean)
+  );
+}
+
+function parseAdminEmails(raw: string | undefined): Set<string> {
+  return new Set(
+    (raw || '')
+      .split(',')
+      .map((x) => x.trim().toLowerCase())
+      .filter(Boolean)
+  );
+}
+
+function parseJwtRole(token: string | undefined): string | null {
+  if (!token) return null;
+  const parts = token.split('.');
+  if (parts.length < 2) return null;
+
+  try {
+    const payloadJson = atob(parts[1].replace(/-/g, '+').replace(/_/g, '/'));
+    const payload = JSON.parse(payloadJson);
+    return typeof payload.role === 'string' ? payload.role : null;
+  } catch {
+    return null;
+  }
+}
+
+async function getAdminClient(
+  env: Env,
+  authHeader: string | undefined
+): Promise<
+  | { adminSupabase: SupabaseClient; userId: string }
+  | { error: { status: 401 | 403 | 500; message: string } }
+> {
+  const auth = await getAuthenticatedClient(env, authHeader);
+  if (!auth) {
+    return { error: { status: 401, message: 'Unauthorized' } };
+  }
+
+  const serviceRoleKey = env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_SERVICE_KEY;
+  if (!serviceRoleKey) {
+    return { error: { status: 500, message: 'Admin API not configured (missing service role key)' } };
+  }
+
+  const serviceRole = parseJwtRole(serviceRoleKey);
+  if (serviceRole !== 'service_role') {
+    return { error: { status: 500, message: 'Admin API not configured (service role key is invalid)' } };
+  }
+
+  const adminIds = parseAdminUserIds(env.ADMIN_USER_IDS);
+  const adminEmails = parseAdminEmails(env.ADMIN_USER_EMAILS);
+  if (adminIds.size === 0 && adminEmails.size === 0) {
+    return { error: { status: 500, message: 'Admin API not configured (missing ADMIN_USER_IDS/ADMIN_USER_EMAILS)' } };
+  }
+
+  const normalizedEmail = auth.user.email?.toLowerCase();
+  const allowedById = adminIds.has(auth.user.id);
+  const allowedByEmail = Boolean(normalizedEmail && adminEmails.has(normalizedEmail));
+  if (!allowedById && !allowedByEmail) {
+    return { error: { status: 403, message: 'Forbidden: admin access required' } };
+  }
+
+  const adminSupabase = createClient(env.SUPABASE_URL, serviceRoleKey);
+  return { adminSupabase, userId: auth.user.id };
 }
 
 // Health check
@@ -174,9 +252,26 @@ app.post('/api/search', async (c) => {
       return `/kb/articles/${slug}-${urlHash}`;
     };
 
-    // Helper to build a Text Fragment from chunk text (first 8 words)
+    // Strip markdown syntax from text for clean display
+    const stripMarkdown = (text: string): string => {
+      return text
+        .replace(/^#{1,6}\s+/gm, '')          // headings
+        .replace(/\*\*([^*]+)\*\*/g, '$1')    // bold
+        .replace(/\*([^*]+)\*/g, '$1')         // italic
+        .replace(/`[^`]+`/g, '')               // inline code
+        .replace(/!\[.*?\]\(.*?\)/g, '')        // images
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // links → text
+        .replace(/^\s*[-*>]\s+/gm, '')         // bullets, blockquotes
+        .replace(/^\d+\.\s+/gm, '')            // numbered lists
+        .replace(/\n{2,}/g, ' ')               // collapse newlines
+        .replace(/\s+/g, ' ')
+        .trim();
+    };
+
+    // Helper to build a Text Fragment from chunk text (first 8 words of cleaned text)
     const buildFragment = (text: string): string => {
-      const words = text.replace(/\s+/g, ' ').trim().split(' ').slice(0, 8).join(' ');
+      const clean = stripMarkdown(text);
+      const words = clean.split(' ').slice(0, 8).join(' ');
       return encodeURIComponent(words);
     };
 
@@ -217,7 +312,7 @@ app.post('/api/search', async (c) => {
     const results: Article[] = (articles || [])
       .map((article: any) => {
         const chunk = bestByArticle.get(article.id);
-        const excerpt = (chunk.content as string).replace(/\s+/g, ' ').trim().slice(0, 200);
+        const excerpt = stripMarkdown(chunk.content as string).slice(0, 200);
         return {
           id: article.id,
           url: article.url,
@@ -664,6 +759,441 @@ app.post('/api/highlights/:id/share', async (c) => {
 
   } catch (err) {
     console.error('Share highlight error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * POST /api/suggestions
+ * Submit a source suggestion (auth required)
+ * Checks for duplicates against existing articles and prior suggestions
+ */
+app.post('/api/suggestions', async (c) => {
+  const env = c.env;
+
+  try {
+    const auth = await getAuthenticatedClient(env, c.req.header('Authorization'));
+
+    if (!auth) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    const { supabase, user } = auth;
+
+    const body = await c.req.json<{ author_name?: string; url?: string }>();
+
+    // Validate: at least one field required
+    if (!body.author_name?.trim() && !body.url?.trim()) {
+      return c.json({ error: 'Provide at least an author name or URL' }, 400);
+    }
+
+    const authorName = body.author_name?.trim() || null;
+    const url = body.url?.trim() || null;
+
+    // Duplicate checks when URL is provided
+    if (url) {
+      // Check against existing articles
+      const adminSupabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
+
+      const { data: existingArticle } = await adminSupabase
+        .from('articles')
+        .select('title')
+        .eq('url', url)
+        .maybeSingle();
+
+      if (existingArticle) {
+        return c.json({
+          duplicate: true,
+          existing_title: existingArticle.title,
+        });
+      }
+
+      // Check against prior suggestions
+      const { data: existingSuggestion } = await adminSupabase
+        .from('source_suggestions')
+        .select('status')
+        .eq('url', url)
+        .maybeSingle();
+
+      if (existingSuggestion) {
+        return c.json({
+          duplicate: true,
+          status: 'already_suggested',
+        });
+      }
+    }
+
+    // Insert the suggestion
+    const { error } = await supabase
+      .from('source_suggestions')
+      .insert({
+        user_id: user.id,
+        author_name: authorName,
+        url,
+      });
+
+    if (error) {
+      console.error('Suggestion insert error:', error);
+      return c.json({ error: 'Failed to save suggestion' }, 500);
+    }
+
+    return c.json({ success: true }, 201);
+
+  } catch (err) {
+    console.error('Suggestion error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * GET /api/admin/suggestions
+ * List source suggestions for admin review
+ */
+app.get('/api/admin/suggestions', async (c) => {
+  const env = c.env;
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const statusQuery = c.req.query('status')?.trim().toLowerCase() || 'all';
+    if (statusQuery !== 'all' && !VALID_SUGGESTION_STATUSES.includes(statusQuery as SuggestionStatus)) {
+      return c.json({ error: 'Invalid status. Use all|pending|approved|rejected' }, 400);
+    }
+
+    const promotedQuery = c.req.query('promoted')?.trim().toLowerCase() || 'all';
+    if (!['all', 'true', 'false', 'pending'].includes(promotedQuery)) {
+      return c.json({ error: 'Invalid promoted filter. Use all|true|false|pending' }, 400);
+    }
+
+    const limit = Math.max(1, Math.min(Number(c.req.query('limit') || 200) || 200, 500));
+
+    const fullColumns = 'id, user_id, author_name, url, status, created_at, promoted_to_sources, promoted_source_id, promoted_at';
+    const baseColumns = 'id, user_id, author_name, url, status, created_at';
+
+    const buildQuery = (columns: string) => {
+      let query = admin.adminSupabase
+        .from('source_suggestions')
+        .select(columns)
+        .order('created_at', { ascending: false })
+        .limit(limit);
+
+      if (statusQuery !== 'all') {
+        query = query.eq('status', statusQuery as SuggestionStatus);
+      }
+
+      if (promotedQuery === 'true') query = query.eq('promoted_to_sources', true);
+      if (promotedQuery === 'false' || promotedQuery === 'pending') query = query.eq('promoted_to_sources', false);
+
+      return query;
+    };
+
+    let { data, error } = await buildQuery(fullColumns);
+
+    // Backward compatible before migration 004 is applied
+    if (error && /promoted_to_sources|promoted_source_id|promoted_at/i.test(error.message || '')) {
+      const fallback = await buildQuery(baseColumns);
+      data = fallback.data;
+      error = fallback.error;
+    }
+
+    if (error) {
+      console.error('Admin suggestion list error:', error);
+      return c.json({ error: 'Failed to list suggestions' }, 500);
+    }
+
+    return c.json({ suggestions: data || [] });
+  } catch (err) {
+    console.error('Admin suggestion list error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * PATCH /api/admin/suggestions/:id
+ * Update source suggestion review status
+ */
+app.patch('/api/admin/suggestions/:id', async (c) => {
+  const env = c.env;
+  const suggestionId = c.req.param('id');
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const body = await c.req.json<{ status?: SuggestionStatus }>();
+    const status = body.status;
+
+    if (!status || !VALID_SUGGESTION_STATUSES.includes(status)) {
+      return c.json({ error: 'Invalid status. Use pending|approved|rejected' }, 400);
+    }
+
+    const fullColumns = 'id, user_id, author_name, url, status, created_at, promoted_to_sources, promoted_source_id, promoted_at';
+    const baseColumns = 'id, user_id, author_name, url, status, created_at';
+
+    let data: any = null;
+    let error: any = null;
+
+    {
+      const result = await admin.adminSupabase
+        .from('source_suggestions')
+        .update({ status })
+        .eq('id', suggestionId)
+        .select(fullColumns)
+        .maybeSingle();
+      data = result.data;
+      error = result.error;
+    }
+
+    // Backward compatible before migration 004 is applied
+    if (error && /promoted_to_sources|promoted_source_id|promoted_at/i.test(error.message || '')) {
+      const fallback = await admin.adminSupabase
+        .from('source_suggestions')
+        .update({ status })
+        .eq('id', suggestionId)
+        .select(baseColumns)
+        .maybeSingle();
+      data = fallback.data;
+      error = fallback.error;
+    }
+
+    if (error) {
+      console.error('Admin suggestion status update error:', error);
+      return c.json({ error: 'Failed to update suggestion' }, 500);
+    }
+
+    if (!data) {
+      return c.json({ error: 'Suggestion not found' }, 404);
+    }
+
+    const response: any = { success: true, suggestion: data };
+    if (status === 'approved') {
+      response.ready_to_activate = true;
+    }
+    return c.json(response);
+  } catch (err) {
+    console.error('Admin suggestion status update error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * POST /api/admin/sources
+ * Create a source from an approved suggestion or from scratch
+ */
+app.post('/api/admin/sources', async (c) => {
+  const env = c.env;
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const body = await c.req.json<{
+      name: string;
+      url: string;
+      type?: string;
+      rss_url?: string;
+      tags?: string[];
+      active?: boolean;
+      suggestion_id?: string;
+    }>();
+
+    if (!body.name?.trim() || !body.url?.trim()) {
+      return c.json({ error: 'name and url are required' }, 400);
+    }
+
+    // Generate id slug from name
+    const id = body.name
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/[-\s]+/g, '-')
+      .replace(/^-|-$/g, '');
+
+    // Check URL uniqueness
+    const { data: existing } = await admin.adminSupabase
+      .from('sources')
+      .select('id')
+      .eq('url', body.url.trim())
+      .maybeSingle();
+
+    if (existing) {
+      return c.json({ error: 'A source with this URL already exists', existing_id: existing.id }, 409);
+    }
+
+    const sourceData: Record<string, any> = {
+      id,
+      name: body.name.trim(),
+      url: body.url.trim(),
+      type: body.type || 'blog',
+      rss_url: body.rss_url?.trim() || null,
+      tags: body.tags || [],
+      active: body.active !== false,
+    };
+
+    if (body.suggestion_id) {
+      sourceData.suggestion_id = body.suggestion_id;
+    }
+
+    const { data, error } = await admin.adminSupabase
+      .from('sources')
+      .insert(sourceData)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Source create error:', error);
+      return c.json({ error: 'Failed to create source', details: error.message }, 500);
+    }
+
+    return c.json({ success: true, source: data }, 201);
+  } catch (err) {
+    console.error('Create source error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * PATCH /api/admin/sources/:id
+ * Update source fields (active, rss_url, tags, etc.)
+ */
+app.patch('/api/admin/sources/:id', async (c) => {
+  const env = c.env;
+  const sourceId = c.req.param('id');
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const body = await c.req.json<{
+      active?: boolean;
+      rss_url?: string | null;
+      tags?: string[];
+      name?: string;
+      url?: string;
+      type?: string;
+    }>();
+
+    const updatePayload: Record<string, any> = {};
+    if (body.active !== undefined) updatePayload.active = body.active;
+    if (body.rss_url !== undefined) updatePayload.rss_url = body.rss_url;
+    if (body.tags !== undefined) updatePayload.tags = body.tags;
+    if (body.name !== undefined) updatePayload.name = body.name.trim();
+    if (body.url !== undefined) updatePayload.url = body.url.trim();
+    if (body.type !== undefined) updatePayload.type = body.type;
+
+    if (Object.keys(updatePayload).length === 0) {
+      return c.json({ error: 'No fields to update' }, 400);
+    }
+
+    const { data, error } = await admin.adminSupabase
+      .from('sources')
+      .update(updatePayload)
+      .eq('id', sourceId)
+      .select()
+      .maybeSingle();
+
+    if (error) {
+      console.error('Source update error:', error);
+      return c.json({ error: 'Failed to update source', details: error.message }, 500);
+    }
+
+    if (!data) {
+      return c.json({ error: 'Source not found' }, 404);
+    }
+
+    return c.json({ success: true, source: data });
+  } catch (err) {
+    console.error('Update source error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * GET /api/admin/sources
+ * List all sources
+ */
+app.get('/api/admin/sources', async (c) => {
+  const env = c.env;
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const { data, error } = await admin.adminSupabase
+      .from('sources')
+      .select('*')
+      .order('created_at', { ascending: true });
+
+    if (error) {
+      console.error('Source list error:', error);
+      return c.json({ error: 'Failed to list sources' }, 500);
+    }
+
+    return c.json({ sources: data || [] });
+  } catch (err) {
+    console.error('List sources error:', err);
+    return c.json({ error: 'Internal server error' }, 500);
+  }
+});
+
+/**
+ * PATCH /api/admin/suggestions/:id/promotion
+ * Mark a suggestion as promoted (or undo promotion)
+ */
+app.patch('/api/admin/suggestions/:id/promotion', async (c) => {
+  const env = c.env;
+  const suggestionId = c.req.param('id');
+
+  try {
+    const admin = await getAdminClient(env, c.req.header('Authorization'));
+    if ('error' in admin) {
+      return c.json({ error: admin.error.message }, admin.error.status);
+    }
+
+    const body = await c.req.json<{ promoted_to_sources?: boolean; promoted_source_id?: string | null }>();
+    const promotedToSources = body.promoted_to_sources !== false;
+
+    const payload = promotedToSources
+      ? {
+        promoted_to_sources: true,
+        promoted_source_id: body.promoted_source_id?.trim() || null,
+        promoted_at: new Date().toISOString(),
+      }
+      : {
+        promoted_to_sources: false,
+        promoted_source_id: null,
+        promoted_at: null,
+      };
+
+    const { data, error } = await admin.adminSupabase
+      .from('source_suggestions')
+      .update(payload)
+      .eq('id', suggestionId)
+      .select('id, user_id, author_name, url, status, created_at, promoted_to_sources, promoted_source_id, promoted_at')
+      .maybeSingle();
+
+    if (error) {
+      console.error('Admin suggestion promotion update error:', error);
+      return c.json({ error: 'Failed to update promotion state (apply migration 004 first)' }, 500);
+    }
+
+    if (!data) {
+      return c.json({ error: 'Suggestion not found' }, 404);
+    }
+
+    return c.json({ success: true, suggestion: data });
+  } catch (err) {
+    console.error('Admin suggestion promotion update error:', err);
     return c.json({ error: 'Internal server error' }, 500);
   }
 });

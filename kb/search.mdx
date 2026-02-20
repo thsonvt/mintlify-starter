@@ -8,16 +8,13 @@ icon: 'magnifying-glass'
 
 Search through curated AI thought leadership content using natural language queries. Our semantic search understands meaning, not just keywords.
 
-<iframe
-  src="https://thought-leadership-widget.vercel.app/?tab=search"
-  width="100%"
-  height="600"
-  style={{ border: 'none', borderRadius: '8px' }}
-/>
+<Tip>
+  **Press `Cmd+K` (Mac) or `Ctrl+K` (Windows)** to open the search modal and find articles instantly.
+</Tip>
 
-<Note>
-  The widget above connects to our knowledge base of curated content from AI thought leaders like Anthropic, Dan Shipper, and more.
-</Note>
+<Info>
+  Search works across both Framework documentation and Knowledge Base articles. Results link directly to local content for offline reading.
+</Info>
 
 ## How It Works
 
@@ -30,13 +27,13 @@ Search through curated AI thought leadership content using natural language quer
 We track thought leadership from:
 
 <CardGroup cols={3}>
-  <Card title="Anthropic Engineering" icon="robot">
+  <Card title="Anthropic Engineering" icon="robot" href="/kb/authors/anthropic-engineering">
     Official blog posts about Claude, agents, and AI safety
   </Card>
-  <Card title="Dan Shipper (Every)" icon="pen">
+  <Card title="Dan Shipper (Every)" icon="pen" href="/kb/authors/dan-shipper-every">
     Practical insights on AI-assisted coding workflows
   </Card>
-  <Card title="Simon Willison" icon="code">
+  <Card title="Simon Willison" icon="code" href="/kb/authors/simon-willison">
     Deep dives into LLM applications and tooling
   </Card>
 </CardGroup>

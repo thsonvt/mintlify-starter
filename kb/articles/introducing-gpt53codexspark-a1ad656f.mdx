@@ -1,0 +1,149 @@
+---
+title: 'Introducing GPT‑5.3‑Codex‑Spark'
+description: 'an ultra-fast model for real-time coding in Codex OpenAI announced a partnership with Cerebras [on January 14th](https://openai.com/index/cerebras-par'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-12'
+sourceUrl: 'https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything'
+topics: ["OpenAI API","Prompt Engineering","AI Agents"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything) · 12/02/2026
+</Info>
+
+## Summary
+
+an ultra-fast model for real-time coding in Codex OpenAI announced a partnership with Cerebras [on January 14th](https://openai.com/index/cerebras-partnership/). Four weeks later they're already launching the first integration, "an ultra-fast model for real-time coding in Codex".
+
+## Key Insights
+
+> "an ultra-fast model for real-time coding in Codex"
+>
+> — Describing the main feature of GPT-5.3-Codex-Spark.
+
+> "at launch, Codex-Spark has a 128k context window and is text-only."
+>
+> — Clarifying the initial capabilities of Codex-Spark.
+
+> "When a model responds this fast you can stay in flow state and iterate with the model much more productively."
+>
+> — Highlighting the benefits of the model's speed for coding productivity.
+
+## Topics
+
+- [OpenAI API](/kb/topics/openai-api)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+
+---
+
+## Full Article
+
+```
+# Introducing GPT‑5.3‑Codex‑Spark
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-12  
+**Source**: [https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything](https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything)
+
+---
+
+**[Introducing GPT‑5.3‑Codex‑Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark/)**
+
+OpenAI announced a partnership with Cerebras [on January 14th](https://openai.com/index/cerebras-partnership/). Four weeks later they're already launching the first integration, "an ultra-fast model for real-time coding in Codex".
+
+Despite being named GPT-5.3-Codex-Spark it's not purely an accelerated alternative to GPT-5.3-Codex - the blog post calls it "a smaller version of GPT‑5.3-Codex" and clarifies that "at launch, Codex-Spark has a 128k context window and is text-only."
+
+I had some preview access to this model and I can confirm that it's significantly faster than their other models.
+
+Here's what that speed looks like running in Codex CLI:
+
+```
+[![
+```
+
+](https://static.simonwillison.net/static/2026/gpt-5.3-codex-spark-medium-last.jpg)](https://static.simonwillison.net/static/2026/gpt-5.3-codex-spark-medium.mp4)
+
+That was the "Generate an SVG of a pelican riding a bicycle" prompt - here's the rendered result:
+
+![Whimsical flat illustration of an orange duck merged with a bicycle, where the duck's body forms the seat and frame area while its head extends forward over the handlebars, set against a simple light blue sky and green grass background.](https://static.simonwillison.net/static/2026/gpt-5.3-codex-spark-pelican.png)
+
+Compare that to the speed of regular GPT-5.3 Codex medium:
+
+```
+[![
+```
+
+](https://static.simonwillison.net/static/2026/gpt-5.3-codex-medium-last.jpg)](https://static.simonwillison.net/static/2026/gpt-5.3-codex-medium.mp4)
+
+Significantly slower, but the pelican is a lot better:
+
+![Whimsical flat illustration of a white pelican riding a dark blue bicycle at speed, with motion lines behind it, its long orange beak streaming back in the wind, set against a light blue sky and green grass background.](https://static.simonwillison.net/static/2026/gpt-5.3-codex-pelican.png)
+
+What's interesting about this model isn't the quality though, it's the *speed*. When a model responds this fast you can stay in flow state and iterate with the model much more productively.
+
+I showed a demo of Cerebras running Llama 3.1 70 B at 2,000 tokens/second against Val Town [back in October 2024](https://simonwillison.net/2024/Oct/31/cerebras-coder/). OpenAI claim 1,000 tokens/second for their new model, and I expect it will prove to be a ferociously useful partner for hands-on iterative coding sessions.
+
+It's not yet clear what the pricing will look like for this new model.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> an ultra-fast model for real-time coding in Codex
+
+*Context: Describing the main feature of GPT-5.3-Codex-Spark.*
+
+> at launch, Codex-Spark has a 128k context window and is text-only.
+
+*Context: Clarifying the initial capabilities of Codex-Spark.*
+
+> When a model responds this fast you can stay in flow state and iterate with the model much more productively.
+
+*Context: Highlighting the benefits of the model's speed for coding productivity.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 77% similar
+  </Card>
+  <Card
+    title="OpenAI Gave Us a Glimpse Into Their AI Coding Playbook"
+    icon="newspaper"
+    href="/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
+  >
+    Dan Shipper (Every) · explanation · 70% similar
+  </Card>
+  <Card
+    title="Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days"
+    icon="newspaper"
+    href="/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
+  >
+    Lenny Rachitsky · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything](https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything).
+</Note>

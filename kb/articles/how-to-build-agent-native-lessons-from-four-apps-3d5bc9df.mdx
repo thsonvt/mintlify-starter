@@ -1,0 +1,115 @@
+---
+title: 'How to Build Agent-native: Lessons From Four Apps'
+description: 'Nobody programmed it to do any of this. by Katie Parrottin Source Cod'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-02-17'
+sourceUrl: 'https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps'
+topics: ["Experimentation in AI","AI in Software Development","Software Design Principles","Agent-native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps) · 17/02/2026
+</Info>
+
+## Summary
+
+Nobody programmed it to do any of this. by Katie Parrottin Source Cod
+
+## Key Insights
+
+> "Nobody programmed it to do any of this."
+>
+> — Describing how an app with agent-native architecture operates without explicit programming for specific tasks.
+
+> "The AI is the app."
+>
+> — Summarizing the core principle of agent-native architecture where AI takes the central role in application functionality.
+
+> "Rules belong in the tools, not the instructions."
+>
+> — Highlighting a design principle in agent-native architecture to embed safeguards within tools rather than relying on AI to interpret instructions safely.
+
+## Topics
+
+- [Experimentation in AI](/kb/topics/experimentation-in-ai)
+- [AI in Software Development](/kb/topics/ai-in-software-development)
+- [Software Design Principles](/kb/topics/software-design-principles)
+- [Agent-native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# How to Build Agent-native: Lessons From Four Apps
+```
+
+**Author**: Dan Shipper (Every)  
+**Published**: 2026-02-17  
+**Source**: [https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps](https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps)
+
+---
+
+&lt;table>&lt;tr>&lt;td>&lt;img alt="Source Code" src="https://d24ovhgu8s7341.cloudfront.net/uploads/publication/logo/99/small_Frame_9121.png" />&lt;/td>&lt;td>&lt;/td>&lt;td>&lt;table>&lt;tr>&lt;td>by &lt;a href="https://every.to/@katie.parrott12">Katie Parrott&lt;/a>&lt;/td>&lt;/tr>&lt;tr>&lt;td>in &lt;a href="https://every.to/source-code">Source Code&lt;/a>&lt;/td>&lt;/tr>&lt;/table>&lt;/td>&lt;/tr>&lt;/table>&lt;figure>&lt;img src="https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/3940/full_page_cover_How_to_Build_Agent-Native.png" />&lt;figcaption>Midjourney/Every illustration.&lt;/figcaption>&lt;/figure>&lt;p>&lt;em>Was this newsletter forwarded to you? &lt;u>&lt;a href="https://every.to/account" rel="noopener noreferrer" target="_blank">Sign up&lt;/a>&lt;/u> to get it in your inbox.&lt;/em>&lt;/p>&lt;p>&lt;/p>&lt;hr class="quill-line" />&lt;p>&lt;/p>&lt;p>&lt;strong>&lt;u>&lt;a href="https://every.to/@danshipper" rel="noopener noreferrer" target="_blank">Dan Shipper&lt;/a>&lt;/u>&lt;/strong> scanned a page from &lt;strong>Erik Larson&lt;/strong>’s &lt;strong>Winston Churchill&lt;/strong> biography, &lt;em>The Splendid and the Vile,&lt;/em> and pressed save. The app he was demo-ing identified the book, generated a summary, and produced character breakdowns calibrated to exactly where he was in the story—no spoilers past page 203.&lt;/p>&lt;p>Nobody programmed it to do any of this.&lt;/p>&lt;p>Instead, Dan’s app has a handful of basic tools—“read file,” “write file,” and “search the web”—and an AI agent smart enough to combine them in a way that matches the user’s request. When it generates a summary, for example, that’s the agent deciding on its own to search the web, pull in relevant information, and write a file that the app displays.&lt;/p>&lt;p>This is what we call &lt;u>&lt;a href="https://every.to/chain-of-thought/agent-native-architectures-how-to-build-apps-after-the-end-of-code" rel="noopener noreferrer" target="_blank">agent-native architecture&lt;/a>&lt;/u>—or, in Dan’s shorthand, “&lt;u>&lt;a href="https://every.to/context-window/claude-code-in-a-trenchcoat" rel="noopener noreferrer" target="_blank">Claude Code in a trench coat&lt;/a>&lt;/u>.” On the surface, it looks like regular software, but instead of pre-written code dictating every move the software makes, each interaction routes to an underlying agent that figures out what to do. There’s still code involved—it makes up the interface and defines the tools that are available to the agent. But the agent decides which tools to use and when, combining them in ways the developer never explicitly programmed. &lt;/p>&lt;p>At our first Agent Native Camp, Dan and the general managers of our software products &lt;strong>&lt;u>&lt;a href="https://cora.computer/" rel="noopener noreferrer" target="_blank">Cora&lt;/a>&lt;/u>&lt;/strong>, &lt;strong>&lt;u>&lt;a href="https://makeitsparkle.co/" rel="noopener noreferrer" target="_blank">Sparkle&lt;/a>&lt;/u>&lt;/strong>, and &lt;strong>&lt;u>&lt;a href="https://monologue.to/" rel="noopener noreferrer" target="_blank">Monologue&lt;/a>&lt;/u>&lt;/strong> shared how they’re each building in light of this fundamental shift. They’re working at different scales and with different constraints, so they’re drawing the lines in different places. Here’s what they shared about how the architecture works, what it looks like in production, and what goes wrong when you get it right.&lt;/p>&lt;h5>&lt;strong>Key takeaways&lt;/strong>&lt;/h5>&lt;ol>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>&lt;strong>The AI is the app.&lt;/strong> Instead of coding every feature, you define a few simple tools the AI is allowed to use—for instance, read a file, write a file, and search the web. When you ask it to do something, it decides on its own which tools to reach for and how to combine them.&lt;/li>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>&lt;strong>Simpler tools get smarter results.&lt;/strong> The smaller and more basic you make each tool, the more creatively the AI combines them. Claude Code is powerful because its core tool—running terminal commands—can do almost anything.&lt;/li>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>&lt;strong>Rules belong in the tools, not the instructions.&lt;/strong> You can ask an AI to be careful, but it might ignore you. If an action is irreversible—like deleting files—the safeguard has to be built into the tool itself.&lt;/li>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>&lt;strong>You don’t have to start over to start learning.&lt;/strong> Give the AI a safe space to interact with your existing app and experiment outside the live product. You’ll learn what the agent needs without risking what already works. Just don’t get attached to the code—as models improve, expect to throw things out and rebuild every few months. &lt;/li>&lt;/ol>&lt;h2>&lt;strong>How agent-native works&lt;/strong>&lt;/h2>&lt;p>Traditional software can only do what it’s explicitly programmed to do by its code. Click “sort by date,” and it sorts by date. Click “export,” and you get a CSV. It will never spontaneously summarize your inbox or reorganize your files by topic—unless someone wrote the code for that exact feature.&lt;/p>&lt;p>Instead of coded features, an agent-native app has tools (small, discrete actions like “read file” or “delete item”) and skills (instructions written in plain English that describe how to combine those tools). An agent uses those tools and skills to produce an outcome that you specify, such as identifying what book you are reading from one page. &lt;/p>&lt;p>Three principles make this work: &lt;/p>&lt;p>&lt;/p>&lt;hr class="quill-line" />&lt;p>&lt;/p>&lt;p>&lt;strong>Become a &lt;a href="https://every.to/subscribe" rel="noopener noreferrer" target="_blank">paid subscriber to Every&lt;/a> to unlock this piece and learn about:&lt;/strong>&lt;/p>&lt;ol>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>Why Yash’s AI agent went into “god mode”—and why rewriting the prompt didn’t stop it&lt;/li>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>Why the most radical agent-native architecture looks like it was built in 1995&lt;/li>&lt;li>&lt;span class="ql-ui" contenteditable="false">&lt;/span>A simple test for whether you’ve built an agent-native app, or just a chatbot with extra steps&lt;/li>&lt;/ol>&lt;div class="quill-button" id="quill-button-1770117651442">&lt;a href="https://every.to/subscribe?source=post_button">Subscribe&lt;/a>&lt;/div>&lt;p>&lt;hr />&lt;/p>&lt;p>&lt;em>&lt;a href="https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps">Click here&lt;/a> to read the full post&lt;/em>&lt;/p>&lt;p>Want the full text of all articles in RSS? &lt;a href="https://every.to/subscribe">Become a subscriber&lt;/a>, or &lt;a href="https://every.to">learn more&lt;/a>.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Nobody programmed it to do any of this.
+
+*Context: Describing how an app with agent-native architecture operates without explicit programming for specific tasks.*
+
+> The AI is the app.
+
+*Context: Summarizing the core principle of agent-native architecture where AI takes the central role in application functionality.*
+
+> Rules belong in the tools, not the instructions.
+
+*Context: Highlighting a design principle in agent-native architecture to embed safeguards within tools rather than relying on AI to interpret instructions safely.*
+
+## Related Topics
+
+- [[topics/experimentation-in-ai]]
+- [[topics/ai-in-software-development]]
+- [[topics/software-design-principles]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Building an Agent-Native Read Later App in 2 Hours"
+    icon="newspaper"
+    href="/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
+  >
+    Naveen Naidu · tutorial · 83% similar
+  </Card>
+  <Card
+    title="Agent-native Architectures: How to Build Apps After Code Ends"
+    icon="newspaper"
+    href="/kb/articles/agent-native-architectures-how-to-build-apps-after-code-ends-cb38bd6d"
+  >
+    Dan Shipper (Every) · how-to · 83% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 81% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps](https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps).
+</Note>

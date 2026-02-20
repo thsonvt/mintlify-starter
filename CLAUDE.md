@@ -26,9 +26,48 @@ npm mint update
 mint broken-links
 ```
 
+### Knowledge Base Content Generation
+```bash
+# Generate MDX files from Supabase (requires .env with SUPABASE_URL and SUPABASE_ANON_KEY)
+cd scripts && npm install && node generate-kb-mdx.mjs
+```
+
+This generates:
+- `/kb/articles/*.mdx` - Article pages with full content
+- `/kb/authors/*.mdx` - Author index pages
+- `/kb/topics/*.mdx` - Topic index pages
+- `/kb/search-index.json` - Offline search index for Fuse.js
+
+### Local Search API (Semantic Search)
+```bash
+# Start the Hono API on localhost:8787
+cd docs-assistant/apps/api
+cp .dev.vars.example .dev.vars  # Add your keys
+pnpm install && pnpm dev
+```
+
+The custom search (Cmd+K) automatically routes:
+- **localhost:3000** → `localhost:8787` (local Hono API)
+- **Production** → `thought-leadership-api.thsonvt.workers.dev`
+- **Offline** → Falls back to Fuse.js with `/kb/search-index.json`
+
+### Full Development Workflow
+```bash
+# 1. Generate content from Supabase
+cd scripts && node generate-kb-mdx.mjs
+
+# 2. Start local search API (optional, for semantic search)
+cd docs-assistant/apps/api && pnpm dev
+
+# 3. Start Mintlify docs (in another terminal)
+mint dev
+```
+
 ### Prerequisites
 - Node.js version 19 or higher
 - A `docs.json` file in the repository root
+- For KB generation: `SUPABASE_URL` and `SUPABASE_ANON_KEY` in `.env`
+- For semantic search: `OPENAI_API_KEY` in `docs-assistant/apps/api/.dev.vars`
 
 ### Troubleshooting
 - If the dev environment isn't running: `mint update`
@@ -56,33 +95,28 @@ The `docs.json` file is the central configuration that defines:
 /
 ├── docs.json              # Central configuration file
 ├── index.mdx              # Homepage/landing page
-├── quickstart.mdx         # Quickstart guide
-├── development.mdx        # Development instructions
 │
-├── essentials/            # Core documentation topics
-│   ├── settings.mdx       # Site customization
-│   ├── navigation.mdx     # Navigation setup
-│   ├── markdown.mdx       # Markdown syntax guide
-│   ├── code.mdx           # Code block examples
-│   ├── images.mdx         # Image handling
-│   └── reusable-snippets.mdx
+├── framework/             # AI Conductor Framework modules
+│   ├── introduction/      # Module 1: Introduction
+│   ├── rehearsal/         # Module 2: The Rehearsal
+│   ├── performance/       # Module 3: Performance & Polish
+│   └── scaling/           # Module 4: Scaling to Teams
 │
-├── ai-tools/              # AI tool integration guides
-│   ├── cursor.mdx
-│   ├── claude-code.mdx
-│   └── windsurf.mdx
+├── kb/                    # Knowledge Base (generated + static)
+│   ├── search.mdx         # Search page with Cmd+K prompt
+│   ├── browse.mdx         # Browse by author/topic
+│   ├── content-gaps.mdx   # Gap analysis dashboard
+│   ├── search-index.json  # Generated: offline search index
+│   ├── articles/          # Generated: article MDX files
+│   ├── authors/           # Generated: author index pages
+│   └── topics/            # Generated: topic index pages
 │
-├── api-reference/         # API documentation
-│   ├── introduction.mdx
-│   ├── openapi.json       # OpenAPI 3.1 specification
-│   └── endpoint/          # Individual endpoint docs
-│       ├── get.mdx
-│       ├── create.mdx
-│       ├── delete.mdx
-│       └── webhook.mdx
+├── scripts/               # Build scripts
+│   ├── generate-kb-mdx.mjs  # Generates KB content from Supabase
+│   └── keyword-search.js    # Custom Cmd+K search modal
 │
-├── snippets/              # Reusable content snippets
-│   └── snippet-intro.mdx
+├── docs-assistant/        # Local API for semantic search
+│   └── apps/api/          # Hono API on Cloudflare Workers
 │
 ├── images/                # Static image assets
 └── logo/                  # Logo files (light.svg, dark.svg)

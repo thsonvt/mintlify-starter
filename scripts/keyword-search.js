@@ -368,6 +368,22 @@
   let debounceTimer = null;
   let activeIndex = -1;
 
+  function ensureSearchInputFocus() {
+    const input = document.getElementById('kw-search-input');
+    if (!input) return;
+
+    if (document.activeElement !== input) {
+      input.focus();
+    }
+
+    const len = input.value.length;
+    try {
+      input.setSelectionRange(len, len);
+    } catch (err) {
+      // Ignore for unsupported input types/browsers.
+    }
+  }
+
   function init() {
     document.body.appendChild(container);
 
@@ -385,6 +401,31 @@
         e.stopImmediatePropagation();
         openSearch();
         return false;
+      }
+
+      // If modal is open and focus slipped away, recover it and keep typing seamless.
+      const isTypingKey =
+        e.key.length === 1 &&
+        !e.metaKey &&
+        !e.ctrlKey &&
+        !e.altKey;
+      if (isOpen && isTypingKey) {
+        const active = document.activeElement;
+        const inInput =
+          active &&
+          (active.tagName === 'INPUT' ||
+           active.tagName === 'TEXTAREA' ||
+           active.isContentEditable);
+        if (!inInput) {
+          const input = document.getElementById('kw-search-input');
+          if (input) {
+            ensureSearchInputFocus();
+            input.value += e.key;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+            e.preventDefault();
+            return;
+          }
+        }
       }
 
       if (e.key === 'Escape' && isOpen) {
@@ -448,16 +489,53 @@
   }
 
   function interceptMintlifySearch() {
+    function isLocalSearchInput(element) {
+      if (!(element instanceof HTMLElement)) return false;
+
+      if (element.id === 'kw-search-input' || element.id === 'hl-search') {
+        return true;
+      }
+
+      if (element.closest('#kw-search-overlay') || element.closest('#highlights-app')) {
+        return true;
+      }
+
+      const placeholder = (element.getAttribute('placeholder') || '').toLowerCase();
+      return placeholder.includes('highlights');
+    }
+
+    function isGlobalSearchTrigger(element) {
+      if (!(element instanceof HTMLElement)) return false;
+      if (isLocalSearchInput(element)) return false;
+
+      if (element.matches('button:has(kbd), [class*="SearchButton"]')) {
+        return true;
+      }
+
+      if (element.tagName === 'INPUT') {
+        const placeholder = (element.getAttribute('placeholder') || '').trim().toLowerCase();
+        // Mintlify top search uses "Search...". Keep this strict to avoid
+        // hijacking feature-specific inputs like "Search highlights...".
+        return placeholder === 'search...';
+      }
+
+      return false;
+    }
+
     const tryIntercept = () => {
-      const headerSearch = document.querySelector('button:has(kbd), [class*="SearchButton"], input[placeholder*="Search"]');
-      if (headerSearch && !headerSearch.dataset.aiSearchIntercepted) {
-        headerSearch.dataset.aiSearchIntercepted = 'true';
-        headerSearch.addEventListener('click', (e) => {
+      const candidates = document.querySelectorAll('button:has(kbd), [class*="SearchButton"], input[placeholder]');
+
+      candidates.forEach((candidate) => {
+        if (!isGlobalSearchTrigger(candidate)) return;
+        if (candidate.dataset.aiSearchIntercepted) return;
+
+        candidate.dataset.aiSearchIntercepted = 'true';
+        candidate.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
           openSearch();
         }, true);
-      }
+      });
     };
 
     tryIntercept();
@@ -517,7 +595,9 @@
     container.classList.add('open');
     const input = document.getElementById('kw-search-input');
     input.value = '';
-    input.focus();
+    ensureSearchInputFocus();
+    requestAnimationFrame(ensureSearchInputFocus);
+    setTimeout(ensureSearchInputFocus, 30);
     searchResults = [];
     activeIndex = -1;
     showRecentSearches();

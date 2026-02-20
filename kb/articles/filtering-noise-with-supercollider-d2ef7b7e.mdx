@@ -1,0 +1,218 @@
+---
+title: 'Filtering Noise with SuperCollider'
+description: 'Sometimes, you need a moment to switch off the goals and expectations and play. Sometimes, you need a moment to switch off the goals and expectations '
+icon: 'newspaper'
+author: 'Kieran Klaassen'
+authorId: 'kieran-klaassen'
+published: '2024-03-04'
+sourceUrl: 'https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/'
+topics: ["Audio Processing","SuperCollider","Sound Design","Music Programming"]
+diataxisType: 'tutorial'
+---
+
+<Info>
+**Original**: [Kieran Klaassen](https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/) · 04/03/2024
+</Info>
+
+## Summary
+
+Sometimes, you need a moment to switch off the goals and expectations and play. Sometimes, you need a moment to switch off the goals and expectations and play. For me, that often means turning to making music. The world of noise is exciting, with its minimal, primal energy begging to be sculpted into something pure and beautiful. Lately, I’ve had an itch to dive back into Super
+
+## Key Insights
+
+> "Sometimes, you need a moment to switch off the goals and expectations and play."
+>
+> — Introduction to the joy and purpose of engaging with music programming.
+
+> "My goal was simple: take pink noise and use filtering to create an evolving, organic tone."
+>
+> — Describing the primary objective of the SuperCollider project.
+
+> "SuperCollider lets you control each element with precision, turning those fleeting sonic ideas into a tangible reality."
+>
+> — Highlighting the control and possibilities SuperCollider offers in sound design.
+
+## Topics
+
+- [Audio Processing](/kb/topics/audio-processing)
+- [SuperCollider](/kb/topics/supercollider)
+- [Sound Design](/kb/topics/sound-design)
+- [Music Programming](/kb/topics/music-programming)
+
+---
+
+## Full Article
+
+# Kieran Klaassen
+
+**Author**: Kieran Klaassen  
+**Published**: 2026-02-13  
+**Source**: [https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/](https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/)
+
+---
+
+# Filtering Noise with SuperCollider
+
+Sometimes, you need a moment to switch off the goals and expectations and play. For me, that often means turning to making music. The world of noise is exciting, with its minimal, primal energy begging to be sculpted into something pure and beautiful. Lately, I’ve had an itch to dive back into SuperCollider with this exploration in mind. My goal was simple: take pink noise and use filtering to create an evolving, organic tone.
+
+[Kieran Klaassen](https://soundcloud.com/kieran-klaassen "Kieran Klaassen") · [Filtering Noise With Supercollider](https://soundcloud.com/kieran-klaassen/filtering-noise-with-supercollider "Filtering Noise With Supercollider")
+
+## **Understanding the Code**
+
+Here’s a breakdown of the SuperCollider script and how it creates this soundscape:
+
+### 1. Filtered Noise
+
+```
+// Define a SynthDef for filtered pink noise
+SynthDef(\filteredPinkNoise, { |out=0, freq=440, pan=0|
+    var signal, env;
+
+    // Generate pink noise
+    signal = PinkNoise.ar(1);
+
+    // Apply band-pass filter
+    signal = BPF.ar(signal, freq, 0.05);
+
+    // ADSR envelope like a raindrop with a long decay
+    env = EnvGen.ar(Env.perc(0.01, 2, 1, -4), doneAction:2);
+    signal = signal * env;
+
+    // Pan the signal
+    Out.ar(out, Pan2.ar(signal, pan));
+}).add;
+
+```
+### **2. Adding Depth: The Drone**
+
+```
+// Define a SynthDef for a drone
+SynthDef(\drone, { |out=0, freqs=#[440, 550, 660, 770], amp=0.15, atk=3, rel=7|
+    var signal, env, leftSignal, rightSignal;
+
+    // Create a sum of sine waves for each frequency
+    signal = Mix(SinOsc.ar(freqs, 0, amp));
+
+    // ADSR envelope with long attack and decay
+    env = EnvGen.ar(Env.linen(atk, 5, rel, 1, -4), doneAction:2);
+    signal = signal * env;
+
+    // Stereo widening effect by slightly detuning left and right channels
+    leftSignal = signal * LFNoise2.kr(0.4).range(0.98, 1.02);
+    rightSignal = signal * LFNoise2.kr(0.4).range(0.98, 1.02);
+
+    // Add reverb (optional, add if needed)
+    signal = FreeVerb.ar(signal, 0.4, 0.9, 0.5);
+
+    Out.ar(out, [leftSignal, rightSignal]);
+}).add;
+
+```
+### **3.. Bringing it to Life: Randomization and Sequencing**
+
+```
+// Function to randomly choose a frequency from the A minor scale
+~randomFreq = {
+    var scale = Scale.minorPentatonic.degrees;
+    var root = 69; // MIDI note number for A4
+    var note = root + scale.choose;
+    440 * (2 ** ((note - 69) / 12));
+};
+
+// Function to generate random chord frequencies
+~randomChord = {
+    var scale = Scale.minorPentatonic.degrees;
+    var root = 69; // MIDI note number for A4
+    var notes = List.fill(4, { root + scale.choose });
+    notes = notes.scramble; // Randomize note order
+    notes.collect({ |note| 440 * (2 ** ((note - 69) / 12)) });
+};
+
+// Random Sequencer for filteredPinkNoise
+{
+    var freq, pan;
+    inf.do {
+        freq = ~randomFreq.value;
+        pan = 2.rand - 1; // Random pan between -1 and 1
+        Synth(\filteredPinkNoise, [freq: freq, pan: pan]);
+        0.5.wait; // Wait for 500 ms
+    };
+}.fork;
+
+// Random Sequencer for drone
+{
+    var chordFreqs;
+    inf.do {
+        chordFreqs = ~randomChord.value;
+        Synth(\drone, [freqs: chordFreqs]);
+        10.wait; // Change chord every 10 seconds
+    };
+}.fork;
+
+```
+## **The Beauty of Exploration**
+
+This project was all about rediscovering the joy of open-ended sound design. SuperCollider lets you control each element with precision, turning those fleeting sonic ideas into a tangible reality.
+
+If you’re inspired, grab the code and make it your own! Change the filter settings, envelope shapes, or add new layers and effects. The possibilities are truly endless.
+
+Source code: https://github.com/kieranklaassen/Supercollider/blob/main/01\_pinkoise\_drone.scd
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Sometimes, you need a moment to switch off the goals and expectations and play.
+
+*Context: Introduction to the joy and purpose of engaging with music programming.*
+
+> My goal was simple: take pink noise and use filtering to create an evolving, organic tone.
+
+*Context: Describing the primary objective of the SuperCollider project.*
+
+> SuperCollider lets you control each element with precision, turning those fleeting sonic ideas into a tangible reality.
+
+*Context: Highlighting the control and possibilities SuperCollider offers in sound design.*
+
+## Related Topics
+
+- [[topics/audio-processing]]
+- [[topics/supercollider]]
+- [[topics/sound-design]]
+- [[topics/music-programming]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Systems, Structure, and Creative Freedom"
+    icon="newspaper"
+    href="/kb/articles/systems-structure-and-creative-freedom-9b79fedb"
+  >
+    Kieran Klaassen · explanation · 68% similar
+  </Card>
+  <Card
+    title="Whispers of Silence: Sharing My Musical Self-Expression"
+    icon="newspaper"
+    href="/kb/articles/whispers-of-silence-sharing-my-musical-self-expression-320bff3c"
+  >
+    Kieran Klaassen · explanation · 65% similar
+  </Card>
+  <Card
+    title="Silencing Your Inner Critic"
+    icon="newspaper"
+    href="/kb/articles/silencing-your-inner-critic-ef296f82"
+  >
+    Kieran Klaassen · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/](https://www.kieranklaassen.com/code,/music/2024/03/04/filtering-noise-with-supercollider/).
+</Note>

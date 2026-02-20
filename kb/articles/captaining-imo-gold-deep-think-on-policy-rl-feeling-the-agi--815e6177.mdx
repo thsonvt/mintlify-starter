@@ -1,0 +1,113 @@
+---
+title: 'Captaining IMO Gold, Deep Think, On-Policy RL, Feeling the AGI in Singapore — Yi Tay'
+description: 'If one model can’t do it, can we get to AGI? From shipping Gemini Deep Think and IMO Gold to launching the Reasoning and AGI team in Singapore, Yi Tay'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-01-23'
+sourceUrl: 'https://www.latent.space/p/captaining-imo-gold-deep-think-on'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/captaining-imo-gold-deep-think-on) · 23/01/2026
+</Info>
+
+## Summary
+
+If one model can’t do it, can we get to AGI? From shipping Gemini Deep Think and IMO Gold to launching the Reasoning and AGI team in Singapore, Yi Tay has spent the last 18 months living through the full arc of Google DeepMinds pivot from architecture research to RL-driven reasoningwatching his team go from a dozen researchers to 300+, trainin
+
+## Key Insights
+
+> "If one model can’t do it, can we get to AGI?"
+>
+> — Discussing the decision to abandon symbolic systems for end-to-end Gemini with RL.
+
+> "Humans learn by making mistakes, not by copying."
+>
+> — Explaining the philosophy behind on-policy reinforcement learning.
+
+> "The model is better than me at this."
+>
+> — Yi Tay's realization about AI coding assistants surpassing human capabilities.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# Captaining IMO Gold, Deep Think, On-Policy RL, Feeling the AGI in Singapore — Yi Tay
+```
+
+**Author**: Swyx  
+**Published**: 2026-01-23  
+**Source**: [https://www.latent.space/p/captaining-imo-gold-deep-think-on](https://www.latent.space/p/captaining-imo-gold-deep-think-on)
+
+---
+
+&lt;p>From shipping &lt;strong>Gemini Deep Think&lt;/strong> and &lt;strong>IMO Gold&lt;/strong> to launching the &lt;strong>Reasoning and AGI team in Singapore&lt;/strong>, &lt;strong>Yi Tay&lt;/strong> has spent the last 18 months living through the full arc of Google DeepMind&#8217;s pivot from architecture research to RL-driven reasoning&#8212;watching his team go from a dozen researchers to 300+, training models that solve International Math Olympiad problems in a live competition, and building the infrastructure to scale deep thinking across every domain, and driving Gemini to the top of the leaderboards across every category. Yi Returns to dig into the inside story of the IMO effort and more!&lt;/p>&lt;p>We discuss:&lt;/p>&lt;ul>&lt;li>&lt;p>Yi&#8217;s path: &lt;strong>Brain &#8594; Reka &#8594; Google DeepMind &#8594; Reasoning and AGI team Singapore&lt;/strong>, leading model training for Gemini Deep Think and IMO Gold&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>IMO Gold story&lt;/strong>: four co-captains (Yi in Singapore, Jonathan in London, Jordan in Mountain View, and Tong leading the overall effort), training the checkpoint in ~1 week, live competition in Australia with professors punching in problems as they came out, and the tension of not knowing if they&#8217;d hit Gold until the human scores came in (because the Gold threshold is a percentile, not a fixed number)&lt;/p>&lt;/li>&lt;li>&lt;p>Why they &lt;strong>threw away AlphaProof&lt;/strong>: &#8220;If one model can&#8217;t do it, can we get to AGI?&#8221; The decision to abandon symbolic systems and bet on end-to-end Gemini with RL was bold and non-consensus&lt;/p>&lt;/li>&lt;li>&lt;p>&lt;strong>On-policy vs. off-policy RL&lt;/strong>: off-policy is imitation learning (copying someone else&#8217;s trajectory), on-policy is the model generating its own outputs, getting rewarded, and training on its own experience&#8212;&#8221;humans learn by making mistakes, not by copying&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>self-consistency and parallel thinking&lt;/strong> are fundamental: sampling multiple times, majority voting, LM judges, and internal verification are all forms of self-consistency that unlock reasoning beyond single-shot inference&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>data efficiency frontier&lt;/strong>: humans learn from 8 orders of magnitude less data than models, so where&#8217;s the bug? Is it the architecture, the learning algorithm, backprop, off-policyness, or something else?&lt;/p>&lt;/li>&lt;li>&lt;p>Three schools of thought on &lt;strong>world models&lt;/strong>: (1) Genie/spatial intelligence (video-based world models), (2) Yann LeCun&#8217;s JEPA + FAIR&#8217;s code world models (modeling internal execution state), (3) the amorphous &#8220;resolution of possible worlds&#8221; paradigm (curve-fitting to find the world model that best explains the data)&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>AI coding crossed the threshold&lt;/strong>: Yi now runs a job, gets a bug, pastes it into Gemini, and relaunches without even reading the fix&#8212;&#8221;the model is better than me at this&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>Pok&#233;mon benchmark&lt;/strong>: can models complete Pok&#233;dex by searching the web, synthesizing guides, and applying knowledge in a visual game state? &#8220;Efficient search of novel idea space is interesting, but we&#8217;re not even at the point where models can consistently apply knowledge they look up&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>&lt;strong>DSI and generative retrieval&lt;/strong>: re-imagining search as predicting document identifiers with semantic tokens, now deployed at YouTube (symmetric IDs for RecSys) and Spotify&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>RecSys and IR feel like a different universe&lt;/strong>: &#8220;modeling dynamics are strange, like gravity is different&#8212;you hit the shuttlecock and hear glass shatter, cause and effect are too far apart&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>The &lt;strong>closed lab advantage is increasing&lt;/strong>: the gap between frontier labs and open source is growing because ideas compound over time, and researchers keep finding new tricks that play well with everything built before&lt;/p>&lt;/li>&lt;li>&lt;p>Why &lt;strong>ideas still matter&lt;/strong>: &#8220;the last five years weren&#8217;t just blind scaling&#8212;transformers, pre-training, RL, self-consistency, all had to play well together to get us here&#8221;&lt;/p>&lt;/li>&lt;li>&lt;p>&lt;strong>Gemini Singapore&lt;/strong>: hiring for RL and reasoning researchers, looking for track record in RL or exceptional achievement in coding competitions, and building a small, talent-dense team close to the frontier&lt;/p>&lt;/li>&lt;/ul>&lt;p>&#8212;&lt;/p>&lt;p>Yi Tay&lt;/p>&lt;ul>&lt;li>&lt;p>Google DeepMind: https://deepmind.google&lt;/p>&lt;/li>&lt;li>&lt;p>X: &lt;a href="https://x.com/YiTayML">https://x.com/YiTayML&lt;/a>&lt;/p>&lt;/li>&lt;/ul>&lt;h2>&lt;strong>Full Video Episode&lt;/strong>&lt;/h2>&lt;div class="youtube-wrap" id="youtube2-unUeI7e-iVs">&lt;div class="youtube-inner">&lt;/div>&lt;/div>&lt;h2>Timestamps&lt;/h2>&lt;p>&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs">00:00:00&lt;/a> Introduction: Returning to Google DeepMind and the Singapore AGI Team&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=292s">00:04:52&lt;/a> The Philosophy of On-Policy RL: Learning from Your Own Mistakes&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=720s">00:12:00&lt;/a> IMO Gold Medal: The Journey from AlphaProof to End-to-End Gemini&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=1293s">00:21:33&lt;/a> Training IMO Cat: Four Captains Across Three Time Zones&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=1579s">00:26:19&lt;/a> Pokemon and Long-Horizon Reasoning: Beyond Academic Benchmarks&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=2189s">00:36:29&lt;/a> AI Coding Assistants: From Lazy to Actually Useful&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=1979s">00:32:59&lt;/a> Reasoning, Chain of Thought, and Latent Thinking&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=2686s">00:44:46&lt;/a> Is Attention All You Need? Architecture, Learning, and the Local Minima&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=3304s">00:55:04&lt;/a> Data Efficiency and World Models: The Next Frontier&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=4092s">01:08:12&lt;/a> DSI and Generative Retrieval: Reimagining Search with Semantic IDs&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=4679s">01:17:59&lt;/a> Building GDM Singapore: Geography, Talent, and the Symposium&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=5058s">01:24:18&lt;/a> Hiring Philosophy: High Stats, Research Taste, and Student Budgets&lt;br />&lt;a href="https://www.youtube.com/watch?v=unUeI7e-iVs&amp;t=5329s">01:28:49&lt;/a> Health, HRV, and Research Performance: The 23kg Journey&lt;/p>
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> If one model can’t do it, can we get to AGI?
+
+*Context: Discussing the decision to abandon symbolic systems for end-to-end Gemini with RL.*
+
+> Humans learn by making mistakes, not by copying.
+
+*Context: Explaining the philosophy behind on-policy reinforcement learning.*
+
+> The model is better than me at this.
+
+*Context: Yi Tay's realization about AI coding assistants surpassing human capabilities.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] AI vs SaaS: The Unreasonable Effectiveness of Centralizing the AI Heartbeat"
+    icon="newspaper"
+    href="/kb/articles/ainews-ai-vs-saas-the-unreasonable-effectiveness-of-centrali-cae196a7"
+  >
+    Swyx · explanation · 73% similar
+  </Card>
+  <Card
+    title="🔬 Automating Science: World Models, Scientific Taste, Agent Loops — Andrew White"
+    icon="newspaper"
+    href="/kb/articles/-automating-science-world-models-scientific-taste-agent-loop-8a8141ef"
+  >
+    Swyx · explanation · 73% similar
+  </Card>
+  <Card
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/captaining-imo-gold-deep-think-on](https://www.latent.space/p/captaining-imo-gold-deep-think-on).
+</Note>

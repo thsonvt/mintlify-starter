@@ -1,0 +1,37 @@
+{
+  "name": "@docs-assistant/core",
+  "version": "0.1.0",
+  "description": "Core utilities for docs-assistant: LLM abstraction, RAG pipeline, shared types",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./llm": {
+      "import": "./dist/llm/index.js",
+      "types": "./dist/llm/index.d.ts"
+    },
+    "./rag": {
+      "import": "./dist/rag/index.js",
+      "types": "./dist/rag/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "openai": "^4.50.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
