@@ -1,12 +1,12 @@
 ---
 title: '[AINews] Anthropic''s Agent Autonomy study'
-description: 'Anthropic''s study on API usage patterns reveals insights into AI agent autonomy, highlighting coding as the primary use and the dynamics of user inter'
+description: 'Most Claude Code turns are short. The median turn lasts around 45 seconds. There’s a lot of small tidbits going on, with former guest [Fei-Fei Li’s Wo'
 icon: 'newspaper'
 author: 'Swyx'
 authorId: 'swyx'
 published: '2026-02-19'
 sourceUrl: 'https://www.latent.space/p/ainews-anthropics-agent-autonomy'
-topics: ["ai-agents","api-usage","autonomy-measurement","coding"]
+topics: ["Claude Code","AI Agents","Anthropic API"]
 diataxisType: 'explanation'
 ---
 
@@ -16,34 +16,139 @@ diataxisType: 'explanation'
 
 ## Summary
 
-Anthropic's study on API usage patterns reveals insights into AI agent autonomy, highlighting coding as the primary use and the dynamics of user interaction.
+Most Claude Code turns are short. The median turn lasts around 45 seconds. There’s a lot of small tidbits going on, with former guest [Fei-Fei Li’s World Labs](https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-192214332.html?guccounter=1&guce_referrer=aHR0cHM6Ly9rYWdpLmNvbS8&guce_referrer_sig=AQAAAIHn6aL6ECAJH2dSErr8YVZLehWRdwRA_q2KzFp8_WzVMfX6CWRlOPG8iQwhJU7OBw8yR61sF
 
 ## Key Insights
 
+> "Most Claude Code turns are short. The median turn lasts around 45 seconds."
+>
+> — Discussing the typical duration of interactions with Claude Code.
+
 > "The METR evaluation captures what a model is capable of in an idealized setting with no human interaction and no real-world consequences."
 >
-> — Discussing the differences between idealized and practical measurements of AI agent performance.
+> — Comparing METR's theoretical model capabilities with Anthropic's practical findings.
 
-> "Our measurements capture what happens in practice, where Claude pauses to ask for feedback and users interrupt."
+> "new users start off with 20% auto-approve, and increase to >50% over time with experience."
 >
-> — Highlighting the real-world interactions and interruptions in AI agent usage.
-
-> "AI Engineers can take away a lot from this agent usage data alone."
->
-> — Emphasizing the value of the data collected on AI agent interactions for engineers.
+> — Highlighting how user interaction with Claude Code evolves with experience.
 
 ## Topics
 
-- [ai-agents](/kb/topics/ai-agents)
-- [api-usage](/kb/topics/api-usage)
-- [autonomy-measurement](/kb/topics/autonomy-measurement)
-- [coding](/kb/topics/coding)
+- [Claude Code](/kb/topics/claude-code)
+- [AI Agents](/kb/topics/ai-agents)
+- [Anthropic API](/kb/topics/anthropic-api)
 
 ---
 
 ## Full Article
 
-Theres a lot of small tidbits going on, with former guest Fei-Fei Lis World Labs and The Era of Experiences David Silver both raising monster $1B rounds, and Anthropic officially blocking OpenClaw using Claude OAuth tokens (consistent with post-OpenCode policy), with OpenAI employees politely reminding everyone that theyre more than welcome to use OpenAI plans instead on the same day (complete coincidence, we are sure).However, all that will pass. What wed highlight today is Anthropics study of its own API usage patterns, Measuring AI agent autonomy in practice. As you might expect, most usage is coding, but you can start to go down the list of the other uses and pick off the next likely targets for agents:Most of the post is about Claude Code usage. We see Anthropics side of the increasing autonomy story - starting at 25 mins in Sept to over 45 mins in Jan, with a dip coinciding with the sudden 2x jump in userbase in Jan-Feb 2026, and then rebounding with the release of Opus 4.6.This is a somewhat different but directionally similar story with the famous METR chart, which, as we explain in our upcoming podcast with them, because it picks the 50th percentile success rate of HUMAN EQUIVALENT HOURS instead of the 99.9th percentile long tail autonomy of Claude Code autonomous execution, shows a very different (and volatile at the extremes) trend of almost 5 hours of human work done by agents:as Anthropic notes:The METR evaluation captures what a model is capable of in an idealized setting with no human interaction and no real-world consequences. Our measurements capture what happens in practice, where Claude pauses to ask for feedback and users interrupt. And METRs five-hour figure measures task difficultyhow long the task would take a humannot how long the model actually runs.(alsoMost Claude Code turns are short. The median turn lasts around 45 seconds, and this duration has fluctuated only slightly over the past few months (between 40 and 55 seconds). In fact, nearly every percentile below the 99th has remained relatively stable.Enough said. Because Anthropic has full access to Claude Code telemetry, there are other autonomy measures nobody else has. For example new users start off with 20% auto-approve, and increase to >50% over time with experiencealthough they do also interrupt it almost twice as often:Theres also good analysis of when -Claude- interrupts the flow to ask for clarification, with decent calibration and good breakdown of reasons with frequency:The rest of the post is more safety oriented, but AI Engineers can take away alot from this agent usage data alone.AI Twitter RecapFrontier model + benchmark churn (Claude 4.6, Qwen3.5, GLM5, Gemini 3.1 Pro, MiniMax M2.5)Anthropic Claude Opus/Sonnet 4.6: big jump, big token bill: Artificial Analysis reports Sonnet 4.6 at 51 on its Intelligence Index (up from 43 for Sonnet 4.5 reasoning), sitting just behind Opus 4.6 at 53, but with markedly worse token efficiency: ~74M output tokens to run the suite vs ~25M for Sonnet 4.5 and ~58M for Opus 4.6 (and $2,088 to run the index for Sonnet 4.6 in max effort) (AA summary, token note). Community sentiment echoes 4.6 feels better at critique/architecture (eshear) while also flagging reliability/product issues around Claude Code (see Anthropic drama discourse around SDK/docs and tooling stability) (theo).Claude in Search Arena + autonomy telemetry: Arena added Opus/Sonnet 4.6 to its search modality leaderboard (arena). Anthropic also published Measuring AI agent autonomy in practice, analyzing millions of tool-using interactions: ~73% of tool calls appear human-in-the-loop, only 0.8% appear irreversible, and software engineering is ~50% of tool calls on their APIframed as autonomy is co-constructed by model + user + product, motivating post-deployment monitoring (Anthropic, metrics, industry mix).Qwen 3.5: reasoning efficiency vs excess thinking: Multiple posts highlight Qwen3.5s overthinking/token usage as a key axisboth complaints (QuixiAI) and deeper community analysis claiming Qwen3.5-Plus reduces long-chain token bloat vs older Qwen reasoning variants, while noting regressions in non-reasoning mode (ZhihuFrontier). On the distribution side, Qwen3.5-Plus shipped to Vercel AI Gateway (Alibaba_Qwen) and Alibaba Cloud launched a Qwen Coding Plan subscription with fixed monthly pricing and high request caps aimed at coding agents (Alibaba_Qwen).Qwen3.5-397B-A17B FP8 weights opened: Alibaba released FP8 weights for Qwen3.5397BA17B, with SGLang support merged and a vLLM PR in flight (vLLM support next couple days)a concrete example of open weights + immediate ecosystem bring-up becoming table stakes for competitive OSS releases (Alibaba_Qwen).GLM5 technical report + agentic engineering RL infrastructure: The GLM5 tech report is referenced directly (scaling01) and summarized as pushing from vibe-coding to agentic engineering, featuring asynchronous agent RL that decouples generation from training and introducing DSA to reduce compute while preserving long-context performance (omarsar0). Practitioners called the report unusually detailed and valuable for OSS replication, pointing out optimizer/state handling and agentic data curation details (terminal envs, slide generation, etc.) (Grad62304977).Gemini 3.1 Pro rumors + thinking longer: Early testing anecdotes suggest Gemini 3.1 Pro runs substantially longer thinking traces than Gemini 3 Pro and may close the gap with Opus/GPTpaired with skepticism about benchmark trustworthiness and failures on adversarial cases (e.g., mishandling ARC-AGI-2 prompt containing the solution) (scaling01, ARC anecdote).MiniMax M2.5 appears on community leaderboards: Yupp/OpenRouter posts indicate onboarding MiniMax M2.5 and M2.5 Lightning and tracking results via prompt-vote leaderboards (yupp_ai, OpenRouter benchmark tab).Agentic coding + harness engineering (Claude Code, Cursor, LangSmith, Deep Agents, SWE-bench process) Read more
+```
+# [AINews] Anthropic's Agent Autonomy study
+```
+
+**Author**: Swyx  
+**Published**: 2026-02-19  
+**Source**: [https://www.latent.space/p/ainews-anthropics-agent-autonomy](https://www.latent.space/p/ainews-anthropics-agent-autonomy)
+
+---
+
+There’s a lot of small tidbits going on, with former guest [Fei-Fei Li’s World Labs](https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-192214332.html?guccounter=1&guce_referrer=aHR0cHM6Ly9rYWdpLmNvbS8&guce_referrer_sig=AQAAAIHn6aL6ECAJH2dSErr8YVZLehWRdwRA_q2KzFp8_WzVMfX6CWRlOPG8iQwhJU7OBw8yR61sFu8By2DQp7HpizjBEq4q0OYH62Quw_FMZcYvFIE9B26OylhW0vEdtcOfyNQL7fKiQ-NS_4FL-V3dPP5JEh0CfF7PDggqv3JfrJfZ) and [The Era of Experience’s David Silver](https://techfundingnews.com/ex-deepmind-ai-researcher-eyes-1b-fundraise-for-london-based-ineffable-intelligence/) both raising monster $1B rounds, and [Anthropic officially blocking OpenClaw](https://x.com/AndrewWarner/status/2024168538508775674) using Claude OAuth tokens ([consistent with post-OpenCode policy](https://x.com/trq212/status/2024212378402095389)), with OpenAI employees politely [reminding everyone](https://x.com/dkundel/status/2024233673764257879?s=20) that they’re more than welcome to use OpenAI plans instead on the same day (complete coincidence, we are sure).
+
+However, all that will pass. What we’d highlight today is Anthropic’s study of its own API usage patterns, [Measuring AI agent autonomy in practice](https://www.anthropic.com/research/measuring-agent-autonomy). As you might expect, most usage is coding, but you can start to go down the list of the other uses and pick off the next likely targets for agents:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!iAa9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92d32668-1f3b-45bf-8cdb-975742145b44_1830x1154.png)](https://substackcdn.com/image/fetch/$s_!iAa9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92d32668-1f3b-45bf-8cdb-975742145b44_1830x1154.png)
+```
+
+Most of the post is about Claude Code usage. We see Anthropic’s side of the “increasing autonomy story” - starting at 25 mins in Sept to over 45 mins in Jan, with a dip coinciding with the sudden [2x jump in userbase](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) in Jan-Feb 2026, and then rebounding with the release of Opus 4.6.
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!c74W!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F18a91dee-c7fa-409d-9541-b34e24bba31c_1938x1236.png)](https://substackcdn.com/image/fetch/$s_!c74W!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F18a91dee-c7fa-409d-9541-b34e24bba31c_1938x1236.png)
+```
+
+This is a somewhat different but directionally similar story with the famous METR chart, which, as we explain in our upcoming podcast with them, because it picks the 50th percentile success rate of **HUMAN EQUIVALENT HOURS** instead of the 99.9th percentile long tail autonomy of Claude Code autonomous execution, shows a very different (and volatile at the extremes) trend of almost 5 hours of human work done by agents:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!S9I7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0016aa23-88fb-4fb5-844a-d794ae5e7936_1992x1566.png)](https://substackcdn.com/image/fetch/$s_!S9I7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0016aa23-88fb-4fb5-844a-d794ae5e7936_1992x1566.png)
+```
+
+as Anthropic notes:
+
+> The METR evaluation captures what a model is capable of in an idealized setting with no human interaction and no real-world consequences. Our measurements capture what happens in practice, where Claude pauses to ask for feedback and users interrupt. And METR’s five-hour figure measures task difficulty—how long the task would take a human—not how long the model actually runs. 
+> 
+> (also… 
+> 
+> **Most Claude Code turns are short. The median turn lasts around 45 seconds**, and this duration has fluctuated only slightly over the past few months (between 40 and 55 seconds). In fact, nearly every percentile below the 99th has remained relatively stable.
+
+Enough said. Because Anthropic has full access to Claude Code telemetry, there are other autonomy measures nobody else has. For example… new users start off with 20% auto-approve, and increase to >50% over time with experience
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!BDdT!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c1ac831-d439-4a2e-8aac-2aa5b309e390_1720x1112.png)](https://substackcdn.com/image/fetch/$s_!BDdT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c1ac831-d439-4a2e-8aac-2aa5b309e390_1720x1112.png)
+```
+
+…although they do also interrupt it almost twice as often:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!P1Br!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24df5029-cbb7-4d16-99b7-08bc18108a7b_1692x1158.png)](https://substackcdn.com/image/fetch/$s_!P1Br!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24df5029-cbb7-4d16-99b7-08bc18108a7b_1692x1158.png)
+```
+
+There’s also good analysis of when -Claude- interrupts the flow to ask for clarification, with decent calibration and good breakdown of reasons with frequency:
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!brVT!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8518fe8e-229d-437d-9ab6-344b3c885c96_1404x1316.png)](https://substackcdn.com/image/fetch/$s_!brVT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8518fe8e-229d-437d-9ab6-344b3c885c96_1404x1316.png)
+```
+
+The rest of the post is more safety oriented, but AI Engineers can take away alot from this agent usage data alone.
+
+---
+
+```
+# **AI Twitter Recap**
+```
+
+**Frontier model + benchmark churn (Claude 4.6, Qwen3.5, GLM‑5, Gemini 3.1 Pro, MiniMax M2.5)**
+
+```
+* **Anthropic Claude Opus/Sonnet 4.6: big jump, big token bill**: Artificial Analysis reports **Sonnet 4.6** at **51** on its Intelligence Index (up from **43** for Sonnet 4.5 reasoning), sitting just behind **Opus 4.6** at **53**, but with markedly worse token efficiency: **~74M output tokens** to run the suite vs **~25M** for Sonnet 4.5 and **~58M** for Opus 4.6 (and **$2,088** to run the index for Sonnet 4.6 in max effort) ([AA summary](https://x.com/ArtificialAnlys/status/2024259812176121952), [token note](https://x.com/ArtificialAnlys/status/2024259815930012105)). Community sentiment echoes “4.6 feels better at critique/architecture” ([eshear](https://x.com/eshear/status/2024148657797308747)) while also flagging reliability/product issues around Claude Code (see “Anthropic drama” discourse around SDK/docs and tooling stability) ([theo](https://x.com/theo/status/2024225756981973214)).
+* **Claude in Search Arena + autonomy telemetry**: Arena added **Opus/Sonnet 4.6** to its search modality leaderboard ([arena](https://x.com/arena/status/2024144830209966142)). Anthropic also published “**Measuring AI agent autonomy in practice**,” analyzing millions of tool-using interactions: **~73%** of tool calls appear **human-in-the-loop**, only **0.8%** appear **irreversible**, and **software engineering** is ~**50%** of tool calls on their API—framed as “autonomy is co-constructed by model + user + product,” motivating post-deployment monitoring ([Anthropic](https://x.com/AnthropicAI/status/2024210035480678724), [metrics](https://x.com/AnthropicAI/status/2024210050718585017), [industry mix](https://x.com/AnthropicAI/status/2024210053369385192)).
+* **Qwen 3.5: reasoning efficiency vs “excess thinking”**: Multiple posts highlight Qwen3.5’s “overthinking”/token usage as a key axis—both complaints ([QuixiAI](https://x.com/QuixiAI/status/2023995215690781143)) and deeper community analysis claiming Qwen3.5-Plus reduces long-chain token bloat vs older Qwen reasoning variants, while noting regressions in non-reasoning mode ([ZhihuFrontier](https://x.com/ZhihuFrontier/status/2024176484232155236)). On the distribution side, Qwen3.5-Plus shipped to **Vercel AI Gateway** ([Alibaba\_Qwen](https://x.com/Alibaba_Qwen/status/2024029499541909920)) and Alibaba Cloud launched a **Qwen Coding Plan** subscription with fixed monthly pricing and high request caps aimed at coding agents ([Alibaba\_Qwen](https://x.com/Alibaba_Qwen/status/2024136381308805564)).
+* **Qwen3.5-397B-A17B FP8 weights opened**: Alibaba released **FP8 weights** for **Qwen3.5‑397B‑A17B**, with **SGLang support merged** and a **vLLM PR** in flight (vLLM support “next couple days”)—a concrete example of “open weights + immediate ecosystem bring-up” becoming table stakes for competitive OSS releases ([Alibaba\_Qwen](https://x.com/Alibaba_Qwen/status/2024161147537232110)).
+* **GLM‑5 technical report + “agentic engineering” RL infrastructure**: The **GLM‑5** tech report is referenced directly ([scaling01](https://x.com/scaling01/status/2024050011164520683)) and summarized as pushing from vibe-coding to “agentic engineering,” featuring **asynchronous agent RL** that **decouples generation from training** and introducing **DSA** to reduce compute while preserving long-context performance ([omarsar0](https://x.com/omarsar0/status/2024122246688878644)). Practitioners called the report unusually detailed and valuable for OSS replication, pointing out optimizer/state handling and agentic data curation details (terminal envs, slide generation, etc.) ([Grad62304977](https://x.com/Grad62304977/status/2024170939248714118)).
+* **Gemini 3.1 Pro rumors + “thinking longer”**: Early testing anecdotes suggest Gemini 3.1 Pro runs substantially longer “thinking” traces than Gemini 3 Pro and may close the gap with Opus/GPT—paired with skepticism about benchmark trustworthiness and failures on adversarial cases (e.g., mishandling ARC-AGI-2 prompt containing the solution) ([scaling01](https://x.com/scaling01/status/2024251668771066362), [ARC anecdote](https://x.com/scaling01/status/2024268831321993590)).
+* **MiniMax M2.5 appears on community leaderboards**: Yupp/OpenRouter posts indicate onboarding MiniMax **M2.5** and **M2.5 Lightning** and tracking results via prompt-vote leaderboards ([yupp\_ai](https://x.com/yupp_ai/status/2024165671136059892), [OpenRouter benchmark tab](https://x.com/OpenRouter/status/2024172351630252)).
+```
+
+---
+
+**Agentic coding + harness engineering (Claude Code, Cursor, LangSmith, Deep Agents, SWE-bench process)**
+
+```
+[Read more](https://www.latent.space/p/ainews-anthropics-agent-autonomy)
+```
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Most Claude Code turns are short. The median turn lasts around 45 seconds.
+
+*Context: Discussing the typical duration of interactions with Claude Code.*
+
+> The METR evaluation captures what a model is capable of in an idealized setting with no human interaction and no real-world consequences.
+
+*Context: Comparing METR's theoretical model capabilities with Anthropic's practical findings.*
+
+> new users start off with 20% auto-approve, and increase to >50% over time with experience.
+
+*Context: Highlighting how user interaction with Claude Code evolves with experience.*
+
+## Related Topics
+
+- [[topics/claude-code]]
+- [[topics/ai-agents]]
+- [[topics/anthropic-api]]
 
 ---
 
@@ -55,21 +160,21 @@ Theres a lot of small tidbits going on, with former guest Fei-Fei Lis World Labs
     icon="newspaper"
     href="/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
   >
-    Swyx · explanation · 79% similar
+    Swyx · explanation · 85% similar
   </Card>
   <Card
-    title="[AINews] Claude Sonnet 4.6: clean upgrade of 4.5, mostly better with some caveats"
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
     icon="newspaper"
-    href="/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
   >
-    Swyx · reference · 79% similar
+    Swyx · explanation · 81% similar
   </Card>
   <Card
-    title="[AINews] Sam Altman's AI Combinator"
+    title="Effective harnesses for long-running agents"
     icon="newspaper"
-    href="/kb/articles/ainews-sam-altmans-ai-combinator-6b0d2516"
+    href="/kb/articles/effective-harnesses-for-long-running-agents-62f3f369"
   >
-    Swyx · explanation · 75% similar
+    Anthropic Engineering · how-to · 80% similar
   </Card>
 </CardGroup>
 

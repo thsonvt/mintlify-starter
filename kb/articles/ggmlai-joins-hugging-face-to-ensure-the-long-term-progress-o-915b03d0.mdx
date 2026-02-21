@@ -1,0 +1,138 @@
+---
+title: 'ggml.ai joins Hugging Face to ensure the long-term progress of Local AI'
+description: 'It''s hard to overstate the impact Georgi Gerganov has had on the local model space. I don''t normally cover acquisition news like this, but I have some'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-20'
+sourceUrl: 'https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything'
+topics: ["OpenAI API","AI Agents","Anthropic API"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything) · 20/02/2026
+</Info>
+
+## Summary
+
+It's hard to overstate the impact Georgi Gerganov has had on the local model space. I don't normally cover acquisition news like this, but I have some thoughts.
+
+## Key Insights
+
+> "It's hard to overstate the impact Georgi Gerganov has had on the local model space."
+>
+> — Discussing Georgi Gerganov's contributions to local AI models.
+
+> "Hugging Face are already responsible for the incredibly influential Transformers library used by the majority of LLM releases today."
+>
+> — Highlighting Hugging Face's role in the AI community.
+
+> "This closer integration could lead to model releases that are compatible with the GGML ecosystem out of the box."
+>
+> — Speculating on the benefits of ggml.ai's integration with Hugging Face.
+
+## Topics
+
+- [OpenAI API](/kb/topics/openai-api)
+- [AI Agents](/kb/topics/ai-agents)
+- [Anthropic API](/kb/topics/anthropic-api)
+
+---
+
+## Full Article
+
+```
+# ggml.ai joins Hugging Face to ensure the long-term progress of Local AI
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-20  
+**Source**: [https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything)
+
+---
+
+**[ggml.ai joins Hugging Face to ensure the long-term progress of Local AI](https://github.com/ggml-org/llama.cpp/discussions/19759)**
+
+I don't normally cover acquisition news like this, but I have some thoughts.
+
+It's hard to overstate the impact Georgi Gerganov has had on the local model space. Back in March 2023 his release of [llama.cpp](https://github.com/ggml-org/llama.cpp) made it possible to run a local LLM on consumer hardware. The [original README](https://github.com/ggml-org/llama.cpp/blob/775328064e69db1ebd7e19ccb59d2a7fa6142470/README.md?plain=1#L7) said:
+
+> The main goal is to run the model using 4-bit quantization on a MacBook. [...] This was hacked in an evening - I have no idea if it works correctly.
+
+I wrote about trying llama.cpp out at the time in [Large language models are having their Stable Diffusion moment](https://simonwillison.net/2023/Mar/11/llama/#llama-cpp):
+
+> I used it to run the 7B LLaMA model on my laptop last night, and then this morning upgraded to the 13B model—the one that Facebook claim is competitive with GPT-3.
+
+Meta's [original LLaMA release](https://github.com/meta-llama/llama/tree/llama_v1) depended on PyTorch and their [FairScale](https://github.com/facebookresearch/fairscale) PyTorch extension for running on multiple GPUs, and required CUDA and NVIDIA hardware. Georgi's work opened that up to a much wider range of hardware and kicked off the local model movement that has continued to grow since then.
+
+Hugging Face are already responsible for the incredibly influential [Transformers](https://github.com/huggingface/transformers) library used by the majority of LLM releases today. They've proven themselves a good steward for that open source project, which makes me optimistic for the future of llama.cpp and related projects.
+
+This section from the announcement looks particularly promising:
+
+> Going forward, our joint efforts will be geared towards the following objectives:
+>
+> * Towards seamless "single-click" integration with the [transformers](https://github.com/huggingface/transformers) library. The `transformers` framework has established itself as the 'source of truth' for AI model definitions. Improving the compatibility between the transformers and the ggml ecosystems is essential for wider model support and quality control.
+> * Better packaging and user experience of ggml-based software. As we enter the phase in which local inference becomes a meaningful and competitive alternative to cloud inference, it is crucial to improve and simplify the way in which casual users deploy and access local models. We will work towards making llama.cpp ubiquitous and readily available everywhere, and continue partnering with great downstream projects.
+
+Given the influence of Transformers, this closer integration could lead to model releases that are compatible with the GGML ecosystem out of the box. That would be a big win for the local model ecosystem.
+
+I'm also excited to see investment in "packaging and user experience of ggml-based software". This has mostly been left to tools like [Ollama](https://ollama.com) and [LM Studio](https://lmstudio.ai). ggml-org released [LlamaBarn](https://github.com/ggml-org/LlamaBarn) last year - "a macOS menu bar app for running local LLMs" - and I'm hopeful that further investment in this area will result in more high quality open source tools for running local models from the team best placed to deliver them.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> It's hard to overstate the impact Georgi Gerganov has had on the local model space.
+
+*Context: Discussing Georgi Gerganov's contributions to local AI models.*
+
+> Hugging Face are already responsible for the incredibly influential Transformers library used by the majority of LLM releases today.
+
+*Context: Highlighting Hugging Face's role in the AI community.*
+
+> This closer integration could lead to model releases that are compatible with the GGML ecosystem out of the box.
+
+*Context: Speculating on the benefits of ggml.ai's integration with Hugging Face.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/ai-agents]]
+- [[topics/anthropic-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="GLM-5: From Vibe Coding to Agentic Engineering"
+    icon="newspaper"
+    href="/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+  >
+    Simon Willison · explanation · 71% similar
+  </Card>
+  <Card
+    title="[AINews] Z.ai GLM-5: New SOTA Open Weights LLM"
+    icon="newspaper"
+    href="/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+  >
+    Swyx · reference · 65% similar
+  </Card>
+  <Card
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+  >
+    Swyx · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything).
+</Note>

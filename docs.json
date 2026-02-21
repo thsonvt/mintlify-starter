@@ -120,12 +120,24 @@
       "destination": "/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-220f4a23",
+      "destination": "/kb/articles/the-think-tool-enabling-claude-to-stop-and-think-in-complex--220f4a23"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-28f9178b",
+      "destination": "/kb/articles/introducing-contextual-retrieval-28f9178b"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-4750b99f",
       "destination": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f"
     },
     {
       "source": "/kb/articles/anthropic-engineering-62f3f369",
       "destination": "/kb/articles/effective-harnesses-for-long-running-agents-62f3f369"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-64f2e1e0",
+      "destination": "/kb/articles/claude-code-overview-64f2e1e0"
     },
     {
       "source": "/kb/articles/anthropic-engineering-67d63c59",
@@ -158,6 +170,10 @@
     {
       "source": "/kb/articles/anthropic-engineering-c5a03109",
       "destination": "/kb/articles/introducing-advanced-tool-use-on-the-claude-developer-platfo-c5a03109"
+    },
+    {
+      "source": "/kb/articles/anthropic-engineering-d9d054b3",
+      "destination": "/kb/articles/raising-the-bar-on-swe-bench-verified-with-claude-35-sonnet-d9d054b3"
     },
     {
       "source": "/kb/articles/anthropic-engineering-de14e41c",
@@ -234,6 +250,18 @@
     {
       "source": "/kb/articles/dan-shipper-every-e8afce40",
       "destination": "/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-12cfb162",
+      "destination": "/kb/articles/teleporting-into-the-future-and-robbing-yourself-of-retireme-12cfb162"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-205a3a00",
+      "destination": "/kb/articles/everything-is-a-ralph-loop-205a3a00"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-ba939aec",
+      "destination": "/kb/articles/dont-waste-your-back-pressure-ba939aec"
     },
     {
       "source": "/kb/articles/jesse-chen-0efafc8a",
@@ -344,6 +372,18 @@
       "destination": "/kb/articles/grounding-ideas-in-writing-fad3e6d4"
     },
     {
+      "source": "/kb/articles/latent-patterns-4888384c",
+      "destination": "/kb/articles/patterns-pi-the-architecture-of-an-ai-coding-agent-4888384c"
+    },
+    {
+      "source": "/kb/articles/latent-patterns-4ba96001",
+      "destination": "/kb/articles/blog-introducing-the-latent-patterns-blog-4ba96001"
+    },
+    {
+      "source": "/kb/articles/latent-patterns-bc799cfd",
+      "destination": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-bc799cfd"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-0a3d6458",
       "destination": "/kb/articles/building-ai-product-sense-part-2-0a3d6458"
     },
@@ -420,6 +460,10 @@
       "destination": "/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
     },
     {
+      "source": "/kb/articles/simon-willison-08424d27",
+      "destination": "/kb/articles/andrej-karpathy-talks-about-claws-08424d27"
+    },
+    {
       "source": "/kb/articles/simon-willison-0b7f8147",
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
@@ -456,6 +500,14 @@
       "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
     },
     {
+      "source": "/kb/articles/simon-willison-4ff8e177",
+      "destination": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177"
+    },
+    {
+      "source": "/kb/articles/simon-willison-53a6ac3d",
+      "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
+    },
+    {
       "source": "/kb/articles/simon-willison-59bcb94a",
       "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
     },
@@ -476,12 +528,24 @@
       "destination": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031"
     },
     {
+      "source": "/kb/articles/simon-willison-67189a5f",
+      "destination": "/kb/articles/taalas-serves-llama-31-8b-at-17000-tokenssecond-67189a5f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6b96427c",
+      "destination": "/kb/articles/recovering-lost-code-6b96427c"
+    },
+    {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
     },
     {
       "source": "/kb/articles/simon-willison-86aff01b",
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-915b03d0",
+      "destination": "/kb/articles/ggmlai-joins-hugging-face-to-ensure-the-long-term-progress-o-915b03d0"
     },
     {
       "source": "/kb/articles/simon-willison-92e1146e",
@@ -674,6 +738,10 @@
     {
       "source": "/kb/articles/swyx-f99e1824",
       "destination": "/kb/articles/ainews-elevenlabs-500m-series-d-at-11b-cerebras-1b-series-h--f99e1824"
+    },
+    {
+      "source": "/kb/articles/swyx-f9aa6dd4",
+      "destination": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
     }
   ]
 }

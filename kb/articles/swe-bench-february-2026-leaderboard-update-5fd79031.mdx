@@ -1,12 +1,12 @@
 ---
 title: 'SWE-bench February 2026 leaderboard update'
-description: 'The February 2026 SWE-bench leaderboard update reveals the latest benchmark results for coding models, highlighting Claude Opus 4.5''s performance over'
+description: 'SWE-bench is one of the benchmarks that the labs love to list in their model releases. SWE-bench is one of the benchmarks that the labs love to list i'
 icon: 'newspaper'
 author: 'Simon Willison'
 authorId: 'simon-willison'
 published: '2026-02-19'
 sourceUrl: 'https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything'
-topics: ["benchmarking","ai-models","coding-benchmarks"]
+topics: ["OpenAI API","Prompt Engineering","AI Agents"]
 diataxisType: 'reference'
 ---
 
@@ -16,33 +16,97 @@ diataxisType: 'reference'
 
 ## Summary
 
-The February 2026 SWE-bench leaderboard update reveals the latest benchmark results for coding models, highlighting Claude Opus 4.5's performance over Opus 4.6.
+SWE-bench is one of the benchmarks that the labs love to list in their model releases. SWE-bench is one of the benchmarks that the labs love to list in their model releases. The official leaderboard is infrequently updated but they just did a full run of it against the current generation of models, which is notable because it's always good to see benchmark results like this that *were
 
 ## Key Insights
 
+> "SWE-bench is one of the benchmarks that the labs love to list in their model releases."
+>
+> — Highlighting the importance of SWE-bench in evaluating AI models.
+
 > "It's interesting to see Claude Opus 4.5 beat Opus 4.6, though only by about a percentage point."
 >
-> — Discussing the performance of different AI models in the SWE-bench leaderboard.
+> — Discussing the surprising performance of older AI model versions over newer ones.
 
-> "This benchmark uses the same system prompt for every model, which is important for a fair comparison."
+> "I'm impressed at how well this worked - Claude injected custom JavaScript into the page to draw additional labels on top of the existing chart."
 >
-> — Explaining the methodology behind the benchmark results.
-
-> "Claude injected custom JavaScript into the page to draw additional labels on top of the existing chart."
->
-> — Describing the use of Claude for enhancing the visualization of benchmark results.
+> — Expressing satisfaction with Claude's ability to manipulate web content for enhanced visualization.
 
 ## Topics
 
-- [benchmarking](/kb/topics/benchmarking)
-- [ai-models](/kb/topics/ai-models)
-- [coding-benchmarks](/kb/topics/coding-benchmarks)
+- [OpenAI API](/kb/topics/openai-api)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
 
 ---
 
 ## Full Article
 
-19th February 2026 SWE-bench February 2026 leaderboard update (via) SWE-bench is one of the benchmarks that the labs love to list in their model releases. The official leaderboard is infrequently updated but they just did a full run of it against the current generation of models, which is notable because it's always good to see benchmark results like this that weren't self-reported by the labs. The fresh results are for their "Bash Only" benchmark, which runs their mini-swe-bench agent (~9,000 lines of Python, here are the prompts they use) against the SWE-bench dataset of coding problems - 2,294 real-world examples pulled from 12 open source repos: django/django (850), sympy/sympy (386), scikit-learn/scikit-learn (229), sphinx-doc/sphinx (187), matplotlib/matplotlib (184), pytest-dev/pytest (119), pydata/xarray (110), astropy/astropy (95), pylint-dev/pylint (57), psf/requests (44), mwaskom/seaborn (22), pallets/flask (11). Correction: The Bash only benchmark runs against SWE-bench Verified, not original SWE-bench. Verified is a manually curated subset of 500 samples described here, funded by OpenAI. Here's SWE-bench Verified on Hugging Face - since it's just 2.1MB of Parquet it's easy to browse using Datasette Lite, which cuts those numbers down to django/django (231), sympy/sympy (75), sphinx-doc/sphinx (44), matplotlib/matplotlib (34), scikit-learn/scikit-learn (32), astropy/astropy (22), pydata/xarray (22), pytest-dev/pytest (19), pylint-dev/pylint (10), psf/requests (8), mwaskom/seaborn (2), pallets/flask (1). Here's how the top ten models performed: It's interesting to see Claude Opus 4.5 beat Opus 4.6, though only by about a percentage point. 4.5 Opus is top, then Gemini 3 Flash, then MiniMax M2.5 - a 229B model released last week by Chinese lab MiniMax. GLM-5, Kimi K2.5 and DeepSeek V3.2 are three more Chinese models that make the top ten as well. OpenAI's GPT-5.2 is their highest performing model at position 6, but it's worth noting that their best coding model, GPT-5.3-Codex, is not represented - maybe because it's not yet available in the OpenAI API. This benchmark uses the same system prompt for every model, which is important for a fair comparison but does mean that the quality of the different harnesses or optimized prompts is not being measured here. The chart above is a screenshot from the SWE-bench website, but their charts don't include the actual percentage values visible on the bars. I successfully used Claude for Chrome to add these - transcript here. My prompt sequence included: Use claude in chrome to open https://www.swebench.com/ Click on "Compare results" and then select "Select top 10" See those bar charts? I want them to display the percentage on each bar so I can take a better screenshot, modify the page like that I'm impressed at how well this worked - Claude injected custom JavaScript into the page to draw additional labels on top of the existing chart. Update: If you look at the transcript Claude claims to have switched to Playwright, which is confusing because I didn't think I had that configured.
+```
+# SWE-bench February 2026 leaderboard update
+```
+
+**Author**: Simon Willison  
+**Published**: 2026-02-19  
+**Source**: [https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything](https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything)
+
+---
+
+**[SWE-bench February 2026 leaderboard update](https://www.swebench.com/)**
+
+SWE-bench is one of the benchmarks that the labs love to list in their model releases. The official leaderboard is infrequently updated but they just did a full run of it against the current generation of models, which is notable because it's always good to see benchmark results like this that *weren't* self-reported by the labs.
+
+The fresh results are for their "Bash Only" benchmark, which runs their [mini-swe-bench](https://github.com/SWE-agent/mini-swe-agent) agent (~9,000 lines of Python, [here are the prompts](https://github.com/SWE-agent/mini-swe-agent/blob/v2.2.1/src/minisweagent/config/benchmarks/swebench.yaml) they use) against the [SWE-bench](https://huggingface.co/datasets/princeton-nlp/SWE-bench) dataset of coding problems - 2,294 real-world examples pulled from 12 open source repos: [django/django](https://github.com/django/django) (850), [sympy/sympy](https://github.com/sympy/sympy) (386), [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) (229), [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx) (187), [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) (184), [pytest-dev/pytest](https://github.com/pytest-dev/pytest) (119), [pydata/xarray](https://github.com/pydata/xarray) (110), [astropy/astropy](https://github.com/astropy/astropy) (95), [pylint-dev/pylint](https://github.com/pylint-dev/pylint) (57), [psf/requests](https://github.com/psf/requests) (44), [mwaskom/seaborn](https://github.com/mwaskom/seaborn) (22), [pallets/flask](https://github.com/pallets/flask) (11).
+
+**Correction**: *The Bash only benchmark runs against SWE-bench Verified, not original SWE-bench. Verified is a manually curated subset of 500 samples [described here](https://openai.com/index/introducing-swe-bench-verified/), funded by OpenAI. Here's [SWE-bench Verified](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified) on Hugging Face - since it's just 2.1MB of Parquet it's easy to browse [using Datasette Lite](https://lite.datasette.io/?parquet=https%3A%2F%2Fhuggingface.co%2Fdatasets%2Fprinceton-nlp%2FSWE-bench_Verified%2Fresolve%2Fmain%2Fdata%2Ftest-00000-of-00001.parquet#/data/test-00000-of-00001?_facet=repo), which cuts those numbers down to django/django (231), sympy/sympy (75), sphinx-doc/sphinx (44), matplotlib/matplotlib (34), scikit-learn/scikit-learn (32), astropy/astropy (22), pydata/xarray (22), pytest-dev/pytest (19), pylint-dev/pylint (10), psf/requests (8), mwaskom/seaborn (2), pallets/flask (1)*.
+
+Here's how the top ten models performed:
+
+![Bar chart showing ](https://static.simonwillison.net/static/2026/swbench-feb-2026.jpg)
+
+It's interesting to see Claude Opus 4.5 beat Opus 4.6, though only by about a percentage point. 4.5 Opus is top, then Gemini 3 Flash, then MiniMax M2.5 - a 229B model released [last week](https://www.minimax.io/news/minimax-m25) by Chinese lab MiniMax. GLM-5, Kimi K2.5 and DeepSeek V3.2 are three more Chinese models that make the top ten as well.
+
+OpenAI's GPT-5.2 is their highest performing model at position 6, but it's worth noting that their best coding model, GPT-5.3-Codex, is not represented - maybe because it's not yet available in the OpenAI API.
+
+This benchmark uses the same system prompt for every model, which is important for a fair comparison but does mean that the quality of the different harnesses or optimized prompts is not being measured here.
+
+The chart above is a screenshot from the SWE-bench website, but their charts don't include the actual percentage values visible on the bars. I successfully used Claude for Chrome to add these - [transcript here](https://claude.ai/share/81a0c519-c727-4caa-b0d4-0d866375d0da). My prompt sequence included:
+
+> Use claude in chrome to open https://www.swebench.com/
+>
+> Click on "Compare results" and then select "Select top 10"
+>
+> See those bar charts? I want them to display the percentage on each bar so I can take a better screenshot, modify the page like that
+
+I'm impressed at how well this worked - Claude injected custom JavaScript into the page to draw additional labels on top of the existing chart.
+
+![Screenshot of a Claude AI conversation showing browser automation. A thinking step reads ]()" followed by the message "Good, the chart is back. Now let me carefully add the labels using an inline plugin on the chart instance to avoid the recursion issue." A collapsed "Browser\_evaluate" section shows a browser\_evaluate tool call with JavaScript code using Chart.js canvas context to draw percentage labels on bars: meta.data.forEach((bar, index) => &#123; const value = dataset.data[index]; if (value !== undefined && value !== null) &#123; ctx.save(); ctx.textAlign = 'center'; ctx.textBaseline = 'bottom'; ctx.fillStyle = '#333'; ctx.font = 'bold 12px sans-serif'; ctx.fillText(value.toFixed(1) + '%', bar.x, bar.y - 5); A pending step reads "Let me take a screenshot to see if it worked." followed by a completed "Done" step, and the message "Let me take a screenshot to check the result."" src="https://static.simonwillison.net/static/2026/claude-chrome-draw-on-chart.jpg" />
+
+**Update**: If you look at the transcript Claude claims to have switched to Playwright, which is confusing because I didn't think I had that configured.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> SWE-bench is one of the benchmarks that the labs love to list in their model releases.
+
+*Context: Highlighting the importance of SWE-bench in evaluating AI models.*
+
+> It's interesting to see Claude Opus 4.5 beat Opus 4.6, though only by about a percentage point.
+
+*Context: Discussing the surprising performance of older AI model versions over newer ones.*
+
+> I'm impressed at how well this worked - Claude injected custom JavaScript into the page to draw additional labels on top of the existing chart.
+
+*Context: Expressing satisfaction with Claude's ability to manipulate web content for enhanced visualization.*
+
+## Related Topics
+
+- [[topics/openai-api]]
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
 
 ---
 
@@ -50,25 +114,25 @@ The February 2026 SWE-bench leaderboard update reveals the latest benchmark resu
 
 <CardGroup cols={1}>
   <Card
-    title="[AINews] new Gemini 3 Deep Think, Anthropic $30B @ $380B, GPT-5.3-Codex Spark, MiniMax M2.5"
-    icon="newspaper"
-    href="/kb/articles/ainews-new-gemini-3-deep-think-anthropic-30b-380b-gpt-53-cod-90022aa3"
-  >
-    Swyx · explanation · 67% similar
-  </Card>
-  <Card
-    title="[AINews] ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B, Vibe Coding -> Agentic Engineering"
-    icon="newspaper"
-    href="/kb/articles/ainews-elevenlabs-500m-series-d-at-11b-cerebras-1b-series-h--f99e1824"
-  >
-    Swyx · reference · 64% similar
-  </Card>
-  <Card
     title="[AINews] Anthropic's Agent Autonomy study"
     icon="newspaper"
     href="/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
   >
-    Swyx · explanation · 64% similar
+    Swyx · explanation · 78% similar
+  </Card>
+  <Card
+    title="Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet"
+    icon="newspaper"
+    href="/kb/articles/raising-the-bar-on-swe-bench-verified-with-claude-35-sonnet-d9d054b3"
+  >
+    Anthropic Engineering · explanation · 76% similar
+  </Card>
+  <Card
+    title="Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days"
+    icon="newspaper"
+    href="/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
+  >
+    Lenny Rachitsky · explanation · 74% similar
   </Card>
 </CardGroup>
 

@@ -1,13 +1,13 @@
 ---
 title: '[AINews] Claude Sonnet 4.6: clean upgrade of 4.5, mostly better with some caveats'
-description: 'Anthropic launched Claude Sonnet 4.6, an upgrade from 4.5, featuring improvements in various capabilities and a 1M-token context window, despite some '
+description: '*AI News for 2/16/2026-2/17/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**261** c'
 icon: 'newspaper'
 author: 'Swyx'
 authorId: 'swyx'
 published: '2026-02-18'
 sourceUrl: 'https://www.latent.space/p/ainews-claude-sonnet-46-clean-upgrade'
-topics: ["ai-models","machine-learning","natural-language-processing","software-upgrades"]
-diataxisType: 'reference'
+topics: ["Prompt Engineering","AI Agents","Anthropic API"]
+diataxisType: 'explanation'
 ---
 
 <Info>
@@ -16,34 +16,268 @@ diataxisType: 'reference'
 
 ## Summary
 
-Anthropic launched Claude Sonnet 4.6, an upgrade from 4.5, featuring improvements in various capabilities and a 1M-token context window, despite some reliability concerns.
+*AI News for 2/16/2026-2/17/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**261** channels, and **11323** messages) for you. Estimated reading time saved (at 200wpm): **1096** minutes. [AINews’ website](https://news.smol.ai/) lets
 
 ## Key Insights
 
+> "Anthropic opted to launch Sonnet 4.6 today, bumping their cheaper workhorse model up to match Opus 4.6."
+>
+> — Introduction of Sonnet 4.6 as an upgrade over the previous version.
+
 > "Sonnet 4.6 is described by Anthropic as a full upgrade across multiple capability areas and includes a 1M token context window in beta."
 >
-> — Factual / checkable claims
+> — Highlighting the key features and improvements in Sonnet 4.6.
 
-> "Users preferred Sonnet 4.6 over Opus 4.5 59% of the time."
+> "Sonnet 4.6 used 280M total tokens (vs Sonnet 4.5 58M); Opus 4.6 used 160M in equivalent settings."
 >
-> — Benchmark datapoints cited
-
-> "Post-launch reliability concerns (hallucinations everywhere 4.6 crapping the bed) are anecdotal reports from a specific workflow."
->
-> — Opinions / interpretations
+> — Comparing token usage between Sonnet 4.6, Sonnet 4.5, and Opus 4.6.
 
 ## Topics
 
-- [ai-models](/kb/topics/ai-models)
-- [machine-learning](/kb/topics/machine-learning)
-- [natural-language-processing](/kb/topics/natural-language-processing)
-- [software-upgrades](/kb/topics/software-upgrades)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [Anthropic API](/kb/topics/anthropic-api)
 
 ---
 
 ## Full Article
 
-AI News for 2/16/2026-2/17/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (261 channels, and 11323 messages) for you. Estimated reading time saved (at 200wpm): 1096 minutes. AINews website lets you search all past issues. As a reminder, AINews is now a section of Latent Space. You can opt in/out of email frequencies!Despite a lot of rumors of a Sonnet 5, Anthropic opted to launch Sonnet 4.6 today, bumping their cheaper workhorse model up to match Opus 4.6, touting some preference wins from Sonnet to 4.5 Opus and a 1m token context, though generally lagging in usual benchmarks, and on GDPVal-AA (explained in our podcast with them) it uses 4.5x more tokens so the all-in cost can be higher than Opus in some tasks. The API platform tools and the Excel integrations also got minor upgrades.Some of the key highlights are the long term improvements in Computer Use, first launched in Oct 2024, which was at launch completely slow and so inaccurate as to be impractical, but now is productized as Claude Cowork, which has anecdotally seen more successful adoption than OpenAIs equivalent Operator and Agent iterations.We have tuned the Twitter recap below to include more datapoints, but really thats all that you truly need to know.AI Twitter RecapTop Story: Sonnet 4.6 launchWhat happened (timeline + headline claims)Anthropic launched Claude Sonnet 4.6 as an upgrade to Sonnet 4.5, positioning it as their most capable Sonnet model with broad improvements across coding, computer use, long-context reasoning, agent planning, knowledge work, and design, plus a 1M-token context window (beta) [@claudeai]. Early chatter preceded the announcement (Sonnet 4.6 incoming!) [@kimmonismus], then the launch triggered a wave of benchmark callouts, tooling/platform integrations (Cursor, Windsurf, Microsoft Foundry, Perplexity/Comet, etc.), and mixed early user feedback about quality and reliability.Official announcement + feature list + 1M context (beta) [@claudeai]Anthropic employee framing: approaching Opus-class insane jump over 4.5 [@alexalbert__]Independent eval org update: Sonnet 4.6 leads GDPval-AA ELO (agentic knowledge work), with much higher token use than 4.5 [@ArtificialAnlys]Pricing claim: same pricing as Sonnet 4.5 [@kimmonismus]Post-launch regression? report: hallucinated function names / broken structured outputs; later seems fixed [@rishdotblog], [@rishdotblog]Factual / checkable claimsSonnet 4.6 is described by Anthropic as a full upgrade across multiple capability areas and includes a 1M token context window in beta [@claudeai].Benchmark datapoints cited:79.6% SWE-Bench Verified, 58.3% ARC-AGI-2 (as posted) [@scaling01].Users preferred Sonnet 4.6 over Opus 4.5 59% of the time [@scaling01].Sonnet 4.6 the best model on GDPval (claim) [@scaling01].Artificial Analysis (independent benchmarking org) claims:Sonnet 4.6 reached GDPval-AA ELO 1633 (in adaptive thinking mode and max effort), and is #1 on their GDPval-AA leaderboard but within the 95% CI of Opus 4.6 [@ArtificialAnlys].Token usage to run GDPval-AA: Sonnet 4.6 used 280M total tokens (vs Sonnet 4.5 58M); Opus 4.6 used 160M in equivalent settings [@ArtificialAnlys].Sonnet 4.6 improved aesthetic quality of generated docs/presentations relative to 4.5 on GDPval-AA outputs [@ArtificialAnlys].Tooling update: Anthropic web search/fetch tools now execute code to filter results; reported effect: +13% accuracy on BrowseComp with 32% fewer input tokens when enabled (as posted) [@alexalbert__].Opinions / interpretations (whats not settled)Approaching Opus-class capabilities insane jump [@alexalbert__] is qualitative framing (though consistent with some benchmark movement).Near human-level computer use extrapolation [@alexalbert__] depends strongly on which computer use evals + harnesses + task distributions are used.Warmer and kinder smarter and more overcaffeinated is pure UX vibe [@sleepinyourhat].Taste is off the charts / SVG skyline anecdote is subjective (but points to improved design/visual generation) [@scaling01].Post-launch reliability concerns (hallucinations everywhere 4.6 crapping the bed) are anecdotal reports from a specific workflow, though notable because they compare to 4.5 on the same tasks [@rishdotblog].Technical details extracted (numbers, benchmarks, systems implications)Core model/product knobs surfaced in tweetsContext window: 1M tokens (beta) [@claudeai].Pricing: same pricing as Sonnet 4.5 [@kimmonismus] (no $/tok quoted directly in these tweets, but note RundownAI cites Sonnet pricing [$3/$15 per mil tokens] as context [@TheRundownAI]).Search/fetch tool change: pre-context filtering via executable code; +13% BrowseComp accuracy, -32% input tokens [@alexalbert__].Systems read: this is an explicit shift toward tool-side compute before contextspending tool compute to reduce prompt budget and improve signal-to-noise in retrieved context.Benchmarks and what they suggest (with caveats)SWE-Bench Verified 79.6% (posted) [@scaling01].Interpretation: SWE-Bench Verified is sensitive to harness, timeouts, repo setup, and tool reliability. Still, 79.6% is frontier-tier in the common discourse.ARC-AGI-2 58.3% (posted) [@scaling01].Also see longitudinal claim: 141 days 13.6% to 60.4% on ARC-AGI-2 (Sonnet line progress, presumably 4.54.6 or earliernow) [@scaling01].Preference eval: preferred over Opus 4.5 59% [@scaling01].GDPval-AA (Artificial Analysis): ELO 1633, #1 but statistically overlapping Opus 4.6; token usage 280M for Sonnet 4.6 vs 58M for Sonnet 4.5; cost to run GDPval-AA just ahead of Opus 4.6 (because of token usage) [@ArtificialAnlys].Important implication for engineers: Best may be bought with more thinking tokens, which impacts latency and spend; a router may pick 4.6 selectively.Vending-Bench Arena strategy claim: with 1M context, Sonnet 4.6 uses a capacity-first then profitability pivot plan [@felixrieseberg].This is a rare example of a behavioral shift attributed to long-context planning capacity, but its still a single benchmark anecdote.Cost/latency + throughput signalsEngineers are explicitly noticing that frontier labs blast millions of tokens scaffold like a skyscraper [@scaling01], aligning with Artificial Analysis disclosure that Sonnet 4.6 needed ~4.8 the tokens of Sonnet 4.5 on GDPval-AA [@ArtificialAnlys].Cursors note: Sonnet 4.6 better on longer tasks but below Opus 4.6 for intelligence [@cursor_ai] suggests practical routing: Sonnet 4.6 as default long-horizon workhorse; Opus as max-capability.Different perspectives in the datasetStrongly positive / this is a big jumpAnthropic-side: most capable Sonnet full upgrade 1M context [@claudeai] and approaching Opus-class jump insane [@alexalbert__].Benchmark boosters: SWE-Bench/ARC-AGI-2 callouts [@scaling01], GDPval best-model claim [@scaling01], crushes Gemini 3 and GPT-5.2 on Vending-Bench 2 [@scaling01].Practitioners: beast for real-world work computer usage [@kimmonismus], computer use standout more consistent over long sessions [@mikeyk].Neutral / adoption & positioning notesno Sonnet 5 reaction [@dejavucoder] reflects expectations management rather than capability.Cursors measured product note (better than 4.5, below Opus 4.6) [@cursor_ai].Artificial Analysis: #1 GDPval-AA but within CI of Opus 4.6 + disclosure that it uses more tokens [@ArtificialAnlys].Negative / skeptical / something brokeReliability regression report: hallucinated function names in agent workflows; structured output errors; 4.5 still works great [@rishdotblog]. Follow-up: Whatever this was seems fixed! [@rishdotblog].Cost sensitivity: Sonnet and Slopus munching through my credits [@scaling01], plus later price hurts / cost follow-ups (not fully detailed in provided snippet) [@scaling01].A comparative take in infra/product terms: 50% more expensive than xhigh and 228% over 5.2 codex vast improvement over 4.5 [@teortaxesTex]this frames Sonnet 4.6 as improved but potentially cost-inefficient vs alternatives depending on workload.Context: why Sonnet 4.6 matters (engineering implications)Long-context is becoming operational, not just a spec.The launch pushes a 1M token window into the Sonnet tier [@claudeai]. But Artificial Analysis disclosure that Sonnet 4.6 used 280M tokens to run GDPval-AA in adaptive thinking/max effort configs [@ArtificialAnlys] is a reminder: long-context + long-think can silently move your budget envelope. Expect more routing, summarization, context management, and retrieve then filter patterns (consistent with the new search/fetch filtering improvement [@alexalbert__]).Agent performance claims are increasingly harness-dependent.GDPval-AA uses an agentic harness (shell + browsing loop), and Sonnet 4.6s lead is reported under a specific setup (adaptive thinking mode, max effort) [@ArtificialAnlys]. Cursors note that its better on longer tasks but below Opus for raw intelligence [@cursor_ai] reinforces that best model is not a scalar; its workload harness budget.Computer use is becoming a marquee capability, and Sonnet is being pushed there.Multiple tweets highlight computer use progress and near-human-level framing [@alexalbert__], and deployments like Perplexitys Comet browser agent explicitly default to Sonnet 4.6 for Pro users [@comet].Release risk: small serving/config changes can look like model regressions.The reported post-launch hallucination spike across Opus 4.6 and Sonnet 4.6 [@rishdotblog]and then seems fixed [@rishdotblog]reads like a potential routing, toolchain, system prompt, or safety-layer change rather than weights. For teams: pin versions where possible, run canary evals, and monitor structured output validity + tool-call correctness separately from chat quality.Other Topics (standard coverage)Open models & independent benchmarking (Qwen/GLM/Seed/Aya, etc.)Artificial Analysis deep breakdown of Qwen3.5-397B-A17B (397B total / 17B active MoE, Apache 2.0, 262K ctx, native multimodal); big gains on agentic evals, but hallucination rate still high by their metric [@ArtificialAnlys].GLM-5 cited as strong open model on WeirdML and other benches (48.2% WeirdML; comparisons to Opus/gpt-* claims) [@htihle], plus GLM-5 technical report highlights: DSA adoption, async RL infra, agent RL algorithms [@Zai_org].ByteDance Seed-2.0 announced (agent/reasoning/vision; no distillation; CN-only initially) [@TsingYoga].Cohere Labs launched Tiny Aya: 3.35B open multilingual model family (70+ languages; runs on a phone), with claims of training on 64 GPUs and a detailed report [@nickfrosst], [@_akhaliq], [@mziizm].Agents, harnesses, memory, and long-horizon infrastructureAgent World Model (AWM) proposes fully synthetic executable environments (1,000 envs, 35,062 tools, 10,000 tasks, SQL-backed state, verification code) for RL tool-use agents [@dair_ai].Lossless Context Management (LCM) / Volt claims: deterministic hierarchical DAG compression with lossless pointers; on OOLONG, beats Claude Code at every context length 32K1M (reported) [@dair_ai], amplified [@omarsar0].Moltbook multi-agent society study: 2.6M LLM agents, 300k posts, 1.8M comments; macro culture stabilizes, micro influence ~noise; critique of just add agents assumptions [@omarsar0].LangChain Harness Engineering theme: traces eval mining self-verification loops; TerminalBench positioning [@Vtrivedy10], plus LangSmith Insights scheduling [@LangChain].Open-sourcing an agent runtime (Hankweave) focused on removing context, maintainability, and reusable blocks across models [@hrishioa].Systems & inference optimization (kernels, scheduling, throughput)Carmack proposes OS-like GPU job preemption via UVM paging + MPS shim, aiming for seconds-scale task switching (acknowledges thrash risk) [@ID_AA_Carmack].Moondream MoE kernel: 2.6% faster by tuning launch config to real routing distributions; kernel ~37% runtime [@vikhyatk].Together-style ThunderAgent / program abstraction for end-to-end agent workflow scheduling; claims up to 3.9 faster rollout/serving without quality tradeoff (as posted) [@ben_athi], plus explanation thread [@simran_s_arora].Frontier product moves: Codex, Grok, computer use competitionCodex usage report: users trying (and failing) to hit limits; heavy parallel agent usage within subscription windows [@theo].OpenAI infra hiring pitch (agent orchestration, sandboxes, observability) [@gdb].Grok 4.20 / 4.x discussion includes launch notices and architecture claims, plus highly polarized political framing by Elon [@kimmonismus], [@elonmusk], with critics calling performance weak vs Flash models [@teortaxesTex].Robotics, video/image generation, and multimodal researchUnitree humanoid performance discourse (claims of distributed coordination, terrain adaptation, safety spacing, multi-DOF manipulation) [@ZhihuFrontier].Perceptive Humanoid Parkour (depth-perception long-horizon traversal) [@zhenkirito123].ByteDance BitDance: 14B AR image generator predicting binary visual tokens; claims FID 1.24 on ImageNet 256 [@iScienceLuvr], plus author promo [@multimodalart].Sphere Encoder few-step image generation in spherical latent space; Meta/Goldstein thread with details including 65K latent dims for ImageNet and &lt;5-step refinement [@tomgoldsteincs].AI Reddit Recap/r/LocalLlama + /r/localLLM Recap Read more
+```
+# [AINews] Claude Sonnet 4.6: clean upgrade of 4.5, mostly better with some caveats
+```
+
+**Author**: Swyx  
+**Published**: 2026-02-18  
+**Source**: [https://www.latent.space/p/ainews-claude-sonnet-46-clean-upgrade](https://www.latent.space/p/ainews-claude-sonnet-46-clean-upgrade)
+
+---
+
+> *AI News for 2/16/2026-2/17/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**261** channels, and **11323** messages) for you. Estimated reading time saved (at 200wpm): **1096** minutes. [AINews’ website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!*
+
+Despite a lot of rumors of a “[Sonnet 5](https://x.com/pankajkumar_dev/status/2018187650927349976?s=46)”, Anthropic opted to [launch Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) today, bumping their cheaper workhorse model up to match [Opus 4.6](https://www.latent.space/p/ainews-openai-and-anthropic-go-to), touting some preference wins from Sonnet to 4.5 Opus and a 1m token context, though generally lagging in usual benchmarks, and on **GDPVal-AA** (explained in [our podcast with them](https://www.latent.space/p/artificialanalysis)) it uses 4.5x more tokens so the all-in cost can be higher than Opus in some tasks. The [API platform tools](https://x.com/alexalbert__/status/2023834875678298535?s=46) and the [Excel integrations](https://x.com/claudeai/status/2023817143096406246) also got minor upgrades.
+
+Some of the key highlights are the long term improvements in Computer Use, [first launched in Oct 2024](https://news.smol.ai/issues/24-10-22-ainews-claude-35-sonnet-new-gets-computer-use), which was at launch completely slow and so inaccurate as to be impractical, but now is productized as [Claude Cowork](https://news.smol.ai/issues/26-01-13-not-much), which has anecdotally seen more successful adoption than OpenAI’s equivalent Operator and Agent iterations.
+
+```
+[![](https://substackcdn.com/image/fetch/$s_!z85d!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe582538-a851-4fbd-a810-2274e13fd0be_1880x1132.png)](https://substackcdn.com/image/fetch/$s_!z85d!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe582538-a851-4fbd-a810-2274e13fd0be_1880x1132.png)
+```
+
+We have tuned the Twitter recap below to include more datapoints, but really that’s all that you truly need to know.
+
+---
+
+```
+# **AI Twitter Recap**
+```
+
+## **Top Story: Sonnet 4.6 launch**
+
+### **What happened (timeline + headline claims)**
+
+Anthropic launched **Claude Sonnet 4.6** as an upgrade to Sonnet 4.5, positioning it as their **most capable Sonnet model** with broad improvements across **coding, computer use, long-context reasoning, agent planning, knowledge work, and design**, plus a **1M-token context window (beta)** [[@claudeai](https://x.com/claudeai/status/2023817132581208353)]. Early chatter preceded the announcement (“Sonnet 4.6 incoming!”) [[@kimmonismus](https://x.com/kimmonismus/status/2023814107846398015)], then the launch triggered a wave of benchmark callouts, tooling/platform integrations (Cursor, Windsurf, Microsoft Foundry, Perplexity/Comet, etc.), and mixed early user feedback about quality and reliability.
+
+```
+* **Official announcement + feature list + 1M context (beta)** [[@claudeai](https://x.com/claudeai/status/2023817132581208353)]
+* **Anthropic employee framing: “approaching Opus-class… insane jump over 4.5”** [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023817479580221795)]
+* **Independent eval org update: Sonnet 4.6 leads GDPval-AA ELO (agentic knowledge work), with much higher token use than 4.5** [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)]
+* **Pricing claim: “same pricing as Sonnet 4.5”** [[@kimmonismus](https://x.com/kimmonismus/status/2023820443359002922)]
+* **Post-launch “regression?” report: hallucinated function names / broken structured outputs; later “seems fixed”** [[@rishdotblog](https://x.com/rishdotblog/status/2023848487285387693)], [[@rishdotblog](https://x.com/rishdotblog/status/2023854279766003784)]
+```
+
+### **Factual / checkable claims**
+
+```
+* Sonnet 4.6 is described by Anthropic as a **full upgrade** across multiple capability areas and includes a **1M token context window in beta** [[@claudeai](https://x.com/claudeai/status/2023817132581208353)].
+* Benchmark datapoints cited:
+```
+
+ + **79.6% SWE-Bench Verified**, **58.3% ARC-AGI-2** (as posted) [[@scaling01](https://x.com/scaling01/status/2023818940112327101)].
+ + “Users preferred Sonnet 4.6 over Opus 4.5 **59%** of the time” [[@scaling01](https://x.com/scaling01/status/2023819403230671232)].
+ + “Sonnet 4.6 the best model on **GDPval**” (claim) [[@scaling01](https://x.com/scaling01/status/2023819793212813604)].
+```
+* Artificial Analysis (independent benchmarking org) claims:
+```
+
+ + Sonnet 4.6 reached **GDPval-AA ELO 1633** (in “adaptive thinking mode” and “max effort”), and is **#1** on their GDPval-AA leaderboard but **within the 95% CI of Opus 4.6** [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)].
+ + Token usage to run GDPval-AA: Sonnet 4.6 used **280M total tokens** (vs Sonnet 4.5 **58M**); Opus 4.6 used **160M** in equivalent settings [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)].
+ + Sonnet 4.6 improved *aesthetic* quality of generated docs/presentations relative to 4.5 on GDPval-AA outputs [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821899139293652)].
+```
+* Tooling update: Anthropic web search/fetch tools now **execute code to filter results**; reported effect: **+13% accuracy on BrowseComp** with **32% fewer input tokens** when enabled (as posted) [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023834863858769975)].
+```
+
+### **Opinions / interpretations (what’s** ***not*** **settled)**
+
+```
+* “Approaching Opus-class capabilities… insane jump” [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023817479580221795)] is qualitative framing (though consistent with some benchmark movement).
+* “Near human-level computer use” extrapolation [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023820589983801796)] depends strongly on which “computer use” evals + harnesses + task distributions are used.
+* “Warmer and kinder… smarter and more overcaffeinated” is pure UX vibe [[@sleepinyourhat](https://x.com/sleepinyourhat/status/2023821754859503650)].
+* “Taste is off the charts” / SVG skyline anecdote is subjective (but points to improved design/visual generation) [[@scaling01](https://x.com/scaling01/status/2023840565641556439)].
+* Post-launch reliability concerns (“hallucinations everywhere… 4.6 crapping the bed”) are anecdotal reports from a specific workflow, though notable because they compare to 4.5 on the “same tasks” [[@rishdotblog](https://x.com/rishdotblog/status/2023848930430304648)].
+```
+
+## **Technical details extracted (numbers, benchmarks, systems implications)**
+
+### **Core model/product knobs surfaced in tweets**
+
+```
+* **Context window:** **1M tokens (beta)** [[@claudeai](https://x.com/claudeai/status/2023817132581208353)].
+* **Pricing:** “same pricing as Sonnet 4.5” [[@kimmonismus](https://x.com/kimmonismus/status/2023820443359002922)] (no $/tok quoted directly in these tweets, but note RundownAI cites “Sonnet pricing [$3/$15 per mil tokens]” as context [[@TheRundownAI](https://x.com/TheRundownAI/status/2023821446380978238)]).
+* **Search/fetch tool change:** pre-context filtering via executable code; **+13% BrowseComp accuracy, -32% input tokens** [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023834863858769975)].
+```
+
+ + Systems read: this is an explicit shift toward **tool-side “compute before context”**—spending tool compute to reduce prompt budget and improve signal-to-noise in retrieved context.
+
+### **Benchmarks and what they** ***suggest*** **(with caveats)**
+
+```
+* **SWE-Bench Verified 79.6%** (posted) [[@scaling01](https://x.com/scaling01/status/2023818940112327101)].
+```
+
+ + Interpretation: SWE-Bench Verified is sensitive to harness, timeouts, repo setup, and tool reliability. Still, 79.6% is “frontier-tier” in the common discourse.
+```
+* **ARC-AGI-2 58.3%** (posted) [[@scaling01](https://x.com/scaling01/status/2023818940112327101)].
+```
+
+ + Also see longitudinal claim: “141 days… 13.6% to 60.4% on ARC-AGI-2” (Sonnet line progress, presumably 4.5→4.6 or earlier→now) [[@scaling01](https://x.com/scaling01/status/2023850250662969587)].
+```
+* **Preference eval:** “preferred over Opus 4.5 59%” [[@scaling01](https://x.com/scaling01/status/2023819403230671232)].
+* **GDPval-AA (Artificial Analysis):** ELO **1633**, #1 but statistically overlapping Opus 4.6; **token usage 280M** for Sonnet 4.6 vs 58M for Sonnet 4.5; **cost to run** GDPval-AA “just ahead of Opus 4.6” (because of token usage) [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)].
+```
+
+ + Important implication for engineers: **“Best” may be bought with more thinking tokens**, which impacts latency and spend; a router may pick 4.6 selectively.
+```
+* **Vending-Bench Arena strategy** claim: with 1M context, Sonnet 4.6 uses a “capacity-first then profitability pivot” plan [[@felixrieseberg](https://x.com/felixrieseberg/status/2023823186484404443)].
+```
+
+ + This is a rare example of a **behavioral shift** attributed to long-context planning capacity, but it’s still a single benchmark anecdote.
+
+### **Cost/latency + throughput signals**
+
+```
+* Engineers are explicitly noticing that frontier labs “blast millions of tokens… scaffold like a skyscraper” [[@scaling01](https://x.com/scaling01/status/2023837889478758495)], aligning with Artificial Analysis’ disclosure that Sonnet 4.6 needed **~4.8×** the tokens of Sonnet 4.5 on GDPval-AA [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)].
+* Cursor’s note: Sonnet 4.6 better on “longer tasks” but “below Opus 4.6 for intelligence” [[@cursor\_ai](https://x.com/cursor_ai/status/2023841746577485894)] suggests practical routing: Sonnet 4.6 as **default long-horizon workhorse**; Opus as **max-capability**.
+```
+
+## **Different perspectives in the dataset**
+
+### **Strongly positive / “this is a big jump”**
+
+```
+* Anthropic-side: “most capable Sonnet… full upgrade… 1M context” [[@claudeai](https://x.com/claudeai/status/2023817132581208353)] and “approaching Opus-class… jump… insane” [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023817479580221795)].
+* Benchmark boosters: SWE-Bench/ARC-AGI-2 callouts [[@scaling01](https://x.com/scaling01/status/2023818940112327101)], GDPval best-model claim [[@scaling01](https://x.com/scaling01/status/2023819793212813604)], “crushes Gemini 3 and GPT-5.2 on Vending-Bench 2” [[@scaling01](https://x.com/scaling01/status/2023833660546499053)].
+* Practitioners: “beast for real-world work… computer usage” [[@kimmonismus](https://x.com/kimmonismus/status/2023844025011499052)], “computer use standout… more consistent over long sessions” [[@mikeyk](https://x.com/mikeyk/status/2023853207731200176)].
+```
+
+### **Neutral / adoption & positioning notes**
+
+```
+* “no Sonnet 5” reaction [[@dejavucoder](https://x.com/dejavucoder/status/2023817232732848501)] reflects expectations management rather than capability.
+* Cursor’s measured product note (better than 4.5, below Opus 4.6) [[@cursor\_ai](https://x.com/cursor_ai/status/2023841746577485894)].
+* Artificial Analysis: #1 GDPval-AA but within CI of Opus 4.6 + disclosure that it uses **more tokens** [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)].
+```
+
+### **Negative / skeptical / “something broke”**
+
+```
+* Reliability regression report: hallucinated function names in agent workflows; structured output errors; “4.5 still works great” [[@rishdotblog](https://x.com/rishdotblog/status/2023848930430304648)]. Follow-up: “Whatever this was seems fixed!” [[@rishdotblog](https://x.com/rishdotblog/status/2023854279766003784)].
+* Cost sensitivity: “Sonnet and Slopus… munching through my credits” [[@scaling01](https://x.com/scaling01/status/2023835207355560223)], plus later “price hurts” / cost follow-ups (not fully detailed in provided snippet) [[@scaling01](https://x.com/scaling01/status/2023856013829698037)].
+* A comparative take in infra/product terms: “50% more expensive than xhigh and 228% over 5.2 codex… vast improvement over 4.5” [[@teortaxesTex](https://x.com/teortaxesTex/status/2023890938125488289)]—this frames Sonnet 4.6 as improved but potentially cost-inefficient vs alternatives depending on workload.
+```
+
+## **Context: why Sonnet 4.6 matters (engineering implications)**
+
+1. **Long-context is becoming “operational,” not just a spec.** 
+ The launch pushes a **1M token window** into the Sonnet tier [[@claudeai](https://x.com/claudeai/status/2023817132581208353)]. But Artificial Analysis’ disclosure that Sonnet 4.6 used **280M tokens** to run GDPval-AA in “adaptive thinking/max effort” configs [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)] is a reminder: long-context + long-think can silently move your budget envelope. Expect more **routing, summarization, context management, and “retrieve then filter”** patterns (consistent with the new search/fetch filtering improvement [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023834863858769975)]).
+2. **Agent performance claims are increasingly harness-dependent.** 
+ GDPval-AA uses an agentic harness (shell + browsing loop), and Sonnet 4.6’s lead is reported under a specific setup (“adaptive thinking mode”, “max effort”) [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023821893846135212)]. Cursor’s note that it’s better on longer tasks but below Opus for raw intelligence [[@cursor\_ai](https://x.com/cursor_ai/status/2023841746577485894)] reinforces that “best model” is not a scalar; it’s workload × harness × budget.
+3. **Computer use is becoming a marquee capability, and Sonnet is being pushed there.** 
+ Multiple tweets highlight “computer use” progress and near-human-level framing [[@alexalbert\_\_](https://x.com/alexalbert__/status/2023820589983801796)], and deployments like Perplexity’s Comet browser agent explicitly default to Sonnet 4.6 for Pro users [[@comet](https://x.com/comet/status/2023889197556441464)].
+4. **Release risk: small serving/config changes can look like “model regressions.”** 
+ The reported post-launch hallucination spike across Opus 4.6 and Sonnet 4.6 [[@rishdotblog](https://x.com/rishdotblog/status/2023848487285387693)]—and then “seems fixed” [[@rishdotblog](https://x.com/rishdotblog/status/2023854279766003784)]—reads like a potential **routing, toolchain, system prompt, or safety-layer change** rather than weights. For teams: pin versions where possible, run **canary evals**, and monitor **structured output validity** + tool-call correctness separately from “chat quality.”
+
+---
+
+## **Other Topics (standard coverage)**
+
+**Open models & independent benchmarking (Qwen/GLM/Seed/Aya, etc.)**
+
+```
+* Artificial Analysis deep breakdown of **Qwen3.5-397B-A17B (397B total / 17B active MoE, Apache 2.0, 262K ctx, native multimodal)**; big gains on agentic evals, but **hallucination rate still high** by their metric [[@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2023794497055060262)].
+* GLM-5 cited as strong open model on WeirdML and other benches (48.2% WeirdML; comparisons to Opus/gpt-\* claims) [[@htihle](https://x.com/htihle/status/2023734346943775179)], plus GLM-5 technical report highlights: **DSA adoption**, **async RL infra**, **agent RL algorithms** [[@Zai\_org](https://x.com/Zai_org/status/2023951884826849777)].
+* ByteDance “Seed-2.0” announced (agent/reasoning/vision; “no distillation”; CN-only initially) [[@TsingYoga](https://x.com/TsingYoga/status/2023764275874197964)].
+* Cohere Labs launched **Tiny Aya**: **3.35B** open multilingual model family (70+ languages; “runs on a phone”), with claims of training on **64 GPUs** and a detailed report [[@nickfrosst](https://x.com/nickfrosst/status/2023756803717427467)], [[@\_akhaliq](https://x.com/_akhaliq/status/2023771434347044890)], [[@mziizm](https://x.com/mziizm/status/2023775027754365044)].
+```
+
+**Agents, harnesses, memory, and long-horizon infrastructure**
+
+```
+* “Agent World Model (AWM)” proposes fully synthetic executable environments (1,000 envs, **35,062 tools**, **10,000 tasks**, SQL-backed state, verification code) for RL tool-use agents [[@dair\_ai](https://x.com/dair_ai/status/2023748787949498804)].
+* Lossless Context Management (LCM) / Volt claims: deterministic hierarchical DAG compression with lossless pointers; on OOLONG, “beats Claude Code at every context length 32K→1M” (reported) [[@dair\_ai](https://x.com/dair_ai/status/2023765147970662761)], amplified [[@omarsar0](https://x.com/omarsar0/status/2023765757117763820)].
+* Moltbook multi-agent “society” study: **2.6M LLM agents**, 300k posts, 1.8M comments; macro “culture” stabilizes, micro influence ~noise; critique of “just add agents” assumptions [[@omarsar0](https://x.com/omarsar0/status/2023766916473733394)].
+* LangChain “Harness Engineering” theme: traces → eval mining → self-verification loops; TerminalBench positioning [[@Vtrivedy10](https://x.com/Vtrivedy10/status/2023812467034329224)], plus LangSmith Insights scheduling [[@LangChain](https://x.com/LangChain/status/2023804855136165932)].
+* Open-sourcing an agent runtime (“Hankweave”) focused on removing context, maintainability, and reusable blocks across models [[@hrishioa](https://x.com/hrishioa/status/2023807677089099914)].
+```
+
+**Systems & inference optimization (kernels, scheduling, throughput)**
+
+```
+* Carmack proposes OS-like **GPU job preemption** via UVM paging + MPS shim, aiming for seconds-scale task switching (acknowledges thrash risk) [[@ID\_AA\_Carmack](https://x.com/ID_AA_Carmack/status/2023805426345689198)].
+* Moondream MoE kernel: **2.6% faster** by tuning launch config to real routing distributions; kernel ~37% runtime [[@vikhyatk](https://x.com/vikhyatk/status/2023749843186078144)].
+* Together-style “ThunderAgent” / “program abstraction” for end-to-end agent workflow scheduling; claims up to **3.9× faster rollout/serving** without quality tradeoff (as posted) [[@ben\_athi](https://x.com/ben_athi/status/2023852606842700198)], plus explanation thread [[@simran\_s\_arora](https://x.com/simran_s_arora/status/2023846852987421096)].
+```
+
+**Frontier product moves: Codex, Grok, “computer use” competition**
+
+```
+* Codex usage report: users trying (and failing) to hit limits; heavy parallel agent usage within subscription windows [[@theo](https://x.com/theo/status/2023718038198251904)].
+* OpenAI infra hiring pitch (agent orchestration, sandboxes, observability) [[@gdb](https://x.com/gdb/status/2023804170323849279)].
+* Grok 4.20 / 4.x discussion includes launch notices and architecture claims, plus highly polarized political framing by Elon [[@kimmonismus](https://x.com/kimmonismus/status/2023722999828861070)], [[@elonmusk](https://x.com/elonmusk/status/2023880206721970544)], with critics calling performance weak vs “Flash” models [[@teortaxesTex](https://x.com/teortaxesTex/status/2023793972750299246)].
+```
+
+**Robotics, video/image generation, and multimodal research**
+
+```
+* Unitree humanoid performance discourse (claims of distributed coordination, terrain adaptation, safety spacing, multi-DOF manipulation) [[@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2023794225616502932)].
+* “Perceptive Humanoid Parkour” (depth-perception long-horizon traversal) [[@zhenkirito123](https://x.com/zhenkirito123/status/2023789637114945684)].
+* ByteDance **BitDance**: 14B AR image generator predicting **binary visual tokens**; claims **FID 1.24 on ImageNet 256** [[@iScienceLuvr](https://x.com/iScienceLuvr/status/2023707945104458097)], plus author promo [[@multimodalart](https://x.com/multimodalart/status/2023797260057014372)].
+* “Sphere Encoder” few-step image generation in spherical latent space; Meta/Goldstein thread with details including **65K latent dims** for ImageNet and <5-step refinement [[@tomgoldsteincs](https://x.com/tomgoldsteincs/status/2023796756366963032)].
+```
+
+---
+
+```
+# **AI Reddit Recap**
+```
+
+## **/r/LocalLlama + /r/localLLM Recap**
+
+```
+[Read more](https://www.latent.space/p/ainews-claude-sonnet-46-clean-upgrade)
+```
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Anthropic opted to launch Sonnet 4.6 today, bumping their cheaper workhorse model up to match Opus 4.6.
+
+*Context: Introduction of Sonnet 4.6 as an upgrade over the previous version.*
+
+> Sonnet 4.6 is described by Anthropic as a full upgrade across multiple capability areas and includes a 1M token context window in beta.
+
+*Context: Highlighting the key features and improvements in Sonnet 4.6.*
+
+> Sonnet 4.6 used 280M total tokens (vs Sonnet 4.5 58M); Opus 4.6 used 160M in equivalent settings.
+
+*Context: Comparing token usage between Sonnet 4.6, Sonnet 4.5, and Opus 4.6.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/anthropic-api]]
 
 ---
 
@@ -51,25 +285,25 @@ AI News for 2/16/2026-2/17/2026. We checked 12 subreddits, 544 Twitters and 24 D
 
 <CardGroup cols={1}>
   <Card
-    title="[AINews] Anthropic's Agent Autonomy study"
-    icon="newspaper"
-    href="/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
-  >
-    Swyx · explanation · 79% similar
-  </Card>
-  <Card
-    title="Introducing Claude Sonnet 4.6"
-    icon="newspaper"
-    href="/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
-  >
-    Simon Willison · explanation · 76% similar
-  </Card>
-  <Card
     title="[AINews] Z.ai GLM-5: New SOTA Open Weights LLM"
     icon="newspaper"
     href="/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
   >
-    Swyx · reference · 72% similar
+    Swyx · reference · 89% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI and Anthropic go to war: Claude Opus 4.6 vs GPT 5.3 Codex"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
+  >
+    Swyx · explanation · 87% similar
+  </Card>
+  <Card
+    title="[AINews] &quot;Sci-Fi with a touch of Madness&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+  >
+    Swyx · explanation · 86% similar
   </Card>
 </CardGroup>
 

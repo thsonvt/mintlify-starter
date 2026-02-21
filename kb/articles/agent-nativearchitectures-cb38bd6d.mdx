@@ -1,12 +1,12 @@
 ---
-title: 'Agent-native Architectures: How to Build Apps After Code Ends'
+title: 'Agent-nativeArchitectures'
 description: 'Architecture decision: Store full agent configuration, or store only `agentType` and recreate from a registry. Bool { Date().timeIntervalSince(timesta'
 icon: 'newspaper'
 author: 'Dan Shipper (Every)'
 authorId: 'dan-shipper-every'
 published: '2026-02-18'
 sourceUrl: 'https://every.to/guides/agent-native'
-topics: ["Anti-patterns","Storage Abstraction","Dynamic Capability Discovery","CRUD Completeness","Agent-Native Architecture"]
+topics: ["Storage Abstraction","CRUD Completeness","Anti-patterns in Agent Design","Agent-Native Architecture","Dynamic Capability Discovery"]
 diataxisType: 'how-to'
 ---
 
@@ -22,33 +22,33 @@ Architecture decision: Store full agent configuration, or store only `agentType`
 
 > "Architecture decision: Store full agent configuration, or store only `agentType` and recreate from a registry."
 >
-> — Discussing the trade-offs in storing agent configurations for flexibility and robustness.
+> — Discussing the trade-offs in agent configuration storage for flexibility and robustness.
 
 > "Use a storage abstraction layer. Don't use raw FileManager."
 >
-> — Advising on the importance of abstraction in storage for flexibility across different storage solutions.
+> — Advising on the importance of abstraction in storage for flexibility across different storage backends.
 
 > "Dynamic capability discovery: // Two tools handle everything"
 >
-> — Introducing the concept of dynamic capability discovery to adapt to new data types and capabilities.
+> — Introducing a method for agents to adaptively discover and interact with available data types.
 
 > "Common failure: You build `create_note` and `read_notes` but forget `update_note` and `delete_note`."
 >
-> — Highlighting a common oversight in CRUD operations that limits agent capabilities.
+> — Highlighting a common oversight in ensuring agents have full CRUD capabilities.
 
 ## Topics
 
-- [Anti-patterns](/kb/topics/anti-patterns)
 - [Storage Abstraction](/kb/topics/storage-abstraction)
-- [Dynamic Capability Discovery](/kb/topics/dynamic-capability-discovery)
 - [CRUD Completeness](/kb/topics/crud-completeness)
+- [Anti-patterns in Agent Design](/kb/topics/anti-patterns-in-agent-design)
 - [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [Dynamic Capability Discovery](/kb/topics/dynamic-capability-discovery)
 
 ---
 
 ## Full Article
 
-# Agent-native Architectures: How to Build Apps After Code Ends
+# Agent-nativeArchitectures
 
 **Author**: Dan Shipper (Every)  
 **Published**: 2026-02-18  
@@ -336,27 +336,27 @@ If no—your architecture is too constrained.
 
 > Architecture decision: Store full agent configuration, or store only `agentType` and recreate from a registry.
 
-*Context: Discussing the trade-offs in storing agent configurations for flexibility and robustness.*
+*Context: Discussing the trade-offs in agent configuration storage for flexibility and robustness.*
 
 > Use a storage abstraction layer. Don't use raw FileManager.
 
-*Context: Advising on the importance of abstraction in storage for flexibility across different storage solutions.*
+*Context: Advising on the importance of abstraction in storage for flexibility across different storage backends.*
 
 > Dynamic capability discovery: // Two tools handle everything
 
-*Context: Introducing the concept of dynamic capability discovery to adapt to new data types and capabilities.*
+*Context: Introducing a method for agents to adaptively discover and interact with available data types.*
 
 > Common failure: You build `create_note` and `read_notes` but forget `update_note` and `delete_note`.
 
-*Context: Highlighting a common oversight in CRUD operations that limits agent capabilities.*
+*Context: Highlighting a common oversight in ensuring agents have full CRUD capabilities.*
 
 ## Related Topics
 
-- [[topics/anti-patterns]]
 - [[topics/storage-abstraction]]
-- [[topics/dynamic-capability-discovery]]
 - [[topics/crud-completeness]]
+- [[topics/anti-patterns-in-agent-design]]
 - [[topics/agent-native-architecture]]
+- [[topics/dynamic-capability-discovery]]
 
 ---
 
@@ -368,21 +368,21 @@ If no—your architecture is too constrained.
     icon="newspaper"
     href="/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
   >
-    Dan Shipper (Every) · explanation · 83% similar
+    Dan Shipper (Every) · explanation · 81% similar
   </Card>
   <Card
     title="Building an Agent-Native Read Later App in 2 Hours"
     icon="newspaper"
     href="/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
   >
-    Naveen Naidu · tutorial · 81% similar
+    Naveen Naidu · tutorial · 80% similar
   </Card>
   <Card
     title="Teach Your AI to Think Like a Senior Engineer"
     icon="newspaper"
     href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
   >
-    Dan Shipper (Every) · tutorial · 76% similar
+    Dan Shipper (Every) · explanation · 75% similar
   </Card>
 </CardGroup>
 

@@ -1,13 +1,13 @@
 ---
 title: 'Gemini 3.1 Pro'
-description: 'Gemini 3.1 Pro is launched with competitive pricing and improved SVG animation performance, though it currently faces high demand issues.'
+description: 'That''s less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model. The first in the Gemini 3.1 series, priced the sa'
 icon: 'newspaper'
 author: 'Simon Willison'
 authorId: 'simon-willison'
 published: '2026-02-19'
 sourceUrl: 'https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything'
-topics: ["gemini","ai-models","svg-animation","technology"]
-diataxisType: 'explanation'
+topics: ["Prompt Engineering","AI Agents","LangChain"]
+diataxisType: 'reference'
 ---
 
 <Info>
@@ -16,34 +16,108 @@ diataxisType: 'explanation'
 
 ## Summary
 
-Gemini 3.1 Pro is launched with competitive pricing and improved SVG animation performance, though it currently faces high demand issues.
+That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model. The first in the Gemini 3.1 series, priced the same as Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18 for 200,000 to 1,000,000). That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model.
 
 ## Key Insights
 
 > "That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model."
 >
-> — Discussing the pricing and performance comparison of Gemini 3.1 Pro.
+> — Comparing Gemini 3.1 Pro's cost and performance with Claude Opus 4.6.
 
-> "The model appears to be incredibly slow right now - it took 104s to respond to a simple 'hi'."
+> "They boast about its improved SVG animation performance compared to Gemini 3 Pro in the announcement!"
 >
-> — Commenting on the performance issues faced by the new model at launch.
+> — Highlighting the improved SVG animation performance of Gemini 3.1 Pro over its predecessor.
 
-> "I wish AI labs would highlight things that their new models can do that their older models could not."
+> "The model appears to be *incredibly* slow right now - it took 104s to respond to a simple 'hi'."
 >
-> — Expressing a desire for clearer communication on the advancements of new AI models.
+> — Commenting on the initial slow response times of Gemini 3.1 Pro.
 
 ## Topics
 
-- [gemini](/kb/topics/gemini)
-- [ai-models](/kb/topics/ai-models)
-- [svg-animation](/kb/topics/svg-animation)
-- [technology](/kb/topics/technology)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+- [LangChain](/kb/topics/langchain)
 
 ---
 
 ## Full Article
 
-19th February 2026 Gemini 3.1 Pro. The first in the Gemini 3.1 series, priced the same as Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18 for 200,000 to 1,000,000). That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model. They boast about its improved SVG animation performance compared to Gemini 3 Pro in the announcement! I tried "Generate an SVG of a pelican riding a bicycle" in Google AI Studio and it thought for 323.9 seconds (thinking trace here) before producing this one: It's good to see the legs clearly depicted on both sides of the frame (should satisfy Elon), the fish in the basket is a nice touch and I appreciated this comment in the SVG code: &lt;!-- Black Flight Feathers on Wing Tip --> &lt;path d="M 420 175 C 440 182, 460 187, 470 190 C 450 210, 430 208, 410 198 Z" fill="#374151" /> I've added the two new model IDs gemini-3.1-pro-preview and gemini-3.1-pro-preview-customtools to my llm-gemini plugin for LLM. That "custom tools" one is described here - apparently it may provide better tool performance than the default model in some situations. The model appears to be incredibly slow right now - it took 104s to respond to a simple "hi" and a few of my other tests met "Error: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later." or "Error: Deadline expired before operation could complete" errors. I'm assuming that's just teething problems on launch day. It sounds like last week's Deep Think release was our first exposure to the 3.1 family: Last week, we released a major update to Gemini 3 Deep Think to solve modern challenges across science, research and engineering. Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro. Update: In What happens if AI labs train for pelicans riding bicycles? last November I said: If a model finally comes out that produces an excellent SVG of a pelican riding a bicycle you can bet I’m going to test it on all manner of creatures riding all sorts of transportation devices. Google's Gemini Lead Jeff Dean tweeted this video featuring an animated pelican riding a bicycle, plus a frog on a penny-farthing and a giraffe driving a tiny car and an ostrich on roller skates and a turtle kickflipping a skateboard and a dachshund driving a stretch limousine. I've been saying for a while that I wish AI labs would highlight things that their new models can do that their older models could not, so top marks to the Gemini team for this video. Update 2: I used llm-gemini to run my more detailed Pelican prompt, with this result: From the SVG comments: &lt;!-- Pouch Gradient (Breeding Plumage: Red to Olive/Green) --> ... &lt;!-- Neck Gradient (Breeding Plumage: Chestnut Nape, White/Yellow Front) -->
+# Gemini 3.1 Pro
+
+**Author**: Simon Willison  
+**Published**: 2026-02-19  
+**Source**: [https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything](https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything)
+
+---
+
+**[Gemini 3.1 Pro](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/)**
+
+The first in the Gemini 3.1 series, priced the same as Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18 for 200,000 to 1,000,000). That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model.
+
+They boast about its improved SVG animation performance compared to Gemini 3 Pro in the announcement!
+
+I tried "Generate an SVG of a pelican riding a bicycle" [in Google AI Studio](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221ugF9fBfLGxnNoe8_rLlluzo9NSPJDWuF%22%5D,%22action%22:%22open%22,%22userId%22:%22106366615678321494423%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing) and it thought for 323.9 seconds ([thinking trace here](https://gist.github.com/simonw/03a755865021739a3659943a22c125ba#thinking-trace)) before producing this one:
+
+![Whimsical flat-style illustration of a pelican wearing a blue and white baseball cap, riding a red bicycle with yellow-rimmed wheels along a road. The pelican has a large orange bill and a green scarf. A small fish peeks out of a brown basket on the handlebars. The background features a light blue sky with a yellow sun, white clouds, and green hills.](https://static.simonwillison.net/static/2026/gemini-3.1-pro-pelican.png)
+
+It's good to see the legs clearly depicted on both sides of the frame (should [satisfy Elon](https://twitter.com/elonmusk/status/2023833496804839808)), the fish in the basket is a nice touch and I appreciated this comment in [the SVG code](https://gist.github.com/simonw/03a755865021739a3659943a22c125ba#response):
+
+```
+```
+I've [added](https://github.com/simonw/llm-gemini/issues/121) the two new model IDs `gemini-3.1-pro-preview` and `gemini-3.1-pro-preview-customtools` to my [llm-gemini plugin](https://github.com/simonw/llm-gemini) for [LLM](https://llm.datasette.io/). That "custom tools" one is [described here](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview#gemini-31-pro-preview-customtools) - apparently it may provide better tool performance than the default model in some situations.
+
+The model appears to be *incredibly* slow right now - it took 104s to respond to a simple "hi" and a few of my other tests met "Error: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later." or "Error: Deadline expired before operation could complete" errors. I'm assuming that's just teething problems on launch day.
+
+It sounds like last week's [Deep Think release](https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/) was our first exposure to the 3.1 family:
+
+> Last week, we released a major update to Gemini 3 Deep Think to solve modern challenges across science, research and engineering. Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro.
+
+**Update**: In [What happens if AI labs train for pelicans riding bicycles?](https://simonwillison.net/2025/nov/13/training-for-pelicans-riding-bicycles/) last November I said:
+
+> If a model finally comes out that produces an excellent SVG of a pelican riding a bicycle you can bet I’m going to test it on all manner of creatures riding all sorts of transportation devices.
+
+Google's Gemini Lead Jeff Dean [tweeted this video](https://x.com/JeffDean/status/2024525132266688757) featuring an animated pelican riding a bicycle, plus a frog on a penny-farthing and a giraffe driving a tiny car and an ostrich on roller skates and a turtle kickflipping a skateboard and a dachshund driving a stretch limousine.
+
+[![
+
+](https://static.simonwillison.net/static/2026/gemini-animated-pelicans.jpg)](https://static.simonwillison.net/static/2026/gemini-animated-pelicans.mp4)
+
+I've been saying for a while that I wish AI labs would highlight things that their new models can do that their older models could not, so top marks to the Gemini team for this video.
+
+**Update 2**: I used `llm-gemini` to run my [more detailed Pelican prompt](https://simonwillison.net/2025/Nov/18/gemini-3/#and-a-new-pelican-benchmark), with [this result](https://gist.github.com/simonw/a3bdd4ec9476ba9e9ba7aa61b46d8296):
+
+![Flat-style illustration of a brown pelican riding a teal bicycle with dark blue-rimmed wheels against a plain white background. Unlike the previous image's white cartoon pelican, this pelican has realistic brown plumage with detailed feather patterns, a dark maroon head, yellow eye, and a large pink-tinged pouch bill. The bicycle is a simpler design without a basket, and the scene lacks the colorful background elements like the sun, clouds, road, hills, cap, and scarf from the first illustration, giving it a more minimalist feel.](https://static.simonwillison.net/static/2026/gemini-3.1-pro-pelican-2.png)
+
+From the SVG comments:
+
+```
+...
+
+```
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model.
+
+*Context: Comparing Gemini 3.1 Pro's cost and performance with Claude Opus 4.6.*
+
+> They boast about its improved SVG animation performance compared to Gemini 3 Pro in the announcement!
+
+*Context: Highlighting the improved SVG animation performance of Gemini 3.1 Pro over its predecessor.*
+
+> The model appears to be *incredibly* slow right now - it took 104s to respond to a simple 'hi'.
+
+*Context: Commenting on the initial slow response times of Gemini 3.1 Pro.*
+
+## Related Topics
+
+- [[topics/prompt-engineering]]
+- [[topics/ai-agents]]
+- [[topics/langchain]]
 
 ---
 
@@ -55,21 +129,21 @@ Gemini 3.1 Pro is launched with competitive pricing and improved SVG animation p
     icon="newspaper"
     href="/kb/articles/gemini-3-deep-think-86aff01b"
   >
-    Simon Willison · explanation · 78% similar
+    Simon Willison · explanation · 87% similar
   </Card>
   <Card
     title="[AINews] Gemini 3.1 Pro: 2x 3.0 on ARC-AGI 2"
     icon="newspaper"
     href="/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37"
   >
-    Swyx · explanation · 72% similar
+    Swyx · explanation · 80% similar
   </Card>
   <Card
-    title="[AINews] new Gemini 3 Deep Think, Anthropic $30B @ $380B, GPT-5.3-Codex Spark, MiniMax M2.5"
+    title="GLM-5: From Vibe Coding to Agentic Engineering"
     icon="newspaper"
-    href="/kb/articles/ainews-new-gemini-3-deep-think-anthropic-30b-380b-gpt-53-cod-90022aa3"
+    href="/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
   >
-    Swyx · explanation · 63% similar
+    Simon Willison · explanation · 70% similar
   </Card>
 </CardGroup>
 
