@@ -252,16 +252,128 @@
       "destination": "/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-07887c8d",
+      "destination": "/kb/articles/too-many-model-context-protocol-servers-and-llm-allocations--07887c8d"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-1021a5d2",
+      "destination": "/kb/articles/what-is-the-point-of-libraries-now-that-you-can-just-generat-1021a5d2"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-1073b1de",
+      "destination": "/kb/articles/can-a-llm-convert-c-to-asm-to-specs-and-then-to-a-working-z8-1073b1de"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-12cfb162",
       "destination": "/kb/articles/teleporting-into-the-future-and-robbing-yourself-of-retireme-12cfb162"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-15ec4287",
+      "destination": "/kb/articles/yes-claude-code-can-decompile-itself-heres-the-source-code-15ec4287"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-205a3a00",
       "destination": "/kb/articles/everything-is-a-ralph-loop-205a3a00"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-2d3af710",
+      "destination": "/kb/articles/autoregressive-queens-of-failure-2d3af710"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-308ec4d4",
+      "destination": "/kb/articles/from-luddites-to-ai-the-overton-window-of-disruption-308ec4d4"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-3950c718",
+      "destination": "/kb/articles/llm-weights-vs-the-papercuts-of-corporate-3950c718"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-57ce8bac",
+      "destination": "/kb/articles/rizzler-stop-crying-over-git-merge-conflicts-and-let-ai-hand-57ce8bac"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-5e358fc9",
+      "destination": "/kb/articles/i-ran-claude-in-a-loop-for-three-months-and-it-created-a-gen-5e358fc9"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-60792e78",
+      "destination": "/kb/articles/claude-sonnet-is-a-small-brained-mechanical-squirrel-of-t-60792e78"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-66ad152c",
+      "destination": "/kb/articles/anti-patterns-and-patterns-for-achieving-secure-generation-o-66ad152c"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-6d0f6075",
+      "destination": "/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-7630c3d9",
+      "destination": "/kb/articles/deliberate-intentional-practice-7630c3d9"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-85a560d5",
+      "destination": "/kb/articles/from-design-doc-to-code-the-groundhog-ai-coding-assistant-an-85a560d5"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-8e53999a",
+      "destination": "/kb/articles/llms-are-mirrors-of-operator-skill-8e53999a"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-952b6277",
+      "destination": "/kb/articles/this-should-not-be-possible-952b6277"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-af5730e8",
+      "destination": "/kb/articles/the-printer-that-transcends-dimensions-and-corrupts-reality-af5730e8"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-b4761544",
+      "destination": "/kb/articles/the-z80-technique-reveals-the-source-code-for-atlassians-rov-b4761544"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-ba939aec",
       "destination": "/kb/articles/dont-waste-your-back-pressure-ba939aec"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-c58b119a",
+      "destination": "/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-c6458405",
+      "destination": "/kb/articles/i-dream-about-ai-subagents-they-whisper-to-me-while-im-aslee-c6458405"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-c97a39e4",
+      "destination": "/kb/articles/a-model-context-protocol-server-mcp-for-microsoft-paint-c97a39e4"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-d99c1db2",
+      "destination": "/kb/articles/source-code-analysis-of-amazon-kiro-d99c1db2"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-e3800d3d",
+      "destination": "/kb/articles/ai-for-my-10-year-old-son-e3800d3d"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-e51acff6",
+      "destination": "/kb/articles/how-to-build-a-coding-agent-free-workshop-e51acff6"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-eeeb2573",
+      "destination": "/kb/articles/the-six-month-recap-closing-talk-on-ai-at-web-directions-mel-eeeb2573"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-f1d3f9df",
+      "destination": "/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-f4c40d90",
+      "destination": "/kb/articles/dear-student-yes-ai-is-here-youre-screwed-unless-you-take-ac-f4c40d90"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-fafeee55",
+      "destination": "/kb/articles/ai-coding-tools-are-perhaps-our-new-terminal-emulators-fafeee55"
     },
     {
       "source": "/kb/articles/jesse-chen-0efafc8a",
@@ -450,6 +562,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-db8b7ca4",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-ddc306e9",
+      "destination": "/kb/articles/-community-wisdom-making-your-product-enterprise-ready-when--ddc306e9"
     },
     {
       "source": "/kb/articles/naveen-naidu-102162fc",

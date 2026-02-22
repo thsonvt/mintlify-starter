@@ -1,0 +1,172 @@
+---
+title: 'autoregressive queens of failure'
+description: 'Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you? Have you ever had your AI coding assist'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-04-22'
+sourceUrl: 'https://ghuntley.com/gutter/'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/gutter/) · 22/04/2025
+</Info>
+
+## Summary
+
+Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you? Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you? Welcome to the world of autoregressive failure.
+
+## Key Insights
+
+> "Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you?"
+>
+> — Introduction to the problem of autoregressive failure in AI coding assistants.
+
+> "when data is malloc()'ed into the LLM's context window. It cannot be free()'d unless you create a brand new context window."
+>
+> — Explaining how data persists in an LLM's context window, leading to potential errors.
+
+> "My #1 recommendation for people these days is to use a context window for one task, and one task only."
+>
+> — The author's primary solution to prevent autoregressive failure in AI coding assistants.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# autoregressive queens of failure
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-04-22  
+**Source**: [https://ghuntley.com/gutter/](https://ghuntley.com/gutter/)
+
+---
+
+Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you? Welcome to the world of autoregressive failure.
+
+LLMs, the brains behind these assistants, are great at predicting the next word—or line of code—based on what's been fed into them. But when the context gets too complex or concerns within the context are mixed, they lose the thread and spiral into hilariously (or frustratingly) wrong territory. Let’s dive into why this happens and how to stop it from happening.
+
+First, I'll need you to stop by the following blog post to understand an agent from first principles.
+
+> [**How to Build an Agent**](https://ampcode.com/how-to-build-an-agent?ref=ghuntley.com)
+>
+> Building a fully functional, code-editing agent in less than 400 lines.
+>
+> — Amp
+
+Still reading? Great. In the diagram below, an agent has been configured with two tools. Each tool has also been configured with a tool prompt, which advertises how to use the tool to the LLM.
+
+The tools are:
+
+```
+* Tool 1 - Visit a website and extract the contents of the page.
+* Tool 2 - Perform a Google search and return search results.
+```
+
+Now, imagine for a moment that this agent is an interactive console application that you use to search Google or visit a URL.
+
+![](https://ghuntley.com/content/images/2025/04/Untitled-diagram-2025-04-21-151047-1.png)
+
+Whilst using the agent, you perform the actions:
+
+1. Visit a news website.
+2. Search Google for party hats.
+3. Visit a Wikipedia article about Meerkats.
+
+Each of these operations allocates the results from the above operations into memory - the LLM context window.
+
+![when data ismalloc()'ed into the LLM's context window. It cannot befree()'d unless you create a brand new context window.](https://ghuntley.com/content/images/2025/04/image-8.png)
+
+when data is `malloc()`'ed into the LLM's context window. It cannot be `free()` 'd unless you create a brand new context window.
+
+With all that context loaded into the window, all that data is now available for consideration when you ask a question. Thus, there's a probability that it'll generate a news article about Meerkats wearing party hats in response to a search for Meerkat facts (ie. Wikipedia).
+
+That might sound obvious, but it's not. The tooling that most software developers use day-to-day hides context windows from the user and encourages endless chatops sessions within the same context window, even if the current task is unrelated to the previous task.
+
+This creates bad outcomes because what is loaded into memory is unrelated to the job to be done, and results in noise from software engineers saying that 'AI doesn't work', but in reality, it's how the software engineers are holding/using the tool that's at fault.
+
+My #1 recommendation for people these days is to use a context window for one task, and one task only. If your coding agent is misbehaving, it's time to create a new context window. If the bowling ball is in the gutter, there's no saving it. It's in the gutter.
+
+My #2 recommendation is not to redline the context window (see below)
+
+> [**if you are redlining the LLM, you aren’t headlining**](https://ghuntley.com/redlining/)
+>
+> It’s an old joke in the DJ community about upcoming artists having a bad reputation for pushing the audio signal into the red. Red is bad because it results in the audio signal being clipped and the m...
+>
+> — Geoffrey Huntley
+
+ps. socials
+
+```
+* X - [https://x.com/GeoffreyHuntley/status/1914350677331231191](https://x.com/GeoffreyHuntley/status/1914350677331231191?ref=ghuntley.com)
+* BlueSky - [https://bsky.app/profile/ghuntley.com/post/3lndk65i7fu25](https://bsky.app/profile/ghuntley.com/post/3lndk65i7fu25?ref=ghuntley.com)
+* LinkedIn - [https://www.linkedin.com/posts/geoffreyhuntley\_autoregressive-queens-of-failure-activity-7320115355262074881-FfPI](https://www.linkedin.com/posts/geoffreyhuntley_autoregressive-queens-of-failure-activity-7320115355262074881-FfPI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+```
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you?
+
+*Context: Introduction to the problem of autoregressive failure in AI coding assistants.*
+
+> when data is malloc()'ed into the LLM's context window. It cannot be free()'d unless you create a brand new context window.
+
+*Context: Explaining how data persists in an LLM's context window, leading to potential errors.*
+
+> My #1 recommendation for people these days is to use a context window for one task, and one task only.
+
+*Context: The author's primary solution to prevent autoregressive failure in AI coding assistants.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="I dream about AI subagents; they whisper to me while I'm asleep"
+    icon="newspaper"
+    href="/kb/articles/i-dream-about-ai-subagents-they-whisper-to-me-while-im-aslee-c6458405"
+  >
+    Geoffrey Huntley · explanation · 82% similar
+  </Card>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 80% similar
+  </Card>
+  <Card
+    title="if you are redlining the LLM, you aren't headlining"
+    icon="newspaper"
+    href="/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+  >
+    Geoffrey Huntley · explanation · 78% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/gutter/](https://ghuntley.com/gutter/).
+</Note>

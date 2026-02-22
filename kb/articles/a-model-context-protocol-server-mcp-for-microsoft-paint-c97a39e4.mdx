@@ -1,0 +1,165 @@
+---
+title: 'A Model Context Protocol Server (MCP) for Microsoft Paint'
+description: 'Why did I do this? I have no idea, honest, but it now exists. Why did I do this? I have no idea, honest, but it now exists. It has been over 10 years '
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-04-04'
+sourceUrl: 'https://ghuntley.com/mcp/'
+topics: ["Model Context Protocol (MCP)","Win32 API","Software Automation","Rust Programming"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/mcp/) · 04/04/2025
+</Info>
+
+## Summary
+
+Why did I do this? I have no idea, honest, but it now exists. Why did I do this? I have no idea, honest, but it now exists. It has been over 10 years since I last had to use the Win32 API, and part of me was slightly curious about how the Win32 interop works with Rust.
+
+## Key Insights
+
+> "Why did I do this? I have no idea, honest, but it now exists."
+>
+> — The author's humorous acknowledgment of the project's quirky nature.
+
+> "First and foremost, MCPs are a specification that describes how LLMs can remote procedure call (RPC) with tools external to the LLM itself."
+>
+> — Explaining the core concept of Model Context Protocol servers.
+
+> "It was created using my /stdlib + /specs technical patterns to drive the LLM towards successful outcomes (aka 'vibe coding')"
+>
+> — Describing the technical approach and philosophy behind the project.
+
+## Topics
+
+- [Model Context Protocol (MCP)](/kb/topics/model-context-protocol-mcp)
+- [Win32 API](/kb/topics/win32-api)
+- [Software Automation](/kb/topics/software-automation)
+- [Rust Programming](/kb/topics/rust-programming)
+
+---
+
+## Full Article
+
+```
+# A Model Context Protocol Server (MCP) for Microsoft Paint
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-04-04  
+**Source**: [https://ghuntley.com/mcp/](https://ghuntley.com/mcp/)
+
+---
+
+Why did I do this? I have no idea, honest, but it now exists. It has been over 10 years since I last had to use the Win32 API, and part of me was slightly curious about how the Win32 interop works with Rust.
+
+Anywhoooo, below you'll find the primitives that can be used to connect Microsoft Paint to Cursor or ClaudeDesktop and use them to draw in Microsoft Paint. Here's the source code.
+
+> [**GitHub - ghuntley/mcp-server-microsoft-paint**](https://github.com/ghuntley/mcp-server-microsoft-paint?ref=ghuntley.com)
+>
+> Contribute to ghuntley/mcp-server-microsoft-paint development by creating an account on GitHub.
+>
+> — GitHub
+
+I'm not saying it's quality or in any form feature complete; this is about as low-effort as possible, as it's not a serious project. If you want to take ownership of it and turn it into a 100% complete meme, get in touch.
+
+It was created using my /stdlib + /specs technical patterns to drive the LLM towards successful outcomes (aka "vibe coding")
+
+> [**You are using Cursor AI incorrectly...**](https://ghuntley.com/stdlib/)
+>
+> 🗞️I recently shipped a follow-up blog post to this one; this post remains true. You’ll need to know this to be able to drive the N-factor of weeks of co-worker output in hours technique as detailed at...
+>
+> — Geoffrey Huntley
+
+> [**From Design doc to code: the Groundhog AI coding assistant (and new Cursor vibecoding meta)**](https://ghuntley.com/specs)
+>
+> Ello everyone, in the “Yes, Claude Code can decompile itself. Here’s the source code” blog post, I teased about a new meta when using Cursor. This post is a follow-up to the post below. You are using ...
+>
+> — Geoffrey Huntley
+
+If you have read the above posts (thanks!), hopefully, you now understand that LLM outcomes can be programmed. Thus, any issue in the code above could have been solved through additional programming or better prompting during the stdlib+specs phase and by driving an evaluation loop.
+
+## show me
+
+```
+[▶ A Model Context Protocol Server (MCP) for Microsoft Paint](https://www.youtube.com/watch?v=z7Zxrj-QWJ8)
+```
+
+## how does this work under the hood?
+
+To answer that, I must first explain what model context protocol is about as it seems like everyone's buzzing about it at the moment, with folks declaring it as "the last API you will ever write" (which curmudgeons such as myself have heard N-times before) or the "USB-C of APIs", but none of those explanations hits home as a developer tooling engineer.
+
+> To MCP or not to MCP, that's the question. Lmk in comments
+>
+> — Sundar Pichai (@sundarpichai) [March 30, 2025](https://twitter.com/sundarpichai/status/1906484930957193255?ref_src=twsrc%5Etfw&ref=ghuntley.com)
+
+First and foremost, MCPs are a specification that describes how LLMs can remote procedure call (RPC) with tools external to the LLM itself.
+
+There are a couple of different implementations (JSON-RPC STDIO and JSON-RPC over HTTPS), but the specification is rapidly evolving, so it's not worth covering here. Refer to [https://spec.modelcontextprotocol.io/specification/2025-03-26/](https://spec.modelcontextprotocol.io/specification/2025-03-26/?ref=ghuntley.com) for the latest specification and the article below to understand what this all means from a security perspective...
+
+> [**AI Model Context Protocol (MCP) and Security**](https://community.cisco.com/t5/security-blogs/ai-model-context-protocol-mcp-and-security/ba-p/5274394?ref=ghuntley.com)
+>
+> The Model Context Protocol (MCP) is an open standard that provides a universal way to connect AI models and agentic applications to various data sources and tools. It’s how AI applications and applica...
+
+Instead, let's focus on the fundamentals for engineers who seek to automate software authoring—tools and tool descriptions—because I suspect these foundational concepts will last forever.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Why did I do this? I have no idea, honest, but it now exists.
+
+*Context: The author's humorous acknowledgment of the project's quirky nature.*
+
+> First and foremost, MCPs are a specification that describes how LLMs can remote procedure call (RPC) with tools external to the LLM itself.
+
+*Context: Explaining the core concept of Model Context Protocol servers.*
+
+> It was created using my /stdlib + /specs technical patterns to drive the LLM towards successful outcomes (aka 'vibe coding')
+
+*Context: Describing the technical approach and philosophy behind the project.*
+
+## Related Topics
+
+- [[topics/model-context-protocol-mcp]]
+- [[topics/win32-api]]
+- [[topics/software-automation]]
+- [[topics/rust-programming]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="too many model context protocol servers and LLM allocations on the dance floor"
+    icon="newspaper"
+    href="/kb/articles/too-many-model-context-protocol-servers-and-llm-allocations--07887c8d"
+  >
+    Geoffrey Huntley · explanation · 77% similar
+  </Card>
+  <Card
+    title="Code execution with MCP: Building more efficient agents"
+    icon="newspaper"
+    href="/kb/articles/code-execution-with-mcp-building-more-efficient-agents-fe659629"
+  >
+    Anthropic Engineering · explanation · 74% similar
+  </Card>
+  <Card
+    title="Streamlinear, a new MCP for Linear"
+    icon="newspaper"
+    href="/kb/articles/streamlinear-a-new-mcp-for-linear-135ce2cf"
+  >
+    Jesse Chen · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/mcp/](https://ghuntley.com/mcp/).
+</Note>

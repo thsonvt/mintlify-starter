@@ -1,0 +1,248 @@
+---
+title: 'I dream of roombas - thousands of automated AI robots that autonomously maintain codebases'
+description: 'It''s kind of like async, await state machines, or futures for LLMs. Just yesterday morning, I was writing a conference talk on best practices for main'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-06-07'
+sourceUrl: 'https://ghuntley.com/ktlo/'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/ktlo/) · 07/06/2025
+</Info>
+
+## Summary
+
+It's kind of like async, await state machines, or futures for LLMs. Just yesterday morning, I was writing a conference talk on best practices for maintaining the LLM context window, which was quite detailed. It contained the then best practices from the two blog posts below.
+
+## Key Insights
+
+> "It's kind of like async, await state machines, or futures for LLMs."
+>
+> — Comparing the operation of subagents in AI to programming concepts for managing asynchronous operations.
+
+> "Now that we have automated context management through subagents, the next step is to provide primitives that allow for the automation and removal of classes of KTLO."
+>
+> — Discussing the future of automating mundane software maintenance tasks using AI.
+
+> "Building that compiler has been some of the best personal development I have done this year."
+>
+> — Reflecting on the personal growth and learning from working on AI and compiler development.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+# I dream of roombas - thousands of automated AI robots that autonomously maintain codebases
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-06-07  
+**Source**: [https://ghuntley.com/ktlo/](https://ghuntley.com/ktlo/)
+
+---
+
+Just yesterday morning, I was writing a conference talk on best practices for maintaining the LLM context window, which was quite detailed. It contained the then best practices from the two blog posts below.
+
+> [**autoregressive queens of failure**](https://ghuntley.com/gutter/)
+>
+> Have you ever had your AI coding assistant suggest something so off-base that you wonder if it’s trolling you? Welcome to the world of autoregressive failure. LLMs, the brains behind these assistants,...
+>
+> — Geoffrey Huntley
+
+> [**if you are redlining the LLM, you aren’t headlining**](https://ghuntley.com/redlining/)
+>
+> It’s an old joke in the DJ community about upcoming artists having a bad reputation for pushing the audio signal into the red. Red is bad because it results in the audio signal being clipped and the m...
+>
+> — Geoffrey Huntley
+
+Yet sections of that talk - just 4 hours later - are now redundant if you use [Amp](https://ampcode.com/?ref=ghuntley.com) and are in the early access pilot. Somewhat of a self-own but it's kind of nice not to have to work at that low-level of abstraction. It's really nice to work at higher abstractions. In the stream below, you will see a prototype of subagents. Yep, it's real. It's here.
+
+> [**I dream about AI subagents; they whisper to me while I’m asleep**](https://ghuntley.com/subagents/)
+>
+> In a previous post, I shared about “real context window” sizes and “advertised context window sizes” Claude 3.7’s advertised context window is 200k, but I’ve noticed that the quality of output clips a...
+>
+> — Geoffrey Huntley
+
+Instead of allocating everything to the main context window and then overflowing it, you spawn a subagent, which has its brand-new context window for doing the meaty stuff, like building, testing, or whatever you can imagine. Whilst that is happening the main thread is paused and suspended, waiting until competition.
+
+> It's kind of like async, await state machines, or futures for LLMs.
+
+[▶ revenge of the subagents](https://www.youtube.com/watch?v=evR_H2Q7DcA)
+
+It was pretty hard to get to bed last night. Truth be told, I stayed up just watching it in fascination. Instead of running an infinite loop where it would blow up the main context window (which would result in the code base ending up in an incomplete state) resulting in me having to jump back in and gets hands on to do other things with prompting to try and rescue it, now the main thread, the context window, it barely even increments and every loop completes.
+
+Thank you, [Thorsten](https://x.com/thorstenball?ref=ghuntley.com), for making my dreams a reality. Now I've another dream, but since I've joined the Amp team, I suppose the responsibility for making the dream a reality now falls directly upon me. The buck stops with me to get it done.
+
+Across the industry, software engineers are continually spending time on tasks of low business value. Some companies even refer to it as KTLO, or "Keep the Lights On". If these tasks are neglected, however, they present a critical risk to the business. Yet they don't get done because the product is more important. So it's always a risk-reward trade-off.
+
+So here's the pitch. All those tasks will soon be automated. Now that we have automated context management through subagents, the next step is to provide primitives that allow for the automation and removal of classes of KTLO, or, as Mr. 10 likes to describe in Factorio terms, we need quality modules.
+
+## the path to ticket to production
+
+To be frank, the industry and foundation models aren't yet advanced enough to fully automate software development without engineers being in or out of the loop.
+
+Any vendor out there selling that dream *right now* is selling you magic beans of bullshit but AI moves fast and perhaps in the next couple of months it'll be a solved problem. Don't get me wrong - we're close. The continual evolution of Cursed (above), a brand-new programming language that is completely vibe-coded and hands-free, is proof to me that it will be possible in time. You see, a compiler isn't like a Vercel v0 website. No, it's serious stuff. It isn't a toy. Compilers have symbolic meaning and substance.
+
+Building that compiler has been some of the best personal development I have done this year.
+
+* It has taught me many things about managing the context window.
+* It has taught me to be less controlling of AI agents and more hands-free.
+* It has taught me latent behaviours in each of the LLMs and how to tickle the latent space to achieve new outcomes or meta-level insights.
+
+You see, there's no manual for [the transformation](https://ghuntley.com/dothings) that's happening in our industry yet. I strive to document all my observations on this website. Still, it's only through [serious, intentional play and experimentation](https://ghuntley.com/play) that these new emerging behaviours become apparent and can be [turned into patterns that can be taught](https://ghuntley.com/mirrors).
+
+## but, it starts by starting in the small
+
+In the private Amp repository on GitHub, there is this mermaid diagram. This mermaid diagram articulates how our GitHub Actions workflows work for releasing [Amp](https://ampcode.com/?ref=ghuntley.com) to you. It exists to make onboarding our staff into the project easier.
+
+![](https://ghuntley.com/content/images/2025/06/CleanShot-2025-06-07-at-12.56.43@2x.png)
+
+The following prompt generated it:
+
+```
+# Prompt to Regenerate GitHub Actions Mermaid Diagram
+
+## Objective
+
+Create a comprehensive mermaid diagram for the README.md that visualizes all GitHub Actions workflows in the `.github/workflows/` directory and their relationships.
+
+## Requirements
+
+1. **Analyze all workflow files** in `.github/workflows/`:
+
+   - `ci.yml` - Main CI workflow
+   - `release-cli.yml` - CLI release automation
+   - `release-vscode.yml` - VS Code extension release
+   - `scip-typescript.yml` - Code intelligence analysis
+   - `semgrep.yml` - Security scanning
+   - `slack-notify.yml` - Global notification system
+   - Any other workflow files present
+
+2. **Show workflow triggers clearly**:
+
+   - Push/PR events
+   - Scheduled releases
+   - Main branch specific events
+   - TypeScript file changes
+
+3. **Include complete workflow flows**:
+
+   - CI: Build & Test → TypeScript Check → Linting → Test Suite
+   - Server Build: Docker Build → Goss Tests → Push to Registry → MSP Deploy
+   - CLI Release: Version Generation → Build & Test → NPM Publish
+   - VS Code Release: Version Generation → Build & Package → VS Code Marketplace → Open VSX Registry
+   - SCIP Analysis: Code Intelligence Upload → Multiple Sourcegraph instances
+   - Semgrep: Security Scan → Custom Rules → Results Processing
+
+4. **Slack notifications must be specific**:
+
+   - `alerts-amp-build-main` channel for general main branch workflow success/failure notifications
+   - `soul-of-a-new-machine` channel for CLI and VS Code release failure notifications
+   - All Slack notification nodes should be styled in yellow (`#ffeb3b`)
+
+5. **Color coding for workflow types**:
+
+   - CI Workflow: Light blue (`#e1f5fe`)
+   - Server Image Build: Light purple (`#f3e5f5`)
+   - CLI Release: Light green (`#e8f5e8`)
+   - VS Code Release: Light orange (`#fff3e0`)
+   - SCIP Analysis: Light pink (`#fce4ec`)
+   - Semgrep SAST: Light red (`#ffebee`)
+   - All Slack notifications: Yellow (`#ffeb3b`)
+
+6. **Global notification system**:
+   - Show that `slack-notify.yml` monitors ALL workflows on main branch
+   - Connect all main branch workflows to the central `alerts-amp-build-main` notification
+
+## Task Output
+
+Create mermaid `graph TD` diagram which is comprehensive yet readable, showing the complete automation pipeline from code changes to deployments and notifications.
+
+## Task
+
+1. Read the README.md
+2. Update the README.md with the mermaid `graph TD` diagram
+
+```
+Cool, so now we've got a prompt that generated a mermaid diagram, but now we've also got KTLO problems. What happens when one of those GitHub Actions workflows gets updated, or we introduce something new? Well, incorrect documentation is worse than no documentation.
+
+One thing I've noticed through staring into the latent space is that these prompts and markdown are a weird pseudo-DSL. They're almost like shell scripts. If you've read my [standard library blog post](https://ghuntley.com/stdlib), you know by now that you can chain these DSLs together to achieve desired outcomes.
+
+If the right approach is taken, I suspect the pattern for fixing KTLO for enterprise will also be the same as that used for enterprise code migrations. Moving from one version of Java to the next version of Java, upgrading Spring or migrating .NET 4.8 to a newer version of .NET Core, aka .NET 8.
+
+It's time to build. It's time to make the future beautiful.
+
+[▶ Pacha mama ☼ rainbow song ⋙⋘ lea johanna and rainbow family](https://www.youtube.com/watch?v=tD8c1uDOi9E)
+
+## ps. socials
+
+* X - [https://x.com/GeoffreyHuntley/status/1931192949611827568](https://x.com/GeoffreyHuntley/status/1931192949611827568?ref=ghuntley.com)
+* BlueSky - [https://bsky.app/profile/ghuntley.com/post/3lqyg7facxc2g](https://bsky.app/profile/ghuntley.com/post/3lqyg7facxc2g?ref=ghuntley.com)
+* LinkedIn - [https://www.linkedin.com/posts/geoffreyhuntley\_i-dream-of-roombas-thousands-of-automated-activity-7336959517479358466-D-3T](https://www.linkedin.com/posts/geoffreyhuntley_i-dream-of-roombas-thousands-of-automated-activity-7336959517479358466-D-3T?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> It's kind of like async, await state machines, or futures for LLMs.
+
+*Context: Comparing the operation of subagents in AI to programming concepts for managing asynchronous operations.*
+
+> Now that we have automated context management through subagents, the next step is to provide primitives that allow for the automation and removal of classes of KTLO.
+
+*Context: Discussing the future of automating mundane software maintenance tasks using AI.*
+
+> Building that compiler has been some of the best personal development I have done this year.
+
+*Context: Reflecting on the personal growth and learning from working on AI and compiler development.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="I dream about AI subagents; they whisper to me while I'm asleep"
+    icon="newspaper"
+    href="/kb/articles/i-dream-about-ai-subagents-they-whisper-to-me-while-im-aslee-c6458405"
+  >
+    Geoffrey Huntley · explanation · 81% similar
+  </Card>
+  <Card
+    title="everything is a ralph loop"
+    icon="newspaper"
+    href="/kb/articles/everything-is-a-ralph-loop-205a3a00"
+  >
+    Geoffrey Huntley · explanation · 80% similar
+  </Card>
+  <Card
+    title="autoregressive queens of failure"
+    icon="newspaper"
+    href="/kb/articles/autoregressive-queens-of-failure-2d3af710"
+  >
+    Geoffrey Huntley · explanation · 80% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/ktlo/](https://ghuntley.com/ktlo/).
+</Note>

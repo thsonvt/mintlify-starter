@@ -1,0 +1,136 @@
+---
+title: 'Dear Student: Yes, AI is here, you''re screwed unless you take action...'
+description: 'This time, composer probably wrote 99% of the code. Two weeks ago a student [anonymously emailed me](https://ghuntley.com/im-a-student/) asking for ad'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-02-27'
+sourceUrl: 'https://ghuntley.com/screwed/'
+topics: ["AI Agents","GitHub Copilot","Prompt Engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/screwed/) · 27/02/2025
+</Info>
+
+## Summary
+
+This time, composer probably wrote 99% of the code. Two weeks ago a student [anonymously emailed me](https://ghuntley.com/im-a-student/) asking for advice. This is the reply and if I was in your shoes this is what I'd do.
+
+## Key Insights
+
+> "This time, composer probably wrote 99% of the code."
+>
+> — Discussing the effectiveness of AI in coding tasks.
+
+> "Fresh grads and interns aren't seen as idea guys that can get stuff done, they're seen as useless ticket monkeys to be herded by seniors."
+>
+> — Highlighting the changing perception of entry-level developers due to AI.
+
+> "The steps that you take now will determine your success rate with obtaining a SWE role going forward."
+>
+> — Emphasizing the importance of proactive adaptation to AI in the software industry.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [GitHub Copilot](/kb/topics/github-copilot)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+
+---
+
+## Full Article
+
+```
+# Dear Student: Yes, AI is here, you're screwed unless you take action...
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-02-27  
+**Source**: [https://ghuntley.com/screwed/](https://ghuntley.com/screwed/)
+
+---
+
+Two weeks ago a student [anonymously emailed me](https://ghuntley.com/im-a-student/) asking for advice. This is the reply and if I was in your shoes this is what I'd do.
+
+> So, I read your blog post "[An oh f\*\*\* moment in time](https://ghuntley.com/oh-fuck/)" alongside "[The future belongs to idea guys that can just do things](https://ghuntley.com/dothings/)", and decided "fine, I'll go try cursor for myself and [see how well composer does](https://ghuntley.com/stdlib/)". I normally use copilot and some claude, but not much since getting the context of my 50kloc project into Claude is rough, and I didn't want to start paying for API use so I could start using i.e aider (I normally get copilot for free). I heard some claims about cursor and friends that I assumed were pumped up LinkedIn talk, so I really didn't think about it until now. 
+> 
+> For example, I've been working on a little JNI module for my android app, but it has a bunch of weird memory errors because managing the JNI resources is borderline impossible and C++ RAII has piles of insane footguns. So, I planned to rewrite it in Rust so I could 100% isolate the memory unsafety. This was a tall order, it was a three-way integration between a bulky C++ library with it's own CMake setup, and the JNI code of my app. It required some really messy translations from a rust trait into a C++ abstract class. It would take a lot to integrate it into my app. I decided it was a good enough benchmark to see if composer was up to snuff. 
+> 
+> First go around was not well, I gave the lump sum of all the work I wanted and it choked and went around in circles. Tried to go back to debugging the memory problems manually, but honestly I hate C++ and decided to another go around with composer and the rust module. Second time I sliced up the task into smaller but still pretty big pieces and fed them one at a time to composer. 
+> 
+> This time, composer probably wrote 99% of the code. Porting the previous shell script, making the shims I needed to map a trait to a C++ abstract class, porting the manual JNI code, and the massive buildscript linking it all together. It debugged its own work  when I pasted error traces in (sadly since this rust module was shoehorned into my app composer agent couldn't really test on it's own). And it just worked. There was some stuff it couldn't do, mostly choking on big error traces and incremental build bugs (thanks gradle), and sometimes I needed to point it in a better direction architecturally, but otherwise I barely touched the code. All I did was direct composer to do what I was thinking of. I then just killed time while it did the work. 
+> 
+> I'm at a loss now. I'm a student. Fresh grads and interns aren't seen as idea guys that can get stuff done, they're seen as useless ticket monkeys to be herded by seniors. Now Cursor Composer is the ticket monkey presumably to be herded by a senior, not me. And maybe even the senior isn't needed if a scaled enough reasoner model can do the task slicing. I've already felt like I've been shuffling chairs on the titanic, talking about projects and internships as if this threat doesn't exist, and honestly this confirms it. Is there literally any reason why I shouldn't just throw away the 10 years of my life and do...I don't even know what. At this development pace I don't even know if I [have time to "pivot"](https://ghuntley.com/ngmi/) before everything else gets solved by o4 or whatever. What do I even do anymore? 
+> 
+> Thanks, 
+> An Anonymous Student
+
+## that's a strongly worded headline...
+
+It's just facts; I'm a straight shooter. I'd rather tell it to you straight and provide actionable advice than placate feelings.
+
+The steps that you take now will determine your success rate with obtaining a SWE role going forward. If you are a [high autonomy person](https://ghuntley.com/dothings/) then you're not fucked, as long as you take action.
+
+## it has all happened before
+
+The Software Development industry works in cycles; this is the third bust after a boom that I've weathered through. Understanding what happened in the 2000 dot-com bust is important because it led to the 2017 boom.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> This time, composer probably wrote 99% of the code.
+
+*Context: Discussing the effectiveness of AI in coding tasks.*
+
+> Fresh grads and interns aren't seen as idea guys that can get stuff done, they're seen as useless ticket monkeys to be herded by seniors.
+
+*Context: Highlighting the changing perception of entry-level developers due to AI.*
+
+> The steps that you take now will determine your success rate with obtaining a SWE role going forward.
+
+*Context: Emphasizing the importance of proactive adaptation to AI in the software industry.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/github-copilot]]
+- [[topics/prompt-engineering]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="the six-month recap: closing talk on AI at Web Directions, Melbourne, June 2025"
+    icon="newspaper"
+    href="/kb/articles/the-six-month-recap-closing-talk-on-ai-at-web-directions-mel-eeeb2573"
+  >
+    Geoffrey Huntley · explanation · 80% similar
+  </Card>
+  <Card
+    title="teleporting into the future and robbing yourself of retirement projects"
+    icon="newspaper"
+    href="/kb/articles/teleporting-into-the-future-and-robbing-yourself-of-retireme-12cfb162"
+  >
+    Geoffrey Huntley · explanation · 79% similar
+  </Card>
+  <Card
+    title="AI coding tools are perhaps our new terminal emulators"
+    icon="newspaper"
+    href="/kb/articles/ai-coding-tools-are-perhaps-our-new-terminal-emulators-fafeee55"
+  >
+    Geoffrey Huntley · explanation · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/screwed/](https://ghuntley.com/screwed/).
+</Note>

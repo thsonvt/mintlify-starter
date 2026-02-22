@@ -1,0 +1,194 @@
+---
+title: 'if you are redlining the LLM, you aren''t headlining'
+description: 'Claude 3.7’s advertised context window is 200k, but I''ve noticed that the quality of output clips at the 147k-152k mark. It’s an old joke in the DJ co'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-04-07'
+sourceUrl: 'https://ghuntley.com/redlining/'
+topics: ["AI Agents","Prompt Engineering","Anthropic API"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/redlining/) · 07/04/2025
+</Info>
+
+## Summary
+
+Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark. It’s an old joke in the DJ community about upcoming artists having a bad reputation for pushing the audio signal into the red. Red is bad because it results in the audio signal being clipped and the mix sounding muddy.
+
+## Key Insights
+
+> "Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark."
+>
+> — Discussing the discrepancy between advertised and actual performance of LLMs.
+
+> "Going forward, companies should budget $100 USD to $500 USD per day, per dev, on tokens as the new normal for business."
+>
+> — Highlighting the financial implications of utilizing LLMs for software development.
+
+> "These tools make each engineer within your team at least two times more productive."
+>
+> — Emphasizing the productivity gains from using advanced AI tools in software development.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Anthropic API](/kb/topics/anthropic-api)
+
+---
+
+## Full Article
+
+# if you are redlining the LLM, you aren't headlining
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-04-07  
+**Source**: [https://ghuntley.com/redlining/](https://ghuntley.com/redlining/)
+
+---
+
+It’s an old joke in the DJ community about upcoming artists having a bad reputation for pushing the audio signal into the red. Red is bad because it results in the audio signal being clipped and the mix sounding muddy.
+
+![](https://ghuntley.com/content/images/2025/04/image-3.png)
+
+It’s a good analogy that applies to software engineers in the future, however, as these LLMs have context windows.
+
+Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark. Regardless of which agent is used, when clipping occurs, [tool call to tool call invocation](https://ghuntley.com/mcp) starts to fail like below when using Claude 3.7:
+
+```
+≡ prompt
+
+commit the changes and push
+
+≡ Thinking
+
+I don't have direct access to execute git commands on your system. To commit and push the changes, you'll need to run the following commands in your terminal:
+
+# Add all modified files
+git add .
+
+# Commit with a descriptive message
+git commit -m "Fix channel implementation and parser error reporting
+- Fixed parser implementations for while statements and
+- Enhanced error reporting in the parser with better con
+- Fixed non-blocking channel operations tests
+- Updated channel tests to verify implementation complet"
+
+# Push to your remote repository
+git push
+
+These commands will:
+
+1. Stage all the changes we made
+2. Create a commit with a descriptive message
+3. Push the changes to your remote repository
+
+```
+After consulting with some mates in the field, I learned that "advertised" vs. "real" size is a thing—see this paper and the GitHub repository below.
+
+> [**RULER: What’s the Real Context Size of Your Long-Context Language Models?**](https://arxiv.org/abs/2404.06654?ref=ghuntley.com)
+>
+> The needle-in-a-haystack (NIAH) test, which examines the ability to retrieve a piece of information (the “needle”) from long distractor texts (the “haystack”), has been widely adopted to evaluate long...
+>
+> — arXiv.org
+
+> [**GitHub - NVIDIA/RULER: This repo contains the source code for RULER: What’s the Real Context Size of Your Long-Context Language Models?**](https://github.com/NVIDIA/RULER?ref=ghuntley.com)
+>
+> This repo contains the source code for RULER: What’s the Real Context Size of Your Long-Context Language Models? - NVIDIA/RULER
+>
+> — GitHub
+
+Thus, 'redlining' will differ per LLM, and each LLM will have unique properties that make it better for different tasks. Some are better for [generating the initial specifications](https://ghuntley.com/specs), while others are better for implementing tasks within the specification. Either way, you must ensure that [the evaluation loop you dispatch](https://ghuntley.com/mcp) does not redline the LLM context window.
+
+If I hadn't ditched Cursor, I would have never learned this observation, as they currently do not surface this information within their product. These days, I'm running raw directly to the Anthropic API. It's expensive, but the outcomes are dramatically better.
+
+There's something cooked about Windsurf/Cursors' go-to-market pricing - there's no way they are turning a profit at $50/month. $50/month gets you a happy meal experience. If you want more power, you gotta ditch snacking at McDonald’s.
+
+Going forward, companies should budget $100 USD to $500 USD per day, per dev, on tokens as the new normal for business, which is circa $25k USD (low end) to $50k USD (likely) to $127k USD (highest) per year.
+
+If you don’t have OPEX per dev to do that, it’s time to start making some adjustments...
+
+These tools make each engineer within your team at least two times more productive. Don't take my word for it—here's a study by Harvard Business School published last week that confirms this.
+
+![please keep in mind that this study was done with the previous generation of AI tooling and is already out-of-date](https://ghuntley.com/content/images/2025/04/image-5.png)
+
+please keep in mind that this study was done with the previous generation of AI tooling and is already out-of-date
+
+> [**The Cybernetic Teammate**](https://www.oneusefulthing.org/p/the-cybernetic-teammate?ref=ghuntley.com)
+>
+> Having an AI on your team can increase performance, provide expertise, and improve your experience
+>
+> — One Useful Thing
+
+So what does it mean if a business doesn't have a budget for this OPEX spending on something better than a McHappy meal when a competitor has the budget to opt for high-power tools?
+
+It means the budget will come from somewhere. If we take what we know—an engineering manager can only manage seven people—a team of switched-on engineers utilising these tools can output N-times more business outcomes than a team without them.
+
+Suddenly, you need fewer teams and fewer engineering managers to get the same outcomes...
+
+## p.s. socials
+
+* BlueSky: [https://bsky.app/profile/ghuntley.com/post/3lm6iqkisw52d](https://bsky.app/profile/ghuntley.com/post/3lm6iqkisw52d?ref=ghuntley.com)
+* X: [https://x.com/GeoffreyHuntley/status/1909013985887936608](https://x.com/GeoffreyHuntley/status/1909013985887936608?ref=ghuntley.com)
+* LinkedIn: [https://www.linkedin.com/posts/geoffreyhuntley\_if-you-arent-redlining-the-llm-you-arent-activity-7314776697487167490-qddK](https://www.linkedin.com/posts/geoffreyhuntley_if-you-arent-redlining-the-llm-you-arent-activity-7314776697487167490-qddK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark.
+
+*Context: Discussing the discrepancy between advertised and actual performance of LLMs.*
+
+> Going forward, companies should budget $100 USD to $500 USD per day, per dev, on tokens as the new normal for business.
+
+*Context: Highlighting the financial implications of utilizing LLMs for software development.*
+
+> These tools make each engineer within your team at least two times more productive.
+
+*Context: Emphasizing the productivity gains from using advanced AI tools in software development.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/anthropic-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="I dream about AI subagents; they whisper to me while I'm asleep"
+    icon="newspaper"
+    href="/kb/articles/i-dream-about-ai-subagents-they-whisper-to-me-while-im-aslee-c6458405"
+  >
+    Geoffrey Huntley · explanation · 83% similar
+  </Card>
+  <Card
+    title="Claude Sonnet is a small-brained mechanical squirrel of <T>"
+    icon="newspaper"
+    href="/kb/articles/claude-sonnet-is-a-small-brained-mechanical-squirrel-of-t-60792e78"
+  >
+    Geoffrey Huntley · explanation · 78% similar
+  </Card>
+  <Card
+    title="autoregressive queens of failure"
+    icon="newspaper"
+    href="/kb/articles/autoregressive-queens-of-failure-2d3af710"
+  >
+    Geoffrey Huntley · explanation · 78% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/redlining/](https://ghuntley.com/redlining/).
+</Note>

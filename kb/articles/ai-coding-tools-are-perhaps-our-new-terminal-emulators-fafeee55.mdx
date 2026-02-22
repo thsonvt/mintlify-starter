@@ -1,0 +1,143 @@
+---
+title: 'AI coding tools are perhaps our new terminal emulators'
+description: 'This engineer didn''t pop open their terminal. Instead, they remotely controlled a command-line coding agent. So, I''m currently over in San Francisco. '
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-06-26'
+sourceUrl: 'https://ghuntley.com/vt100/'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/vt100/) · 26/06/2025
+</Info>
+
+## Summary
+
+This engineer didn't pop open their terminal. Instead, they remotely controlled a command-line coding agent. So, I'm currently over in San Francisco. I've been here for almost two weeks now. I'll be heading home to my family in a couple of days. However, over the weekend, I had the opportunity to visit the Computer History Museum. I'm not going to lie, being able to spend some time on a functioning PDP-1 i
+
+## Key Insights
+
+> "This engineer didn't pop open their terminal. Instead, they remotely controlled a command-line coding agent."
+>
+> — Describing a new approach to incident response using AI agents.
+
+> "Not only did it correctly diagnose the root cause of the cluster's issue, but it also automatically authored a 95% complete post-incident review document."
+>
+> — Highlighting the capabilities of AI agents in diagnosing and documenting incidents.
+
+> "Software engineers are still needed, but their roles have evolved."
+>
+> — Discussing the evolving role of software engineers due to AI advancements.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# AI coding tools are perhaps our new terminal emulators
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-06-26  
+**Source**: [https://ghuntley.com/vt100/](https://ghuntley.com/vt100/)
+
+---
+
+So, I'm currently over in San Francisco. I've been here for almost two weeks now. I'll be heading home to my family in a couple of days. However, over the weekend, I had the opportunity to visit the Computer History Museum. I'm not going to lie, being able to spend some time on a functioning PDP-1 is way up there on my bucket list.
+
+![](https://ghuntley.com/content/images/2025/06/IMG_0473-1.jpg)
+
+![](https://ghuntley.com/content/images/2025/06/IMG_0529-1.jpg)
+
+![](https://ghuntley.com/content/images/2025/06/IMG_0534-2-1.jpg)
+
+![](https://ghuntley.com/content/images/2025/06/IMG_0540-1.jpg)
+
+Now, something strange happened while I was down at the Computer History Museum. One of my mates I was with had an incident on their Kubernetes cluster.
+
+Typically, if you're the on-call engineer in such a scenario, you would open your laptop, open a terminal, and then log on to the cluster manually. That's the usual way that people have been doing incident response as a site reliability engineer for a very long time.
+
+Now, this engineer didn't pop open their terminal. Instead, they remotely controlled a command-line coding agent and issued a series of prompts, which made function calls into the cluster using standard command-line tools from their phone.
+
+We were sitting outside the Computer History Museum, watching as the agent enumerated through the cluster in a read-only fashion and correctly diagnosed a corrupted ETCD database. Not only did it correctly diagnose the root cause of the cluster's issue, but it also automatically authored a 95% complete post-incident review document (a GitHub issue) with the necessary action steps for resolution before the incident was even over.
+
+Previously, I had theorised ([see my talk](https://ghuntley.com/six-month-recap/)) that this type of thing is possible, but here we were with an SRE agent, a human in the loop, controlling an agent and automating their job function.
+
+Throughout the day, I kept pondering the above, and then, while walking through the Computer History Museum, I stumbled upon this exhibit...
+
+![](https://ghuntley.com/content/images/2025/06/IMG_0535.jpg)
+
+The Compaq 386 and the introduction of AutoCAD. If you've been following my writing, you should know by now of the analogies I like to draw between AutoCAD and software engineering.
+
+Before AutoCAD, we used to have rooms full of architects, then CAD came along and completely changed how the architecture profession was done. Not only were they asked to do drafting, but they were also expected to do design.
+
+I think there are many analogies here that explain the transition happening now in our profession with AI. Software engineers are still needed, but their roles have evolved.
+
+These days, I spend a lot of time thinking about what is changing and what has changed. One thing I've noticed that has changed is best illustrated in the chart below.
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> This engineer didn't pop open their terminal. Instead, they remotely controlled a command-line coding agent.
+
+*Context: Describing a new approach to incident response using AI agents.*
+
+> Not only did it correctly diagnose the root cause of the cluster's issue, but it also automatically authored a 95% complete post-incident review document.
+
+*Context: Highlighting the capabilities of AI agents in diagnosing and documenting incidents.*
+
+> Software engineers are still needed, but their roles have evolved.
+
+*Context: Discussing the evolving role of software engineers due to AI advancements.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="teleporting into the future and robbing yourself of retirement projects"
+    icon="newspaper"
+    href="/kb/articles/teleporting-into-the-future-and-robbing-yourself-of-retireme-12cfb162"
+  >
+    Geoffrey Huntley · explanation · 79% similar
+  </Card>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 77% similar
+  </Card>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/vt100/](https://ghuntley.com/vt100/).
+</Note>

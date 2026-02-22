@@ -1,0 +1,156 @@
+---
+title: 'I dream about AI subagents; they whisper to me while I''m asleep'
+description: 'Claude 3.7’s advertised context window is 200k, but I''ve noticed that the quality of output clips at the 147k-152k mark. In a [previous post](https://'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-04-13'
+sourceUrl: 'https://ghuntley.com/subagents/'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/subagents/) · 13/04/2025
+</Info>
+
+## Summary
+
+Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark. In a [previous post](https://ghuntley.com/redlining/), I shared about "real context window" sizes and "advertised context window sizes"
+
+## Key Insights
+
+> "Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark."
+>
+> — Discussing limitations in current AI context window sizes.
+
+> "LLM context windows are like RAM in an IBM 8086 XT and are a precious resource, but engineers and developer tooling companies do not treat them as such."
+>
+> — Comparing LLM context windows to computer RAM, emphasizing their value and the lack of attention they receive.
+
+> "What if an agent could spawn a new agent and clone the context window?"
+>
+> — Speculating on the potential of AI subagents to improve efficiency by cloning context windows.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# I dream about AI subagents; they whisper to me while I'm asleep
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-04-13  
+**Source**: [https://ghuntley.com/subagents/](https://ghuntley.com/subagents/)
+
+---
+
+In a [previous post](https://ghuntley.com/redlining/), I shared about "real context window" sizes and "advertised context window sizes"
+
+> Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark. Regardless of which agent is used, when clipping occurs, [tool call to tool call invocation](https://ghuntley.com/mcp) starts to fail
+
+The short version is that we are in another era of "640kb should be enough for anyone," and folks need to start thinking about how the current generation of context windows is similar to RAM on a computer in the 1980s until such time that `DOS=HIGH,UMB` becomes a thing...
+
+![LLM context windows are like RAM in an IBM 8086 XT and are a precious resource, but engineers and developer tooling companies do not treat them as such.](https://ghuntley.com/content/images/2025/04/image-6.png)
+
+LLM context windows are like RAM in an IBM 8086 XT and are a precious resource, but engineers and developer tooling companies do not treat them as such.
+
+The current generation of coding agents work via a tight [evaluation loop of tool calls to tool calls](https://ghuntley.com/mcp/) that operate within a single context window (ie. RAM). However, the problem with this design is that when an LLM provides a bad outcome, the coding assistants/agents' death spiral and brute force on the main context window which consumes precious resources as it tries to figure out the next steps.
+
+![the current generation of software development agents works like this. it's not great (tm)](https://ghuntley.com/content/images/2025/04/Untitled-diagram-2025-04-13-010340.png)
+
+the current generation of software development agents works like this. it's not great (tm)
+
+However, I've been thinking: What if an agent could spawn a new agent and clone the context window? If such a thing were possible, it would enable an agent to spawn a sub-agent. The main agent would pause, wait for the sub-agent to burn through its own context window (ie. SWAP), and then provide concrete next steps for the primary agent.
+
+![i suspect next generation agents will look something like this under the hood](https://ghuntley.com/content/images/2025/04/Untitled-diagram-2025-04-13-004708-1.png)
+
+i suspect next generation agents will look something like this under the hood
+
+It's theoretical right now, and I haven't looked into it. Still, I dream of the possibility that in the future, software development agents will not waste precious context (RAM) and enter a death spiral on the main thread.
+
+## p.s. socials
+
+```
+* LinkedIn: [https://www.linkedin.com/posts/geoffreyhuntley\_i-dream-about-ai-subagents-they-whisper-activity-7316994087725813762-YuJX](https://www.linkedin.com/posts/geoffreyhuntley_i-dream-about-ai-subagents-they-whisper-activity-7316994087725813762-YuJX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+* Twitter: [https://x.com/GeoffreyHuntley/status/1911237235644809466](https://x.com/GeoffreyHuntley/status/1911237235644809466?ref=ghuntley.com)
+* BlueSky: [https://bsky.app/profile/ghuntley.com/post/3lmnv43hmk32d](https://bsky.app/profile/ghuntley.com/post/3lmnv43hmk32d?ref=ghuntley.com)
+```
+
+### pps. extra reading
+
+```
+* [Latent Patterns in Activities: A Field Study of How 
+ Developers Manage Context](https://rahulpandita.github.io/files/riniICSE2019.pdf?ref=ghuntley.com)
+```
+
+> [**Building Multi-Agent Systems**](https://blog.sshh.io/p/building-multi-agent-systems?ref=ghuntley.com)
+>
+> Scaling LLM-based agents to handle complex problems reliably.
+>
+> — Shrivu’s Substack
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Claude 3.7’s advertised context window is 200k, but I've noticed that the quality of output clips at the 147k-152k mark.
+
+*Context: Discussing limitations in current AI context window sizes.*
+
+> LLM context windows are like RAM in an IBM 8086 XT and are a precious resource, but engineers and developer tooling companies do not treat them as such.
+
+*Context: Comparing LLM context windows to computer RAM, emphasizing their value and the lack of attention they receive.*
+
+> What if an agent could spawn a new agent and clone the context window?
+
+*Context: Speculating on the potential of AI subagents to improve efficiency by cloning context windows.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/agent-native-architecture]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="if you are redlining the LLM, you aren't headlining"
+    icon="newspaper"
+    href="/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+  >
+    Geoffrey Huntley · explanation · 83% similar
+  </Card>
+  <Card
+    title="autoregressive queens of failure"
+    icon="newspaper"
+    href="/kb/articles/autoregressive-queens-of-failure-2d3af710"
+  >
+    Geoffrey Huntley · explanation · 82% similar
+  </Card>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 81% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/subagents/](https://ghuntley.com/subagents/).
+</Note>

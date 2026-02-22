@@ -1,0 +1,204 @@
+---
+title: 'LLMs are mirrors of operator skill'
+description: 'LLMs are essentially mirrors. They mirror the skill of the operator. This is a follow-up from my previous blog post: "[deliberate intentional practice'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-06-05'
+sourceUrl: 'https://ghuntley.com/mirrors/'
+topics: ["AI Agents","Agent-Native Architecture","Prompt Engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/mirrors/) · 05/06/2025
+</Info>
+
+## Summary
+
+LLMs are essentially mirrors. They mirror the skill of the operator. This is a follow-up from my previous blog post: "[deliberate intentional practice](https://ghuntley.com/play/)". I didn't want to get into the distinction between skilled and unskilled because people take offence to it, but AI is a matter of skill.
+
+## Key Insights
+
+> "LLMs are essentially mirrors. They mirror the skill of the operator."
+>
+> — Discussing how the effectiveness of LLMs depends on the user's skill.
+
+> "The software interview process was never great but it's taken a turn for the worst as AI can easily solve anything thrown at it."
+>
+> — Highlighting the challenges AI presents to traditional tech interviews.
+
+> "If you needed to do security research, which large language model (LLM) would you use? Why?"
+>
+> — Illustrating the importance of understanding the strengths and weaknesses of different LLMs.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+
+---
+
+## Full Article
+
+![](https://ghuntley.com/content/images/size/w1200/2025/06/download--2-.jpeg)
+
+This is a follow-up from my previous blog post: "[deliberate intentional practice](https://ghuntley.com/play/)". I didn't want to get into the distinction between skilled and unskilled because people take offence to it, but AI is a matter of skill.
+
+> Someone can be highly experienced as a software engineer in 2024, but that does not mean they're skilled as a software engineer in 2025, now that AI is here.
+
+In my view, LLMs are essentially mirrors. They mirror the skill of the operator.
+
+```
+# how to identify skill
+```
+
+One of the most pressing issues for all companies going forward is the question of how to identify skilled operators. In the blog post "[Dear Student: Yes, AI is here, you're screwed unless you take action](https://ghuntley.com/screwed/)" I remarked that the interviewing process is now fundamentally broken.
+
+> With hundreds of thousands of dollars at stake, all the incentives are there for candidates to cheat. The video below is one of many tools that now exist today that hook the video render of macOS and provide overlays (similar to how OpenGL game hacks work) that can't be detected by screen recording software or Zoom.
+
+```
+[▶ AI Killed The Tech Interview. Now What?](https://www.youtube.com/watch?v=vNQVodOcZrM)
+```
+
+> The software interview process was never great but it's taken a turn for the worst as AI can easily solve any thing thrown at it - including interview screenings. Another co-worker of mine recently penned the blog post below, which went viral on HackerNews. I highly recommend [reading the comments](https://news.ycombinator.com/item?id=43108673&ref=ghuntley.com).
+
+> [**AI Killed The Tech Interview. Now What?**](https://kanenarraway.com/posts/ai-killed-the-tech-interview-now-what/?ref=ghuntley.com)
+>
+> How can we do better interviews in the age of AI
+>
+> — Kane Narraway
+
+```
+# some ideas and recommendations
+```
+
+Don't outright ban AI in the interviewing process. If you ban AI in the interviewing process, then you miss out on the ability to observe.
+
+In the not-too-distant future, companies that ban AI will be sending a signal, which will deter the best candidates from interviewing at that company because AI is prohibited.
+
+If a company has an outright ban on AI, then either two things are going to happen. Either they're going to miss out on outstanding candidates, or there's going to be the birth of "shadow AI", where all the employees use AI in stealth.
+
+It's already happening. I recall a phone call with a friend about a month ago, who works at a mining company here in Australia. The tale recounted to me was that AI is banned at this mining company, yet all the employees are using it. Employees, by now, are well aware of the "[not going to make it](https://ghuntley.com/ngmi)" factors at play.
+
+If I were interviewing a candidate now, the first things I'd ask them to explain would be the fundamentals of [how the Model Context Protocol works](https://ghuntley.com/mcp) and [how to build an agent](https://ampcode.com/how-to-build-an-agent?ref=ghuntley.com). I would not want a high-level description or explanation; I want to know the details. What are the building blocks? How does the event loop work? What are tools? What are tool descriptions? What are evals?
+
+I then ask the candidate to explain the sounds of each one of the LLMs. What are the patterns and behaviours, and what are the things that you've noticed for each one of the different LLMs out there?
+
+> reissue of limited edition meme for the Claude boys [pic.twitter.com/37z8dBk4jU](https://t.co/37z8dBk4jU?ref=ghuntley.com)
+>
+> — geoff (@GeoffreyHuntley) [June 4, 2025](https://twitter.com/GeoffreyHuntley/status/1930052477430403346?ref_src=twsrc%5Etfw&ref=ghuntley.com)
+
+If you needed to do security research, which large language model (LLM) would you use? Why?
+
+If you needed to summarise a document, which LLM would you use? Why?
+
+If you needed a task runner, which LLM would you use? Why?
+
+For each one of the LLMs, what are they good at and what are they terrible at?
+
+How have the behaviours of each one of the LLMs changed? The more detail they can provide about emergent behaviours and how it has changed across the different iterations, the better. It's a strong signal that they've been playing for a while.
+
+Is there a project that they can show me? Potentially open source, where they built something? A conference talk? A blog post? Anything. Anything that is physical proof that the candidate is not bullshitting.
+
+Do they have their [own personal standard library of prompts](https://ghuntley.com/stdlib)?
+
+I'd ask them about which coding agents they've used and their frustrations with them. Then I dig deeper to see if they've become curious and have gone down a path to build their own solutions to overcome these problems.
+
+Have they built an agentic supervisor? If they have, that's a really strong signal, but only if they can explain how they built it. What are the trade-offs found in building it? How did they solve overbaking or underbaking? Or the halting problem?
+
+How have they used [Model Context Protocol to automate software development](https://ghuntley.com/mcp) to see if they've become curious and have gone down a path to automate things at their previous employer?
+
+> Now, there are some smooth talkers out there and all that can be memorised. For instance, people can simply talk their way through all the above. So this is where the real challenge begins.
+
+**You want to watch them**. *You want to watch them dance with the LLM.*
+
+Full screen share and see how they dance with it. Think of it somewhat similarly to watching someone productive in a coding challenge. If they waste time by not using the debugger, not adding debug log statements, or failing to write tests, then they're not a good fit.
+
+If they conduct endless chat operations with the coding agent and [fail to recycle the context window frequently](https://ghuntley.com/gutter), then they're not a good fit. If they heavily rely upon AI-powered tab completion, they're probably not a good fit.
+
+If they lead by saying "I don't know" and show behaviours where they drive an LLM by asking it questions to [build up a specification](https://ghuntley.com/specs) and loading up the context window, we have observations and just really like asking the LLM questions. That's a pretty strong indication that they are a good fit.
+
+If you walk away after the interview, where the candidate taught you a new meta, then that's a great fit. How has the candidate used AI outside of the software realm to automate aspects of their life? Go deep! Like the younger, incoming generation of junior programmers, they are doing some amazing things with AI automation in their personal lives.
+
+Do they loop the LLM back on itself? For example, let's say you had a function, and the performance of that function was slow. Are they aware that you could ask the LLM to create a benchmark suite, add profiling, and then loop the profiling results back onto the LLM and ask it to fix it?
+
+Do they understand the code that has been generated? Can they explain it? Can they critique it? Do they show any indicators of taste?
+
+Are they overly controlling of the coding agent? Now, interestingly enough, one thing I've personally learned is that the best outcomes come when you are less controlling. That doesn't mean brain off. It means that they understand that there is a meta where you can ask the agent to do the most critical thing in a series of tasks. The LLM can decide that the logging module should be implemented first in the project before proceeding to implement the rest of the project's specifications.
+
+What was the workflow that they used? Did they spin up one or multiple coding agents side by side? That's a sign of an advanced operator.
+
+> Wanna build great shit, at record speed? 
+> 
+> Here are the cheat codes... 
+> 
+> All the little pieces and how to connect em... 
+> 
+> Run this as while(true) in a tool that does not cap tool call invocations. After each iteration, look out for redlining and create a new context window. [pic.twitter.com/TYTD4ic77N](https://t.co/TYTD4ic77N?ref=ghuntley.com)
+>
+> — geoff (@GeoffreyHuntley) [April 21, 2025](https://twitter.com/GeoffreyHuntley/status/1914271203579273381?ref_src=twsrc%5Etfw&ref=ghuntley.com)
+
+And to top that all off, I would still have a conversation about computer science fundamentals and the standard people + culture questions.
+
+```
+* Are they curious?
+* Do they have a low quit rate in the face of hardship?
+* Would you put that person in front of a customer?
+* Do they have a product engineering mindset? (Or are they used to being a Jira monkey where someone tells them what to do)
+```
+
+If it's not a [hell yeah](https://sive.rs/n?ref=ghuntley.com) to all of the above cultural questions, then it's a no.
+
+```
+# what problems remain
+```
+
+Interviewing as a software engineer typically involves a multi-stage filtering process. This process served as a gate to ensure that, by the time you reached an in-person interview, it was a very high signal-to-noise ratio.
+
+The best way to determine if someone is a skilled operator is to watch them dance with the LLM. But that's expensive. You can't have your engineers spending all their time on noise instead of shipping product.
+
+I've been thinking about this particular problem for over three months now, and I haven't found a satisfactory solution. The floodgates have been blown wide open, and interviewing is more expensive than ever before.
+
+## ps. socials
+
+```
+* X - [https://x.com/GeoffreyHuntley/status/1930272095306444963](https://x.com/GeoffreyHuntley/status/1930272095306444963?ref=ghuntley.com)
+* BlueSky - [https://bsky.app/profile/ghuntley.com/post/3lqrzhwmifl2m](https://bsky.app/profile/ghuntley.com/post/3lqrzhwmifl2m?ref=ghuntley.com)
+* LinkedIn - [https://www.linkedin.com/posts/geoffreyhuntley\_llms-are-mirrors-of-operator-skill-activity-7336038407967580161-hRda](https://www.linkedin.com/posts/geoffreyhuntley_llms-are-mirrors-of-operator-skill-activity-7336038407967580161-hRda?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+```
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="if you are redlining the LLM, you aren't headlining"
+    icon="newspaper"
+    href="/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+  >
+    Geoffrey Huntley · explanation · 77% similar
+  </Card>
+  <Card
+    title="Claude Sonnet is a small-brained mechanical squirrel of <T>"
+    icon="newspaper"
+    href="/kb/articles/claude-sonnet-is-a-small-brained-mechanical-squirrel-of-t-60792e78"
+  >
+    Geoffrey Huntley · explanation · 76% similar
+  </Card>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/mirrors/](https://ghuntley.com/mirrors/).
+</Note>

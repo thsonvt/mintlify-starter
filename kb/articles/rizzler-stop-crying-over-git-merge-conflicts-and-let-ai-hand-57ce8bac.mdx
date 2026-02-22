@@ -1,0 +1,151 @@
+---
+title: 'rizzler: stop crying over Git merge conflicts and let AI handle the drama'
+description: 'rizzler slides into your Git workflow and uses ✨ AI magic ✨ to automatically resolve those annoying merge conflicts. 💀 **Ugh, merge conflicts:** That'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-04-23'
+sourceUrl: 'https://ghuntley.com/rizzler/'
+topics: ["AI Agents","GitHub Copilot","OpenAI API"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/rizzler/) · 23/04/2025
+</Info>
+
+## Summary
+
+rizzler slides into your Git workflow and uses ✨ AI magic ✨ to automatically resolve those annoying merge conflicts. 💀 **Ugh, merge conflicts:** That sinking feeling when Git screams at you? We've all been there. Manually fixing those tangled messes? It's giving... tedious. It's giving... waste of my precious time. 😩
+
+## Key Insights
+
+> "rizzler slides into your Git workflow and uses ✨ AI magic ✨ to automatically resolve those annoying merge conflicts."
+>
+> — Introducing the main functionality of rizzler as an AI-powered tool for resolving Git conflicts.
+
+> "It queries the LLMs you have configured to automatically resolve merge conflicts."
+>
+> — Explaining how rizzler works by leveraging configured Large Language Models (LLMs) for conflict resolution.
+
+> "successful fixes get cached on disk, cutting down on LLM costs and giving you a productivity boost."
+>
+> — Highlighting the efficiency and cost-effectiveness of using rizzler for merge conflict resolution.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [GitHub Copilot](/kb/topics/github-copilot)
+- [OpenAI API](/kb/topics/openai-api)
+
+---
+
+## Full Article
+
+# rizzler: stop crying over Git merge conflicts and let AI handle the drama
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-04-23  
+**Source**: [https://ghuntley.com/rizzler/](https://ghuntley.com/rizzler/)
+
+---
+
+💀 **Ugh, merge conflicts:** That sinking feeling when Git screams at you? We've all been there. Manually fixing those tangled messes? It's giving... tedious. It's giving... waste of my precious time. 😩
+
+🚀 **Enter rizzler:** Your new AI bestie that actually *\*gets\** Git. This ain't your grandpa's merge tool. `rizzler` slides into your Git workflow and uses ✨ AI magic ✨ (think OpenAI, Claude, Gemini, Bedrock - the whole squad) to automatically resolve those annoying merge conflicts. Less time untangling, more time coding (or scrolling). You're welcome. 😉 
+ 
+Basically, it turns this:
+
+```
+<<<<<<< HEAD
+const message = "Hello from main branch!";
+=======
+const message = "Waddup from feature branch!";
+>>>>>>> feature-branch
+
+```
+Into *actual*, usable code, letting you get back to the important stuff. ✨
+
+### 🚀 Get Rizzin': Installation
+
+Ready to ditch the conflict drama? Let's get you set up. Head on over to the repository below for the source code, installation and configuration instructions:
+
+> [**ghuntley/rizzler**](https://github.com/ghuntley/rizzler?ref=ghuntley.com)
+>
+> Contribute to ghuntley/rizzler development by creating an account on GitHub.
+>
+> — GitHub
+
+### no cap, how does this work?
+
+The rizzler is a [low-level merge driver](https://git-scm.com/docs/merge-config?ref=ghuntley.com) that can be used as a command-line tool without Git and can be configured into Git itself as a resolver strategy. It queries the LLMs you have configured (there's a bundle of strategies within, and I'd [love for folks to send in more](https://github.com/ghuntley/rizzler/blob/trunk/CONTRIBUTING.md?ref=ghuntley.com#-where-we-really-need-your-help-resolution-strategies-))
+
+![](https://ghuntley.com/content/images/2025/04/Untitled-diagram-2025-04-23-115511.png)
+
+If a file hits eight merge conflicts and can't crack one, it'll tackle the rest and send an "oops" back to Git, halting the merge party. That's your cue to dust off your favourite editor and resolve that stubborn conflict manually—throwback style, like it's 2005. On the bright side, successful fixes get cached on disk, cutting down on LLM costs and giving you a productivity boost—no more twiddling thumbs waiting for the LLM to chime in!
+
+## ps. socials
+
+* LinkedIn: [https://www.linkedin.com/posts/geoffreyhuntley\_rizzler-stop-crying-over-git-merge-conflicts-activity-7320785714051170305-ugaV](https://www.linkedin.com/posts/geoffreyhuntley_rizzler-stop-crying-over-git-merge-conflicts-activity-7320785714051170305-ugaV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)
+* BlueSky: [https://bsky.app/profile/ghuntley.com/post/3lni5qdx3vk2u](https://bsky.app/profile/ghuntley.com/post/3lni5qdx3vk2u?ref=ghuntley.com)
+* X: [https://x.com/GeoffreyHuntley/status/1915030413082583227](https://x.com/GeoffreyHuntley/status/1915030413082583227?ref=ghuntley.com)
+
+> pps: [this is a joke](https://x.com/GeoffreyHuntley/status/1915042017710952545?ref=ghuntley.com). A thought experiment if you will. What if in the future git commits are automatically done by assistants and the commit message contains information that a client such as rizzler could use for injection into the context window? That starts make things interesting fast. Now we got yours and mine with full context and perhaps a way to traverse all the way back up to [JIRA via MCP](https://ghuntley.com/mcp) to determine intent…
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> rizzler slides into your Git workflow and uses ✨ AI magic ✨ to automatically resolve those annoying merge conflicts.
+
+*Context: Introducing the main functionality of rizzler as an AI-powered tool for resolving Git conflicts.*
+
+> It queries the LLMs you have configured to automatically resolve merge conflicts.
+
+*Context: Explaining how rizzler works by leveraging configured Large Language Models (LLMs) for conflict resolution.*
+
+> successful fixes get cached on disk, cutting down on LLM costs and giving you a productivity boost.
+
+*Context: Highlighting the efficiency and cost-effectiveness of using rizzler for merge conflict resolution.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/github-copilot]]
+- [[topics/openai-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 68% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: Automate the tasks you hate + “Anyone can cook”: How v0 is bringing Git workflows to vibe coding"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-automate-the-tasks-you-hate-anyone-ca-5e969a97"
+  >
+    Lenny Rachitsky · how-to · 65% similar
+  </Card>
+  <Card
+    title="if you are redlining the LLM, you aren't headlining"
+    icon="newspaper"
+    href="/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+  >
+    Geoffrey Huntley · explanation · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/rizzler/](https://ghuntley.com/rizzler/).
+</Note>

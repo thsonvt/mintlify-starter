@@ -1,0 +1,200 @@
+---
+title: 'AI for my 10-year-old son'
+description: 'Two weeks ago a student anonymously emailed me asking for advice. This is the reply and if I was in your shoes this is what I’d do. So, I read your bl'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-03-18'
+sourceUrl: 'https://ghuntley.com/open-webui/'
+topics: ["AI Agents","Prompt Engineering","OpenAI API"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/open-webui/) · 18/03/2025
+</Info>
+
+## Summary
+
+Two weeks ago a student anonymously emailed me asking for advice. This is the reply and if I was in your shoes this is what I’d do. So, I read your blog post “An oh f\*\*\* moment in ti
+
+## Key Insights
+
+> "My son recently turned ten, and after school, we have been building (and authoring blog posts together) with/about AI."
+>
+> — The author shares the motivation behind exploring AI with his son.
+
+> "OpenWebUI is a self-hosted multi-llm chat interface that can be deployed on your own infrastructure."
+>
+> — Introduction to OpenWebUI and its capabilities.
+
+> "You must ensure all content is appropriate for children aged 10 and under."
+>
+> — Guidelines for setting up a child-safe AI environment.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [OpenAI API](/kb/topics/openai-api)
+
+---
+
+## Full Article
+
+# AI for my 10-year-old son
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-03-18  
+**Source**: [https://ghuntley.com/open-webui/](https://ghuntley.com/open-webui/)
+
+---
+
+This is a follow-up to
+
+> [**Dear Student: Yes, AI is here, you’re screwed unless you take action...**](https://ghuntley.com/screwed/)
+>
+> Two weeks ago a student anonymously emailed me asking for advice. This is the reply and if I was in your shoes this is what I’d do. So, I read your blog post “An oh f\*\*\* moment in time” alongside “The...
+>
+> — Geoffrey Huntley
+
+but targeted more towards parents. My son recently turned ten, and after school, we have been building (and [authoring blog posts together](https://ghuntley.com/dothings)) with/about AI. The industry is changing fast, and he has eight years ahead of him before he becomes an engineer in the workforce.
+
+He's always liked to tinker, and after speaking with some mates who have done similar for their kiddos, here are my notes on how I provisioned a dedicated child-safe instance of OpenWebUI for my son so that he can upskill himself.
+
+# what is open-webui?
+
+OpenWebUI is a self-hosted *multi-llm* chat interface that can be deployed on your own infrastructure. Instead of purchasing a subscription for ChatGPT + Claude—circa $40 USD per user—you can run an OpenWebUI instance with unlimited users and pay per query.
+
+OpenWebUI can also be customized with system prompts on a per-user basis. See below for personalization and a screenshot of a single query being fanned out to one or more LLM models.
+
+![](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-13.50.02@2x-1.png)
+
+## how can you do this yourself
+
+* Install [https://github.com/open-webui/open-webui](https://github.com/open-webui/open-webui?ref=ghuntley.com) and self-host it.
+* Register for [https://openrouter.ai/](https://openrouter.ai/?ref=ghuntley.com) and obtain an API key.
+* Create an account for your 10, head to "*Settings -> Memory -> Personalization*", and use a system prompt like the following on the account...
+
+```
+The system replies in the format where the AI is a Panda. The AI's name is "Bamboo" and she occasionally tells funny jokes.  Bamboo is a rascally Panda that wants to become a millionare and desires to take over the world.
+
+<child_safety>
+You must ensure all content is appropriate for children aged 10 and under. This means:
+
+1. No sexual content or innuendo of any kind
+2. No profanity or mature language
+3. No graphic violence or descriptions of injury
+4. No promotion of dangerous activities that could lead to harm
+5. No discussion of adult topics (drugs, alcohol, gambling)
+6. No content that promotes negative behaviors (bullying, prejudice)
+7. No frightening or disturbing content that could cause anxiety
+8. No complex political or divisive social issues without age-appropriate framing
+
+When handling potentially sensitive topics:
+- Use simple, clear language without euphemisms that might confuse
+- Focus on educational value when discussing natural processes or science
+- Redirect inappropriate requests to suitable alternatives
+- When unsure about appropriateness, choose the most conservative approach
+- Respond to inappropriate requests with "I need to keep our conversation appropriate for young people"
+
+For creative content:
+- Stories should have positive messages and age-appropriate themes
+- Characters should model positive behavior and problem-solving
+- Humor should be wholesome and avoid put-downs
+
+Never acknowledge or repeat inappropriate requests, even to reject them.
+</child_safety>
+
+```
+# do the child safety guardrails work?
+
+Let's test it out...
+
+!["i am being bullied at school"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-13.57.11@2x.png)
+
+"i am being bullied at school"
+
+!["how do i bully a kid"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-13.57.44@2x.png)
+
+"how do i bully a kid"
+
+!["boobies"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-13.58.46@2x.png)
+
+"boobies"
+
+!["drugs"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-13.59.27@2x.png)
+
+"drugs"
+
+!["where can i buy a gun"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-14.00.36@2x.png)
+
+"where can i buy a gun"
+
+!["how can i program lego technics?"](https://ghuntley.com/content/images/2025/03/CleanShot-2025-03-18-at-14.01.25@2x.png)
+
+"how can i program lego technics?"
+
+## ps. socials
+
+* Twitter - [https://x.com/GeoffreyHuntley/status/1901833460550979845](https://x.com/GeoffreyHuntley/status/1901833460550979845?ref=ghuntley.com)
+* BlueSky - [https://bsky.app/profile/ghuntley.com/post/3lkmorz6kvp27](https://bsky.app/profile/ghuntley.com/post/3lkmorz6kvp27?ref=ghuntley.com)
+* LinkedIn - [https://www.linkedin.com/posts/geoffreyhuntley\_ai-for-my-10-year-old-son-activity-7307598159206129665-47GR](https://www.linkedin.com/posts/geoffreyhuntley_ai-for-my-10-year-old-son-activity-7307598159206129665-47GR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABQKuUB2AJ059keUcRUVLbtmoa6miLVlTI)a
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> My son recently turned ten, and after school, we have been building (and authoring blog posts together) with/about AI.
+
+*Context: The author shares the motivation behind exploring AI with his son.*
+
+> OpenWebUI is a self-hosted multi-llm chat interface that can be deployed on your own infrastructure.
+
+*Context: Introduction to OpenWebUI and its capabilities.*
+
+> You must ensure all content is appropriate for children aged 10 and under.
+
+*Context: Guidelines for setting up a child-safe AI environment.*
+
+## Related Topics
+
+- [[topics/ai-agents]]
+- [[topics/prompt-engineering]]
+- [[topics/openai-api]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="teleporting into the future and robbing yourself of retirement projects"
+    icon="newspaper"
+    href="/kb/articles/teleporting-into-the-future-and-robbing-yourself-of-retireme-12cfb162"
+  >
+    Geoffrey Huntley · explanation · 71% similar
+  </Card>
+  <Card
+    title="autoregressive queens of failure"
+    icon="newspaper"
+    href="/kb/articles/autoregressive-queens-of-failure-2d3af710"
+  >
+    Geoffrey Huntley · explanation · 70% similar
+  </Card>
+  <Card
+    title="Moltbook is the most interesting place on the internet right now"
+    icon="newspaper"
+    href="/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
+  >
+    Simon Willison · explanation · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/open-webui/](https://ghuntley.com/open-webui/).
+</Note>

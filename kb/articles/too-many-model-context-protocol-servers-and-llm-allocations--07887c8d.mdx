@@ -1,0 +1,147 @@
+---
+title: 'too many model context protocol servers and LLM allocations on the dance floor'
+description: 'Everyone at the event was buzzing about the glory and how amazing MCP is going to be, or is, but when I pushed folks for their understanding of fundam'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2025-08-22'
+sourceUrl: 'https://ghuntley.com/allocations/'
+topics: ["Visual Studio Code","Model Context Protocol","AI Bubble"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/allocations/) · 22/08/2025
+</Info>
+
+## Summary
+
+Everyone at the event was buzzing about the glory and how amazing MCP is going to be, or is, but when I pushed folks for their understanding of fundamentals, it was crickets. This blog post intends to be a definitive guide to context engineering fundamentals from the perspective of an engineer who builds commercial coding assistants and harnesses for a living.
+
+## Key Insights
+
+> "Everyone at the event was buzzing about the glory and how amazing MCP is going to be, or is, but when I pushed folks for their understanding of fundamentals, it was crickets."
+>
+> — The author's observation of the lack of fundamental understanding of MCP at a major event.
+
+> "Why would you need 128 tools or why would you want more than that? Why is Microsoft doing this or encouraging this bad practice?"
+>
+> — The author questioning the necessity and wisdom behind Microsoft's decision to remove the 128 tool limit in Visual Studio Code.
+
+> "Not to throw shade, it was a fantastic event, but holy shit! AI Bubble?"
+>
+> — Reflecting on the extravagance of the MCP event and questioning the sustainability of such AI hype.
+
+## Topics
+
+- [Visual Studio Code](/kb/topics/visual-studio-code)
+- [Model Context Protocol](/kb/topics/model-context-protocol)
+- [AI Bubble](/kb/topics/ai-bubble)
+
+---
+
+## Full Article
+
+```
+# too many model context protocol servers and LLM allocations on the dance floor
+```
+
+**Author**: Geoffrey Huntley  
+**Published**: 2025-08-22  
+**Source**: [https://ghuntley.com/allocations/](https://ghuntley.com/allocations/)
+
+---
+
+This blog post intends to be a definitive guide to context engineering fundamentals from the perspective of an engineer who builds commercial coding assistants and harnesses for a living.
+
+Just two weeks ago, I was back over in San Francisco, and there was a big event on Model Context Protocol Servers. MCP is all hype right now. Everyone at the event was buzzing about the glory and how amazing MCP is going to be, or is, but when I pushed folks for their understanding of fundamentals, it was crickets.
+
+```
+[▶ Watch video](https://storage.ghost.io/c/06/e5/06e5d12b-0328-469d-a0d0-3a0f0ba34c46/content/media/2025/08/iz9dtWmdjRcRObpi.mp4)
+```
+
+It was a big event. Over 1,300 engineers registered, and an entire hotel was rented out as the venue for the takeover. Based on my best estimate, at least $150,000 USD to $200,000 USD was spent on this event. The estimate was attained through a game of over and under with the front-of-house engineers. They brought in a line array, a GrandMA 3, and had full DMX lighting. As a bit of a lighting nerd myself, I couldn't help but geek out a little.
+
+![A GrandMA3 lighting controller is worth approximately $100,000.](https://ghuntley.com/content/images/2025/08/image-4.png)
+
+A GrandMA3 lighting controller is worth approximately $100,000.
+
+To clarify, this event was a **one-night meet-up, not a conference**. There was no registration fee; attendance was free, and the event featured an open bar, including full cocktail service at four bars within the venue, as well as an after-party with full catering and chessboards. While this post might seem harsh on the event, I enjoyed it. It was good.
+
+![Not to throw shade, it was a fantastic event, but holy shit! AI Bubble?](https://ghuntley.com/content/images/2025/08/Gy8frX3boAEWHis.jpg)
+
+Not to throw shade, it was a fantastic event, but holy shit! AI Bubble?
+
+The meetup even hired a bunch of beatboxers to close off the event, and they gave a live beatbox performance about Model Context Protocol...
+
+```
+[▶ Watch video](https://storage.ghost.io/c/06/e5/06e5d12b-0328-469d-a0d0-3a0f0ba34c46/content/media/2025/08/kKRlvX0mNCwzR36R.mp4)
+```
+
+One of the big announcements was the removal of the 128 tool limit from Visual Studio Code....
+
+Why Microsoft? It's not a good thing...
+
+Later that night, I was sitting by the bar catching up with one of the engineers from Cursor, and we were just scratching our heads,
+
+> "What the hell? Why would you need 128 tools or why would you want more than that? Why is Microsoft doing this or encouraging this bad practice?"
+
+For the record, Cursor caps the number of MCP tools that can be enabled in Cursor to just 40 tools, and it's for a good reason. What follows is a loose recap. This is knowledge that is known by people who build these coding harnesses, and I hope this knowledge spreads - there's one single truth:
+
+---
+
+## Key Takeaways
+
+### Notable Quotes
+
+> Everyone at the event was buzzing about the glory and how amazing MCP is going to be, or is, but when I pushed folks for their understanding of fundamentals, it was crickets.
+
+*Context: The author's observation of the lack of fundamental understanding of MCP at a major event.*
+
+> Why would you need 128 tools or why would you want more than that? Why is Microsoft doing this or encouraging this bad practice?
+
+*Context: The author questioning the necessity and wisdom behind Microsoft's decision to remove the 128 tool limit in Visual Studio Code.*
+
+> Not to throw shade, it was a fantastic event, but holy shit! AI Bubble?
+
+*Context: Reflecting on the extravagance of the MCP event and questioning the sustainability of such AI hype.*
+
+## Related Topics
+
+- [[topics/visual-studio-code]]
+- [[topics/model-context-protocol]]
+- [[topics/ai-bubble]]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="A Model Context Protocol Server (MCP) for Microsoft Paint"
+    icon="newspaper"
+    href="/kb/articles/a-model-context-protocol-server-mcp-for-microsoft-paint-c97a39e4"
+  >
+    Geoffrey Huntley · explanation · 77% similar
+  </Card>
+  <Card
+    title="if you are redlining the LLM, you aren't headlining"
+    icon="newspaper"
+    href="/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+  >
+    Geoffrey Huntley · explanation · 74% similar
+  </Card>
+  <Card
+    title="the six-month recap: closing talk on AI at Web Directions, Melbourne, June 2025"
+    icon="newspaper"
+    href="/kb/articles/the-six-month-recap-closing-talk-on-ai-at-web-directions-mel-eeeb2573"
+  >
+    Geoffrey Huntley · explanation · 72% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/allocations/](https://ghuntley.com/allocations/).
+</Note>
