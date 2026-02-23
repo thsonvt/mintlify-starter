@@ -1,0 +1,80 @@
+---
+title: 'How I think about Codex'
+description: 'Simon Willison discusses the concept of Codex, explaining its components and how it functions as OpenAI''s software engineering agent.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-22'
+sourceUrl: 'https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything'
+topics: ["openai","codex","ai-agents","software-engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) · 22/02/2026
+</Info>
+
+## Summary
+
+Simon Willison discusses the concept of Codex, explaining its components and how it functions as OpenAI's software engineering agent.
+
+## Key Insights
+
+> "Codex is OpenAI’s software engineering agent, available through multiple interfaces."
+>
+> — Introduction to Codex and its role in the OpenAI ecosystem.
+
+> "The harness, in turn, is shaped around how the model plans, invokes tools, and recovers from failure."
+>
+> — Explanation of the relationship between the Codex model and its harness.
+
+> "Codex models are trained in the presence of the harness."
+>
+> — Insight into the training process of Codex models.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [codex](/kb/topics/codex)
+- [ai-agents](/kb/topics/ai-agents)
+- [software-engineering](/kb/topics/software-engineering)
+
+---
+
+## Full Article
+
+22nd February 2026 - Link Blog How I think about Codex. Gabriel Chua (Developer Experience Engineer for APAC at OpenAI) provides his take on the confusing terminology behind the term "Codex", which can refer to a bunch of of different things within the OpenAI ecosystem: In plain terms, Codex is OpenAI’s software engineering agent, available through multiple interfaces, and an agent is a model plus instructions and tools, wrapped in a runtime that can execute tasks on your behalf. [...] At a high level, I see Codex as three parts working together: Codex = Model + Harness + Surfaces [...] Model + Harness = the Agent Surfaces = how you interact with the Agent He defines the harness as "the collection of instructions and tools", which is notably open source and lives in the openai/codex repository. Gabriel also provides the first acknowledgment I've seen from an OpenAI insider that the Codex model family are directly trained for the Codex harness: Codex models are trained in the presence of the harness. Tool use, execution loops, compaction, and iterative verification aren’t bolted on behaviors — they’re part of how the model learns to operate. The harness, in turn, is shaped around how the model plans, invokes tools, and recovers from failure.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 72% similar
+  </Card>
+  <Card
+    title="OpenAI Gave Us a Glimpse Into Their AI Coding Playbook"
+    icon="newspaper"
+    href="/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
+  >
+    Dan Shipper (Every) · explanation · 67% similar
+  </Card>
+  <Card
+    title="Introducing GPT‑5.3‑Codex‑Spark"
+    icon="newspaper"
+    href="/kb/articles/introducing-gpt53codexspark-a1ad656f"
+  >
+    Simon Willison · explanation · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything).
+</Note>

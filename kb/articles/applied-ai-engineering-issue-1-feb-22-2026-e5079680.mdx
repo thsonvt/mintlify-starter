@@ -1,0 +1,187 @@
+---
+title: 'Applied AI Engineering -  Issue #1 | Feb 22, 2026'
+description: 'Agent deployments are moving from prompt hacks toward engineered workflows with guardrails. * [Report this article](/uas/login?session_redirect=https%'
+icon: 'newspaper'
+author: 'Unmesh Gundecha'
+authorId: 'unmesh-gundecha'
+published: '2026-02-22'
+sourceUrl: 'https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/'
+topics: ["Agent-Native Architecture","Prompt Engineering","AI Agents"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Unmesh Gundecha](https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/) · 22/02/2026
+</Info>
+
+## Summary
+
+Agent deployments are moving from prompt hacks toward engineered workflows with guardrails. * [Report this article](/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fapplied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc&trk=article-ssr-frontend-pulse_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=PONCHO_ARTICLE&_f=guest-reporting)
+
+## Key Insights
+
+> "Agent deployments are moving from prompt hacks toward engineered workflows with guardrails."
+>
+> — Discussing the evolution of AI agent deployments in production environments.
+
+> "Reliable agent integration requires engineered scaffolding — a true “harness” — not just putting an LLM in front of a codebase."
+>
+> — Emphasizing the importance of structured engineering in AI agent deployment.
+
+> "Skills are structured folders of instructions that extend agent capabilities with domain-specific knowledge."
+>
+> — Explaining how skills enhance AI agents by providing them with specialized knowledge.
+
+## Topics
+
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [AI Agents](/kb/topics/ai-agents)
+
+---
+
+## Full Article
+
+![Applied AI Engineering - Issue #1 | Feb 22, 2026](https://media.licdn.com/dms/image/v2/D5612AQFozPRYuq76Rw/article-cover_image-shrink_720_1280/B56ZyDi3Q6GwAI-/0/1771733481474?e=2147483647&v=beta&t=_GVErdJ_dPpvf6y79PBHzsaf-ShLtUsFlEl4caHMBuo)
+
+ 
+
+```
+# Applied AI Engineering - Issue #1 | Feb 22, 2026
+
+* [Report this article](/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fapplied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc&trk=article-ssr-frontend-pulse_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=PONCHO_ARTICLE&_f=guest-reporting)
+
+[Unmesh Gundecha](https://sg.linkedin.com/in/upgundecha)
+![Unmesh Gundecha]()
+```
+
+### Unmesh Gundecha
+
+Published Feb 22, 2026
+
+```
+[+ Follow](https://www.linkedin.com/signup/cold-join?session_redirect=%2Fpulse%2Fapplied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc%2F&trk=article-ssr-frontend-pulse_publisher-author-card)
+```
+
+I’m excited to launch Applied AI Engineering — a weekly newsletter focused on the practical side of building AI systems that actually run in production.
+
+Each issue will break down real-world architectures, agent workflows, tooling patterns, evaluation strategies, and governance models that engineering teams are using today. You’ll also find curated learning resources, short courses worth your time, and interesting GitHub repositories shaping the agent, RAG, and AI tooling ecosystem.
+
+If you're an engineering leader, architect, or senior developer working to operationalize AI at scale, expect concise insights, practical takeaways, and signal over hype.
+
+## This Week's Signal
+
+Agent deployments are moving from prompt hacks toward engineered workflows with guardrails, tooling contracts, and execution engines that deliver reliable outcomes. Recent examples show that the real technical challenge isn’t LLMs — it’s agent infrastructure.
+
+## Stripe’s “Minions” Update
+
+Stripe’s internal unattended agents (“Minions”) are now reported to be responsible for 1,000+ merged pull requests per week — fully AI-generated and human-reviewed at the end of the pipeline.
+
+Key takeaways:
+
+```
+* Blueprints: Workflow definitions in code that orchestrate runs end-to-end.
+* Deterministic context prefetch & tools: Agents use a curated subset of internal tools via Stripe’s Model Context Protocol (MCP), avoiding token overload and keeping context sharp.
+* Sandboxed dev environments: Each agent runs in isolated virtual dev boxes pre-warmed with the company’s actual environment and test suite.
+* Hybrid guardrails: Hardcoded validation steps (linters, CI/test runs) are enforced between generative steps, so quality isn’t purely emergent.
+```
+
+This reinforces a trend: Reliable agent integration requires engineered scaffolding — a true “harness” — not just putting an LLM in front of a codebase. Independent analyses emphasize this multi-layered engineering around the LLM as the real differentiator.
+
+Read more about Minions in [Minions: Stripe’s one-shot, end-to-end coding agents](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents?trk=article-ssr-frontend-pulse_little-text-block) and [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2?trk=article-ssr-frontend-pulse_little-text-block)
+
+## Reinforcing the Technical Playbook: OpenAI Skills + Execution
+
+OpenAI’s latest guide on skills, shells, and context compaction outlines the building blocks of repeatable agent workflows:
+
+```
+* Skills: reusable instruction sets with success criteria.
+* Shell: a real execution environment (local/remote) instead of just text.
+* Compaction: keeping the growing context manageable over long tasks.
+```
+
+This directly aligns with what Stripe implicitly built — enforce deterministic validation systems around generative steps so outputs aren’t brittle or unreviewable.
+
+Read more about these tips in [Shell + Skills + Compaction: Tips for long-running agents that do real work](https://developers.openai.com/blog/skills-shell-tips?trk=article-ssr-frontend-pulse_little-text-block)
+
+## 📚 Learning Spotlight: Agent Skills
+
+If you're serious about building reliable agent workflows, this short course on Agent Skills — offered by DeepLearning.AI and Anthropic and taught by Elie Schoppik — is worth your time.
+
+### What You’ll Learn
+
+```
+* How to create reusable skills using an open standard format and best practices — and compose them into complex, multi-step workflows.
+* How to build custom skills for code generation and review, data analysis, and research — loaded on-demand by your agent instead of bloating prompts.
+* How to combine skills with MCP and subagents to design powerful agentic systems with specialized knowledge and secure access to external data sources.
+```
+
+### Why This Matters
+
+Skills are structured folders of instructions that extend agent capabilities with domain-specific knowledge. Instead of repeatedly prompting the same workflow, you package it once as a skill — and your agent automatically knows how and when to use it.
+
+Because skills follow an open standard, you can build them once and deploy them across any compatible agent environment.
+
+For engineering teams, this is a shift from prompt experimentation to modular, reusable, production-ready agent design.
+
+```
+[The Complete Guide to Building Skill for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?trk=article-ssr-frontend-pulse_little-text-block) is another excellent resource from Anthropic that walks through how to design effective skills for agents.
+```
+
+You can also explore practical examples and pre-built skills in my GitHub Stars list under [Agent Skills,](https://github.com/stars/upgundecha/lists/agent-skills?trk=article-ssr-frontend-pulse_little-text-block) where I’ve curated repositories showcasing real-world implementations and practical use cases of agent skills.
+
+## This Week's Notable Repos
+
+### 📌 ArsContexta — Persistent Knowledge for Agents
+
+A plugin supporting long-term, organized agent memory via markdown + navigable documents. This tackles one of the biggest structural challenges in agent design: context management and persistence.
+
+```
+Link: [https://github.com/agenticnotetaking/arscontexta](https://github.com/agenticnotetaking/arscontexta?trk=article-ssr-frontend-pulse_little-text-block)
+```
+
+### ⚡ Alibaba Zvec — Embedded Vector Store
+
+This week, Alibaba open-sourced Zvec, an in-process vector database for semantic search and retrieval workloads. Useful for RAG and embedding workflows where low latency and simplicity matter.
+
+```
+Link: [https://github.com/alibaba/zvec](https://github.com/alibaba/zvec?trk=article-ssr-frontend-pulse_little-text-block)
+```
+
+If this issue helped you think about where real productivity gains are coming from in AI for software engineering — workflows over chat — connect with me on LinkedIn and share what you’re building!
+
+#AIEngineering #PlatformEngineering #Agents #MCP #DeveloperProductivity #AutonomousWorkflows
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] OpenAI and Anthropic go to war: Claude Opus 4.6 vs GPT 5.3 Codex"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+  <Card
+    title="Equipping agents for the real world with Agent Skills"
+    icon="newspaper"
+    href="/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+  >
+    Anthropic Engineering · explanation · 76% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/](https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/).
+</Note>

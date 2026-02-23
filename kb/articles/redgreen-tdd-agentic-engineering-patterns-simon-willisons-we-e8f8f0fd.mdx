@@ -1,0 +1,79 @@
+---
+title: 'Red/green TDD - Agentic Engineering Patterns - Simon Willison''s Weblog'
+description: 'The article discusses the benefits of red/green Test Driven Development (TDD) for coding agents, emphasizing the importance of writing tests first to '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-23'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything'
+topics: ["test-driven-development","coding-agents","software-engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything) · 23/02/2026
+</Info>
+
+## Summary
+
+The article discusses the benefits of red/green Test Driven Development (TDD) for coding agents, emphasizing the importance of writing tests first to ensure code quality.
+
+## Key Insights
+
+> "Test-first development helps protect against both of these common mistakes."
+>
+> — Discussing the advantages of TDD in preventing coding errors.
+
+> "That's what 'red/green' means: the red phase watches the tests fail, then the green phase confirms that they now pass."
+>
+> — Explaining the concept of red/green TDD.
+
+> "A comprehensive test suite is by far the most effective way to keep those features working."
+>
+> — Highlighting the importance of a robust test suite in software development.
+
+## Topics
+
+- [test-driven-development](/kb/topics/test-driven-development)
+- [coding-agents](/kb/topics/coding-agents)
+- [software-engineering](/kb/topics/software-engineering)
+
+---
+
+## Full Article
+
+"Use red/green TDD" is a pleasingly succinct way to get better results out of a coding agent. TDD stands for Test Driven Development. It's a programming style where you ensure every piece of code you write is accompanied by automated tests that demonstrate the code works. The most disciplined form of TDD is test-first development. You write the automated tests first, confirm that they fail, then iterate on the implementation until the tests pass. This turns out to be a fantastic fit for coding agents. A significant risk with coding agents is that they might write code that doesn't work, or build code that is unnecessary and never gets used, or both. Test-first development helps protect against both of these common mistakes, and also ensures a robust automated test suite that protects against future regressions. As projects grow the chance that a new change might break an existing feature grows with them. A comprehensive test suite is by far the most effective way to keep those features working. It's important to confirm that the tests fail before implementing the code to make them pass. If you skip that step you risk building a test that passes already, hence failing to exercise and confirm your new implementation. That's what "red/green" means: the red phase watches the tests fail, then the green phase confirms that they now pass. Every good model understands "red/green TDD" as a shorthand for the much longer "use test driven development, write the tests first, confirm that the tests fail before you implement the change that gets them to pass". Example prompt: Build a Python function to extract headers from a markdown string. Use red/green TDD. Here's what I got from Claude and from ChatGPT. Normally I would use a coding agent like Claude Code or OpenAI Codex, but this example is simple enough that both Claude and ChatGPT can implement it using their default code environments. I did have to append "Use your code environment" to the ChatGPT prompt, without that it wrote the code without actually executing it.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Engineering"
+    icon="newspaper"
+    href="/kb/articles/engineering-a07c05eb"
+  >
+    Anthropic Engineering · explanation · 53% similar
+  </Card>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 53% similar
+  </Card>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 52% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything).
+</Note>

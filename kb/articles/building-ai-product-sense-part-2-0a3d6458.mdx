@@ -7,7 +7,7 @@ authorId: 'lenny-rachitsky'
 published: '2026-02-10'
 sourceUrl: 'https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2'
 topics: ["Prompt Engineering","AI Agents","Product Management"]
-diataxisType: 'explanation'
+diataxisType: 'tutorial'
 ---
 
 <Info>
@@ -22,15 +22,15 @@ AI product sense—understanding what a model can do and where it fails, and wor
 
 > "AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management."
 >
-> — Highlighting the importance of AI product sense in modern product management.
+> — Introducing the concept of AI product sense as a crucial skill in product management.
 
-> "the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience."
+> "The uncomfortable truth is that the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience."
 >
-> — Discussing the challenges of AI product development in real-world scenarios.
+> — Highlighting the challenges in AI product development when faced with real-world user interactions.
 
-> "I stop being surprised by model behavior, because I’ve already experienced the weird cases myself."
+> "It’s not a theory or a framework but, rather, important practice that gives you early feedback on model behavior, failure modes, and tradeoffs."
 >
-> — The author shares personal benefits from practicing AI product sense rituals.
+> — Emphasizing the practical nature of building AI product sense beyond theoretical knowledge.
 
 ## Topics
 
@@ -41,16 +41,6 @@ AI product sense—understanding what a model can do and where it fails, and wor
 ---
 
 ## Full Article
-
-```
-# Building AI product sense, part 2
-```
-
-**Author**: Lenny Rachitsky  
-**Published**: 2026-02-10  
-**Source**: [https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2](https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2)
-
----
 
 *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: [Lenny’s Podcast](https://www.lennysnewsletter.com/podcast) | [How I AI](https://www.youtube.com/@howiaipodcast) | [Lennybot](https://www.lennybot.com/) | My favorite [AI/PM courses](https://maven.com/lenny), [public speaking course](https://ultraspeaking.com/lennyslist?via=lenny), and [interview prep copilot](https://www.benerez.com/copilot/lenny).*
 
@@ -368,140 +358,8 @@ That single constraint eliminated the biggest trust issue almost immediately.
 ## **What good guardrails look like in practice**
 
 ```
-[![](https://substackcdn.com/image/fetch/$s_!9tUb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e2e7eb9-71ad-4696-a396-9d5e19d39df7_1456x965.png)](https://substackcdn.com/image/fetch/$s_!9tUb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e2e7eb9-71ad-4696-a396-9d5e19d39df7_1456x965.png)
+[Read more](https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2)
 ```
-
-None of these makes the model more “intelligent.” Good guardrails simply protect the user from the model’s shortcomings and prevent misunderstandings.
-
-You decide in advance how the system should slow down, ask for help, narrow scope, or say “I don’t know.” That’s how AI products fail gracefully instead of catastrophically.
-
-### **Ritual 4: Add explicit failure responses in the system prompt (3 min.)**
-
-In the first section, you surfaced *where* the system breaks. Now you’ll decide what the product should do *when* it breaks.
-
-```
-* Take a real, messy input—a meeting transcript, a Slack thread, a support log—and feed it into the same AI chat multiple times. Ask the same question each time, for example:
-```
-
- + *“What were the top 5 decisions?”*
-```
-* Then compare the answers side by side. Look for:
-```
-
- + *Did it pick different “decisions” each time?*
- + *Did it invent decisions that weren’t in the text?*
- + *Did it miss the same important decision repeatedly?*
-```
-* Mark what changed (and why it matters) and ask yourself:
-```
-
- + If a user saw the worst version of these 10 outputs, would they still trust the product?
-```
-* Add one guardrail based on what you saw:
-
-[![](https://substackcdn.com/image/fetch/$s_!ZD6u!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F053acaeb-c35f-45c6-a9e8-04f4b27a45f0_1456x1007.png)](https://substackcdn.com/image/fetch/$s_!ZD6u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F053acaeb-c35f-45c6-a9e8-04f4b27a45f0_1456x1007.png)
-```
-
-### **Four patterns that cover most real-world cases**
-
-#### **1. When the model seems unsure → ask instead of guessing**
-
-In practice, this usually means adding an explicit instruction to the system or task prompt, for example:
-
-> “If you’re not confident, ask a clarifying question instead of making assumptions.”
-
-Small questions go a long way:
-
-```
-* “Do you want a summary or the key decisions?”
-* “Should I focus on onboarding or payments?”
-```
-
-These checks often prevent much bigger mistakes downstream.
-
-#### **2. When the context is too long → give the user a choice**
-
-Instead of letting the model silently drop information:
-
-> “This thread is long—should I focus on the first half, second half, or just action items?”
-
-This is fast, honest, and avoids hallucinations.
-
-#### **3. When the model invents structure → say so**
-
-If the input has no decisions, owners, or clear outcomes:
-
-> “I didn’t see any decisions here—would you like themes instead?”
-
-Transparency builds trust.
-
-#### **4. When outputs bounce around → add light structure**
-
-If the same request produces wildly different answers, steady it with a simple format:
-
-> “List: what was discussed, what was decided, what needs follow-up.”
-
-This reduces variance without making the product rigid.
-
-So during a recent product review, when I was asked to “fix the model,” I instead decided what the product did **when the model hit its limits**.
-
-## **Great AI product sense means reliable user experiences**
-
-AI product sense is a muscle that is built through repetition, by seeing real outputs, catching real failure modes, and making real product decisions under uncertainty.
-
-One thing that surprised me: I recently asked my AI PM bootcamp students (and a few PM peers) what “AI product sense” meant to them, and I got very different answers.
-
-Some described it as model knowledge. 
-Others as evaluation. 
-Others as prompting. 
-Others as safety. 
-Others as cost and unit economics.
-
-We’re in the early phase of a new PM skill becoming mainstream, and the industry is still converging on what “great” looks like. But after shipping, coaching, and watching AI products break in production, I’ve found the practical definition is much simpler. AI product sense is the ability to translate probabilistic model behavior into a product experience people can rely on. And that’s what this guide is really about—building the instinct to spot where a model will guess instead of ask, define a quality bar before launch (including cost), and design guardrails so failures are predictable and recoverable. 
- 
-Run these rituals once a week, and AI product sense stops being abstract. You’ll stop being surprised by weird outputs as you design clearer asks, tighter constraints, and better fallbacks—because you know where things will break. In 2026, the differentiator will be PMs who can ship products that still feel trustworthy despite messy inputs, unclear intent, and zero patience.
-
-*Thanks, Marily!*
-
-*For more from [Marily](https://www.linkedin.com/in/marilynika/), check out her **[AI Product Management Bootcamp & Certification](https://bit.ly/49I8XrK)** course **(**which is also available for private corporate sessions) and her recently launched **[AI Product Sense and AI PM Interview prep](https://bit.ly/4sufHkw)** course (both courses are 15% off using these links). You can also watch her **[free Lightning Lesson](https://maven.com/p/2a459c/thriving-as-a-senior-ic-pm-in-the-ai-era)** on how to excel as a senior IC PM in the AI era, and subscribe to [her newsletter](https://marily.substack.com/).*
-
-*Have a fulfilling and productive week 🙏*
-
----
-
-**If you’re finding this newsletter valuable, share it with a friend, and consider subscribing if you haven’t already. There are [group discounts](https://www.lennysnewsletter.com/subscribe?group=true), [gift options](https://www.lennysnewsletter.com/subscribe?gift=true), and [referral bonuses](https://www.lennysnewsletter.com/leaderboard) available.**
-
-```
-[Subscribe now](https://www.lennysnewsletter.com/subscribe?)
-```
-
-Sincerely,
-
-Lenny 👋
-
----
-
-## Key Takeaways
-
-### Notable Quotes
-
-> AI product sense—understanding what a model can do and where it fails, and working within those constraints to build a product that people love—is becoming the new core skill of product management.
-
-*Context: Highlighting the importance of AI product sense in modern product management.*
-
-> the hardest part of AI product development comes when real users arrive with messy inputs, unclear intent, and zero patience.
-
-*Context: Discussing the challenges of AI product development in real-world scenarios.*
-
-> I stop being surprised by model behavior, because I’ve already experienced the weird cases myself.
-
-*Context: The author shares personal benefits from practicing AI product sense rituals.*
-
-## Related Topics
-
-- [[topics/prompt-engineering]]
-- [[topics/ai-agents]]
-- [[topics/product-management]]
 
 ---
 
@@ -509,25 +367,25 @@ Lenny 👋
 
 <CardGroup cols={1}>
   <Card
-    title="Building AI product sense, part 2"
-    icon="newspaper"
-    href="/kb/articles/building-ai-product-sense-part-2-35ea6c02"
-  >
-    Lenny Rachitsky · explanation · 77% similar
-  </Card>
-  <Card
     title="How to do AI analysis you can actually trust"
     icon="newspaper"
     href="/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-5062827b"
   >
-    Lenny Rachitsky · how-to · 77% similar
+    Lenny Rachitsky · how-to · 78% similar
   </Card>
   <Card
-    title="How to do AI analysis you can actually trust"
+    title="Building AI product sense, part 2"
     icon="newspaper"
-    href="/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d"
+    href="/kb/articles/building-ai-product-sense-part-2-35ea6c02"
   >
-    Lenny Rachitsky · how-to · 67% similar
+    Lenny Rachitsky · explanation · 75% similar
+  </Card>
+  <Card
+    title="Experts Have World Models. LLMs Have Word Models."
+    icon="newspaper"
+    href="/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+  >
+    Swyx · explanation · 67% similar
   </Card>
 </CardGroup>
 

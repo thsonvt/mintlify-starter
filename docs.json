@@ -484,6 +484,10 @@
       "destination": "/kb/articles/grounding-ideas-in-writing-fad3e6d4"
     },
     {
+      "source": "/kb/articles/latent-patterns-1ea8a792",
+      "destination": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-1ea8a792"
+    },
+    {
       "source": "/kb/articles/latent-patterns-4888384c",
       "destination": "/kb/articles/patterns-pi-the-architecture-of-an-ai-coding-agent-4888384c"
     },
@@ -492,8 +496,20 @@
       "destination": "/kb/articles/blog-introducing-the-latent-patterns-blog-4ba96001"
     },
     {
+      "source": "/kb/articles/latent-patterns-6cf25cb5",
+      "destination": "/kb/articles/blog-introducing-the-latent-patterns-blog-6cf25cb5"
+    },
+    {
+      "source": "/kb/articles/latent-patterns-9fbec750",
+      "destination": "/kb/articles/patterns-pi-the-architecture-of-an-ai-coding-agent-9fbec750"
+    },
+    {
       "source": "/kb/articles/latent-patterns-bc799cfd",
       "destination": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-bc799cfd"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-020958e5",
+      "destination": "/kb/articles/how-this-pm-uses-mcps-to-automate-his-meeting-prep-crm-updat-020958e5"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-0a3d6458",
@@ -502,6 +518,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-160e48b9",
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-1dc19b83",
+      "destination": "/kb/articles/how-to-build-ai-product-sense-1dc19b83"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-2afb2858",
@@ -584,8 +604,16 @@
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
     {
+      "source": "/kb/articles/simon-willison-0fa21631",
+      "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
+    },
+    {
       "source": "/kb/articles/simon-willison-192d4e92",
       "destination": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1f635a54",
+      "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
     {
       "source": "/kb/articles/simon-willison-2d77e434",
@@ -716,6 +744,10 @@
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
     {
+      "source": "/kb/articles/simon-willison-c77aff7b",
+      "destination": "/kb/articles/how-i-think-about-codex-c77aff7b"
+    },
+    {
       "source": "/kb/articles/simon-willison-cffdf1dd",
       "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
     },
@@ -730,6 +762,10 @@
     {
       "source": "/kb/articles/simon-willison-da1b9f87",
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e8f8f0fd",
+      "destination": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd"
     },
     {
       "source": "/kb/articles/simon-willison-ea3d9c15",
@@ -858,6 +894,10 @@
     {
       "source": "/kb/articles/swyx-f9aa6dd4",
       "destination": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
+    },
+    {
+      "source": "/kb/articles/unmesh-gundecha-e5079680",
+      "destination": "/kb/articles/applied-ai-engineering-issue-1-feb-22-2026-e5079680"
     }
   ]
 }
