@@ -1,0 +1,79 @@
+---
+title: 'Writing code is cheap now - Agentic Engineering Patterns - Simon Willison''s Weblog'
+description: 'The article discusses the implications of cheap code production on engineering practices, emphasizing the need for new habits to ensure code quality a'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-23'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything'
+topics: ["agentic-engineering","software-development","code-quality"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything) · 23/02/2026
+</Info>
+
+## Summary
+
+The article discusses the implications of cheap code production on engineering practices, emphasizing the need for new habits to ensure code quality amidst evolving tools.
+
+## Key Insights
+
+> "Delivering new code has dropped in price to almost free... but delivering good code remains significantly more expensive than that."
+>
+> — Discussing the contrast between the cost of producing code and the quality of that code.
+
+> "We need to build new habits."
+>
+> — Highlighting the necessity for adapting to new engineering practices in light of agentic tools.
+
+> "Any time our instinct says 'don't build that, it's not worth the time' fire off a prompt anyway."
+>
+> — Encouraging proactive experimentation with new coding practices despite initial hesitations.
+
+## Topics
+
+- [agentic-engineering](/kb/topics/agentic-engineering)
+- [software-development](/kb/topics/software-development)
+- [code-quality](/kb/topics/code-quality)
+
+---
+
+## Full Article
+
+The biggest challenge in adopting agentic engineering practices is getting comfortable with the consequences of the fact that writing code is cheap now. Code has always been expensive. Producing a few hundred lines of clean, tested code takes most software developers a full day or more. Many of our engineering habits, at both the macro and micro level, are built around this core constraint. At the macro level we spend a great deal of time designing, estimating and planning out projects, to ensure that our expensive coding time is spent as efficiently as possible. Product feature ideas are evaluated in terms of how much value they can provide in exchange for that time - a feature needs to earn its development costs many times over to be worthwhile! At the micro level we make hundreds of decisions a day predicated on available time and anticipated tradeoffs. Should I refactor that function to be slightly more elegant if it adds an extra hour of coding time? How about writing documentation? Is it worth adding a test for this edge case? Can I justify building a debug interface for this? Coding agents dramatically drop the cost of typing code into the computer, which disrupts so many of our existing personal and organizational intuitions about which trade-offs make sense. The ability to run parallel agents makes this even harder to evaluate, since one human engineer can now be implementing, refactoring, testing and documenting code in multiple places at the same time. Good code still has a cost Delivering new code has dropped in price to almost free... but delivering good code remains significantly more expensive than that. Here's what I mean by "good code": The code works. It does what it's meant to do, without bugs. We know the code works. We've taken steps to confirm to ourselves and to others that the code is fit for purpose. It solves the right problem. It handles error cases gracefully and predictably: it doesn't just consider the happy path. Errors should provide enough information to help future maintainers understand what went wrong. It’s simple and minimal - it does only what’s needed, in a way that both humans and machines can understand now and maintain in the future. It's protected by tests. The tests show that it works now and act as a regression suite to avoid it quietly breaking in the future. It's documented at an appropriate level, and that documentation reflects the current state of the system - if the code changes an existing behavior the existing documentation needs to be updated to match. The design affords future changes. It's important to maintain YAGNI - code with added complexity to anticipate future changes that may never come is often bad code - but it's also important not to write code that makes future changes much harder than they should be. All of the other relevant "ilities" - accessibility, testability, reliability, security, maintainability, observability, scalability, usability - the non-functional quality measures that are appropriate for the particular class of software being developed. Coding agent tools can help with most of this, but there is still a substantial burden on the developer driving those tools to ensure that the produced code is good code for the subset of good that's needed for the current project. We need to build new habits The challenge is to develop new personal and organizational habits that respond to the affordances and opportunities of agentic engineering. These best practices are still being figured out across our industry. I'm still figuring them out myself. For now I think the best we can do is to second guess ourselves: any time our instinct says "don't build that, it's not worth the time" fire off a prompt anyway, in an asynchronous agent session where the worst that can happen is you check ten minutes later and find that it wasn't worth the tokens.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Writing about Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+  <Card
+    title="Teach Your AI to Think Like a Senior Engineer"
+    icon="newspaper"
+    href="/kb/articles/teach-your-ai-to-think-like-a-senior-engineer-150690ee"
+  >
+    Dan Shipper (Every) · tutorial · 66% similar
+  </Card>
+  <Card
+    title="Compound Engineering: How Every Codes With Agents"
+    icon="newspaper"
+    href="/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849"
+  >
+    Dan Shipper (Every) · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything).
+</Note>

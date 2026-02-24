@@ -1,0 +1,303 @@
+---
+title: 'I''m Boris and I created Claude Code. I wanted to quickly share a few tips for using…'
+description: 'Original thread: https://x.com/bcherny/status/2017742741636321619'
+icon: 'newspaper'
+author: 'Boris Cherny'
+authorId: 'bcherny'
+published: '2026-01-31'
+sourceUrl: 'https://x.com/bcherny/status/2017742741636321619'
+topics: []
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Boris Cherny](https://x.com/bcherny/status/2017742741636321619) · 31/01/2026
+</Info>
+
+## Summary
+
+Original thread: https://x.com/bcherny/status/2017742741636321619
+
+---
+
+## Full Article
+
+Original thread: https://x.com/bcherny/status/2017742741636321619
+
+Author handle: @bcherny
+Posts captured: 19
+
+## Thread Transcript
+
+### Post 1 (root)
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742741636321619
+```
+
+I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using Claude Code, sourced directly from the Claude Code team. The way the team uses Claude is different than how I use it. Remember: there is no one right way to use Claude Code -- everyones' setup is different. You should experiment to see what works for you!
+
+### Post 2
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742743125299476
+```
+
+1. Do more in parallel
+
+Spin up 3–5 git worktrees at once, each running its own Claude session in parallel. It's the single biggest productivity unlock, and the top tip from the team. Personally, I use multiple git checkouts, but most of the Claude Code team prefers worktrees --
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HABmmP6bwAAWgUM?format=jpg&name=small
+
+### Post 3
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742745365057733
+```
+
+2. Start every complex task in plan mode. Pour your energy into the plan so Claude can 1-shot the implementation.
+
+One person has one Claude write the plan, then they spin up a second Claude to review it as a staff engineer. 
+
+Another says the moment something goes sideways, they
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HABm-MtbEAAMlsS?format=png&name=small
+
+### Post 4
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742747067945390
+```
+
+3. Invest in your
+```
+http://
+https://t.co/v4FOLUBHz9
+```
+. After every correction, end with: "Update your
+```
+http://
+https://t.co/v4FOLUBHz9
+```
+so you don't make that mistake again." Claude is eerily good at writing rules for itself.
+
+Ruthlessly edit your
+```
+http://
+https://t.co/v4FOLUBHz9
+```
+over time. Keep iterating
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HABoHn9bQAAE-S1?format=png&name=small
+
+### Post 5
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742748984742078
+```
+
+4. Create your own skills and commit them to git. Reuse across every project.
+
+Tips from the team:
+- If you do something more than once a day, turn it into a skill or command
+- Build a /techdebt slash command and run it at the end of every session to find and kill duplicated code
+
+### Post 6
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742750473720121
+```
+
+5. Claude fixes most bugs by itself. Here's how we do it:
+
+Enable the Slack MCP, then paste a Slack bug thread into Claude and just say "fix." Zero context switching required.
+
+Or, just say "Go fix the failing CI tests." Don't micromanage how.
+
+Point Claude at docker logs to
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HABy6cObEAQ4Rep?format=png&name=small
+
+### Post 7
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742752566632544
+```
+
+6. Level up your prompting
+
+a. Challenge Claude. Say "Grill me on these changes and don't make a PR until I pass your test." Make Claude be your reviewer.  Or, say "Prove to me this works" and have Claude diff behavior between main and your feature branch
+
+b. After a mediocre
+
+### Post 8
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742753971769626
+```
+
+7. Terminal & Environment Setup
+
+The team loves Ghostty! Multiple people like its synchronized rendering, 24-bit color, and proper unicode support.
+
+For easier Claude-juggling, use /statusline to customize your status bar to always show context usage and current git branch. Many
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HABpv-MbEAAIskz?format=jpg&name=small
+
+### Post 9
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742755737555434
+```
+
+8. Use subagents
+
+a. Append "use subagents" to any request where you want Claude to throw more compute at the problem
+
+b. Offload individual tasks to subagents to keep your main agent's context window clean and focused
+
+c. Route permission requests to Opus 4.5 via a hook — let it
+
+```
+Media:
+```
+- https://pbs.twimg.com/media/HAB0KLmbEAEfDJ6?format=png&name=small
+
+### Post 10
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742757666902374
+```
+
+9. Use Claude for data & analytics
+
+Ask Claude Code to use the "bq" CLI to pull and analyze metrics on the fly. We have a BigQuery skill checked into the codebase, and everyone on the team uses it for anlytics queries directly in Claude Code. Personally, I haven't written a line
+
+### Post 11
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742759218794768
+```
+
+10. Learning with Claude
+
+A few tips from the team to use Claude Code for learning:
+
+a. Enable the "Explanatory" or "Learning" output style in /config to have Claude explain the *why* behind its changes
+
+b. Have Claude generate a visual HTML presentation explaining unfamiliar
+
+### Post 12
+```
+Date: 2026-01-31 23:32 UTC
+Permalink: https://x.com/bcherny/status/2017742760435233200
+```
+
+Hope these tips are helpful! What do you want to hear about next?
+
+### Post 13
+```
+Date: 2026-02-01 00:34 UTC
+Permalink: https://x.com/bcherny/status/2017758345533530485
+```
+
+Run /permissions to pre-allow permissions. Actively working on improving this.
+
+### Post 14
+```
+Date: 2026-02-01 00:34 UTC
+Permalink: https://x.com/bcherny/status/2017758409576353876
+```
+
+Agree, Chrome MCP is a game changer
+
+### Post 15
+```
+Date: 2026-02-01 00:34 UTC
+Permalink: https://x.com/bcherny/status/2017758499682586711
+```
+
+A little easier to reason about, less cd'ing. I'm in the minority!
+
+### Post 16
+```
+Date: 2026-02-01 00:35 UTC
+Permalink: https://x.com/bcherny/status/2017758585418355101
+```
+
+Cool idea!
+
+### Post 17
+```
+Date: 2026-02-01 03:29 UTC
+Permalink: https://x.com/bcherny/status/2017802476238606530
+```
+
+I created it, and now it is very much a team effort. Name a feature, and I can point to the person that dreamed it up & built it
+
+### Post 18
+```
+Date: 2026-02-01 03:33 UTC
+Permalink: https://x.com/bcherny/status/2017803393541279847
+```
+
+Make sure that Claude explores the codebase to find reusable functions as part of its plan. Also check for duplication in code review (we do this using claude -p in CI)
+
+### Post 19
+```
+Date: 2026-02-01 04:59 UTC
+Permalink: https://x.com/bcherny/status/2017825209290788942
+```
+
+Probably
+@The_Whole_Daisy
+’s swarms
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Claude Code overview"
+    icon="newspaper"
+    href="/kb/articles/claude-code-overview-64f2e1e0"
+  >
+    Anthropic Engineering · reference · 77% similar
+  </Card>
+  <Card
+    title="Claude Code: The Most Common Questions Beginners Ask"
+    icon="newspaper"
+    href="/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
+  >
+    Dan Shipper (Every) · explanation · 77% similar
+  </Card>
+  <Card
+    title="How I Use Claude Code to Ship Like a Team of Five"
+    icon="newspaper"
+    href="/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
+  >
+    Dan Shipper (Every) · explanation · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://x.com/bcherny/status/2017742741636321619](https://x.com/bcherny/status/2017742741636321619).
+</Note>

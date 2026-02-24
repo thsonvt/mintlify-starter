@@ -196,6 +196,10 @@
       "destination": "/kb/articles/code-execution-with-mcp-building-more-efficient-agents-fe659629"
     },
     {
+      "source": "/kb/articles/bcherny-51f5b43b",
+      "destination": "/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-118be905",
       "destination": "/kb/articles/stop-coding-and-start-planning-118be905"
     },
@@ -540,6 +544,10 @@
       "destination": "/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-3a27394f",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-how-notions-design-team-uses-claude-c-3a27394f"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4239abb4",
       "destination": "/kb/articles/-community-wisdom-how-pms-are-using-ai-coding-tools-implemen-4239abb4"
     },
@@ -576,6 +584,10 @@
       "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-a2e3c1be",
+      "destination": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-b21fa5af",
       "destination": "/kb/articles/engineers-are-becoming-sorcerers-the-future-of-software-deve-b21fa5af"
     },
@@ -596,6 +608,14 @@
       "destination": "/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
     },
     {
+      "source": "/kb/articles/resources-anthropic-78f0d530",
+      "destination": "/kb/articles/newsroom-78f0d530"
+    },
+    {
+      "source": "/kb/articles/resources-anthropic-889ad878",
+      "destination": "/kb/articles/the-complete-guide-889ad878"
+    },
+    {
       "source": "/kb/articles/simon-willison-08424d27",
       "destination": "/kb/articles/andrej-karpathy-talks-about-claws-08424d27"
     },
@@ -606,6 +626,10 @@
     {
       "source": "/kb/articles/simon-willison-0fa21631",
       "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
+    },
+    {
+      "source": "/kb/articles/simon-willison-16b49489",
+      "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
     },
     {
       "source": "/kb/articles/simon-willison-192d4e92",
@@ -672,6 +696,10 @@
       "destination": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031"
     },
     {
+      "source": "/kb/articles/simon-willison-66e96290",
+      "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
+    },
+    {
       "source": "/kb/articles/simon-willison-67189a5f",
       "destination": "/kb/articles/taalas-serves-llama-31-8b-at-17000-tokenssecond-67189a5f"
     },
@@ -724,6 +752,10 @@
       "destination": "/kb/articles/a-quote-from-martin-fowler-a581c385"
     },
     {
+      "source": "/kb/articles/simon-willison-a624fb3a",
+      "destination": "/kb/articles/a-quote-from-paul-ford-a624fb3a"
+    },
+    {
       "source": "/kb/articles/simon-willison-a6d5bdba",
       "destination": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba"
     },
@@ -736,8 +768,16 @@
       "destination": "/kb/articles/quoting-steve-yegge-af1ea9b9"
     },
     {
+      "source": "/kb/articles/simon-willison-b4384d05",
+      "destination": "/kb/articles/a-quote-from-summer-yue-b4384d05"
+    },
+    {
       "source": "/kb/articles/simon-willison-c0d75f4e",
       "destination": "/kb/articles/covering-electricity-price-increases-from-our-data-centers-c0d75f4e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c159f4a6",
+      "destination": "/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
     },
     {
       "source": "/kb/articles/simon-willison-c548126a",
@@ -762,6 +802,10 @@
     {
       "source": "/kb/articles/simon-willison-da1b9f87",
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dd345ddf",
+      "destination": "/kb/articles/reply-guy-dd345ddf"
     },
     {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
@@ -806,6 +850,10 @@
     {
       "source": "/kb/articles/swyx-44bb07f5",
       "destination": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5"
+    },
+    {
+      "source": "/kb/articles/swyx-46eff22b",
+      "destination": "/kb/articles/the-end-of-swe-bench-verified-mia-glaese-olivia-watkins-open-46eff22b"
     },
     {
       "source": "/kb/articles/swyx-50b11fd3",
@@ -878,6 +926,10 @@
     {
       "source": "/kb/articles/swyx-cae196a7",
       "destination": "/kb/articles/ainews-ai-vs-saas-the-unreasonable-effectiveness-of-centrali-cae196a7"
+    },
+    {
+      "source": "/kb/articles/swyx-dae507b8",
+      "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
     },
     {
       "source": "/kb/articles/swyx-ee58e399",
