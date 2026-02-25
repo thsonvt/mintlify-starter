@@ -1,0 +1,81 @@
+---
+title: 'Linear walkthroughs - Agentic Engineering Patterns - Simon Willison''s Weblog'
+description: 'Simon Willison discusses using coding agents to create structured walkthroughs of codebases, highlighting the use of Showboat for generating detailed '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-25'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything'
+topics: ["coding-agents","showboat","swiftui","vibe-coding","documentation"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything) · 25/02/2026
+</Info>
+
+## Summary
+
+Simon Willison discusses using coding agents to create structured walkthroughs of codebases, highlighting the use of Showboat for generating detailed documentation.
+
+## Key Insights
+
+> "Sometimes it's useful to have a coding agent give you a structured walkthrough of a codebase."
+>
+> — Introduction to the concept of using coding agents for codebase walkthroughs.
+
+> "Showboat is a tool I built to help coding agents write documents that demonstrate their work."
+>
+> — Description of the Showboat tool and its purpose.
+
+> "If you are concerned that LLMs might reduce the speed at which you learn new skills I strongly recommend adopting patterns like this one."
+>
+> — Encouragement to use coding agents for learning and skill development.
+
+## Topics
+
+- [coding-agents](/kb/topics/coding-agents)
+- [showboat](/kb/topics/showboat)
+- [swiftui](/kb/topics/swiftui)
+- [vibe-coding](/kb/topics/vibe-coding)
+- [documentation](/kb/topics/documentation)
+
+---
+
+## Full Article
+
+Sometimes it's useful to have a coding agent give you a structured walkthrough of a codebase. Maybe it's existing code you need to get up to speed on, maybe it's your own code that you've forgotten the details of, or maybe you vibe coded the whole thing and need to understand how it actually works. Frontier models with the right agent harness can construct a detailed walkthrough to help you understand how code works. An example using Showboat and Present I recently vibe coded a SwiftUI slide presentation app on my Mac using Claude Code and Opus 4.6. I was speaking about the advances in frontier models between November 2025 and February 2026, and I like to include at least one gimmick in my talks (a STAR moment - Something They'll Always Remember). In this case I decided the gimmick would be revealing at the end of the presentation that the slide mechanism itself was an example of what vibe coding could do. I released the code to GitHub and then realized I didn't know anything about how it actually worked - I had prompted the whole thing into existence (partial transcript here without paying any attention to the code it was writing. So I fired up a new instance of Claude Code for web, pointed it at my repo and prompted: Read the source and then plan a linear walkthrough of the code that explains how it all works in detail Then run “uvx showboat –help” to learn showboat - use showboat to create a walkthrough.md file in the repo and build the walkthrough in there, using showboat note for commentary and showboat exec plus sed or grep or cat or whatever you need to include snippets of code you are talking about Showboat is a tool I built to help coding agents write documents that demonstrate their work. You can see the showboat --help output here, which is designed to give the model everything it needs to know in order to use the tool. The showboat note command adds Markdown to the document. The showboat exec command accepts a shell command, executes it and then adds both the command and its output to the document. By telling it to use "sed or grep or cat or whatever you need to include snippets of code you are talking about" I ensured that Claude Code would not manually copy snippets of code into the document, since that could introduce a risk of hallucinations or mistakes. This worked extremely well. Here's the document Claude Code created with Showboat, which talks through all six .swift files in detail and provides a clear and actionable explanation about how the code works. I learned a great deal about how SwiftUI apps are structured and absorbed some solid details about the Swift language itself just from reading this document. If you are concerned that LLMs might reduce the speed at which you learn new skills I strongly recommend adopting patterns like this one. Even a ~40 minute vibe coded toy project can become an opportunity to explore new ecosystems and pick up some interesting new tricks.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing Showboat and Rodney, so agents can demo what they’ve built"
+    icon="newspaper"
+    href="/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+  >
+    Simon Willison · explanation · 71% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How Notion’s design team uses Claude Code to design"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-notions-design-team-uses-claude-c-3a27394f"
+  >
+    Lenny Rachitsky · how-to · 64% similar
+  </Card>
+  <Card
+    title="Compound Engineering: Make Every Unit of Work Compound Into the Next"
+    icon="newspaper"
+    href="/kb/articles/compound-engineering-make-every-unit-of-work-compound-into-t-a5a5dffc"
+  >
+    Dan Shipper (Every) · how-to · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything).
+</Note>

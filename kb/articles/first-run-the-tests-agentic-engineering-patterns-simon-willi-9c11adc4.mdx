@@ -1,0 +1,79 @@
+---
+title: 'First run the tests - Agentic Engineering Patterns - Simon Willison''s Weblog'
+description: 'The article emphasizes the importance of automated testing in coding agents, highlighting how it enhances code reliability and aids agents in understa'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-24'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything'
+topics: ["automated-testing","ai-agents","software-engineering"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything) · 24/02/2026
+</Info>
+
+## Summary
+
+The article emphasizes the importance of automated testing in coding agents, highlighting how it enhances code reliability and aids agents in understanding existing codebases.
+
+## Key Insights
+
+> "Automated tests are no longer optional when working with coding agents."
+>
+> — Introduction to the necessity of automated tests in the context of coding agents.
+
+> "Tests are also a great tool to help get an agent up to speed with an existing codebase."
+>
+> — Discussing the role of tests in assisting agents with understanding existing projects.
+
+> ""First run the tests" provides a four word prompt that encompasses a substantial amount of software engineering discipline."
+>
+> — Explaining the significance of the prompt in guiding agents towards testing practices.
+
+## Topics
+
+- [automated-testing](/kb/topics/automated-testing)
+- [ai-agents](/kb/topics/ai-agents)
+- [software-engineering](/kb/topics/software-engineering)
+
+---
+
+## Full Article
+
+Automated tests are no longer optional when working with coding agents. The old excuses for not writing them - that they're time consuming and expensive to constantly rewrite while a codebase is rapidly evolving - no longer hold when an agent can knock them into shape in just a few minutes. They're also vital for ensuring AI-generated code does what it claims to do. If the code has never been executed it's pure luck if it actually works when deployed to production. Tests are also a great tool to help get an agent up to speed with an existing codebase. Watch what happens when you ask Claude Code or similar about an existing feature - the chances are high that they'll find and read the relevant tests. Agents are already biased towards testing, but the presence of an existing test suite will almost certainly push the agent into testing new changes that it makes. Any time I start a new session with an agent against an existing project I'll start by prompting a variant of the following: First run the tests For my Python projects I have pyproject.toml set up such that I can prompt this instead: Run "uv run pytest" These four word prompts serve several purposes: It tells the agent that there is a test suite and forces it to figure out how to run the tests. This makes it almost certain that the agent will run the tests in the future to ensure it didn't break anything. Most test harnesses will give the agent a rough indication of how many tests they are. This can act as a proxy for how large and complex the project is, and also hints that the agent should search the tests themselves if they want to learn more. It puts the agent in a testing mindset. Having run the tests it's natural for it to then expand them with its own tests later on. Similar to "Use red/green TDD", "First run the tests" provides a four word prompt that encompasses a substantial amount of software engineering discipline that's already baked into the models.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Red/green TDD - Agentic Engineering Patterns - Simon Willison's Weblog"
+    icon="newspaper"
+    href="/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+  <Card
+    title="Writing code is cheap now - Agentic Engineering Patterns - Simon Willison's Weblog"
+    icon="newspaper"
+    href="/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+  <Card
+    title="Effective harnesses for long-running agents"
+    icon="newspaper"
+    href="/kb/articles/effective-harnesses-for-long-running-agents-62f3f369"
+  >
+    Anthropic Engineering · how-to · 63% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything).
+</Note>
