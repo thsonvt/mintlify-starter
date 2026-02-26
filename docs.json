@@ -588,6 +588,10 @@
       "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8670162b",
+      "destination": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8c13973d",
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
@@ -668,6 +672,10 @@
       "destination": "/kb/articles/kkp-mug-by-karen-james-2d77e434"
     },
     {
+      "source": "/kb/articles/simon-willison-306f627c",
+      "destination": "/kb/articles/claude-code-remote-control-306f627c"
+    },
+    {
       "source": "/kb/articles/simon-willison-30c19547",
       "destination": "/kb/articles/quoting-brandon-sanderson-30c19547"
     },
@@ -678,6 +686,14 @@
     {
       "source": "/kb/articles/simon-willison-3a64ad66",
       "destination": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3df8c9b0",
+      "destination": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-417198d8",
+      "destination": "/kb/articles/a-quote-from-benedict-evans-417198d8"
     },
     {
       "source": "/kb/articles/simon-willison-46db46c4",
@@ -804,6 +820,10 @@
       "destination": "/kb/articles/a-quote-from-summer-yue-b4384d05"
     },
     {
+      "source": "/kb/articles/simon-willison-c04f7376",
+      "destination": "/kb/articles/google-api-keys-werent-secrets-but-then-gemini-changed-the-r-c04f7376"
+    },
+    {
       "source": "/kb/articles/simon-willison-c0d75f4e",
       "destination": "/kb/articles/covering-electricity-price-increases-from-our-data-centers-c0d75f4e"
     },
@@ -818,6 +838,10 @@
     {
       "source": "/kb/articles/simon-willison-c77aff7b",
       "destination": "/kb/articles/how-i-think-about-codex-c77aff7b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-cdfcfdee",
+      "destination": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee"
     },
     {
       "source": "/kb/articles/simon-willison-cffdf1dd",
@@ -974,6 +998,10 @@
     {
       "source": "/kb/articles/swyx-cae196a7",
       "destination": "/kb/articles/ainews-ai-vs-saas-the-unreasonable-effectiveness-of-centrali-cae196a7"
+    },
+    {
+      "source": "/kb/articles/swyx-cb33a12e",
+      "destination": "/kb/articles/searching-the-space-of-all-possible-materials-prof-max-welli-cb33a12e"
     },
     {
       "source": "/kb/articles/swyx-dae507b8",

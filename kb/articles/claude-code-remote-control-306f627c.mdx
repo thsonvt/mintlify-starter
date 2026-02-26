@@ -1,0 +1,80 @@
+---
+title: 'Claude Code Remote Control'
+description: 'Claude Code has introduced a remote control feature for web interfaces, though it currently has some bugs and limitations that need addressing.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-25'
+sourceUrl: 'https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything'
+topics: ["remote-control","claude-code","software-updates","ai-agents"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything) · 25/02/2026
+</Info>
+
+## Summary
+
+Claude Code has introduced a remote control feature for web interfaces, though it currently has some bugs and limitations that need addressing.
+
+## Key Insights
+
+> "Remote Control is not enabled for your account. Contact your administrator."
+>
+> — Initial error encountered when trying to use the remote control feature.
+
+> "I expect they'll iron out all of these issues relatively quickly."
+>
+> — Comment on the anticipated improvements for the remote control feature.
+
+> "Scheduled tasks only run while your computer is awake and the Claude Desktop app is open."
+>
+> — Limitation of the new scheduling feature announced for Claude Code's sibling, Cowork.
+
+## Topics
+
+- [remote-control](/kb/topics/remote-control)
+- [claude-code](/kb/topics/claude-code)
+- [software-updates](/kb/topics/software-updates)
+- [ai-agents](/kb/topics/ai-agents)
+
+---
+
+## Full Article
+
+25th February 2026 - Link Blog Claude Code Remote Control (via) New Claude Code feature dropped yesterday: you can now run a "remote control" session on your computer and then use the Claude Code for web interfaces (on web, iOS and native desktop app) to send prompts to that session. It's a little bit janky right now. Initially when I tried it I got the error "Remote Control is not enabled for your account. Contact your administrator." (but I am my administrator?) - then I logged out and back into the Claude Code terminal app and it started working: claude remote-control You can only run one session on your machine at a time. If you upgrade the Claude iOS app it then shows up as "Remote Control Session (Mac)" in the Code tab. It appears not to support the --dangerously-skip-permissions flag (I passed that to claude remote-control and it didn't reject the option, but it also appeared to have no effect) - which means you have to approve every new action it takes. I also managed to get it to a state where every prompt I tried was met by an API 500 error. Restarting the program on the machine also causes existing sessions to start returning mysterious API errors rather than neatly explaining that the session has terminated. I expect they'll iron out all of these issues relatively quickly. It's interesting to then contrast this to solutions like OpenClaw, where one of the big selling points is the ability to control your personal device from your phone. Claude Code still doesn't have a documented mechanism for running things on a schedule, which is the other killer feature of the Claw category of software. Update: I spoke too soon: also today Anthropic announced Schedule recurring tasks in Cowork, Claude Code's general agent sibling. These do include an important limitation: Scheduled tasks only run while your computer is awake and the Claude Desktop app is open. If your computer is asleep or the app is closed when a task is scheduled to run, Cowork will skip the task, then run it automatically once your computer wakes up or you open the desktop app again. I really hope they're working on a Cowork Cloud product.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Claude Code overview"
+    icon="newspaper"
+    href="/kb/articles/claude-code-overview-64f2e1e0"
+  >
+    Anthropic Engineering · reference · 68% similar
+  </Card>
+  <Card
+    title="I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…"
+    icon="newspaper"
+    href="/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+  >
+    Boris Cherny · how-to · 62% similar
+  </Card>
+  <Card
+    title="Claude Code: The Most Common Questions Beginners Ask"
+    icon="newspaper"
+    href="/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
+  >
+    Dan Shipper (Every) · explanation · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything](https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything).
+</Note>
