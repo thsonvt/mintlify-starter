@@ -252,6 +252,10 @@
       "destination": "/kb/articles/compound-engineering-make-every-unit-of-work-compound-into-t-a5a5dffc"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-ab98ceaf",
+      "destination": "/kb/articles/how-to-design-software-with-weight-ab98ceaf"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-b1aa53b4",
       "destination": "/kb/articles/how-every-is-harnessing-the-world-changing-shift-of-opus-45-b1aa53b4"
     },
@@ -624,6 +628,10 @@
       "destination": "/kb/articles/-community-wisdom-making-your-product-enterprise-ready-when--ddc306e9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-fab47e77",
+      "destination": "/kb/articles/ai-is-critical-for-humanitys-survival-cisco-president-on-the-fab47e77"
+    },
+    {
       "source": "/kb/articles/naveen-naidu-102162fc",
       "destination": "/kb/articles/the-year-i-almost-quit-102162fc"
     },
@@ -698,6 +706,10 @@
     {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-495218f8",
+      "destination": "/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8"
     },
     {
       "source": "/kb/articles/simon-willison-4973cabb",
@@ -808,6 +820,10 @@
       "destination": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba"
     },
     {
+      "source": "/kb/articles/simon-willison-abf70e4c",
+      "destination": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c"
+    },
+    {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
@@ -892,8 +908,16 @@
       "destination": "/kb/articles/typing-without-having-to-type-f8eb5057"
     },
     {
+      "source": "/kb/articles/swyx-04433b95",
+      "destination": "/kb/articles/live-anthropic-distillation-how-models-cheat-swe-bench-dead--04433b95"
+    },
+    {
       "source": "/kb/articles/swyx-09329b6c",
       "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-0e4e25e9",
+      "destination": "/kb/articles/ainews-wtf-happened-in-december-2025-0e4e25e9"
     },
     {
       "source": "/kb/articles/swyx-126b8d87",
@@ -906,6 +930,10 @@
     {
       "source": "/kb/articles/swyx-20d4d25a",
       "destination": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a"
+    },
+    {
+      "source": "/kb/articles/swyx-26e65d48",
+      "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
     {
       "source": "/kb/articles/swyx-41a159da",

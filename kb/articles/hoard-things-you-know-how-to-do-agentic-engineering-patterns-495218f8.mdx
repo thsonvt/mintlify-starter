@@ -1,0 +1,79 @@
+---
+title: 'Hoard things you know how to do - Agentic Engineering Patterns - Simon Willison''s Weblog'
+description: 'The article emphasizes the importance of hoarding knowledge and solutions in software development to enhance productivity and problem-solving capabili'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-26'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything'
+topics: ["coding-agents","software-development","knowledge-management"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything) · 26/02/2026
+</Info>
+
+## Summary
+
+The article emphasizes the importance of hoarding knowledge and solutions in software development to enhance productivity and problem-solving capabilities.
+
+## Key Insights
+
+> "A key asset to develop as a software professional is a deep collection of answers to questions like this."
+>
+> — Discussing the importance of having a repository of knowledge in software development.
+
+> "Aside from helping you build and extend your own abilities, the assets you generate along the way become incredibly powerful inputs for your coding agents."
+>
+> — Explaining the benefits of collecting solutions and knowledge.
+
+> "Knowing that something is theoretically possible is not the same as having seen it done for yourself."
+>
+> — Highlighting the difference between theoretical knowledge and practical experience.
+
+## Topics
+
+- [coding-agents](/kb/topics/coding-agents)
+- [software-development](/kb/topics/software-development)
+- [knowledge-management](/kb/topics/knowledge-management)
+
+---
+
+## Full Article
+
+Many of my tips for working productively with coding agents are extensions of advice I've found useful in my career without them. Here's a great example of that: hoard things you know how to do. A big part of the skill in building software is understanding what's possible and what isn't, and having at least a rough idea of how those things can be accomplished. These questions can be broad or quite obscure. Can a web page run OCR operations in JavaScript alone? Can an iPhone app pair with a Bluetooth device even when the app isn't running? Can we process a 100GB JSON file in Python without loading the entire thing into memory first? The more answers to questions like this you have under your belt, the more likely you'll be able to spot opportunities to deploy technology to solve problems in ways other people may not have thought of yet. Knowing that something is theoretically possible is not the same as having seen it done for yourself. A key asset to develop as a software professional is a deep collection of answers to questions like this, ideally illustrated by running code. I hoard solutions like this in a number of different ways. My blog and TIL blog are crammed with notes on things I've figured out how to do. I have over a thousand GitHub repos collecting code I've written for different projects, many of them small proof-of-concepts that demonstrate a key idea. More recently I've used LLMs to help expand my collection of code solutions to interesting problems. tools.simonwillison.net is my largest collection of LLM-assisted tools and prototypes. I use this to collect what I call HTML tools - single HTML pages that embed JavaScript and CSS and solve a specific problem. My simonw/research repository has larger, more complex examples where I’ve challenged a coding agent to research a problem and come back with working code and a written report detailing what it found out. Recombining things from your hoard Why collect all of this stuff? Aside from helping you build and extend your own abilities, the assets you generate along the way become incredibly powerful inputs for your coding agents. One of my favorite prompting patterns is to tell an agent to build something new by combining two or more existing working examples. A project that helped crystallize how effective this can be was the first thing I added to my tools collection - a browser-based OCR tool, described in more detail here. I wanted an easy, browser-based tool for OCRing pages from PDF files - in particular PDFs that consist entirely of scanned images with no text version provided at all. I had previously experimented with running the Tesseract.js OCR library in my browser, and found it to be very capable. That library provides a WebAssembly build of the mature Tesseract OCR engine and lets you call it from JavaScript to extract text from an image. I didn’t want to work with images though, I wanted to work with PDFs. Then I remembered that I had also worked with Mozilla’s PDF.js library, which among other things can turn individual pages of a PDF into rendered images. I had snippets of JavaScript for both of those libraries in my notes. Here’s the full prompt I fed into a model (at the time it was Claude 3 Opus), combining my two examples and describing the solution I was looking for: This code shows how to open a PDF and turn it into an image per page: &lt;!DOCTYPE html> &lt;html> &lt;head> &lt;title>PDF to Images&lt;/title> &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js">&lt;/script> &lt;style> .image-container img &#123; margin-bottom: 10px; &#125; .image-container p &#123; margin: 0; font-size: 14px; color: #888; &#125; &lt;/style> &lt;/head> &lt;body> &lt;input type="file" id="fileInput" accept=".pdf" /> &lt;div class="image-container">&lt;/div> &lt;script> const desiredWidth = 800; const fileInput = document.getElementById('fileInput'); const imageContainer = document.querySelector('.image-container'); fileInput.addEventListener('change', handleFileUpload); pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js'; async function handleFileUpload(event) &#123; const file = event.target.files[0]; const imageIterator = convertPDFToImages(file); for await (const &#123; imageURL, size &#125; of imageIterator) &#123; const imgElement = document.createElement('img'); imgElement.src = imageURL; imageContainer.appendChild(imgElement); const sizeElement = document.createElement('p'); sizeElement.textContent = `Size: $&#123;formatSize(size)&#125;`; imageContainer.appendChild(sizeElement); &#125; &#125; async function* convertPDFToImages(file) &#123; try &#123; const pdf = await pdfjsLib.getDocument(URL.createObjectURL(file)).promise; const numPages = pdf.numPages; for (let i = 1; i &lt;= numPages; i++) &#123; const page = await pdf.getPage(i); const viewport = page.getViewport(&#123; scale: 1 &#125;); const canvas = document.createElement('canvas'); const context = canvas.getContext('2d'); canvas.width = desiredWidth; canvas.height = (desiredWidth / viewport.width) * viewport.height; const renderContext = &#123; canvasContext: context, viewport: page.getViewport(&#123; scale: desiredWidth / viewport.width &#125;), &#125;; await page.render(renderContext).promise; const imageURL = canvas.toDataURL('image/jpeg', 0.8); const size = calculateSize(imageURL); yield &#123; imageURL, size &#125;; &#125; &#125; catch (error) &#123; console.error('Error:', error); &#125; &#125; function calculateSize(imageURL) &#123; const base64Length = imageURL.length - 'data:image/jpeg;base64,'.length; const sizeInBytes = Math.ceil(base64Length * 0.75); return sizeInBytes; &#125; function formatSize(size) &#123; const sizeInKB = (size / 1024).toFixed(2); return `$&#123;sizeInKB&#125; KB`; &#125; &lt;/script> &lt;/body> &lt;/html> This code shows how to OCR an image: async function ocrMissingAltText() &#123; // Load Tesseract var s = document.createElement("script"); s.src = "https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"; document.head.appendChild(s); s.onload = async () => &#123; const images = document.getElementsByTagName("img"); const worker = Tesseract.createWorker(); await worker.load(); await worker.loadLanguage("eng"); await worker.initialize("eng"); ocrButton.innerText = "Running OCR..."; // Iterate through all the images in the output div for (const img of images) &#123; const altTextarea = img.parentNode.querySelector(".textarea-alt"); // Check if the alt textarea is empty if (altTextarea.value === "") &#123; const imageUrl = img.src; var &#123; data: &#123; text &#125;, &#125; = await worker.recognize(imageUrl); altTextarea.value = text; // Set the OCR result to the alt textarea progressBar.value += 1; &#125; &#125; await worker.terminate(); ocrButton.innerText = "OCR complete"; &#125;; &#125; Use these examples to put together a single HTML page with embedded HTML and CSS and JavaScript that provides a big square which users can drag and drop a PDF file onto and when they do that the PDF has every page converted to a JPEG and shown below on the page, then OCR is run with tesseract and the results are shown in textarea blocks below each image. This worked flawlessly! The model kicked out a proof-of-concept page that did exactly what I needed. I ended up iterating with it a few times to get to my final result, but it took just a few minutes to build a genuinely useful tool that I’ve benefited from ever since. Coding agents make this even more powerful I built that OCR example back in March 2024, nearly a year before the first release of Claude Code. Coding agents have made hoarding working examples even more valuable. If your coding agent has internet access you can tell it to do things like: Use curl to fetch the source of https://tools.simonwillison.net/ocr and https://tools.simonwillison.net/gemini-bbox and build a new tool that lets you select a page from a PDF and pass it to Gemini to return bounding boxes for illustrations on that page. (I specified curl there because Claude Code defaults to using a WebFetch tool which summarizes the page content rather than returning the raw HTML.) Coding agents are excellent at search, which means you can run them on your own machine and tell them where to find the examples of things you want them to do: Add mocked HTTP tests to the ~/dev/ecosystem/datasette-oauth project inspired by how ~/dev/ecosystem/llm-mistral is doing it. Often that's enough - the agent will fire up a search sub-agent to investigate and pull back just the details it needs to achieve the task. Since so much of my research code is public I'll often tell coding agents to clone my repositories to /tmp and use them as input: Clone simonw/research from GitHub to /tmp and find examples of compiling Rust to WebAssembly, then use that to build a demo HTML page for this project. The key idea here is that coding agents mean we only ever need to figure out a useful trick once. If that trick is then documented somewhere with a working code example our agents can consult that example and use it to solve any similar shaped project in the future.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="how to build a coding agent: free workshop"
+    icon="newspaper"
+    href="/kb/articles/how-to-build-a-coding-agent-free-workshop-e51acff6"
+  >
+    Geoffrey Huntley · tutorial · 61% similar
+  </Card>
+  <Card
+    title="Writing about Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
+  >
+    Simon Willison · explanation · 59% similar
+  </Card>
+  <Card
+    title="Letting agents post on my blog; finding a needle in a haystack"
+    icon="newspaper"
+    href="/kb/articles/letting-agents-post-on-my-blog-finding-a-needle-in-a-haystac-b7fabfc2"
+  >
+    Jesse Chen · explanation · 59% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything).
+</Note>
