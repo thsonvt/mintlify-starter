@@ -296,6 +296,10 @@
       "destination": "/kb/articles/everything-is-a-ralph-loop-205a3a00"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-2c298650",
+      "destination": "/kb/articles/software-development-now-costs-less-than-than-the-wage-of-a--2c298650"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-2d3af710",
       "destination": "/kb/articles/autoregressive-queens-of-failure-2d3af710"
     },
@@ -728,6 +732,10 @@
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
     {
+      "source": "/kb/articles/simon-willison-548dc4c0",
+      "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
+    },
+    {
       "source": "/kb/articles/simon-willison-59bcb94a",
       "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
     },
@@ -746,6 +754,10 @@
     {
       "source": "/kb/articles/simon-willison-5e365fb0",
       "destination": "/kb/articles/an-ai-agent-published-a-hit-piece-on-me-5e365fb0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5f2ace57",
+      "destination": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57"
     },
     {
       "source": "/kb/articles/simon-willison-5fd79031",
@@ -828,6 +840,10 @@
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
     {
+      "source": "/kb/articles/simon-willison-ae6359a2",
+      "destination": "/kb/articles/free-claude-max-for-large-project-open-source-maintainers-ae6359a2"
+    },
+    {
       "source": "/kb/articles/simon-willison-af1ea9b9",
       "destination": "/kb/articles/quoting-steve-yegge-af1ea9b9"
     },
@@ -870,6 +886,10 @@
     {
       "source": "/kb/articles/simon-willison-d3069d40",
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d793786e",
+      "destination": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e"
     },
     {
       "source": "/kb/articles/simon-willison-da1b9f87",
@@ -936,6 +956,10 @@
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
     {
+      "source": "/kb/articles/swyx-3b185a0d",
+      "destination": "/kb/articles/dylan-patel-of-semianalysis-on-the-200b-ai-capex-chip-wars-a-3b185a0d"
+    },
+    {
       "source": "/kb/articles/swyx-41a159da",
       "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
     },
@@ -970,6 +994,10 @@
     {
       "source": "/kb/articles/swyx-6b0d2516",
       "destination": "/kb/articles/ainews-sam-altmans-ai-combinator-6b0d2516"
+    },
+    {
+      "source": "/kb/articles/swyx-6ca055dc",
+      "destination": "/kb/articles/ainews-openai-closes-110b-raise-from-amazon-nvidia-softbank--6ca055dc"
     },
     {
       "source": "/kb/articles/swyx-75c7e173",
@@ -1018,6 +1046,10 @@
     {
       "source": "/kb/articles/swyx-b9a15207",
       "destination": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207"
+    },
+    {
+      "source": "/kb/articles/swyx-bc19574f",
+      "destination": "/kb/articles/metrs-joel-becker-on-exponential-time-horizon-evals-threat-m-bc19574f"
     },
     {
       "source": "/kb/articles/swyx-be70bd66",

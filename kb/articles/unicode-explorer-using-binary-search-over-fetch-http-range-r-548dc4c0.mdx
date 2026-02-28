@@ -1,0 +1,81 @@
+---
+title: 'Unicode Explorer using binary search over fetch() HTTP range requests'
+description: 'Simon Willison explores using binary search over HTTP range requests to create a Unicode Explorer, demonstrating the application of LLMs in coding.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-02-27'
+sourceUrl: 'https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything'
+topics: ["http-range-requests","unicode","binary-search","llms","web-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything) · 27/02/2026
+</Info>
+
+## Summary
+
+Simon Willison explores using binary search over HTTP range requests to create a Unicode Explorer, demonstrating the application of LLMs in coding.
+
+## Key Insights
+
+> "the challenge was coming up with a use case for binary search where the data could be naturally sorted"
+>
+> — Discussing the motivation behind the project.
+
+> "Range request tricks aren't compatible with HTTP compression because they mess with the byte offset calculations."
+>
+> — Highlighting a technical insight learned during the project.
+
+> "the demo is fun to play with - type in a single character like ø or a hexadecimal codepoint indicator like 1F99C"
+>
+> — Describing the interactive aspect of the Unicode Explorer.
+
+## Topics
+
+- [http-range-requests](/kb/topics/http-range-requests)
+- [unicode](/kb/topics/unicode)
+- [binary-search](/kb/topics/binary-search)
+- [llms](/kb/topics/llms)
+- [web-development](/kb/topics/web-development)
+
+---
+
+## Full Article
+
+27th February 2026 - Link Blog Unicode Explorer using binary search over fetch() HTTP range requests. Here's a little prototype I built this morning from my phone as an experiment in HTTP range requests, and a general example of using LLMs to satisfy curiosity. I've been collecting HTTP range tricks for a while now, and I decided it would be fun to build something with them myself that used binary search against a large file to do something useful. So I brainstormed with Claude. The challenge was coming up with a use case for binary search where the data could be naturally sorted in a way that would benefit from binary search. One of Claude's suggestions was looking up information about unicode codepoints, which means searching through many MBs of metadata. I had Claude write me a spec to feed to Claude Code - visible here - then kicked off an asynchronous research project with Claude Code for web against my simonw/research repo to turn that into working code. Here's the resulting report and code. One interesting thing I learned is that Range request tricks aren't compatible with HTTP compression because they mess with the byte offset calculations. I added 'Accept-Encoding': 'identity' to the fetch() calls but this isn't actually necessary because Cloudflare and other CDNs automatically skip compression if a content-range header is present. I deployed the result to my tools.simonwillison.net site, after first tweaking it to query the data via range requests against a CORS-enabled 76.6MB file in an S3 bucket fronted by Cloudflare. The demo is fun to play with - type in a single character like ø or a hexadecimal codepoint indicator like 1F99C and it will binary search its way through the large file and show you the steps it takes along the way:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Yes, Claude Code can decompile itself. Here's the source code."
+    icon="newspaper"
+    href="/kb/articles/yes-claude-code-can-decompile-itself-heres-the-source-code-15ec4287"
+  >
+    Geoffrey Huntley · how-to · 51% similar
+  </Card>
+  <Card
+    title="Hoard things you know how to do - Agentic Engineering Patterns - Simon Willison's Weblog"
+    icon="newspaper"
+    href="/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8"
+  >
+    Simon Willison · how-to · 50% similar
+  </Card>
+  <Card
+    title="I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…"
+    icon="newspaper"
+    href="/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+  >
+    Boris Cherny · how-to · 45% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything](https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything).
+</Note>
