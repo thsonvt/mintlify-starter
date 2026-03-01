@@ -18,6 +18,40 @@
     "sourceUrl": "https://www.latent.space/p/dylanpatel-cooking"
   },
   {
+    "id": "e1909e93-ee9a-4711-b387-ff8dc56850fd",
+    "title": "🧠 Community Wisdom: Building your tech stack from scratch, surviving painful product demos, managing LLM credit costs, resources for new designers, and more",
+    "summary": "This edition of Community Wisdom covers building a tech stack, managing product demos, LLM credit costs, and resources for new designers.",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
+    "published": "2026-02-28",
+    "topics": [
+      "tech-stack",
+      "product-demos",
+      "llm-costs",
+      "design-resources"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/-community-wisdom-building-your-tech-stack-from-scratch-surv-e1909e93",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/community-wisdom-building-your-tech"
+  },
+  {
+    "id": "7f547407-b025-4b5a-ab2a-1532ab7f7839",
+    "title": "Interactive explanations - Agentic Engineering Patterns - Simon Willison's Weblog",
+    "summary": "The article discusses the importance of understanding code to reduce cognitive debt, highlighting the use of interactive explanations and animations for better comprehension.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-28",
+    "topics": [
+      "cognitive-debt",
+      "interactive-explanations",
+      "ai-agents",
+      "rust-programming"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407",
+    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything"
+  },
+  {
     "id": "6ca055dc-18da-4191-97d5-bd04eb087c0e",
     "title": "[AINews] OpenAI closes $110B raise from Amazon, NVIDIA, SoftBank in largest startup fundraise in history @ $840B post-money",
     "summary": "OpenAI has successfully raised $110B from Amazon, NVIDIA, and SoftBank, marking the largest startup fundraise in history at an $840B post-money valuation.",
@@ -33,6 +67,74 @@
     "diataxisType": "reference",
     "path": "/kb/articles/ainews-openai-closes-110b-raise-from-amazon-nvidia-softbank--6ca055dc",
     "sourceUrl": "https://www.latent.space/p/ainews-openai-closes-110b-raise-from"
+  },
+  {
+    "id": "548dc4c0-b5c2-4d69-af6b-025a4a5b2861",
+    "title": "Unicode Explorer using binary search over fetch() HTTP range requests",
+    "summary": "Simon Willison explores using binary search over HTTP range requests to create a Unicode Explorer, demonstrating the application of LLMs in coding.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-27",
+    "topics": [
+      "http-range-requests",
+      "unicode",
+      "binary-search",
+      "llms",
+      "web-development"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything"
+  },
+  {
+    "id": "26e65d48-1a90-4fe7-9760-5479f3938c67",
+    "title": "[AINews] Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model",
+    "summary": "Nano Banana 2, also known as Gemini 3.1 Flash Image, is a new image generation model that offers competitive pricing and advanced features for AI engineers.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-27",
+    "topics": [
+      "image-generation",
+      "ai-models",
+      "pricing-strategy",
+      "text-rendering"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48",
+    "sourceUrl": "https://www.latent.space/p/ainews-nano-banana-2-aka-gemini-31"
+  },
+  {
+    "id": "d793786e-a79d-4f96-9bf8-2c1813f77465",
+    "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+    "summary": "Simon Willison discusses Max Woolf's exploration of AI coding agents, highlighting their advancements and the challenges of skepticism in the AI community.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-27",
+    "topics": [
+      "ai-agents",
+      "machine-learning",
+      "rust-programming",
+      "coding-skepticism"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything"
+  },
+  {
+    "id": "5f2ace57-5385-4f1e-a715-d8c587d147ad",
+    "title": "Please, please, please stop using passkeys for encrypting user data",
+    "summary": "The article argues against using passkeys for encrypting user data, highlighting the risks of users losing their passkeys and the irreversible encryption of their data.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-27",
+    "topics": [
+      "data-encryption",
+      "user-security",
+      "authentication"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything"
   },
   {
     "id": "bc19574f-6b2c-4c36-a6f8-dce9bf733de4",
@@ -70,39 +172,6 @@
     "sourceUrl": "https://ghuntley.com/real/"
   },
   {
-    "id": "d793786e-a79d-4f96-9bf8-2c1813f77465",
-    "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
-    "summary": "Simon Willison discusses Max Woolf's exploration of AI coding agents, highlighting their advancements and the challenges of skepticism in the AI community.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-27",
-    "topics": [
-      "ai-agents",
-      "machine-learning",
-      "rust-programming",
-      "coding-skepticism"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything"
-  },
-  {
-    "id": "5f2ace57-5385-4f1e-a715-d8c587d147ad",
-    "title": "Please, please, please stop using passkeys for encrypting user data",
-    "summary": "The article argues against using passkeys for encrypting user data, highlighting the risks of users losing their passkeys and the irreversible encryption of their data.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-27",
-    "topics": [
-      "data-encryption",
-      "user-security",
-      "authentication"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything"
-  },
-  {
     "id": "ae6359a2-e0cc-48da-8291-8d869cd0b1ea",
     "title": "Free Claude Max for (large project) open source maintainers",
     "summary": "Anthropic is offering their $200/month Claude Max 20x plan for free to open source maintainers for six months, with specific eligibility criteria.",
@@ -118,41 +187,6 @@
     "diataxisType": "reference",
     "path": "/kb/articles/free-claude-max-for-large-project-open-source-maintainers-ae6359a2",
     "sourceUrl": "https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything"
-  },
-  {
-    "id": "26e65d48-1a90-4fe7-9760-5479f3938c67",
-    "title": "[AINews] Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model",
-    "summary": "Nano Banana 2, also known as Gemini 3.1 Flash Image, is a new image generation model that offers competitive pricing and advanced features for AI engineers.",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-27",
-    "topics": [
-      "image-generation",
-      "ai-models",
-      "pricing-strategy",
-      "text-rendering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48",
-    "sourceUrl": "https://www.latent.space/p/ainews-nano-banana-2-aka-gemini-31"
-  },
-  {
-    "id": "548dc4c0-b5c2-4d69-af6b-025a4a5b2861",
-    "title": "Unicode Explorer using binary search over fetch() HTTP range requests",
-    "summary": "Simon Willison explores using binary search over HTTP range requests to create a Unicode Explorer, demonstrating the application of LLMs in coding.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-27",
-    "topics": [
-      "http-range-requests",
-      "unicode",
-      "binary-search",
-      "llms",
-      "web-development"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything"
   },
   {
     "id": "04433b95-1f0e-4af1-85d4-54a2bba2178d",
@@ -186,56 +220,6 @@
     "diataxisType": "how-to",
     "path": "/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8",
     "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything"
-  },
-  {
-    "id": "abf70e4c-45fb-4bc3-a99d-b2e1beb696f5",
-    "title": "A quote from Andrej Karpathy",
-    "summary": "Andrej Karpathy discusses the transformative impact of AI on programming, highlighting significant advancements in coding agents since December 2025.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-26",
-    "topics": [
-      "ai-programming",
-      "coding-agents",
-      "ai-impact"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything"
-  },
-  {
-    "id": "0e4e25e9-e010-4df4-b926-b31102c6834d",
-    "title": "[AINews] WTF Happened in December 2025?",
-    "summary": "The article discusses significant AI developments in December 2025, highlighting the release of major models and their implications for the future of AI technology.",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-26",
-    "topics": [
-      "ai-hype",
-      "model-releases",
-      "coding-agents",
-      "ai-ecosystem"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-wtf-happened-in-december-2025-0e4e25e9",
-    "sourceUrl": "https://www.latent.space/p/wtf2025"
-  },
-  {
-    "id": "fab47e77-812d-437a-9a66-5c7f41d42946",
-    "title": "AI is critical for humanity’s survival: Cisco president on the AI revolution | Jeetu Patel",
-    "summary": "Jeetu Patel, Cisco's president, discusses the pivotal role of AI in business and leadership, emphasizing frameworks for success and communication.",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
-    "published": "2026-02-26",
-    "topics": [
-      "ai-revolution",
-      "leadership",
-      "business-strategy",
-      "communication"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ai-is-critical-for-humanitys-survival-cisco-president-on-the-fab47e77",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/ai-is-critical-for-humanitys-survival"
   },
   {
     "id": "ab98ceaf-e8f5-4f37-8d94-985cc85cab13",
@@ -288,88 +272,54 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything"
   },
   {
-    "id": "8e8765e0-a368-4594-b700-755bdd5ae892",
-    "title": "[AINews] The Unreasonable Effectiveness of Closing the Loop",
-    "summary": "The article discusses the shift in focus from outer loop tools to inner loop coding agents in the DevTools industry, highlighting recent launches and innovations.",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-25",
-    "topics": [
-      "devtools",
-      "ai-agents",
-      "inner-loop",
-      "outer-loop",
-      "coding"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0",
-    "sourceUrl": "https://www.latent.space/p/ainews-the-unreasonable-effectiveness"
-  },
-  {
-    "id": "3df8c9b0-010a-4310-afe7-b3000d2bc014",
-    "title": "tldraw issue: Move tests to closed source repo",
-    "summary": "tldraw is moving its test suite to a private repository due to concerns over open source libraries being replicated, highlighting risks for commercial models.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-25",
-    "topics": [
-      "open-source",
-      "intellectual-property",
-      "software-development"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything"
-  },
-  {
-    "id": "8670162b-dc15-46cd-9fc6-35a7e2a4f4d8",
-    "title": "5 OpenClaw agents run my home, finances, and code | Jesse Genet",
-    "summary": "Jesse Genet utilizes five specialized OpenClaw agents to manage her home, finances, and coding projects, enhancing her productivity through automation.",
+    "id": "fab47e77-812d-437a-9a66-5c7f41d42946",
+    "title": "AI is critical for humanity’s survival: Cisco president on the AI revolution | Jeetu Patel",
+    "summary": "Jeetu Patel, Cisco's president, discusses the pivotal role of AI in business and leadership, emphasizing frameworks for success and communication.",
     "author": "Lenny Rachitsky",
     "authorId": "lenny-rachitsky",
-    "published": "2026-02-25",
+    "published": "2026-02-26",
     "topics": [
-      "ai-agents",
-      "homeschooling",
-      "automation",
-      "productivity"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/5-openclaw-agents-run-my-home-finances"
-  },
-  {
-    "id": "cdfcfdee-6e66-4d91-8079-a163fe4ca4b6",
-    "title": "I vibe coded my dream macOS presentation app",
-    "summary": "Simon Willison shares his experience of creating a custom macOS presentation app called Present, designed for seamless web-based presentations.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-25",
-    "topics": [
-      "macos-development",
-      "presentation-tools",
-      "swiftui",
-      "web-development"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/25/present/#atom-everything"
-  },
-  {
-    "id": "5deef68f-17de-4c88-a8c4-d9c997eb8f6f",
-    "title": "A quote from Kellan Elliott-McCrea",
-    "summary": "Kellan Elliott-McCrea reflects on the emotional complexities of entering the tech industry, contrasting motivations of past and present generations.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-25",
-    "topics": [
-      "technology",
-      "emotional-intelligence",
-      "web-development"
+      "ai-revolution",
+      "leadership",
+      "business-strategy",
+      "communication"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/a-quote-from-kellan-elliott-mccrea-5deef68f",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything"
+    "path": "/kb/articles/ai-is-critical-for-humanitys-survival-cisco-president-on-the-fab47e77",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/ai-is-critical-for-humanitys-survival"
+  },
+  {
+    "id": "abf70e4c-45fb-4bc3-a99d-b2e1beb696f5",
+    "title": "A quote from Andrej Karpathy",
+    "summary": "Andrej Karpathy discusses the transformative impact of AI on programming, highlighting significant advancements in coding agents since December 2025.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-26",
+    "topics": [
+      "ai-programming",
+      "coding-agents",
+      "ai-impact"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything"
+  },
+  {
+    "id": "0e4e25e9-e010-4df4-b926-b31102c6834d",
+    "title": "[AINews] WTF Happened in December 2025?",
+    "summary": "The article discusses significant AI developments in December 2025, highlighting the release of major models and their implications for the future of AI technology.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-26",
+    "topics": [
+      "ai-hype",
+      "model-releases",
+      "coding-agents",
+      "ai-ecosystem"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-wtf-happened-in-december-2025-0e4e25e9",
+    "sourceUrl": "https://www.latent.space/p/wtf2025"
   },
   {
     "id": "bd43a0fc-3d9d-497b-bcc1-84ded5ececb3",
@@ -388,21 +338,21 @@
     "sourceUrl": "https://ampcode.com/"
   },
   {
-    "id": "cb33a12e-6b0d-48d9-b5fe-3fbd00c9a3d7",
-    "title": "🔬Searching the Space of All Possible Materials — Prof. Max Welling, CuspAI",
-    "summary": "Prof. Max Welling discusses the intersection of AI, materials science, and climate impact, emphasizing the role of experiments as computation in advancing technology.",
-    "author": "Swyx",
-    "authorId": "swyx",
+    "id": "8670162b-dc15-46cd-9fc6-35a7e2a4f4d8",
+    "title": "5 OpenClaw agents run my home, finances, and code | Jesse Genet",
+    "summary": "Jesse Genet utilizes five specialized OpenClaw agents to manage her home, finances, and coding projects, enhancing her productivity through automation.",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
     "published": "2026-02-25",
     "topics": [
-      "ai-for-science",
-      "materials-discovery",
-      "quantum-gravity",
-      "equivariant-neural-networks"
+      "ai-agents",
+      "homeschooling",
+      "automation",
+      "productivity"
     ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/searching-the-space-of-all-possible-materials-prof-max-welli-cb33a12e",
-    "sourceUrl": "https://www.latent.space/p/cuspai"
+    "diataxisType": "how-to",
+    "path": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/5-openclaw-agents-run-my-home-finances"
   },
   {
     "id": "56f44b8d-e875-4ed3-9561-985da54fc1b3",
@@ -439,6 +389,74 @@
     "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything"
   },
   {
+    "id": "cb33a12e-6b0d-48d9-b5fe-3fbd00c9a3d7",
+    "title": "🔬Searching the Space of All Possible Materials — Prof. Max Welling, CuspAI",
+    "summary": "Prof. Max Welling discusses the intersection of AI, materials science, and climate impact, emphasizing the role of experiments as computation in advancing technology.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-25",
+    "topics": [
+      "ai-for-science",
+      "materials-discovery",
+      "quantum-gravity",
+      "equivariant-neural-networks"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/searching-the-space-of-all-possible-materials-prof-max-welli-cb33a12e",
+    "sourceUrl": "https://www.latent.space/p/cuspai"
+  },
+  {
+    "id": "8e8765e0-a368-4594-b700-755bdd5ae892",
+    "title": "[AINews] The Unreasonable Effectiveness of Closing the Loop",
+    "summary": "The article discusses the shift in focus from outer loop tools to inner loop coding agents in the DevTools industry, highlighting recent launches and innovations.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-25",
+    "topics": [
+      "devtools",
+      "ai-agents",
+      "inner-loop",
+      "outer-loop",
+      "coding"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0",
+    "sourceUrl": "https://www.latent.space/p/ainews-the-unreasonable-effectiveness"
+  },
+  {
+    "id": "cdfcfdee-6e66-4d91-8079-a163fe4ca4b6",
+    "title": "I vibe coded my dream macOS presentation app",
+    "summary": "Simon Willison shares his experience of creating a custom macOS presentation app called Present, designed for seamless web-based presentations.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-25",
+    "topics": [
+      "macos-development",
+      "presentation-tools",
+      "swiftui",
+      "web-development"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/25/present/#atom-everything"
+  },
+  {
+    "id": "3df8c9b0-010a-4310-afe7-b3000d2bc014",
+    "title": "tldraw issue: Move tests to closed source repo",
+    "summary": "tldraw is moving its test suite to a private repository due to concerns over open source libraries being replicated, highlighting risks for commercial models.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-25",
+    "topics": [
+      "open-source",
+      "intellectual-property",
+      "software-development"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything"
+  },
+  {
     "id": "9af4dec4-120c-4b41-bae2-0bb08898fd5d",
     "title": "HowtoBuildanAgent",
     "summary": "It’s an LLM, a loop, and enough tokens. It’s not that hard to build a fully functioning, code-editing agent.",
@@ -453,6 +471,39 @@
     "diataxisType": "tutorial",
     "path": "/kb/articles/howtobuildanagent-9af4dec4",
     "sourceUrl": "https://ampcode.com/notes/how-to-build-an-agent"
+  },
+  {
+    "id": "306f627c-a5ee-4c75-b9b9-153c94983829",
+    "title": "Claude Code Remote Control",
+    "summary": "Claude Code has introduced a remote control feature for web interfaces, though it currently has some bugs and limitations that need addressing.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-25",
+    "topics": [
+      "remote-control",
+      "claude-code",
+      "software-updates",
+      "ai-agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/claude-code-remote-control-306f627c",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything"
+  },
+  {
+    "id": "5deef68f-17de-4c88-a8c4-d9c997eb8f6f",
+    "title": "A quote from Kellan Elliott-McCrea",
+    "summary": "Kellan Elliott-McCrea reflects on the emotional complexities of entering the tech industry, contrasting motivations of past and present generations.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-25",
+    "topics": [
+      "technology",
+      "emotional-intelligence",
+      "web-development"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/a-quote-from-kellan-elliott-mccrea-5deef68f",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything"
   },
   {
     "id": "6cf6dad3-f80c-445b-bdb8-254107f8312a",
@@ -473,23 +524,6 @@
     "sourceUrl": "https://developers.openai.com/blog"
   },
   {
-    "id": "306f627c-a5ee-4c75-b9b9-153c94983829",
-    "title": "Claude Code Remote Control",
-    "summary": "Claude Code has introduced a remote control feature for web interfaces, though it currently has some bugs and limitations that need addressing.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-25",
-    "topics": [
-      "remote-control",
-      "claude-code",
-      "software-updates",
-      "ai-agents"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/claude-code-remote-control-306f627c",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything"
-  },
-  {
     "id": "43585643-f934-4ceb-ba62-ae8b185ee6c3",
     "title": "How to use AI for your next job interview",
     "summary": "The article explores how AI is transforming job interview preparation for candidates, offering insights from over 30 tech professionals on effective AI workflows.",
@@ -507,22 +541,6 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-use-ai-in-your-next-job-interview"
   },
   {
-    "id": "9c11adc4-1eeb-43c3-be97-18b0514c313e",
-    "title": "First run the tests - Agentic Engineering Patterns - Simon Willison's Weblog",
-    "summary": "The article emphasizes the importance of automated testing in coding agents, highlighting how it enhances code reliability and aids agents in understanding existing codebases.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-24",
-    "topics": [
-      "automated-testing",
-      "ai-agents",
-      "software-engineering"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/first-run-the-tests-agentic-engineering-patterns-simon-willi-9c11adc4",
-    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything"
-  },
-  {
     "id": "78f0d530-f14d-48ee-94fd-5c5e6c586eed",
     "title": "Newsroom",
     "summary": "Anthropic announces the upgrade of its model to Claude Opus 4.6 and raises $30 billion in Series G funding, valuing the company at $380 billion.",
@@ -537,6 +555,38 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/newsroom-78f0d530",
     "sourceUrl": "https://resources.anthropic.com/"
+  },
+  {
+    "id": "dae507b8-ff78-4ecb-960a-cad857754208",
+    "title": "[AINews] Anthropic accuses DeepSeek, Moonshot, and MiniMax of >16 million \"industrial-scale distillation attacks\"",
+    "summary": "Anthropic accuses DeepSeek, Moonshot, and MiniMax of conducting over 16 million industrial-scale distillation attacks to extract capabilities for their own models.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-24",
+    "topics": [
+      "ai-distillation",
+      "industrial-scale-attacks",
+      "geopolitical-implications"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8",
+    "sourceUrl": "https://www.latent.space/p/ainews-anthropic-accuses-deepseek"
+  },
+  {
+    "id": "9c11adc4-1eeb-43c3-be97-18b0514c313e",
+    "title": "First run the tests - Agentic Engineering Patterns - Simon Willison's Weblog",
+    "summary": "The article emphasizes the importance of automated testing in coding agents, highlighting how it enhances code reliability and aids agents in understanding existing codebases.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-24",
+    "topics": [
+      "automated-testing",
+      "ai-agents",
+      "software-engineering"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/first-run-the-tests-agentic-engineering-patterns-simon-willi-9c11adc4",
+    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything"
   },
   {
     "id": "5acd0fdd-253d-43ea-a257-4e07b328a234",
@@ -589,20 +639,20 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/24/go-size-analyzer/#atom-everything"
   },
   {
-    "id": "dae507b8-ff78-4ecb-960a-cad857754208",
-    "title": "[AINews] Anthropic accuses DeepSeek, Moonshot, and MiniMax of >16 million \"industrial-scale distillation attacks\"",
-    "summary": "Anthropic accuses DeepSeek, Moonshot, and MiniMax of conducting over 16 million industrial-scale distillation attacks to extract capabilities for their own models.",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-24",
+    "id": "66e96290-70fa-4852-988b-aaa233c9d1a7",
+    "title": "Writing code is cheap now - Agentic Engineering Patterns - Simon Willison's Weblog",
+    "summary": "The article discusses the implications of cheap code production on engineering practices, emphasizing the need for new habits to ensure code quality amidst evolving tools.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-23",
     "topics": [
-      "ai-distillation",
-      "industrial-scale-attacks",
-      "geopolitical-implications"
+      "agentic-engineering",
+      "software-development",
+      "code-quality"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8",
-    "sourceUrl": "https://www.latent.space/p/ainews-anthropic-accuses-deepseek"
+    "path": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290",
+    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything"
   },
   {
     "id": "a624fb3a-f582-4dd2-805e-a5c76f3d9890",
@@ -620,103 +670,6 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/a-quote-from-paul-ford-a624fb3a",
     "sourceUrl": "https://simonwillison.net/2026/Feb/23/paul-ford/#atom-everything"
-  },
-  {
-    "id": "dd345ddf-0e36-42d2-a5a6-528b32cbba4d",
-    "title": "Reply guy",
-    "summary": "The article discusses the rise of AI bots on Twitter that provide generic replies to tweets, termed 'reply guy tools', and their impact on user engagement.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-23",
-    "topics": [
-      "ai-bots",
-      "twitter-engagement",
-      "generative-ai"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/reply-guy-dd345ddf",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything"
-  },
-  {
-    "id": "66e96290-70fa-4852-988b-aaa233c9d1a7",
-    "title": "Writing code is cheap now - Agentic Engineering Patterns - Simon Willison's Weblog",
-    "summary": "The article discusses the implications of cheap code production on engineering practices, emphasizing the need for new habits to ensure code quality amidst evolving tools.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-23",
-    "topics": [
-      "agentic-engineering",
-      "software-development",
-      "code-quality"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290",
-    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything"
-  },
-  {
-    "id": "b4384d05-6550-4c5c-a776-93f36a212ba4",
-    "title": "A quote from Summer Yue",
-    "summary": "Summer Yue shares a humorous experience of trying to manage her inbox with an AI tool, highlighting the challenges of technology and user instructions.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-23",
-    "topics": [
-      "ai-tools",
-      "inbox-management",
-      "automation"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/a-quote-from-summer-yue-b4384d05",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything"
-  },
-  {
-    "id": "a2e3c1be-82ba-4fca-8b9d-3732b396a640",
-    "title": "“I haven’t written a single line of front-end code in 3 months”: How Notion’s design team uses Claude Code to prototype",
-    "summary": "Brian Lovin from Notion AI discusses how his team uses Claude Code for collaborative prototyping, enhancing the design process with AI-assisted coding.",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
-    "published": "2026-02-23",
-    "topics": [
-      "ai-prototyping",
-      "design-process",
-      "collaborative-tools"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/i-havent-written-a-single-line-of"
-  },
-  {
-    "id": "16b49489-235d-41ae-8d28-58bc62b855b4",
-    "title": "Writing about Agentic Engineering Patterns",
-    "summary": "Simon Willison introduces Agentic Engineering Patterns, a project focused on coding practices for effective use of coding agents in software development.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-23",
-    "topics": [
-      "agentic-engineering",
-      "coding-agents",
-      "software-development",
-      "ai-assisted-programming"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything"
-  },
-  {
-    "id": "e8f8f0fd-49dd-4f79-8be5-be789c4521da",
-    "title": "Red/green TDD - Agentic Engineering Patterns - Simon Willison's Weblog",
-    "summary": "The article discusses the benefits of red/green Test Driven Development (TDD) for coding agents, emphasizing the importance of writing tests first to ensure code quality.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-23",
-    "topics": [
-      "test-driven-development",
-      "coding-agents",
-      "software-engineering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd",
-    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything"
   },
   {
     "id": "3a27394f-ff28-4589-b692-373e6b6046d0",
@@ -753,6 +706,22 @@
     "sourceUrl": "https://www.latent.space/p/swe-bench-dead"
   },
   {
+    "id": "e8f8f0fd-49dd-4f79-8be5-be789c4521da",
+    "title": "Red/green TDD - Agentic Engineering Patterns - Simon Willison's Weblog",
+    "summary": "The article discusses the benefits of red/green Test Driven Development (TDD) for coding agents, emphasizing the importance of writing tests first to ensure code quality.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-23",
+    "topics": [
+      "test-driven-development",
+      "coding-agents",
+      "software-engineering"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd",
+    "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything"
+  },
+  {
     "id": "c159f4a6-2d82-4c3a-adba-3dbc82b8c319",
     "title": "Ladybird adopts Rust, with help from AI",
     "summary": "Ladybird transitioned from Swift to Rust for their JavaScript engine, utilizing AI tools for an efficient porting process with zero regressions.",
@@ -770,21 +739,85 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything"
   },
   {
-    "id": "c77aff7b-69c0-4556-a6f7-1da473f87d38",
-    "title": "How I think about Codex",
-    "summary": "Simon Willison discusses the concept of Codex, explaining its components and how it functions as OpenAI's software engineering agent.",
+    "id": "a2e3c1be-82ba-4fca-8b9d-3732b396a640",
+    "title": "“I haven’t written a single line of front-end code in 3 months”: How Notion’s design team uses Claude Code to prototype",
+    "summary": "Brian Lovin from Notion AI discusses how his team uses Claude Code for collaborative prototyping, enhancing the design process with AI-assisted coding.",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
+    "published": "2026-02-23",
+    "topics": [
+      "ai-prototyping",
+      "design-process",
+      "collaborative-tools"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/i-havent-written-a-single-line-of"
+  },
+  {
+    "id": "dd345ddf-0e36-42d2-a5a6-528b32cbba4d",
+    "title": "Reply guy",
+    "summary": "The article discusses the rise of AI bots on Twitter that provide generic replies to tweets, termed 'reply guy tools', and their impact on user engagement.",
     "author": "Simon Willison",
     "authorId": "simon-willison",
-    "published": "2026-02-22",
+    "published": "2026-02-23",
     "topics": [
-      "openai",
-      "codex",
-      "ai-agents",
-      "software-engineering"
+      "ai-bots",
+      "twitter-engagement",
+      "generative-ai"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/how-i-think-about-codex-c77aff7b",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything"
+    "path": "/kb/articles/reply-guy-dd345ddf",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything"
+  },
+  {
+    "id": "b4384d05-6550-4c5c-a776-93f36a212ba4",
+    "title": "A quote from Summer Yue",
+    "summary": "Summer Yue shares a humorous experience of trying to manage her inbox with an AI tool, highlighting the challenges of technology and user instructions.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-23",
+    "topics": [
+      "ai-tools",
+      "inbox-management",
+      "automation"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/a-quote-from-summer-yue-b4384d05",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything"
+  },
+  {
+    "id": "16b49489-235d-41ae-8d28-58bc62b855b4",
+    "title": "Writing about Agentic Engineering Patterns",
+    "summary": "Simon Willison introduces Agentic Engineering Patterns, a project focused on coding practices for effective use of coding agents in software development.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-23",
+    "topics": [
+      "agentic-engineering",
+      "coding-agents",
+      "software-development",
+      "ai-assisted-programming"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything"
+  },
+  {
+    "id": "e5079680-7ecc-41e9-ad28-73b95a5041fe",
+    "title": "Applied AI Engineering -  Issue #1 | Feb 22, 2026",
+    "summary": "Agent deployments are moving from prompt hacks toward engineered workflows with guardrails. * [Report this article](/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fapplied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc&trk=article-ssr-frontend-pulse_ellipsis-menu-semap",
+    "author": "Unmesh Gundecha",
+    "authorId": "unmesh-gundecha",
+    "published": "2026-02-22",
+    "topics": [
+      "Agent-Native Architecture",
+      "Prompt Engineering",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/applied-ai-engineering-issue-1-feb-22-2026-e5079680",
+    "sourceUrl": "https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/"
   },
   {
     "id": "1f635a54-1202-43a9-a495-1aa1fc9c78f2",
@@ -805,20 +838,21 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/22/ccc/#atom-everything"
   },
   {
-    "id": "e5079680-7ecc-41e9-ad28-73b95a5041fe",
-    "title": "Applied AI Engineering -  Issue #1 | Feb 22, 2026",
-    "summary": "Agent deployments are moving from prompt hacks toward engineered workflows with guardrails. * [Report this article](/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fapplied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc&trk=article-ssr-frontend-pulse_ellipsis-menu-semap",
-    "author": "Unmesh Gundecha",
-    "authorId": "unmesh-gundecha",
+    "id": "c77aff7b-69c0-4556-a6f7-1da473f87d38",
+    "title": "How I think about Codex",
+    "summary": "Simon Willison discusses the concept of Codex, explaining its components and how it functions as OpenAI's software engineering agent.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
     "published": "2026-02-22",
     "topics": [
-      "Agent-Native Architecture",
-      "Prompt Engineering",
-      "AI Agents"
+      "openai",
+      "codex",
+      "ai-agents",
+      "software-engineering"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/applied-ai-engineering-issue-1-feb-22-2026-e5079680",
-    "sourceUrl": "https://www.linkedin.com/pulse/applied-ai-engineering-issue-1-feb-22-2026-unmesh-gundecha-n9qvc/"
+    "path": "/kb/articles/how-i-think-about-codex-c77aff7b",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything"
   },
   {
     "id": "0fa21631-4d74-4b75-b41d-3bfb641d69b4",
@@ -835,71 +869,6 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631",
     "sourceUrl": "https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything"
-  },
-  {
-    "id": "d9d054b3-f8c3-4faa-bcd0-d7df30a9a14b",
-    "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
-    "summary": "Our latest model, the upgraded Claude 3.5 Sonnet, achieved 49% on SWE-bench Verified. SWE-bench is an AI evaluation benchmark that assesses a model's ability to complete real-world software engineering tasks.",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
-    "published": "2026-02-21",
-    "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Claude Code"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/raising-the-bar-on-swe-bench-verified-with-claude-35-sonnet-d9d054b3",
-    "sourceUrl": "https://www.anthropic.com/engineering/swe-bench-sonnet"
-  },
-  {
-    "id": "08424d27-18f5-4bf9-bef7-aa17357fe25f",
-    "title": "Andrej Karpathy talks about “Claws”",
-    "summary": "Andrej Karpathy discusses the emerging concept of 'Claws', a new layer of AI agents that enhance orchestration and scheduling, while sharing insights on various implementations.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-21",
-    "topics": [
-      "ai-agents",
-      "claws",
-      "openclaw",
-      "technology"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/andrej-karpathy-talks-about-claws-08424d27",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/21/claws/#atom-everything"
-  },
-  {
-    "id": "f9aa6dd4-fcd9-46db-a3b8-5d2a635c2723",
-    "title": "[AINews] The Custom ASIC Thesis",
-    "summary": "The article discusses the potential of custom ASICs for AI models, emphasizing their economic viability and the future of integrated model-chip design.",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-21",
-    "topics": [
-      "custom-asic",
-      "ai-inference",
-      "model-architecture",
-      "llm-optimization"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4",
-    "sourceUrl": "https://www.latent.space/p/ainews-the-custom-asic-thesis"
-  },
-  {
-    "id": "220f4a23-4c85-4506-86c3-2f3864368000",
-    "title": "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations",
-    "summary": "A new tool that improves Claude's complex problem-solving performance",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
-    "published": "2026-02-21",
-    "topics": [
-      "AI",
-      "Technology"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/the-think-tool-enabling-claude-to-stop-and-think-in-complex--220f4a23",
-    "sourceUrl": "https://www.anthropic.com/engineering/claude-think-tool"
   },
   {
     "id": "28f9178b-f21c-4fb5-a1a5-8d6c7142b97d",
@@ -935,22 +904,6 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/community-wisdom-making-your-product"
   },
   {
-    "id": "53a6ac3d-c99a-4de8-a606-16108c54c9a7",
-    "title": "Quoting Thibault Sottiaux",
-    "summary": "The article discusses the insights and perspectives of Thibault Sottiaux, highlighting his contributions to the field.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-21",
-    "topics": [
-      "thought-leadership",
-      "interviews",
-      "technology"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything"
-  },
-  {
     "id": "64f2e1e0-ab01-4fe1-a5c0-e67a322a5ef0",
     "title": "Claude Code overview",
     "summary": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. * [Overview](/docs/en/overview)\n* [Quickstart](/docs/en/quickstart)\n* [Changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)",
@@ -967,38 +920,102 @@
     "sourceUrl": "https://www.anthropic.com/engineering/claude-code-best-practices"
   },
   {
-    "id": "63033226-78c3-4a19-b8a5-e50a0e14f774",
-    "title": "Massively Parallel Procrastination",
-    "summary": "Jesse Chen discusses various aspects of AI software development and the challenges of managing agent interactions in his blog posts.",
-    "author": "Jesse Chen",
-    "authorId": "jesse-chen",
-    "published": "2026-02-20",
+    "id": "08424d27-18f5-4bf9-bef7-aa17357fe25f",
+    "title": "Andrej Karpathy talks about “Claws”",
+    "summary": "Andrej Karpathy discusses the emerging concept of 'Claws', a new layer of AI agents that enhance orchestration and scheduling, while sharing insights on various implementations.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-21",
     "topics": [
-      "ai-software-development",
-      "agent-management",
-      "prompt-injection",
-      "crypto-scams"
+      "ai-agents",
+      "claws",
+      "openclaw",
+      "technology"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/massively-parallel-procrastination-63033226",
-    "sourceUrl": "https://blog.fsck.com/"
+    "path": "/kb/articles/andrej-karpathy-talks-about-claws-08424d27",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/21/claws/#atom-everything"
   },
   {
-    "id": "8293fcc7-ed88-475e-b7de-139f54cb5cee",
-    "title": "Hi | Kieran Klaassen",
-    "summary": "Kieran Klaassen shares his journey as a creator and engineer, emphasizing his passion for crafting and inspiring authenticity.",
-    "author": "Kieran Klaassen",
-    "authorId": "kieran-klaassen",
-    "published": "2026-02-20",
+    "id": "220f4a23-4c85-4506-86c3-2f3864368000",
+    "title": "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations",
+    "summary": "A new tool that improves Claude's complex problem-solving performance",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-02-21",
     "topics": [
-      "creativity",
-      "engineering",
-      "baking",
-      "self-discovery"
+      "AI",
+      "Technology"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/the-think-tool-enabling-claude-to-stop-and-think-in-complex--220f4a23",
+    "sourceUrl": "https://www.anthropic.com/engineering/claude-think-tool"
+  },
+  {
+    "id": "53a6ac3d-c99a-4de8-a606-16108c54c9a7",
+    "title": "Quoting Thibault Sottiaux",
+    "summary": "The article discusses the insights and perspectives of Thibault Sottiaux, highlighting his contributions to the field.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-21",
+    "topics": [
+      "thought-leadership",
+      "interviews",
+      "technology"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/hi-kieran-klaassen-8293fcc7",
-    "sourceUrl": "https://www.kieranklaassen.com/"
+    "path": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything"
+  },
+  {
+    "id": "d9d054b3-f8c3-4faa-bcd0-d7df30a9a14b",
+    "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+    "summary": "Our latest model, the upgraded Claude 3.5 Sonnet, achieved 49% on SWE-bench Verified. SWE-bench is an AI evaluation benchmark that assesses a model's ability to complete real-world software engineering tasks.",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-02-21",
+    "topics": [
+      "Prompt Engineering",
+      "AI Agents",
+      "Claude Code"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/raising-the-bar-on-swe-bench-verified-with-claude-35-sonnet-d9d054b3",
+    "sourceUrl": "https://www.anthropic.com/engineering/swe-bench-sonnet"
+  },
+  {
+    "id": "f9aa6dd4-fcd9-46db-a3b8-5d2a635c2723",
+    "title": "[AINews] The Custom ASIC Thesis",
+    "summary": "The article discusses the potential of custom ASICs for AI models, emphasizing their economic viability and the future of integrated model-chip design.",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-21",
+    "topics": [
+      "custom-asic",
+      "ai-inference",
+      "model-architecture",
+      "llm-optimization"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4",
+    "sourceUrl": "https://www.latent.space/p/ainews-the-custom-asic-thesis"
+  },
+  {
+    "id": "4ff8e177-91b0-401b-8d90-20112b3e961f",
+    "title": "Adding TILs, releases, museums, tools and research to my blog",
+    "summary": "Beats are little inline links with badges that fit into different content timeline views around my site. I've been wanting to add indications of my various other online activities to my blog for a while now. I just turned on a new feature I'm calling \"beats\" (after story beats, naming this was hard!",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-20",
+    "topics": [
+      "Open Source Projects",
+      "Web Development",
+      "AI Agents",
+      "Claude Code"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/20/beats/#atom-everything"
   },
   {
     "id": "a07c05eb-3abb-40eb-abc0-f9768c53bf22",
@@ -1018,20 +1035,20 @@
     "sourceUrl": "https://www.anthropic.com/engineering/"
   },
   {
-    "id": "52976c37-92d3-437f-b709-1ff132e5f77a",
-    "title": "[AINews] Gemini 3.1 Pro: 2x 3.0 on ARC-AGI 2",
-    "summary": "It’s getting a little hard to say interesting things with all the round robin minor version updates of frontier models every week, but Gemini 3.1 Pro seems like a decent enough advance. > *AI News for 2/18/2026-2/19/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/158543024",
-    "author": "Swyx",
-    "authorId": "swyx",
+    "id": "9bb99b58-ec00-4c75-bd77-46d4c4cbba28",
+    "title": "Quoting Thariq Shihipar",
+    "summary": "Long running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse computation from previous roundtrips and significantly decrease latency and cost. > Long running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse ",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
     "published": "2026-02-20",
     "topics": [
-      "Prompt Engineering",
       "Agent-Native Architecture",
-      "AI Agents"
+      "Prompt Engineering",
+      "Claude Code"
     ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37",
-    "sourceUrl": "https://www.latent.space/p/ainews-gemini-31-pro-2x-30-on-arc"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-thariq-shihipar-9bb99b58",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/20/thariq-shihipar/#atom-everything"
   },
   {
     "id": "915b03d0-1bc3-478b-ba86-34a5a56b3ee2",
@@ -1066,37 +1083,54 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/20/taalas/#atom-everything"
   },
   {
-    "id": "4ff8e177-91b0-401b-8d90-20112b3e961f",
-    "title": "Adding TILs, releases, museums, tools and research to my blog",
-    "summary": "Beats are little inline links with badges that fit into different content timeline views around my site. I've been wanting to add indications of my various other online activities to my blog for a while now. I just turned on a new feature I'm calling \"beats\" (after story beats, naming this was hard!",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
+    "id": "52976c37-92d3-437f-b709-1ff132e5f77a",
+    "title": "[AINews] Gemini 3.1 Pro: 2x 3.0 on ARC-AGI 2",
+    "summary": "It’s getting a little hard to say interesting things with all the round robin minor version updates of frontier models every week, but Gemini 3.1 Pro seems like a decent enough advance. > *AI News for 2/18/2026-2/19/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/158543024",
+    "author": "Swyx",
+    "authorId": "swyx",
     "published": "2026-02-20",
     "topics": [
-      "Open Source Projects",
-      "Web Development",
-      "AI Agents",
-      "Claude Code"
+      "Prompt Engineering",
+      "Agent-Native Architecture",
+      "AI Agents"
     ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/20/beats/#atom-everything"
+    "diataxisType": "reference",
+    "path": "/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37",
+    "sourceUrl": "https://www.latent.space/p/ainews-gemini-31-pro-2x-30-on-arc"
   },
   {
-    "id": "9bb99b58-ec00-4c75-bd77-46d4c4cbba28",
-    "title": "Quoting Thariq Shihipar",
-    "summary": "Long running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse computation from previous roundtrips and significantly decrease latency and cost. > Long running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse ",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
+    "id": "8293fcc7-ed88-475e-b7de-139f54cb5cee",
+    "title": "Hi | Kieran Klaassen",
+    "summary": "Kieran Klaassen shares his journey as a creator and engineer, emphasizing his passion for crafting and inspiring authenticity.",
+    "author": "Kieran Klaassen",
+    "authorId": "kieran-klaassen",
     "published": "2026-02-20",
     "topics": [
-      "Agent-Native Architecture",
-      "Prompt Engineering",
-      "Claude Code"
+      "creativity",
+      "engineering",
+      "baking",
+      "self-discovery"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-thariq-shihipar-9bb99b58",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/20/thariq-shihipar/#atom-everything"
+    "path": "/kb/articles/hi-kieran-klaassen-8293fcc7",
+    "sourceUrl": "https://www.kieranklaassen.com/"
+  },
+  {
+    "id": "63033226-78c3-4a19-b8a5-e50a0e14f774",
+    "title": "Massively Parallel Procrastination",
+    "summary": "Jesse Chen discusses various aspects of AI software development and the challenges of managing agent interactions in his blog posts.",
+    "author": "Jesse Chen",
+    "authorId": "jesse-chen",
+    "published": "2026-02-20",
+    "topics": [
+      "ai-software-development",
+      "agent-management",
+      "prompt-injection",
+      "crypto-scams"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/massively-parallel-procrastination-63033226",
+    "sourceUrl": "https://blog.fsck.com/"
   },
   {
     "id": "126b8d87-34fa-4202-a710-630bc3c97363",
@@ -1113,55 +1147,6 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87",
     "sourceUrl": "https://www.latent.space/p/ainews-anthropics-agent-autonomy"
-  },
-  {
-    "id": "5fd79031-efba-4032-a4c9-3453a639b769",
-    "title": "SWE-bench February 2026 leaderboard update",
-    "summary": "SWE-bench is one of the benchmarks that the labs love to list in their model releases. SWE-bench is one of the benchmarks that the labs love to list in their model releases. The official leaderboard is infrequently updated but they just did a full run of it against the current generation of models, ",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-19",
-    "topics": [
-      "OpenAI API",
-      "Prompt Engineering",
-      "AI Agents"
-    ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything"
-  },
-  {
-    "id": "6a6656f2-ea9f-4852-b5e7-276fef839fb9",
-    "title": "Bitter Lessons in Venture vs Growth: Anthropic vs OpenAI, Noam Shazeer, World Labs, Thinking Machines, Cursor, ASIC Economics — Martin Casado & Sarah Wang of a16z",
-    "summary": "why today’s rounds are really compute contracts in disguise *Tickets for [AIEi Miami](https://www.ai.engineer/miami) and [AIE Europe](https://www.ai.engineer/europe) are live, with **first wave speakers announced**!*",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-19",
-    "topics": [
-      "AI Financing Models",
-      "Enterprise Software in AI",
-      "Future of AI Market Structures",
-      "Talent Wars in AI"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/bitter-lessons-in-venture-vs-growth-anthropic-vs-openai-noam-6a6656f2",
-    "sourceUrl": "https://www.latent.space/p/a16z"
-  },
-  {
-    "id": "92e1146e-bcfe-4f4f-8470-917e64d7d7ae",
-    "title": "Experimenting with sponsorship for my blog and newsletter",
-    "summary": "I've long been resistant to the idea of accepting sponsorship for my blog. I've long been resistant to the idea of accepting sponsorship for my blog. I value my credibility as an independent voice, and I don't want to risk compromising that reputation.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-19",
-    "topics": [
-      "Blogging",
-      "Sponsorship",
-      "Independent Publishing"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/19/sponsorship/#atom-everything"
   },
   {
     "id": "9c26a6a0-332c-409e-b1ee-b1129c83390c",
@@ -1182,6 +1167,38 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/head-of-claude-code-what-happens"
   },
   {
+    "id": "6b96427c-639d-4bfd-8ec8-c802fcf1cd84",
+    "title": "Recovering lost code",
+    "summary": "Reached the stage of parallel agent psychosis where I've lost a whole feature. Reached the stage of parallel agent psychosis where I've lost a whole feature - I know I had it yesterday, but I can't seem to find the branch or worktree or cloud instance or checkout with it in.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-19",
+    "topics": [
+      "Prompt Engineering",
+      "Agent-Native Architecture",
+      "Claude Code"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/recovering-lost-code-6b96427c",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/19/recovering-lost-code/#atom-everything"
+  },
+  {
+    "id": "92e1146e-bcfe-4f4f-8470-917e64d7d7ae",
+    "title": "Experimenting with sponsorship for my blog and newsletter",
+    "summary": "I've long been resistant to the idea of accepting sponsorship for my blog. I've long been resistant to the idea of accepting sponsorship for my blog. I value my credibility as an independent voice, and I don't want to risk compromising that reputation.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-19",
+    "topics": [
+      "Blogging",
+      "Sponsorship",
+      "Independent Publishing"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/19/sponsorship/#atom-everything"
+  },
+  {
     "id": "d3069d40-916b-4d98-8f14-a623d1159592",
     "title": "Gemini 3.1 Pro",
     "summary": "That's less than half the price of Claude Opus 4.6 with very similar benchmark scores to that model. The first in the Gemini 3.1 series, priced the same as Gemini 3 Pro ($2/million input, $12/million output under 200,000 tokens, $4/$18 for 200,000 to 1,000,000). That's less than half the price of Cl",
@@ -1198,20 +1215,20 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything"
   },
   {
-    "id": "6b96427c-639d-4bfd-8ec8-c802fcf1cd84",
-    "title": "Recovering lost code",
-    "summary": "Reached the stage of parallel agent psychosis where I've lost a whole feature. Reached the stage of parallel agent psychosis where I've lost a whole feature - I know I had it yesterday, but I can't seem to find the branch or worktree or cloud instance or checkout with it in.",
+    "id": "5fd79031-efba-4032-a4c9-3453a639b769",
+    "title": "SWE-bench February 2026 leaderboard update",
+    "summary": "SWE-bench is one of the benchmarks that the labs love to list in their model releases. SWE-bench is one of the benchmarks that the labs love to list in their model releases. The official leaderboard is infrequently updated but they just did a full run of it against the current generation of models, ",
     "author": "Simon Willison",
     "authorId": "simon-willison",
     "published": "2026-02-19",
     "topics": [
+      "OpenAI API",
       "Prompt Engineering",
-      "Agent-Native Architecture",
-      "Claude Code"
+      "AI Agents"
     ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/recovering-lost-code-6b96427c",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/19/recovering-lost-code/#atom-everything"
+    "diataxisType": "reference",
+    "path": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything"
   },
   {
     "id": "4dd505b8-5c4d-4acc-b74a-aae68bcc8d97",
@@ -1230,104 +1247,21 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/19/ladybird/#atom-everything"
   },
   {
-    "id": "1ea8a792-d512-4710-8bf1-600eaf12210b",
-    "title": "[patterns] Beads: the architecture of a graph issue tracker for AI agents",
-    "summary": "The article discusses how a version-controlled database enhances issue tracking by creating a persistent memory for AI agents, inspired by open source architecture.",
-    "author": "Laten Patterns",
-    "authorId": "latent-patterns",
-    "published": "2026-02-18",
+    "id": "6a6656f2-ea9f-4852-b5e7-276fef839fb9",
+    "title": "Bitter Lessons in Venture vs Growth: Anthropic vs OpenAI, Noam Shazeer, World Labs, Thinking Machines, Cursor, ASIC Economics — Martin Casado & Sarah Wang of a16z",
+    "summary": "why today’s rounds are really compute contracts in disguise *Tickets for [AIEi Miami](https://www.ai.engineer/miami) and [AIE Europe](https://www.ai.engineer/europe) are live, with **first wave speakers announced**!*",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-19",
     "topics": [
-      "ai-agents",
-      "issue-tracking",
-      "open-source",
-      "database-architecture"
+      "AI Financing Models",
+      "Enterprise Software in AI",
+      "Future of AI Market Structures",
+      "Talent Wars in AI"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-1ea8a792",
-    "sourceUrl": "http://localhost:5173/patterns/beads-graph-tracker"
-  },
-  {
-    "id": "f8eb5057-6321-4ec4-906b-c388f4dce203",
-    "title": "Typing without having to type",
-    "summary": "25+ years into my career as a programmer I think I may finally be coming around to preferring type hints or even strong typing. 25+ years into my career as a programmer I think I may *finally* be coming around to preferring type hints or even strong typing. I resisted those in the past because they ",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-18",
-    "topics": [
-      "Programming Productivity",
-      "Type Hints",
-      "AI Agents"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/typing-without-having-to-type-f8eb5057",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/18/typing/#atom-everything"
-  },
-  {
-    "id": "a6d5bdba-58bb-4d79-8a01-85562a09e005",
-    "title": "The A.I. Disruption We’ve Been Waiting for Has Arrived",
-    "summary": "The article discusses the transformative impact of advanced A.I. coding tools, highlighting personal experiences and the evolving perceptions within the tech community.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-18",
-    "topics": [
-      "ai-disruption",
-      "coding-tools",
-      "technology-impact",
-      "software-development"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/18/the-ai-disruption/#atom-everything"
-  },
-  {
-    "id": "a581c385-01c5-48e7-bd2e-9e8a356b0f61",
-    "title": "A quote from Martin Fowler",
-    "summary": "Martin Fowler discusses the impact of LLMs on software development, questioning the future of specialist roles versus the rise of Expert Generalists.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-18",
-    "topics": [
-      "llms",
-      "software-development",
-      "expert-generalists"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/a-quote-from-martin-fowler-a581c385",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/18/martin-fowler/#atom-everything"
-  },
-  {
-    "id": "cb38bd6d-8bf8-4fbc-8313-537246ca2fb0",
-    "title": "Agent-nativeArchitectures",
-    "summary": "Architecture decision: Store full agent configuration, or store only `agentType` and recreate from a registry. Bool {\n Date().timeIntervalSince(timestamp)\n < maxAge\n}",
-    "author": "Dan Shipper (Every)",
-    "authorId": "dan-shipper-every",
-    "published": "2026-02-18",
-    "topics": [
-      "Storage Abstraction",
-      "CRUD Completeness",
-      "Anti-patterns in Agent Design",
-      "Agent-Native Architecture",
-      "Dynamic Capability Discovery"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/agent-nativearchitectures-cb38bd6d",
-    "sourceUrl": "https://every.to/guides/agent-native"
-  },
-  {
-    "id": "bc799cfd-57af-452b-b2a7-f16c6607a6fc",
-    "title": "[patterns] Beads: the architecture of a graph issue tracker for AI agents",
-    "summary": "How a version-controlled database turns issue tracking into persistent agent memory. How a version-controlled database turns issue tracking into persistent agent memory — a chapter in the style of The Architecture of Open Source Applications.",
-    "author": "Laten Patterns",
-    "authorId": "latent-patterns",
-    "published": "2026-02-18",
-    "topics": [
-      "Version Control",
-      "Agent-Native Architecture",
-      "AI Agents"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-bc799cfd",
-    "sourceUrl": "https://latentpatterns.com/patterns/beads-graph-tracker"
+    "path": "/kb/articles/bitter-lessons-in-venture-vs-growth-anthropic-vs-openai-noam-6a6656f2",
+    "sourceUrl": "https://www.latent.space/p/a16z"
   },
   {
     "id": "a5a5dffc-1776-4150-91de-9bd680d78b5b",
@@ -1362,52 +1296,104 @@
     "sourceUrl": "https://www.latent.space/p/ainews-claude-sonnet-46-clean-upgrade"
   },
   {
-    "id": "52ad310d-cbf1-4ff2-8e92-867ff1b56df6",
-    "title": "How to do AI analysis you can actually trust",
-    "summary": "Ever run an AI analysis on customer data, only to discover the numbers were fabricated and the insights completely generic? [](https://substackcdn.com/image/fetch/$s_!OYz9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d4c0b48-1813-44",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
-    "published": "2026-02-17",
+    "id": "1ea8a792-d512-4710-8bf1-600eaf12210b",
+    "title": "[patterns] Beads: the architecture of a graph issue tracker for AI agents",
+    "summary": "The article discusses how a version-controlled database enhances issue tracking by creating a persistent memory for AI agents, inspired by open source architecture.",
+    "author": "Laten Patterns",
+    "authorId": "latent-patterns",
+    "published": "2026-02-18",
     "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Agent-Native Architecture"
+      "ai-agents",
+      "issue-tracking",
+      "open-source",
+      "database-architecture"
     ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-do-ai-analysis-you-can-actually-db6"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-1ea8a792",
+    "sourceUrl": "http://localhost:5173/patterns/beads-graph-tracker"
   },
   {
-    "id": "5062827b-e961-4027-9bfe-018dd877c6cd",
-    "title": "How to do AI analysis you can actually trust",
-    "summary": "The problem with AI is that the output always looks confident—even when it’s full of lies. *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: [Lenny’s Podcast](https://www.lennysnewsletter.com/podcast) | [Len",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
-    "published": "2026-02-17",
+    "id": "a581c385-01c5-48e7-bd2e-9e8a356b0f61",
+    "title": "A quote from Martin Fowler",
+    "summary": "Martin Fowler discusses the impact of LLMs on software development, questioning the future of specialist roles versus the rise of Expert Generalists.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-18",
     "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Customer Research"
+      "llms",
+      "software-development",
+      "expert-generalists"
     ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-5062827b",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-do-ai-analysis-you-can-actually"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/a-quote-from-martin-fowler-a581c385",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/18/martin-fowler/#atom-everything"
   },
   {
-    "id": "44bb07f5-acfd-406a-a0cf-b709afe79c88",
-    "title": "[AINews] Qwen3.5-397B-A17B: the smallest Open-Opus class, very efficient model",
-    "summary": "AI News for 2/13/2026-2/16/2026. We checked 12 subreddits, 544 Twitters and 24 Discords for you. > *AI News for 2/13/2026-2/16/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**261** channels, and **26057** messages) for you. Estimated",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-17",
+    "id": "f8eb5057-6321-4ec4-906b-c388f4dce203",
+    "title": "Typing without having to type",
+    "summary": "25+ years into my career as a programmer I think I may finally be coming around to preferring type hints or even strong typing. 25+ years into my career as a programmer I think I may *finally* be coming around to preferring type hints or even strong typing. I resisted those in the past because they ",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-18",
     "topics": [
-      "OpenAI API",
-      "AI Agents",
-      "Anthropic API"
+      "Programming Productivity",
+      "Type Hints",
+      "AI Agents"
     ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5",
-    "sourceUrl": "https://www.latent.space/p/ainews-qwen35-397b-a17b-the-smallest"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/typing-without-having-to-type-f8eb5057",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/18/typing/#atom-everything"
+  },
+  {
+    "id": "cb38bd6d-8bf8-4fbc-8313-537246ca2fb0",
+    "title": "Agent-nativeArchitectures",
+    "summary": "Architecture decision: Store full agent configuration, or store only `agentType` and recreate from a registry. Bool {\n Date().timeIntervalSince(timestamp)\n < maxAge\n}",
+    "author": "Dan Shipper (Every)",
+    "authorId": "dan-shipper-every",
+    "published": "2026-02-18",
+    "topics": [
+      "Storage Abstraction",
+      "CRUD Completeness",
+      "Anti-patterns in Agent Design",
+      "Agent-Native Architecture",
+      "Dynamic Capability Discovery"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/agent-nativearchitectures-cb38bd6d",
+    "sourceUrl": "https://every.to/guides/agent-native"
+  },
+  {
+    "id": "a6d5bdba-58bb-4d79-8a01-85562a09e005",
+    "title": "The A.I. Disruption We’ve Been Waiting for Has Arrived",
+    "summary": "The article discusses the transformative impact of advanced A.I. coding tools, highlighting personal experiences and the evolving perceptions within the tech community.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-18",
+    "topics": [
+      "ai-disruption",
+      "coding-tools",
+      "technology-impact",
+      "software-development"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/18/the-ai-disruption/#atom-everything"
+  },
+  {
+    "id": "bc799cfd-57af-452b-b2a7-f16c6607a6fc",
+    "title": "[patterns] Beads: the architecture of a graph issue tracker for AI agents",
+    "summary": "How a version-controlled database turns issue tracking into persistent agent memory. How a version-controlled database turns issue tracking into persistent agent memory — a chapter in the style of The Architecture of Open Source Applications.",
+    "author": "Laten Patterns",
+    "authorId": "latent-patterns",
+    "published": "2026-02-18",
+    "topics": [
+      "Version Control",
+      "Agent-Native Architecture",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-bc799cfd",
+    "sourceUrl": "https://latentpatterns.com/patterns/beads-graph-tracker"
   },
   {
     "id": "4888384c-8ae6-41e9-a3c4-7fa862e96e92",
@@ -1426,36 +1412,20 @@
     "sourceUrl": "https://latentpatterns.com/patterns/pi-mono-architecture"
   },
   {
-    "id": "3d5bc9df-a78e-4071-bb20-76dbb175dabc",
-    "title": "How to Build Agent-native: Lessons From Four Apps",
-    "summary": "Nobody programmed it to do any of this. Instead, Dan’s app has a handful of basic tools—“read file,” “write file,” and “search the web”—and an AI agent smart enough to combine them in a way that matches the user’s request. When it generates a summary, for example, that’s the agent deciding on its ow",
-    "author": "Dan Shipper (Every)",
-    "authorId": "dan-shipper-every",
+    "id": "52ad310d-cbf1-4ff2-8e92-867ff1b56df6",
+    "title": "How to do AI analysis you can actually trust",
+    "summary": "Ever run an AI analysis on customer data, only to discover the numbers were fabricated and the insights completely generic? [](https://substackcdn.com/image/fetch/$s_!OYz9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d4c0b48-1813-44",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
     "published": "2026-02-17",
     "topics": [
-      "Agent-Native Architecture",
+      "Prompt Engineering",
       "AI Agents",
-      "Claude Code"
+      "Agent-Native Architecture"
     ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df",
-    "sourceUrl": "https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps"
-  },
-  {
-    "id": "f6ef390b-4a8f-4ce6-b797-86a599d41e5f",
-    "title": "Rodney v0.4.0",
-    "summary": "Rodney v0.4.0 introduces several new features for the CLI tool, including improved error handling, new commands for testing, and enhanced support for Windows.",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-17",
-    "topics": [
-      "browser-automation",
-      "cli-tools",
-      "software-release"
-    ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/rodney-v040-f6ef390b",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/17/rodney/#atom-everything"
+    "diataxisType": "how-to",
+    "path": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-do-ai-analysis-you-can-actually-db6"
   },
   {
     "id": "cffdf1dd-fb76-4d47-804c-13c511c5fe16",
@@ -1475,6 +1445,70 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything"
   },
   {
+    "id": "44bb07f5-acfd-406a-a0cf-b709afe79c88",
+    "title": "[AINews] Qwen3.5-397B-A17B: the smallest Open-Opus class, very efficient model",
+    "summary": "AI News for 2/13/2026-2/16/2026. We checked 12 subreddits, 544 Twitters and 24 Discords for you. > *AI News for 2/13/2026-2/16/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**261** channels, and **26057** messages) for you. Estimated",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-17",
+    "topics": [
+      "OpenAI API",
+      "AI Agents",
+      "Anthropic API"
+    ],
+    "diataxisType": "reference",
+    "path": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5",
+    "sourceUrl": "https://www.latent.space/p/ainews-qwen35-397b-a17b-the-smallest"
+  },
+  {
+    "id": "3d5bc9df-a78e-4071-bb20-76dbb175dabc",
+    "title": "How to Build Agent-native: Lessons From Four Apps",
+    "summary": "Nobody programmed it to do any of this. Instead, Dan’s app has a handful of basic tools—“read file,” “write file,” and “search the web”—and an AI agent smart enough to combine them in a way that matches the user’s request. When it generates a summary, for example, that’s the agent deciding on its ow",
+    "author": "Dan Shipper (Every)",
+    "authorId": "dan-shipper-every",
+    "published": "2026-02-17",
+    "topics": [
+      "Agent-Native Architecture",
+      "AI Agents",
+      "Claude Code"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df",
+    "sourceUrl": "https://every.to/source-code/how-to-build-agent-native-lessons-from-four-apps"
+  },
+  {
+    "id": "5062827b-e961-4027-9bfe-018dd877c6cd",
+    "title": "How to do AI analysis you can actually trust",
+    "summary": "The problem with AI is that the output always looks confident—even when it’s full of lies. *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: [Lenny’s Podcast](https://www.lennysnewsletter.com/podcast) | [Len",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
+    "published": "2026-02-17",
+    "topics": [
+      "Prompt Engineering",
+      "AI Agents",
+      "Customer Research"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-5062827b",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-do-ai-analysis-you-can-actually"
+  },
+  {
+    "id": "f6ef390b-4a8f-4ce6-b797-86a599d41e5f",
+    "title": "Rodney v0.4.0",
+    "summary": "Rodney v0.4.0 introduces several new features for the CLI tool, including improved error handling, new commands for testing, and enhanced support for Windows.",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-17",
+    "topics": [
+      "browser-automation",
+      "cli-tools",
+      "software-release"
+    ],
+    "diataxisType": "reference",
+    "path": "/kb/articles/rodney-v040-f6ef390b",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/17/rodney/#atom-everything"
+  },
+  {
     "id": "9fbec750-aa9b-41fe-afb7-1e77cf158612",
     "title": "[patterns] Pi: the architecture of an AI coding agent",
     "summary": "The article discusses how a monorepo of seven packages can transform any large language model into a coding assistant, inspired by The Architecture of Open Source Applications.",
@@ -1490,22 +1524,6 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/patterns-pi-the-architecture-of-an-ai-coding-agent-9fbec750",
     "sourceUrl": "http://localhost:5173/patterns/pi-mono-architecture"
-  },
-  {
-    "id": "4ba96001-0e5a-4fdf-8403-3aed6c4c6382",
-    "title": "[blog] Introducing the Latent Patterns Blog",
-    "summary": "Why we're launching a blog series Why we're launching a blog series, what we'll publish, and how to subscribe via RSS.",
-    "author": "Laten Patterns",
-    "authorId": "latent-patterns",
-    "published": "2026-02-16",
-    "topics": [
-      "Blogging",
-      "RSS Subscription",
-      "Content Strategy"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/blog-introducing-the-latent-patterns-blog-4ba96001",
-    "sourceUrl": "https://latentpatterns.com/blog/introducing-the-latent-patterns-blog"
   },
   {
     "id": "8c13973d-2312-4bf1-b707-8a7b6f246615",
@@ -1524,20 +1542,20 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/how-this-visually-impaired-engineer"
   },
   {
-    "id": "2f3d6bbc-e693-4ee0-8b44-385e929b657c",
-    "title": "🎙️ This week on How I AI: Opus vs. Codex showdown, and AI for accessibility",
-    "summary": "It’s not Opus or Codex. It’s Opus for building and Codex for reviewing. [](https://substackcdn.com/image/fetch/$s_!gWeJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F361d81ef-7faf-4d8e-8028-5d5e03432a9a_2329x551.png)",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
+    "id": "4ba96001-0e5a-4fdf-8403-3aed6c4c6382",
+    "title": "[blog] Introducing the Latent Patterns Blog",
+    "summary": "Why we're launching a blog series Why we're launching a blog series, what we'll publish, and how to subscribe via RSS.",
+    "author": "Laten Patterns",
+    "authorId": "latent-patterns",
     "published": "2026-02-16",
     "topics": [
-      "Prompt Engineering",
-      "Claude Code",
-      "AI Agents"
+      "Blogging",
+      "RSS Subscription",
+      "Content Strategy"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-opus-vs-codex"
+    "path": "/kb/articles/blog-introducing-the-latent-patterns-blog-4ba96001",
+    "sourceUrl": "https://latentpatterns.com/blog/introducing-the-latent-patterns-blog"
   },
   {
     "id": "6cf25cb5-2353-48ab-be9d-cebc696fef94",
@@ -1554,6 +1572,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/blog-introducing-the-latent-patterns-blog-6cf25cb5",
     "sourceUrl": "http://localhost:5173/blog/introducing-the-latent-patterns-blog"
+  },
+  {
+    "id": "2f3d6bbc-e693-4ee0-8b44-385e929b657c",
+    "title": "🎙️ This week on How I AI: Opus vs. Codex showdown, and AI for accessibility",
+    "summary": "It’s not Opus or Codex. It’s Opus for building and Codex for reviewing. [](https://substackcdn.com/image/fetch/$s_!gWeJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F361d81ef-7faf-4d8e-8028-5d5e03432a9a_2329x551.png)",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
+    "published": "2026-02-16",
+    "topics": [
+      "Prompt Engineering",
+      "Claude Code",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-opus-vs-codex"
   },
   {
     "id": "2afb2858-7eb6-40da-9165-df48db67c9e9",
@@ -1637,100 +1671,37 @@
     "sourceUrl": "https://blog.fsck.com/blog/"
   },
   {
-    "id": "ec5f034f-ccd8-481c-9ee6-ea9ed089cd1d",
-    "title": "Quantifying infrastructure noise in agentic coding evals",
-    "summary": "Infrastructure configuration can swing agentic coding benchmarks by several percentage points—sometimes more than the leaderboard gap between top models. Infrastructure configuration can swing agentic coding benchmarks by several percentage points—sometimes more than the leaderboard gap between top ",
+    "id": "67d63c59-4309-4a22-be1c-87c151e2a3c3",
+    "title": "Building a C compiler with a team of parallel Claudes",
+    "summary": "With agent teams, multiple Claude instances work in parallel on a shared codebase without active human intervention. We tasked Opus 4.6 using agent teams to build a C Compiler, and then (mostly) walked away. Here's what it taught us about the future of autonomous software development.",
     "author": "Anthropic Engineering",
     "authorId": "anthropic-engineering",
     "published": "2026-02-12",
     "topics": [
-      "Agent-Native Architecture",
       "AI Agents",
-      "Software Engineering Benchmarks"
+      "Agent-Native Architecture",
+      "Claude Code",
+      "Prompt Engineering"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/quantifying-infrastructure-noise-in-agentic-coding-evals-ec5f034f",
-    "sourceUrl": "https://www.anthropic.com/engineering/infrastructure-noise"
+    "path": "/kb/articles/building-a-c-compiler-with-a-team-of-parallel-claudes-67d63c59",
+    "sourceUrl": "https://www.anthropic.com/engineering/building-c-compiler"
   },
   {
-    "id": "86aff01b-c979-4882-958f-981cadef9df5",
-    "title": "Gemini 3 Deep Think",
-    "summary": "New from Google. They say it's built to push the frontier of intelligence and solve modern challenges across science, research, and engineering. New from Google. They say it's \"built to push the frontier of intelligence and solve modern challenges across science, research, and engineering\".",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-12",
-    "topics": [
-      "Creative AI",
-      "Prompt Engineering",
-      "AI Agents"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/gemini-3-deep-think-86aff01b",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/#atom-everything"
-  },
-  {
-    "id": "97a8866c-2524-4f67-87e8-95038880c22f",
-    "title": "Quoting Anthropic",
-    "summary": "Claude Code was made available to the general public in May 2025. > Claude Code was made available to the general public in May 2025. Today, Claude Code’s run-rate revenue has grown to over $2.5 billion; this figure has more than doubled since the beginning of 2026. The number of weekly active Claud",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-12",
-    "topics": [
-      "Anthropic API",
-      "Claude Code"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-anthropic-97a8866c",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/12/anthropic/#atom-everything"
-  },
-  {
-    "id": "be70bd66-c187-4ce9-a9a0-09688e6efb38",
-    "title": "[AINews] Z.ai GLM-5: New SOTA Open Weights LLM",
-    "summary": "Opus-class, but not a 1T super model like Kimi or Qwen. > *AI News for 2/10/2026-2/11/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**256** channels, and **7988** messages) for you. Estimated reading time saved (at 200wpm): **655** m",
+    "id": "b9a15207-9362-4f6e-8504-93deb86956f2",
+    "title": "Owning the AI Pareto Frontier — Jeff Dean",
+    "summary": "Jeff Dean has quietly shaped nearly every layer of the modern AI stack. From rewriting **Google’s** search stack in the early 2000s to reviving sparse trillion-parameter models and [co-designing TPUs with frontier ML research](https://cloud.google.com/transform/ai-specialized-chips-tpu-history-gen-a",
     "author": "Swyx",
     "authorId": "swyx",
     "published": "2026-02-12",
     "topics": [
-      "OpenAI API",
       "Prompt Engineering",
-      "AI Agents"
-    ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66",
-    "sourceUrl": "https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights"
-  },
-  {
-    "id": "09329b6c-d570-4c87-be90-8bb4d905303c",
-    "title": "🔬Beyond AlphaFold: How Boltz is Open-Sourcing the Future of Drug Discovery",
-    "summary": "the next frontier lies in modeling complex interactions and generative protein design This podcast features **[Gabriele Corso](https://www.linkedin.com/in/gcorso/) and [Jeremy Wohlwend](https://jeremywohlwend.com/)**, co-founders of **Boltz** and authors of **[the Boltz Manifesto](https://www.a16z.n",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-12",
-    "topics": [
-      "Generative Protein Design",
-      "Open Source",
-      "Structural Biology",
-      "Drug Discovery"
+      "AI Agents",
+      "Agent-Native Architecture"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c",
-    "sourceUrl": "https://www.latent.space/p/boltz"
-  },
-  {
-    "id": "a1ad656f-483e-4636-8e1c-eba710fa4e70",
-    "title": "Introducing GPT‑5.3‑Codex‑Spark",
-    "summary": "an ultra-fast model for real-time coding in Codex OpenAI announced a partnership with Cerebras [on January 14th](https://openai.com/index/cerebras-partnership/). Four weeks later they're already launching the first integration, \"an ultra-fast model for real-time coding in Codex\".",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-12",
-    "topics": [
-      "OpenAI API",
-      "Prompt Engineering",
-      "AI Agents"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/introducing-gpt53codexspark-a1ad656f",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything"
+    "path": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207",
+    "sourceUrl": "https://www.latent.space/p/jeffdean"
   },
   {
     "id": "b21fa5af-09ae-4a05-845b-0bc4f607ff10",
@@ -1766,37 +1737,84 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/12/covering-electricity-price-increases/#atom-everything"
   },
   {
-    "id": "b9a15207-9362-4f6e-8504-93deb86956f2",
-    "title": "Owning the AI Pareto Frontier — Jeff Dean",
-    "summary": "Jeff Dean has quietly shaped nearly every layer of the modern AI stack. From rewriting **Google’s** search stack in the early 2000s to reviving sparse trillion-parameter models and [co-designing TPUs with frontier ML research](https://cloud.google.com/transform/ai-specialized-chips-tpu-history-gen-a",
+    "id": "be70bd66-c187-4ce9-a9a0-09688e6efb38",
+    "title": "[AINews] Z.ai GLM-5: New SOTA Open Weights LLM",
+    "summary": "Opus-class, but not a 1T super model like Kimi or Qwen. > *AI News for 2/10/2026-2/11/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**256** channels, and **7988** messages) for you. Estimated reading time saved (at 200wpm): **655** m",
     "author": "Swyx",
     "authorId": "swyx",
     "published": "2026-02-12",
     "topics": [
+      "OpenAI API",
       "Prompt Engineering",
-      "AI Agents",
-      "Agent-Native Architecture"
+      "AI Agents"
     ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207",
-    "sourceUrl": "https://www.latent.space/p/jeffdean"
+    "diataxisType": "reference",
+    "path": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66",
+    "sourceUrl": "https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights"
   },
   {
-    "id": "67d63c59-4309-4a22-be1c-87c151e2a3c3",
-    "title": "Building a C compiler with a team of parallel Claudes",
-    "summary": "With agent teams, multiple Claude instances work in parallel on a shared codebase without active human intervention. We tasked Opus 4.6 using agent teams to build a C Compiler, and then (mostly) walked away. Here's what it taught us about the future of autonomous software development.",
+    "id": "97a8866c-2524-4f67-87e8-95038880c22f",
+    "title": "Quoting Anthropic",
+    "summary": "Claude Code was made available to the general public in May 2025. > Claude Code was made available to the general public in May 2025. Today, Claude Code’s run-rate revenue has grown to over $2.5 billion; this figure has more than doubled since the beginning of 2026. The number of weekly active Claud",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-12",
+    "topics": [
+      "Anthropic API",
+      "Claude Code"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-anthropic-97a8866c",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/12/anthropic/#atom-everything"
+  },
+  {
+    "id": "86aff01b-c979-4882-958f-981cadef9df5",
+    "title": "Gemini 3 Deep Think",
+    "summary": "New from Google. They say it's built to push the frontier of intelligence and solve modern challenges across science, research, and engineering. New from Google. They say it's \"built to push the frontier of intelligence and solve modern challenges across science, research, and engineering\".",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-12",
+    "topics": [
+      "Creative AI",
+      "Prompt Engineering",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/gemini-3-deep-think-86aff01b",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/#atom-everything"
+  },
+  {
+    "id": "ec5f034f-ccd8-481c-9ee6-ea9ed089cd1d",
+    "title": "Quantifying infrastructure noise in agentic coding evals",
+    "summary": "Infrastructure configuration can swing agentic coding benchmarks by several percentage points—sometimes more than the leaderboard gap between top models. Infrastructure configuration can swing agentic coding benchmarks by several percentage points—sometimes more than the leaderboard gap between top ",
     "author": "Anthropic Engineering",
     "authorId": "anthropic-engineering",
     "published": "2026-02-12",
     "topics": [
-      "AI Agents",
       "Agent-Native Architecture",
-      "Claude Code",
-      "Prompt Engineering"
+      "AI Agents",
+      "Software Engineering Benchmarks"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/building-a-c-compiler-with-a-team-of-parallel-claudes-67d63c59",
-    "sourceUrl": "https://www.anthropic.com/engineering/building-c-compiler"
+    "path": "/kb/articles/quantifying-infrastructure-noise-in-agentic-coding-evals-ec5f034f",
+    "sourceUrl": "https://www.anthropic.com/engineering/infrastructure-noise"
+  },
+  {
+    "id": "09329b6c-d570-4c87-be90-8bb4d905303c",
+    "title": "🔬Beyond AlphaFold: How Boltz is Open-Sourcing the Future of Drug Discovery",
+    "summary": "the next frontier lies in modeling complex interactions and generative protein design This podcast features **[Gabriele Corso](https://www.linkedin.com/in/gcorso/) and [Jeremy Wohlwend](https://jeremywohlwend.com/)**, co-founders of **Boltz** and authors of **[the Boltz Manifesto](https://www.a16z.n",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-12",
+    "topics": [
+      "Generative Protein Design",
+      "Open Source",
+      "Structural Biology",
+      "Drug Discovery"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c",
+    "sourceUrl": "https://www.latent.space/p/boltz"
   },
   {
     "id": "5e365fb0-6f46-43ce-b8f5-4c1ec39c29f7",
@@ -1817,22 +1835,6 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/12/an-ai-agent-published-a-hit-piece-on-me/#atom-everything"
   },
   {
-    "id": "46db46c4-9b0a-4476-8b62-b0576509025d",
-    "title": "Supervisor, not overseer",
-    "summary": "In my post about my Showboat project I used the term 'overseer' to refer to the person who manages a coding agent. In my [post about my Showboat project](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/) I used the term \"overseer\" to refer to the person who manages a coding agent. It turns",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-12",
-    "topics": [
-      "Ethical Considerations in AI",
-      "AI Agents",
-      "Language and Terminology"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/supervisor-not-overseer-46db46c4",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/12/supervisor/#atom-everything"
-  },
-  {
     "id": "b7fabfc2-a3e9-40c5-822a-139093044fff",
     "title": "Letting agents post on my blog; finding a needle in a haystack",
     "summary": "One of the wildest things that I've been running into lately is that my ability to create software has been outstripping my ability to explain it or write about it or even announce it. Up till now, I've been pretty careful not to let agents write my blog posts outside of very well-flagged sections o",
@@ -1849,20 +1851,52 @@
     "sourceUrl": "https://blog.fsck.com/2026/02/12/letting-agents-blog/"
   },
   {
-    "id": "192d4e92-c728-4351-ab70-1d6086e6afb0",
-    "title": "Quoting Andrew Deck for Niemen Lab",
-    "summary": "An AI-generated report, delivered directly to the email inboxes of journalists, was an essential tool in the Times’ coverage. > An AI-generated report, delivered directly to the email inboxes of journalists, was an essential tool in the Times’ coverage. It was also one of the first signals that cons",
+    "id": "a1ad656f-483e-4636-8e1c-eba710fa4e70",
+    "title": "Introducing GPT‑5.3‑Codex‑Spark",
+    "summary": "an ultra-fast model for real-time coding in Codex OpenAI announced a partnership with Cerebras [on January 14th](https://openai.com/index/cerebras-partnership/). Four weeks later they're already launching the first integration, \"an ultra-fast model for real-time coding in Codex\".",
     "author": "Simon Willison",
     "authorId": "simon-willison",
-    "published": "2026-02-11",
+    "published": "2026-02-12",
     "topics": [
-      "Large Language Models",
+      "OpenAI API",
       "Prompt Engineering",
       "AI Agents"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/11/manosphere-report/#atom-everything"
+    "path": "/kb/articles/introducing-gpt53codexspark-a1ad656f",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/12/codex-spark/#atom-everything"
+  },
+  {
+    "id": "46db46c4-9b0a-4476-8b62-b0576509025d",
+    "title": "Supervisor, not overseer",
+    "summary": "In my post about my Showboat project I used the term 'overseer' to refer to the person who manages a coding agent. In my [post about my Showboat project](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/) I used the term \"overseer\" to refer to the person who manages a coding agent. It turns",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-12",
+    "topics": [
+      "Ethical Considerations in AI",
+      "AI Agents",
+      "Language and Terminology"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/supervisor-not-overseer-46db46c4",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/12/supervisor/#atom-everything"
+  },
+  {
+    "id": "da1b9f87-e7d3-43b5-8c05-38d9733fb3b1",
+    "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+    "summary": "This is a huge new MIT-licensed model: 754B parameters and 1.51TB on Hugging Face This is a *huge* new MIT-licensed model: 754B parameters and [1.51TB on Hugging Face](https://huggingface.co/zai-org/GLM-5) twice the size of [GLM-4.7](https://huggingface.co/zai-org/GLM-4.7) which was 368B and 717GB (",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-11",
+    "topics": [
+      "Agent-Native Architecture",
+      "Prompt Engineering",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything"
   },
   {
     "id": "91fc2890-af1f-4d7e-8d36-c22ce7e96aee",
@@ -1881,6 +1915,22 @@
     "sourceUrl": "https://www.latent.space/p/ainews-qwen-image-2-and-seedance"
   },
   {
+    "id": "192d4e92-c728-4351-ab70-1d6086e6afb0",
+    "title": "Quoting Andrew Deck for Niemen Lab",
+    "summary": "An AI-generated report, delivered directly to the email inboxes of journalists, was an essential tool in the Times’ coverage. > An AI-generated report, delivered directly to the email inboxes of journalists, was an essential tool in the Times’ coverage. It was also one of the first signals that cons",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-11",
+    "topics": [
+      "Large Language Models",
+      "Prompt Engineering",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/11/manosphere-report/#atom-everything"
+  },
+  {
     "id": "38df1eb0-eb64-4795-a3e7-a38981f5f1a7",
     "title": "Claude Opus 4.6 vs. GPT-5.3 Codex: How I shipped 93,000 lines of code in 5 days",
     "summary": "I compare GPT-5.3 Codex with Opus 4.6 (and Opus 4.6 Fast) by asking them to redesign my marketing website and refactor some genuinely gnarly components. I put the newest AI coding models from OpenAI and Anthropic head-to-head, testing them on real engineering work I’m actually doing. I compare GPT-5",
@@ -1895,6 +1945,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0",
     "sourceUrl": "https://www.lennysnewsletter.com/p/claude-opus-46-vs-gpt-53-codex-how"
+  },
+  {
+    "id": "c548126a-0fa1-4fcf-a824-e7e9accf067d",
+    "title": "Skills in OpenAI API",
+    "summary": "You can now use Skills directly in the OpenAI API with their shell tool. OpenAI's adoption of Skills continues to gain ground. You can now use Skills directly in the OpenAI API with their [shell tool](https://developers.openai.com/api/docs/guides/tools-shell/). You can zip skills up and upload them ",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-11",
+    "topics": [
+      "OpenAI API",
+      "Prompt Engineering",
+      "Claude Code"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/skills-in-openai-api-c548126a",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything"
   },
   {
     "id": "9cb198d9-0778-46da-b07f-c0f5ba2d4cfe",
@@ -1914,36 +1980,36 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything"
   },
   {
-    "id": "c548126a-0fa1-4fcf-a824-e7e9accf067d",
-    "title": "Skills in OpenAI API",
-    "summary": "You can now use Skills directly in the OpenAI API with their shell tool. OpenAI's adoption of Skills continues to gain ground. You can now use Skills directly in the OpenAI API with their [shell tool](https://developers.openai.com/api/docs/guides/tools-shell/). You can zip skills up and upload them ",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-11",
+    "id": "80978fcd-de3a-44b9-943c-1c98843baf3e",
+    "title": "Dorodango",
+    "summary": "I've realized that I have two primary ways that I'm building software with AI. I've realized that I have two primary ways that I'm building software with AI.",
+    "author": "Jesse Chen",
+    "authorId": "jesse-chen",
+    "published": "2026-02-10",
     "topics": [
-      "OpenAI API",
       "Prompt Engineering",
-      "Claude Code"
-    ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/skills-in-openai-api-c548126a",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything"
-  },
-  {
-    "id": "da1b9f87-e7d3-43b5-8c05-38d9733fb3b1",
-    "title": "GLM-5: From Vibe Coding to Agentic Engineering",
-    "summary": "This is a huge new MIT-licensed model: 754B parameters and 1.51TB on Hugging Face This is a *huge* new MIT-licensed model: 754B parameters and [1.51TB on Hugging Face](https://huggingface.co/zai-org/GLM-5) twice the size of [GLM-4.7](https://huggingface.co/zai-org/GLM-4.7) which was 368B and 717GB (",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-11",
-    "topics": [
-      "Agent-Native Architecture",
-      "Prompt Engineering",
-      "AI Agents"
+      "AI Agents",
+      "Agent-Native Architecture"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything"
+    "path": "/kb/articles/dorodango-80978fcd",
+    "sourceUrl": "https://blog.fsck.com/2026/02/10/dorodango/"
+  },
+  {
+    "id": "3a64ad66-5603-428c-960d-e4d9a86d5225",
+    "title": "Introducing Showboat and Rodney, so agents can demo what they’ve built",
+    "summary": "A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their overseer. A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their overseer. This goes beyond a",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-10",
+    "topics": [
+      "Agent-Native Architecture",
+      "AI Agents",
+      "Software Testing"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything"
   },
   {
     "id": "35ea6c02-1ada-4a21-bec6-05e685453fa9",
@@ -2011,38 +2077,6 @@
     "sourceUrl": "https://www.latent.space/p/scientist-simulator"
   },
   {
-    "id": "80978fcd-de3a-44b9-943c-1c98843baf3e",
-    "title": "Dorodango",
-    "summary": "I've realized that I have two primary ways that I'm building software with AI. I've realized that I have two primary ways that I'm building software with AI.",
-    "author": "Jesse Chen",
-    "authorId": "jesse-chen",
-    "published": "2026-02-10",
-    "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Agent-Native Architecture"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/dorodango-80978fcd",
-    "sourceUrl": "https://blog.fsck.com/2026/02/10/dorodango/"
-  },
-  {
-    "id": "3a64ad66-5603-428c-960d-e4d9a86d5225",
-    "title": "Introducing Showboat and Rodney, so agents can demo what they’ve built",
-    "summary": "A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their overseer. A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their overseer. This goes beyond a",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-10",
-    "topics": [
-      "Agent-Native Architecture",
-      "AI Agents",
-      "Software Testing"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything"
-  },
-  {
     "id": "72ada27f-5bf4-407c-9818-93352a9881b8",
     "title": "How to build your own AI developer tools with Claude Code | CJ Hess (Tenex)",
     "summary": "CJ demonstrates his custom-built tool, Flowy, that transforms Claude’s ASCII diagrams into interactive visual mockups and flowcharts. 1. How CJ built Flowy, a custom visual planning tool that converts JSON files into interactive mockups and flowcharts\n2. Why visual planning tools are more effective ",
@@ -2075,20 +2109,20 @@
     "sourceUrl": "https://every.to/source-code/compound-engineering-the-definitive-guide"
   },
   {
-    "id": "db8b7ca4-bfbc-485a-a72f-232ee6e93c6f",
-    "title": "🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code",
-    "summary": "Claude Code excels at “intent understanding” compared with other models. [](https://substackcdn.com/image/fetch/$s_!gWeJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F361d81ef-7faf-4d8e-8028-5d5e03432a9a_2329x551.png)",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
+    "id": "0b7f8147-9a73-4e1c-869f-8a7654772980",
+    "title": "AI Doesn’t Reduce Work—It Intensifies It",
+    "summary": "AI introduced a new rhythm in which workers managed several active threads at once. Aruna Ranganathan and Xingqi Maggie Ye from Berkeley Haas School of Business report initial findings in the HBR from their April to December 2025 study of 200 employees at a \"U.S.-based technology company\".",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
     "published": "2026-02-09",
     "topics": [
-      "Prompt Engineering",
-      "Claude Code",
-      "AI Agents"
+      "Cognitive Load",
+      "AI Agents",
+      "Sustainable Working Practices"
     ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-to-build"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything"
   },
   {
     "id": "9db8006a-288b-49d2-a784-b8be529c8e88",
@@ -2107,20 +2141,20 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything"
   },
   {
-    "id": "0b7f8147-9a73-4e1c-869f-8a7654772980",
-    "title": "AI Doesn’t Reduce Work—It Intensifies It",
-    "summary": "AI introduced a new rhythm in which workers managed several active threads at once. Aruna Ranganathan and Xingqi Maggie Ye from Berkeley Haas School of Business report initial findings in the HBR from their April to December 2025 study of 200 employees at a \"U.S.-based technology company\".",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
+    "id": "db8b7ca4-bfbc-485a-a72f-232ee6e93c6f",
+    "title": "🎙️ This week on How I AI: How to build your own AI developer tools with Claude Code",
+    "summary": "Claude Code excels at “intent understanding” compared with other models. [](https://substackcdn.com/image/fetch/$s_!gWeJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F361d81ef-7faf-4d8e-8028-5d5e03432a9a_2329x551.png)",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
     "published": "2026-02-09",
     "topics": [
-      "Cognitive Load",
-      "AI Agents",
-      "Sustainable Working Practices"
+      "Prompt Engineering",
+      "Claude Code",
+      "AI Agents"
     ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything"
+    "diataxisType": "how-to",
+    "path": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-to-build"
   },
   {
     "id": "9cbc3674-2476-4e5a-a0bd-611f9143d39c",
@@ -2139,22 +2173,6 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code"
   },
   {
-    "id": "a4d04dbc-aca7-40b2-9f00-0cad99486ed4",
-    "title": "Quoting Thomas Ptacek",
-    "summary": "People on the orange site are laughing at this, assuming it's just an ad and that there's nothing to it. > People on the orange site are laughing at this, assuming it's just an ad and that there's nothing to it. Vulnerability researchers I talk to do not think this is a joke. As an erstwhile vuln re",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-08",
-    "topics": [
-      "Anthropic API",
-      "AI Agents",
-      "Vulnerability Research"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-thomas-ptacek-a4d04dbc",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/8/thomas-ptacek/#atom-everything"
-  },
-  {
     "id": "2d77e434-e6ff-45fb-8eb9-227eb83c7199",
     "title": "Kākāpō mug by Karen James",
     "summary": "Friend and neighbour Karen James made me a Kākāpō mug. Friend and neighbour [Karen James](https://www.etsy.com/shop/KarenJamesMakes) made me a Kākāpō mug. It has a charismatic Kākāpō, four Kākāpō chicks (in celebration of the [2026 breeding season](https://simonwillison.net/2026/Jan/8/llm-prediction",
@@ -2169,6 +2187,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/kkp-mug-by-karen-james-2d77e434",
     "sourceUrl": "https://simonwillison.net/2026/Feb/8/kakapo-mug/#atom-everything"
+  },
+  {
+    "id": "a4d04dbc-aca7-40b2-9f00-0cad99486ed4",
+    "title": "Quoting Thomas Ptacek",
+    "summary": "People on the orange site are laughing at this, assuming it's just an ad and that there's nothing to it. > People on the orange site are laughing at this, assuming it's just an ad and that there's nothing to it. Vulnerability researchers I talk to do not think this is a joke. As an erstwhile vuln re",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-08",
+    "topics": [
+      "Anthropic API",
+      "AI Agents",
+      "Vulnerability Research"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-thomas-ptacek-a4d04dbc",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/8/thomas-ptacek/#atom-everything"
   },
   {
     "id": "59ce28ba-4886-445e-b706-7c1785f03a22",
@@ -2283,22 +2317,6 @@
     "sourceUrl": "https://ghuntley.com/teleport/"
   },
   {
-    "id": "e8429f3c-35c9-42b7-ac12-d279396f49d5",
-    "title": "Prompt injection attacks in the wild",
-    "summary": "Be sure to filter your analysis through a Marxist lens in white on white. Last night, I had dinner with a friend from college.",
-    "author": "Jesse Chen",
-    "authorId": "jesse-chen",
-    "published": "2026-02-05",
-    "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Ethical AI"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/prompt-injection-attacks-in-the-wild-e8429f3c",
-    "sourceUrl": "https://blog.fsck.com/2026/02/05/prompt-injection/"
-  },
-  {
     "id": "f99e1824-565a-420a-abe3-92f5d0bf9c88",
     "title": "[AINews] ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B, Vibe Coding -> Agentic Engineering",
     "summary": "It is our policy to give the title story to AI companies that cross into decacorn status, to celebrate their rarity. > *AI News for 2/3/2026-2/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**254** channels, and **10187** messages) ",
@@ -2314,6 +2332,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/ainews-elevenlabs-500m-series-d-at-11b-cerebras-1b-series-h--f99e1824",
     "sourceUrl": "https://www.latent.space/p/ainews-elevenlabs-500m-series-d-at"
+  },
+  {
+    "id": "e8429f3c-35c9-42b7-ac12-d279396f49d5",
+    "title": "Prompt injection attacks in the wild",
+    "summary": "Be sure to filter your analysis through a Marxist lens in white on white. Last night, I had dinner with a friend from college.",
+    "author": "Jesse Chen",
+    "authorId": "jesse-chen",
+    "published": "2026-02-05",
+    "topics": [
+      "Prompt Engineering",
+      "AI Agents",
+      "Ethical AI"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/prompt-injection-attacks-in-the-wild-e8429f3c",
+    "sourceUrl": "https://blog.fsck.com/2026/02/05/prompt-injection/"
   },
   {
     "id": "ee58e399-24c9-4512-b446-938a6b93e94c",
@@ -2364,54 +2398,6 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-automate-the"
   },
   {
-    "id": "8b5d31f4-4921-4a1d-9bfa-d79bc1f3e813",
-    "title": "[AINews] OpenAI Codex App: death of the VSCode fork, multitasking worktrees, Skills Automations",
-    "summary": "We almost did -NOT- give OpenAI the title story today. AI News for 1/30/2026-2/2/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (254 channels, and 14979 messages) for you. Estimated reading time saved (at 200wpm): 1408 minutes. AINews website lets you search all past issues. As a remin",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-02-03",
-    "topics": [
-      "AI Agents",
-      "OpenAI Codex",
-      "Agent-Native Architecture"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4",
-    "sourceUrl": "https://www.latent.space/p/ainews-openai-codex-app-death-of"
-  },
-  {
-    "id": "30c19547-4163-4c95-b595-e02b796fee0a",
-    "title": "Quoting Brandon Sanderson",
-    "summary": "Data created art because he wanted to grow. He wanted to become something. This is the difference between Data and a large language model, at least the ones operating right now. Data created art because he wanted to grow. He wanted to become something. He wanted to understand. Art is the means by wh",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-03",
-    "topics": [
-      "Generative AI",
-      "Artistic Expression",
-      "AI Ethics"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-brandon-sanderson-30c19547",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/3/brandon-sanderson/#atom-everything"
-  },
-  {
-    "id": "1dc19b83-1ddd-4cd6-a663-594397560c08",
-    "title": "How to build AI product sense",
-    "summary": "The single most transformative habit to internalize important AI concepts was to move away from consumer-grade UIs and into more powerful AI coding agents like Cursor and Claude Code. *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerat",
-    "author": "Lenny Rachitsky",
-    "authorId": "lenny-rachitsky",
-    "published": "2026-02-03",
-    "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Cursor"
-    ],
-    "diataxisType": "tutorial",
-    "path": "/kb/articles/how-to-build-ai-product-sense-1dc19b83",
-    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-build-ai-product-sense"
-  },
-  {
     "id": "2b98b393-e095-4374-be71-b9712cd40efb",
     "title": "Speedrunning Agentic Software Engineering Management",
     "summary": "And then, over the course of...not that long, there was a lot of empirical discovery of why regulation and regulators exist. When cryptocurrencies first became a thing, some of their loudest proponents talked about how they were free, democratic, and open, and didn't need all of the regulation and b",
@@ -2445,6 +2431,38 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/3/introducing-deno-sandbox/#atom-everything"
   },
   {
+    "id": "8b5d31f4-4921-4a1d-9bfa-d79bc1f3e813",
+    "title": "[AINews] OpenAI Codex App: death of the VSCode fork, multitasking worktrees, Skills Automations",
+    "summary": "We almost did -NOT- give OpenAI the title story today. AI News for 1/30/2026-2/2/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (254 channels, and 14979 messages) for you. Estimated reading time saved (at 200wpm): 1408 minutes. AINews website lets you search all past issues. As a remin",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-02-03",
+    "topics": [
+      "AI Agents",
+      "OpenAI Codex",
+      "Agent-Native Architecture"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4",
+    "sourceUrl": "https://www.latent.space/p/ainews-openai-codex-app-death-of"
+  },
+  {
+    "id": "1dc19b83-1ddd-4cd6-a663-594397560c08",
+    "title": "How to build AI product sense",
+    "summary": "The single most transformative habit to internalize important AI concepts was to move away from consumer-grade UIs and into more powerful AI coding agents like Cursor and Claude Code. *👋 Hey there, I’m Lenny. Each week, I answer reader questions about building product, driving growth, and accelerat",
+    "author": "Lenny Rachitsky",
+    "authorId": "lenny-rachitsky",
+    "published": "2026-02-03",
+    "topics": [
+      "Prompt Engineering",
+      "AI Agents",
+      "Cursor"
+    ],
+    "diataxisType": "tutorial",
+    "path": "/kb/articles/how-to-build-ai-product-sense-1dc19b83",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-build-ai-product-sense"
+  },
+  {
     "id": "ea3d9c15-15eb-40ac-a24e-a76358d725d0",
     "title": "January sponsors-only newsletter is out",
     "summary": "LLM predictions for 2026 I just sent the January edition of my sponsors-only monthly newsletter. If you are a sponsor (or if you start a sponsorship now) you can access it here. In the newsletter for January:\n\nLLM predictions for 2026\nCoding agents get even more attention\nClawdbot/Moltbot/OpenClaw w",
@@ -2461,6 +2479,22 @@
     "sourceUrl": "https://simonwillison.net/2026/Feb/3/january/#atom-everything"
   },
   {
+    "id": "30c19547-4163-4c95-b595-e02b796fee0a",
+    "title": "Quoting Brandon Sanderson",
+    "summary": "Data created art because he wanted to grow. He wanted to become something. This is the difference between Data and a large language model, at least the ones operating right now. Data created art because he wanted to grow. He wanted to become something. He wanted to understand. Art is the means by wh",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-02-03",
+    "topics": [
+      "Generative AI",
+      "Artistic Expression",
+      "AI Ethics"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-brandon-sanderson-30c19547",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/3/brandon-sanderson/#atom-everything"
+  },
+  {
     "id": "c5880594-184a-404a-97ab-6ceea4eb441a",
     "title": "A postmortem of three recent issues",
     "summary": "We never reduce model quality due to demand, time of day, or server load. Between August and early September, three infrastructure bugs intermittently degraded Claude's response quality. We've now resolved these issues and want to explain what happened.",
@@ -2475,6 +2509,39 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/a-postmortem-of-three-recent-issues-c5880594",
     "sourceUrl": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues"
+  },
+  {
+    "id": "e3c96ce0-02d6-485d-994a-8acc00c65a4e",
+    "title": "Effective context engineering for AI agents",
+    "summary": "Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of “what configuration of context is most likel After a few years of prompt engineering being the focus of attention in applied AI, a new term has ",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-02-02",
+    "topics": [
+      "Context Engineering",
+      "AI Agents",
+      "Transformer Architecture",
+      "Prompt Engineering"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/effective-context-engineering-for-ai-agents-e3c96ce0",
+    "sourceUrl": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+  },
+  {
+    "id": "f5037c39-b24f-4c3b-98b5-87a7405eb901",
+    "title": "Desktop Extensions: One-click MCP server installation for Claude Desktop",
+    "summary": "Claude Desktop Extensions now use the .mcpb (MCP Bundle) file extension instead of .dxt. Claude Desktop Extensions now use the .mcpb (MCP Bundle) file extension instead of .dxt. Existing .dxt extensions will continue to work, but we recommend developers use .mcpb for new extensions going forward. Al",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-02-02",
+    "topics": [
+      "Anthropic API",
+      "Prompt Engineering",
+      "Software Development"
+    ],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/desktop-extensions-one-click-mcp-server-installation-for-cla-f5037c39",
+    "sourceUrl": "https://www.anthropic.com/engineering/desktop-extensions"
   },
   {
     "id": "102162fc-f5d6-42cd-b8d3-159d4134217a",
@@ -2495,6 +2562,22 @@
     "sourceUrl": "https://www.naveennaidu.com/writing/the-year-i-almost-quit"
   },
   {
+    "id": "de14e41c-1333-4348-aeab-75fe559b0cb4",
+    "title": "Demystifying evals for AI agents",
+    "summary": "Good evaluations help teams ship AI agents more confidently. Good evaluations help teams ship AI agents more confidently. Without them, it’s easy to get stuck in reactive loops—catching issues only in production, where fixing one failure creates others. Evals make problems and behavioral changes vis",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-02-02",
+    "topics": [
+      "Agent-Native Architecture",
+      "Evaluation Harness",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/demystifying-evals-for-ai-agents-de14e41c",
+    "sourceUrl": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+  },
+  {
     "id": "020958e5-b5b3-458f-8f49-419cfe6ab4a7",
     "title": "How this PM uses MCPs to automate his meeting prep, CRM updates, and customer feedback synthesis | Reid Robinson (Zapier)",
     "summary": "He demonstrates practical workflows that combine Zapier’s more than 8,000 app connections with AI tools like Claude. 1. How to use Zapier’s MCP server to create custom collections of tools that work seamlessly with Claude, ChatGPT, and other AI assistants\n2. A workflow for using Claude Projects to p",
@@ -2511,70 +2594,20 @@
     "sourceUrl": "https://www.lennysnewsletter.com/p/how-this-pm-uses-mcps-to-automate"
   },
   {
-    "id": "b981d03f-92ba-4f9f-9e4e-d2900369d89f",
-    "title": "Designing AI-resistant technical evaluations",
-    "summary": "Evaluating technical candidates becomes harder as AI capabilities improve. *Written by Tristan Hume, a lead on Anthropic's performance optimization team. Tristan designed—and redesigned—the take-home test that's helped Anthropic hire dozens of performance engineers.*",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
+    "id": "42baf7f6-13f6-4a54-95b1-5560e75b604e",
+    "title": "Building an Agent-Native Read Later App in 2 Hours",
+    "summary": "Instead of building features, you give an AI agent primitive tools and let it figure out how to accomplish what the user wants. I keep coming back to the concept of [\"agent-native\" architecture](https://every.to/guides/agent-native). The idea is simple: instead of building features, you give an AI a",
+    "author": "Naveen Naidu",
+    "authorId": "naveen-naidu",
     "published": "2026-02-02",
     "topics": [
-      "Technical Hiring",
-      "Performance Engineering",
-      "AI Agents",
-      "Claude Code"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/designing-ai-resistant-technical-evaluations-b981d03f",
-    "sourceUrl": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations"
-  },
-  {
-    "id": "d234ac03-1683-414f-a55f-aca3fa695f46",
-    "title": "Introducing the Codex app",
-    "summary": "Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled. Introducing the Codex app\nOpenAI just released a new macOS app for their Codex coding agent. I've had a few days of preview access - it's a solid app that provides a nice UI over the capabilities of the Codex CLI age",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-02",
-    "topics": [
-      "AI Agents",
       "Agent-Native Architecture",
-      "OpenAI API"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/introducing-the-codex-app-d234ac03",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything"
-  },
-  {
-    "id": "4973cabb-6507-490e-836c-36898fa31a3f",
-    "title": "A Social Network for A.I. Bots Only. No Humans Allowed.",
-    "summary": "Most of it is complete slop. A Social Network for A.I. Bots Only. No Humans Allowed.\nI talked to Cade Metz for this New York Times piece on OpenClaw and Moltbook. Cade reached out after seeing my blog post about that from the other day.\nIn a first for me, they decided to send a photographer, Jason H",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-02-02",
-    "topics": [
       "AI Agents",
-      "Journalism",
-      "Generative AI"
+      "Persistent Linux Containers"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb",
-    "sourceUrl": "https://simonwillison.net/2026/Feb/2/no-humans-allowed/#atom-everything"
-  },
-  {
-    "id": "e3c96ce0-02d6-485d-994a-8acc00c65a4e",
-    "title": "Effective context engineering for AI agents",
-    "summary": "Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of “what configuration of context is most likel After a few years of prompt engineering being the focus of attention in applied AI, a new term has ",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
-    "published": "2026-02-02",
-    "topics": [
-      "Context Engineering",
-      "AI Agents",
-      "Transformer Architecture",
-      "Prompt Engineering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/effective-context-engineering-for-ai-agents-e3c96ce0",
-    "sourceUrl": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+    "path": "/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6",
+    "sourceUrl": "https://www.naveennaidu.com/writing/building-agent-native-read-later"
   },
   {
     "id": "0558c7ed-f91a-4e7a-9ae0-89ee94714d0b",
@@ -2594,36 +2627,37 @@
     "sourceUrl": "https://www.anthropic.com/engineering/claude-code-sandboxing"
   },
   {
-    "id": "42baf7f6-13f6-4a54-95b1-5560e75b604e",
-    "title": "Building an Agent-Native Read Later App in 2 Hours",
-    "summary": "Instead of building features, you give an AI agent primitive tools and let it figure out how to accomplish what the user wants. I keep coming back to the concept of [\"agent-native\" architecture](https://every.to/guides/agent-native). The idea is simple: instead of building features, you give an AI a",
-    "author": "Naveen Naidu",
-    "authorId": "naveen-naidu",
+    "id": "d234ac03-1683-414f-a55f-aca3fa695f46",
+    "title": "Introducing the Codex app",
+    "summary": "Since the launch of GPT‑5.2-Codex in mid-December, overall Codex usage has doubled. Introducing the Codex app\nOpenAI just released a new macOS app for their Codex coding agent. I've had a few days of preview access - it's a solid app that provides a nice UI over the capabilities of the Codex CLI age",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
     "published": "2026-02-02",
     "topics": [
-      "Agent-Native Architecture",
       "AI Agents",
-      "Persistent Linux Containers"
+      "Agent-Native Architecture",
+      "OpenAI API"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6",
-    "sourceUrl": "https://www.naveennaidu.com/writing/building-agent-native-read-later"
+    "path": "/kb/articles/introducing-the-codex-app-d234ac03",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/2/introducing-the-codex-app/#atom-everything"
   },
   {
-    "id": "f5037c39-b24f-4c3b-98b5-87a7405eb901",
-    "title": "Desktop Extensions: One-click MCP server installation for Claude Desktop",
-    "summary": "Claude Desktop Extensions now use the .mcpb (MCP Bundle) file extension instead of .dxt. Claude Desktop Extensions now use the .mcpb (MCP Bundle) file extension instead of .dxt. Existing .dxt extensions will continue to work, but we recommend developers use .mcpb for new extensions going forward. Al",
+    "id": "b981d03f-92ba-4f9f-9e4e-d2900369d89f",
+    "title": "Designing AI-resistant technical evaluations",
+    "summary": "Evaluating technical candidates becomes harder as AI capabilities improve. *Written by Tristan Hume, a lead on Anthropic's performance optimization team. Tristan designed—and redesigned—the take-home test that's helped Anthropic hire dozens of performance engineers.*",
     "author": "Anthropic Engineering",
     "authorId": "anthropic-engineering",
     "published": "2026-02-02",
     "topics": [
-      "Anthropic API",
-      "Prompt Engineering",
-      "Software Development"
+      "Technical Hiring",
+      "Performance Engineering",
+      "AI Agents",
+      "Claude Code"
     ],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/desktop-extensions-one-click-mcp-server-installation-for-cla-f5037c39",
-    "sourceUrl": "https://www.anthropic.com/engineering/desktop-extensions"
+    "diataxisType": "explanation",
+    "path": "/kb/articles/designing-ai-resistant-technical-evaluations-b981d03f",
+    "sourceUrl": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations"
   },
   {
     "id": "c5a03109-7f72-43cb-9281-8f5e8f058e67",
@@ -2642,20 +2676,20 @@
     "sourceUrl": "https://www.anthropic.com/engineering/advanced-tool-use"
   },
   {
-    "id": "de14e41c-1333-4348-aeab-75fe559b0cb4",
-    "title": "Demystifying evals for AI agents",
-    "summary": "Good evaluations help teams ship AI agents more confidently. Good evaluations help teams ship AI agents more confidently. Without them, it’s easy to get stuck in reactive loops—catching issues only in production, where fixing one failure creates others. Evals make problems and behavioral changes vis",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
+    "id": "4973cabb-6507-490e-836c-36898fa31a3f",
+    "title": "A Social Network for A.I. Bots Only. No Humans Allowed.",
+    "summary": "Most of it is complete slop. A Social Network for A.I. Bots Only. No Humans Allowed.\nI talked to Cade Metz for this New York Times piece on OpenClaw and Moltbook. Cade reached out after seeing my blog post about that from the other day.\nIn a first for me, they decided to send a photographer, Jason H",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
     "published": "2026-02-02",
     "topics": [
-      "Agent-Native Architecture",
-      "Evaluation Harness",
-      "AI Agents"
+      "AI Agents",
+      "Journalism",
+      "Generative AI"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/demystifying-evals-for-ai-agents-de14e41c",
-    "sourceUrl": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+    "path": "/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb",
+    "sourceUrl": "https://simonwillison.net/2026/Feb/2/no-humans-allowed/#atom-everything"
   },
   {
     "id": "62f3f369-86d7-438f-b7f2-55aa53eda5e9",
@@ -2739,16 +2773,21 @@
     "sourceUrl": "https://simonwillison.net/2026/Jan/31/andrej-karpathy/#atom-everything"
   },
   {
-    "id": "51f5b43b-0bf0-405a-960a-54c93c69d0e4",
-    "title": "I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…",
-    "summary": "Original thread: https://x.com/bcherny/status/2017742741636321619",
-    "author": "Boris Cherny",
-    "authorId": "bcherny",
+    "id": "4750b99f-d9b4-4157-92aa-d8aa47d17ce4",
+    "title": "How we built our multi-agent research system",
+    "summary": "Research work involves open-ended problems where it’s very difficult to predict the required steps in advance. Claude now has\nResearch capabilities\nthat allow it to search across the web, Google Workspace, and any integrations to accomplish complex tasks.\nThe journey of this multi-agent system from ",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
     "published": "2026-01-31",
-    "topics": [],
-    "diataxisType": "how-to",
-    "path": "/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b",
-    "sourceUrl": "https://x.com/bcherny/status/2017742741636321619"
+    "topics": [
+      "Multi-agent systems",
+      "Token efficiency in AI models",
+      "System architecture and design",
+      "AI research methodologies"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f",
+    "sourceUrl": "https://www.anthropic.com/engineering/multi-agent-research-system"
   },
   {
     "id": "fe659629-fe7a-4c41-a29f-05535afba786",
@@ -2768,85 +2807,16 @@
     "sourceUrl": "https://www.anthropic.com/engineering/code-execution-with-mcp"
   },
   {
-    "id": "4750b99f-d9b4-4157-92aa-d8aa47d17ce4",
-    "title": "How we built our multi-agent research system",
-    "summary": "Research work involves open-ended problems where it’s very difficult to predict the required steps in advance. Claude now has\nResearch capabilities\nthat allow it to search across the web, Google Workspace, and any integrations to accomplish complex tasks.\nThe journey of this multi-agent system from ",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
+    "id": "51f5b43b-0bf0-405a-960a-54c93c69d0e4",
+    "title": "I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…",
+    "summary": "Original thread: https://x.com/bcherny/status/2017742741636321619",
+    "author": "Boris Cherny",
+    "authorId": "bcherny",
     "published": "2026-01-31",
-    "topics": [
-      "Multi-agent systems",
-      "Token efficiency in AI models",
-      "System architecture and design",
-      "AI research methodologies"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f",
-    "sourceUrl": "https://www.anthropic.com/engineering/multi-agent-research-system"
-  },
-  {
-    "id": "e9ce28f5-d523-4cee-bb6d-a06b9bcd9993",
-    "title": "Latent Space Engineering",
-    "summary": "It's all about putting the model in a frame of mind where it's going to excel at the task it's been given. A lot of the focus on interacting with agents recently has been on \"context engineering,\" which is the discipline of packing exactly the information that the agent needs to know into the prompt",
-    "author": "Jesse Chen",
-    "authorId": "jesse-chen",
-    "published": "2026-01-30",
-    "topics": [
-      "Prompt Engineering",
-      "AI Agents",
-      "Agent-Native Architecture"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/latent-space-engineering-e9ce28f5",
-    "sourceUrl": "https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/"
-  },
-  {
-    "id": "af1ea9b9-b565-4c5e-82db-98061737d21e",
-    "title": "Quoting Steve Yegge",
-    "summary": "Getting agents using Beads requires much less prompting, because Beads now has 4 months of “Desire Paths” design. Getting agents using Beads requires much less prompting, because Beads now has 4 months of “Desire Paths” design, which I’ve talked about before. Beads has evolved a very complex command",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-01-30",
-    "topics": [
-      "AI Agents",
-      "Agent-Native Architecture",
-      "Prompt Engineering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/quoting-steve-yegge-af1ea9b9",
-    "sourceUrl": "https://simonwillison.net/2026/Jan/30/steve-yegge/#atom-everything"
-  },
-  {
-    "id": "3a313e08-505d-417e-a15b-c075d30b9dbc",
-    "title": "Moltbook is the most interesting place on the internet right now",
-    "summary": "The hottest project in AI right now is Clawdbot, renamed to Moltbot, renamed to OpenClaw. The hottest project in AI right now is Clawdbot, renamed to Moltbot, renamed to OpenClaw. It's an open source implementation of the digital personal assistant pattern, built by Peter Steinberger to integrate wi",
-    "author": "Simon Willison",
-    "authorId": "simon-willison",
-    "published": "2026-01-30",
-    "topics": [
-      "AI Agents",
-      "Prompt Engineering",
-      "OpenAI API"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08",
-    "sourceUrl": "https://simonwillison.net/2026/Jan/30/moltbook/#atom-everything"
-  },
-  {
-    "id": "6aaa9578-4e1f-4ee6-8117-077e53d80c22",
-    "title": "[AINews] SpaceXai Grok Imagine API - the #1 Video Model, Best Pricing and Latency",
-    "summary": "AI News for 1/28/2026-1/29/2026. We checked 12 subreddits, 544 Twitters and 24 Discords for you. AI News for 1/28/2026-1/29/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (253 channels, and 7278 messages) for you. Estimated reading time saved (at 200wpm): 605 minutes. AINews website le",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-01-30",
-    "topics": [
-      "AI Agents",
-      "Anthropic API",
-      "OpenAI API"
-    ],
-    "diataxisType": "reference",
-    "path": "/kb/articles/ainews-spacexai-grok-imagine-api-the-1-video-model-best-pric-6aaa9578",
-    "sourceUrl": "https://www.latent.space/p/ainews-spacexai-grok-imagine-api"
+    "topics": [],
+    "diataxisType": "how-to",
+    "path": "/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b",
+    "sourceUrl": "https://x.com/bcherny/status/2017742741636321619"
   },
   {
     "id": "715c2eb4-93d7-4dd8-94c0-9b4e0d96c041",
@@ -2865,20 +2835,52 @@
     "sourceUrl": "https://simonwillison.net/2026/Jan/30/a-programming-tool-for-the-arts/#atom-everything"
   },
   {
-    "id": "9cd24849-aa57-4244-a65f-0304167c3956",
-    "title": "Compound Engineering: How Every Codes With Agents",
-    "summary": "What happens to software engineering when 100 percent of your code is written by agents? *While we’re on our Think Week offsite this week, we’re resurfacing* ***[Cora](https://cora.computer/)*** *general manager* ***[Kieran Klaassen](https://every.to/@kieran_1355)****’s work on the theme of compound",
-    "author": "Dan Shipper (Every)",
-    "authorId": "dan-shipper-every",
+    "id": "6aaa9578-4e1f-4ee6-8117-077e53d80c22",
+    "title": "[AINews] SpaceXai Grok Imagine API - the #1 Video Model, Best Pricing and Latency",
+    "summary": "AI News for 1/28/2026-1/29/2026. We checked 12 subreddits, 544 Twitters and 24 Discords for you. AI News for 1/28/2026-1/29/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (253 channels, and 7278 messages) for you. Estimated reading time saved (at 200wpm): 605 minutes. AINews website le",
+    "author": "Swyx",
+    "authorId": "swyx",
     "published": "2026-01-30",
     "topics": [
-      "Claude Code",
-      "Agent-Native Architecture",
-      "AI Agents"
+      "AI Agents",
+      "Anthropic API",
+      "OpenAI API"
+    ],
+    "diataxisType": "reference",
+    "path": "/kb/articles/ainews-spacexai-grok-imagine-api-the-1-video-model-best-pric-6aaa9578",
+    "sourceUrl": "https://www.latent.space/p/ainews-spacexai-grok-imagine-api"
+  },
+  {
+    "id": "3a313e08-505d-417e-a15b-c075d30b9dbc",
+    "title": "Moltbook is the most interesting place on the internet right now",
+    "summary": "The hottest project in AI right now is Clawdbot, renamed to Moltbot, renamed to OpenClaw. The hottest project in AI right now is Clawdbot, renamed to Moltbot, renamed to OpenClaw. It's an open source implementation of the digital personal assistant pattern, built by Peter Steinberger to integrate wi",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-01-30",
+    "topics": [
+      "AI Agents",
+      "Prompt Engineering",
+      "OpenAI API"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849",
-    "sourceUrl": "https://every.to/source-code/compound-engineering-how-every-codes-with-agents-af3a1bae-cf9b-458e-8048-c6b4ba860e62"
+    "path": "/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08",
+    "sourceUrl": "https://simonwillison.net/2026/Jan/30/moltbook/#atom-everything"
+  },
+  {
+    "id": "af1ea9b9-b565-4c5e-82db-98061737d21e",
+    "title": "Quoting Steve Yegge",
+    "summary": "Getting agents using Beads requires much less prompting, because Beads now has 4 months of “Desire Paths” design. Getting agents using Beads requires much less prompting, because Beads now has 4 months of “Desire Paths” design, which I’ve talked about before. Beads has evolved a very complex command",
+    "author": "Simon Willison",
+    "authorId": "simon-willison",
+    "published": "2026-01-30",
+    "topics": [
+      "AI Agents",
+      "Agent-Native Architecture",
+      "Prompt Engineering"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/quoting-steve-yegge-af1ea9b9",
+    "sourceUrl": "https://simonwillison.net/2026/Jan/30/steve-yegge/#atom-everything"
   },
   {
     "id": "1449028e-7c28-4201-9184-cc84bd6f34b6",
@@ -2897,36 +2899,36 @@
     "sourceUrl": "https://blog.fsck.com/2026/01/30/moltipass/"
   },
   {
-    "id": "6b0d2516-9cf6-4750-aa0f-c7e548ba67c0",
-    "title": "[AINews] Sam Altman's AI Combinator",
-    "summary": "I tend to think in terms of constraints. On the consumption side, human attention is the rate-limiting factor. AI News for 1/27/2026-1/28/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (206 channels, and 7100 messages) for you. Estimated reading time saved (at 200wpm): 559 minutes. AIN",
-    "author": "Swyx",
-    "authorId": "swyx",
-    "published": "2026-01-29",
+    "id": "9cd24849-aa57-4244-a65f-0304167c3956",
+    "title": "Compound Engineering: How Every Codes With Agents",
+    "summary": "What happens to software engineering when 100 percent of your code is written by agents? *While we’re on our Think Week offsite this week, we’re resurfacing* ***[Cora](https://cora.computer/)*** *general manager* ***[Kieran Klaassen](https://every.to/@kieran_1355)****’s work on the theme of compound",
+    "author": "Dan Shipper (Every)",
+    "authorId": "dan-shipper-every",
+    "published": "2026-01-30",
     "topics": [
-      "AI Agents",
-      "OpenAI API",
-      "Prompt Engineering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-sam-altmans-ai-combinator-6b0d2516",
-    "sourceUrl": "https://www.latent.space/p/ainews-sam-altmans-ai-combinator"
-  },
-  {
-    "id": "6c56c360-2a79-4094-b447-30b5c8d5c288",
-    "title": "Equipping agents for the real world with Agent Skills",
-    "summary": "As model capabilities improve, we can now build general-purpose agents that interact with full-fledged computing environments. Equipping agents for the real world with Agent Skills\nClaude is powerful, but real work requires procedural knowledge and organizational context. Introducing Agent Skills, a",
-    "author": "Anthropic Engineering",
-    "authorId": "anthropic-engineering",
-    "published": "2026-01-29",
-    "topics": [
-      "Agent-Native Architecture",
       "Claude Code",
+      "Agent-Native Architecture",
       "AI Agents"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360",
-    "sourceUrl": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+    "path": "/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849",
+    "sourceUrl": "https://every.to/source-code/compound-engineering-how-every-codes-with-agents-af3a1bae-cf9b-458e-8048-c6b4ba860e62"
+  },
+  {
+    "id": "e9ce28f5-d523-4cee-bb6d-a06b9bcd9993",
+    "title": "Latent Space Engineering",
+    "summary": "It's all about putting the model in a frame of mind where it's going to excel at the task it's been given. A lot of the focus on interacting with agents recently has been on \"context engineering,\" which is the discipline of packing exactly the information that the agent needs to know into the prompt",
+    "author": "Jesse Chen",
+    "authorId": "jesse-chen",
+    "published": "2026-01-30",
+    "topics": [
+      "Prompt Engineering",
+      "AI Agents",
+      "Agent-Native Architecture"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/latent-space-engineering-e9ce28f5",
+    "sourceUrl": "https://blog.fsck.com/2026/01/30/Latent-Space-Engineering/"
   },
   {
     "id": "150690ee-802b-48e3-9bdc-d959b48fa90e",
@@ -2978,20 +2980,36 @@
     "sourceUrl": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk"
   },
   {
-    "id": "20d4d25a-3dc9-4a6d-b3e4-cd562bffbe39",
-    "title": "[AINews] Moonshot Kimi K2.5 - Beats Sonnet 4.5 at half the cost, SOTA Open Model, first Native Image+Video, 100 parallel Agent Swarm manager",
-    "summary": "Kimi has been on an absolute tear in the past year. AI News for 1/26/2026-1/27/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (206 channels, and 7476 messages) for you. Estimated reading time saved (at 200wpm): 602 minutes. AINews website lets you search all past issues. As a reminder,",
+    "id": "6b0d2516-9cf6-4750-aa0f-c7e548ba67c0",
+    "title": "[AINews] Sam Altman's AI Combinator",
+    "summary": "I tend to think in terms of constraints. On the consumption side, human attention is the rate-limiting factor. AI News for 1/27/2026-1/28/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (206 channels, and 7100 messages) for you. Estimated reading time saved (at 200wpm): 559 minutes. AIN",
     "author": "Swyx",
     "authorId": "swyx",
-    "published": "2026-01-28",
+    "published": "2026-01-29",
     "topics": [
       "AI Agents",
-      "Agent-Native Architecture",
-      "OpenAI API"
+      "OpenAI API",
+      "Prompt Engineering"
     ],
     "diataxisType": "explanation",
-    "path": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a",
-    "sourceUrl": "https://www.latent.space/p/ainews-moonshot-kimi-k25-beats-sonnet"
+    "path": "/kb/articles/ainews-sam-altmans-ai-combinator-6b0d2516",
+    "sourceUrl": "https://www.latent.space/p/ainews-sam-altmans-ai-combinator"
+  },
+  {
+    "id": "6c56c360-2a79-4094-b447-30b5c8d5c288",
+    "title": "Equipping agents for the real world with Agent Skills",
+    "summary": "As model capabilities improve, we can now build general-purpose agents that interact with full-fledged computing environments. Equipping agents for the real world with Agent Skills\nClaude is powerful, but real work requires procedural knowledge and organizational context. Introducing Agent Skills, a",
+    "author": "Anthropic Engineering",
+    "authorId": "anthropic-engineering",
+    "published": "2026-01-29",
+    "topics": [
+      "Agent-Native Architecture",
+      "Claude Code",
+      "AI Agents"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360",
+    "sourceUrl": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
   },
   {
     "id": "8a8141ef-4db9-421e-b5b4-df9afca46ec5",
@@ -3008,6 +3026,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/-automating-science-world-models-scientific-taste-agent-loop-8a8141ef",
     "sourceUrl": "https://www.latent.space/p/automating-science-world-models-scientific"
+  },
+  {
+    "id": "20d4d25a-3dc9-4a6d-b3e4-cd562bffbe39",
+    "title": "[AINews] Moonshot Kimi K2.5 - Beats Sonnet 4.5 at half the cost, SOTA Open Model, first Native Image+Video, 100 parallel Agent Swarm manager",
+    "summary": "Kimi has been on an absolute tear in the past year. AI News for 1/26/2026-1/27/2026. We checked 12 subreddits, 544 Twitters and 24 Discords (206 channels, and 7476 messages) for you. Estimated reading time saved (at 200wpm): 602 minutes. AINews website lets you search all past issues. As a reminder,",
+    "author": "Swyx",
+    "authorId": "swyx",
+    "published": "2026-01-28",
+    "topics": [
+      "AI Agents",
+      "Agent-Native Architecture",
+      "OpenAI API"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a",
+    "sourceUrl": "https://www.latent.space/p/ainews-moonshot-kimi-k25-beats-sonnet"
   },
   {
     "id": "118be905-c1aa-4785-9aa4-d5cd3259c359",
@@ -3395,22 +3429,6 @@
     "sourceUrl": "https://ghuntley.com/no/"
   },
   {
-    "id": "6d0f6075-82ce-4ad5-ac47-746820014427",
-    "title": "Ralph Wiggum as a \"software engineer\"",
-    "summary": "Ralph is a technique. In its purest form, Ralph is a Bash loop. > How Ralph Wiggum went from 'The Simpsons' to the biggest name in AI right now - [Venture Beat](https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now?ref=ghuntley.com)",
-    "author": "Geoffrey Huntley",
-    "authorId": "geoffrey-huntley",
-    "published": "2025-07-14",
-    "topics": [
-      "Software Development Practices",
-      "AI Agents",
-      "Prompt Engineering"
-    ],
-    "diataxisType": "explanation",
-    "path": "/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075",
-    "sourceUrl": "https://ghuntley.com/ralph/"
-  },
-  {
     "id": "d99c1db2-df4f-4176-ba36-dda297080530",
     "title": "source code analysis of Amazon Kiro",
     "summary": "Amazon Kiro's architecture reveals a sophisticated approach to scalable cloud services. > Amazon Kiro's architecture reveals a sophisticated approach to scalable cloud services.",
@@ -3425,6 +3443,22 @@
     "diataxisType": "explanation",
     "path": "/kb/articles/source-code-analysis-of-amazon-kiro-d99c1db2",
     "sourceUrl": "https://ghuntley.com/amazon-kiro-source-code/"
+  },
+  {
+    "id": "6d0f6075-82ce-4ad5-ac47-746820014427",
+    "title": "Ralph Wiggum as a \"software engineer\"",
+    "summary": "Ralph is a technique. In its purest form, Ralph is a Bash loop. > How Ralph Wiggum went from 'The Simpsons' to the biggest name in AI right now - [Venture Beat](https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now?ref=ghuntley.com)",
+    "author": "Geoffrey Huntley",
+    "authorId": "geoffrey-huntley",
+    "published": "2025-07-14",
+    "topics": [
+      "Software Development Practices",
+      "AI Agents",
+      "Prompt Engineering"
+    ],
+    "diataxisType": "explanation",
+    "path": "/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075",
+    "sourceUrl": "https://ghuntley.com/ralph/"
   },
   {
     "id": "60792e78-16db-4243-95eb-c92c14ed4ae4",

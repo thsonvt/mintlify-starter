@@ -632,6 +632,10 @@
       "destination": "/kb/articles/-community-wisdom-making-your-product-enterprise-ready-when--ddc306e9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e1909e93",
+      "destination": "/kb/articles/-community-wisdom-building-your-tech-stack-from-scratch-surv-e1909e93"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-fab47e77",
       "destination": "/kb/articles/ai-is-critical-for-humanitys-survival-cisco-president-on-the-fab47e77"
     },
@@ -778,6 +782,10 @@
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7f547407",
+      "destination": "/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407"
     },
     {
       "source": "/kb/articles/simon-willison-86aff01b",
