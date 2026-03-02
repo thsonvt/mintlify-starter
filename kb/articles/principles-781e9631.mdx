@@ -1,0 +1,273 @@
+---
+title: 'principles'
+description: 'AI shouldn''t be gatekept behind academic jargon, hype-driven marketing, or expensive credentials. These are the principles that guide how we build pro'
+icon: 'newspaper'
+author: 'Latentpatterns'
+authorId: 'latentpatterns'
+published: '2026-03-01'
+sourceUrl: 'https://latentpatterns.com/principles'
+topics: ["AI Agents","Prompt Engineering","Agent-Native Architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Latentpatterns](https://latentpatterns.com/principles) · 01/03/2026
+</Info>
+
+## Summary
+
+AI shouldn't be gatekept behind academic jargon, hype-driven marketing, or expensive credentials. These are the principles that guide how we build products at Latent Patterns. They come from shipping AI-native software, making expensive mistakes, and learning what actually works when you're building on top of large language models and the latent space.
+
+## Key Insights
+
+> "AI shouldn't be gatekept behind academic jargon, hype-driven marketing, or expensive credentials."
+>
+> — Discussing the importance of making AI accessible to a broader audience.
+
+> "Shipping is the heart of the company and the health of the company."
+>
+> — Emphasizing the critical role of frequent shipping in learning and company health.
+
+> "Humans design the loops. Agents execute within them."
+>
+> — Highlighting the distinct roles of humans and AI agents in the development process.
+
+> "Any problem in software can now be resolved through targeted application of ralph loops by a skilled operator."
+>
+> — Illustrating the flexibility and adaptability of software development with AI.
+
+## Topics
+
+- [AI Agents](/kb/topics/ai-agents)
+- [Prompt Engineering](/kb/topics/prompt-engineering)
+- [Agent-Native Architecture](/kb/topics/agent-native-architecture)
+
+---
+
+## Full Article
+
+```
+# principles
+```
+
+How we think about building with LLMs
+
+---
+
+These are the principles that guide how we build products at Latent Patterns. They come from
+shipping AI-native software, making expensive mistakes, and learning what actually works when
+you're building on top of large language models and the latent space.
+
+They aren't universal truths. They're hard-won opinions shaped by practice. Take what's useful.
+
+## 1. AI should be accessible
+
+AI shouldn't be gatekept behind academic jargon, hype-driven marketing, or expensive
+credentials. The concepts that matter — [transformers](/glossary/transformer), [attention](/glossary/attention), [embeddings](/glossary/embedding), [agents](/glossary/agent),
+the latent space itself — can be explained clearly from first principles to anyone
+willing to learn. If your explanation requires a PhD to parse, the explanation is the
+problem, not the audience.
+
+Accessibility isn't charity. It's how you build a broader, more capable workforce that
+can actually use these tools. Every person who understands what's happening inside the
+model — not just how to call the API — is a person who builds better products, writes
+better prompts, and designs better loops. Democratise the knowledge. The technology is
+already democratised.
+
+## 2. shipping is the heartbeat
+
+Shipping is the heart of the company and the health of the company. A team that ships
+frequently is a team that learns frequently. A team that queues up releases is a team that
+queues up learning.
+
+Bug fixes should be live within minutes. Not hours, days, or weeks. If your deployment
+pipeline can't support that, fix the pipeline before you fix the bug. Every minute between
+"merged" and "live" is an minute your users are running broken software and an minute your team
+is context-switching instead of moving forward. Fast deploys aren't a luxury — they're how
+you stay alive.
+
+## 3. humans on the loop, agents in the loop
+
+Software development is now automated. What is not — and cannot be — is taste, responsibility,
+accountability, and customer satisfaction. These are irreducibly human. No agent has skin in
+the game. No model cares whether the customer is happy.
+
+Humans design the loops. Agents execute within them. Engineering oversight and discipline are
+what separate a product from a demo. The human isn't "in the loop" as a fallback — the human
+is on the loop as the architect, the accountable party, the one who decides what "good enough"
+means and what ships.
+
+## 4. tokens are cheaper than people
+
+Token costs are cheaper than hiring a human. There's a persistent belief that token pricing is
+subsidised and will inevitably rise. Maybe. We don't know. But open-source models are becoming
+exceptionally good and they are very cheap. The trajectory is clear: inference costs fall,
+model quality rises, and the economics tilt further toward automation every quarter.
+
+Design for that reality, not the fear of a price hike that may never come. The team that
+spends tokens liberally on evaluation, retries, and backpressure — while their competitors
+ration tokens and ship manually — will compound their advantage. Latency budgets and rate
+limits still matter as engineering constraints, but cost anxiety should never be the reason
+you keep a human doing work an agent can do reliably.
+
+## 5. software is clay
+
+Any problem in software can now be resolved through targeted application of [ralph loops](/glossary/ralph-wiggum) by a skilled operator. AI stands for
+Amplified Intelligence — it amplifies what you know. It
+doesn't replace your judgement, it multiplies your reach. Humans should be designing loops
+for the agent, setting safety guardrails, and providing taste — what should or should not
+be built, and how it will be built.
+
+Software is now clay. Instead of waiting for perfect, just get it done. Get it into the
+hands of customers and iterate. Iteration is the name of the game now. The team that ships
+ten imperfect versions while their competitor architects one perfect version will win every
+time. If your competitor ships faster than you, you lose. Mould the clay. Ship it. Reshape
+it tomorrow.
+
+## 6. capture your backpressure
+
+The entire game now is to maximise the capture of your [backpressure](/glossary/agent-backpressure) so agents stay on the rails.
+Backpressure is the automated feedback — [type systems](/glossary/type-system),
+test suites, linters, build
+errors, browser assertions — that tells an agent it went wrong before a human ever has to
+look. Without it, you become the bottleneck, manually catching trivial errors that a compiler
+or a test suite would have caught instantly.
+
+If you have to go into the loop to rescue an agent, that is an anti-pattern. Don't just fix
+the output — ask why the agent went off the rails and engineer away that failure concern.
+Add a type constraint. Write a test. Tighten the schema. Every rescue mission you eliminate
+is capacity you reclaim for designing better loops. The goal is just enough backpressure to
+reject hallucinations and invalid output without creating so much resistance that the system
+grinds to a halt. Part art, part engineering, wholly non-negotiable.
+
+## 7. verify, don't just test
+
+Software verification is the name of the game now. When agents write most of the code,
+traditional unit tests — written by the same fallible process that produced the code — aren't
+enough. The backpressure has to be stronger than the generative function. Formal methods,
+```typescript
+type theory, [property-based tests](/glossary/property-based-testing), and
+```
+deterministic simulation testing are the future.
+
+Types prove properties at compile time. Property-based tests explore input spaces no human
+would think to cover. Deterministic simulation testing lets you reproduce and verify complex
+system behaviour without flaky infrastructure. These aren't academic luxuries — they're the
+engineering tools that let you trust agent-generated code at scale. The more you verify
+mechanically, the less you rely on human review to catch what slipped through.
+
+## 8. design for observability
+
+Your entire product or system should be one observable loop that's available for automatic
+retrieval by an agent. Not dashboards for humans to squint at — structured, queryable
+telemetry that an agent can consume, reason about, and act on without asking you to
+interpret a graph.
+
+If an agent can't observe the state of your system, it can't debug it, it can't improve it,
+and it can't close the loop. Observability isn't a monitoring feature — it's the substrate
+that makes autonomous operation possible. Every log line, every metric, every trace is a
+signal an agent can use to stay on the rails or self-correct when it drifts.
+
+## 9. agents need boundaries, not freedom
+
+Autonomous agents sound powerful. In practice, unconstrained agents are unpredictable, expensive,
+and fragile. The most effective agents operate within tight boundaries — clear tool definitions,
+explicit action spaces, well-defined termination conditions.
+
+Give your agent the smallest set of tools it needs. Define what "done" looks like. Set budget
+limits. Build in circuit breakers. Freedom without structure produces chaos, not intelligence.
+
+## 10. context windows are not infinite memory
+
+A large [context window](/glossary/context-window) doesn't mean you should stuff
+everything into it. Attention degrades.
+Retrieval accuracy drops. Latency climbs. Cost scales linearly. More context often means worse
+answers, not better ones.
+
+Be surgical about what goes into the context window. Every token should earn its place. The
+discipline of working within constraints — choosing what to include and what to leave out —
+produces better results than brute-force context stuffing.
+
+## 11. the model is a material, not a feature
+
+When you treat an LLM as a feature you bolt on — a chatbot widget, an "AI-powered" badge — you
+get something brittle and forgettable. When you treat it as a material you build with, like
+concrete or steel, you start asking different questions. What are its failure modes? Where does
+it flex? Where does it crack?
+
+Good builders understand their materials. LLMs hallucinate, drift, and surprise you. They're
+also capable of remarkable reasoning when given the right constraints. Build with the grain, not
+against it.
+
+## 12. the moat is in the workflow, not the model
+
+Models are commoditising. The model you're using today will be surpassed within months. Your
+moat isn't model access — everyone has that. Your moat is the workflow you build around it:
+the data pipeline, the evaluation framework, the feedback loops, the domain expertise encoded
+in your prompts and tooling.
+
+Build products that get better with usage. Capture feedback. Improve your evals. Tighten your
+loops. That's the compounding advantage no model swap can replicate.
+
+## 13. a feature today is [tech debt](/glossary/technical-debt) tomorrow
+
+Build in a way that makes change easy. Build so it's easy to delete. If you add functionality
+to compensate for a model's weakness today, that functionality becomes dead weight — or a
+noose around your company's neck — as the models get better. The workaround you shipped last
+quarter is the legacy system you're maintaining next year.
+
+Models improve faster than codebases evolve. Every layer of scaffolding you bolt on to
+patch a model limitation is a layer you'll need to rip out when the limitation disappears.
+Build for change, not for the current snapshot of model capability. Loose coupling, thin
+abstractions, code that's cheaper to delete than to understand. The best code in an
+AI-native product is the code you can throw away without flinching.
+
+## 14. build where the puck is going
+
+The last forty years of software has been designed for humans. Even operating systems haven't
+really been designed for agents — they've been designed for a world where humans are the
+operators. Every process, every tool, every workflow carries that assumption. When you find
+something that feels immovable — a way software is built, a ceremony teams perform, a
+constraint everyone accepts — apply first-principles thinking. Ask why it exists. You'll
+often find the answer is: because it was designed for humans.
+
+Once you reach that resolution, you can interrogate it. Is it falsified by the new reality?
+Was it a good idea originally? What was the original intent, and does that intent survive
+when agents are the operators? Sometimes the intent is still valid and you carry it forward
+in a new form. Sometimes it was only ever a workaround for human limitations and you can
+discard it entirely. The opportunity is to take those insights and apply them to the new
+world of the latent space — building where the puck is going, not where it is.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Experts Have World Models. LLMs Have Word Models."
+    icon="newspaper"
+    href="/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+  >
+    Swyx · explanation · 75% similar
+  </Card>
+  <Card
+    title="the six-month recap: closing talk on AI at Web Directions, Melbourne, June 2025"
+    icon="newspaper"
+    href="/kb/articles/the-six-month-recap-closing-talk-on-ai-at-web-directions-mel-eeeb2573"
+  >
+    Geoffrey Huntley · explanation · 74% similar
+  </Card>
+  <Card
+    title="Software development now costs less than than the wage of a minimum wage worker"
+    icon="newspaper"
+    href="/kb/articles/software-development-now-costs-less-than-than-the-wage-of-a--2c298650"
+  >
+    Geoffrey Huntley · explanation · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://latentpatterns.com/principles](https://latentpatterns.com/principles).
+</Note>
