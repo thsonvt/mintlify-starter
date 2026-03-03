@@ -264,6 +264,10 @@
       "destination": "/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-c7feafca",
+      "destination": "/kb/articles/openclaw-setting-up-your-first-personal-ai-agent--c7feafca"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-cb38bd6d",
       "destination": "/kb/articles/agent-native-architectures-how-to-build-apps-after-code-ends-cb38bd6d"
     },
@@ -616,6 +620,10 @@
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9638a3bd",
+      "destination": "/kb/articles/how-coinbase-scaled-ai-to-1000-engineers-chintan-turakhia-9638a3bd"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9c26a6a0",
       "destination": "/kb/articles/head-of-claude-code-what-happens-after-coding-is-solved-bori-9c26a6a0"
     },
@@ -634,6 +642,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-d16a3274",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-d82cd052",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-db8b7ca4",
@@ -694,6 +706,10 @@
     {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
+    },
+    {
+      "source": "/kb/articles/simon-willison-26013557",
+      "destination": "/kb/articles/february-sponsors-only-newsletter-26013557"
     },
     {
       "source": "/kb/articles/simon-willison-2d77e434",
@@ -924,6 +940,10 @@
       "destination": "/kb/articles/reply-guy-dd345ddf"
     },
     {
+      "source": "/kb/articles/simon-willison-de0f1213",
+      "destination": "/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+    },
+    {
       "source": "/kb/articles/simon-willison-e61bd491",
       "destination": "/kb/articles/linear-walkthroughs-agentic-engineering-patterns-simon-willi-e61bd491"
     },
@@ -1064,6 +1084,10 @@
       "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
     },
     {
+      "source": "/kb/articles/swyx-a19b939a",
+      "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+    },
+    {
       "source": "/kb/articles/swyx-afdf8983",
       "destination": "/kb/articles/ainews-anthropic-launches-the-mcp-apps-open-spec-in-claudeai-afdf8983"
     },
@@ -1106,6 +1130,10 @@
     {
       "source": "/kb/articles/swyx-f9aa6dd4",
       "destination": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
+    },
+    {
+      "source": "/kb/articles/swyx-fba0d39a",
+      "destination": "/kb/articles/how-to-kill-the-code-review-fba0d39a"
     },
     {
       "source": "/kb/articles/unmesh-gundecha-e5079680",
