@@ -272,6 +272,10 @@
       "destination": "/kb/articles/agent-native-architectures-how-to-build-apps-after-code-ends-cb38bd6d"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-d442d89a",
+      "destination": "/kb/articles/you-have-a-claw-now-what-d442d89a"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-e8afce40",
       "destination": "/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
     },
@@ -556,6 +560,10 @@
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1bd8b063",
+      "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-1bd8b063"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1dc19b83",
       "destination": "/kb/articles/how-to-build-ai-product-sense-1dc19b83"
     },
@@ -618,6 +626,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-8c13973d",
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9005bf61",
+      "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-9005bf61"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-9638a3bd",
@@ -828,8 +840,16 @@
       "destination": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e"
     },
     {
+      "source": "/kb/articles/simon-willison-969c5220",
+      "destination": "/kb/articles/gemini-31-flash-lite-969c5220"
+    },
+    {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9b566851",
+      "destination": "/kb/articles/a-quote-from-donald-knuth-9b566851"
     },
     {
       "source": "/kb/articles/simon-willison-9bb99b58",
@@ -998,6 +1018,10 @@
     {
       "source": "/kb/articles/swyx-26e65d48",
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
+    },
+    {
+      "source": "/kb/articles/swyx-3a8f5bf7",
+      "destination": "/kb/articles/ainews-anthropic-19b-arr-qwen-team-leaves-gemini-and-gpt-bum-3a8f5bf7"
     },
     {
       "source": "/kb/articles/swyx-3b185a0d",
