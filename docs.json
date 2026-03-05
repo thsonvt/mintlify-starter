@@ -820,8 +820,16 @@
       "destination": "/kb/articles/recovering-lost-code-6b96427c"
     },
     {
+      "source": "/kb/articles/simon-willison-6ba05ac0",
+      "destination": "/kb/articles/anti-patterns-things-to-avoid-agentic-engineering-patterns-6ba05ac0"
+    },
+    {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-76b24dc2",
+      "destination": "/kb/articles/something-is-afoot-in-the-land-of-qwen-76b24dc2"
     },
     {
       "source": "/kb/articles/simon-willison-7f547407",
@@ -1108,6 +1116,10 @@
       "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
     },
     {
+      "source": "/kb/articles/swyx-9ef5fd46",
+      "destination": "/kb/articles/ainews-is-harness-engineering-real-9ef5fd46"
+    },
+    {
       "source": "/kb/articles/swyx-a19b939a",
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
     },
@@ -1138,6 +1150,10 @@
     {
       "source": "/kb/articles/swyx-dae507b8",
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+    },
+    {
+      "source": "/kb/articles/swyx-ebedd1c9",
+      "destination": "/kb/articles/every-agent-needs-a-box-aaron-levie-box-ebedd1c9"
     },
     {
       "source": "/kb/articles/swyx-ee58e399",
