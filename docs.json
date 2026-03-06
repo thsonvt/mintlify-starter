@@ -744,6 +744,10 @@
       "destination": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
     },
     {
+      "source": "/kb/articles/simon-willison-3deb2a99",
+      "destination": "/kb/articles/introducing-gpt54-3deb2a99"
+    },
+    {
       "source": "/kb/articles/simon-willison-3df8c9b0",
       "destination": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0"
     },
@@ -932,8 +936,16 @@
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
     {
+      "source": "/kb/articles/simon-willison-c5b36972",
+      "destination": "/kb/articles/clinejection-compromising-clines-production-releases-just-by-c5b36972"
+    },
+    {
       "source": "/kb/articles/simon-willison-c77aff7b",
       "destination": "/kb/articles/how-i-think-about-codex-c77aff7b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ca44e59a",
+      "destination": "/kb/articles/agentic-manual-testing-agentic-engineering-patterns-ca44e59a"
     },
     {
       "source": "/kb/articles/simon-willison-cc1e6806",
@@ -954,6 +966,10 @@
     {
       "source": "/kb/articles/simon-willison-d3069d40",
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d4fb177f",
+      "destination": "/kb/articles/can-coding-agents-relicense-open-source-through-a-clean-room-d4fb177f"
     },
     {
       "source": "/kb/articles/simon-willison-d793786e",
@@ -1060,6 +1076,10 @@
       "destination": "/kb/articles/claude-code-for-finance-the-global-memory-shortage-doug-olau-5acd0fdd"
     },
     {
+      "source": "/kb/articles/swyx-69028ae0",
+      "destination": "/kb/articles/ainews-gpt-54-sota-knowledge-work-and-coding-and-cua-model-o-69028ae0"
+    },
+    {
       "source": "/kb/articles/swyx-6a6656f2",
       "destination": "/kb/articles/bitter-lessons-in-venture-vs-growth-anthropic-vs-openai-noam-6a6656f2"
     },
@@ -1074,6 +1094,10 @@
     {
       "source": "/kb/articles/swyx-6ca055dc",
       "destination": "/kb/articles/ainews-openai-closes-110b-raise-from-amazon-nvidia-softbank--6ca055dc"
+    },
+    {
+      "source": "/kb/articles/swyx-7379e7ff",
+      "destination": "/kb/articles/cursors-third-era-cloud-agents-7379e7ff"
     },
     {
       "source": "/kb/articles/swyx-75c7e173",
