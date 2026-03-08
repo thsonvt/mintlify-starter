@@ -140,6 +140,10 @@
       "destination": "/kb/articles/introducing-contextual-retrieval-28f9178b"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-2a3484f4",
+      "destination": "/kb/articles/eval-awareness-in-claude-opus-46s-browsecomp-performance-2a3484f4"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-4750b99f",
       "destination": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f"
     },
@@ -616,6 +620,10 @@
       "destination": "/kb/articles/the-design-process-is-dead-heres-whats-replacing-it-jenny-we-6873f9f5"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-729c3062",
+      "destination": "/kb/articles/-community-wisdom-business-books-that-havent-aged-well-vibe--729c3062"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-72ada27f",
       "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
     },
@@ -846,6 +854,10 @@
     {
       "source": "/kb/articles/simon-willison-86aff01b",
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8f0b7b58",
+      "destination": "/kb/articles/codex-for-open-source-8f0b7b58"
     },
     {
       "source": "/kb/articles/simon-willison-915b03d0",
@@ -1110,6 +1122,10 @@
     {
       "source": "/kb/articles/swyx-75c7e173",
       "destination": "/kb/articles/ainews-moltbook-the-first-social-network-for-ai-agents-clawd-75c7e173"
+    },
+    {
+      "source": "/kb/articles/swyx-77effeb4",
+      "destination": "/kb/articles/ainews-ai-engineer-will-be-the-last-job-77effeb4"
     },
     {
       "source": "/kb/articles/swyx-78eca57f",
