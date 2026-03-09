@@ -544,6 +544,10 @@
       "destination": "/kb/articles/patterns-pi-the-architecture-of-an-ai-coding-agent-9fbec750"
     },
     {
+      "source": "/kb/articles/latent-patterns-a19b5b8e",
+      "destination": "/kb/articles/pi-the-architecture-of-an-ai-coding-agent-newsletter-latent--a19b5b8e"
+    },
+    {
       "source": "/kb/articles/latent-patterns-bc799cfd",
       "destination": "/kb/articles/patterns-beads-the-architecture-of-a-graph-issue-tracker-for-bc799cfd"
     },
@@ -626,6 +630,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-72ada27f",
       "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-7b6943e4",
+      "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-8670162b",
@@ -986,6 +994,10 @@
     {
       "source": "/kb/articles/simon-willison-d3069d40",
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d4d113b0",
+      "destination": "/kb/articles/a-quote-from-joseph-weizenbaum-d4d113b0"
     },
     {
       "source": "/kb/articles/simon-willison-d4fb177f",
