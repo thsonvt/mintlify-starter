@@ -1,0 +1,80 @@
+---
+title: 'Perhaps not Boring Technology after all'
+description: 'The article discusses how LLMs for programming may not limit technology choices as previously thought, showing positive results with new tools despite'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-09'
+sourceUrl: 'https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything'
+topics: ["llms","programming","technology-choices","coding-agents"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything) · 09/03/2026
+</Info>
+
+## Summary
+
+The article discusses how LLMs for programming may not limit technology choices as previously thought, showing positive results with new tools despite training data biases.
+
+## Key Insights
+
+> "I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach."
+>
+> — Reflecting on initial expectations of coding agents.
+
+> "Drop a coding agent into any existing codebase that uses libraries and tools that are too private or too new to feature in the training data and my experience is that it works just fine."
+>
+> — Discussing the adaptability of coding agents with new tools.
+
+> "What Claude Code Actually Chooses is an interesting recent study where Edwin Ong and Alex Vikati where they proved Claude Code over 2,000 times."
+>
+> — Referencing a study on LLMs' technology preferences.
+
+## Topics
+
+- [llms](/kb/topics/llms)
+- [programming](/kb/topics/programming)
+- [technology-choices](/kb/topics/technology-choices)
+- [coding-agents](/kb/topics/coding-agents)
+
+---
+
+## Full Article
+
+9th March 2026 A recurring concern I’ve seen regarding LLMs for programming is that they will push our technology choices towards the tools that are best represented in their training data, making it harder for new, better tools to break through the noise. This was certainly the case a couple of years ago, when asking models for help with Python or JavaScript appeared to give much better results than questions about less widely used languages. With the latest models running in good coding agent harnesses I’m not sure this continues to hold up. I’m seeing excellent results with my brand new tools where I start by prompting “use uvx showboat --help / rodney --help / chartroom --help to learn about these tools”—the context length of these new models is long enough that they can consume quite a lot of documentation before they start working on a problem. Drop a coding agent into any existing codebase that uses libraries and tools that are too private or too new to feature in the training data and my experience is that it works just fine—the agent will consult enough of the existing examples to understand patterns, then iterate and test its own output to fill in the gaps. This is a surprising result. I thought coding agents would prove to be the ultimate embodiment of the Choose Boring Technology approach, but in practice they don’t seem to be affecting my technology choices in that way at all. Update: A few follow-on thoughts: The issue of what technology LLMs recommend is a separate one. What Claude Code Actually Chooses is an interesting recent study where Edwin Ong and Alex Vikati where they proved Claude Code over 2,000 times and found a strong bias towards build-over-buy but also identified a preferred technical stack, with GitHub Actions, Stripe, and shadcn/ui seeing a “near monopoly” in their respective categories. For the sake of this post my interest is in what happens when the human makes a technology choice that differs from those preferred by the model harness. The Skills mechanism that is being rapidly embraced by most coding agent tools is super-relevant here. We are already seeing projects release official skills to help agents use them—here are examples from Remotion, Supabase, Vercel, and Prisma.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Autoresearch: Sparks of Recursive Self Improvement"
+    icon="newspaper"
+    href="/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+  >
+    Swyx · explanation · 70% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI and Anthropic go to war: Claude Opus 4.6 vs GPT 5.3 Codex"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-and-anthropic-go-to-war-claude-opus-46-vs-gpt--f8f06b12"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+  <Card
+    title="An AI agent coding skeptic tries AI agent coding, in excessive detail"
+    icon="newspaper"
+    href="/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything](https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything).
+</Note>

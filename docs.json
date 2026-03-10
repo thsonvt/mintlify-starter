@@ -396,6 +396,10 @@
       "destination": "/kb/articles/how-to-build-a-coding-agent-free-workshop-e51acff6"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-e8549f99",
+      "destination": "/kb/articles/a-sneak-preview-behind-an-embedded-software-factory-i-suspec-e8549f99"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-eeeb2573",
       "destination": "/kb/articles/the-six-month-recap-closing-talk-on-ai-at-web-directions-mel-eeeb2573"
     },
@@ -580,6 +584,10 @@
       "destination": "/kb/articles/sequoia-ceo-coach-why-its-never-been-easier-to-start-a-compa-2afb2858"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2e3c1d42",
+      "destination": "/kb/articles/mastering-midjourney-how-to-create-consistent-beautiful-bran-2e3c1d42"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2f3d6bbc",
       "destination": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc"
     },
@@ -618,6 +626,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-5e969a97",
       "destination": "/kb/articles/-this-week-on-how-i-ai-automate-the-tasks-you-hate-anyone-ca-5e969a97"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-62f7ee41",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-mastering-midjourney-how-to-create-co-62f7ee41"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-6873f9f5",
@@ -780,6 +792,10 @@
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
     },
     {
+      "source": "/kb/articles/simon-willison-47fc8cda",
+      "destination": "/kb/articles/perhaps-not-boring-technology-after-all-47fc8cda"
+    },
+    {
       "source": "/kb/articles/simon-willison-495218f8",
       "destination": "/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8"
     },
@@ -850,6 +866,10 @@
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7474b8be",
+      "destination": "/kb/articles/production-query-plans-without-production-data-7474b8be"
     },
     {
       "source": "/kb/articles/simon-willison-76b24dc2",
@@ -1076,6 +1096,10 @@
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
     {
+      "source": "/kb/articles/swyx-33fd2c03",
+      "destination": "/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+    },
+    {
       "source": "/kb/articles/swyx-3a8f5bf7",
       "destination": "/kb/articles/ainews-anthropic-19b-arr-qwen-team-leaves-gemini-and-gpt-bum-3a8f5bf7"
     },
@@ -1198,6 +1222,10 @@
     {
       "source": "/kb/articles/swyx-be70bd66",
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-c9dc19c4",
+      "destination": "/kb/articles/nvidias-ai-engineers-agent-inference-at-planetary-scale-and--c9dc19c4"
     },
     {
       "source": "/kb/articles/swyx-cae196a7",
