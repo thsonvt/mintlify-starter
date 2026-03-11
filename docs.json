@@ -588,6 +588,10 @@
       "destination": "/kb/articles/mastering-midjourney-how-to-create-consistent-beautiful-bran-2e3c1d42"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2e95e9ec",
+      "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-2e95e9ec"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2f3d6bbc",
       "destination": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc"
     },
@@ -622,6 +626,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-52ad310d",
       "destination": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-54ae3f25",
+      "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-54ae3f25"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-5e969a97",
@@ -928,6 +936,10 @@
       "destination": "/kb/articles/introducing-gpt53codexspark-a1ad656f"
     },
     {
+      "source": "/kb/articles/simon-willison-a24024f2",
+      "destination": "/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
+    },
+    {
       "source": "/kb/articles/simon-willison-a4d04dbc",
       "destination": "/kb/articles/quoting-thomas-ptacek-a4d04dbc"
     },
@@ -1130,6 +1142,10 @@
     {
       "source": "/kb/articles/swyx-5acd0fdd",
       "destination": "/kb/articles/claude-code-for-finance-the-global-memory-shortage-doug-olau-5acd0fdd"
+    },
+    {
+      "source": "/kb/articles/swyx-5ce9775c",
+      "destination": "/kb/articles/ainews-yann-lecuns-ami-labs-launches-with-a-103b-seed-to-bui-5ce9775c"
     },
     {
       "source": "/kb/articles/swyx-69028ae0",
