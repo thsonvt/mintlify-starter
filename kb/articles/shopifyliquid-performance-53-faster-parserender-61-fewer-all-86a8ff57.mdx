@@ -1,0 +1,80 @@
+---
+title: 'Shopify/liquid: Performance: 53% faster parse+render, 61% fewer allocations'
+description: 'Shopify''s CEO Tobias Lütke implemented performance improvements in Liquid, achieving a 53% faster parse/render and 61% fewer allocations through innov'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-13'
+sourceUrl: 'https://simonwillison.net/2026/Mar/13/liquid/#atom-everything'
+topics: ["performance-optimization","coding-agents","liquid-template-engine","software-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/13/liquid/#atom-everything) · 13/03/2026
+</Info>
+
+## Summary
+
+Shopify's CEO Tobias Lütke implemented performance improvements in Liquid, achieving a 53% faster parse/render and 61% fewer allocations through innovative coding agent experiments.
+
+## Key Insights
+
+> "This all added up to a 53% improvement on benchmarks - truly impressive for a codebase that's been tweaked by hundreds of contributors over 20 years."
+>
+> — Discussing the impact of the performance improvements in Liquid.
+
+> "Having a robust test suite - in this case 974 unit tests - is a massive unlock for working with coding agents."
+>
+> — Highlighting the importance of a solid test suite for effective coding agent research.
+
+> "If you provide an agent with a benchmarking script 'make it faster' becomes an actionable goal."
+>
+> — Explaining how coding agents can facilitate performance improvements.
+
+## Topics
+
+- [performance-optimization](/kb/topics/performance-optimization)
+- [coding-agents](/kb/topics/coding-agents)
+- [liquid-template-engine](/kb/topics/liquid-template-engine)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+13th March 2026 - Link Blog Shopify/liquid: Performance: 53% faster parse+render, 61% fewer allocations (via) PR from Shopify CEO Tobias Lütke against Liquid, Shopify's open source Ruby template engine that was somewhat inspired by Django when Tobi first created it back in 2005. Tobi found dozens of new performance micro-optimizations using a variant of autoresearch, Andrej Karpathy's new system for having a coding agent run hundreds of semi-autonomous experiments to find new effective techniques for training nanochat. Tobi's implementation started two days ago with this autoresearch.md prompt file and an autoresearch.sh script for the agent to run to execute the test suite and report on benchmark scores. The PR now lists 93 commits from around 120 automated experiments. The PR description lists what worked in detail - some examples: Replaced StringScanner tokenizer with String#byteindex. Single-byte byteindex searching is ~40% faster than regex-based skip_until. This alone reduced parse time by ~12%. Pure-byte parse_tag_token. Eliminated the costly StringScanner#string= reset that was called for every &#123;% %&#125; token (878 times). Manual byte scanning for tag name + markup extraction is faster than resetting and re-scanning via StringScanner. [...] Cached small integer to_s. Pre-computed frozen strings for 0-999 avoid 267 Integer#to_s allocations per render. This all added up to a 53% improvement on benchmarks - truly impressive for a codebase that's been tweaked by hundreds of contributors over 20 years. I think this illustrates a number of interesting ideas: Having a robust test suite - in this case 974 unit tests - is a massive unlock for working with coding agents. This kind of research effort would not be possible without first having a tried and tested suite of tests. The autoresearch pattern - where an agent brainstorms a multitude of potential improvements and then experiments with them one at a time - is really effective. If you provide an agent with a benchmarking script "make it faster" becomes an actionable goal. CEOs can code again! Tobi has always been more hands-on than most, but this is a much more significant contribution than anyone would expect from the leader of a company with 7,500+ employees. I've seen this pattern play out a lot over the past few months: coding agents make it feasible for people in high-interruption roles to productively work with code again. Here's Tobi's GitHub contribution graph for the past year, showing a significant uptick following that November 2025 inflection point when coding agents got really good. He used Pi as the coding agent and released a new pi-autoresearch plugin in collaboration with David Cortés, which maintains state in an autoresearch.jsonl file like this one.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Autoresearch: Sparks of Recursive Self Improvement"
+    icon="newspaper"
+    href="/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+  >
+    Swyx · explanation · 62% similar
+  </Card>
+  <Card
+    title="[AINews] Replit Agent 4: The Knowledge Work Agent"
+    icon="newspaper"
+    href="/kb/articles/ainews-replit-agent-4-the-knowledge-work-agent-71aec735"
+  >
+    Swyx · explanation · 60% similar
+  </Card>
+  <Card
+    title="AI should help us produce better code - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
+  >
+    Simon Willison · how-to · 60% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/13/liquid/#atom-everything](https://simonwillison.net/2026/Mar/13/liquid/#atom-everything).
+</Note>
