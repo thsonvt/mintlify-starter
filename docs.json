@@ -236,6 +236,10 @@
       "destination": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-5c930a47",
+      "destination": "/kb/articles/compound-engineering-camp-every-step-from-scratch--5c930a47"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-716f6ab5",
       "destination": "/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
     },
@@ -752,6 +756,10 @@
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
     {
+      "source": "/kb/articles/simon-willison-0bb24078",
+      "destination": "/kb/articles/a-quote-from-craig-mod-0bb24078"
+    },
+    {
       "source": "/kb/articles/simon-willison-0fa21631",
       "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
     },
@@ -858,6 +866,10 @@
     {
       "source": "/kb/articles/simon-willison-5a8c245b",
       "destination": "/kb/articles/til-running-openclaw-in-docker-5a8c245b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5abed48c",
+      "destination": "/kb/articles/1m-context-is-now-generally-available-for-opus-46-and-sonnet-5abed48c"
     },
     {
       "source": "/kb/articles/simon-willison-5deef68f",
@@ -1298,6 +1310,10 @@
     {
       "source": "/kb/articles/swyx-dae507b8",
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+    },
+    {
+      "source": "/kb/articles/swyx-ea4debd4",
+      "destination": "/kb/articles/ainews-context-drought-ea4debd4"
     },
     {
       "source": "/kb/articles/swyx-ebedd1c9",
