@@ -568,6 +568,10 @@
       "destination": "/kb/articles/principles-781e9631"
     },
     {
+      "source": "/kb/articles/latentpatterns-a19b5b8e",
+      "destination": "/kb/articles/pi-the-architecture-of-an-ai-coding-agent-a19b5b8e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-020958e5",
       "destination": "/kb/articles/how-this-pm-uses-mcps-to-automate-his-meeting-prep-crm-updat-020958e5"
     },
@@ -716,6 +720,10 @@
       "destination": "/kb/articles/-community-wisdom-making-your-product-enterprise-ready-when--ddc306e9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-de9d49c7",
+      "destination": "/kb/articles/-community-wisdom-getting-a-skeptical-cto-to-adopt-ai-coding-de9d49c7"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-e1909e93",
       "destination": "/kb/articles/-community-wisdom-building-your-tech-stack-from-scratch-surv-e1909e93"
     },
@@ -822,6 +830,10 @@
     {
       "source": "/kb/articles/simon-willison-417198d8",
       "destination": "/kb/articles/a-quote-from-benedict-evans-417198d8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4574d440",
+      "destination": "/kb/articles/my-fireside-chat-about-agentic-engineering-at-the-pragmatic--4574d440"
     },
     {
       "source": "/kb/articles/simon-willison-46db46c4",
@@ -1006,6 +1018,10 @@
     {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ae4f0509",
+      "destination": "/kb/articles/a-quote-from-jannis-leidel-ae4f0509"
     },
     {
       "source": "/kb/articles/simon-willison-ae6359a2",

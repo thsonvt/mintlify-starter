@@ -1,0 +1,750 @@
+---
+title: 'Pi: the architecture of an AI coding agent'
+description: 'Pi transforms LLMs into coding assistants, adaptable to various workflows.'
+icon: 'newspaper'
+author: 'Latentpatterns'
+authorId: 'latentpatterns'
+published: '2026-03-15'
+sourceUrl: 'https://latentpatterns.com/newsletter/pi-mono-architecture'
+topics: ["Software Architecture","Large Language Models","Coding Tools","AI in Software Development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Latentpatterns](https://latentpatterns.com/newsletter/pi-mono-architecture) · 15/03/2026
+</Info>
+
+## Summary
+
+Pi transforms LLMs into coding assistants, adaptable to various workflows.
+
+## Key Insights
+
+> "Pi follows one guiding idea: adapt the tool to your workflow, not the other way around."
+>
+> — Describes Pi's core philosophy of flexibility and customization in tools.
+
+> "Each layer only knows about the layer directly below it."
+>
+> — Explains the modular architecture of Pi, emphasizing isolation and simplicity.
+
+> "Think of it like a universal power adapter."
+>
+> — Metaphor used to describe how Pi-ai abstracts away the complexities of different LLM providers.
+
+## Topics
+
+- [Software Architecture](/kb/topics/software-architecture)
+- [Large Language Models](/kb/topics/large-language-models)
+- [Coding Tools](/kb/topics/coding-tools)
+- [AI in Software Development](/kb/topics/ai-in-software-development)
+
+---
+
+## Full Article
+
+Imagine you open a terminal and type:
+
+```
+pi "there is a bug in the login page — fix it"
+
+```
+A few seconds later, text starts streaming onto your screen. The AI reads your project files, finds the bug, edits the code, and runs the tests. You watch each step happen in real time. When it finishes, the fix is already in your working directory.
+
+That is [pi](https://github.com/badlogic/pi-mono), a minimal terminal coding [agent](/glossary/agent) built by Mario Zechner. Pi is not a monolithic application. It is a [monorepo](/glossary/monorepo) of seven small packages, each with one clear job. Together they turn any large language model (LLM) into a coding assistant you can use from your terminal, your browser, or even a Slack channel.
+
+This article walks through pi’s architecture. We will start with the big picture, then zoom into each layer, and close with the lessons the design teaches us. The goal is not to document every function — it is to show you *why* the pieces are shaped the way they are.
+
+## The big picture
+
+Pi follows one guiding idea: **adapt the tool to your workflow, not the other way around**. Instead of shipping every possible feature, pi ships a small, composable set of building blocks. If you need sub-agents, plan mode, or permission gates, you build them yourself — or install someone else’s package that does it the way you like.
+
+The monorepo contains seven packages. Think of them as a stack of LEGO layers. Each layer only knows about the layer directly below it.
+
+flowchart TD
+MOM["pi-mom
+(Slack bot)"]
+CA["pi-coding-agent
+(terminal harness)"]
+AGENT["pi-agent-core
+(agent loop)"]
+AI["pi-ai
+(LLM abstraction)"]
+TUI["pi-tui
+(terminal UI)"]
+WEB["pi-web-ui
+(browser UI)"]
+PODS["pi-pods
+(GPU deployment)"]
+MOM --> CA
+CA --> AGENT
+CA --> TUI
+AGENT --> AI
+WEB --> AGENT
+WEB --> AI
+PODS -.->|"OpenAI-compat API"| AI
+
+OpenAI-compat API
+
+pi-mom 
+(Slack bot)
+
+pi-coding-agent 
+(terminal harness)
+
+pi-agent-core 
+(agent loop)
+
+pi-ai 
+(LLM abstraction)
+
+pi-tui 
+(terminal UI)
+
+pi-web-ui 
+(browser UI)
+
+pi-pods 
+(GPU deployment)
+
+Here is what each layer does in one sentence:
+
+| Package | Job |
+| --- | --- |
+| [**pi-tui**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/tui) | A terminal UI framework with flicker-free differential rendering. |
+| [**pi-ai**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai) | A unified streaming API that talks to 20+ LLM providers. |
+| [**pi-agent-core**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent) | A stateful agent loop that runs tools and manages conversation. |
+| [**pi-coding-agent**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent) | The interactive coding harness you actually type into. |
+| [**pi-web-ui**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/web-ui) | The same agent core, but running in a web browser. |
+| [**pi-mom**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/mom) | A Slack bot that manages its own tools and memory. |
+| [**pi-pods**](https://github.com/badlogic/pi-mono/tree/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/pods) | A CLI for deploying LLMs on remote GPU pods. |
+
+The rest of this article goes through the four core layers — `pi-ai`, `pi-agent-core`, `pi-tui`, and `pi-coding-agent` — then briefly covers the three outer packages.
+
+## The LLM layer: pi-ai
+
+### The problem
+
+There are over twenty companies offering LLM APIs: OpenAI, Anthropic, Google, Mistral, Groq, Amazon Bedrock, and many more. Each has its own request format, authentication method, and [streaming](/glossary/streaming) protocol. Some return tool calls as JSON, others use XML. Some support “thinking” blocks, others do not. If your agent is hard-wired to one provider, switching to a better or cheaper model means rewriting your networking code.
+
+### The solution: an API registry
+
+Pi-ai solves this with a **[provider registry](/glossary/provider-registry)**. Every LLM provider registers itself at startup. When you call [`stream()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/stream.ts#L26), the library looks up the right provider by the model’s API identifier and delegates to it.
+
+```
+// Each provider registers itself once at startup (api-registry.ts)
+registerApiProvider({
+  api: 'anthropic-messages',
+  stream: streamAnthropic,
+  streamSimple: streamSimpleAnthropic,
+});
+
+// Your code never mentions a provider directly
+const model = getModel('anthropic', 'claude-sonnet-4-20250514');  // models.ts
+const events = stream(model, context);
+
+```
+Think of it like a **universal power adapter**. You plug your laptop into the adapter, and the adapter handles the differences between wall sockets in the US, Europe, and Australia. Your laptop does not care which country it is in. Similarly, your agent code does not care which LLM provider it is talking to.
+
+Here is what happens when you call [`stream()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/stream.ts#L26):
+
+sequenceDiagram
+participant App as Your Code
+participant Registry as API Registry
+participant Provider as Provider (e.g. Anthropic)
+participant LLM as LLM API
+App->>Registry: stream(model, context)
+Registry->>Registry: Look up provider by model.api
+Registry->>Provider: provider.stream(model, context)
+Provider->>LLM: HTTP request (provider format)
+LLM-->>Provider: SSE stream
+Provider-->>App: text\_delta events
+Provider-->>App: toolcall\_start / toolcall\_delta / toolcall\_end
+Provider-->>App: done (with final AssistantMessage)LLM APIProvider (e.g. Anthropic)API RegistryYour CodeLLM APIProvider (e.g. Anthropic)API RegistryYour Codestream(model, context)Look up provider by model.apiprovider.stream(model, context)HTTP request (provider format)SSE streamtext\_delta eventstoolcall\_start / toolcall\_delta / toolcall\_enddone (with final AssistantMessage)
+
+The response comes back as a stream of typed events. The most common ones are:
+
+* **text\_delta** — a chunk of text the model is writing
+* **toolcall\_start / toolcall\_delta / toolcall\_end** — the model is calling a tool
+* **thinking\_start / thinking\_delta / thinking\_end** — the model is reasoning out loud
+* **done** — the model has finished
+
+Every provider transforms its native format into these same events. Anthropic’s Messages API, OpenAI’s Responses API, Google’s Generative AI API, and Amazon’s Bedrock Converse API all produce the same event types. That is the whole trick.
+
+### Cross-provider handoffs
+
+One of pi-ai’s more surprising features is that you can switch models **mid-conversation**. Start a chat with Claude, then continue it with GPT, then hand it to Gemini. The library automatically transforms earlier messages so the new provider can understand them.
+
+The key challenge is **thinking blocks**. When Claude shows its reasoning, it uses a native `thinking` content type. GPT does not understand that format. So pi-ai converts thinking blocks from other providers into plain text wrapped in tags. Tool calls and regular text pass through unchanged.
+
+```
+// Start with Claude
+const claudeResponse = await complete(claude, context);
+context.messages.push(claudeResponse);
+
+// Switch to GPT — thinking blocks become tagged text
+context.messages.push({ role: 'user', content: 'Is that right?' });
+const gptResponse = await complete(gpt, context);
+
+```
+This works because every [`AssistantMessage`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/types.ts#L170) records which provider and model created it. The [`transformMessages()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/providers/transform-messages.ts#L8) function checks: “Is this message from the same provider as the model I’m sending to?” If not, it normalizes the content.
+
+### The edge cases nobody warns you about
+
+Cross-provider compatibility sounds simple in theory. In practice, [`transformMessages()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/providers/transform-messages.ts#L8) handles dozens of quirks that only surface when you test real conversations across providers:
+
+* **Tool call ID formats.** OpenAI’s Responses API generates tool call IDs that are 450+ characters long and contain pipe characters. Anthropic requires IDs matching `^[a-zA-Z0-9_-]+$` with a 64-character limit. So pi-ai normalizes IDs when replaying messages to a different provider, and keeps a map so tool results still match their calls.
+* **Non-streaming tool arguments.** Most providers stream tool call arguments as partial JSON chunks. Google sends them all at once in a single event. The event stream must handle both patterns transparently.
+* **Thinking signatures.** Some providers attach opaque signatures to thinking blocks and text blocks (used for replaying cached context). These signatures are meaningless to other providers and must be stripped during transformation, but preserved when replaying to the same provider.
+* **Tool result requirements.** Mistral requires a `name` field on tool results. Most providers do not. Some require an assistant message after every tool result. The compat layer handles these per-provider quirks via a configuration object that can be auto-detected from the base URL or set explicitly.
+
+Each of these is a small fix, but together they represent a significant amount of real-world compatibility work that a provider abstraction must handle to be truly useful.
+
+### OAuth: using your existing subscriptions
+
+Many developers already pay for LLM access through subscriptions — Claude Pro, GitHub Copilot, ChatGPT Plus. Pi-ai lets you use these subscriptions directly instead of requiring separate API keys.
+
+The authentication uses the **OAuth device code flow**, the same pattern you see when logging into a streaming service on a TV. When you run `/login` in pi, the library:
+
+1. Requests a device code from the provider (e.g., GitHub)
+2. Shows you a short code and a URL to visit in your browser
+3. Polls the provider’s token endpoint until you approve the request
+4. Receives an access token and refresh token
+5. Saves the credentials to a local `auth.json` file
+
+```
+// github-copilot.ts — OAuth device code flow
+const credentials = await loginGitHubCopilot({
+  onAuth: (url, instructions) => {
+    console.log(`Open: ${url}`);  // User visits this URL
+    console.log(instructions);     // "Enter code: ABCD-1234"
+  },
+  onProgress: (message) => console.log(message),
+});
+
+```
+The clever part is the [`getOAuthApiKey()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/utils/oauth/index.ts#L111) function. Before each LLM call, it checks whether the stored token has expired. If it has, it automatically refreshes the token using the refresh token — no user interaction needed. This means you can start a long coding session and never see an authentication error, even if your original token expires mid-conversation.
+
+Each provider has its own OAuth quirks. GitHub Copilot tokens contain an embedded proxy endpoint that must be parsed out to find the correct API base URL. Anthropic’s OAuth tokens use a different prefix (`sk-ant-oat-`) than regular API keys. Google’s Gemini CLI flow returns a compound credential containing both a token and a project ID. The library handles all of these behind the same [`getOAuthApiKey()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/utils/oauth/index.ts#L111) interface.
+
+### Tools with type safety
+
+When you define a tool for the LLM to call, you describe its parameters using [TypeBox](https://github.com/sinclairzx81/typebox) schemas. TypeBox generates both a [JSON Schema](/glossary/json-schema) (for the LLM) and a TypeScript type (for your code) from a single definition. The library validates every tool call against the schema using AJV before passing it to your code. If the LLM sends bad arguments, the error goes back to the model so it can retry.
+
+```
+const weatherTool: Tool = {
+  name: 'get_weather',
+  description: 'Get current weather for a location',
+  parameters: Type.Object({
+    location: Type.String({ description: 'City name' }),
+    units: StringEnum(['celsius', 'fahrenheit']),
+  }),
+};
+
+```
+## The agent loop: pi-agent-core
+
+### The problem
+
+A raw LLM API call gives you text and [tool call](/glossary/tool-calling) requests. But an agent needs to *do things*: execute tools, feed results back, handle errors, and keep going until the task is done. It also needs to let the user interrupt mid-run, queue follow-up requests, and stream progress events to a UI.
+
+### The solution: a state machine
+
+Pi-agent-core wraps the LLM layer in a [loop](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent/src/agent-loop.ts#L28). Think of it like a **restaurant kitchen**. The LLM is the chef — it decides what to cook. The agent loop is the waiter — it takes orders from customers (user messages), delivers them to the chef, carries dishes (tool results) back and forth, and tells the customer what is happening at each step.
+
+stateDiagram-v2
+[\*] --> ReceivePrompt
+ReceivePrompt --> TransformContext: User sends message
+TransformContext --> ConvertToLLM: Prune old messages
+ConvertToLLM --> StreamResponse: Filter custom types
+StreamResponse --> ExecuteTools: Tool calls received
+StreamResponse --> CheckFollowUp: No tool calls (text only)
+ExecuteTools --> CheckSteering: Tool finished
+CheckSteering --> ConvertToLLM: Steering message found
+CheckSteering --> ExecuteTools: More tools to run
+CheckSteering --> CheckFollowUp: All tools done
+CheckFollowUp --> ConvertToLLM: Follow-up message queued
+CheckFollowUp --> [\*]: Nothing queued — done
+
+User sends message
+
+Prune old messages
+
+Filter custom types
+
+Tool calls received
+
+No tool calls (text only)
+
+Tool finished
+
+Steering message found
+
+More tools to run
+
+All tools done
+
+Follow-up message queued
+
+Nothing queued — done
+
+ReceivePrompt
+
+TransformContext
+
+ConvertToLLM
+
+StreamResponse
+
+ExecuteTools
+
+CheckFollowUp
+
+CheckSteering
+
+The message pipeline has three stages:
+
+1. [**`transformContext`**](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent/src/types.ts#L67) — Prune old messages or inject external context. This keeps the conversation within the model’s context window.
+2. [**`convertToLlm`**](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent/src/agent-loop.ts#L218) — Filter out app-specific messages (like UI notifications) and convert custom types into standard LLM messages.
+3. **Stream to LLM** — Send the cleaned messages and get back text or tool calls.
+
+### AgentMessage: more than just chat
+
+A key design choice is the [`AgentMessage`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent/src/types.ts#L129) type. Standard LLM messages are `user`, `assistant`, and `toolResult`. But a real application has more message types: file attachments, system notifications, status updates. Pi-agent-core lets you add custom types using TypeScript’s **declaration merging**:
+
+```
+// In your app, extend the message types
+declare module '@mariozechner/pi-agent-core' {
+  interface CustomAgentMessages {
+    notification: {
+      role: 'notification';
+      text: string;
+      timestamp: number;
+    };
+  }
+}
+
+// Now you can add notifications to the conversation
+agent.appendMessage({
+  role: 'notification',
+  text: 'Build succeeded',
+  timestamp: Date.now(),
+});
+
+```
+These custom messages live alongside regular chat messages in the conversation history. The [`convertToLlm`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/agent/src/agent-loop.ts#L218) function decides what the model sees — it might convert notifications into user messages, or filter them out entirely. This separation means the UI can show things that the LLM never sees, and vice versa.
+
+### Steering and follow-up
+
+Real agents need to handle interruptions. Imagine the agent is running three tool calls, and you realize the first result is wrong. You want to say “stop, try a different approach.” Pi-agent-core supports this through **steering messages**:
+
+* **[Steering messages](/glossary/steering-message)** are delivered after the current tool finishes. Remaining tools get cancelled. The agent sees your interruption immediately.
+* **[Follow-up messages](/glossary/follow-up-message)** are delivered only after the agent finishes all its current work. They queue the next task.
+
+Both types use simple queues. After each tool execution, the loop checks: “Are there any steering messages?” If yes, skip the remaining tools and inject the messages. After all work is done: “Are there any follow-ups?” If yes, start another turn.
+
+## The terminal interface: pi-tui
+
+### The problem
+
+Most terminal UI libraries are designed for forms and menus. A coding agent needs something different: a scrolling chat interface with syntax-highlighted code blocks, inline images, multi-line editing, autocomplete, and live-updating streaming text — all without flickering.
+
+### The solution: differential rendering
+
+Pi-tui is a custom terminal UI framework built specifically for pi. Think of it like **React, but for your terminal** — it uses [differential rendering](/glossary/differential-rendering). Instead of a virtual DOM, it uses a simpler approach: every component returns an array of strings (one per line), and the framework figures out which lines changed since the last render.
+
+Every component implements one method — the [`Component`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/tui/src/tui.ts#L16) interface:
+
+```
+interface Component {
+  render(width: number): string[];
+}
+
+```
+The framework calls [`render()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/tui/src/tui.ts#L16) whenever something changes. It gets back an array of strings — the visible lines for that component. Then it compares the new lines to the old ones and uses one of three strategies:
+
+flowchart TD
+A&#123;"Is this the
+first render?"&#125;
+B&#123;"Did terminal
+width change?"&#125;
+C&#123;"Did a line change
+above the viewport?"&#125;
+D["Strategy 1:
+Output all lines
+(no clear)"]
+E["Strategy 2:
+Clear screen +
+full re-render"]
+F["Strategy 3:
+Move to first changed line
+Clear to end
+Render changed lines"]
+A -->|Yes| D
+A -->|No| B
+B -->|Yes| E
+B -->|No| C
+C -->|Yes| E
+C -->|No| F
+
+Yes
+
+No
+
+Yes
+
+No
+
+Yes
+
+No
+
+Is this the 
+first render?
+
+Did terminal 
+width change?
+
+Did a line change 
+above the viewport?
+
+Strategy 1: 
+Output all lines 
+(no clear)
+
+Strategy 2: 
+Clear screen + 
+full re-render
+
+Strategy 3: 
+Move to first changed line 
+Clear to end 
+Render changed lines
+
+Strategy 3 is the common case. If only the last few lines changed (because the model is streaming new text), the framework moves the cursor to the first changed line, clears from there to the bottom, and writes just the new content. This is fast enough that streaming text feels instant.
+
+All rendering is wrapped in **synchronized output** — a terminal protocol where the framework sends a “start batch” signal, writes all changes, then sends an “end batch” signal. The terminal holds all updates until the batch is complete, then applies them at once. This eliminates flicker entirely.
+
+### Built-in components
+
+Pi-tui ships with the components a chat interface needs:
+
+* **Editor** — Multi-line input with autocomplete, paste handling, and image support (Ctrl+V pastes images in supported terminals)
+* **Markdown** — Renders markdown with syntax highlighting, headings, code blocks, and links
+* **SelectList** — Arrow-key navigation for command menus
+* **Overlay** — Modal dialogs that render on top of existing content
+* **Image** — Inline image rendering for Kitty and iTerm2 terminals
+
+The Editor component is the most complex. It handles the input area where you type your prompts. It supports Shift+Enter for multi-line input, Tab for file path completion, and `@` for fuzzy file search. Large pastes (more than 10 lines) get collapsed into a marker like `[paste #1 +50 lines]` to keep the editor readable.
+
+## The coding agent: pi-coding-agent
+
+This is the package you actually interact with. It ties together pi-ai, pi-agent-core, and pi-tui into a complete coding harness. It runs in four modes: interactive (the terminal UI), print (one-shot output), JSON (event stream for scripting), and RPC (for embedding in other programs).
+
+### Sessions as trees
+
+When you chat with pi, every message is saved to a session file. But pi’s sessions are not simple lists — they are **trees**. Each entry in the JSONL file has an `id` and a `parentId`, forming a branch structure.
+
+Why trees? Because conversations branch. You try one approach, it does not work, so you go back and try another. In a linear chat, you would lose the first attempt. In pi, you jump back to any point using `/tree`, continue from there, and both branches stay in the same file.
+
+flowchart TD
+U1["User: fix the bug"]
+A1["Assistant: I'll try approach A..."]
+U2a["User: that didn't work"]
+A2a["Assistant: Let me try approach B..."]
+U2b["User: good, now add tests"]
+A2b["Assistant: Here are the tests..."]
+U1 --> A1
+A1 -->|"branch A"| U2a
+A1 -->|"branch B"| U2b
+U2a --> A2a
+U2b --> A2b
+
+branch A
+
+branch B
+
+User: fix the bug
+
+Assistant: I'll try approach A...
+
+User: that didn't work
+
+Assistant: Let me try approach B...
+
+User: good, now add tests
+
+Assistant: Here are the tests...
+
+Each path through the tree is a branch. Branch A is the failed attempt. Branch B is the successful one. Both live in the same JSONL file. `/tree` lets you jump between them.
+
+### Inside the JSONL file
+
+A session file is just append-only JSON lines. The first line is a [header](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/session-manager.ts#L29) with the session ID and working directory. Every line after that is an entry with a `type`, a unique `id`, a `parentId` pointing to the previous entry in its branch, and a `timestamp`.
+
+```
+{"type":"session","id":"abc-123","cwd":"/projects/myapp"}
+{"type":"message","id":"e1","parentId":null,"message":{"role":"user","content":"fix the bug"}}
+{"type":"message","id":"e2","parentId":"e1","message":{"role":"assistant","content":"I'll try..."}}
+{"type":"message","id":"e3","parentId":"e2","message":{"role":"user","content":"that didn't work"}}
+{"type":"message","id":"e4","parentId":"e2","message":{"role":"user","content":"good, add tests"}}
+
+```
+Notice entries `e3` and `e4` both have `parentId: "e2"` — that is the branch point. To reconstruct a branch, you start at the leaf entry and follow `parentId` pointers back to the root. To find all branches, you find all leaf entries (entries that no other entry points to as a parent).
+
+Beyond messages, the file can contain other entry types:
+
+* **compaction** — A summary that replaces older messages in the LLM’s view
+* **model\_change** — Records when you switched to a different model
+* **thinking\_level\_change** — Records when you adjusted the thinking level
+* **branch\_summary** — A summary of the branch you left when navigating the tree
+* **custom** — Extension-specific data (not sent to the LLM)
+* **custom\_message** — Extension-injected messages that *are* sent to the LLM
+* **label** — User-defined bookmarks on specific entries
+
+This design means sessions are append-only — nothing is ever deleted or overwritten. Branching, compaction, model changes, and bookmarks are all just new lines added to the end of the file. The trade-off is that reconstructing the current branch requires scanning the whole file and following parent pointers, but in practice session files rarely exceed a few megabytes, so this is fast enough.
+
+### Compaction: when conversations get too long
+
+LLMs have limited [context windows](/glossary/context-window) — they can only “remember” a certain number of tokens at once. Long coding sessions can exceed this limit. Pi handles this with **compaction**: it summarizes older messages while keeping recent ones in full.
+
+Compaction follows a three-stage pipeline:
+
+flowchart LR
+A["Prepare
+(estimate tokens,
+find split point)"] --> B["Summarize
+(LLM call with
+older messages)"]
+B --> C["Replace
+(summary becomes
+first message)"]
+
+Prepare 
+(estimate tokens, 
+find split point)
+
+Summarize 
+(LLM call with 
+older messages)
+
+Replace 
+(summary becomes 
+first message)
+
+1. **Prepare** — Estimate the current context size in tokens. Find a split point that keeps recent messages (at least 20,000 tokens worth) in full while marking older messages for summarization.
+2. **Summarize** — Send the older messages to the LLM with a special system prompt that asks for a concise summary. The summary also tracks which files the agent has read and modified, so the model does not lose track of its work.
+3. **Replace** — Write a `compaction` entry to the JSONL session file containing the summary, the token count before compaction, and the ID of the first kept entry. From now on, the agent sees the summary plus the recent messages.
+
+Compaction can trigger in two ways: **automatically** when the context reaches approximately 80% of the model’s window (proactive) or when an LLM call actually overflows (reactive recovery), and **manually** via the `/compact` command, which optionally accepts custom instructions like `/compact focus on the database migration`.
+
+The full history always stays in the JSONL file. Compaction only affects what the LLM sees — you can navigate to any pre-compaction point using `/tree`. Extensions can even hook into the [`session_before_compact`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/extensions/types.ts#L415) event to provide their own summarization logic, for example to preserve an artifact index or structured state across compaction boundaries.
+
+### The extension system
+
+This is the most architecturally interesting part of pi. Extensions are TypeScript modules that receive an [`ExtensionAPI`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/extensions/types.ts#L107) object at startup. Through this API, they can do almost anything:
+
+```
+// A minimal extension that adds a tool and a command
+export default function(pi: ExtensionAPI) {
+  // Add a tool the LLM can call
+  pi.registerTool({
+    name: 'deploy',
+    label: 'Deploy',
+    description: 'Deploy the current project',
+    parameters: Type.Object({
+      environment: StringEnum(['staging', 'production']),
+    }),
+    execute: async (id, params) => {
+      const result = await pi.exec('deploy.sh', [params.environment]);
+      return {
+        content: [{ type: 'text', text: result.stdout }],
+        details: { exitCode: result.exitCode },
+      };
+    },
+  });
+
+  // Add a slash command
+  pi.registerCommand('deploy-status', {
+    description: 'Show deployment status',
+    execute: async () => {
+      pi.ui.notify('Last deploy: 2 minutes ago');
+    },
+  });
+}
+
+```
+Extensions can also replace built-in tools entirely. If you do not like how the default `bash` tool works, you can write your own and tell pi to use it instead.
+
+The [`ExtensionAPI`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/extensions/types.ts#L107) surface is deliberately large. Here is a map of what extensions can touch:
+
+flowchart TD
+EXT["Extension Module"]
+EXT --> TOOLS["Tools
+(register, replace,
+wrap built-ins)"]
+EXT --> CMDS["Commands
+(/slash commands)"]
+EXT --> KEYS["Keyboard Shortcuts
+(custom key bindings)"]
+EXT --> EVENTS["Event Hooks
+(agent\_start, tool\_call,
+message\_end, compact, ...)"]
+EXT --> UI["UI Components
+(widgets, overlays,
+custom editor, footer)"]
+EXT --> CTX["Context Control
+(modify messages before
+LLM, custom compaction)"]
+
+Extension Module
+
+Tools 
+(register, replace, 
+wrap built-ins)
+
+Commands 
+(/slash commands)
+
+Keyboard Shortcuts 
+(custom key bindings)
+
+Event Hooks 
+(agent\_start, tool\_call, 
+message\_end, compact, ...)
+
+UI Components 
+(widgets, overlays, 
+custom editor, footer)
+
+Context Control 
+(modify messages before 
+LLM, custom compaction)
+
+The event system deserves special attention. Extensions can subscribe to over twenty event types spanning the full agent lifecycle: `session_start`, `before_agent_start`, `context` (fired before each LLM call — you can modify the messages), `message_update` (token-by-token streaming), `tool_execution_start/end`, `session_before_compact`, and many more. Each event handler receives a context object with access to the UI, session manager, model registry, and current agent state.
+
+The [`context`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/extensions/types.ts#L483) event is especially powerful. It fires right before messages are sent to the LLM, and the handler can modify the message array. This means an extension can inject context from external sources (like a database or API), strip sensitive information, or rewrite messages — all transparently to the rest of the system.
+
+The UI capabilities are equally deep. Extensions can set custom widgets above or below the editor, replace the footer or header with their own components, show overlay dialogs, replace the entire editor component (one extension implements a vim-mode editor this way), and even intercept raw terminal input.
+
+This is pi’s core philosophy in action. The coding agent itself ships with just four tools: `read`, `write`, `edit`, and `bash`. Everything else — sub-agents, plan mode, git checkpointing, permission gates, MCP server integration — can be built as extensions. People have even built Doom as an extension (to play while waiting for slow models).
+
+### The built-in tools: design patterns
+
+Pi ships with four default tools — `read`, `write`, `edit`, and `bash` — plus three optional extras (`grep`, `find`, `ls`). Each tool follows a pattern worth examining.
+
+**Every tool has pluggable operations.** The [`edit` tool](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/tools/edit.ts#L55), for example, defines an [`EditOperations`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/tools/edit.ts#L35) interface with `readFile`, `writeFile`, and `access` methods. The default implementation uses the local filesystem, but you can inject custom operations that delegate to a remote system over SSH or a Docker container. The same pattern applies to [`bash`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/coding-agent/src/core/tools/bash.ts#L166) (custom `exec` function), `read` (custom `readFile`), and all the others. This is how pi-mom runs tools inside a Docker sandbox without modifying the tool code.
+
+**The edit tool uses exact-string matching, not line numbers.** Instead of saying “replace lines 42-45”, the LLM provides the exact text to find and the exact text to replace it with. This avoids off-by-one errors that plague line-number-based editing, especially when the LLM’s view of the file is stale (because another tool modified it between the read and the edit). If the exact match fails, the tool falls back to fuzzy matching that normalizes whitespace and reports the best match.
+
+**The bash tool streams output to a temp file.** Long-running commands can produce megabytes of output. Instead of buffering it all in memory, the bash tool streams stdout and stderr to a temporary file. When the command finishes, the tool reads back the file with truncation (configurable, defaulting to ~200KB). If the output was truncated, the tool tells the LLM where the full output is, so it can `read` it with a specific range.
+
+**All tools report structured details.** Beyond the text content the LLM sees, each tool returns a `details` object with metadata for the UI — diff output for edits, truncation info for bash, file sizes for read. The extension system can provide custom renderers for these details, so different extensions can present tool results in different ways.
+
+### Skills and prompt templates
+
+**Skills** are markdown files that describe a capability the agent can use. They follow the [Agent Skills](https://agentskills.io) standard. Each skill has a `SKILL.md` with frontmatter and step-by-step instructions. When you invoke `/skill:name`, pi loads the skill’s content and includes it in the system prompt.
+
+**Prompt templates** are reusable prompts stored as markdown files. Type `/review` and pi expands it into your full code review prompt with any `&#123;&#123;variables&#125;&#125;` filled in.
+
+Both skills and templates can be shared via **Pi Packages** — npm or git packages that bundle extensions, skills, templates, and themes. Install them with `pi install npm:@foo/pi-tools` and they appear automatically.
+
+## Beyond the terminal
+
+### pi-web-ui: the browser version
+
+Pi-web-ui puts the same agent core in a web browser. It uses [mini-lit](https://github.com/badlogic/mini-lit) web components and Tailwind CSS to build a chat interface with:
+
+* A ChatPanel with message history, streaming, and tool execution
+* An ArtifactsPanel for sandboxed HTML/SVG/Markdown execution
+* IndexedDB storage for sessions, API keys, and settings
+* Attachment support for PDFs, images, and Office documents
+
+The key reuse: pi-web-ui imports `pi-agent-core` and `pi-ai` directly. The agent loop, tool execution, and LLM communication are identical to the terminal version. Only the UI layer is different.
+
+### pi-mom: the self-managing Slack bot
+
+Mom (Master Of Mischief) is a Slack bot that uses the agent core to respond to messages in channels. What makes mom unusual is that she is **self-managing**. She installs her own tools (`apk add git jq curl`), configures her own credentials, and builds custom CLI scripts for your workflows.
+
+Each Slack channel gets its own directory with:
+
+* `log.jsonl` — Full message history (source of truth, never compacted)
+* `context.jsonl` — What the LLM actually sees (compacted when it gets too long)
+* `MEMORY.md` — Persistent memory that mom reads before every response
+* `skills/` — Custom CLI tools mom has created for that channel
+
+The two-file design (`log.jsonl` vs `context.jsonl`) solves a real problem. Slack channels have messages from many people, but most of those messages are not directed at mom. The `log.jsonl` file captures *everything* — every message from every user, including file attachments. When someone @mentions mom, the system syncs any unseen messages from `log.jsonl` into `context.jsonl` (what the LLM actually reads). This means mom is aware of channel chatter — she can reference earlier conversations — without wasting context tokens on every unrelated message.
+
+Mom can also schedule events. Three types are supported:
+
+* **Immediate** — Triggers as soon as the event file is created. Useful for webhooks and external programs.
+* **One-shot** — Triggers at a specific time, then auto-deletes. “Remind me about the meeting at 3pm.”
+* **Periodic** — Triggers on a cron schedule. “Check my email inbox every morning at 9am.”
+
+Events are just JSON files dropped into a `data/events/` directory. This means external systems — CI pipelines, cron jobs, webhook receivers — can wake mom up by simply writing a file. Mom can also create events herself, which is how she sets her own reminders.
+
+When a periodic event fires and mom has nothing to report (no new emails, no alerts), she responds with `[SILENT]` — a special marker that suppresses the Slack message. This prevents channel spam from routine checks that find nothing.
+
+### pi-pods: GPU deployment
+
+Pi-pods is a standalone CLI for deploying LLMs on remote GPU pods. It SSH-es into a machine, sets up vLLM, configures tool calling, and exposes an OpenAI-compatible API. You can run multiple models on the same pod and pi-pods handles GPU allocation automatically.
+
+This package sits at the edge of the architecture. It does not depend on the agent core — it just produces an OpenAI-compatible endpoint that `pi-ai` can talk to.
+
+## Lessons learned
+
+**Layer boundaries that do not leak.** Each package has a clear contract. Pi-ai does not know about sessions. Pi-agent-core does not know about terminals. Pi-tui does not know about LLMs. This means you can use pi-ai in a web app, pi-tui in a non-AI CLI tool, or pi-agent-core in a backend service — without pulling in the rest.
+
+**Extension-first beats feature-first.** Pi deliberately ships *without* sub-agents, plan mode, MCP support, permission popups, or built-in to-do lists. Every one of those can be built as an extension. This sounds like a limitation, but it is actually a strength: users get exactly the behavior they want, with no fights over whose workflow the defaults should match.
+
+**JSONL trees are surprisingly powerful.** A session file is just append-only JSON lines with parent pointers. This simple structure gives you branching, undo, compaction, and full history — without a database, without version control, without any complex data structure. The trade-off is that reading a branch requires scanning the whole file, but session files rarely exceed a few megabytes.
+
+**Cross-provider message transformation is harder than it looks.** Every provider has quirks: OpenAI Responses API tool call IDs can be 450+ characters with pipe characters, which Anthropic rejects. Google does not stream tool call arguments — you get them all at once. Some providers require tool results to include the tool name, others do not. The [`transformMessages()`](https://github.com/badlogic/pi-mono/blob/0a6b0b8fb0340d1f2caa661795dd632654208200/packages/ai/src/providers/transform-messages.ts#L8) function handles dozens of these edge cases.
+
+**Lockstep versioning simplifies a monorepo.** All seven packages share the same version number and are released together. This eliminates diamond dependency problems (where package A needs pi-ai v1.2 but package B needs v1.3). The trade-off is that a bug fix in one package bumps the version of all packages, but in practice this is a small cost for a big simplification.
+
+## Conclusion
+
+Pi shows that a coding agent does not need to be a monolith. By splitting the work into focused layers — LLM abstraction, agent loop, terminal UI, and coding harness — each piece can be understood, tested, and reused independently. The extension system means the core never needs to grow beyond its four built-in tools. And the cross-provider abstraction means you are never locked into one LLM vendor.
+
+If you want to explore the code, the repository is at [github.com/badlogic/pi-mono](https://github.com/badlogic/pi-mono). The community lives on [Discord](https://discord.com/invite/3cU7Bz4UPx).
+
+## Try it yourself
+
+Now that you have seen how pi is built, try using it. The terminal below gives you 10 minutes with a live pi instance and a small Python project with a hidden bug.
+
+[>] Try Pi [Sign in](/auth/login) to use the terminal
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Building an Agent-Native Read Later App in 2 Hours"
+    icon="newspaper"
+    href="/kb/articles/building-an-agent-native-read-later-app-in-2-hours-42baf7f6"
+  >
+    Naveen Naidu · explanation · 67% similar
+  </Card>
+  <Card
+    title="how to build a coding agent: free workshop"
+    icon="newspaper"
+    href="/kb/articles/how-to-build-a-coding-agent-free-workshop-e51acff6"
+  >
+    Geoffrey Huntley · tutorial · 67% similar
+  </Card>
+  <Card
+    title="I dream of roombas - thousands of automated AI robots that autonomously maintain codebases"
+    icon="newspaper"
+    href="/kb/articles/i-dream-of-roombas-thousands-of-automated-ai-robots-that-aut-c58b119a"
+  >
+    Geoffrey Huntley · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://latentpatterns.com/newsletter/pi-mono-architecture](https://latentpatterns.com/newsletter/pi-mono-architecture).
+</Note>
