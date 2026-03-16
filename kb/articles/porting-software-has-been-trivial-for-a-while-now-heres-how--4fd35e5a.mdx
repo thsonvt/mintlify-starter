@@ -1,0 +1,80 @@
+---
+title: 'porting software has been trivial for a while now. here’s how you do it.'
+description: 'The article outlines a straightforward approach to porting a codebase between programming languages using a structured method involving Ralph loops an'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2026-03-15'
+sourceUrl: 'https://ghuntley.com/porting/'
+topics: ["software-porting","programming","ralph-loops","codebase-management"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/porting/) · 15/03/2026
+</Info>
+
+## Summary
+
+The article outlines a straightforward approach to porting a codebase between programming languages using a structured method involving Ralph loops and specifications.
+
+## Key Insights
+
+> "Run a ralph loop which compresses all tests into /specs/.md"
+>
+> — Describing the initial step in the porting process.
+
+> "The key theory here is usage of citations in the specifications"
+>
+> — Highlighting the importance of citations for effective code transformation.
+
+> "Reducing stage 1 and stage 2 to specs is the precursor which transforms a code base into high level PRDs"
+>
+> — Explaining the significance of specifications in the porting process.
+
+## Topics
+
+- [software-porting](/kb/topics/software-porting)
+- [programming](/kb/topics/programming)
+- [ralph-loops](/kb/topics/ralph-loops)
+- [codebase-management](/kb/topics/codebase-management)
+
+---
+
+## Full Article
+
+This one is short and sweet. if you want to port a codebase from one language to another here&#x2019;s the approach:Run a ralph loop which compresses all tests into /specs/.md which looks similar to &#x201C;study every file in tests/* using separate subagents and document in /specs/*.md and link the implementation as citations in the specification&#x201C;Then do a separate Ralph loop for all product functionality - ensuring there&#x2019;s citations to the specification. &#x201C;study every file in src/* using seperate subagents per file and link the implementation as citations in the specification&#x201C;Once you have that - within the same repo run a Ralph loop to create a TODO file and then execute a classic ralph - doing just one thing and the most important thing per loop. Remind the agent that it can study the specifications and follow the citations to reference source code.For best outcomes you wanna configure your target language to have strict compilation The key theory here is usage of citations in the specifications which tease the file_read tool to study the original implementation during stage 3. Reducing stage 1 and stage 2 to specs is the precursor which transforms a code base into high level PRDs without coupling the implementation from the source language.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Ralph Wiggum as a &quot;software engineer&quot;"
+    icon="newspaper"
+    href="/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075"
+  >
+    Geoffrey Huntley · explanation · 55% similar
+  </Card>
+  <Card
+    title="Ladybird adopts Rust, with help from AI"
+    icon="newspaper"
+    href="/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
+  >
+    Simon Willison · explanation · 54% similar
+  </Card>
+  <Card
+    title="Agentic manual testing - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/agentic-manual-testing-agentic-engineering-patterns-ca44e59a"
+  >
+    Simon Willison · how-to · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/porting/](https://ghuntley.com/porting/).
+</Note>

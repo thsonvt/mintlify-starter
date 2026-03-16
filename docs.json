@@ -328,6 +328,10 @@
       "destination": "/kb/articles/llm-weights-vs-the-papercuts-of-corporate-3950c718"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-4fd35e5a",
+      "destination": "/kb/articles/porting-software-has-been-trivial-for-a-while-now-heres-how--4fd35e5a"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-57ce8bac",
       "destination": "/kb/articles/rizzler-stop-crying-over-git-merge-conflicts-and-let-ai-hand-57ce8bac"
     },
@@ -574,6 +578,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-020958e5",
       "destination": "/kb/articles/how-this-pm-uses-mcps-to-automate-his-meeting-prep-crm-updat-020958e5"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-02dc875f",
+      "destination": "/kb/articles/the-tactical-playbook-for-getting-20-40-more-comp-without-so-02dc875f"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-0a3d6458",
@@ -1138,6 +1146,10 @@
     {
       "source": "/kb/articles/simon-willison-f73e70a3",
       "destination": "/kb/articles/introducing-deno-sandbox-f73e70a3"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f87be7dc",
+      "destination": "/kb/articles/what-is-agentic-engineering-agentic-engineering-patterns-f87be7dc"
     },
     {
       "source": "/kb/articles/simon-willison-f8eb5057",
