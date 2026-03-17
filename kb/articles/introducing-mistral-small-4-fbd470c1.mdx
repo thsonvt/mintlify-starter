@@ -1,0 +1,79 @@
+---
+title: 'Introducing Mistral Small 4'
+description: 'Mistral has launched Mistral Small 4, a versatile model unifying capabilities from its flagship models, and introduced Leanstral for the Lean 4 coding'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-16'
+sourceUrl: 'https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything'
+topics: ["ai-models","machine-learning","coding-languages"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything) · 16/03/2026
+</Info>
+
+## Summary
+
+Mistral has launched Mistral Small 4, a versatile model unifying capabilities from its flagship models, and introduced Leanstral for the Lean 4 coding language.
+
+## Key Insights
+
+> "Mistral Small 4 is the first Mistral model to unify the capabilities of our flagship models."
+>
+> — Describing the new model's features and its significance.
+
+> "It supports reasoning_effort="none" or reasoning_effort="high"."
+>
+> — Highlighting the model's flexibility in reasoning capabilities.
+
+> "Leanstral, an open weight model that is specifically tuned to help output the Lean 4 formally verifiable coding language."
+>
+> — Introducing another model aimed at a specific coding language.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [machine-learning](/kb/topics/machine-learning)
+- [coding-languages](/kb/topics/coding-languages)
+
+---
+
+## Full Article
+
+16th March 2026 - Link Blog Introducing Mistral Small 4. Big new release from Mistral today (despite the name) - a new Apache 2 licensed 119B parameter (Mixture-of-Experts, 6B active) model which they describe like this: Mistral Small 4 is the first Mistral model to unify the capabilities of our flagship models, Magistral for reasoning, Pixtral for multimodal, and Devstral for agentic coding, into a single, versatile model. It supports reasoning_effort="none" or reasoning_effort="high", with the latter providing "equivalent verbosity to previous Magistral models". The new model is 242GB on Hugging Face. I tried it out via the Mistral API using llm-mistral: llm install llm-mistral llm mistral refresh llm -m mistral/mistral-small-2603 "Generate an SVG of a pelican riding a bicycle" I couldn't find a way to set the reasoning effort in their API documentation, so hopefully that's a feature which will land soon. Also from Mistral today and fitting their -stral naming convention is Leanstral, an open weight model that is specifically tuned to help output the Lean 4 formally verifiable coding language. I haven't explored Lean at all so I have no way to credibly evaluate this, but it's interesting to see them target one specific language in this way.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Context Graphs and Agent Traces"
+    icon="newspaper"
+    href="/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+  >
+    Swyx · explanation · 50% similar
+  </Card>
+  <Card
+    title="[AINews] ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B, Vibe Coding -> Agentic Engineering"
+    icon="newspaper"
+    href="/kb/articles/ainews-elevenlabs-500m-series-d-at-11b-cerebras-1b-series-h--f99e1824"
+  >
+    Swyx · explanation · 49% similar
+  </Card>
+  <Card
+    title="[AINews] The Unreasonable Effectiveness of Closing the Loop"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0"
+  >
+    Swyx · explanation · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything](https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything).
+</Note>

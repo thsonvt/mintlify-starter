@@ -1,0 +1,80 @@
+---
+title: 'How coding agents work - Agentic Engineering Patterns'
+description: 'The article explains how coding agents function by leveraging Large Language Models (LLMs) and their capabilities, including token processing and tool'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-16'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything'
+topics: ["coding-agents","large-language-models","token-processing","tool-calling"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything) · 16/03/2026
+</Info>
+
+## Summary
+
+The article explains how coding agents function by leveraging Large Language Models (LLMs) and their capabilities, including token processing and tool calling.
+
+## Key Insights
+
+> "A coding agent is a piece of software that acts as a harness for an LLM, extending that LLM with additional capabilities."
+>
+> — Introduction to coding agents
+
+> "LLMs are stateless: every time they execute a prompt they start from the same blank slate."
+>
+> — Explanation of LLM behavior
+
+> "The defining feature of an LLM agent is that agents can call tools."
+>
+> — Description of coding agent capabilities
+
+## Topics
+
+- [coding-agents](/kb/topics/coding-agents)
+- [large-language-models](/kb/topics/large-language-models)
+- [token-processing](/kb/topics/token-processing)
+- [tool-calling](/kb/topics/tool-calling)
+
+---
+
+## Full Article
+
+As with any tool, understanding how coding agents work under the hood can help you make better decisions about how to apply them. A coding agent is a piece of software that acts as a harness for an LLM, extending that LLM with additional capabilities that are powered by invisible prompts and implemented as callable tools. Large Language Models At the heart of any coding agent is a Large Language Model, or LLM. These have names like GPT-5.4 or Claude Opus 4.6 or Gemini 3.1 Pro or Qwen3.5-35B-A3B. An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase "the cat sat on the " and it will (almost certainly) suggest "mat" as the next word in the sentence. As these models get larger and train on increasing amounts of data, they can complete more complex sentences - like "a python function to download a file from a URL is def download_file(url): ". LLMs don't actually work directly with words - they work with tokens. A sequence of text is converted into a sequence of integer tokens, so "the cat sat on the " becomes [3086, 9059, 10139, 402, 290, 220]. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time. You can experiment with the OpenAI tokenizer to see how this works at platform.openai.com/tokenizer. The input to an LLM is called the prompt. The text returned by an LLM is called the completion, or sometimes the response. Many models today are multimodal, which means they can accept more than just text as input. Vision LLMs (vLLMs) can accept images as part of the input, which means you can feed them sketches or photos or screenshots. A common misconception is that these are run through a separate process for OCR or image analysis, but these inputs are actually turned into yet more token integers which are processed in the same way as text. Chat templated prompts The first LLMs worked as completion engines - users were expected to provide a prompt which could then be completed by the model, such as the two examples shown above. This wasn't particularly user-friendly so models mostly switched to using chat templated prompts instead, which represent communication with the model as a simulated conversation. This is actually just a form of completion prompt with a special format that looks something like this. user: write a python function to download a file from a URL assistant: The natural completion for this prompt is for the assistant (represented by the LLM) to answer the user's question with some Python code. LLMs are stateless: every time they execute a prompt they start from the same blank slate. To maintain the simulation of a conversation, the software that talks to the model needs to maintain its own state and replay the entire existing conversation every time the user enters a new chat prompt: user: write a python function to download a file from a URL assistant: def download_url(url): return urllib.request.urlopen(url).read() user: use the requests library instead assistant: Since providers charge for both input and output tokens, this means that as a conversation gets longer, each prompt becomes more expensive since the number of input tokens grows every time. Token caching Most model providers offset this somewhat through a cheaper rate for cached input tokens - common token prefixes that have been processed within a short time period can be charged at a lower rate as the underlying infrastructure can cache and then reuse many of the expensive calculations used to process that input. Coding agents are designed with this optimization in mind - they avoid modifying earlier conversation content to ensure the cache is used as efficiently as possible. Calling tools The defining feature of an LLM agent is that agents can call tools. But what is a tool? A tool is a function that the agent harness makes available to the LLM. At the level of the prompt itself, that looks something like this: system: If you need to access the weather, end your turn with &lt;tool>get_weather(city_name)&lt;/tool> user: what's the weather in San Francisco? assistant: Here the assistant might respond with the following text: &lt;tool>get_weather("San Francisco")&lt;/tool> The model harness software then extracts that function call request from the response - probably with a regular expression - and executes the tool. It then returns the result to the model, with a constructed prompt that looks something like this: system: If you need to access the weather, end your turn with &lt;tool>get_weather(city_name)&lt;/tool> user: what's the weather in San Francisco? assistant: &lt;tool>get_weather("San Francisco")&lt;/tool> user: &lt;tool-result>61°, Partly cloudy&lt;/tool-result> assistant: The LLM can now use that tool result to help generate an answer to the user's question. Most coding agents define a dozen or more tools for the agent to call. The most powerful of these allow for code execution - a Bash() tool for executing terminal commands, or a Python() tool for running Python code, for example. The system prompt In the previous example I included an initial message marked "system" which informed the LLM about the available tool and how to call it. Coding agents usually start every conversation with a system prompt like this, which is not shown to the user but provides instructions telling the model how it should behave. These system prompts can be hundreds of lines long. Here's the system prompt for OpenAI Codex as-of March 2026, which is a useful clear example of the kind of instructions that make these coding agents work. Reasoning One of the big new advances in 2025 was the introduction of reasoning to the frontier model families. Reasoning, sometimes presented as thinking in the UI, is when a model spends additional time generating text that talks through the problem and its potential solutions before presenting a reply to the user. This can look similar to a person thinking out loud, and has a similar effect. Crucially it allows models to spend more time (and more tokens) working on a problem in order to hopefully get a better result. Reasoning is particularly useful for debugging issues in code as it gives the model an opportunity to navigate more complex code paths, mixing in tool calls and using the reasoning phase to follow function calls back to the potential source of an issue. Many coding agents include options for dialing up or down the reasoning effort level, encouraging models to spend more time chewing on harder problems. LLM + system prompt + tools in a loop Believe it or not, that's most of what it takes to build a coding agent! If you want to develop a deeper understanding of how these things work, a useful exercise is to try building your own agent from scratch. A simple tool loop can be achieved with a few dozen lines of code on top of an existing LLM API. A good tool loop is a great deal more work than that, but the fundamental mechanics are surprisingly straightforward.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="What is agentic engineering? - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/what-is-agentic-engineering-agentic-engineering-patterns-f87be7dc"
+  >
+    Simon Willison · explanation · 73% similar
+  </Card>
+  <Card
+    title="[AINews] The high-return activity of raising your aspirations for LLMs"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-high-return-activity-of-raising-your-aspirations--d1434027"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+  <Card
+    title="AI should help us produce better code - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
+  >
+    Simon Willison · how-to · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything).
+</Note>

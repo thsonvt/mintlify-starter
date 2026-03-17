@@ -1,0 +1,79 @@
+---
+title: 'Use subagents and custom agents in Codex'
+description: 'OpenAI Codex has launched subagents for general use, allowing for custom agents defined in TOML files, enhancing coding capabilities.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-16'
+sourceUrl: 'https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything'
+topics: ["ai-agents","custom-agents","openai-codex"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything) · 16/03/2026
+</Info>
+
+## Summary
+
+OpenAI Codex has launched subagents for general use, allowing for custom agents defined in TOML files, enhancing coding capabilities.
+
+## Key Insights
+
+> "Subagents were announced in general availability today for OpenAI Codex."
+>
+> — Introduction to the article discussing the launch of subagents.
+
+> "Codex also lets you define custom agents as TOML files in ~/.codex/agents/."
+>
+> — Explanation of how to create custom agents.
+
+> "The subagents pattern is widely supported in coding agents now."
+>
+> — Conclusion highlighting the adoption of subagents across platforms.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [custom-agents](/kb/topics/custom-agents)
+- [openai-codex](/kb/topics/openai-codex)
+
+---
+
+## Full Article
+
+16th March 2026 - Link Blog Use subagents and custom agents in Codex (via) Subagents were announced in general availability today for OpenAI Codex, after several weeks of preview behind a feature flag. They're very similar to the Claude Code implementation, with default subagents for "explorer", "worker" and "default". It's unclear to me what the difference between "worker" and "default" is but based on their CSV example I think "worker" is intended for running large numbers of small tasks in parallel. Codex also lets you define custom agents as TOML files in ~/.codex/agents/. These can have custom instructions and be assigned to use specific models - including gpt-5.3-codex-spark if you want some raw speed. They can then be referenced by name, as demonstrated by this example prompt from the documentation: Investigate why the settings modal fails to save. Have browser_debugger reproduce it, code_mapper trace the responsible code path, and ui_fixer implement the smallest fix once the failure mode is clear. The subagents pattern is widely supported in coding agents now. Here's documentation across a number of different platforms: OpenAI Codex subagents Claude Code subagents Gemini CLI subagents (experimental) Mistral Vibe subagents OpenCode agents Subagents in Visual Studio Code Cursor Subagents
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How I think about Codex"
+    icon="newspaper"
+    href="/kb/articles/how-i-think-about-codex-c77aff7b"
+  >
+    Simon Willison · explanation · 71% similar
+  </Card>
+  <Card
+    title="Introducing the Codex app"
+    icon="newspaper"
+    href="/kb/articles/introducing-the-codex-app-d234ac03"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+  <Card
+    title="Coding agents for data analysis"
+    icon="newspaper"
+    href="/kb/articles/coding-agents-for-data-analysis-f086afa3"
+  >
+    Simon Willison · tutorial · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything](https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything).
+</Note>
