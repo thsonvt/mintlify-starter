@@ -1,0 +1,80 @@
+---
+title: 'Subagents - Agentic Engineering Patterns'
+description: 'The article discusses how subagents enhance the efficiency of coding agents by managing context limits and performing tasks without consuming the pare'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-17'
+sourceUrl: 'https://simonwillison.net/guides/agentic-engineering-patterns/subagents/#atom-everything'
+topics: ["ai-agents","subagents","coding-agents","context-management"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/#atom-everything) · 17/03/2026
+</Info>
+
+## Summary
+
+The article discusses how subagents enhance the efficiency of coding agents by managing context limits and performing tasks without consuming the parent agent's tokens.
+
+## Key Insights
+
+> "Subagents provide a simple but effective way to handle larger tasks without burning through too much of the coding agent’s valuable top-level context."
+>
+> — Introduction to subagents and their purpose.
+
+> "The principle advantage of this kind of subagent is that it can work with a fresh context in a way that avoids spending tokens from the parent’s available limit."
+>
+> — Explanation of how subagents operate.
+
+> "While it can be tempting to go overboard breaking up tasks across dozens of different specialist subagents, it's important to remember that the main value of subagents is in preserving that valuable root context."
+>
+> — Advice on the use of subagents.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [subagents](/kb/topics/subagents)
+- [coding-agents](/kb/topics/coding-agents)
+- [context-management](/kb/topics/context-management)
+
+---
+
+## Full Article
+
+LLMs are restricted by their context limit - how many tokens they can fit in their working memory at any given time. These values have not increased much over the past two years even as the LLMs themselves have seen dramatic improvements in their abilities - they generally top out at around 1,000,000, and benchmarks frequently report better quality results below 200,000. Carefully managing the context such that it fits within those limits is critical to getting great results out of a model. Subagents provide a simple but effective way to handle larger tasks without burning through too much of the coding agent’s valuable top-level context. When a coding agent uses a subagent it effectively dispatches a fresh copy of itself to achieve a specified goal, with a new context window that starts with a fresh prompt. Claude Code’s Explore subagent Claude Code uses subagents extensively as part of its standard way of working. Let's use that as an illustrative example. Any time you start a new task against an existing repo Claude Code first needs to explore that repo to figure out its general shape and find relevant information needed to achieve that task. It does this by constructing a prompt and dispatching a subagent to perform that exploration and return a description of what it finds. I kicked off a Claude Code session with a screenshot of a page from my guide and this prompt: Make the chapter diffs also show which characters have changed in this diff view with a darker color of red or green for the individually changed segments of text within the line Here's the transcript of that session. Claude Code started by running an “Explore” subagent with the following starter prompt: Find the code that implements the diff view for "chapters" in this Django blog. I need to find: Templates that render diffs (look for diff-related HTML/CSS with red/green backgrounds) Python code that generates diffs (look for difflib usage or similar) Any JavaScript related to diff rendering CSS styles for the diff view (red/green line backgrounds) Search thoroughly - check templates/, static/, blog/ directories. Look for keywords like "diff", "chapter", "revision", "history", "compare". Subagents work similar to any other tool call: the parent agent dispatches them just as they would any other tool and waits for the response. It's interesting to see models prompt themselves in this way - they generally have good taste in prompting strategies. The Explore subagent churned away for a few seconds and returned a response that started like this: Perfect! Now let me create a comprehensive summary with all the findings: Summary: Chapter Diff View Implementation I found the complete implementation of the diff view for chapters in this Django blog. Here are the key components: 1. Python Code - Diff Generation (/home/user/simonwillisonblog/guides/views.py, lines 139-202) The chapter_changes() view function uses Python's built-in difflib.unified_diff() to generate diffs: […] The full subagent response included all of the details the parent agent needed in order to start editing the code to address my original request. Parallel subagents This Explore subagent is the simplest example of how subagents can work, with the parent agent pausing while the subagent runs. The principle advantage of this kind of subagent is that it can work with a fresh context in a way that avoids spending tokens from the parent’s available limit. Subagents can also provide a significant performance boost by having the parent agent run multiple subagents at the same time, potentially also using faster and cheaper models such as Claude Haiku to accelerate those tasks. Coding agents that support subagents can use them based on your instructions. Try prompts like this: Use subagents to find and update all of the templates that are affected by this change. For tasks that involve editing several files - and where those files are not dependent on each other - this can offer a significant speed boost. Specialist subagents Some coding agents allow subagents to run with further customizations, often in the form of a custom system prompt or custom tools or both, which allow those subagents to take on a different role. These roles can cover a variety of useful specialties: A code reviewer agent can review code and identify bugs, feature gaps or weaknesses in the design. A test runner agent can run the test. This is particularly worthwhile if your test suite is large and verbose, as the subagent can hide the full test output from the main coding agent and report back with just details of any failures. A debugger agent can specialize in debugging problems, spending its token allowance reasoning though the codebase and running snippets of code to help isolate steps to reproduce and determine the root cause of a bug. While it can be tempting to go overboard breaking up tasks across dozens of different specialist subagents, it's important to remember that the main value of subagents is in preserving that valuable root context and managing token-heavy operations. Your root coding agent is perfectly capable of debugging or reviewing its own output provided it has the tokens to spare. Official documentation Several popular coding agents support subagents, each with their own documentation on how to use them: OpenAI Codex subagents Claude subagents Gemini CLI subagents Mistral Vibe subagents OpenCode agents Subagents in Visual Studio Code Cursor Subagents
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Use subagents and custom agents in Codex"
+    icon="newspaper"
+    href="/kb/articles/use-subagents-and-custom-agents-in-codex-af2b4505"
+  >
+    Simon Willison · how-to · 71% similar
+  </Card>
+  <Card
+    title="How coding agents work - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/how-coding-agents-work-agentic-engineering-patterns-a42dccce"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+  <Card
+    title="AI should help us produce better code - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
+  >
+    Simon Willison · how-to · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/guides/agentic-engineering-patterns/subagents/#atom-everything](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/#atom-everything).
+</Note>

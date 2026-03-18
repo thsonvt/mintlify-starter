@@ -704,6 +704,10 @@
       "destination": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-87f53d1c",
+      "destination": "/kb/articles/how-i-built-lennyrpg-87f53d1c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8c13973d",
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
@@ -824,6 +828,14 @@
       "destination": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92"
     },
     {
+      "source": "/kb/articles/simon-willison-1b54d4b1",
+      "destination": "/kb/articles/gpt-54-mini-and-gpt-54-nano-which-can-describe-76000-photos--1b54d4b1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1b93707c",
+      "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
+    },
+    {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
@@ -848,6 +860,10 @@
       "destination": "/kb/articles/quoting-brandon-sanderson-30c19547"
     },
     {
+      "source": "/kb/articles/simon-willison-344780b7",
+      "destination": "/kb/articles/subagents-agentic-engineering-patterns-344780b7"
+    },
+    {
       "source": "/kb/articles/simon-willison-3a313e08",
       "destination": "/kb/articles/moltbook-is-the-most-interesting-place-on-the-internet-right-3a313e08"
     },
@@ -862,6 +878,10 @@
     {
       "source": "/kb/articles/simon-willison-3df8c9b0",
       "destination": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3fb2d677",
+      "destination": "/kb/articles/a-quote-from-tim-schilling-3fb2d677"
     },
     {
       "source": "/kb/articles/simon-willison-417198d8",
@@ -1348,6 +1368,10 @@
       "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
     },
     {
+      "source": "/kb/articles/swyx-963a4413",
+      "destination": "/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+    },
+    {
       "source": "/kb/articles/swyx-9ef5fd46",
       "destination": "/kb/articles/ainews-is-harness-engineering-real-9ef5fd46"
     },
@@ -1422,6 +1446,10 @@
     {
       "source": "/kb/articles/swyx-fda49f6c",
       "destination": "/kb/articles/retrieval-after-rag-hybrid-search-agents-and-database-design-fda49f6c"
+    },
+    {
+      "source": "/kb/articles/swyx-fec98cbc",
+      "destination": "/kb/articles/why-anthropic-thinks-ai-should-have-its-own-computer-felix-r-fec98cbc"
     },
     {
       "source": "/kb/articles/unmesh-gundecha-e5079680",
