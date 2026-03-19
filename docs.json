@@ -680,6 +680,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-mastering-midjourney-how-to-create-co-62f7ee41"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-677f1517",
+      "destination": "/kb/articles/how-i-built-lennyrpg-677f1517"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-684e4fd4",
       "destination": "/kb/articles/from-journalist-to-ios-developer-how-linkedins-editor-builds-684e4fd4"
     },
@@ -916,6 +920,10 @@
       "destination": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177"
     },
     {
+      "source": "/kb/articles/simon-willison-50a8274d",
+      "destination": "/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
+    },
+    {
       "source": "/kb/articles/simon-willison-53a6ac3d",
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
@@ -986,6 +994,10 @@
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
       "destination": "/kb/articles/a-quote-from-john-carmack-7b7eda20"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7f0acf20",
+      "destination": "/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
     },
     {
       "source": "/kb/articles/simon-willison-7f547407",
@@ -1222,6 +1234,10 @@
     {
       "source": "/kb/articles/simon-willison-fbd470c1",
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
+    },
+    {
+      "source": "/kb/articles/swyx-02e6b89f",
+      "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
     },
     {
       "source": "/kb/articles/swyx-04433b95",
