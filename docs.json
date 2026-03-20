@@ -832,6 +832,10 @@
       "destination": "/kb/articles/quoting-andrew-deck-for-niemen-lab-192d4e92"
     },
     {
+      "source": "/kb/articles/simon-willison-19af0653",
+      "destination": "/kb/articles/thoughts-on-openai-acquiring-astral-and-uvruffty-19af0653"
+    },
+    {
       "source": "/kb/articles/simon-willison-1b54d4b1",
       "destination": "/kb/articles/gpt-54-mini-and-gpt-54-nano-which-can-describe-76000-photos--1b54d4b1"
     },
@@ -1286,6 +1290,10 @@
     {
       "source": "/kb/articles/swyx-41a159da",
       "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
+    },
+    {
+      "source": "/kb/articles/swyx-42ddf81c",
+      "destination": "/kb/articles/ainews-every-lab-serious-enough-about-developers-has-bought--42ddf81c"
     },
     {
       "source": "/kb/articles/swyx-44bb07f5",

@@ -1,0 +1,81 @@
+---
+title: 'Thoughts on OpenAI acquiring Astral and uv/ruff/ty'
+description: 'Simon Willison shares insights on OpenAI''s acquisition of Astral, discussing its impact on the Python ecosystem and the future of open source tools.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-19'
+sourceUrl: 'https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything'
+topics: ["openai","astral","python","open-source","software-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything) · 19/03/2026
+</Info>
+
+## Summary
+
+Simon Willison shares insights on OpenAI's acquisition of Astral, discussing its impact on the Python ecosystem and the future of open source tools.
+
+## Key Insights
+
+> "Open source is at the heart of that impact and the heart of that story; it sits at the center of everything we do."
+>
+> — Charlie Marsh from Astral discussing the importance of open source in the acquisition.
+
+> "uv is by far the most convincing solution to Python’s environment management problems."
+>
+> — Willison highlighting the significance of Astral's project uv.
+
+> "I’m less convinced that pyx makes sense within OpenAI."
+>
+> — Willison expressing skepticism about the future of Astral's pyx project under OpenAI.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [astral](/kb/topics/astral)
+- [python](/kb/topics/python)
+- [open-source](/kb/topics/open-source)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+19th March 2026 The big news this morning: Astral to join OpenAI (on the Astral blog) and OpenAI to acquire Astral (the OpenAI announcement). Astral are the company behind uv, ruff, and ty—three increasingly load-bearing open source projects in the Python ecosystem. I have thoughts! The official line from OpenAI and Astral The Astral team will become part of the Codex team at OpenAI. Charlie Marsh has this to say: Open source is at the heart of that impact and the heart of that story; it sits at the center of everything we do. In line with our philosophy and OpenAI’s own announcement, OpenAI will continue supporting our open source tools after the deal closes. We’ll keep building in the open, alongside our community -- and for the broader Python ecosystem -- just as we have from the start. [...] After joining the Codex team, we’ll continue building our open source tools, explore ways they can work more seamlessly with Codex, and expand our reach to think more broadly about the future of software development. OpenAI’s message has a slightly different focus (highlights mine): As part of our developer-first philosophy, after closing OpenAI plans to support Astral’s open source products. By bringing Astral’s tooling and engineering expertise to OpenAI, we will accelerate our work on Codex and expand what AI can do across the software development lifecycle. This is a slightly confusing message. The Codex CLI is a Rust application, and Astral have some of the best Rust engineers in the industry—BurntSushi alone (Rust regex, ripgrep, jiff) may be worth the price of acquisition! So is this about the talent or about the product? I expect both, but I know from past experience that a product+talent acquisition can turn into a talent-only acquisition later on. uv is the big one Of Astral’s projects the most impactful is uv. If you’re not familiar with it, uv is by far the most convincing solution to Python’s environment management problems, best illustrated by this classic XKCD: Switch from python to uv run and most of these problems go away. I’ve been using it extensively for the past couple of years and it’s become an essential part of my workflow. I’m not alone in this. According to PyPI Stats uv was downloaded more than 126 million times last month! Since its release in February 2024—just two years ago—it’s become one of the most popular tools for running Python code. Ruff and ty Astral’s two other big projects are ruff—a Python linter and formatter—and ty—a fast Python type checker. These are popular tools that provide a great developer experience but they aren’t load-bearing in the same way that uv is. They do however resonate well with coding agent tools like Codex—giving an agent access to fast linting and type checking tools can help improve the quality of the code they generate. I’m not convinced that integrating them into the coding agent itself as opposed to telling it when to run them will make a meaningful difference, but I may just not be imaginative enough here. What of pyx? Ever since uv started to gain traction the Python community has been worrying about the strategic risk of a single VC-backed company owning a key piece of Python infrastructure. I wrote about one of those conversations in detail back in September 2024. The conversation back then focused on what Astral’s business plan could be, which started to take form in August 2025 when they announced pyx, their private PyPI-style package registry for organizations. I’m less convinced that pyx makes sense within OpenAI, and it’s notably absent from both the Astral and OpenAI announcement posts. Competitive dynamics An interesting aspect of this deal is how it might impact the competition between Anthropic and OpenAI. Both companies spent most of 2025 focused on improving the coding ability of their models, resulting in the November 2025 inflection point when coding agents went from often-useful to almost-indispensable tools for software development. The competition between Anthropic’s Claude Code and OpenAI’s Codex is fierce. Those $200/month subscriptions add up to billions of dollars a year in revenue, for companies that very much need that money. Anthropic acquired the Bun JavaScript runtime in December 2025, an acquisition that looks somewhat similar in shape to Astral. Bun was already a core component of Claude Code and that acquisition looked to mainly be about ensuring that a crucial dependency stayed actively maintained. Claude Code’s performance has increased significantly since then thanks to the efforts of Bun’s Jarred Sumner. One bad version of this deal would be if OpenAI start using their ownership of uv as leverage in their competition with Anthropic. Astral’s quiet series A and B One detail that caught my eye from Astral’s announcement, in the section thanking the team, investors, and community: Second, to our investors, especially Casey Aylward from Accel, who led our Seed and Series A, and Jennifer Li from Andreessen Horowitz, who led our Series B. As a first-time, technical, solo founder, you showed far more belief in me than I ever showed in myself, and I will never forget that. As far as I can tell neither the Series A nor the Series B were previously announced—I’ve only been able to find coverage of the original seed round from April 2023. Those investors presumably now get to exchange their stake in Astral for a piece of OpenAI. I wonder how much influence they had on Astral’s decision to sell. Forking as a credible exit? Armin Ronacher built Rye, which was later taken over by Astral and effectively merged with uv. In August 2024 he wrote about the risk involved in a VC-backed company owning a key piece of open source infrastructure and said the following (highlight mine): However having seen the code and what uv is doing, even in the worst possible future this is a very forkable and maintainable thing. I believe that even in case Astral shuts down or were to do something incredibly dodgy licensing wise, the community would be better off than before uv existed. Astral’s own Douglas Creager emphasized this angle on Hacker News today: All I can say is that right now, we’re committed to maintaining our open-source tools with the same level of effort, care, and attention to detail as before. That does not change with this acquisition. No one can guarantee how motives, incentives, and decisions might change years down the line. But that’s why we bake optionality into it with the tools being permissively licensed. That makes the worst-case scenarios have the shape of “fork and move on”, and not “software disappears forever”. I like and trust the Astral team and I’m optimistic that their projects will be well-maintained in their new home. OpenAI don’t yet have much of a track record with respect to acquiring and maintaining open source projects. They’ve been on a bit of an acquisition spree over the past three months though, snapping up Promptfoo and OpenClaw (sort-of, they hired creator Peter Steinberger and are spinning OpenClaw off to a foundation), plus closed source LaTeX platform Crixet (now Prism). If things do go south for uv and the other Astral projects we’ll get to see how credible the forking exit strategy turns out to be.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Every Lab serious enough about Developers has bought their own Devtools"
+    icon="newspaper"
+    href="/kb/articles/ainews-every-lab-serious-enough-about-developers-has-bought--42ddf81c"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+  <Card
+    title="[AINews] Claude Cowork Dispatch: Anthropic's Answer to OpenClaw"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI closes $110B raise from Amazon, NVIDIA, SoftBank in largest startup fundraise in history @ $840B post-money"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-closes-110b-raise-from-amazon-nvidia-softbank--6ca055dc"
+  >
+    Swyx · reference · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything](https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything).
+</Note>
