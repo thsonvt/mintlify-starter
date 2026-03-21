@@ -1,0 +1,79 @@
+---
+title: 'Turbo Pascal 3.02A, deconstructed'
+description: 'The article explores the deconstruction of Turbo Pascal 3.02A, showcasing how its binary can be interpreted and decompiled to understand its structure'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-20'
+sourceUrl: 'https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything'
+topics: ["turbo-pascal","decompilation","software-history"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything) · 20/03/2026
+</Info>
+
+## Summary
+
+The article explores the deconstruction of Turbo Pascal 3.02A, showcasing how its binary can be interpreted and decompiled to understand its structure and functionality.
+
+## Key Insights
+
+> "Turbo Pascal 3.02 executable - a 39,731 byte file that somehow included a full text editor IDE and Pascal compiler."
+>
+> — Describing the size and capabilities of Turbo Pascal 3.02.
+
+> "I had it create this interactive artifact illustrating the result."
+>
+> — Referring to the process of creating an artifact from the decompiled binary.
+
+> "broke into labeled segments for different parts of the application, decompiled to visible source code."
+>
+> — Explaining the method used to analyze and present the Turbo Pascal binary.
+
+## Topics
+
+- [turbo-pascal](/kb/topics/turbo-pascal)
+- [decompilation](/kb/topics/decompilation)
+- [software-history](/kb/topics/software-history)
+
+---
+
+## Full Article
+
+20th March 2026 - Link Blog Turbo Pascal 3.02A, deconstructed. In Things That Turbo Pascal is Smaller Than James Hague lists things (from 2011) that are larger in size than Borland's 1985 Turbo Pascal 3.02 executable - a 39,731 byte file that somehow included a full text editor IDE and Pascal compiler. This inspired me to track down a copy of that executable (available as freeware since 2000) and see if Claude could interpret the binary and decompile it for me. It did a great job, so I had it create this interactive artifact illustrating the result. Here's the sequence of prompts I used (in regular claude.ai chat, not Claude Code): Read this https://prog21.dadgum.com/116.html Now find a copy of that binary online Explore this (I attached the zip file) Build an artifact - no react - that embeds the full turbo.com binary and displays it in a way that helps understand it - broke into labeled segments for different parts of the application, decompiled to visible source code (I guess assembly?) and with that assembly then reconstructed into readable code with extensive annotations
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Yes, Claude Code can decompile itself. Here's the source code."
+    icon="newspaper"
+    href="/kb/articles/yes-claude-code-can-decompile-itself-heres-the-source-code-15ec4287"
+  >
+    Geoffrey Huntley · how-to · 54% similar
+  </Card>
+  <Card
+    title="The Claude C Compiler: What It Reveals About the Future of Software"
+    icon="newspaper"
+    href="/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+  <Card
+    title="GIF optimization tool using WebAssembly and Gifsicle - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+  >
+    Simon Willison · how-to · 50% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything](https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything).
+</Note>
