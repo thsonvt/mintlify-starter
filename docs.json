@@ -672,6 +672,10 @@
       "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-54ae3f25"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-592e6048",
+      "destination": "/kb/articles/the-art-of-influence-the-single-most-important-skill-that-ai-592e6048"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-5e969a97",
       "destination": "/kb/articles/-this-week-on-how-i-ai-automate-the-tasks-you-hate-anyone-ca-5e969a97"
     },
@@ -804,6 +808,10 @@
       "destination": "/kb/articles/andrej-karpathy-talks-about-claws-08424d27"
     },
     {
+      "source": "/kb/articles/simon-willison-0949cffa",
+      "destination": "/kb/articles/tool-merge-state-visualizer-0949cffa"
+    },
+    {
       "source": "/kb/articles/simon-willison-0b7f8147",
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
@@ -856,6 +864,10 @@
       "destination": "/kb/articles/february-sponsors-only-newsletter-26013557"
     },
     {
+      "source": "/kb/articles/simon-willison-28285c28",
+      "destination": "/kb/articles/research-pcgamer-article-performance-audit-28285c28"
+    },
+    {
       "source": "/kb/articles/simon-willison-28898060",
       "destination": "/kb/articles/anthropic-and-the-pentagon-28898060"
     },
@@ -898,6 +910,10 @@
     {
       "source": "/kb/articles/simon-willison-3fb2d677",
       "destination": "/kb/articles/a-quote-from-tim-schilling-3fb2d677"
+    },
+    {
+      "source": "/kb/articles/simon-willison-40a27698",
+      "destination": "/kb/articles/research-starlette-10-skill-40a27698"
     },
     {
       "source": "/kb/articles/simon-willison-417198d8",
@@ -1014,6 +1030,10 @@
     {
       "source": "/kb/articles/simon-willison-7f547407",
       "destination": "/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8015e4ff",
+      "destination": "/kb/articles/experimenting-with-starlette-10-with-claude-skills-8015e4ff"
     },
     {
       "source": "/kb/articles/simon-willison-8416606f",
@@ -1144,6 +1164,10 @@
       "destination": "/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
     },
     {
+      "source": "/kb/articles/simon-willison-c255be60",
+      "destination": "/kb/articles/beats-now-have-notes-c255be60"
+    },
+    {
       "source": "/kb/articles/simon-willison-c548126a",
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
@@ -1196,8 +1220,16 @@
       "destination": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e"
     },
     {
+      "source": "/kb/articles/simon-willison-d8de17a0",
+      "destination": "/kb/articles/research-javascript-sandboxing-research-d8de17a0"
+    },
+    {
       "source": "/kb/articles/simon-willison-da1b9f87",
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
+    },
+    {
+      "source": "/kb/articles/simon-willison-da86c0c4",
+      "destination": "/kb/articles/tool-dns-lookup-da86c0c4"
     },
     {
       "source": "/kb/articles/simon-willison-dd345ddf",

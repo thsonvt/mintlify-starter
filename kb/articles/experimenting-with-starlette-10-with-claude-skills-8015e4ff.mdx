@@ -1,0 +1,80 @@
+---
+title: 'Experimenting with Starlette 1.0 with Claude skills'
+description: 'The article discusses the release of Starlette 1.0, its significance in the Python ecosystem, and how Claude can be used to create skills and applicat'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-22'
+sourceUrl: 'https://simonwillison.net/2026/Mar/22/starlette/#atom-everything'
+topics: ["python-frameworks","starlette","ai-agents","software-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/22/starlette/#atom-everything) · 22/03/2026
+</Info>
+
+## Summary
+
+The article discusses the release of Starlette 1.0, its significance in the Python ecosystem, and how Claude can be used to create skills and applications with it.
+
+## Key Insights
+
+> "Starlette may be the Python framework with the most usage compared to its relatively low brand recognition."
+>
+> — Introduction to Starlette's significance.
+
+> "If 1.0 breaks compatibility with the Starlette code that the models have been trained on, how can we have them generate code that works with 1.0?"
+>
+> — Discussion on compatibility issues with LLMs.
+
+> "Claude itself counts as a coding agent now, fully able to both write and then test the code that it is writing."
+>
+> — Highlighting Claude's capabilities in coding.
+
+## Topics
+
+- [python-frameworks](/kb/topics/python-frameworks)
+- [starlette](/kb/topics/starlette)
+- [ai-agents](/kb/topics/ai-agents)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+22nd March 2026 Starlette 1.0 is out! This is a really big deal. I think Starlette may be the Python framework with the most usage compared to its relatively low brand recognition because Starlette is the foundation of FastAPI, which has attracted a huge amount of buzz that seems to have overshadowed Starlette itself. Kim Christie started working on Starlette in 2018 and it quickly became my favorite out of the new breed of Python ASGI frameworks. The only reason I didn’t use it as the basis for my own Datasette project was that it didn’t yet promise stability, and I was determined to provide a stable API for Datasette’s own plugins... albeit I still haven’t been brave enough to ship my own 1.0 release (after 26 alphas and counting)! Then in September 2025 Marcelo Trylesinski announced that Starlette and Uvicorn were transferring to their GitHub account, in recognition of their many years of contributions and to make it easier for them to receive sponsorship against those projects. The 1.0 version has a few breaking changes compared to the 0.x series, described in the release notes for 1.0.0rc1 that came out in February. The most notable of these is a change to how code runs on startup and shutdown. Previously that was handled by on_startup and on_shutdown parameters, but the new system uses a neat lifespan mechanism instead based around an async context manager: @contextlib.asynccontextmanager async def lifespan(app): async with some_async_resource(): print("Run at startup!") yield print("Run on shutdown!") app = Starlette( routes=routes, lifespan=lifespan ) If you haven’t tried Starlette before it feels to me like an asyncio-native cross between Flask and Django, unsurprising since creator Kim Christie is also responsible for Django REST Framework. Crucially, this means you can write most apps as a single Python file, Flask style. This makes it really easy for LLMs to spit out a working Starlette app from a single prompt. There’s just one problem there: if 1.0 breaks compatibility with the Starlette code that the models have been trained on, how can we have them generate code that works with 1.0? I decided to see if I could get this working with a Skill. Building a Skill with Claude Regular Claude Chat on claude.ai has skills, and one of those default skills is the skill-creator skill. This means Claude knows how to build its own skills. So I started a chat session and told it: Clone Starlette from GitHub—it just had its 1.0 release. Build a skill markdown document for this release which includes code examples of every feature. I didn’t even tell it where to find the repo, Starlette is widely enough known that I expected it could find it on its own. It ran git clone https://github.com/encode/starlette.git which is actually the old repository name, but GitHub handles redirects automatically so this worked just fine. The resulting skill document looked very thorough to me... and then I noticed a new button at the top I hadn’t seen before labelled “Copy to your skills”. So I clicked it: And now my regular Claude chat has access to that skill! A task management demo app I started a new conversation and prompted: Build a task management app with Starlette, it should have projects and tasks and comments and labels And Claude did exactly that, producing a simple GitHub Issues clone using Starlette 1.0, a SQLite database (via aiosqlite) and a Jinja2 template. Claude even tested the app manually like this: cd /home/claude/taskflow && timeout 5 python -c " import asyncio from database import init_db asyncio.run(init_db()) print('DB initialized successfully') " 2>&1 pip install httpx --break-system-packages -q \ && cd /home/claude/taskflow && \ python -c " from starlette.testclient import TestClient from main import app client = TestClient(app) r = client.get('/api/stats') print('Stats:', r.json()) r = client.get('/api/projects') print('Projects:', len(r.json()), 'found') r = client.get('/api/tasks') print('Tasks:', len(r.json()), 'found') r = client.get('/api/labels') print('Labels:', len(r.json()), 'found') r = client.get('/api/tasks/1') t = r.json() print(f'Task 1: \"&#123;t[\"title\"]&#125;\" - &#123;len(t[\"comments\"])&#125; comments, &#123;len(t[\"labels\"])&#125; labels') r = client.post('/api/tasks', json=&#123;'title':'Test task','project_id':1,'priority':'high','label_ids':[1,2]&#125;) print('Created task:', r.status_code, r.json()['title']) r = client.post('/api/comments', json=&#123;'task_id':1,'content':'Test comment'&#125;) print('Created comment:', r.status_code) r = client.get('/') print('Homepage:', r.status_code, '- length:', len(r.text)) print('\nAll tests passed!') " For all of the buzz about Claude Code, it’s easy to overlook that Claude itself counts as a coding agent now, fully able to both write and then test the code that it is writing. Here’s what the resulting app looked like. The code is here in my research repository.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: Starlette 1.0 skill"
+    icon="newspaper"
+    href="/kb/articles/research-starlette-10-skill-40a27698"
+  >
+    Simon Willison · tutorial · 76% similar
+  </Card>
+  <Card
+    title="Equipping agents for the real world with Agent Skills"
+    icon="newspaper"
+    href="/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+  >
+    Anthropic Engineering · explanation · 59% similar
+  </Card>
+  <Card
+    title="I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…"
+    icon="newspaper"
+    href="/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+  >
+    Boris Cherny · how-to · 59% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/22/starlette/#atom-everything](https://simonwillison.net/2026/Mar/22/starlette/#atom-everything).
+</Note>

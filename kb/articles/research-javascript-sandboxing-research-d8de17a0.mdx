@@ -1,0 +1,76 @@
+---
+title: 'Research: JavaScript Sandboxing Research'
+description: 'This research analyzes JavaScript sandboxing options for running untrusted code, comparing various approaches and tools in the Node.js ecosystem.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-22'
+sourceUrl: 'https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything'
+topics: ["javascript","sandboxing","nodejs","security"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything) · 22/03/2026
+</Info>
+
+## Summary
+
+This research analyzes JavaScript sandboxing options for running untrusted code, comparing various approaches and tools in the Node.js ecosystem.
+
+## Key Insights
+
+> "Analyzing current JavaScript sandboxing options for running untrusted code"
+>
+> — Introduction to the research focus
+
+> "produced a comparison of isolated-vm, vm2, quickjs-emscripten, QuickJS-NG, ShadowRealm, and Deno Workers"
+>
+> — Summary of findings from Claude Code's work
+
+## Topics
+
+- [javascript](/kb/topics/javascript)
+- [sandboxing](/kb/topics/sandboxing)
+- [nodejs](/kb/topics/nodejs)
+- [security](/kb/topics/security)
+
+---
+
+## Full Article
+
+Research JavaScript Sandboxing Research — Analyzing current JavaScript sandboxing options for running untrusted code, this research compares core approaches in Node.js (including worker_threads, node:vm, and the Permission Model), prominent npm packages (isolated-vm, vm2), and alternative engines like quickjs-emscripten. Aaron Harper wrote about Node.js worker threads, which inspired me to run a research task to see if they might help with running JavaScript in a sandbox. Claude Code went way beyond my initial question and produced a comparison of isolated-vm, vm2, quickjs-emscripten, QuickJS-NG, ShadowRealm, and Deno Workers.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing Deno Sandbox"
+    icon="newspaper"
+    href="/kb/articles/introducing-deno-sandbox-f73e70a3"
+  >
+    Simon Willison · how-to · 54% similar
+  </Card>
+  <Card
+    title="Beyond permission prompts: making Claude Code more secure and autonomous"
+    icon="newspaper"
+    href="/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
+  >
+    Anthropic Engineering · explanation · 51% similar
+  </Card>
+  <Card
+    title="[AINews] Claude Cowork Dispatch: Anthropic's Answer to OpenClaw"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+  >
+    Swyx · explanation · 43% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything](https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything).
+</Note>
