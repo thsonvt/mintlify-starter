@@ -656,6 +656,10 @@
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-43585643"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-46856582",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4de3be9c",
       "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
     },
@@ -670,6 +674,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-54ae3f25",
       "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-54ae3f25"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-57f4a349",
+      "destination": "/kb/articles/how-microsofts-ai-vp-automates-everything-with-warp-marco-ca-57f4a349"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-592e6048",
@@ -976,6 +984,10 @@
       "destination": "/kb/articles/1m-context-is-now-generally-available-for-opus-46-and-sonnet-5abed48c"
     },
     {
+      "source": "/kb/articles/simon-willison-5d9b8291",
+      "destination": "/kb/articles/a-quote-from-david-abram-5d9b8291"
+    },
+    {
       "source": "/kb/articles/simon-willison-5deef68f",
       "destination": "/kb/articles/a-quote-from-kellan-elliott-mccrea-5deef68f"
     },
@@ -994,6 +1006,10 @@
     {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6715930b",
+      "destination": "/kb/articles/release-datasette-files-01a2-6715930b"
     },
     {
       "source": "/kb/articles/simon-willison-67189a5f",
@@ -1022,6 +1038,10 @@
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
       "destination": "/kb/articles/a-quote-from-john-carmack-7b7eda20"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7e5ada0d",
+      "destination": "/kb/articles/streaming-experts-7e5ada0d"
     },
     {
       "source": "/kb/articles/simon-willison-7f0acf20",
@@ -1284,6 +1304,10 @@
       "destination": "/kb/articles/typing-without-having-to-type-f8eb5057"
     },
     {
+      "source": "/kb/articles/simon-willison-fa10205d",
+      "destination": "/kb/articles/a-quote-from-neurotica-fa10205d"
+    },
+    {
       "source": "/kb/articles/simon-willison-fb5286c6",
       "destination": "/kb/articles/a-quote-from-a-member-of-anthropics-alignment-science-team-fb5286c6"
     },
@@ -1450,6 +1474,10 @@
     {
       "source": "/kb/articles/swyx-963a4413",
       "destination": "/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+    },
+    {
+      "source": "/kb/articles/swyx-985dc0b3",
+      "destination": "/kb/articles/ainews-dreamer-joins-meta-superintelligence-labs-9-month-ret-985dc0b3"
     },
     {
       "source": "/kb/articles/swyx-9ef5fd46",

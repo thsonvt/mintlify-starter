@@ -1,0 +1,79 @@
+---
+title: 'Streaming experts'
+description: 'The article discusses advancements in streaming experts for large AI models, highlighting recent experiments by Dan Woods and others using limited RAM'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-24'
+sourceUrl: 'https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything'
+topics: ["streaming-experts","mixture-of-experts","ai-optimization"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything) · 24/03/2026
+</Info>
+
+## Summary
+
+The article discusses advancements in streaming experts for large AI models, highlighting recent experiments by Dan Woods and others using limited RAM.
+
+## Key Insights
+
+> "the trick where you run larger Mixture-of-Experts models on hardware that doesn't have enough RAM"
+>
+> — Describing the concept of streaming experts.
+
+> "I think this technique has legs."
+>
+> — Expressing optimism about the future of streaming experts.
+
+> "continuing to run autoresearch loops in order to find yet more optimizations"
+>
+> — Mentioning ongoing efforts to improve model performance.
+
+## Topics
+
+- [streaming-experts](/kb/topics/streaming-experts)
+- [mixture-of-experts](/kb/topics/mixture-of-experts)
+- [ai-optimization](/kb/topics/ai-optimization)
+
+---
+
+## Full Article
+
+24th March 2026 I wrote about Dan Woods' experiments with streaming experts the other day, the trick where you run larger Mixture-of-Experts models on hardware that doesn't have enough RAM to fit the entire model by instead streaming the necessary expert weights from SSD for each token that you process. Five days ago Dan was running Qwen3.5-397B-A17B in 48GB of RAM. Today @seikixtc reported running the colossal Kimi K2.5 - a 1 trillion parameter model with 32B active weights at any one time, in 96GB of RAM on an M2 Max MacBook Pro. And @anemll showed that same Qwen3.5-397B-A17B model running on an iPhone, albeit at just 0.6 tokens/second - iOS repo here. I think this technique has legs. Dan and his fellow tinkerers are continuing to run autoresearch loops in order to find yet more optimizations to squeeze more performance out of these models.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Autoresearching Apple’s “LLM in a Flash” to run Qwen 397B locally"
+    icon="newspaper"
+    href="/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
+  >
+    Simon Willison · how-to · 77% similar
+  </Card>
+  <Card
+    title="[AINews] MiniMax 2.7: GLM-5 at 1/3 cost SOTA Open Model"
+    icon="newspaper"
+    href="/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
+  >
+    Swyx · explanation · 57% similar
+  </Card>
+  <Card
+    title="[AINews] The Unreasonable Effectiveness of Closing the Loop"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0"
+  >
+    Swyx · explanation · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything](https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything).
+</Note>
