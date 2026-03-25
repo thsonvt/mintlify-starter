@@ -132,6 +132,10 @@
       "destination": "/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-0b0a1d72",
+      "destination": "/kb/articles/harness-design-for-long-running-application-development-0b0a1d72"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-220f4a23",
       "destination": "/kb/articles/the-think-tool-enabling-claude-to-stop-and-think-in-complex--220f4a23"
     },
@@ -644,6 +648,10 @@
       "destination": "/kb/articles/claude-opus-46-vs-gpt-53-codex-how-i-shipped-93000-lines-of--38df1eb0"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-398fa22b",
+      "destination": "/kb/articles/state-of-the-product-job-market-in-early-2026-398fa22b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-3a27394f",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-notions-design-team-uses-claude-c-3a27394f"
     },
@@ -754,6 +762,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
       "destination": "/kb/articles/from-figma-to-claude-code-and-back-gui-seiz-alex-kern-figma--a66fabc6"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a81c2053",
+      "destination": "/kb/articles/state-of-the-product-job-market-in-early-2026-a81c2053"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-b21fa5af",
@@ -1068,6 +1080,10 @@
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
     },
     {
+      "source": "/kb/articles/simon-willison-8d6d3e47",
+      "destination": "/kb/articles/a-quote-from-christopher-mims-8d6d3e47"
+    },
+    {
       "source": "/kb/articles/simon-willison-8f0b7b58",
       "destination": "/kb/articles/codex-for-open-source-8f0b7b58"
     },
@@ -1164,12 +1180,20 @@
       "destination": "/kb/articles/use-subagents-and-custom-agents-in-codex-af2b4505"
     },
     {
+      "source": "/kb/articles/simon-willison-b36c4b11",
+      "destination": "/kb/articles/package-managers-need-to-cool-down-b36c4b11"
+    },
+    {
       "source": "/kb/articles/simon-willison-b4384d05",
       "destination": "/kb/articles/a-quote-from-summer-yue-b4384d05"
     },
     {
       "source": "/kb/articles/simon-willison-b75e7d12",
       "destination": "/kb/articles/a-quote-from-ally-piechowski-b75e7d12"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bd816c12",
+      "destination": "/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
     },
     {
       "source": "/kb/articles/simon-willison-c04f7376",
@@ -1258,6 +1282,10 @@
     {
       "source": "/kb/articles/simon-willison-de0f1213",
       "destination": "/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+    },
+    {
+      "source": "/kb/articles/simon-willison-de999191",
+      "destination": "/kb/articles/auto-mode-for-claude-code-de999191"
     },
     {
       "source": "/kb/articles/simon-willison-e613c8df",
@@ -1380,6 +1408,10 @@
       "destination": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5"
     },
     {
+      "source": "/kb/articles/swyx-4534c43e",
+      "destination": "/kb/articles/ainews-apples-war-on-slop-4534c43e"
+    },
+    {
       "source": "/kb/articles/swyx-46eff22b",
       "destination": "/kb/articles/the-end-of-swe-bench-verified-mia-glaese-olivia-watkins-open-46eff22b"
     },
@@ -1490,6 +1522,10 @@
     {
       "source": "/kb/articles/swyx-afdf8983",
       "destination": "/kb/articles/ainews-anthropic-launches-the-mcp-apps-open-spec-in-claudeai-afdf8983"
+    },
+    {
+      "source": "/kb/articles/swyx-b18788c6",
+      "destination": "/kb/articles/why-there-is-no-alphafold-for-materials-ai-for-materials-dis-b18788c6"
     },
     {
       "source": "/kb/articles/swyx-b9a15207",
