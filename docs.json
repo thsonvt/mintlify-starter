@@ -212,6 +212,10 @@
       "destination": "/kb/articles/desktop-extensions-one-click-mcp-server-installation-for-cla-f5037c39"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-fdd6a39a",
+      "destination": "/kb/articles/claude-code-auto-mode-a-safer-way-to-skip-permissions-fdd6a39a"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-fe659629",
       "destination": "/kb/articles/code-execution-with-mcp-building-more-efficient-agents-fe659629"
     },
@@ -744,6 +748,10 @@
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-9005bf61"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-944c4313",
+      "destination": "/kb/articles/how-stripe-built-minionsai-coding-agents-that-ship-1300-prs--944c4313"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9638a3bd",
       "destination": "/kb/articles/how-coinbase-scaled-ai-to-1000-engineers-chintan-turakhia-9638a3bd"
     },
@@ -866,6 +874,10 @@
     {
       "source": "/kb/articles/simon-willison-19af0653",
       "destination": "/kb/articles/thoughts-on-openai-acquiring-astral-and-uvruffty-19af0653"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1a0b581b",
+      "destination": "/kb/articles/release-datasette-llm-01a1-1a0b581b"
     },
     {
       "source": "/kb/articles/simon-willison-1b54d4b1",
@@ -1016,6 +1028,10 @@
       "destination": "/kb/articles/swe-bench-february-2026-leaderboard-update-5fd79031"
     },
     {
+      "source": "/kb/articles/simon-willison-62e9956a",
+      "destination": "/kb/articles/thoughts-on-slowing-the-fuck-down-62e9956a"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -1094,6 +1110,10 @@
     {
       "source": "/kb/articles/simon-willison-92e1146e",
       "destination": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-93420151",
+      "destination": "/kb/articles/litellm-hack-were-you-one-of-the-47000-93420151"
     },
     {
       "source": "/kb/articles/simon-willison-969c5220",
@@ -1186,6 +1206,10 @@
     {
       "source": "/kb/articles/simon-willison-b4384d05",
       "destination": "/kb/articles/a-quote-from-summer-yue-b4384d05"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b451738f",
+      "destination": "/kb/articles/release-datasette-files-s3-01a1-b451738f"
     },
     {
       "source": "/kb/articles/simon-willison-b75e7d12",
@@ -1478,6 +1502,10 @@
     {
       "source": "/kb/articles/swyx-815e6177",
       "destination": "/kb/articles/captaining-imo-gold-deep-think-on-policy-rl-feeling-the-agi--815e6177"
+    },
+    {
+      "source": "/kb/articles/swyx-8508c5cb",
+      "destination": "/kb/articles/ainews-the-biggest-claude-launch-of-all-time-8508c5cb"
     },
     {
       "source": "/kb/articles/swyx-8a8141ef",

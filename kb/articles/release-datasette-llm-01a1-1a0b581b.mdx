@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-llm 0.1a1'
+description: 'The release of datasette-llm 0.1a1 introduces a plugin for LLM integration, allowing other Datasette plugins to utilize various models for specific pu'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-25'
+sourceUrl: 'https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything'
+topics: ["llm-integration","datasette-plugins","data-enrichment"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything) · 25/03/2026
+</Info>
+
+## Summary
+
+The release of datasette-llm 0.1a1 introduces a plugin for LLM integration, allowing other Datasette plugins to utilize various models for specific purposes.
+
+## Key Insights
+
+> "New register_llm_purposes() plugin hook and get_purposes() function for retrieving registered purpose strings."
+>
+> — Describing new features of the datasette-llm plugin.
+
+> "One of the responsibilities of this plugin is to configure which models are used for which purposes."
+>
+> — Explaining the functionality of the plugin.
+
+> "Plugins that depend on this can use model = await llm.model(purpose="enrichment") to indicate the purpose of the prompts."
+>
+> — Detailing how dependent plugins can utilize the new features.
+
+## Topics
+
+- [llm-integration](/kb/topics/llm-integration)
+- [datasette-plugins](/kb/topics/datasette-plugins)
+- [data-enrichment](/kb/topics/data-enrichment)
+
+---
+
+## Full Article
+
+Release datasette-llm 0.1a1 — LLM integration plugin for other plugins to depend on New release of the base plugin that makes models from LLM available for use by other Datasette plugins such as datasette-enrichments-llm. New register_llm_purposes() plugin hook and get_purposes() function for retrieving registered purpose strings. #1 One of the responsibilities of this plugin is to configure which models are used for which purposes, so you can say in one place "data enrichment uses GPT-5.4-nano but SQL query assistance happens using Sonnet 4.6", for example. Plugins that depend on this can use model = await llm.model(purpose="enrichment") to indicate the purpose of the prompts they wish to execute against the model. Those plugins can now also use the new register_llm_purposes() hook to register those purpose strings, which means future plugins can list those purposes in one place to power things like an admin UI for assigning models to purposes.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 51% similar
+  </Card>
+  <Card
+    title="Introducing Mistral Small 4"
+    icon="newspaper"
+    href="/kb/articles/introducing-mistral-small-4-fbd470c1"
+  >
+    Simon Willison · explanation · 45% similar
+  </Card>
+  <Card
+    title="LiteLLM Hack: Were You One of the 47,000?"
+    icon="newspaper"
+    href="/kb/articles/litellm-hack-were-you-one-of-the-47000-93420151"
+  >
+    Simon Willison · explanation · 44% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything](https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything).
+</Note>

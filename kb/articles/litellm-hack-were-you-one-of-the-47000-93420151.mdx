@@ -1,0 +1,75 @@
+---
+title: 'LiteLLM Hack: Were You One of the 47,000?'
+description: 'The LiteLLM hack resulted in nearly 47,000 downloads of compromised packages, with many dependent packages failing to pin versions appropriately.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-25'
+sourceUrl: 'https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything'
+topics: ["security","supply-chain","python"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything) · 25/03/2026
+</Info>
+
+## Summary
+
+The LiteLLM hack resulted in nearly 47,000 downloads of compromised packages, with many dependent packages failing to pin versions appropriately.
+
+## Key Insights
+
+> "46,996 across the two compromised release versions"
+>
+> — Discussing the number of downloads of the exploited LiteLLM packages.
+
+> "88% of which did not pin versions in a way that would have avoided the exploited version"
+>
+> — Highlighting the vulnerability of dependent packages.
+
+## Topics
+
+- [security](/kb/topics/security)
+- [supply-chain](/kb/topics/supply-chain)
+- [python](/kb/topics/python)
+
+---
+
+## Full Article
+
+25th March 2026 - Link Blog LiteLLM Hack: Were You One of the 47,000? (via) Daniel Hnyk used the BigQuery PyPI dataset to determine how many downloads there were of the exploited LiteLLM packages during the 46 minute period they were live on PyPI. The answer was 46,996 across the two compromised release versions (1.82.7 and 1.82.8). They also identified 2,337 packages that depended on LiteLLM - 88% of which did not pin versions in a way that would have avoided the exploited version. Posted 25th March 2026 at 5:21 pm Recent articles Experimenting with Starlette 1.0 with Claude skills - 22nd March 2026 Profiling Hacker News users based on their comments - 21st March 2026 Thoughts on OpenAI acquiring Astral and uv/ruff/ty - 19th March 2026 This is a link post by Simon Willison, posted on 25th March 2026. packaging 46 pypi 45 python 1238 security 584 supply-chain 13 Monthly briefing Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. Pay me to send you less! Sponsor & subscribe
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Malicious litellm_init.pth in litellm 1.82.8 — credential stealer"
+    icon="newspaper"
+    href="/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
+  >
+    Simon Willison · explanation · 74% similar
+  </Card>
+  <Card
+    title="Clinejection — Compromising Cline’s Production Releases just by Prompting an Issue Triager"
+    icon="newspaper"
+    href="/kb/articles/clinejection-compromising-clines-production-releases-just-by-c5b36972"
+  >
+    Simon Willison · explanation · 49% similar
+  </Card>
+  <Card
+    title="Package Managers Need to Cool Down"
+    icon="newspaper"
+    href="/kb/articles/package-managers-need-to-cool-down-b36c4b11"
+  >
+    Simon Willison · explanation · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything](https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything).
+</Note>
