@@ -1,0 +1,80 @@
+---
+title: 'Quantization from the ground up'
+description: 'Sam Rose''s interactive essay explains the quantization of Large Language Models, highlighting the importance of outlier values and their impact on mod'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-26'
+sourceUrl: 'https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/#atom-everything'
+topics: ["quantization","large-language-models","model-accuracy","floating-point-numbers"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/#atom-everything) · 26/03/2026
+</Info>
+
+## Summary
+
+Sam Rose's interactive essay explains the quantization of Large Language Models, highlighting the importance of outlier values and their impact on model quality.
+
+## Key Insights
+
+> "no one conclusively knows, but a small fraction of these outliers are very important to model quality."
+>
+> — Discussing the significance of outlier values in quantization.
+
+> "It looks like 16-bit to 8-bit carries almost no quality penalty."
+>
+> — Conclusion on the effects of quantization levels on model quality.
+
+> "Closer to 90%, depending on how you want to measure it."
+>
+> — Commenting on the quality retention when reducing bit levels in quantization.
+
+## Topics
+
+- [quantization](/kb/topics/quantization)
+- [large-language-models](/kb/topics/large-language-models)
+- [model-accuracy](/kb/topics/model-accuracy)
+- [floating-point-numbers](/kb/topics/floating-point-numbers)
+
+---
+
+## Full Article
+
+26th March 2026 - Link Blog Quantization from the ground up. Sam Rose continues his streak of publishing spectacularly informative interactive essays, this time explaining how quantization of Large Language Models works (which he says might be "the best post I've ever made".) Also included is the best visual explanation I've ever seen of how floating point numbers are represented using binary digits. I hadn't heard about outlier values in quantization - rare float values that exist outside of the normal tiny-value distribution - but apparently they're very important: Why do these outliers exist? [...] tl;dr: no one conclusively knows, but a small fraction of these outliers are very important to model quality. Removing even a single "super weight," as Apple calls them, can cause the model to output complete gibberish. Given their importance, real-world quantization schemes sometimes do extra work to preserve these outliers. They might do this by not quantizing them at all, or by saving their location and value into a separate table, then removing them so that their block isn't destroyed. Plus there's a section on How much does quantization affect model accuracy?. Sam explains the concepts of perplexity and ** KL divergence ** and then uses the llama.cpp perplexity tool and a run of the GPQA benchmark to show how different quantization levels affect Qwen 3.5 9B. His conclusion: It looks like 16-bit to 8-bit carries almost no quality penalty. 16-bit to 4-bit is more noticeable, but it's certainly not a quarter as good as the original. Closer to 90%, depending on how you want to measure it.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Autoresearching Apple’s “LLM in a Flash” to run Qwen 397B locally"
+    icon="newspaper"
+    href="/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
+  >
+    Simon Willison · how-to · 61% similar
+  </Card>
+  <Card
+    title="[AINews] Context Graphs and Agent Traces"
+    icon="newspaper"
+    href="/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+  >
+    Swyx · explanation · 55% similar
+  </Card>
+  <Card
+    title="[AINews] Qwen Image 2 and Seedance 2"
+    icon="newspaper"
+    href="/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
+  >
+    Swyx · explanation · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/#atom-everything](https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/#atom-everything).
+</Note>

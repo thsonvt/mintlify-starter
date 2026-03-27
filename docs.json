@@ -932,6 +932,10 @@
       "destination": "/kb/articles/introducing-showboat-and-rodney-so-agents-can-demo-what-they-3a64ad66"
     },
     {
+      "source": "/kb/articles/simon-willison-3ab6467f",
+      "destination": "/kb/articles/we-rewrote-jsonata-with-ai-in-a-day-saved-500kyear-3ab6467f"
+    },
+    {
       "source": "/kb/articles/simon-willison-3deb2a99",
       "destination": "/kb/articles/introducing-gpt54-3deb2a99"
     },
@@ -1104,6 +1108,10 @@
       "destination": "/kb/articles/codex-for-open-source-8f0b7b58"
     },
     {
+      "source": "/kb/articles/simon-willison-912e723c",
+      "destination": "/kb/articles/quantization-from-the-ground-up-912e723c"
+    },
+    {
       "source": "/kb/articles/simon-willison-915b03d0",
       "destination": "/kb/articles/ggmlai-joins-hugging-face-to-ensure-the-long-term-progress-o-915b03d0"
     },
@@ -1174,6 +1182,10 @@
     {
       "source": "/kb/articles/simon-willison-a6d5bdba",
       "destination": "/kb/articles/the-ai-disruption-weve-been-waiting-for-has-arrived-a6d5bdba"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a6fab7d7",
+      "destination": "/kb/articles/my-minute-by-minute-response-to-the-litellm-malware-attack-a6fab7d7"
     },
     {
       "source": "/kb/articles/simon-willison-abf70e4c",
@@ -1418,6 +1430,10 @@
     {
       "source": "/kb/articles/swyx-3b185a0d",
       "destination": "/kb/articles/dylan-patel-of-semianalysis-on-the-200b-ai-capex-chip-wars-a-3b185a0d"
+    },
+    {
+      "source": "/kb/articles/swyx-3b7375ca",
+      "destination": "/kb/articles/ainews-everything-is-cli-3b7375ca"
     },
     {
       "source": "/kb/articles/swyx-41a159da",
