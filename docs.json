@@ -936,6 +936,10 @@
       "destination": "/kb/articles/we-rewrote-jsonata-with-ai-in-a-day-saved-500kyear-3ab6467f"
     },
     {
+      "source": "/kb/articles/simon-willison-3dde9a3b",
+      "destination": "/kb/articles/vibe-coding-swiftui-apps-is-a-lot-of-fun-3dde9a3b"
+    },
+    {
       "source": "/kb/articles/simon-willison-3deb2a99",
       "destination": "/kb/articles/introducing-gpt54-3deb2a99"
     },
@@ -1272,6 +1276,10 @@
       "destination": "/kb/articles/a-quote-from-claudecomimport-memory-cc1e6806"
     },
     {
+      "source": "/kb/articles/simon-willison-cd1d0a7c",
+      "destination": "/kb/articles/release-datasette-showboat-01a2-cd1d0a7c"
+    },
+    {
       "source": "/kb/articles/simon-willison-cdfcfdee",
       "destination": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee"
     },
@@ -1380,6 +1388,10 @@
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
     },
     {
+      "source": "/kb/articles/simon-willison-fe678ac4",
+      "destination": "/kb/articles/a-quote-from-richard-fontana-fe678ac4"
+    },
+    {
       "source": "/kb/articles/swyx-02e6b89f",
       "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
     },
@@ -1410,6 +1422,10 @@
     {
       "source": "/kb/articles/swyx-20d4d25a",
       "destination": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a"
+    },
+    {
+      "source": "/kb/articles/swyx-234d7d05",
+      "destination": "/kb/articles/ainews-h100-prices-are-melting-up-234d7d05"
     },
     {
       "source": "/kb/articles/swyx-238bed2a",
