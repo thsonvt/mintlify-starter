@@ -724,6 +724,10 @@
       "destination": "/kb/articles/the-design-process-is-dead-heres-whats-replacing-it-jenny-we-6873f9f5"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-6c6993d4",
+      "destination": "/kb/articles/from-skeptic-to-true-believer-how-openclaw-changed-my-life-c-6c6993d4"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-729c3062",
       "destination": "/kb/articles/-community-wisdom-business-books-that-havent-aged-well-vibe--729c3062"
     },
@@ -1044,6 +1048,10 @@
       "destination": "/kb/articles/thoughts-on-slowing-the-fuck-down-62e9956a"
     },
     {
+      "source": "/kb/articles/simon-willison-635e0854",
+      "destination": "/kb/articles/pretext-635e0854"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -1128,6 +1136,10 @@
       "destination": "/kb/articles/ggmlai-joins-hugging-face-to-ensure-the-long-term-progress-o-915b03d0"
     },
     {
+      "source": "/kb/articles/simon-willison-9184893d",
+      "destination": "/kb/articles/tool-python-vulnerability-lookup-9184893d"
+    },
+    {
       "source": "/kb/articles/simon-willison-92e1146e",
       "destination": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e"
     },
@@ -1162,6 +1174,10 @@
     {
       "source": "/kb/articles/simon-willison-9db8006a",
       "destination": "/kb/articles/structured-context-engineering-for-file-native-agentic-syste-9db8006a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9ecc2a1a",
+      "destination": "/kb/articles/tool-pretext-under-the-hood-9ecc2a1a"
     },
     {
       "source": "/kb/articles/simon-willison-9f31bc8e",

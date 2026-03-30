@@ -1,0 +1,79 @@
+---
+title: 'Pretext'
+description: 'Pretext is a new browser library that efficiently calculates the height of line-wrapped text without DOM manipulation, enhancing text rendering in app'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-29'
+sourceUrl: 'https://simonwillison.net/2026/Mar/29/pretext/#atom-everything'
+topics: ["browser-library","text-rendering","performance-optimization"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/29/pretext/#atom-everything) · 29/03/2026
+</Info>
+
+## Summary
+
+Pretext is a new browser library that efficiently calculates the height of line-wrapped text without DOM manipulation, enhancing text rendering in applications.
+
+## Key Insights
+
+> "Pretext solves the problem of calculating the height of a paragraph of line-wrapped text without touching the DOM."
+>
+> — Introduction to the library's purpose.
+
+> "The prepare() function splits the input text into segments and measures those using an off-screen canvas."
+>
+> — Explanation of the library's functionality.
+
+> "The engine’s tiny (few kbs), aware of browser quirks, supports all the languages you’ll need."
+>
+> — Description of the library's efficiency and language support.
+
+## Topics
+
+- [browser-library](/kb/topics/browser-library)
+- [text-rendering](/kb/topics/text-rendering)
+- [performance-optimization](/kb/topics/performance-optimization)
+
+---
+
+## Full Article
+
+29th March 2026 - Link Blog Pretext (via) Exciting new browser library from Cheng Lou, previously a React core developer and the original creator of the react-motion animation library. Pretext solves the problem of calculating the height of a paragraph of line-wrapped text without touching the DOM. The usual way of doing this is to render the text and measure its dimensions, but this is extremely expensive. Pretext uses an array of clever tricks to make this much, much faster, which enables all sorts of new text rendering effects in browser applications. Here's one demo that shows the kind of things this makes possible: The key to how this works is the way it separates calculations into a call to a prepare() function followed by multiple calls to layout(). The prepare() function splits the input text into segments (effectively words, but it can take things like soft hyphens and non-latin character sequences and emoji into account as well) and measures those using an off-screen canvas, then caches the results. This is comparatively expensive but only runs once. The layout() function can then emulate the word-wrapping logic in browsers to figure out how many wrapped lines the text will occupy at a specified width and measure the overall height. I had Claude build me this interactive artifact to help me visually understand what's going on, based on a simplified version of Pretext itself. The way this is tested is particularly impressive. The earlier tests rendered a full copy of the Great Gatsby in multiple browsers to confirm that the estimated measurements were correct against a large volume of text. This was later joined by the corpora/ folder using the same technique against lengthy public domain documents in Thai, Chinese, Korean, Japanese, Arabic, and more. Cheng Lou says: The engine’s tiny (few kbs), aware of browser quirks, supports all the languages you’ll need, including Korean mixed with RTL Arabic and platform-specific emojis This was achieved through showing Claude Code and Codex the browsers ground truth, and have them measure & iterate against those at every significant container width, running over weeks
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: Pretext — Under the Hood"
+    icon="newspaper"
+    href="/kb/articles/tool-pretext-under-the-hood-9ecc2a1a"
+  >
+    Simon Willison · explanation · 58% similar
+  </Card>
+  <Card
+    title="Interactive explanations - Agentic Engineering Patterns - Simon Willison's Weblog"
+    icon="newspaper"
+    href="/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+  <Card
+    title="GIF optimization tool using WebAssembly and Gifsicle - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+  >
+    Simon Willison · how-to · 51% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/29/pretext/#atom-everything](https://simonwillison.net/2026/Mar/29/pretext/#atom-everything).
+</Note>
