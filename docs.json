@@ -672,6 +672,10 @@
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-43585643"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-44847dd6",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-how-stripe-built-minionsai-coding-age-44847dd6"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-46856582",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
     },
@@ -738,6 +742,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-7b6943e4",
       "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-7f4b29cb",
+      "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-8670162b",
@@ -916,6 +924,10 @@
       "destination": "/kb/articles/kkp-mug-by-karen-james-2d77e434"
     },
     {
+      "source": "/kb/articles/simon-willison-2f86da03",
+      "destination": "/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
+    },
+    {
       "source": "/kb/articles/simon-willison-306f627c",
       "destination": "/kb/articles/claude-code-remote-control-306f627c"
     },
@@ -1008,6 +1020,10 @@
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
     },
     {
+      "source": "/kb/articles/simon-willison-57346664",
+      "destination": "/kb/articles/release-datasette-files-01a3-57346664"
+    },
+    {
       "source": "/kb/articles/simon-willison-59bcb94a",
       "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
     },
@@ -1026,6 +1042,10 @@
     {
       "source": "/kb/articles/simon-willison-5d9b8291",
       "destination": "/kb/articles/a-quote-from-david-abram-5d9b8291"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5dea7f7c",
+      "destination": "/kb/articles/release-datasette-llm-01a3-5dea7f7c"
     },
     {
       "source": "/kb/articles/simon-willison-5deef68f",
@@ -1152,6 +1172,10 @@
       "destination": "/kb/articles/gemini-31-flash-lite-969c5220"
     },
     {
+      "source": "/kb/articles/simon-willison-9767b320",
+      "destination": "/kb/articles/release-llm-mrchatterbox-01-9767b320"
+    },
+    {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
     },
@@ -1238,6 +1262,10 @@
     {
       "source": "/kb/articles/simon-willison-af2b4505",
       "destination": "/kb/articles/use-subagents-and-custom-agents-in-codex-af2b4505"
+    },
+    {
+      "source": "/kb/articles/simon-willison-af54c792",
+      "destination": "/kb/articles/a-quote-from-georgi-gerganov-af54c792"
     },
     {
       "source": "/kb/articles/simon-willison-b36c4b11",
@@ -1456,6 +1484,10 @@
       "destination": "/kb/articles/ainews-nvidia-gtc-jensen-goes-hard-on-openclaw-vera-cpu-and--238bed2a"
     },
     {
+      "source": "/kb/articles/swyx-23a9721a",
+      "destination": "/kb/articles/mistral-voxtral-tts-forge-leanstral-whats-next-for-mistral-4-23a9721a"
+    },
+    {
       "source": "/kb/articles/swyx-26e65d48",
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
@@ -1554,6 +1586,10 @@
     {
       "source": "/kb/articles/swyx-7ed14561",
       "destination": "/kb/articles/the-first-mechanistic-interpretability-frontier-lab-myra-den-7ed14561"
+    },
+    {
+      "source": "/kb/articles/swyx-7f163b66",
+      "destination": "/kb/articles/ainews-the-last-4-jobs-in-tech-7f163b66"
     },
     {
       "source": "/kb/articles/swyx-815e6177",

@@ -1,0 +1,79 @@
+---
+title: 'Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer'
+description: 'Mr. Chatterbox is a Victorian-era language model trained on public domain texts, offering a unique but limited conversational experience.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-30'
+sourceUrl: 'https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything'
+topics: ["language-models","victorian-literature","ai-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything) · 30/03/2026
+</Info>
+
+## Summary
+
+Mr. Chatterbox is a Victorian-era language model trained on public domain texts, offering a unique but limited conversational experience.
+
+## Key Insights
+
+> "Talking with it feels more like chatting with a Markov chain than an LLM."
+>
+> — Describing the conversational quality of Mr. Chatterbox.
+
+> "I continue to hope we can get a useful model from entirely public domain data."
+>
+> — Expressing optimism about future developments in language models.
+
+> "This is the first time I’ve had Claude Code build a full LLM model plugin from scratch and it worked really well."
+>
+> — Reflecting on the success of building the model plugin.
+
+## Topics
+
+- [language-models](/kb/topics/language-models)
+- [victorian-literature](/kb/topics/victorian-literature)
+- [ai-development](/kb/topics/ai-development)
+
+---
+
+## Full Article
+
+30th March 2026 Trip Venturella released Mr. Chatterbox, a language model trained entirely on out-of-copyright text from the British Library. Here’s how he describes it: Mr. Chatterbox is a language model trained entirely from scratch on a corpus of over 28,000 Victorian-era British texts published between 1837 and 1899, drawn from a dataset made available by the British Library. The model has absolutely no training inputs from after 1899 — the vocabulary and ideas are formed exclusively from nineteenth-century literature. Mr. Chatterbox’s training corpus was 28,035 books, with an estimated 2.93 billion input tokens after filtering. The model has roughly 340 million paramaters, roughly the same size as GPT-2-Medium. The difference is, of course, that unlike GPT-2, Mr. Chatterbox is trained entirely on historical data. Given how hard it is to train a useful LLM without using vast amounts of scraped, unlicensed data I’ve been dreaming of a model like this for a couple of years now. What would a model trained on out-of-copyright text be like to chat with? Thanks to Trip we can now find out for ourselves! The model itself is tiny, at least by Large Language Model standards—just 2.05GB on disk. You can try it out using Trip’s HuggingFace Spaces demo: Honestly, it’s pretty terrible. Talking with it feels more like chatting with a Markov chain than an LLM—the responses may have a delightfully Victorian flavor to them but it’s hard to get a response that usefully answers a question. The 2022 Chinchilla paper suggests a ratio of 20x the parameter count to training tokens. For a 340m model that would suggest around 7 billion tokens, more than twice the British Library corpus used here. The smallest Qwen 3.5 model is 600m parameters and that model family starts to get interesting at 2b—so my hunch is we would need 4x or more the training data to get something that starts to feel like a useful conversational partner. But what a fun project! Running it locally with LLM I decided to see if I could run the model on my own machine using my LLM framework. I got Claude Code to do most of the work—here’s the transcript. Trip trained the model using Andrej Karpathy’s nanochat, so I cloned that project, pulled the model weights and told Claude to build a Python script to run the model. Once we had that working (which ended up needing some extra details from the Space demo source code) I had Claude read the LLM plugin tutorial and build the rest of the plugin. llm-mrchatterbox is the result. Install the plugin like this: llm install llm-mrchatterbox The first time you run a prompt it will fetch the 2.05GB model file from Hugging Face. Try that like this: llm -m mrchatterbox "Good day, sir" Or start an ongoing chat session like this: llm chat -m mrchatterbox If you don’t have LLM installed you can still get a chat session started from scratch using uvx like this: uvx --with llm-mrchatterbox llm chat -m mrchatterbox When you are finished with the model you can delete the cached file using: llm mrchatterbox delete-model This is the first time I’ve had Claude Code build a full LLM model plugin from scratch and it worked really well. I expect I’ll be using this method again in the future. I continue to hope we can get a useful model from entirely public domain data. The fact that Trip was able to get this far using nanochat and 2.93 billion training tokens is a promising start.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Autoresearching Apple’s “LLM in a Flash” to run Qwen 397B locally"
+    icon="newspaper"
+    href="/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
+  >
+    Simon Willison · how-to · 59% similar
+  </Card>
+  <Card
+    title="[AINews] Context Graphs and Agent Traces"
+    icon="newspaper"
+    href="/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+  >
+    Swyx · explanation · 56% similar
+  </Card>
+  <Card
+    title="Release: llm-mrchatterbox 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-llm-mrchatterbox-01-9767b320"
+  >
+    Simon Willison · reference · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything](https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything).
+</Note>

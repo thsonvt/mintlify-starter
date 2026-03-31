@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-files 0.1a3'
+description: 'The release of datasette-files 0.1a3 introduces new configuration options and a file picker UI, enhancing integration with other plugins.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-30'
+sourceUrl: 'https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything'
+topics: ["datasette","plugin-development","file-management"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything) · 30/03/2026
+</Info>
+
+## Summary
+
+The release of datasette-files 0.1a3 introduces new configuration options and a file picker UI, enhancing integration with other plugins.
+
+## Key Insights
+
+> "owners_can_edit and owners_can_delete configuration options, plus the files-edit and files-delete actions are now scoped to a new FileResource"
+>
+> — Discussing new features in the datasette-files plugin.
+
+> "The file picker UI is now available as a &lt;datasette-file-picker> Web Component."
+>
+> — Highlighting the introduction of a new UI component.
+
+> "New from datasette_files import get_file Python API for other plugins that need to access file data."
+>
+> — Mentioning the new Python API for plugin integration.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [plugin-development](/kb/topics/plugin-development)
+- [file-management](/kb/topics/file-management)
+
+---
+
+## Full Article
+
+I'm working on integrating datasette-files into other plugins, such as datasette-extract. This necessitated a new release of the base plugin. owners_can_edit and owners_can_delete configuration options, plus the files-edit and files-delete actions are now scoped to a new FileResource which is a child of FileSourceResource. #18 The file picker UI is now available as a &lt;datasette-file-picker> Web Component. Thanks, Alex Garcia. #19 New from datasette_files import get_file Python API for other plugins that need to access file data. #20
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="Release: datasette-files-s3 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-s3-01a1-b451738f"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+  <Card
+    title="Release: datasette-showboat 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-showboat-01a2-cd1d0a7c"
+  >
+    Simon Willison · reference · 51% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything](https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything).
+</Note>

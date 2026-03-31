@@ -1,0 +1,80 @@
+---
+title: '🎙️ This week on How I AI: How Stripe built “minions”—AI coding agents that ship 1,300 PRs per week + How to turn Claude Code into your personal life operating system'
+description: 'This article discusses how Stripe developed AI coding agents, termed ''minions'', that automate pull requests and enhance developer productivity, alongs'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-03-30'
+sourceUrl: 'https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe'
+topics: ["ai-agents","developer-productivity","automation","personal-organization"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe) · 30/03/2026
+</Info>
+
+## Summary
+
+This article discusses how Stripe developed AI coding agents, termed 'minions', that automate pull requests and enhance developer productivity, alongside insights on using Claude Code for personal management.
+
+## Key Insights
+
+> "Activation energy is the real bottleneck, not coding speed."
+>
+> — Steve Kaliski emphasizes the importance of reducing friction in the development process.
+
+> "Treat AI agents like new employees, with progressive trust."
+>
+> — Advice on managing AI agents' access and permissions to ensure accountability.
+
+> "The future of software is disposable and hyper-personalized."
+>
+> — Steve discusses the evolving nature of software development with AI capabilities.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [developer-productivity](/kb/topics/developer-productivity)
+- [automation](/kb/topics/automation)
+- [personal-organization](/kb/topics/personal-organization)
+
+---
+
+## Full Article
+
+How Stripe built minionsAI coding agents that ship 1,300 PRs weekly from Slack reactions | Steve Kaliski (Stripe engineer)Listen now on YouTube Spotify Apple PodcastsBrought to you by:OptimizelyYour AI agent orchestration platform for marketing and digital teamsRipplingStop wasting time on admin tasks, build your startup fasterSteve Kaliski has spent over six years building developer infrastructure at Stripe. In this conversation with Claire, he breaks down Stripes minions: AI coding agents that ship about 1,300 pull requests per week, often kicked off with nothing more than a Slack emoji. He explains why the real bottleneck in engineering isnt coding, how cloud development environments unlock parallel AI workflows, and what it takes to safely review thousands of AI-generated PRs. He also demos AI agents that can spend money, coordinate services, and complete tasks end-to-end without human involvement.Biggest takeaways:Whats good for human developers is good for AI agents (and vice versa). Stripes years of investment in developer experiencecomprehensive documentation, blessed paths for common tasks, robust CI/CD, excellent toolingdirectly translates to higher AI agent success rates. When you have clear docs on how to add a new API field, the agent can follow those same instructions. This creates a virtuous cycle: investments in DX improve agent performance, and investments in agent infrastructure (like cloud environments) benefit human developers too.Activation energy is the real bottleneck, not coding speed. Steve hasnt started work in a text editor in months. Instead, work begins in Slack threads, Google Docs, or support ticketsthe natural places where ideas emerge. By allowing engineers to kick off development with a single emoji reaction, Stripe lowered the friction between good idea and code in production. This is especially powerful in large organizations, where coordination costs typically kill momentum before coding even begins.Cloud development environments are non-negotiable for multi-threaded AI work. Running multiple AI agents in parallel requires cloud-based dev environments that can spin up in seconds, run isolated workloads, and never fall asleep. This infrastructure investmentwhich Stripes developer productivity team built long before AI agentsnow enables engineers to run dozens of agents simultaneously without melting their MacBook Pros.1,300 AI-written PRs per week requires shifting review capacity, not eliminating it. Stripe still reviews every AI-generated PR, but the review process relies heavily on automated confidence signals: comprehensive test coverage, synthetic end-to-end tests, and blue-green deployments that enable quick rollbacks. The bottleneck shifts from writing code to reviewing itand eventually to generating enough good ideas in the first place.Machine-to-machine payments unlock ephemeral, API-first businesses. In Steves birthday party demo, Claude Code autonomously paid Browser Base, Parallel AI, and Postal Form for single-use servicesno human signup, no subscription, no dashboard. Businesses can now optimize for agent consumers rather than human users, focusing on hyper-useful single APIs instead of landing pages and admin panels. The economics become transparent: tokens and dollars sit side by side, making the true cost of AI work visible.Treat AI agents like new employees, with progressive trust. Start with limited access, expand permissions as the agent proves reliable, and maintain clear boundaries. Each minion runs in an isolated environment with specific data accessthe finance agent can read bank statements but cant send messages; the scheduling agent can text but has no financial data. This physical partitioning prevents accidental data leakage and creates accountability.The future of software is disposable and hyper-personalized. Steve builds custom iOS apps for his toddlermusic players limited to six specific songsdespite having no iOS development experience. He describes this as the disposability of software: when AI can build apps in hours, you can create single-purpose tools for incredibly specific use cases and throw them away when theyre no longer needed.Detailed workflow walkthroughs from this episode:How Stripes AI Minions Ship 1,300 PRs Weekly from a Slack Emoji: https://www.chatprd.ai/how-i-ai/stripes-ai-minions-ship-1300-prs-weekly-from-a-slack-emojiHow to Build an Autonomous AI Agent That Pays for Services to Complete Tasks: https://www.chatprd.ai/how-i-ai/workflows/how-to-build-an-autonomous-ai-agent-that-pays-for-services-to-complete-tasksHow to Automate Code Generation from a Slack Message into a Pull Request: https://www.chatprd.ai/how-i-ai/workflows/how-to-automate-code-generation-from-a-slack-message-into-a-pull-requestHow to turn Claude Code into your personal life operating system | Hilary GridleyListen now on YouTube Spotify Apple PodcastsBrought to you by: WorkOSMake your app enterprise-ready todayLovableBuild apps by simply chatting with AIHilary Gridley returns to the podcast to share how her approach to productivity has completely evolved since her last appearance. Now a new mom and entrepreneur, she walks Claire through how she uses Claude Code as a personal operating system, managing everything from daily planning to life admin without complex tools or rigid workflows. Instead of building elaborate systems, Hilary leans into what she calls the anti-system system: letting AI observe her behavior, learn her preferences over time, and gradually take work off her plate. Together, Claire and Hilary explore how simple inputslike capturing tasks with a shortcut or yapping to Claude throughout the daycan replace traditional productivity stacks and integrations.Biggest takeaways:The 10x impact framework: For any task, ask If I were 10 times better at it, would it have 10 times the impact? If no, automate it. If yes, keep it human. This applies to both work tasks and life tasksincluding whether baking bread will bring you joy or feel like a chore.Complexity has to earn its keep. Hilary only connects APIs and builds complex integrations after testing the janky version of a workflow for a week. Her hit rate is only 20% on workflows she actually continues using, so starting simple saves massive time.The yappers API beats OAuth every time. Instead of connecting all your tools in the background, just talk to Claude about what youre doing throughout the day. Hilary keeps Claude Code open in her terminal and narrates her work, letting Claude observe and take notes without complex integrations.Let AI learn your preferences by observing, not by your defining them. Hilary never sat down to write out her ideal schedule. Claude just watches what she actually does (not what she says shell do) and adjusts preferences automatically. Real behavior beats aspirational planning.Calendar management is the ultimate to-do list. You cant say you take something seriously if youre not putting time into it. But manually adding tasks to your calendar is tediousso let Claude do it automatically based on what you say you want to accomplish.Screenshots are your friend for getting started. Dont wait for API access or permissions at work. Build a janky version with screenshots and voice dictation, prove its valuable, and then get the permissions you need. Half-baked ideas dont deserve full access.You dont need coding knowledge to build Claude Code skills. Hilary just describes problems to Claude: I keep forgetting to return things on time. Claude asks a few questions, then builds the entire workflowincluding checking return policies and drop-off locations automatically.Test everything before integrating it into working systems. Hilary refuses to add new workflows to her daily routine until shes tested them separately for a week. If something breaks, you dont want it taking down systems that were already working.Build the muscle memory by doing one thing with AI every day. The biggest barrier isnt technical knowledgeits rewiring your brain to think the alien in my computer could help with this. Hilary went from Ill never use the terminal to running her life in Claude Code in about a week.Detailed workflow walkthroughs from this episode:How I AI: Hilary Gridleys Anti-System for Automating Life with Claude Code: https://www.chatprd.ai/how-i-ai/gridleys-anti-system-for-automating-life-with-claude-codeCreate a Privacy-Protecting Demo Mode for Your Personal AI: https://www.chatprd.ai/how-i-ai/workflows/create-a-privacy-protecting-demo-mode-for-your-personal-aiBuild Custom AI Automations by Having a Conversation with Claude: https://www.chatprd.ai/how-i-ai/workflows/build-custom-ai-automations-by-having-a-conversation-with-claudeAutomate Your Daily Planning with Claude Code and an iPhone Shortcut: https://www.chatprd.ai/how-i-ai/workflows/automate-your-daily-planning-with-claude-code-and-an-iphone-shortcutIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How Stripe built “minions”—AI coding agents that ship 1,300 PRs weekly from Slack reactions | Steve Kaliski (Stripe engineer)"
+    icon="newspaper"
+    href="/kb/articles/how-stripe-built-minionsai-coding-agents-that-ship-1300-prs--944c4313"
+  >
+    Lenny Rachitsky · how-to · 89% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: From Figma to Claude Code and back & From journalist to iOS developer"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-from-figma-to-claude-code-and-back-fr-5eff2998"
+  >
+    Lenny Rachitsky · how-to · 80% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: 5 OpenClaw agents run my home, finances, and code & How Coinbase scaled AI to 1,000+ engineers"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
+  >
+    Lenny Rachitsky · how-to · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe](https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe).
+</Note>
