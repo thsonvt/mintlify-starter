@@ -1,0 +1,79 @@
+---
+title: 'Supply Chain Attack on Axios Pulls Malicious Dependency from npm'
+description: 'A supply chain attack on Axios introduced a malicious dependency from npm, compromising user credentials and installing a remote access trojan.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-31'
+sourceUrl: 'https://simonwillison.net/2026/Mar/31/supply-chain-attack-on-axios/#atom-everything'
+topics: ["supply-chain-attacks","npm-security","axios"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/31/supply-chain-attack-on-axios/#atom-everything) · 31/03/2026
+</Info>
+
+## Summary
+
+A supply chain attack on Axios introduced a malicious dependency from npm, compromising user credentials and installing a remote access trojan.
+
+## Key Insights
+
+> "Versions 1.14.1 and 0.30.4 both included a new dependency called plain-crypto-js which was freshly published malware."
+>
+> — Describing the specific versions of Axios affected by the attack.
+
+> "It looks like the attack came from a leaked long-lived npm token."
+>
+> — Speculating on the source of the supply chain attack.
+
+> "The malware packages were published without an accompanying GitHub release."
+>
+> — Highlighting a heuristic for identifying potentially malicious releases.
+
+## Topics
+
+- [supply-chain-attacks](/kb/topics/supply-chain-attacks)
+- [npm-security](/kb/topics/npm-security)
+- [axios](/kb/topics/axios)
+
+---
+
+## Full Article
+
+31st March 2026 - Link Blog Supply Chain Attack on Axios Pulls Malicious Dependency from npm (via) Useful writeup of today's supply chain attack against Axios, the HTTP client NPM package with 101 million weekly downloads. Versions 1.14.1 and 0.30.4 both included a new dependency called plain-crypto-js which was freshly published malware, stealing credentials and installing a remote access trojan (RAT). It looks like the attack came from a leaked long-lived npm token. Axios have an open issue to adopt trusted publishing, which would ensure that only their GitHub Actions workflows are able to publish to npm. The malware packages were published without an accompanying GitHub release, which strikes me as a useful heuristic for spotting potentially malicious releases - the same pattern was present for LiteLLM last week as well.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Package Managers Need to Cool Down"
+    icon="newspaper"
+    href="/kb/articles/package-managers-need-to-cool-down-b36c4b11"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="Clinejection — Compromising Cline’s Production Releases just by Prompting an Issue Triager"
+    icon="newspaper"
+    href="/kb/articles/clinejection-compromising-clines-production-releases-just-by-c5b36972"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+  <Card
+    title="Malicious litellm_init.pth in litellm 1.82.8 — credential stealer"
+    icon="newspaper"
+    href="/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
+  >
+    Simon Willison · explanation · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/31/supply-chain-attack-on-axios/#atom-everything](https://simonwillison.net/2026/Mar/31/supply-chain-attack-on-axios/#atom-everything).
+</Note>

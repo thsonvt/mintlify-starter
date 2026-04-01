@@ -1,0 +1,80 @@
+---
+title: 'Release: llm-all-models-async 0.1'
+description: 'The release of llm-all-models-async 0.1 introduces async versions of models from LLM plugins, enabling better integration with API-backed models.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-31'
+sourceUrl: 'https://simonwillison.net/2026/Mar/31/llm-all-models-async/#atom-everything'
+topics: ["llm-plugins","async-models","datasette","api-integration"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/31/llm-all-models-async/#atom-everything) · 31/03/2026
+</Info>
+
+## Summary
+
+The release of llm-all-models-async 0.1 introduces async versions of models from LLM plugins, enabling better integration with API-backed models.
+
+## Key Insights
+
+> "The async variants are most common for API-backed models"
+>
+> — Discussing the nature of async and sync model variants in LLM plugins.
+
+> "I wanted to try it out with various Datasette LLM features"
+>
+> — Explaining the motivation behind creating the async model plugin.
+
+> "This ended up needing an extra plugin hook mechanism in LLM itself"
+>
+> — Describing the technical requirements for implementing the async models.
+
+## Topics
+
+- [llm-plugins](/kb/topics/llm-plugins)
+- [async-models](/kb/topics/async-models)
+- [datasette](/kb/topics/datasette)
+- [api-integration](/kb/topics/api-integration)
+
+---
+
+## Full Article
+
+Release llm-all-models-async 0.1 — Register async versions of models from LLM plugins that only provide a sync version LLM plugins can define new models in both sync and async varieties. The async variants are most common for API-backed models - sync variants tend to be things that run the model directly within the plugin. My llm-mrchatterbox plugin is sync only. I wanted to try it out with various Datasette LLM features (specifically datasette-enrichments-llm) but Datasette can only use async models. So... I had Claude spin up this plugin that turns sync models into async models using a thread pool. This ended up needing an extra plugin hook mechanism in LLM itself, which I shipped just now in LLM 0.30.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-llm 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a1-1a0b581b"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="Release: llm 0.30"
+    icon="newspaper"
+    href="/kb/articles/release-llm-030-f08e2d6c"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a5"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a5-8f4b0133"
+  >
+    Simon Willison · reference · 61% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/31/llm-all-models-async/#atom-everything](https://simonwillison.net/2026/Mar/31/llm-all-models-async/#atom-everything).
+</Note>

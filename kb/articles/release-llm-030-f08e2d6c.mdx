@@ -1,0 +1,79 @@
+---
+title: 'Release: llm 0.30'
+description: 'The release of llm 0.30 introduces a new plugin hook for model registration and enhances documentation with added docstrings.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-03-31'
+sourceUrl: 'https://simonwillison.net/2026/Mar/31/llm/#atom-everything'
+topics: ["large-language-models","plugin-development","documentation"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Mar/31/llm/#atom-everything) · 31/03/2026
+</Info>
+
+## Summary
+
+The release of llm 0.30 introduces a new plugin hook for model registration and enhances documentation with added docstrings.
+
+## Key Insights
+
+> "The register_models() plugin hook now takes an optional model_aliases parameter."
+>
+> — Discussing the new features in llm 0.30.
+
+> "A plugin with @hookimpl(trylast=True) can use this to take previously registered models into account."
+>
+> — Explaining the functionality of the new plugin hook.
+
+> "Added docstrings to public classes and methods and included those directly in the documentation."
+>
+> — Highlighting improvements made to the documentation.
+
+## Topics
+
+- [large-language-models](/kb/topics/large-language-models)
+- [plugin-development](/kb/topics/plugin-development)
+- [documentation](/kb/topics/documentation)
+
+---
+
+## Full Article
+
+Release llm 0.30 — Access large language models from the command-line The register_models() plugin hook now takes an optional model_aliases parameter listing all of the models, async models and aliases that have been registered so far by other plugins. A plugin with @hookimpl(trylast=True) can use this to take previously registered models into account. #1389 Added docstrings to public classes and methods and included those directly in the documentation.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-all-models-async 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-llm-all-models-async-01-68c4826d"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a1-1a0b581b"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a5"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a5-8f4b0133"
+  >
+    Simon Willison · reference · 63% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Mar/31/llm/#atom-everything](https://simonwillison.net/2026/Mar/31/llm/#atom-everything).
+</Note>
