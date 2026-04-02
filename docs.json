@@ -828,6 +828,10 @@
       "destination": "/kb/articles/how-i-built-a-1m-subscriber-newsletter-and-top-10-tech-podca-ef971a3b"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-f91edd89",
+      "destination": "/kb/articles/listen-openclaw-a-power-users-guide-to-the-most-powerful-per-f91edd89"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-fab47e77",
       "destination": "/kb/articles/ai-is-critical-for-humanitys-survival-cisco-president-on-the-fab47e77"
     },
@@ -942,6 +946,10 @@
     {
       "source": "/kb/articles/simon-willison-30c19547",
       "destination": "/kb/articles/quoting-brandon-sanderson-30c19547"
+    },
+    {
+      "source": "/kb/articles/simon-willison-320c1f29",
+      "destination": "/kb/articles/release-datasette-llm-01a6-320c1f29"
     },
     {
       "source": "/kb/articles/simon-willison-344780b7",
@@ -1114,6 +1122,10 @@
     {
       "source": "/kb/articles/simon-willison-6ba05ac0",
       "destination": "/kb/articles/anti-patterns-things-to-avoid-agentic-engineering-patterns-6ba05ac0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6cd83dcd",
+      "destination": "/kb/articles/release-datasette-enrichments-llm-02a1-6cd83dcd"
     },
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
@@ -1404,6 +1416,10 @@
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
     },
     {
+      "source": "/kb/articles/simon-willison-da845929",
+      "destination": "/kb/articles/march-2026-sponsors-only-newsletter-da845929"
+    },
+    {
       "source": "/kb/articles/simon-willison-da86c0c4",
       "destination": "/kb/articles/tool-dns-lookup-da86c0c4"
     },
@@ -1578,6 +1594,10 @@
     {
       "source": "/kb/articles/swyx-50b11fd3",
       "destination": "/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
+    },
+    {
+      "source": "/kb/articles/swyx-51fc7d31",
+      "destination": "/kb/articles/ainews-a-quiet-april-fools-51fc7d31"
     },
     {
       "source": "/kb/articles/swyx-52976c37",
