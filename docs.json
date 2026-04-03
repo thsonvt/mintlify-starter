@@ -760,6 +760,10 @@
       "destination": "/kb/articles/how-i-built-lennyrpg-87f53d1c"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8a45e903",
+      "destination": "/kb/articles/an-ai-state-of-the-union-weve-passed-the-inflection-point-da-8a45e903"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8c13973d",
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
@@ -862,6 +866,10 @@
     {
       "source": "/kb/articles/simon-willison-0949cffa",
       "destination": "/kb/articles/tool-merge-state-visualizer-0949cffa"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0ad233f1",
+      "destination": "/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
     },
     {
       "source": "/kb/articles/simon-willison-0b7f8147",
@@ -1396,6 +1404,10 @@
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
     },
     {
+      "source": "/kb/articles/simon-willison-d424d881",
+      "destination": "/kb/articles/highlights-from-my-conversation-about-agentic-engineering-on-d424d881"
+    },
+    {
       "source": "/kb/articles/simon-willison-d4d113b0",
       "destination": "/kb/articles/a-quote-from-joseph-weizenbaum-d4d113b0"
     },
@@ -1472,6 +1484,10 @@
       "destination": "/kb/articles/release-llm-030-f08e2d6c"
     },
     {
+      "source": "/kb/articles/simon-willison-f0f15fdb",
+      "destination": "/kb/articles/release-llm-gemini-030-f0f15fdb"
+    },
+    {
       "source": "/kb/articles/simon-willison-f6ef390b",
       "destination": "/kb/articles/rodney-v040-f6ef390b"
     },
@@ -1546,6 +1562,10 @@
     {
       "source": "/kb/articles/swyx-23a9721a",
       "destination": "/kb/articles/mistral-voxtral-tts-forge-leanstral-whats-next-for-mistral-4-23a9721a"
+    },
+    {
+      "source": "/kb/articles/swyx-24b5ce76",
+      "destination": "/kb/articles/moonlake-causal-world-models-should-be-multimodal-interactiv-24b5ce76"
     },
     {
       "source": "/kb/articles/swyx-26e65d48",
@@ -1650,6 +1670,10 @@
     {
       "source": "/kb/articles/swyx-78eca57f",
       "destination": "/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+    },
+    {
+      "source": "/kb/articles/swyx-795c39ae",
+      "destination": "/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
     },
     {
       "source": "/kb/articles/swyx-7ed14561",

@@ -1,0 +1,80 @@
+---
+title: 'Gemma 4: Byte for byte, the most capable open models'
+description: 'Gemma 4 introduces four new vision-capable LLMs from Google DeepMind, emphasizing efficiency and multi-modal capabilities in AI models.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-02'
+sourceUrl: 'https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything'
+topics: ["llms","google-deepmind","ai-research","multi-modal"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything) · 02/04/2026
+</Info>
+
+## Summary
+
+Gemma 4 introduces four new vision-capable LLMs from Google DeepMind, emphasizing efficiency and multi-modal capabilities in AI models.
+
+## Key Insights
+
+> "unprecedented level of intelligence-per-parameter"
+>
+> — Google emphasizes the efficiency of their new models.
+
+> "The smaller models incorporate Per-Layer Embeddings (PLE) to maximize parameter efficiency"
+>
+> — Describing the innovative approach to model efficiency.
+
+> "All models natively process video and images, supporting variable resolutions"
+>
+> — Highlighting the multi-modal capabilities of the new models.
+
+## Topics
+
+- [llms](/kb/topics/llms)
+- [google-deepmind](/kb/topics/google-deepmind)
+- [ai-research](/kb/topics/ai-research)
+- [multi-modal](/kb/topics/multi-modal)
+
+---
+
+## Full Article
+
+2nd April 2026 - Link Blog Gemma 4: Byte for byte, the most capable open models. Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts. Google emphasize "unprecedented level of intelligence-per-parameter", providing yet more evidence that creating small useful models is one of the hottest areas of research right now. They actually label the two smaller models as E2B and E4B for "Effective" parameter size. The system card explains: The smaller models incorporate Per-Layer Embeddings (PLE) to maximize parameter efficiency in on-device deployments. Rather than adding more layers or parameters to the model, PLE gives each decoder layer its own small embedding for every token. These embedding tables are large but are only used for quick lookups, which is why the effective parameter count is much smaller than the total. I don't entirely understand that, but apparently that's what the "E" in E2B means! One particularly exciting feature of these models is that they are multi-modal beyond just images: Vision and audio: All models natively process video and images, supporting variable resolutions, and excelling at visual tasks like OCR and chart understanding. Additionally, the E2B and E4B models feature native audio input for speech recognition and understanding. I've not figured out a way to run audio input locally - I don't think that feature is in LM Studio or Ollama yet. I tried them out using the GGUFs for LM Studio. The 2B (4.41GB), 4B (6.33GB) and 26B-A4B (17.99GB) models all worked perfectly, but the 31B (19.89GB) model was broken and spat out "---\n" in a loop for every prompt I tried. The succession of pelican quality from 2B to 4B to 26B-A4B is notable: E2B: E4B: 26B-A4B: (This one actually had an SVG error - "error on line 18 at column 88: Attribute x1 redefined" - but after fixing that I got probably the best pelican I've seen yet from a model that runs on my laptop.) Google are providing API access to the two larger Gemma models via their AI Studio. I added support to llm-gemini and then ran a pelican through the 31B model using that: llm -m gemini/gemma-4-31b-it 'Generate an SVG of a pelican riding a bicycle' Pretty good, though it is missing the front part of the bicycle frame:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Gemma 4: The best small Multimodal Open Models, dramatically better than Gemma 3 in every way"
+    icon="newspaper"
+    href="/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
+  >
+    Swyx · explanation · 84% similar
+  </Card>
+  <Card
+    title="Gemini 3.1 Pro"
+    icon="newspaper"
+    href="/kb/articles/gemini-31-pro-d3069d40"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="[AINews] The Custom ASIC Thesis"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything](https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything).
+</Note>
