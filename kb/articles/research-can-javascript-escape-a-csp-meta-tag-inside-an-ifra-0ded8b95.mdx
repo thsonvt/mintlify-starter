@@ -1,0 +1,75 @@
+---
+title: 'Research: Can JavaScript Escape a CSP Meta Tag Inside an Iframe?'
+description: 'JavaScript in a sandboxed iframe cannot bypass a CSP meta tag, as confirmed by tests in Chromium and Firefox, ensuring CSP policies are enforced at pa'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-03'
+sourceUrl: 'https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything'
+topics: ["javascript","content-security-policy","iframes"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything) · 03/04/2026
+</Info>
+
+## Summary
+
+JavaScript in a sandboxed iframe cannot bypass a CSP meta tag, as confirmed by tests in Chromium and Firefox, ensuring CSP policies are enforced at parse time.
+
+## Key Insights
+
+> "CSP policies defined via meta tags are enforced at parse time."
+>
+> — Discussing the enforcement of CSP policies in iframes.
+
+> "You can inject &lt;meta http-equiv="Content-Security-Policy"> tags at the top of the iframe content."
+>
+> — Explaining how to apply CSP headers in sandboxed iframes.
+
+## Topics
+
+- [javascript](/kb/topics/javascript)
+- [content-security-policy](/kb/topics/content-security-policy)
+- [iframes](/kb/topics/iframes)
+
+---
+
+## Full Article
+
+Research Can JavaScript Escape a CSP Meta Tag Inside an Iframe? — JavaScript running inside a `sandbox="allow-scripts"` iframe cannot escape or disable a `&lt;meta http-equiv="Content-Security-Policy">` tag, even through removal, modification, or document replacement. Extensive testing across Chromium and Firefox confirmed that CSP policies defined via meta tags are enforced at parse time, and persist even when the iframe is navigated to a data: URI. In trying to build my own version of Claude Artifacts I got curious about options for applying CSP headers to content in sandboxed iframes without using a separate domain to host the files. Turns out you can inject &lt;meta http-equiv="Content-Security-Policy"...> tags at the top of the iframe content and they'll be obeyed even if subsequent untrusted JavaScript tries to manipulate them.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: JavaScript Sandboxing Research"
+    icon="newspaper"
+    href="/kb/articles/research-javascript-sandboxing-research-d8de17a0"
+  >
+    Simon Willison · explanation · 53% similar
+  </Card>
+  <Card
+    title="Snowflake Cortex AI Escapes Sandbox and Executes Malware"
+    icon="newspaper"
+    href="/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
+  >
+    Simon Willison · explanation · 43% similar
+  </Card>
+  <Card
+    title="Beyond permission prompts: making Claude Code more secure and autonomous"
+    icon="newspaper"
+    href="/kb/articles/beyond-permission-prompts-making-claude-code-more-secure-and-0558c7ed"
+  >
+    Anthropic Engineering · explanation · 42% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything](https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/#atom-everything).
+</Note>

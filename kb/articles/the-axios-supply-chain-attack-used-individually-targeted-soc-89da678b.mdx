@@ -1,0 +1,80 @@
+---
+title: 'The Axios supply chain attack used individually targeted social engineering'
+description: 'The Axios supply chain attack involved a sophisticated social engineering campaign that targeted a maintainer, leading to the installation of a Remote'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-03'
+sourceUrl: 'https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything'
+topics: ["supply-chain-attacks","social-engineering","malware","open-source-software"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything) · 03/04/2026
+</Info>
+
+## Summary
+
+The Axios supply chain attack involved a sophisticated social engineering campaign that targeted a maintainer, leading to the installation of a Remote Access Trojan.
+
+## Key Insights
+
+> "A RAT is a Remote Access Trojan—this was the software which stole the developer’s credentials."
+>
+> — Explaining the nature of the malware used in the attack.
+
+> "Everything was extremely well co-ordinated looked legit and was done in a professional manner."
+>
+> — Describing the execution of the social engineering attack.
+
+> "Every maintainer of open source software used by enough people to be worth taking in this way needs to be familiar with this attack strategy."
+>
+> — Highlighting the importance of awareness among open source maintainers.
+
+## Topics
+
+- [supply-chain-attacks](/kb/topics/supply-chain-attacks)
+- [social-engineering](/kb/topics/social-engineering)
+- [malware](/kb/topics/malware)
+- [open-source-software](/kb/topics/open-source-software)
+
+---
+
+## Full Article
+
+3rd April 2026 The Axios team have published a full postmortem on the supply chain attack which resulted in a malware dependency going out in a release the other day, and it involved a sophisticated social engineering campaign targeting one of their maintainers directly. Here’s Jason Saayman’a description of how that worked: so the attack vector mimics what google has documented here: https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering they tailored this process specifically to me by doing the following: they reached out masquerading as the founder of a company they had cloned the companys founders likeness as well as the company itself. they then invited me to a real slack workspace. this workspace was branded to the companies ci and named in a plausible manner. the slack was thought out very well, they had channels where they were sharing linked-in posts, the linked in posts i presume just went to the real companys account but it was super convincing etc. they even had what i presume were fake profiles of the team of the company but also number of other oss maintainers. they scheduled a meeting with me to connect. the meeting was on ms teams. the meeting had what seemed to be a group of people that were involved. the meeting said something on my system was out of date. i installed the missing item as i presumed it was something to do with teams, and this was the RAT. everything was extremely well co-ordinated looked legit and was done in a professional manner. A RAT is a Remote Access Trojan—this was the software which stole the developer’s credentials which could then be used to publish the malicious package. That’s a very effective scam. I join a lot of meetings where I find myself needing to install Webex or Microsoft Teams or similar at the last moment and the time constraint means I always click “yes” to things as quickly as possible to make sure I don’t join late. Every maintainer of open source software used by enough people to be worth taking in this way needs to be familiar with this attack strategy.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Supply Chain Attack on Axios Pulls Malicious Dependency from npm"
+    icon="newspaper"
+    href="/kb/articles/supply-chain-attack-on-axios-pulls-malicious-dependency-from-1521fdb4"
+  >
+    Simon Willison · explanation · 76% similar
+  </Card>
+  <Card
+    title="Clinejection — Compromising Cline’s Production Releases just by Prompting an Issue Triager"
+    icon="newspaper"
+    href="/kb/articles/clinejection-compromising-clines-production-releases-just-by-c5b36972"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="Snowflake Cortex AI Escapes Sandbox and Executes Malware"
+    icon="newspaper"
+    href="/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
+  >
+    Simon Willison · explanation · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything](https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-everything).
+</Note>

@@ -872,6 +872,10 @@
       "destination": "/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
     },
     {
+      "source": "/kb/articles/simon-willison-0ad9d874",
+      "destination": "/kb/articles/the-cognitive-impact-of-coding-agents-0ad9d874"
+    },
+    {
       "source": "/kb/articles/simon-willison-0b7f8147",
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
@@ -880,8 +884,16 @@
       "destination": "/kb/articles/a-quote-from-craig-mod-0bb24078"
     },
     {
+      "source": "/kb/articles/simon-willison-0ded8b95",
+      "destination": "/kb/articles/research-can-javascript-escape-a-csp-meta-tag-inside-an-ifra-0ded8b95"
+    },
+    {
       "source": "/kb/articles/simon-willison-0fa21631",
       "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
+    },
+    {
+      "source": "/kb/articles/simon-willison-11fce8fa",
+      "destination": "/kb/articles/a-quote-from-kyle-daigle-11fce8fa"
     },
     {
       "source": "/kb/articles/simon-willison-12f23a38",
@@ -1036,6 +1048,10 @@
       "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
     },
     {
+      "source": "/kb/articles/simon-willison-4f4fcb91",
+      "destination": "/kb/articles/a-quote-from-willy-tarreau-4f4fcb91"
+    },
+    {
       "source": "/kb/articles/simon-willison-4ff8e177",
       "destination": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177"
     },
@@ -1182,6 +1198,10 @@
     {
       "source": "/kb/articles/simon-willison-86aff01b",
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-89da678b",
+      "destination": "/kb/articles/the-axios-supply-chain-attack-used-individually-targeted-soc-89da678b"
     },
     {
       "source": "/kb/articles/simon-willison-8d6d3e47",
@@ -1372,6 +1392,10 @@
       "destination": "/kb/articles/using-git-with-coding-agents-agentic-engineering-patterns-c8601f50"
     },
     {
+      "source": "/kb/articles/simon-willison-c978e84a",
+      "destination": "/kb/articles/a-quote-from-greg-kroah-hartman-c978e84a"
+    },
+    {
       "source": "/kb/articles/simon-willison-ca44e59a",
       "destination": "/kb/articles/agentic-manual-testing-agentic-engineering-patterns-ca44e59a"
     },
@@ -1424,6 +1448,10 @@
       "destination": "/kb/articles/research-javascript-sandboxing-research-d8de17a0"
     },
     {
+      "source": "/kb/articles/simon-willison-d9d689f0",
+      "destination": "/kb/articles/vulnerability-research-is-cooked-d9d689f0"
+    },
+    {
       "source": "/kb/articles/simon-willison-da1b9f87",
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
     },
@@ -1446,6 +1474,10 @@
     {
       "source": "/kb/articles/simon-willison-de999191",
       "destination": "/kb/articles/auto-mode-for-claude-code-de999191"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e1df2f9a",
+      "destination": "/kb/articles/a-quote-from-daniel-stenberg-e1df2f9a"
     },
     {
       "source": "/kb/articles/simon-willison-e613c8df",
@@ -1620,6 +1652,10 @@
       "destination": "/kb/articles/ainews-a-quiet-april-fools-51fc7d31"
     },
     {
+      "source": "/kb/articles/swyx-52633382",
+      "destination": "/kb/articles/ainews-good-friday-52633382"
+    },
+    {
       "source": "/kb/articles/swyx-52976c37",
       "destination": "/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37"
     },
@@ -1730,6 +1766,10 @@
     {
       "source": "/kb/articles/swyx-a19b939a",
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+    },
+    {
+      "source": "/kb/articles/swyx-ad7f592a",
+      "destination": "/kb/articles/marc-andreessen-introspects-on-the-death-of-the-browser-pi-o-ad7f592a"
     },
     {
       "source": "/kb/articles/swyx-afdf8983",
