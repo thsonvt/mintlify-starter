@@ -1,0 +1,76 @@
+---
+title: 'Release: research-llm-apis 2026-04-04'
+description: 'Simon Willison announces a major update to his LLM Python library, enhancing its abstraction layer to accommodate new vendor features.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-05'
+sourceUrl: 'https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything'
+topics: ["llm","python-library","abstraction-layer","vendor-integration"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything) · 05/04/2026
+</Info>
+
+## Summary
+
+Simon Willison announces a major update to his LLM Python library, enhancing its abstraction layer to accommodate new vendor features.
+
+## Key Insights
+
+> "LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors."
+>
+> — Introduction to the LLM library's capabilities.
+
+> "To help design that new abstraction layer I had Claude Code read through the Python client libraries."
+>
+> — Description of the process used to improve the library.
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [python-library](/kb/topics/python-library)
+- [abstraction-layer](/kb/topics/abstraction-layer)
+- [vendor-integration](/kb/topics/vendor-integration)
+
+---
+
+## Full Article
+
+I'm working on a major change to my LLM Python library and CLI tool. LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors thanks to its plugin system, and some of those vendors have grown new features over the past year which LLM's abstraction layer can't handle, such as server-side tool execution. To help design that new abstraction layer I had Claude Code read through the Python client libraries for Anthropic, OpenAI, Gemini and Mistral and use those to help craft curl commands to access the raw JSON for both streaming and non-streaming modes across a range of different scenarios. Both the scripts and the captured outputs now live in this new repo.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-llm 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a3-5dea7f7c"
+  >
+    Simon Willison · reference · 63% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a4"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a4-cd0d8dfe"
+  >
+    Simon Willison · reference · 62% similar
+  </Card>
+  <Card
+    title="Release: datasette-enrichments-llm 0.2a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-enrichments-llm-02a0-e67b66fe"
+  >
+    Simon Willison · reference · 60% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything](https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything).
+</Note>

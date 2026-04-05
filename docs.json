@@ -812,6 +812,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d9593374",
+      "destination": "/kb/articles/-community-wisdom-evaluating-startup-equity-navigating-pre-s-d9593374"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-db8b7ca4",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
     },
@@ -1236,6 +1240,10 @@
       "destination": "/kb/articles/litellm-hack-were-you-one-of-the-47000-93420151"
     },
     {
+      "source": "/kb/articles/simon-willison-960458f7",
+      "destination": "/kb/articles/release-scan-for-secrets-02-960458f7"
+    },
+    {
       "source": "/kb/articles/simon-willison-969c5220",
       "destination": "/kb/articles/gemini-31-flash-lite-969c5220"
     },
@@ -1276,6 +1284,10 @@
       "destination": "/kb/articles/profiling-hacker-news-users-based-on-their-comments-9f31bc8e"
     },
     {
+      "source": "/kb/articles/simon-willison-a105fb98",
+      "destination": "/kb/articles/release-scan-for-secrets-011-a105fb98"
+    },
+    {
       "source": "/kb/articles/simon-willison-a1ad656f",
       "destination": "/kb/articles/introducing-gpt53codexspark-a1ad656f"
     },
@@ -1310,6 +1322,10 @@
     {
       "source": "/kb/articles/simon-willison-a90df1e1",
       "destination": "/kb/articles/release-llm-echo-04-a90df1e1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a9aa5256",
+      "destination": "/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
     },
     {
       "source": "/kb/articles/simon-willison-abf70e4c",
@@ -1474,6 +1490,10 @@
     {
       "source": "/kb/articles/simon-willison-de999191",
       "destination": "/kb/articles/auto-mode-for-claude-code-de999191"
+    },
+    {
+      "source": "/kb/articles/simon-willison-defae5d1",
+      "destination": "/kb/articles/release-scan-for-secrets-01-defae5d1"
     },
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
