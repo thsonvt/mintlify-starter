@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-ports 0.1'
+description: 'The release of datasette-ports 0.1 allows users to find all running Datasette instances and their ports, simplifying management of multiple instances.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-06'
+sourceUrl: 'https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything'
+topics: ["datasette","development","plugins"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything) · 06/04/2026
+</Info>
+
+## Summary
+
+The release of datasette-ports 0.1 allows users to find all running Datasette instances and their ports, simplifying management of multiple instances.
+
+## Key Insights
+
+> "I often find myself running a bunch of different Datasette instances with different databases and different in-development plugins."
+>
+> — Introduction to the problem the release addresses.
+
+> "Now I can run this: datasette install datasette-ports datasette ports."
+>
+> — Instructions on how to use the new feature.
+
+> "Get a list of every running instance that looks something like this."
+>
+> — Description of the output provided by the tool.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [development](/kb/topics/development)
+- [plugins](/kb/topics/plugins)
+
+---
+
+## Full Article
+
+Release datasette-ports 0.1 — Find all currently running Datasette instances and list their ports Another example of README-driven development, this time solving a problem that might be unique to me. I often find myself running a bunch of different Datasette instances with different databases and different in-development plugins, spreads across dozens of different terminal windows - enough that I frequently lose them! Now I can run this: datasette install datasette-ports datasette ports And get a list of every running instance that looks something like this: http://127.0.0.1:8333/ - v1.0a26 Databases: data Plugins: datasette-enrichments, datasette-enrichments-llm, datasette-llm, datasette-secrets http://127.0.0.1:8001/ - v1.0a26 Databases: creatures Plugins: datasette-extract, datasette-llm, datasette-secrets http://127.0.0.1:8900/ - v0.65.2 Databases: logs
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-ports 0.2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-ports-02-5810b898"
+  >
+    Simon Willison · reference · 82% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 58% similar
+  </Card>
+  <Card
+    title="Release: datasette-extract 0.3a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-extract-03a0-5c4dd7f1"
+  >
+    Simon Willison · reference · 56% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything](https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything).
+</Note>
