@@ -1,0 +1,80 @@
+---
+title: '🎙️ This week on How I AI: I gave Claude Code our entire codebase. Our customers noticed.'
+description: 'Al Chen discusses how he leverages Claude Code to enhance customer support by querying codebases and integrating documentation, improving response acc'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-04-06'
+sourceUrl: 'https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude'
+topics: ["ai-customer-support","code-querying","workflow-automation","knowledge-management"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude) · 06/04/2026
+</Info>
+
+## Summary
+
+Al Chen discusses how he leverages Claude Code to enhance customer support by querying codebases and integrating documentation, improving response accuracy and efficiency.
+
+## Key Insights
+
+> "Your code is better documentation than your docs."
+>
+> — Al's realization about the limitations of public documentation in answering detailed technical questions.
+
+> "Reduce engineering interruptions to near-zero by self-serving answers."
+>
+> — Al's approach to minimize reliance on engineering by directly querying the code.
+
+> "Compete on customer experience, not just product velocity."
+>
+> — Al's strategy to differentiate service quality through tailored customer documentation.
+
+## Topics
+
+- [ai-customer-support](/kb/topics/ai-customer-support)
+- [code-querying](/kb/topics/code-querying)
+- [workflow-automation](/kb/topics/workflow-automation)
+- [knowledge-management](/kb/topics/knowledge-management)
+
+---
+
+## Full Article
+
+I gave Claude Code our entire codebase. Our customers noticed. | Al Chen (Galileo)Listen now on YouTube Spotify Apple PodcastsBrought to you by:OrkesThe enterprise platform for reliable applications and agentic workflowsTinesStart building intelligent workflows todayAl Chen is a field engineer at Galileo who works directly with enterprise customers asking highly technical questions. In this episode, Claire talks with Al about how he uses Claude Code to query Galileos entire codebase across 15 repositories, combine it with Confluence and Slack, and deliver accurate, real-time answers without relying on documentation or constantly pinging engineering. They cover why code is often a better source of truth than docs, how to turn customer questions into scalable knowledge, and how AI is changing what customer-facing teams can do.Biggest takeaways:Write a script to pull the latest code from all repos dailyand let Claude Code write it. Al uses a 16-line script (written entirely by Claude Code) that pulls the latest main branch from all 15 repositories every morning. This ensures that hes always querying current code instead of outdated information, solving the docs are stale problem that plagues most technical support teams.Maintain a customer quirks page to make AI answers customer-specific. Al keeps a Confluence page listing each enterprise customers unique deployment requirements: how they handle secrets, namespaces, encryption, air-gapped environments. His Claude Code custom commands reference this page first, generating highly tailored deployment instructions instead of generic answers anyone could Google.Combine code repositories with Confluence MCP for maximum context. Als custom Claude Code commands first check Confluence for deployment documentation, then query the code repositories if needed. This multi-source approach means Claude Code pulls from official docs, tribal knowledge, and actual implementationdelivering answers no single source could provide.Your code is better documentation than your docs. Al realized public documentation couldnt answer his enterprise customers detailed technical questions. By pulling all 15 of Galileos repositories into VS Code and querying them with Claude Code, he can now answer questions about how services cascade together, how features actually work, and deployment specifics that arent captured anywhere else.Turn Slack support threads into knowledge base articles automatically. Using Pylon, Al converts detailed customer conversations into abstracted help articles with one click. These articles are more in-depth and current than official docs because theyre based on real customer questions and dont require the overhead of PR reviews and approval processes.Reduce engineering interruptions to near-zero by self-serving answers. Before this system, Al constantly pinged engineering with customer questions, creating frustration on both sides. Now he queries the code directly, only reaching out to validate answers or when Claude Code cant find information (usually because it exists only in meeting notes or hallway conversations).The human value-add is making AI answers sound human, and knowing when to validate. Al doesnt blindly copy-paste Claude Code responses. He proofreads everything, removes telltale AI phrases like in summary, condenses verbose answers to what customers actually need, and validates complex technical answers with engineering when he doesnt fully understand the implementation.Compete on customer experience, not just product velocity. Everyone uses AI to ship faster products. Al uses AI to show up differently in customer relationshipsdelivering custom deployment documentation that accounts for each customers specific security requirements and infrastructure constraints. This differentiation in service quality is harder to replicate than product features.Detailed workflow walkthroughs from this episode:How Al Chen Uses Claude Code and 15 Repos to Answer Any Customer Question: https://www.chatprd.ai/how-i-ai/claude-code-and-repos-to-answer-any-customer-questionAutomatically Create a Knowledge Base from Slack Support Threads: https://www.chatprd.ai/how-i-ai/workflows/automatically-create-a-knowledge-base-from-slack-support-threadsHow to Use AI to Answer Customer Questions from Your Entire Codebase: https://www.chatprd.ai/how-i-ai/workflows/how-to-use-ai-to-answer-customer-questions-from-your-entire-codebaseIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="I gave Claude Code our entire codebase. Our customers noticed. | Al Chen (Galileo)"
+    icon="newspaper"
+    href="/kb/articles/i-gave-claude-code-our-entire-codebase-our-customers-noticed-50777b43"
+  >
+    Lenny Rachitsky · how-to · 90% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: From Figma to Claude Code and back & From journalist to iOS developer"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-from-figma-to-claude-code-and-back-fr-5eff2998"
+  >
+    Lenny Rachitsky · how-to · 78% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How Notion’s design team uses Claude Code to design"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-notions-design-team-uses-claude-c-3a27394f"
+  >
+    Lenny Rachitsky · how-to · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude](https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-i-gave-claude).
+</Note>

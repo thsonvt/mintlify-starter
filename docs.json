@@ -692,6 +692,10 @@
       "destination": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-5062827b"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-50777b43",
+      "destination": "/kb/articles/i-gave-claude-code-our-entire-codebase-our-customers-noticed-50777b43"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-52ad310d",
       "destination": "/kb/articles/how-to-do-ai-analysis-you-can-actually-trust-52ad310d"
     },
@@ -706,6 +710,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-592e6048",
       "destination": "/kb/articles/the-art-of-influence-the-single-most-important-skill-that-ai-592e6048"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-5e88b276",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-i-gave-claude-code-our-entire-codebas-5e88b276"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-5e969a97",
@@ -1822,6 +1830,10 @@
     {
       "source": "/kb/articles/swyx-a19b939a",
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+    },
+    {
+      "source": "/kb/articles/swyx-aae99147",
+      "destination": "/kb/articles/ainews-gemma-4-crosses-2-million-downloads-aae99147"
     },
     {
       "source": "/kb/articles/swyx-ad7f592a",
