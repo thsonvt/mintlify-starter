@@ -1,0 +1,76 @@
+---
+title: 'Research: SQLite WAL Mode Across Docker Containers Sharing a Volume'
+description: 'The article explores SQLite''s WAL mode functionality across Docker containers sharing a volume, confirming effective concurrent access and memory shar'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-07'
+sourceUrl: 'https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything'
+topics: ["sqlite","docker","database","concurrency"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything) · 07/04/2026
+</Info>
+
+## Summary
+
+The article explores SQLite's WAL mode functionality across Docker containers sharing a volume, confirming effective concurrent access and memory sharing.
+
+## Key Insights
+
+> "SQLite’s WAL mode reliably supports concurrent access when two Docker containers share a volume on the same host."
+>
+> — Introduction to the experiment and its findings.
+
+> "The answer is that everything works fine - Docker containers on the same host and filesystem share the same shared memory."
+>
+> — Conclusion regarding the interaction of SQLite processes in Docker.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [docker](/kb/topics/docker)
+- [database](/kb/topics/database)
+- [concurrency](/kb/topics/concurrency)
+
+---
+
+## Full Article
+
+Research SQLite WAL Mode Across Docker Containers Sharing a Volume — SQLite’s WAL mode reliably supports concurrent access when two Docker containers share a volume on the same host, due to shared kernel and filesystem semantics. The experiment, using Docker Desktop for macOS and a named volume, demonstrated real-time propagation of database changes and effective memory-mapped file sharing by monitoring `.db-shm`. Inspired by this conversation on Hacker News about whether two SQLite processes in separate Docker containers that share the same volume might run into problems due to WAL shared memory. The answer is that everything works fine - Docker containers on the same host and filesystem share the same shared memory in a way that allows WAL to collaborate as it should.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="TIL: Running OpenClaw in Docker"
+    icon="newspaper"
+    href="/kb/articles/til-running-openclaw-in-docker-5a8c245b"
+  >
+    Simon Willison · how-to · 39% similar
+  </Card>
+  <Card
+    title="Production query plans without production data"
+    icon="newspaper"
+    href="/kb/articles/production-query-plans-without-production-data-7474b8be"
+  >
+    Simon Willison · explanation · 39% similar
+  </Card>
+  <Card
+    title="cysqlite - a new sqlite driver"
+    icon="newspaper"
+    href="/kb/articles/cysqlite-a-new-sqlite-driver-9cb198d9"
+  >
+    Simon Willison · explanation · 37% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything](https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything).
+</Note>

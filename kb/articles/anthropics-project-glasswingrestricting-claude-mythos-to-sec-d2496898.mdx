@@ -1,0 +1,80 @@
+---
+title: 'Anthropic’s Project Glasswing—restricting Claude Mythos to security researchers—sounds necessary to me'
+description: 'Anthropic''s Project Glasswing restricts access to its powerful AI model, Claude Mythos, to security researchers to address significant cybersecurity v'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-07'
+sourceUrl: 'https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything'
+topics: ["ai-security","cybersecurity","vulnerability-research","machine-learning"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) · 07/04/2026
+</Info>
+
+## Summary
+
+Anthropic's Project Glasswing restricts access to its powerful AI model, Claude Mythos, to security researchers to address significant cybersecurity vulnerabilities.
+
+## Key Insights
+
+> "Saying 'our model is too dangerous to release' is a great way to build buzz around a new model, but in this case I expect their caution is warranted."
+>
+> — Discussing the decision to limit access to Claude Mythos due to its capabilities.
+
+> "It has the ability to chain together vulnerabilities."
+>
+> — Nicholas Carlini explaining the advanced exploit capabilities of Claude Mythos.
+
+> "I’ve found more bugs in the last couple of weeks than I found in the rest of my life combined."
+>
+> — Nicholas Carlini reflecting on the effectiveness of using Claude Mythos for vulnerability detection.
+
+## Topics
+
+- [ai-security](/kb/topics/ai-security)
+- [cybersecurity](/kb/topics/cybersecurity)
+- [vulnerability-research](/kb/topics/vulnerability-research)
+- [machine-learning](/kb/topics/machine-learning)
+
+---
+
+## Full Article
+
+7th April 2026 Anthropic didn’t release their latest model, Claude Mythos (system card PDF), today. They have instead made it available to a very restricted set of preview partners under their newly announced Project Glasswing. The model is a general purpose model, similar to Claude Opus 4.6, but Anthropic claim that its cyber-security research abilities are strong enough that they need to give the software industry as a whole time to prepare. Mythos Preview has already found thousands of high-severity vulnerabilities, including some in every major operating system and web browser. Given the rate of AI progress, it will not be long before such capabilities proliferate, potentially beyond actors who are committed to deploying them safely. [...] Project Glasswing partners will receive access to Claude Mythos Preview to find and fix vulnerabilities or weaknesses in their foundational systems—systems that represent a very large portion of the world’s shared cyberattack surface. We anticipate this work will focus on tasks like local vulnerability detection, black box testing of binaries, securing endpoints, and penetration testing of systems. There’s a great deal more technical detail in Assessing Claude Mythos Preview’s cybersecurity capabilities on the Anthropic Red Team blog: In one case, Mythos Preview wrote a web browser exploit that chained together four vulnerabilities, writing a complex JIT heap spray that escaped both renderer and OS sandboxes. It autonomously obtained local privilege escalation exploits on Linux and other operating systems by exploiting subtle race conditions and KASLR-bypasses. And it autonomously wrote a remote code execution exploit on FreeBSD’s NFS server that granted full root access to unauthenticated users by splitting a 20-gadget ROP chain over multiple packets. Plus this comparison with Claude 4.6 Opus: Our internal evaluations showed that Opus 4.6 generally had a near-0% success rate at autonomous exploit development. But Mythos Preview is in a different league. For example, Opus 4.6 turned the vulnerabilities it had found in Mozilla’s Firefox 147 JavaScript engine—all patched in Firefox 148—into JavaScript shell exploits only two times out of several hundred attempts. We re-ran this experiment as a benchmark for Mythos Preview, which developed working exploits 181 times, and achieved register control on 29 more. Saying “our model is too dangerous to release” is a great way to build buzz around a new model, but in this case I expect their caution is warranted. Just a few days (last Friday) ago I started a new ai-security-research tag on this blog to acknowledge an uptick in credible security professionals pulling the alarm on how good modern LLMs have got at vulnerability research. Greg Kroah-Hartman of the Linux kernel: Months ago, we were getting what we called ’AI slop,’ AI-generated security reports that were obviously wrong or low quality. It was kind of funny. It didn’t really worry us. Something happened a month ago, and the world switched. Now we have real reports. All open source projects have real reports that are made with AI, but they’re good, and they’re real. Daniel Stenberg of curl: The challenge with AI in open source security has transitioned from an AI slop tsunami into more of a ... plain security report tsunami. Less slop but lots of reports. Many of them really good. I’m spending hours per day on this now. It’s intense. And Thomas Ptacek published Vulnerability Research Is Cooked, a post inspired by his podcast conversation with Anthropic’s Nicholas Carlini. Anthropic have a 5 minute talking heads video describing the Glasswing project. Nicholas Carlini appears as one of those talking heads, where he said (highlights mine): It has the ability to chain together vulnerabilities. So what this means is you find two vulnerabilities, either of which doesn’t really get you very much independently. But this model is able to create exploits out of three, four, or sometimes five vulnerabilities that in sequence give you some kind of very sophisticated end outcome. [...] I’ve found more bugs in the last couple of weeks than I found in the rest of my life combined. We’ve used the model to scan a bunch of open source code, and the thing that we went for first was operating systems, because this is the code that underlies the entire internet infrastructure. For OpenBSD, we found a bug that’s been present for 27 years, where I can send a couple of pieces of data to any OpenBSD server and crash it. On Linux, we found a number of vulnerabilities where as a user with no permissions, I can elevate myself to the administrator by just running some binary on my machine. For each of these bugs, we told the maintainers who actually run the software about them, and they went and fixed them and have deployed the patches patches so that anyone who runs the software is no longer vulnerable to these attacks. I found this on the OpenBSD 7.8 errata page: 025: RELIABILITY FIX: March 25, 2026 All architectures TCP packets with invalid SACK options could crash the kernel. A source code patch exists which remedies this problem. I tracked that change down in the GitHub mirror of the OpenBSD CVS repo (apparently they still use CVS!) and found it using git blame: Sure enough, the surrounding code is from 27 years ago. I’m not sure which Linux vulnerability Nicholas was describing, but it may have been this NFS one recently covered by Michael Lynch . There’s enough smoke here that I believe there’s a fire. It’s not surprising to find vulnerabilities in decades-old software, especially given that they’re mostly written in C, but what’s new is that coding agents run by the latest frontier LLMs are proving tirelessly capable at digging up these issues. I actually thought to myself on Friday that this sounded like an industry-wide reckoning in the making, and that it might warrant a huge investment of time and money to get ahead of the inevitable barrage of vulnerabilities. Project Glasswing incorporates “$100M in usage credits ... as well as $4M in direct donations to open-source security organizations”. Partners include AWS, Apple, Microsoft, Google, and the Linux Foundation. It would be great to see OpenAI involved as well—GPT-5.4 already has a strong reputation for finding security vulnerabilities and they have stronger models on the near horizon. The bad news for those of us who are not trusted partners is this: We do not plan to make Claude Mythos Preview generally available, but our eventual goal is to enable our users to safely deploy Mythos-class models at scale—for cybersecurity purposes, but also for the myriad other benefits that such highly capable models will bring. To do so, we need to make progress in developing cybersecurity (and other) safeguards that detect and block the model’s most dangerous outputs. We plan to launch new safeguards with an upcoming Claude Opus model, allowing us to improve and refine them with a model that does not pose the same level of risk as Mythos Preview. I can live with that. I think the security risks really are credible here, and having extra time for trusted teams to get ahead of them is a reasonable trade-off.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Anthropic @ $30B ARR, Project GlassWing and Claude Mythos Preview — first model too dangerous to release since GPT-2"
+    icon="newspaper"
+    href="/kb/articles/ainews-anthropic-30b-arr-project-glasswing-and-claude-mythos-ebdf1ec1"
+  >
+    Swyx · explanation · 81% similar
+  </Card>
+  <Card
+    title="Vulnerability Research Is Cooked"
+    icon="newspaper"
+    href="/kb/articles/vulnerability-research-is-cooked-d9d689f0"
+  >
+    Simon Willison · explanation · 70% similar
+  </Card>
+  <Card
+    title="[AINews] Anthropic accuses DeepSeek, Moonshot, and MiniMax of >16 million &quot;industrial-scale distillation attacks&quot;"
+    icon="newspaper"
+    href="/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything).
+</Note>
