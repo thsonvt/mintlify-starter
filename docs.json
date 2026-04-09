@@ -172,6 +172,10 @@
       "destination": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-77453e3a",
+      "destination": "/kb/articles/scaling-managed-agents-decoupling-the-brain-from-the-hands-77453e3a"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-a07c05eb",
       "destination": "/kb/articles/engineering-a07c05eb"
     },
@@ -756,6 +760,10 @@
       "destination": "/kb/articles/how-to-build-your-own-ai-developer-tools-with-claude-code-cj-72ada27f"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-72d57342",
+      "destination": "/kb/articles/i-built-a-custom-slack-inbox-it-was-easier-than-youd-think-y-72d57342"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7b6943e4",
       "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
     },
@@ -884,6 +892,10 @@
       "destination": "/kb/articles/the-complete-guide-889ad878"
     },
     {
+      "source": "/kb/articles/simon-willison-076a1a4a",
+      "destination": "/kb/articles/a-quote-from-giles-turnbull-076a1a4a"
+    },
+    {
       "source": "/kb/articles/simon-willison-08289a33",
       "destination": "/kb/articles/tool-syntaqlite-playground-08289a33"
     },
@@ -918,6 +930,10 @@
     {
       "source": "/kb/articles/simon-willison-0fa21631",
       "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
+    },
+    {
+      "source": "/kb/articles/simon-willison-103c10e6",
+      "destination": "/kb/articles/metas-new-model-is-muse-spark-and-metaai-chat-has-some-inter-103c10e6"
     },
     {
       "source": "/kb/articles/simon-willison-1046f7e6",
@@ -1662,6 +1678,10 @@
     {
       "source": "/kb/articles/swyx-126b8d87",
       "destination": "/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
+    },
+    {
+      "source": "/kb/articles/swyx-14e970f9",
+      "destination": "/kb/articles/ainews-meta-superintelligence-labs-announces-muse-spark-firs-14e970f9"
     },
     {
       "source": "/kb/articles/swyx-19c500da",
