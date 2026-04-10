@@ -1,0 +1,80 @@
+---
+title: 'Release: asgi-gzip 0.3'
+description: 'The release of asgi-gzip 0.3 addresses issues with gzip middleware for ASGI applications, ensuring proper handling of SSE responses.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-09'
+sourceUrl: 'https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything'
+topics: ["asgi","gzip","sse","datasette"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything) · 09/04/2026
+</Info>
+
+## Summary
+
+The release of asgi-gzip 0.3 addresses issues with gzip middleware for ASGI applications, ensuring proper handling of SSE responses.
+
+## Key Insights
+
+> "asgi-gzip was extracted from Starlette"
+>
+> — Discussing the origin of the asgi-gzip middleware.
+
+> "that action had stopped running and hence had missed Starlette's own fix for this issue"
+>
+> — Explaining the reason for the initial problem with the middleware.
+
+> "now datasette-gzip and asgi-gzip both correctly handle text/event-stream in SSE responses"
+>
+> — Highlighting the successful integration of the fix.
+
+## Topics
+
+- [asgi](/kb/topics/asgi)
+- [gzip](/kb/topics/gzip)
+- [sse](/kb/topics/sse)
+- [datasette](/kb/topics/datasette)
+
+---
+
+## Full Article
+
+Release asgi-gzip 0.3 — gzip middleware for ASGI applications, extracted from Starlette I ran into trouble deploying a new feature using SSE to a production Datasette instance, and it turned out that instance was using datasette-gzip which uses asgi-gzip which was incorrectly compressing event/text-stream responses. asgi-gzip was extracted from Starlette, and has a GitHub Actions scheduled workflow to check Starlette for updates that need to be ported to the library... but that action had stopped running and hence had missed Starlette's own fix for this issue. I ran the workflow and integrated the new fix, and now datasette-gzip and asgi-gzip both correctly handle text/event-stream in SSE responses.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: Starlette 1.0 skill"
+    icon="newspaper"
+    href="/kb/articles/research-starlette-10-skill-40a27698"
+  >
+    Simon Willison · tutorial · 48% similar
+  </Card>
+  <Card
+    title="Release: datasette-files-s3 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-s3-01a1-b451738f"
+  >
+    Simon Willison · reference · 46% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 45% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything](https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything).
+</Note>

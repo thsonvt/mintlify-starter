@@ -248,6 +248,10 @@
       "destination": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-4274d184",
+      "destination": "/kb/articles/how-we-run-a-25-person-company-on-four-ai-agents-4274d184"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-5c930a47",
       "destination": "/kb/articles/compound-engineering-camp-every-step-from-scratch--5c930a47"
     },
@@ -924,6 +928,10 @@
       "destination": "/kb/articles/a-quote-from-craig-mod-0bb24078"
     },
     {
+      "source": "/kb/articles/simon-willison-0bdc0534",
+      "destination": "/kb/articles/tool-github-repo-size-0bdc0534"
+    },
+    {
       "source": "/kb/articles/simon-willison-0ded8b95",
       "destination": "/kb/articles/research-can-javascript-escape-a-csp-meta-tag-inside-an-ifra-0ded8b95"
     },
@@ -1218,6 +1226,10 @@
     {
       "source": "/kb/articles/simon-willison-6cd83dcd",
       "destination": "/kb/articles/release-datasette-enrichments-llm-02a1-6cd83dcd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6e68bb8b",
+      "destination": "/kb/articles/release-asgi-gzip-03-6e68bb8b"
     },
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
