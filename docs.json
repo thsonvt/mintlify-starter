@@ -1444,6 +1444,10 @@
       "destination": "/kb/articles/release-datasette-files-s3-01a1-b451738f"
     },
     {
+      "source": "/kb/articles/simon-willison-b6226695",
+      "destination": "/kb/articles/chatgpt-voice-mode-is-a-weaker-model-b6226695"
+    },
+    {
       "source": "/kb/articles/simon-willison-b75e7d12",
       "destination": "/kb/articles/a-quote-from-ally-piechowski-b75e7d12"
     },
@@ -1602,6 +1606,10 @@
     {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
       "destination": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e9f08cfc",
+      "destination": "/kb/articles/kkp-parrots-e9f08cfc"
     },
     {
       "source": "/kb/articles/simon-willison-ea3d9c15",
@@ -1882,6 +1890,10 @@
     {
       "source": "/kb/articles/swyx-9ef5fd46",
       "destination": "/kb/articles/ainews-is-harness-engineering-real-9ef5fd46"
+    },
+    {
+      "source": "/kb/articles/swyx-a18b69ac",
+      "destination": "/kb/articles/ainews-ai-engineer-europe-2026-a18b69ac"
     },
     {
       "source": "/kb/articles/swyx-a19b939a",
