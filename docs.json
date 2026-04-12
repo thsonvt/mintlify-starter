@@ -636,6 +636,10 @@
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-16ada60d",
+      "destination": "/kb/articles/-community-wisdom-vibe-coding-as-a-team-sport-teaching-inter-16ada60d"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1bd8b063",
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-1bd8b063"
     },
@@ -960,6 +964,10 @@
       "destination": "/kb/articles/coding-after-coders-the-end-of-computer-programming-as-we-kn-1364a25f"
     },
     {
+      "source": "/kb/articles/simon-willison-13f0f387",
+      "destination": "/kb/articles/sqlite-3530-13f0f387"
+    },
+    {
       "source": "/kb/articles/simon-willison-1521fdb4",
       "destination": "/kb/articles/supply-chain-attack-on-axios-pulls-malicious-dependency-from-1521fdb4"
     },
@@ -1130,6 +1138,10 @@
     {
       "source": "/kb/articles/simon-willison-548dc4c0",
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-56f579fb",
+      "destination": "/kb/articles/tool-sqlite-query-result-formatter-demo-56f579fb"
     },
     {
       "source": "/kb/articles/simon-willison-57346664",
