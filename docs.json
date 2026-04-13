@@ -796,6 +796,10 @@
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8c3047ad",
+      "destination": "/kb/articles/hard-truths-about-building-in-the-ai-era-keith-rabois-khosla-8c3047ad"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9005bf61",
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-9005bf61"
     },
@@ -1472,6 +1476,10 @@
       "destination": "/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
     },
     {
+      "source": "/kb/articles/simon-willison-bdef2945",
+      "destination": "/kb/articles/gemma-4-audio-with-mlx-bdef2945"
+    },
+    {
       "source": "/kb/articles/simon-willison-c04f7376",
       "destination": "/kb/articles/google-api-keys-werent-secrets-but-then-gemini-changed-the-r-c04f7376"
     },
@@ -1618,6 +1626,10 @@
     {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
       "destination": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e92548ee",
+      "destination": "/kb/articles/a-quote-from-bryan-cantrill-e92548ee"
     },
     {
       "source": "/kb/articles/simon-willison-e9f08cfc",

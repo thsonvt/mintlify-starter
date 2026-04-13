@@ -1,0 +1,76 @@
+---
+title: 'Gemma 4 audio with MLX'
+description: 'The article provides a recipe for transcribing audio files on macOS using the Gemma 4 E2B model with MLX, showcasing its capabilities with a practical'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-12'
+sourceUrl: 'https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything'
+topics: ["audio-transcription","machine-learning","gemma-4","macos"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything) · 12/04/2026
+</Info>
+
+## Summary
+
+The article provides a recipe for transcribing audio files on macOS using the Gemma 4 E2B model with MLX, showcasing its capabilities with a practical example.
+
+## Key Insights
+
+> "I want to try it out with MLX VLM."
+>
+> — The author expresses their intention to test the transcription capabilities of Gemma 4.
+
+> "I can hear why it misinterpreted that as 'front' and 'how that works'."
+>
+> — The author reflects on the accuracy of the transcription output.
+
+## Topics
+
+- [audio-transcription](/kb/topics/audio-transcription)
+- [machine-learning](/kb/topics/machine-learning)
+- [gemma-4](/kb/topics/gemma-4)
+- [macos](/kb/topics/macos)
+
+---
+
+## Full Article
+
+12th April 2026 Thanks to a tip from Rahim Nathwani, here's a uv run recipe for transcribing an audio file on macOS using the 10.28 GB Gemma 4 E2B model with MLX and mlx-vlm: uv run --python 3.13 --with mlx_vlm --with torchvision --with gradio \ mlx_vlm.generate \ --model google/gemma-4-e2b-it \ --audio file.wav \ --prompt "Transcribe this audio" \ --max-tokens 500 \ --temperature 1.0 Your browser does not support the audio element. I tried it on this 14 second .wav file and it output the following: This front here is a quick voice memo. I want to try it out with MLX VLM. Just going to see if it can be transcribed by Gemma and how that works. (That was supposed to be "This right here..." and "... how well that works" but I can hear why it misinterpreted that as "front" and "how that works".)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Gemma 4: Byte for byte, the most capable open models"
+    icon="newspaper"
+    href="/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
+  >
+    Simon Willison · explanation · 61% similar
+  </Card>
+  <Card
+    title="[AINews] Gemma 4: The best small Multimodal Open Models, dramatically better than Gemma 3 in every way"
+    icon="newspaper"
+    href="/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
+  >
+    Swyx · explanation · 56% similar
+  </Card>
+  <Card
+    title="Google AI Edge Gallery"
+    icon="newspaper"
+    href="/kb/articles/google-ai-edge-gallery-1046f7e6"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything](https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything).
+</Note>
