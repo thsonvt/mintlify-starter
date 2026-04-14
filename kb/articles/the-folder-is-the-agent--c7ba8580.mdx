@@ -1,0 +1,79 @@
+---
+title: 'The Folder Is the Agent '
+description: 'Dan Shipper discusses the concept of using project folders as agents in AI workflows, emphasizing the importance of context in enhancing AI performanc'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-04-13'
+sourceUrl: 'https://every.to/source-code/the-folder-is-the-agent'
+topics: ["ai-agents","compound-engineering","workflow-automation"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/the-folder-is-the-agent) · 13/04/2026
+</Info>
+
+## Summary
+
+Dan Shipper discusses the concept of using project folders as agents in AI workflows, emphasizing the importance of context in enhancing AI performance.
+
+## Key Insights
+
+> "AI agents don’t have a speed limit, but the person managing them still does."
+>
+> — Reflecting on the challenges of managing multiple AI agents.
+
+> "Just by pointing the model at this folder, which contains some of my personality, knowledge, and taste, the model can be a specialist in my codebase."
+>
+> — Explaining how project folders can enhance AI specialization.
+
+> "A project folder with a CLAUDE.md/AGENT.md...that’s an agent."
+>
+> — Defining what constitutes an agent in the context of AI workflows.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [compound-engineering](/kb/topics/compound-engineering)
+- [workflow-automation](/kb/topics/workflow-automation)
+
+---
+
+## Full Article
+
+by Kieran Klaassenin Source CodeMidjourney/Every illustration.On Friday, April 17, Cora general manager Kieran Klaassen will lead a camp for Every paid subscribers on compound engineering, the AI-native engineering philosophy that he built and that has more than 14,000 stars on GitHub. Since the last camp, Kieran and product leader Trevin Chow have built out product-focused workflows to make the methodology as valuable for product managers and founders as it is for engineers. In this camp, they’ll walk you through what’s new, go deeper on the brainstorm and ideate steps, and share examples of using compound engineering beyond engineering work. Read the full compound engineering guide, install the plugin, and join us for the camp.—Kate Lee I spent three months trying to make agent swarms work.The idea of multiplying myself by coordinating multiple agents at the same time was a compelling pitch as the sole engineer building Every’s AI email assistant, Cora. If I could summon a fleet of AI agents, let them coordinate, and watch them produce work no single agent could match, it would relieve some of my overwhelm. I tried everything to make it work—Claude Code teams, agents dispatching tasks to other agents, orchestration setups where a lead agent managed a pool of workers. Many iterations, many burned tokens.But more agents didn’t make me faster. I’ve run parallel Claude Code sessions for months, which works when each agent has a clear task, and I’m directing the work. The swarm experiment was different: agents coordinating with each other, deciding what to work on, producing output I hadn’t shaped. When 10 of them finished simultaneously, I had 10 results to evaluate without enough context to know which ones I could trust. AI agents don’t have a speed limit, but the person managing them still does.I kept looking for a smarter orchestration layer—a better protocol or a tighter framework that would filter the output and tell me which result to trust. Then I stopped and looked at what was really doing the work.It was something I already had—a folder.A project folder with a CLAUDE.md/AGENT.md (the file that tells an AI how to work in your project), some skill definitions, and context accumulated through months of compound engineering—that’s an agent. The context that this folder gives an AI model makes the generalized model a specialist in whatever task or field you want it to excel in. I’m running 44 of these folders-as-agents across multiple projects now. Each one runs inside a specialized folder I’ve built and tested over months, and a dispatch layer I built on top does the routing between them. Here’s how it works. The agents hiding on your hard drivePeople hear “agent” and picture a Rube Goldberg machine—dozens of comically complex moving parts, each one triggering the next. But an agent is much simpler: a model with enough context so you don’t have to re-explain everything each time you open the chat. Here’s an example: All of Cora’s code lives in a project folder in the Every organization on GitHub. When I open that folder with Claude, Claude can see the code and the structure. But it doesn’t know my way of working or what I care about, which is why the folder also includes a CLAUDE.md file. The file tells Claude how I name things and how I structure tests. That’s an agent—not a fancy one, but an agent nonetheless. Just by pointing the model at this folder, which contains some of my personality, knowledge, and taste, the model can be a specialist in my codebase. Claude Skills—files that give the model specific capabilities—are an example of this “folder as agent” structure. Before anyone called them “skills,” people were already writing markdown files full of instructions and dropping them into project directories. My ~/cora/ folder goes further: Become a paid subscriber to Every to unlock this piece and learn about:How Kieran structures a CLAUDE.md file so any new agent inherits months of institutional knowledgeHow Kieran built a two-command dispatch layer that replaced 20 open tabs The four-step sequence Kieran follows before handing any agent off to automationSubscribeClick here to read the full postWant the full text of all articles in RSS? Become a subscriber, or learn more.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Building agents with the Claude Agent SDK"
+    icon="newspaper"
+    href="/kb/articles/building-agents-with-the-claude-agent-sdk-b51d03eb"
+  >
+    Anthropic Engineering · tutorial · 76% similar
+  </Card>
+  <Card
+    title="OpenClaw: Setting Up Your First Personal AI Agent "
+    icon="newspaper"
+    href="/kb/articles/openclaw-setting-up-your-first-personal-ai-agent--c7feafca"
+  >
+    Dan Shipper (Every) · how-to · 75% similar
+  </Card>
+  <Card
+    title="Equipping agents for the real world with Agent Skills"
+    icon="newspaper"
+    href="/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+  >
+    Anthropic Engineering · explanation · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/the-folder-is-the-agent](https://every.to/source-code/the-folder-is-the-agent).
+</Note>

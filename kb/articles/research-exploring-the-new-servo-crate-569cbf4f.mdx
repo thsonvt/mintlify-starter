@@ -1,0 +1,79 @@
+---
+title: 'Research: Exploring the new `servo` crate'
+description: 'The article explores the new `servo` crate, an embeddable browser engine for Rust, highlighting its features and capabilities, including a CLI tool fo'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-13'
+sourceUrl: 'https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything'
+topics: ["rust","browser-engine","embeddable-libraries"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything) · 13/04/2026
+</Info>
+
+## Summary
+
+The article explores the new `servo` crate, an embeddable browser engine for Rust, highlighting its features and capabilities, including a CLI tool for screenshots.
+
+## Key Insights
+
+> "Servo is now an embeddable browser engine for Rust."
+>
+> — Introduction to the capabilities of the servo crate.
+
+> "Compiling Servo itself to WebAssembly is not feasible due to its heavy use of threads."
+>
+> — Discussion on the limitations of compiling Servo to WebAssembly.
+
+> "The servo-shot Rust tool it built works pretty well."
+>
+> — Evaluation of the CLI tool developed using the servo crate.
+
+## Topics
+
+- [rust](/kb/topics/rust)
+- [browser-engine](/kb/topics/browser-engine)
+- [embeddable-libraries](/kb/topics/embeddable-libraries)
+
+---
+
+## Full Article
+
+Research Exploring the new `servo` crate — After the April 2026 release of the `servo` v0.1.0 crate (blog post), a concise investigation shows that Servo is now an embeddable browser engine for Rust, with a clear API centered on the `ServoBuilder`, `WebView`, and pixel readback methods. A headless CLI (`servo-shot`) successfully renders URLs or HTML files to PNG, building against stable Rust with a robust software-based rendering pipeline. In Servo is now available on crates.io the Servo team announced the initial release of the servo crate, which packages their browser engine as an embeddable library. I set Claude Code for web the task of figuring out what it can do, building a CLI tool for taking screenshots using it and working out if it could be compiled to WebAssembly. The servo-shot Rust tool it built works pretty well: git clone https://github.com/simonw/research cd research/servo-crate-exploration/servo-shot cargo build ./target/debug/servo-shot https://news.ycombinator.com/ Here's the result: Compiling Servo itself to WebAssembly is not feasible due to its heavy use of threads and dependencies like SpiderMonkey, but Claude did build me this playground page for trying out a WebAssembly build of the html5ever and markup5ever_rcdom crates, providing a tool for turning fragments of HTML into a parse tree.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Meta’s new model is Muse Spark, and meta.ai chat has some interesting tools"
+    icon="newspaper"
+    href="/kb/articles/metas-new-model-is-muse-spark-and-metaai-chat-has-some-inter-103c10e6"
+  >
+    Simon Willison · explanation · 50% similar
+  </Card>
+  <Card
+    title="Ladybird adopts Rust, with help from AI"
+    icon="newspaper"
+    href="/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
+  >
+    Simon Willison · explanation · 49% similar
+  </Card>
+  <Card
+    title="GIF optimization tool using WebAssembly and Gifsicle - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+  >
+    Simon Willison · how-to · 47% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything](https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything).
+</Note>

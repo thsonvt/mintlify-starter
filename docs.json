@@ -288,6 +288,10 @@
       "destination": "/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-c7ba8580",
+      "destination": "/kb/articles/the-folder-is-the-agent--c7ba8580"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-c7feafca",
       "destination": "/kb/articles/openclaw-setting-up-your-first-personal-ai-agent--c7feafca"
     },
@@ -868,12 +872,20 @@
       "destination": "/kb/articles/-community-wisdom-building-your-tech-stack-from-scratch-surv-e1909e93"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e738f292",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-claude-cowork-tutorial-for-non-engine-e738f292"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-e8c2b227",
       "destination": "/kb/articles/a-visual-guide-to-getting-out-of-a-creative-slump-e8c2b227"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-ef971a3b",
       "destination": "/kb/articles/how-i-built-a-1m-subscriber-newsletter-and-top-10-tech-podca-ef971a3b"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-efdaeae9",
+      "destination": "/kb/articles/claude-cowork-101-how-to-automate-your-workday-without-touch-efdaeae9"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-f91edd89",
@@ -1142,6 +1154,10 @@
     {
       "source": "/kb/articles/simon-willison-548dc4c0",
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-569cbf4f",
+      "destination": "/kb/articles/research-exploring-the-new-servo-crate-569cbf4f"
     },
     {
       "source": "/kb/articles/simon-willison-56f579fb",
@@ -1426,6 +1442,10 @@
     {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ad81f1a9",
+      "destination": "/kb/articles/steve-yegge-ad81f1a9"
     },
     {
       "source": "/kb/articles/simon-willison-ae4f0509",
