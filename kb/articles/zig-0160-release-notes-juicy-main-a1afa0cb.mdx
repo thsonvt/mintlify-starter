@@ -1,0 +1,80 @@
+---
+title: 'Zig 0.16.0 release notes: “Juicy Main”'
+description: 'The Zig 0.16.0 release introduces ''Juicy Main'', a dependency injection feature for the main() function, enhancing program structure and access to usef'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-15'
+sourceUrl: 'https://simonwillison.net/2026/Apr/15/juicy-main/#atom-everything'
+topics: ["zig","release-notes","programming","dependency-injection"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/15/juicy-main/#atom-everything) · 15/04/2026
+</Info>
+
+## Summary
+
+The Zig 0.16.0 release introduces 'Juicy Main', a dependency injection feature for the main() function, enhancing program structure and access to useful properties.
+
+## Key Insights
+
+> "Zig has really good release notes - comprehensive, detailed, and with relevant usage examples for each of the new features."
+>
+> — Introduction to the release notes
+
+> "'Juicy Main' - a dependency injection feature for your program's main() function."
+>
+> — Highlighting the main feature of the release
+
+> "access to environment variables: std.log.info('&#123;d&#125; env vars', .&#123;init.environ_map.count()&#125;);"
+>
+> — Example of usage in the new feature
+
+## Topics
+
+- [zig](/kb/topics/zig)
+- [release-notes](/kb/topics/release-notes)
+- [programming](/kb/topics/programming)
+- [dependency-injection](/kb/topics/dependency-injection)
+
+---
+
+## Full Article
+
+15th April 2026 - Link Blog Zig 0.16.0 release notes: "Juicy Main" (via) Zig has really good release notes - comprehensive, detailed, and with relevant usage examples for each of the new features. Of particular note in the newly released Zig 0.16.0 is what they are calling "Juicy Main" - a dependency injection feature for your program's main() function where accepting a process.Init parameter grants access to a struct of useful properties: const std = @import("std"); pub fn main(init: std.process.Init) !void &#123; /// general purpose allocator for temporary heap allocations: const gpa = init.gpa; /// default Io implementation: const io = init.io; /// access to environment variables: std.log.info("&#123;d&#125; env vars", .&#123;init.environ_map.count()&#125;); /// access to CLI arguments const args = try init.minimal.args.toSlice( init.arena.allocator() ); &#125;
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Everything is CLI"
+    icon="newspaper"
+    href="/kb/articles/ainews-everything-is-cli-3b7375ca"
+  >
+    Swyx · explanation · 43% similar
+  </Card>
+  <Card
+    title="Ladybird adopts Rust, with help from AI"
+    icon="newspaper"
+    href="/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
+  >
+    Simon Willison · explanation · 42% similar
+  </Card>
+  <Card
+    title="[AINews] The Unreasonable Effectiveness of Closing the Loop"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0"
+  >
+    Swyx · explanation · 42% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/15/juicy-main/#atom-everything](https://simonwillison.net/2026/Apr/15/juicy-main/#atom-everything).
+</Note>

@@ -1,0 +1,80 @@
+---
+title: 'datasette PR #2689: Replace token-based CSRF with Sec-Fetch-Site header protection'
+description: 'The article discusses the replacement of token-based CSRF protection in Datasette with Sec-Fetch-Site header protection, streamlining the process and '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-14'
+sourceUrl: 'https://simonwillison.net/2026/Apr/14/replace-token-based-csrf/#atom-everything'
+topics: ["csrf-protection","datasette","security","software-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/14/replace-token-based-csrf/#atom-everything) · 14/04/2026
+</Info>
+
+## Summary
+
+The article discusses the replacement of token-based CSRF protection in Datasette with Sec-Fetch-Site header protection, streamlining the process and enhancing security.
+
+## Key Insights
+
+> "Datasette has long protected against CSRF attacks using CSRF tokens."
+>
+> — Introduction to the previous method of CSRF protection.
+
+> "New CSRF protection middleware inspired by Go 1.25."
+>
+> — Description of the new approach to CSRF protection.
+
+> "Removes all instances of &lt;input type="hidden" name="csrftoken" value="&#123;&#123; csrftoken() &#125;&#125;"> in the templates."
+>
+> — Details on the changes made to the template structure.
+
+## Topics
+
+- [csrf-protection](/kb/topics/csrf-protection)
+- [datasette](/kb/topics/datasette)
+- [security](/kb/topics/security)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+14th April 2026 - Link Blog datasette PR #2689: Replace token-based CSRF with Sec-Fetch-Site header protection. Datasette has long protected against CSRF attacks using CSRF tokens, implemented using my asgi-csrf Python library. These are something of a pain to work with - you need to scatter forms in templates with &lt;input type="hidden" name="csrftoken" value="&#123;&#123; csrftoken() &#125;&#125;"> lines and then selectively disable CSRF protection for APIs that are intended to be called from outside the browser. I've been following Filippo Valsorda's research here with interest, described in this detailed essay from August 2025 and shipped as part of Go 1.25 that same month. I've now landed the same change in Datasette. Here's the PR description - Claude Code did much of the work (across 10 commits, closely guided by me and cross-reviewed by GPT-5.4) but I've decided to start writing these PR descriptions by hand, partly to make them more concise and also as an exercise in keeping myself honest. New CSRF protection middleware inspired by Go 1.25 and this research by Filippo Valsorda. This replaces the old CSRF token based protection. Removes all instances of &lt;input type="hidden" name="csrftoken" value="&#123;&#123; csrftoken() &#125;&#125;"> in the templates - they are no longer needed. Removes the def skip_csrf(datasette, scope): plugin hook defined in datasette/hookspecs.py and its documentation and tests. Updated CSRF protection documentation to describe the new approach. Upgrade guide now describes the CSRF change.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 48% similar
+  </Card>
+  <Card
+    title="Release: datasette-files-s3 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-s3-01a1-b451738f"
+  >
+    Simon Willison · reference · 47% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a3-57346664"
+  >
+    Simon Willison · reference · 46% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/14/replace-token-based-csrf/#atom-everything](https://simonwillison.net/2026/Apr/14/replace-token-based-csrf/#atom-everything).
+</Note>

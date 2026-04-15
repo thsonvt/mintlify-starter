@@ -844,6 +844,10 @@
       "destination": "/kb/articles/anthropics-1b-to-19b-growth-run-how-claude-became-the-fastes-c632ad0c"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-c72610e3",
+      "destination": "/kb/articles/listen-not-all-ai-agents-are-created-equal-c72610e3"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d16a3274",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
     },
@@ -866,6 +870,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-de9d49c7",
       "destination": "/kb/articles/-community-wisdom-getting-a-skeptical-cto-to-adopt-ai-coding-de9d49c7"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-e090fefd",
+      "destination": "/kb/articles/not-all-ai-agents-are-created-equal-e090fefd"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-e1909e93",
@@ -1400,6 +1408,10 @@
       "destination": "/kb/articles/introducing-gpt53codexspark-a1ad656f"
     },
     {
+      "source": "/kb/articles/simon-willison-a1afa0cb",
+      "destination": "/kb/articles/zig-0160-release-notes-juicy-main-a1afa0cb"
+    },
+    {
       "source": "/kb/articles/simon-willison-a24024f2",
       "destination": "/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
     },
@@ -1428,12 +1440,20 @@
       "destination": "/kb/articles/my-minute-by-minute-response-to-the-litellm-malware-attack-a6fab7d7"
     },
     {
+      "source": "/kb/articles/simon-willison-a7faa917",
+      "destination": "/kb/articles/cybersecurity-looks-like-proof-of-work-now-a7faa917"
+    },
+    {
       "source": "/kb/articles/simon-willison-a90df1e1",
       "destination": "/kb/articles/release-llm-echo-04-a90df1e1"
     },
     {
       "source": "/kb/articles/simon-willison-a9aa5256",
       "destination": "/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ab91a6fb",
+      "destination": "/kb/articles/trusted-access-for-the-next-era-of-cyber-defense-ab91a6fb"
     },
     {
       "source": "/kb/articles/simon-willison-abf70e4c",
@@ -1716,6 +1736,10 @@
       "destination": "/kb/articles/a-quote-from-richard-fontana-fe678ac4"
     },
     {
+      "source": "/kb/articles/simon-willison-febc892b",
+      "destination": "/kb/articles/datasette-pr-2689-replace-token-based-csrf-with-sec-fetch-si-febc892b"
+    },
+    {
       "source": "/kb/articles/swyx-02e6b89f",
       "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
     },
@@ -1776,6 +1800,10 @@
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
     {
+      "source": "/kb/articles/swyx-2e52dbf3",
+      "destination": "/kb/articles/ainews-top-local-models-list-april-2026-2e52dbf3"
+    },
+    {
       "source": "/kb/articles/swyx-33fd2c03",
       "destination": "/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
     },
@@ -1830,6 +1858,10 @@
     {
       "source": "/kb/articles/swyx-52976c37",
       "destination": "/kb/articles/ainews-gemini-31-pro-2x-30-on-arc-agi-2-52976c37"
+    },
+    {
+      "source": "/kb/articles/swyx-532e0dfd",
+      "destination": "/kb/articles/notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the--532e0dfd"
     },
     {
       "source": "/kb/articles/swyx-5acd0fdd",
@@ -2026,6 +2058,10 @@
     {
       "source": "/kb/articles/swyx-fda49f6c",
       "destination": "/kb/articles/retrieval-after-rag-hybrid-search-agents-and-database-design-fda49f6c"
+    },
+    {
+      "source": "/kb/articles/swyx-fec8efc9",
+      "destination": "/kb/articles/ainews-humanitys-last-gasp-fec8efc9"
     },
     {
       "source": "/kb/articles/swyx-fec98cbc",
