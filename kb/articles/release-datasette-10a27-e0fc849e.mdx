@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette 1.0a27'
+description: 'The release of datasette 1.0a27 introduces significant changes, including the removal of Django-style CSRF tokens and the addition of a RenameTableEve'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-15'
+sourceUrl: 'https://simonwillison.net/2026/Apr/15/datasette/#atom-everything'
+topics: ["open-source","data-exploration","sqlite"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/15/datasette/#atom-everything) · 15/04/2026
+</Info>
+
+## Summary
+
+The release of datasette 1.0a27 introduces significant changes, including the removal of Django-style CSRF tokens and the addition of a RenameTableEvent for renamed tables.
+
+## Key Insights
+
+> "Datasette no longer uses Django-style CSRF form tokens, instead using modern browser headers."
+>
+> — Discussing a major change in the new release.
+
+> "Datasette now fires a new RenameTableEvent any time a table is renamed during a SQLite transaction."
+>
+> — Highlighting the functionality added for handling renamed tables.
+
+> "The /&lt;database>/&lt;table>/-/upsert API now rejects rows with null primary key values."
+>
+> — Detailing an improvement in the API functionality.
+
+## Topics
+
+- [open-source](/kb/topics/open-source)
+- [data-exploration](/kb/topics/data-exploration)
+- [sqlite](/kb/topics/sqlite)
+
+---
+
+## Full Article
+
+Release datasette 1.0a27 — An open source multi-tool for exploring and publishing data Two major changes in this new Datasette alpha. I covered the first of those in detail yesterday - Datasette no longer uses Django-style CSRF form tokens, instead using modern browser headers as described by Filippo Valsorda. The second big change is that Datasette now fires a new RenameTableEvent any time a table is renamed during a SQLite transaction. This is useful because some plugins (like datasette-comments) attach additional data to table records by name, so a renamed table requires them to react in appropriate ways. Here are the rest of the changes in the alpha: New actor= parameter for datasette.client methods, allowing internal requests to be made as a specific actor. This is particularly useful for writing automated tests. (#2688) New Database(is_temp_disk=True) option, used internally for the internal database. This helps resolve intermittent database locked errors caused by the internal database being in-memory as opposed to on-disk. (#2683) (#2684) The /&lt;database>/&lt;table>/-/upsert API (docs) now rejects rows with null primary key values. (#1936) Improved example in the API explorer for the /-/upsert endpoint (docs). (#1936) The /&lt;database>.json endpoint now includes an "ok": true key, for consistency with other JSON API responses. call_with_supported_arguments() is now documented as a supported public API. (#2678)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="Release: datasette-export-database 0.3a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-export-database-03a1-b7122ac5"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a3-57346664"
+  >
+    Simon Willison · reference · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/15/datasette/#atom-everything](https://simonwillison.net/2026/Apr/15/datasette/#atom-everything).
+</Note>

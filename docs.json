@@ -304,6 +304,10 @@
       "destination": "/kb/articles/you-have-a-claw-now-what-d442d89a"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-d5d2f0e4",
+      "destination": "/kb/articles/mini-vibe-check-claude-managed-agents-handle-the-infrastruct-d5d2f0e4"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-e8afce40",
       "destination": "/kb/articles/openai-gave-us-a-glimpse-into-their-ai-coding-playbook-e8afce40"
     },
@@ -1024,6 +1028,10 @@
       "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
     },
     {
+      "source": "/kb/articles/simon-willison-1f3b8622",
+      "destination": "/kb/articles/a-quote-from-john-gruber-1f3b8622"
+    },
+    {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
@@ -1106,6 +1114,10 @@
     {
       "source": "/kb/articles/simon-willison-40a27698",
       "destination": "/kb/articles/research-starlette-10-skill-40a27698"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4119b526",
+      "destination": "/kb/articles/tool-datasetteio-news-preview-4119b526"
     },
     {
       "source": "/kb/articles/simon-willison-417198d8",
@@ -1250,6 +1262,10 @@
     {
       "source": "/kb/articles/simon-willison-68c4826d",
       "destination": "/kb/articles/release-llm-all-models-async-01-68c4826d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-69e1867f",
+      "destination": "/kb/articles/tool-gemini-31-flash-tts-69e1867f"
     },
     {
       "source": "/kb/articles/simon-willison-6a6efa1a",
@@ -1464,6 +1480,10 @@
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
     {
+      "source": "/kb/articles/simon-willison-ad22c932",
+      "destination": "/kb/articles/release-datasette-ports-03-ad22c932"
+    },
+    {
       "source": "/kb/articles/simon-willison-ad81f1a9",
       "destination": "/kb/articles/steve-yegge-ad81f1a9"
     },
@@ -1502,6 +1522,10 @@
     {
       "source": "/kb/articles/simon-willison-b6226695",
       "destination": "/kb/articles/chatgpt-voice-mode-is-a-weaker-model-b6226695"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b7122ac5",
+      "destination": "/kb/articles/release-datasette-export-database-03a1-b7122ac5"
     },
     {
       "source": "/kb/articles/simon-willison-b75e7d12",
@@ -1592,6 +1616,10 @@
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
     },
     {
+      "source": "/kb/articles/simon-willison-d32e21db",
+      "destination": "/kb/articles/gemini-31-flash-tts-d32e21db"
+    },
+    {
       "source": "/kb/articles/simon-willison-d424d881",
       "destination": "/kb/articles/highlights-from-my-conversation-about-agentic-engineering-on-d424d881"
     },
@@ -1646,6 +1674,10 @@
     {
       "source": "/kb/articles/simon-willison-dfb9e67b",
       "destination": "/kb/articles/release-scan-for-secrets-03-dfb9e67b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e0fc849e",
+      "destination": "/kb/articles/release-datasette-10a27-e0fc849e"
     },
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
@@ -1730,6 +1762,10 @@
     {
       "source": "/kb/articles/simon-willison-fbd470c1",
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fe0a7bea",
+      "destination": "/kb/articles/a-quote-from-kyle-kingsbury-fe0a7bea"
     },
     {
       "source": "/kb/articles/simon-willison-fe678ac4",
@@ -2034,6 +2070,10 @@
     {
       "source": "/kb/articles/swyx-ebedd1c9",
       "destination": "/kb/articles/every-agent-needs-a-box-aaron-levie-box-ebedd1c9"
+    },
+    {
+      "source": "/kb/articles/swyx-ed74eac1",
+      "destination": "/kb/articles/ainews-rip-pull-requests-2005-2026-ed74eac1"
     },
     {
       "source": "/kb/articles/swyx-ee58e399",
