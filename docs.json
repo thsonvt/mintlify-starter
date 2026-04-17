@@ -988,6 +988,10 @@
       "destination": "/kb/articles/a-quote-from-les-orchard-12f23a38"
     },
     {
+      "source": "/kb/articles/simon-willison-133c5e00",
+      "destination": "/kb/articles/release-llm-anthropic-025-133c5e00"
+    },
+    {
       "source": "/kb/articles/simon-willison-1364a25f",
       "destination": "/kb/articles/coding-after-coders-the-end-of-computer-programming-as-we-kn-1364a25f"
     },
@@ -1228,6 +1232,10 @@
       "destination": "/kb/articles/an-ai-agent-published-a-hit-piece-on-me-5e365fb0"
     },
     {
+      "source": "/kb/articles/simon-willison-5e43bab8",
+      "destination": "/kb/articles/qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-cl-5e43bab8"
+    },
+    {
       "source": "/kb/articles/simon-willison-5f2ace57",
       "destination": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57"
     },
@@ -1370,6 +1378,10 @@
     {
       "source": "/kb/articles/simon-willison-93420151",
       "destination": "/kb/articles/litellm-hack-were-you-one-of-the-47000-93420151"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9401b4b8",
+      "destination": "/kb/articles/release-datasette-10a28-9401b4b8"
     },
     {
       "source": "/kb/articles/simon-willison-960458f7",
@@ -1838,6 +1850,10 @@
     {
       "source": "/kb/articles/swyx-2e52dbf3",
       "destination": "/kb/articles/ainews-top-local-models-list-april-2026-2e52dbf3"
+    },
+    {
+      "source": "/kb/articles/swyx-310b0451",
+      "destination": "/kb/articles/ainews-anthropic-claude-opus-47-literally-one-step-better-th-310b0451"
     },
     {
       "source": "/kb/articles/swyx-33fd2c03",

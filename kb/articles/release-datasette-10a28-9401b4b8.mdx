@@ -1,0 +1,75 @@
+---
+title: 'Release: datasette 1.0a28'
+description: 'The release of datasette 1.0a28 addresses compatibility issues from 1.0a27 and introduces new methods for managing database connections and resources.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-17'
+sourceUrl: 'https://simonwillison.net/2026/Apr/17/datasette/#atom-everything'
+topics: ["open-source","data-exploration","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/17/datasette/#atom-everything) · 17/04/2026
+</Info>
+
+## Summary
+
+The release of datasette 1.0a28 addresses compatibility issues from 1.0a27 and introduces new methods for managing database connections and resources.
+
+## Key Insights
+
+> "Fixed a compatibility bug introduced in 1.0a27 where execute_write_fn() callbacks with a parameter name other than conn were seeing errors."
+>
+> — Release notes for datasette 1.0a28
+
+> "Datasette now includes a pytest plugin which automatically calls datasette.close() on temporary instances created in function-scoped fixtures and during tests."
+>
+> — New features introduced in the release
+
+## Topics
+
+- [open-source](/kb/topics/open-source)
+- [data-exploration](/kb/topics/data-exploration)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+Release datasette 1.0a28 — An open source multi-tool for exploring and publishing data I was upgrading Datasette Cloud to 1.0a27 and discovered a nasty collection of accidental breakages caused by changes in that alpha. This new alpha addresses those directly: Fixed a compatibility bug introduced in 1.0a27 where execute_write_fn() callbacks with a parameter name other than conn were seeing errors. (#2691) The database.close() method now also shuts down the write connection for that database. New datasette.close() method for closing down all databases and resources associated with a Datasette instance. This is called automatically when the server shuts down. (#2693) Datasette now includes a pytest plugin which automatically calls datasette.close() on temporary instances created in function-scoped fixtures and during tests. See Automatic cleanup of Datasette instances for details. This helps avoid running out of file descriptors in plugin test suites that were written before the Database(is_temp_disk=True) feature introduced in Datasette 1.0a27. (#2692) Most of the changes in this release were implemented using Claude Code and the newly released Claude Opus 4.7.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 80% similar
+  </Card>
+  <Card
+    title="Release: datasette-export-database 0.3a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-export-database-03a1-b7122ac5"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/17/datasette/#atom-everything](https://simonwillison.net/2026/Apr/17/datasette/#atom-everything).
+</Note>
