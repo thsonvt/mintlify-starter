@@ -736,6 +736,10 @@
       "destination": "/kb/articles/the-art-of-influence-the-single-most-important-skill-that-ai-592e6048"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-5dfa661a",
+      "destination": "/kb/articles/-community-wisdom-sharing-claude-code-skills-across-the-org--5dfa661a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-5e88b276",
       "destination": "/kb/articles/-this-week-on-how-i-ai-i-gave-claude-code-our-entire-codebas-5e88b276"
     },
@@ -1216,6 +1220,10 @@
       "destination": "/kb/articles/release-datasette-extract-03a0-5c4dd7f1"
     },
     {
+      "source": "/kb/articles/simon-willison-5d5b3c91",
+      "destination": "/kb/articles/changes-in-the-system-prompt-between-claude-opus-46-and-47-5d5b3c91"
+    },
+    {
       "source": "/kb/articles/simon-willison-5d9b8291",
       "destination": "/kb/articles/a-quote-from-david-abram-5d9b8291"
     },
@@ -1374,6 +1382,10 @@
     {
       "source": "/kb/articles/simon-willison-9184893d",
       "destination": "/kb/articles/tool-python-vulnerability-lookup-9184893d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-927b858a",
+      "destination": "/kb/articles/research-claude-system-prompts-as-a-git-timeline-927b858a"
     },
     {
       "source": "/kb/articles/simon-willison-92e1146e",

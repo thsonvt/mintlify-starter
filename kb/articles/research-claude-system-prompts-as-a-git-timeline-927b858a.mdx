@@ -1,0 +1,75 @@
+---
+title: 'Research: Claude system prompts as a git timeline'
+description: 'The article discusses transforming Anthropic''s Claude system prompt history into a git-based exploration tool for better tracking and comparison of pr'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-18'
+sourceUrl: 'https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything'
+topics: ["git","prompt-engineering","ai-research"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything) · 18/04/2026
+</Info>
+
+## Summary
+
+The article discusses transforming Anthropic's Claude system prompt history into a git-based exploration tool for better tracking and comparison of prompt evolution.
+
+## Key Insights
+
+> "Researchers can leverage `git log`, `diff`, and `blame` to trace prompt evolution."
+>
+> — Describing the benefits of using git for analyzing prompt changes.
+
+> "I had Claude Code turn that page into separate files for each model and model family."
+>
+> — Explaining the process of organizing the prompts into a more manageable format.
+
+## Topics
+
+- [git](/kb/topics/git)
+- [prompt-engineering](/kb/topics/prompt-engineering)
+- [ai-research](/kb/topics/ai-research)
+
+---
+
+## Full Article
+
+Research Claude system prompts as a git timeline — Anthropic's published system prompt history for Claude is transformed into a git-based exploration tool, breaking up the monolithic markdown source into granular files and timestamped commits. By structuring extracted prompts per model, family, and revision, researchers can leverage `git log`, `diff`, and `blame` to trace prompt evolution, compare differences, and attribute changes to specific dates—all without manual parsing. Anthropic publish the system prompts for Claude chat and make that page available as Markdown. I had Claude Code turn that page into separate files for each model and model family with fake git commit dates to enable browsing the changes via the GitHub commit view. I used this to write my own detailed notes on the changes between Opus 4.6 and 4.7.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Changes in the system prompt between Claude Opus 4.6 and 4.7"
+    icon="newspaper"
+    href="/kb/articles/changes-in-the-system-prompt-between-claude-opus-46-and-47-5d5b3c91"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…"
+    icon="newspaper"
+    href="/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+  >
+    Boris Cherny · how-to · 60% similar
+  </Card>
+  <Card
+    title="Claude Code overview"
+    icon="newspaper"
+    href="/kb/articles/claude-code-overview-64f2e1e0"
+  >
+    Anthropic Engineering · reference · 59% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything](https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything).
+</Note>
