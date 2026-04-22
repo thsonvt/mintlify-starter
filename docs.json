@@ -704,6 +704,10 @@
       "destination": "/kb/articles/-community-wisdom-how-pms-are-using-ai-coding-tools-implemen-4239abb4"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-42bbcba9",
+      "destination": "/kb/articles/new-a-free-year-of-cursor-google-ai-pro-notion-supabase-guml-42bbcba9"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-43585643",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-43585643"
     },
@@ -1220,6 +1224,14 @@
       "destination": "/kb/articles/vouch-59ce28ba"
     },
     {
+      "source": "/kb/articles/simon-willison-5a0fe41f",
+      "destination": "/kb/articles/scosmanpelicans_riding_bicycles-5a0fe41f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5a19a631",
+      "destination": "/kb/articles/is-claude-code-going-to-cost-100month-probably-notits-all-ve-5a19a631"
+    },
+    {
       "source": "/kb/articles/simon-willison-5a8c245b",
       "destination": "/kb/articles/til-running-openclaw-in-docker-5a8c245b"
     },
@@ -1276,6 +1288,10 @@
       "destination": "/kb/articles/pretext-635e0854"
     },
     {
+      "source": "/kb/articles/simon-willison-641f8362",
+      "destination": "/kb/articles/wheres-the-raccoon-with-the-ham-radio-chatgpt-images-20-641f8362"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -1324,8 +1340,16 @@
       "destination": "/kb/articles/production-query-plans-without-production-data-7474b8be"
     },
     {
+      "source": "/kb/articles/simon-willison-747b7034",
+      "destination": "/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
+    },
+    {
       "source": "/kb/articles/simon-willison-76b24dc2",
       "destination": "/kb/articles/something-is-afoot-in-the-land-of-qwen-76b24dc2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-76bce63b",
+      "destination": "/kb/articles/a-quote-from-bobby-holley-76bce63b"
     },
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
@@ -1676,8 +1700,16 @@
       "destination": "/kb/articles/gemini-31-flash-tts-d32e21db"
     },
     {
+      "source": "/kb/articles/simon-willison-d3598d5f",
+      "destination": "/kb/articles/release-llm-openrouter-06-d3598d5f"
+    },
+    {
       "source": "/kb/articles/simon-willison-d424d881",
       "destination": "/kb/articles/highlights-from-my-conversation-about-agentic-engineering-on-d424d881"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d45bbc3d",
+      "destination": "/kb/articles/a-quote-from-andreas-phlsson-notini-d45bbc3d"
     },
     {
       "source": "/kb/articles/simon-willison-d4d113b0",
@@ -1938,6 +1970,10 @@
     {
       "source": "/kb/articles/swyx-4534c43e",
       "destination": "/kb/articles/ainews-apples-war-on-slop-4534c43e"
+    },
+    {
+      "source": "/kb/articles/swyx-4588b496",
+      "destination": "/kb/articles/ainews-openai-launches-gpt-image-2-4588b496"
     },
     {
       "source": "/kb/articles/swyx-46eff22b",
