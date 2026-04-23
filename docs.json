@@ -768,6 +768,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-mastering-midjourney-how-to-create-co-62f7ee41"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-63e5c795",
+      "destination": "/kb/articles/what-claude-design-is-actually-good-for-and-why-figma-isnt-d-63e5c795"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-64d554bc",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-intercom-2xd-their-engineering-ve-64d554bc"
     },
@@ -1030,6 +1034,10 @@
     {
       "source": "/kb/articles/simon-willison-18bf3456",
       "destination": "/kb/articles/a-quote-from-guilherme-rambo-18bf3456"
+    },
+    {
+      "source": "/kb/articles/simon-willison-18ec5cad",
+      "destination": "/kb/articles/qwen36-27b-flagship-level-coding-in-a-27b-dense-model-18ec5cad"
     },
     {
       "source": "/kb/articles/simon-willison-192d4e92",
@@ -2052,6 +2060,10 @@
       "destination": "/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
     },
     {
+      "source": "/kb/articles/swyx-7d12fd00",
+      "destination": "/kb/articles/shopifys-ai-phase-transition-2026-usage-explosion-unlimited--7d12fd00"
+    },
+    {
       "source": "/kb/articles/swyx-7ed14561",
       "destination": "/kb/articles/the-first-mechanistic-interpretability-frontier-lab-myra-den-7ed14561"
     },
@@ -2066,6 +2078,10 @@
     {
       "source": "/kb/articles/swyx-815e6177",
       "destination": "/kb/articles/captaining-imo-gold-deep-think-on-policy-rl-feeling-the-agi--815e6177"
+    },
+    {
+      "source": "/kb/articles/swyx-81ffa40b",
+      "destination": "/kb/articles/ainews-tasteful-tokenmaxxing-81ffa40b"
     },
     {
       "source": "/kb/articles/swyx-8508c5cb",
