@@ -1,0 +1,80 @@
+---
+title: 'Serving the For You feed'
+description: 'The article discusses Bluesky''s For You feed, a customizable recommendation system run by spacecowboy, detailing its architecture and operational cost'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-24'
+sourceUrl: 'https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything'
+topics: ["bluesky","recommendation-systems","custom-feeds","data-architecture"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything) · 24/04/2026
+</Info>
+
+## Summary
+
+The article discusses Bluesky's For You feed, a customizable recommendation system run by spacecowboy, detailing its architecture and operational costs.
+
+## Key Insights
+
+> "One of Bluesky's most interesting features is that anyone can run their own custom 'feed' implementation."
+>
+> — Introduction to the For You feed feature.
+
+> "Recommendations are based on likes: what else are the people who like the same things as you liking on the platform?"
+>
+> — Explanation of how the recommendation system works.
+
+> "Total cost is now $30/month: $20 in electricity, $7 in VPS and $3 for the two domain names."
+>
+> — Details about the operational costs of running the feed.
+
+## Topics
+
+- [bluesky](/kb/topics/bluesky)
+- [recommendation-systems](/kb/topics/recommendation-systems)
+- [custom-feeds](/kb/topics/custom-feeds)
+- [data-architecture](/kb/topics/data-architecture)
+
+---
+
+## Full Article
+
+24th April 2026 - Link Blog Serving the For You feed. One of Bluesky's most interesting features is that anyone can run their own custom "feed" implementation and make it available to other users - effectively enabling custom algorithms that can use any mechanism they like to recommend posts. spacecowboy runs the For You Feed, used by around 72,000 people. This guest post on the AT Protocol blog explains how it works. The architecture is fascinating. The feed is served by a single Go process using SQLite on a "gaming" PC in spacecowboy's living room - 16 cores, 96GB of RAM and 4TB of attached NVMe storage. Recommendations are based on likes: what else are the people who like the same things as you liking on the platform? That Go server consumes the Bluesky firehose and stores the relevant details in SQLite, keeping the last 90 days of relevant data, which currently uses around 419GB of SQLite storage. Public internet traffic is handled by a $7/month VPS on OVH, which talks to the living room server via Tailscale. Total cost is now $30/month: $20 in electricity, $7 in VPS and $3 for the two domain names. spacecowboy estimates that the existing system could handle all ~1 million daily active Bluesky users if they were to switch to the cheapest algorithm they have found to work.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Retrieval After RAG: Hybrid Search, Agents, and Database Design — Simon Hørup Eskildsen of Turbopuffer"
+    icon="newspaper"
+    href="/kb/articles/retrieval-after-rag-hybrid-search-agents-and-database-design-fda49f6c"
+  >
+    Swyx · explanation · 50% similar
+  </Card>
+  <Card
+    title="[AINews] Truth in the time of Artifice"
+    icon="newspaper"
+    href="/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+  >
+    Swyx · explanation · 50% similar
+  </Card>
+  <Card
+    title="[AINews] H100 prices are melting *UP*"
+    icon="newspaper"
+    href="/kb/articles/ainews-h100-prices-are-melting-up-234d7d05"
+  >
+    Swyx · explanation · 50% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything](https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything).
+</Note>

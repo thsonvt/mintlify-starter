@@ -172,6 +172,10 @@
       "destination": "/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-70aaa5e0",
+      "destination": "/kb/articles/an-update-on-recent-claude-code-quality-reports-70aaa5e0"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-77453e3a",
       "destination": "/kb/articles/scaling-managed-agents-decoupling-the-brain-from-the-hands-77453e3a"
     },
@@ -624,6 +628,10 @@
       "destination": "/kb/articles/the-tactical-playbook-for-getting-20-40-more-comp-without-so-02dc875f"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-03422dc7",
+      "destination": "/kb/articles/how-anthropics-product-team-moves-faster-than-anyone-else-ca-03422dc7"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-04e05b37",
       "destination": "/kb/articles/listen-a-visual-guide-to-getting-out-of-a-creative-slump-04e05b37"
     },
@@ -702,6 +710,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-4239abb4",
       "destination": "/kb/articles/-community-wisdom-how-pms-are-using-ai-coding-tools-implemen-4239abb4"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-42578d88",
+      "destination": "/kb/articles/gpt-55-just-did-what-no-other-model-could-42578d88"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-42bbcba9",
@@ -1024,12 +1036,20 @@
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
     {
+      "source": "/kb/articles/simon-willison-151a4dd1",
+      "destination": "/kb/articles/russellromneyhonker-151a4dd1"
+    },
+    {
       "source": "/kb/articles/simon-willison-1521fdb4",
       "destination": "/kb/articles/supply-chain-attack-on-axios-pulls-malicious-dependency-from-1521fdb4"
     },
     {
       "source": "/kb/articles/simon-willison-16b49489",
       "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
+    },
+    {
+      "source": "/kb/articles/simon-willison-180a68ef",
+      "destination": "/kb/articles/release-llm-openai-via-codex-01a0-180a68ef"
     },
     {
       "source": "/kb/articles/simon-willison-18bf3456",
@@ -1068,6 +1088,14 @@
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
     {
+      "source": "/kb/articles/simon-willison-231bc475",
+      "destination": "/kb/articles/deepseek-v4almost-on-the-frontier-a-fraction-of-the-price-231bc475"
+    },
+    {
+      "source": "/kb/articles/simon-willison-25f465b1",
+      "destination": "/kb/articles/an-update-on-recent-claude-code-quality-reports-25f465b1"
+    },
+    {
       "source": "/kb/articles/simon-willison-26013557",
       "destination": "/kb/articles/february-sponsors-only-newsletter-26013557"
     },
@@ -1088,12 +1116,20 @@
       "destination": "/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
     },
     {
+      "source": "/kb/articles/simon-willison-2ff4cd00",
+      "destination": "/kb/articles/its-a-big-one-2ff4cd00"
+    },
+    {
       "source": "/kb/articles/simon-willison-306f627c",
       "destination": "/kb/articles/claude-code-remote-control-306f627c"
     },
     {
       "source": "/kb/articles/simon-willison-30c19547",
       "destination": "/kb/articles/quoting-brandon-sanderson-30c19547"
+    },
+    {
+      "source": "/kb/articles/simon-willison-31978327",
+      "destination": "/kb/articles/extract-pdf-text-in-your-browser-with-liteparse-for-the-web-31978327"
     },
     {
       "source": "/kb/articles/simon-willison-320c1f29",
@@ -1556,6 +1592,10 @@
       "destination": "/kb/articles/trusted-access-for-the-next-era-of-cyber-defense-ab91a6fb"
     },
     {
+      "source": "/kb/articles/simon-willison-aba0b3d3",
+      "destination": "/kb/articles/serving-the-for-you-feed-aba0b3d3"
+    },
+    {
       "source": "/kb/articles/simon-willison-abf70e4c",
       "destination": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c"
     },
@@ -1626,6 +1666,10 @@
     {
       "source": "/kb/articles/simon-willison-bdef2945",
       "destination": "/kb/articles/gemma-4-audio-with-mlx-bdef2945"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bf3be779",
+      "destination": "/kb/articles/tool-millisecond-converter-bf3be779"
     },
     {
       "source": "/kb/articles/simon-willison-c04f7376",
@@ -1808,6 +1852,10 @@
       "destination": "/kb/articles/january-sponsors-only-newsletter-is-out-ea3d9c15"
     },
     {
+      "source": "/kb/articles/simon-willison-ea8b9d42",
+      "destination": "/kb/articles/a-quote-from-maggie-appleton-ea8b9d42"
+    },
+    {
       "source": "/kb/articles/simon-willison-eb2223a0",
       "destination": "/kb/articles/malusclean-room-as-a-service-eb2223a0"
     },
@@ -1852,6 +1900,10 @@
       "destination": "/kb/articles/a-quote-from-neurotica-fa10205d"
     },
     {
+      "source": "/kb/articles/simon-willison-fa552a8d",
+      "destination": "/kb/articles/a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-ap-fa552a8d"
+    },
+    {
       "source": "/kb/articles/simon-willison-fb5286c6",
       "destination": "/kb/articles/a-quote-from-a-member-of-anthropics-alignment-science-team-fb5286c6"
     },
@@ -1894,6 +1946,10 @@
     {
       "source": "/kb/articles/swyx-0e4e25e9",
       "destination": "/kb/articles/ainews-wtf-happened-in-december-2025-0e4e25e9"
+    },
+    {
+      "source": "/kb/articles/swyx-0eab1fd7",
+      "destination": "/kb/articles/aie-europe-debrief-agent-labs-thesis-unsupervised-learning-x-0eab1fd7"
     },
     {
       "source": "/kb/articles/swyx-126b8d87",
@@ -2066,6 +2122,10 @@
     {
       "source": "/kb/articles/swyx-7ed14561",
       "destination": "/kb/articles/the-first-mechanistic-interpretability-frontier-lab-myra-den-7ed14561"
+    },
+    {
+      "source": "/kb/articles/swyx-7ef4ae15",
+      "destination": "/kb/articles/ainews-gpt-55-and-openai-codex-superapp--7ef4ae15"
     },
     {
       "source": "/kb/articles/swyx-7f163b66",

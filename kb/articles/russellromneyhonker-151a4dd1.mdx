@@ -1,0 +1,80 @@
+---
+title: 'russellromney/honker'
+description: 'The article discusses ''honker'', a Rust SQLite extension that implements Postgres NOTIFY/LISTEN semantics, enabling efficient queue and stream manageme'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-24'
+sourceUrl: 'https://simonwillison.net/2026/Apr/24/honker/#atom-everything'
+topics: ["sqlite","rust","database-extensions","asynchronous-programming"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/24/honker/#atom-everything) · 24/04/2026
+</Info>
+
+## Summary
+
+The article discusses 'honker', a Rust SQLite extension that implements Postgres NOTIFY/LISTEN semantics, enabling efficient queue and stream management in SQLite.
+
+## Key Insights
+
+> "It lets you write Python code for queues that looks like this:"
+>
+> — Introduction to the functionality of the honker extension.
+
+> "honker implements the transactional outbox pattern, which ensures items are only queued if a transaction successfully commits."
+>
+> — Explanation of the transactional outbox pattern used in honker.
+
+> "It's great to see a new implementation of that pattern for SQLite."
+>
+> — Conclusion highlighting the significance of the honker extension.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [rust](/kb/topics/rust)
+- [database-extensions](/kb/topics/database-extensions)
+- [asynchronous-programming](/kb/topics/asynchronous-programming)
+
+---
+
+## Full Article
+
+24th April 2026 - Link Blog russellromney/honker (via) "Postgres NOTIFY/LISTEN semantics" for SQLite, implemented as a Rust SQLite extension and various language bindings to help make use of it. The design of this looks very solid. It lets you write Python code for queues that looks like this: import honker db = honker.open("app.db") emails = db.queue("emails") emails.enqueue(&#123;"to": "alice@example.com"&#125;) # Consume (in a worker process) async for job in emails.claim("worker-1"): send(job.payload) job.ack() And Kafka-style durable streams like this: stream = db.stream("user-events") with db.transaction() as tx: tx.execute("UPDATE users SET name=? WHERE id=?", [name, uid]) stream.publish(&#123;"user_id": uid, "change": "name"&#125;, tx=tx) async for event in stream.subscribe(consumer="dashboard"): await push_to_browser(event) It also adds 20+ custom SQL functions including these two: SELECT notify('orders', '&#123;"id":42&#125;'); SELECT honker_stream_read_since('orders', 0, 1000); The extension requires WAL mode, and workers can poll the .db-wal file with a stat call every 1ms to get as close to real-time as possible without the expense of running a full SQL query. honker implements the transactional outbox pattern, which ensures items are only queued if a transaction successfully commits. My favorite explanation of that pattern remains Transactionally Staged Job Drains in Postgres by Brandur Leach. It's great to see a new implementation of that pattern for SQLite.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="SQLite 3.53.0"
+    icon="newspaper"
+    href="/kb/articles/sqlite-3530-13f0f387"
+  >
+    Simon Willison · reference · 49% similar
+  </Card>
+  <Card
+    title="Research: SQLite WAL Mode Across Docker Containers Sharing a Volume"
+    icon="newspaper"
+    href="/kb/articles/research-sqlite-wal-mode-across-docker-containers-sharing-a--6a6efa1a"
+  >
+    Simon Willison · explanation · 47% similar
+  </Card>
+  <Card
+    title="Tool: SQLite Query Result Formatter Demo"
+    icon="newspaper"
+    href="/kb/articles/tool-sqlite-query-result-formatter-demo-56f579fb"
+  >
+    Simon Willison · tutorial · 46% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/24/honker/#atom-everything](https://simonwillison.net/2026/Apr/24/honker/#atom-everything).
+</Note>

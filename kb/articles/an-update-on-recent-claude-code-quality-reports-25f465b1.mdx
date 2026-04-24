@@ -1,0 +1,79 @@
+---
+title: 'An update on recent Claude Code quality reports'
+description: 'The article discusses recent issues with Claude Code''s quality, highlighting bugs in its harness that affected user experience and model performance.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-24'
+sourceUrl: 'https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything'
+topics: ["ai-models","software-quality","bug-fixes"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything) · 24/04/2026
+</Info>
+
+## Summary
+
+The article discusses recent issues with Claude Code's quality, highlighting bugs in its harness that affected user experience and model performance.
+
+## Key Insights
+
+> "the high volume of complaints that Claude Code was providing worse quality results over the past two months was grounded in real problems."
+>
+> — Introduction to the issues faced by Claude Code.
+
+> "A bug caused this to keep happening every turn for the rest of the session instead of just once, which made Claude seem forgetful and repetitive."
+>
+> — Description of a specific bug affecting user sessions.
+
+> "the kinds of bugs that affect harnesses are deeply complicated, even if you put aside the inherent non-deterministic nature of the models themselves."
+>
+> — Insight on the complexity of bugs in AI systems.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [software-quality](/kb/topics/software-quality)
+- [bug-fixes](/kb/topics/bug-fixes)
+
+---
+
+## Full Article
+
+24th April 2026 - Link Blog An update on recent Claude Code quality reports (via) It turns out the high volume of complaints that Claude Code was providing worse quality results over the past two months was grounded in real problems. The models themselves were not to blame, but three separate issues in the Claude Code harness caused complex but material problems which directly affected users. Anthropic's postmortem describes these in detail. This one in particular stood out to me: On March 26, we shipped a change to clear Claude's older thinking from sessions that had been idle for over an hour, to reduce latency when users resumed those sessions. A bug caused this to keep happening every turn for the rest of the session instead of just once, which made Claude seem forgetful and repetitive. I frequently have Claude Code sessions which I leave for an hour (or often a day or longer) before returning to them. Right now I have 11 of those (according to ps aux | grep 'claude ') and that's after closing down dozens more the other day. I estimate I spend more time prompting in these "stale" sessions than sessions that I've recently started! If you're building agentic systems it's worth reading this article in detail - the kinds of bugs that affect harnesses are deeply complicated, even if you put aside the inherent non-deterministic nature of the models themselves.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="An update on recent Claude Code quality reports"
+    icon="newspaper"
+    href="/kb/articles/an-update-on-recent-claude-code-quality-reports-70aaa5e0"
+  >
+    Anthropic Engineering · explanation · 75% similar
+  </Card>
+  <Card
+    title="[AINews] A quiet April Fools"
+    icon="newspaper"
+    href="/kb/articles/ainews-a-quiet-april-fools-51fc7d31"
+  >
+    Swyx · reference · 69% similar
+  </Card>
+  <Card
+    title="[AINews] The Claude Code Source Leak"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-claude-code-source-leak-3f1e5b71"
+  >
+    Swyx · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything](https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything).
+</Note>
