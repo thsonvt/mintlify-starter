@@ -1236,6 +1236,10 @@
       "destination": "/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
     },
     {
+      "source": "/kb/articles/simon-willison-51ea461a",
+      "destination": "/kb/articles/release-llm-031-51ea461a"
+    },
+    {
       "source": "/kb/articles/simon-willison-53a6ac3d",
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
@@ -1632,6 +1636,10 @@
       "destination": "/kb/articles/a-quote-from-georgi-gerganov-af54c792"
     },
     {
+      "source": "/kb/articles/simon-willison-b2672669",
+      "destination": "/kb/articles/gpt-55-prompting-guide-b2672669"
+    },
+    {
       "source": "/kb/articles/simon-willison-b36c4b11",
       "destination": "/kb/articles/package-managers-need-to-cool-down-b36c4b11"
     },
@@ -1702,6 +1710,10 @@
     {
       "source": "/kb/articles/simon-willison-c8601f50",
       "destination": "/kb/articles/using-git-with-coding-agents-agentic-engineering-patterns-c8601f50"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c962ca58",
+      "destination": "/kb/articles/the-people-do-not-yearn-for-automation-c962ca58"
     },
     {
       "source": "/kb/articles/simon-willison-c978e84a",
@@ -2154,6 +2166,10 @@
     {
       "source": "/kb/articles/swyx-8b5d31f4",
       "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
+    },
+    {
+      "source": "/kb/articles/swyx-8d6f339c",
+      "destination": "/kb/articles/ainews-deepseek-v4-pro-16t-a49b-and-flash-284b-a13b-base-and-8d6f339c"
     },
     {
       "source": "/kb/articles/swyx-8e8765e0",

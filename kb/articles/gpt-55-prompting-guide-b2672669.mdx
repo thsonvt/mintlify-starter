@@ -1,0 +1,80 @@
+---
+title: 'GPT-5.5 prompting guide'
+description: 'The GPT-5.5 prompting guide offers tips for effectively using the new model, emphasizing the need for fresh prompts and user-visible updates during mu'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-25'
+sourceUrl: 'https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything'
+topics: ["gpt-5-5","prompt-engineering","openai","api-guides"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything) · 25/04/2026
+</Info>
+
+## Summary
+
+The GPT-5.5 prompting guide offers tips for effectively using the new model, emphasizing the need for fresh prompts and user-visible updates during multi-step tasks.
+
+## Key Insights
+
+> "Before any tool calls for a multi-step task, send a short user-visible update that acknowledges the request and states the first step."
+>
+> — Advice on improving user experience during longer tasks.
+
+> "To get the most out of GPT-5.5, treat it as a new model family to tune for, not a drop-in replacement for gpt-5.2 or gpt-5.4."
+>
+> — Guidance on migrating to the new model.
+
+> "Interesting to see OpenAI recommend starting from scratch rather than trusting that existing prompts optimized for previous models will continue to work effectively."
+>
+> — Observation on OpenAI's approach to prompt optimization.
+
+## Topics
+
+- [gpt-5-5](/kb/topics/gpt-5-5)
+- [prompt-engineering](/kb/topics/prompt-engineering)
+- [openai](/kb/topics/openai)
+- [api-guides](/kb/topics/api-guides)
+
+---
+
+## Full Article
+
+25th April 2026 - Link Blog GPT-5.5 prompting guide. Now that GPT-5.5 is available in the API, OpenAI have released a wealth of useful tips on how best to prompt the new model. Here's a neat trick they recommend for applications that might spend considerable time thinking before returning a user-visible response: Before any tool calls for a multi-step task, send a short user-visible update that acknowledges the request and states the first step. Keep it to one or two sentences. I've already noticed their Codex app doing this, and it does make longer running tasks feel less like the model has crashed. OpenAI suggest running the following in Codex to upgrade your existing code using advice embedded in their openai-docs skill: $openai-docs migrate this project to gpt-5.5 The upgrade guide the coding agent will follow is this one, which even includes light instructions on how to rewrite prompts to better fit the model. Also relevant is the Using GPT-5.5 guide, which opens with this warning: To get the most out of GPT-5.5, treat it as a new model family to tune for, not a drop-in replacement for gpt-5.2 or gpt-5.4. Begin migration with a fresh baseline instead of carrying over every instruction from an older prompt stack. Start with the smallest prompt that preserves the product contract, then tune reasoning effort, verbosity, tool descriptions, and output format against representative examples. Interesting to see OpenAI recommend starting from scratch rather than trusting that existing prompts optimized for previous models will continue to work effectively with GPT-5.5.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Introducing GPT‑5.4"
+    icon="newspaper"
+    href="/kb/articles/introducing-gpt54-3deb2a99"
+  >
+    Simon Willison · explanation · 70% similar
+  </Card>
+  <Card
+    title="[AINews] GPT 5.5 and OpenAI Codex Superapp "
+    icon="newspaper"
+    href="/kb/articles/ainews-gpt-55-and-openai-codex-superapp--7ef4ae15"
+  >
+    Swyx · explanation · 67% similar
+  </Card>
+  <Card
+    title="A pelican for GPT-5.5 via the semi-official Codex backdoor API"
+    icon="newspaper"
+    href="/kb/articles/a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-ap-fa552a8d"
+  >
+    Simon Willison · explanation · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything).
+</Note>
