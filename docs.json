@@ -888,6 +888,10 @@
       "destination": "/kb/articles/listen-not-all-ai-agents-are-created-equal-c72610e3"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-c7b51e5b",
+      "destination": "/kb/articles/-community-wisdom-what-great-product-leaders-do-differently--c7b51e5b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d16a3274",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
     },
@@ -1580,6 +1584,10 @@
       "destination": "/kb/articles/cybersecurity-looks-like-proof-of-work-now-a7faa917"
     },
     {
+      "source": "/kb/articles/simon-willison-a82092c1",
+      "destination": "/kb/articles/why-are-you-like-this-a82092c1"
+    },
+    {
       "source": "/kb/articles/simon-willison-a90df1e1",
       "destination": "/kb/articles/release-llm-echo-04-a90df1e1"
     },
@@ -1934,6 +1942,10 @@
     {
       "source": "/kb/articles/simon-willison-febc892b",
       "destination": "/kb/articles/datasette-pr-2689-replace-token-based-csrf-with-sec-fetch-si-febc892b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ff232954",
+      "destination": "/kb/articles/a-quote-from-romain-huet-ff232954"
     },
     {
       "source": "/kb/articles/swyx-02e6b89f",
