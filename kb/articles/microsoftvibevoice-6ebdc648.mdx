@@ -1,0 +1,75 @@
+---
+title: 'microsoft/VibeVoice'
+description: 'Microsoft''s VibeVoice is a Whisper-style audio model for speech-to-text, featuring speaker diarization and released on January 21, 2026.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-27'
+sourceUrl: 'https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything'
+topics: ["speech-to-text","audio-processing","machine-learning"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything) · 27/04/2026
+</Info>
+
+## Summary
+
+Microsoft's VibeVoice is a Whisper-style audio model for speech-to-text, featuring speaker diarization and released on January 21, 2026.
+
+## Key Insights
+
+> "Now that we have this power, people almost underestimate what they can do with it."
+>
+> — Discussion on the capabilities of the VibeVoice model.
+
+> "Today, probably 95% of the code that I produce, I didn't type it myself."
+>
+> — Reflecting on the impact of audio models on coding.
+
+## Topics
+
+- [speech-to-text](/kb/topics/speech-to-text)
+- [audio-processing](/kb/topics/audio-processing)
+- [machine-learning](/kb/topics/machine-learning)
+
+---
+
+## Full Article
+
+microsoft/VibeVoice. VibeVoice is Microsoft's Whisper-style audio model for speech-to-text, MIT licensed and with speaker diarization built into the model. Microsoft released it on January 21st, 2026 but I hadn't tried it until today. Here's a one-liner to run it on a Mac with uv, mlx-audio (by Prince Canuma) and the 5.71GB mlx-community/VibeVoice-ASR-4bit MLX conversion of the 17.3GB VibeVoice-ASR model, in this case against a downloaded copy of my recent podcast appearance with Lenny Rachitsky: uv run --with mlx-audio mlx_audio.stt.generate \ --model mlx-community/VibeVoice-ASR-4bit \ --audio lenny.mp3 --output-path lenny \ --format json --verbose --max-tokens 32768 The tool reported back: Processing time: 524.79 seconds Prompt: 26615 tokens, 50.718 tokens-per-sec Generation: 20248 tokens, 38.585 tokens-per-sec Peak memory: 30.44 GB So that's 8 minutes 45 seconds for an hour of audio (running on a 128GB M5 Max MacBook Pro). I've tested it against .wav and .mp3 files and they both worked fine. If you omit --max-tokens it defaults to 8192, which is enough for about 25 minutes of audio. I discovered that through trial-and-error and quadrupled it to guarantee I'd get the full hour. That command reported using 30.44GB of RAM at peak, but in Activity Monitor I observed 61.5GB of usage during the prefill stage and around 18GB during the generating phase. Here's the resulting JSON. The key structure looks like this: &#123; "text": "And an open question for me is how many other knowledge work fields are actually prone to these agent loops?", "start": 13.85, "end": 19.5, "duration": 5.65, "speaker_id": 0 &#125;, &#123; "text": "Now that we have this power, people almost underestimate what they can do with it.", "start": 19.5, "end": 22.78, "duration": 3.280000000000001, "speaker_id": 1 &#125;, &#123; "text": "Today, probably 95% of the code that I produce, I didn't type it myself. I write so much of my code on my phone. It's wild.", "start": 22.78, "end": 30.0, "duration": 7.219999999999999, "speaker_id": 0 &#125; Since that's an array of objects we can open it in Datasette Lite, making it easier to browse. Amusingly that Datasette Lite view shows three speakers - it identified Lenny and me for the conversation, and then a separate Lenny for the voice he used for the additional intro and the sponsor reads! VibeVoice can only handle up to an hour of audio, so running the above command transcribed just the first hour of the podcast. To transcribe more than that you'd need to split the audio, ideally with a minute or so of overlap so you can avoid errors from partially transcribed words at the split point. You'd also need to then line up the identified speaker IDs across the multiple segments.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Gemma 4 audio with MLX"
+    icon="newspaper"
+    href="/kb/articles/gemma-4-audio-with-mlx-bdef2945"
+  >
+    Simon Willison · how-to · 66% similar
+  </Card>
+  <Card
+    title="Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample"
+    icon="newspaper"
+    href="/kb/articles/mistral-voxtral-tts-forge-leanstral-whats-next-for-mistral-4-23a9721a"
+  >
+    Swyx · explanation · 60% similar
+  </Card>
+  <Card
+    title="Introducing talkie: a 13B vintage language model from 1930"
+    icon="newspaper"
+    href="/kb/articles/introducing-talkie-a-13b-vintage-language-model-from-1930-da5529d8"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything](https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything).
+</Note>

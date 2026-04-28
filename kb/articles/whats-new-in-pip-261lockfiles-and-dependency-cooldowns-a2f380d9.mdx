@@ -1,0 +1,80 @@
+---
+title: 'What’s new in pip 26.1—lockfiles and dependency cooldowns!'
+description: 'The article discusses the new features in pip 26.1, including lockfiles and dependency cooldowns, while dropping support for Python 3.9.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-04-28'
+sourceUrl: 'https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything'
+topics: ["python","pip","dependency-management","software-updates"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything) · 28/04/2026
+</Info>
+
+## Summary
+
+The article discusses the new features in pip 26.1, including lockfiles and dependency cooldowns, while dropping support for Python 3.9.
+
+## Key Insights
+
+> "This version drops support for Python 3.9 - fair enough, since it's been EOL since October."
+>
+> — Discussing the changes in pip 26.1
+
+> "The new release also supports dependency cooldowns, discussed here previously."
+>
+> — Introducing a new feature in pip 26.1
+
+> "This installs Datasette and LLM and all of their dependencies and writes the whole lot to a 519 line pylock.toml file."
+>
+> — Explaining the functionality of lock files in pip 26.1
+
+## Topics
+
+- [python](/kb/topics/python)
+- [pip](/kb/topics/pip)
+- [dependency-management](/kb/topics/dependency-management)
+- [software-updates](/kb/topics/software-updates)
+
+---
+
+## Full Article
+
+28th April 2026 - Link Blog What's new in pip 26.1 - lockfiles and dependency cooldowns! (via) Richard Si describes an excellent set of upgrades to Python's default pip tool for installing dependencies. This version drops support for Python 3.9 - fair enough, since it's been EOL since October. macOS still ships with python3 as a default Python 3.9, so I tried out the new Python version against Python 3.14 like this: uv python install 3.14 mkdir /tmp/experiment cd /tmp/experiment python3.14 -m venv venv source venv/bin/activate pip install -U pip pip --version This confirmed I had pip 26.1 - then I tried out the new lock files: pip lock datasette llm This installs Datasette and LLM and all of their dependencies and writes the whole lot to a 519 line pylock.toml file - here's the result. The new release also supports dependency cooldowns, discussed here previously, via the new --uploaded-prior-to PXD option where X is a number of days. The format is P-number-of-days-D, following ISO duration format but only supporting days. I shipped a new release of LLM, version 0.31, three days ago. Here's how to use the new --uploaded-prior-to P4D option to ask for a version that is at least 4 days old. pip install llm --uploaded-prior-to P4D venv/bin/llm --version This gave me version 0.30.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Package Managers Need to Cool Down"
+    icon="newspaper"
+    href="/kb/articles/package-managers-need-to-cool-down-b36c4b11"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+  <Card
+    title="LiteLLM Hack: Were You One of the 47,000?"
+    icon="newspaper"
+    href="/kb/articles/litellm-hack-were-you-one-of-the-47000-93420151"
+  >
+    Simon Willison · explanation · 53% similar
+  </Card>
+  <Card
+    title="Malicious litellm_init.pth in litellm 1.82.8 — credential stealer"
+    icon="newspaper"
+    href="/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
+  >
+    Simon Willison · explanation · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything](https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything).
+</Note>
