@@ -832,6 +832,10 @@
       "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8217338b",
+      "destination": "/kb/articles/your-couch-to-5k-for-ai-8217338b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8670162b",
       "destination": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b"
     },
@@ -1272,6 +1276,10 @@
       "destination": "/kb/articles/research-exploring-the-new-servo-crate-569cbf4f"
     },
     {
+      "source": "/kb/articles/simon-willison-56cabc95",
+      "destination": "/kb/articles/a-quote-from-matthew-yglesias-56cabc95"
+    },
+    {
       "source": "/kb/articles/simon-willison-56f579fb",
       "destination": "/kb/articles/tool-sqlite-query-result-formatter-demo-56f579fb"
     },
@@ -1582,6 +1590,10 @@
     {
       "source": "/kb/articles/simon-willison-a42dccce",
       "destination": "/kb/articles/how-coding-agents-work-agentic-engineering-patterns-a42dccce"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a4b24cc6",
+      "destination": "/kb/articles/a-quote-from-openai-codex-base_instructions-a4b24cc6"
     },
     {
       "source": "/kb/articles/simon-willison-a4d04dbc",
@@ -2258,6 +2270,10 @@
     {
       "source": "/kb/articles/swyx-a6afd69d",
       "destination": "/kb/articles/physical-ai-that-moves-the-world-qasar-younis-peter-ludwig-a-a6afd69d"
+    },
+    {
+      "source": "/kb/articles/swyx-a72f0190",
+      "destination": "/kb/articles/ainews-not-much-happened-today-a72f0190"
     },
     {
       "source": "/kb/articles/swyx-aae99147",
