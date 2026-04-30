@@ -1164,6 +1164,10 @@
       "destination": "/kb/articles/subagents-agentic-engineering-patterns-344780b7"
     },
     {
+      "source": "/kb/articles/simon-willison-36c09739",
+      "destination": "/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+    },
+    {
       "source": "/kb/articles/simon-willison-38c97ff6",
       "destination": "/kb/articles/a-quote-from-kimiai-kimi_moonshot-38c97ff6"
     },
@@ -1344,6 +1348,10 @@
       "destination": "/kb/articles/qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-cl-5e43bab8"
     },
     {
+      "source": "/kb/articles/simon-willison-5ea51482",
+      "destination": "/kb/articles/release-llm-032a1-5ea51482"
+    },
+    {
       "source": "/kb/articles/simon-willison-5f2ace57",
       "destination": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57"
     },
@@ -1488,6 +1496,10 @@
       "destination": "/kb/articles/release-datasette-llm-01a5-8f4b0133"
     },
     {
+      "source": "/kb/articles/simon-willison-9053483c",
+      "destination": "/kb/articles/the-zig-projects-rationale-for-their-firm-anti-ai-contributi-9053483c"
+    },
+    {
       "source": "/kb/articles/simon-willison-912e723c",
       "destination": "/kb/articles/quantization-from-the-ground-up-912e723c"
     },
@@ -1550,6 +1562,10 @@
     {
       "source": "/kb/articles/simon-willison-9c11adc4",
       "destination": "/kb/articles/first-run-the-tests-agentic-engineering-patterns-simon-willi-9c11adc4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9c28ec29",
+      "destination": "/kb/articles/release-llm-032a0-9c28ec29"
     },
     {
       "source": "/kb/articles/simon-willison-9cb198d9",
@@ -2314,6 +2330,10 @@
     {
       "source": "/kb/articles/swyx-cb33a12e",
       "destination": "/kb/articles/searching-the-space-of-all-possible-materials-prof-max-welli-cb33a12e"
+    },
+    {
+      "source": "/kb/articles/swyx-cc001aff",
+      "destination": "/kb/articles/ainews-the-inference-inflection-cc001aff"
     },
     {
       "source": "/kb/articles/swyx-d1434027",
