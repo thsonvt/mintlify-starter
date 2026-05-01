@@ -1104,6 +1104,10 @@
       "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
     },
     {
+      "source": "/kb/articles/simon-willison-1dff5c0f",
+      "destination": "/kb/articles/our-evaluation-of-openais-gpt-55-cyber-capabilities-1dff5c0f"
+    },
+    {
       "source": "/kb/articles/simon-willison-1f3b8622",
       "destination": "/kb/articles/a-quote-from-john-gruber-1f3b8622"
     },
@@ -1226,6 +1230,10 @@
     {
       "source": "/kb/articles/simon-willison-4574d440",
       "destination": "/kb/articles/my-fireside-chat-about-agentic-engineering-at-the-pragmatic--4574d440"
+    },
+    {
+      "source": "/kb/articles/simon-willison-457a26e1",
+      "destination": "/kb/articles/a-quote-from-andrew-kelley-457a26e1"
     },
     {
       "source": "/kb/articles/simon-willison-46db46c4",
@@ -1684,6 +1692,10 @@
       "destination": "/kb/articles/free-claude-max-for-large-project-open-source-maintainers-ae6359a2"
     },
     {
+      "source": "/kb/articles/simon-willison-ae87c268",
+      "destination": "/kb/articles/we-need-rss-for-sharing-abundant-vibe-coded-apps-ae87c268"
+    },
+    {
       "source": "/kb/articles/simon-willison-af1ea9b9",
       "destination": "/kb/articles/quoting-steve-yegge-af1ea9b9"
     },
@@ -1944,6 +1956,10 @@
       "destination": "/kb/articles/go-size-analyzer-ebba2249"
     },
     {
+      "source": "/kb/articles/simon-willison-ebf2cfc0",
+      "destination": "/kb/articles/codex-cli-01280-adds-goal-ebf2cfc0"
+    },
+    {
       "source": "/kb/articles/simon-willison-f086afa3",
       "destination": "/kb/articles/coding-agents-for-data-analysis-f086afa3"
     },
@@ -2074,6 +2090,10 @@
     {
       "source": "/kb/articles/swyx-26e65d48",
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
+    },
+    {
+      "source": "/kb/articles/swyx-29860c96",
+      "destination": "/kb/articles/ainews-agents-for-everything-else-codex-for-knowledge-work-c-29860c96"
     },
     {
       "source": "/kb/articles/swyx-2a8428b0",
