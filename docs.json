@@ -284,6 +284,10 @@
       "destination": "/kb/articles/how-to-design-software-with-weight-ab98ceaf"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-b132436e",
+      "destination": "/kb/articles/claude-code-for-product-managers-b132436e"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-b1aa53b4",
       "destination": "/kb/articles/how-every-is-harnessing-the-world-changing-shift-of-opus-45-b1aa53b4"
     },
@@ -1244,6 +1248,10 @@
       "destination": "/kb/articles/perhaps-not-boring-technology-after-all-47fc8cda"
     },
     {
+      "source": "/kb/articles/simon-willison-48ff65d4",
+      "destination": "/kb/articles/tool-inaturalist-sightings-48ff65d4"
+    },
+    {
       "source": "/kb/articles/simon-willison-495218f8",
       "destination": "/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8"
     },
@@ -2170,6 +2178,10 @@
     {
       "source": "/kb/articles/swyx-532e0dfd",
       "destination": "/kb/articles/notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the--532e0dfd"
+    },
+    {
+      "source": "/kb/articles/swyx-53d92955",
+      "destination": "/kb/articles/ainews-ai-engineer-worlds-fair-autoresearch-memory-world-mod-53d92955"
     },
     {
       "source": "/kb/articles/swyx-5acd0fdd",
