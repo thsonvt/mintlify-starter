@@ -676,6 +676,10 @@
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-29f03b41",
+      "destination": "/kb/articles/-community-wisdom-claude-code-tips-for-adhd-users-resources--29f03b41"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2afb2858",
       "destination": "/kb/articles/sequoia-ceo-coach-why-its-never-been-easier-to-start-a-compa-2afb2858"
     },
@@ -1966,6 +1970,10 @@
     {
       "source": "/kb/articles/simon-willison-ebf2cfc0",
       "destination": "/kb/articles/codex-cli-01280-adds-goal-ebf2cfc0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ec23bdcc",
+      "destination": "/kb/articles/sightings-ec23bdcc"
     },
     {
       "source": "/kb/articles/simon-willison-f086afa3",
