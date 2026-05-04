@@ -924,6 +924,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d939c0b5",
+      "destination": "/kb/articles/why-cultivating-agency-matters-more-than-cultivating-skills--d939c0b5"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d9593374",
       "destination": "/kb/articles/-community-wisdom-evaluating-startup-equity-navigating-pre-s-d9593374"
     },
@@ -1174,6 +1178,10 @@
     {
       "source": "/kb/articles/simon-willison-344780b7",
       "destination": "/kb/articles/subagents-agentic-engineering-patterns-344780b7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-351b1187",
+      "destination": "/kb/articles/a-quote-from-anthropic-351b1187"
     },
     {
       "source": "/kb/articles/simon-willison-36c09739",
