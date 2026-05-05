@@ -1,0 +1,76 @@
+---
+title: 'Tool: Redis Array Playground'
+description: 'Salvatore Sanfilippo introduced a new array data type to Redis, with various commands for manipulation, showcased in an interactive playground.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-04'
+sourceUrl: 'https://simonwillison.net/2026/May/4/redis-array/#atom-everything'
+topics: ["redis","data-types","web-development","interactive-tools"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/4/redis-array/#atom-everything) · 04/05/2026
+</Info>
+
+## Summary
+
+Salvatore Sanfilippo introduced a new array data type to Redis, with various commands for manipulation, showcased in an interactive playground.
+
+## Key Insights
+
+> "The most interesting new command is ARGREP which can run a server-side grep against a range of values in the array."
+>
+> — Discussing the capabilities of the new array commands in Redis.
+
+> "Salvatore wrote more about the AI-assisted development process for the array type in Redis array type: short story of a long development."
+>
+> — Referencing further insights on the development process behind the new feature.
+
+## Topics
+
+- [redis](/kb/topics/redis)
+- [data-types](/kb/topics/data-types)
+- [web-development](/kb/topics/web-development)
+- [interactive-tools](/kb/topics/interactive-tools)
+
+---
+
+## Full Article
+
+Salvatore Sanfilippo submitted a PR adding a new data type - arrays - to Redis. The new commands are ARCOUNT, ARDEL, ARDELRANGE, ARGET, ARGETRANGE, ARGREP, ARINFO, ARINSERT, ARLASTITEMS, ARLEN, ARMGET, ARMSET, ARNEXT, AROP, ARRING, ARSCAN, ARSEEK, ARSET. The implementation is currently available in a branch, so I had Claude Code for web build this interactive playground for trying out the new commands in a WASM-compiled build of a subset of Redis running in the browser. The most interesting new command is ARGREP which can run a server-side grep against a range of values in the array using the newly vendored TRE regex library. Salvatore wrote more about the AI-assisted development process for the array type in Redis array type: short story of a long development.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: Syntaqlite Playground"
+    icon="newspaper"
+    href="/kb/articles/tool-syntaqlite-playground-08289a33"
+  >
+    Simon Willison · tutorial · 47% similar
+  </Card>
+  <Card
+    title="Research: TRE Python binding — ReDoS robustness demo"
+    icon="newspaper"
+    href="/kb/articles/research-tre-python-binding-redos-robustness-demo-340c8ee8"
+  >
+    Simon Willison · explanation · 44% similar
+  </Card>
+  <Card
+    title="SQLite 3.53.0"
+    icon="newspaper"
+    href="/kb/articles/sqlite-3530-13f0f387"
+  >
+    Simon Willison · reference · 42% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/4/redis-array/#atom-everything](https://simonwillison.net/2026/May/4/redis-array/#atom-everything).
+</Note>

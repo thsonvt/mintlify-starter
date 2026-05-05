@@ -648,6 +648,10 @@
       "destination": "/kb/articles/building-ai-product-sense-part-2-0a3d6458"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-0e25b69c",
+      "destination": "/kb/articles/-this-week-on-how-i-ai-the-internal-ai-tool-thats-transformi-0e25b69c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-0e6a80ac",
       "destination": "/kb/articles/openclaw-the-complete-guide-to-building-training-and-living--0e6a80ac"
     },
@@ -968,6 +972,10 @@
       "destination": "/kb/articles/claude-cowork-101-how-to-automate-your-workday-without-touch-efdaeae9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-f7af004a",
+      "destination": "/kb/articles/the-internal-ai-tool-thats-transforming-how-stripe-designs-p-f7af004a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-f91edd89",
       "destination": "/kb/articles/listen-openclaw-a-power-users-guide-to-the-most-powerful-per-f91edd89"
     },
@@ -1080,6 +1088,10 @@
       "destination": "/kb/articles/supply-chain-attack-on-axios-pulls-malicious-dependency-from-1521fdb4"
     },
     {
+      "source": "/kb/articles/simon-willison-159947cd",
+      "destination": "/kb/articles/a-quote-from-john-gruber-159947cd"
+    },
+    {
       "source": "/kb/articles/simon-willison-16b49489",
       "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
     },
@@ -1174,6 +1186,10 @@
     {
       "source": "/kb/articles/simon-willison-320c1f29",
       "destination": "/kb/articles/release-datasette-llm-01a6-320c1f29"
+    },
+    {
+      "source": "/kb/articles/simon-willison-340c8ee8",
+      "destination": "/kb/articles/research-tre-python-binding-redos-robustness-demo-340c8ee8"
     },
     {
       "source": "/kb/articles/simon-willison-344780b7",
@@ -1392,6 +1408,10 @@
       "destination": "/kb/articles/release-datasette-ports-01-60170551"
     },
     {
+      "source": "/kb/articles/simon-willison-61d4e239",
+      "destination": "/kb/articles/granite-41-3b-svg-pelican-gallery-61d4e239"
+    },
+    {
       "source": "/kb/articles/simon-willison-62e9956a",
       "destination": "/kb/articles/thoughts-on-slowing-the-fuck-down-62e9956a"
     },
@@ -1414,6 +1434,10 @@
     {
       "source": "/kb/articles/simon-willison-67189a5f",
       "destination": "/kb/articles/taalas-serves-llama-31-8b-at-17000-tokenssecond-67189a5f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-67f548b8",
+      "destination": "/kb/articles/a-quote-from-andy-masley-67f548b8"
     },
     {
       "source": "/kb/articles/simon-willison-68c4826d",
@@ -1538,6 +1562,10 @@
     {
       "source": "/kb/articles/simon-willison-915b03d0",
       "destination": "/kb/articles/ggmlai-joins-hugging-face-to-ensure-the-long-term-progress-o-915b03d0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9171ed5d",
+      "destination": "/kb/articles/tool-redis-array-playground-9171ed5d"
     },
     {
       "source": "/kb/articles/simon-willison-9184893d",
@@ -1758,6 +1786,10 @@
     {
       "source": "/kb/articles/simon-willison-bb0ae254",
       "destination": "/kb/articles/eight-years-of-wanting-three-months-of-building-with-ai-bb0ae254"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bb59146f",
+      "destination": "/kb/articles/april-2026-newsletter-bb59146f"
     },
     {
       "source": "/kb/articles/simon-willison-bd816c12",
@@ -2134,6 +2166,10 @@
     {
       "source": "/kb/articles/swyx-33fd2c03",
       "destination": "/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+    },
+    {
+      "source": "/kb/articles/swyx-351c2fbe",
+      "destination": "/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
     },
     {
       "source": "/kb/articles/swyx-3a8f5bf7",

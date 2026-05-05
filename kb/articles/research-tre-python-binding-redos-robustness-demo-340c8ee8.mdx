@@ -1,0 +1,77 @@
+---
+title: 'Research: TRE Python binding — ReDoS robustness demo'
+description: 'This article discusses a Python ctypes binding to the TRE regex library, showcasing its robustness against ReDoS attacks compared to Python''s built-in'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-04'
+sourceUrl: 'https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything'
+topics: ["regex-performance","redos","python","ctypes","benchmarking"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything) · 04/05/2026
+</Info>
+
+## Summary
+
+This article discusses a Python ctypes binding to the TRE regex library, showcasing its robustness against ReDoS attacks compared to Python's built-in `re` module.
+
+## Key Insights
+
+> "TRE handles those much better than Python's standard library implementation."
+>
+> — Comparison of TRE's performance against Python's built-in regex capabilities.
+
+> "Key benchmarks show that TRE processes even notorious 'evil' patterns on gigantic inputs much faster than `re`."
+>
+> — Highlighting the efficiency of TRE in handling complex regex patterns.
+
+## Topics
+
+- [regex-performance](/kb/topics/regex-performance)
+- [redos](/kb/topics/redos)
+- [python](/kb/topics/python)
+- [ctypes](/kb/topics/ctypes)
+- [benchmarking](/kb/topics/benchmarking)
+
+---
+
+## Full Article
+
+Research TRE Python binding — ReDoS robustness demo — Demonstrating robust regex performance, this project offers a minimal Python ctypes binding to the TRE regex library, highlighting TRE’s immunity to regular expression denial-of-service (ReDoS) attacks that cripple Python's built-in `re` module. Key benchmarks show that TRE processes even notorious "evil" patterns on gigantic inputs (10 million characters) much faster than `re` on tiny ones, and scales linearly with input size instead of exponentially. If it's good enough for antirez to add to Redis I figured Ville Laurikari's TRE regular expression engine was worth exploring in a little more detail. I had Claude Code build an experimental Python binding (it used ctypes) and try some malicious regular expression attacks against the library. TRE handles those much better than Python's standard library implementation, thanks mainly to the lack of support for backtracking.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Vulnerability Research Is Cooked"
+    icon="newspaper"
+    href="/kb/articles/vulnerability-research-is-cooked-d9d689f0"
+  >
+    Simon Willison · explanation · 44% similar
+  </Card>
+  <Card
+    title="Tool: Redis Array Playground"
+    icon="newspaper"
+    href="/kb/articles/tool-redis-array-playground-9171ed5d"
+  >
+    Simon Willison · explanation · 44% similar
+  </Card>
+  <Card
+    title="Tool: Python Vulnerability Lookup"
+    icon="newspaper"
+    href="/kb/articles/tool-python-vulnerability-lookup-9184893d"
+  >
+    Simon Willison · how-to · 40% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything](https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything).
+</Note>
