@@ -1,0 +1,80 @@
+---
+title: 'Why SaaS freemium playbooks don’t work in AI, and what to do instead'
+description: 'The article discusses the challenges of monetizing AI products using traditional SaaS freemium models and proposes a new framework for AI paywalls.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-05-05'
+sourceUrl: 'https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont'
+topics: ["saas","ai-monetization","freemium-model","product-strategy"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont) · 05/05/2026
+</Info>
+
+## Summary
+
+The article discusses the challenges of monetizing AI products using traditional SaaS freemium models and proposes a new framework for AI paywalls.
+
+## Key Insights
+
+> "AI products need to figure out monetization quickly, or compute costs will bankrupt your company."
+>
+> — Introduction to the challenges faced by AI product teams.
+
+> "The modern AI paywall should be constructed with both sides of the equation in mind: what users expect and what actually costs the company money in compute."
+>
+> — Discussion on the framework for building AI paywalls.
+
+> "Gating usage intensity was a more powerful monetization lever than gating model intelligence."
+>
+> — Insights on the effective strategies for monetizing AI products.
+
+## Topics
+
+- [saas](/kb/topics/saas)
+- [ai-monetization](/kb/topics/ai-monetization)
+- [freemium-model](/kb/topics/freemium-model)
+- [product-strategy](/kb/topics/product-strategy)
+
+---
+
+## Full Article
+
+Hey there, Im Lenny. Each week, I answer reader questions about building product, driving growth, and accelerating your career. For more: Lennys Podcast | Lennybot | How I AI | My favorite AI/PM courses, public speaking course, and interview prep copilotSubscribe nowP.S. Get a full free year of Google AI, Cursor, Lovable, Notion, Manus, Replit, Gamma, n8n, Canva, ElevenLabs, Factory, Wispr Flow, Fin, Supabase, Bolt, Linear, PostHog, Framer, Railway, Granola, Warp, Gumloop, Magic Patterns, Mobbin, Stripe Atlas, and ChatPRD, by becoming an Insider subscriber. Yes, this is for real.Todays guest author, Vikas Kansal, leads product for Google AI, arguably the most successful consumer subscription bundle in history, with Gemini 3.1, Nano Banana, NotebookLM, Veo3, and terabytes (!) of cloud storage. Vikas has been on the front lines of figuring out how to successfully monetize AI products, balancing compute costs with sustainable growth, and in todays in-depth guest post, he shares all the lessons he and his team have learned about paywalling AI.Lets get into it.Youve just launched an incredible AI product. Growth is exploding, and users are completely hooked on the magic of your free tier. Then your bills arrive. In traditional SaaS, serving an extra free user costs essentially zero. In AI, every time a free user hits Enter, your GPUs fire, and your cash burns. AI products need to figure out monetization quickly, or compute costs will bankrupt your company.Most product teams still reach for the traditional SaaS freemium playbook when designing their AI freemium strategy: give away the basics, and gate the best features. But as growth expert (and four-time Lennys Podcast guest) Elena Verna rightly points out, when building an AI product, you have to give away a massive amount of magic for users to get to the aha moment. They need to actually experience the model writing a perfect email or generating that perfect image before deciding to use a product even a second time. In todays increasingly noisy market, the time to value (TTV) must be instantaneous if you hope to keep peoples attention.But this creates a paradox: what happens when that free magical experience becomes so good (and expensive in compute) that it cannibalizes your premium tier?While launching Googles AI subscriptions, we slammed right into this wall. The free tier was so good that for most tasks, it was outperforming humans. For free! It could write flawless Python, draft perfect marketing copy, and summarize long email threads instantly. We realized we were competing against ourselves, while also trying to create a sustainable business as demand for AI compute exponentially increases over time. Users rightly asked themselves, Why should I pay $20 a month when the free version is already smarter than I am?The traditional SaaS playbook would suggest that we shouldve paygated some of our best features, like the viral NotebookLM podcast generator, Nano Banana images, or Gemini Deep Research. In the past, Slack successfully gated message history and Figma gated team libraries. But if we had paygated the ability to talk it out live with Gemini or Deep Research, users would never have experienced the magic needed to build a daily habit and worked up a desire to try the tools again. Plus, this may not have actually addressed the biggest sources of compute costs. The reality of AI products forced us to completely rebuild the anatomy of a paywall for AI subscriptions. Here is the framework we developed.The anatomy of a modern AI paywallGenerated with Nano Banana Pro, a benefit of the Google AI subscription bundle The modern AI paywall should be constructed with both sides of the equation in mind: what users expect and what actually costs the company money in compute. This means moving beyond a traditional SaaS freemium model to multiple dynamic, usage-based, and outcome-driven tiers. If you are building an AI paywall, shift your upgrade triggers to these three pillars that align customer utility with costs to the company:Pillar 1: Gate usage intensityWhen we first added a paywall to Googles AI features, our instinct was the traditional SaaS premium play: a single $20 Gemini Advanced tier, where users pay to access the smartest model. But we quickly hit two problems. First, as I mentioned above, the free tier was already so capable that many users felt it was already smarter than them. So they saw no reason to upgrade. But the second was more surprising: the power users who did upgrade were consuming such immense amounts of compute that the unit economics for the company were terrifying. We realized the real value proposition wasnt just the quality of the model/answer, but the volume of work a user could pump through the system. And wed have to price that access accordingly if the business model was going to work.So we redesigned our offering into Plus, Pro, and Ultra tiers. Each bucket maps to a specific level of usage intensity, offering higher usage and larger context windows (up to 1 million tokens) as you move up. This provides users with predictable, prepaid pricing tiers and avoids the pay-per-use AWS-style bill shock that consumers hate. You get a taste of most features in every tier, and the Pro tier may be sufficient for a casual experimenter, while power users would opt for the Ultra tier. This approach aligned our unit economics and subscriber distribution to create a financially sustainable business model. We found that gating usage intensity was a more powerful monetization lever than gating model intelligence.As another example, Midjourney does this well. They use a Fast Mode vs. Relax Mode system. Fast Mode provides instant GPU access for quick results using limited monthly hourswhich are priced accordingly. Once Fast Hours are exhausted, users on Standard plans or higher can switch to unlimited Relax Mode, which operates in a queue based on demand. Users are paying for priority access to their GPUs to generate more, faster images and not necessarily for better images. And the company can keep their unit economics tight.Pillar 2: Gate outcomesWhile Pillar 1 monetizes raw compute and volume, Pillar 2 monetizes productivity. The free tier may give a user the right answer, but it requires manual effortcopying, pasting, prompting, and formatting. To get users to upgrade, you must put a paywall in front of features that collapse multi-step tasks into a single click. Pro users are highly sensitive to friction, and they will justify the subscription cost simply based on the hours of work it eliminates from their life.Our original value proposition for Gemini Advanced was built entirely around providing the best and fastest answer a frontier model could produce. Since then, LLMs made a major transition from passive text generators to autonomous AI agents that can reason, plan, use tools, and retain memory to complete complex tasks. We embraced this shift by making Chrome auto browse exclusively for our higher tiers. Chromes auto browse (powered by Gemini) is an AI agent feature that autonomously navigates websites, fills out forms, compares products, adds items to carts, and manages tasks like booking appointments within the browser. We framed the paywall around the employee labor saved, by letting the agent navigate the web and execute actions on behalf of the user to complete actual work. We stopped selling answers and started selling hours.Intercoms Fin AI agent is the gold standard in outcome-based AI pricing. It charges $0.99 per resolution. Its free to let the AI try to answer, but you only pay when the user confirms their problem was actually solved. Sierra also does this well.Pillar 3: Gate the heaviest compute modalitiesWhen we were brainstorming the go-to-market for Genie 3our real-time interactive world modelwe knew the compute costs would be staggering. During internal dogfooding, we joked that the TPUs were melting on every prompt. We realized that offering this to every free user wasnt just a bad business move but was physically impossible. There simply werent enough TPUs to serve this model at the 100K+ QPS required for hundreds of millions of DAUs. However, we also found that consumers intrinsically understand that these heavy modalities are a premium service. They dont expect a cinematic, photorealistic 3D world to be free in the same way they expect a 500-word email to be.So we made Genie 3 available exclusively to our highest-tier members. By elevating this frontier world model into a premium tier, we turned a massive compute liability into a powerful incentive for users to move to the top of our pricing ladder. This also enabled us to showcase the state-of-the-art model without running into capacity constraints.My advice is to use your most expensive, compute-heavy modalities as the ultimate upgrade trigger for your highest subscription tier. Make text and basic image generation universally accessible to drive top-of-funnel growth, but set a hard paywall the moment a user wants to render a cinematic video, run a real-time simulation, or enter a persistent 3D environment.Craft your monetization ecosystemWell-crafted and value-aligned tiers can capture the users experimental budget, but they wont keep it. AI subscriptions have relatively higher churn compared with traditional SaaS simply because the core usage habits are still being formed. To access that lifetime user value, you have to design an ecosystem surrounding the tiers to contain and expand your customer base. Below is how you optimize conversion, retention, and cost to serve to ensure that youre building an ecosystem that lasts.Nail your conversion catalystsDeciding what value to put in which tier is only half the battle. You also need to master when and how to prompt the upsell that actually drives revenue. To push a highly engaged free user over the tipping point, you need specific conversion catalystsbehavioral triggers, contextual UX nudges, and strategic packaging that transform a frustrating roadblock into a frictionless, no-brainer upgrade. Showing the upgrade prompt is more an art than a science. Driving meaningful conversions ultimately comes down to surfacing the right contextual nudge to the right user at the exact moment of high intent. With Google AI subscriptions, weve found a few approaches that really work: Read more
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="New: A free year of Cursor, Google AI Pro, Notion, Supabase, Gumloop, and Fin for subscribers"
+    icon="newspaper"
+    href="/kb/articles/new-a-free-year-of-cursor-google-ai-pro-notion-supabase-guml-42bbcba9"
+  >
+    Lenny Rachitsky · reference · 68% similar
+  </Card>
+  <Card
+    title="How I built LennyRPG"
+    icon="newspaper"
+    href="/kb/articles/how-i-built-lennyrpg-87f53d1c"
+  >
+    Lenny Rachitsky · how-to · 67% similar
+  </Card>
+  <Card
+    title="🎙️ This week on How I AI: How Stripe built “minions”—AI coding agents that ship 1,300 PRs per week + How to turn Claude Code into your personal life operating system"
+    icon="newspaper"
+    href="/kb/articles/-this-week-on-how-i-ai-how-stripe-built-minionsai-coding-age-44847dd6"
+  >
+    Lenny Rachitsky · how-to · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont](https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont).
+</Note>

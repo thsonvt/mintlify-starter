@@ -1,0 +1,76 @@
+---
+title: 'Release: llm-echo 0.5a0'
+description: 'Simon Willison announces the release of llm-echo 0.5a0, a debug plugin for LLM that provides a fake echo model for automated testing.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-05'
+sourceUrl: 'https://simonwillison.net/2026/May/5/llm-echo/#atom-everything'
+topics: ["llm-echo","debugging","automated-testing","plugin-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/5/llm-echo/#atom-everything) · 05/05/2026
+</Info>
+
+## Summary
+
+Simon Willison announces the release of llm-echo 0.5a0, a debug plugin for LLM that provides a fake echo model for automated testing.
+
+## Key Insights
+
+> "This plugin provides a fake model called 'echo' for LLM which doesn't run an LLM at all - it's useful for writing automated tests."
+>
+> — Description of the llm-echo plugin functionality.
+
+> "You can now do this: uvx --with llm==0.32a1 --with llm-echo==0.5a0 llm -m echo hi -o thinking 1"
+>
+> — Example command demonstrating the use of the llm-echo plugin.
+
+## Topics
+
+- [llm-echo](/kb/topics/llm-echo)
+- [debugging](/kb/topics/debugging)
+- [automated-testing](/kb/topics/automated-testing)
+- [plugin-release](/kb/topics/plugin-release)
+
+---
+
+## Full Article
+
+5th May 2026 Release llm-echo 0.5a0 — Debug plugin for LLM providing an echo model New -o thinking 1 option to help test against LLM 0.32a0 and higher. This plugin provides a fake model called "echo" for LLM which doesn't run an LLM at all - it's useful for writing automated tests. You can now do this: uvx --with llm==0.32a1 --with llm-echo==0.5a0 llm -m echo hi -o thinking 1 This will fake a reasoning block to standard error before returning JSON echoing the prompt. Posted 5th May 2026 at 1:31 am Recent articles Live blog: Code w/ Claude 2026 - 6th May 2026 Vibe coding and agentic engineering are getting closer than I'd like - 6th May 2026 LLM 0.32a0 is a major backwards-compatible refactor - 29th April 2026 This is a beat by Simon Willison, posted on 5th May 2026. llm 595 Monthly briefing Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. Pay me to send you less! Sponsor & subscribe
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-echo 0.4"
+    icon="newspaper"
+    href="/kb/articles/release-llm-echo-04-a90df1e1"
+  >
+    Simon Willison · reference · 78% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a0-9c28ec29"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a1"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a1-5ea51482"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/5/llm-echo/#atom-everything](https://simonwillison.net/2026/May/5/llm-echo/#atom-everything).
+</Note>

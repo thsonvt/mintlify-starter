@@ -148,6 +148,10 @@
       "destination": "/kb/articles/eval-awareness-in-claude-opus-46s-browsecomp-performance-2a3484f4"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-3c5f54b1",
+      "destination": "/kb/articles/engineering-3c5f54b1"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-4750b99f",
       "destination": "/kb/articles/how-we-built-our-multi-agent-research-system-4750b99f"
     },
@@ -664,6 +668,10 @@
       "destination": "/kb/articles/-community-wisdom-vibe-coding-as-a-team-sport-teaching-inter-16ada60d"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1a78b4a3",
+      "destination": "/kb/articles/code-with-claude-the-5-biggest-updates-explained-1a78b4a3"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1ac8b259",
       "destination": "/kb/articles/why-half-of-product-managers-are-in-trouble-nikhyl-singhal-m-1ac8b259"
     },
@@ -678,6 +686,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-24a555a8",
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-29d1c26c",
+      "destination": "/kb/articles/why-saas-freemium-playbooks-dont-work-in-ai-and-what-to-do-i-29d1c26c"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-29f03b41",
@@ -924,6 +936,10 @@
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d75dc58c",
+      "destination": "/kb/articles/quests-token-leaderboards-and-a-skills-marketplace-the-elite-d75dc58c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d82cd052",
       "destination": "/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
     },
@@ -994,6 +1010,10 @@
     {
       "source": "/kb/articles/openai-engineering-6cf6dad3",
       "destination": "/kb/articles/blog-6cf6dad3"
+    },
+    {
+      "source": "/kb/articles/resources-anthropic-5f181e96",
+      "destination": "/kb/articles/newsroom-5f181e96"
     },
     {
       "source": "/kb/articles/resources-anthropic-78f0d530",
@@ -1376,6 +1396,10 @@
       "destination": "/kb/articles/a-quote-from-david-abram-5d9b8291"
     },
     {
+      "source": "/kb/articles/simon-willison-5da60b1d",
+      "destination": "/kb/articles/release-llm-echo-05a0-5da60b1d"
+    },
+    {
       "source": "/kb/articles/simon-willison-5dea7f7c",
       "destination": "/kb/articles/release-datasette-llm-01a3-5dea7f7c"
     },
@@ -1410,6 +1434,10 @@
     {
       "source": "/kb/articles/simon-willison-61d4e239",
       "destination": "/kb/articles/granite-41-3b-svg-pelican-gallery-61d4e239"
+    },
+    {
+      "source": "/kb/articles/simon-willison-62304b35",
+      "destination": "/kb/articles/our-ai-started-a-cafe-in-stockholm-62304b35"
     },
     {
       "source": "/kb/articles/simon-willison-62e9956a",
@@ -1760,6 +1788,10 @@
       "destination": "/kb/articles/gpt-55-prompting-guide-b2672669"
     },
     {
+      "source": "/kb/articles/simon-willison-b31cc1cc",
+      "destination": "/kb/articles/vibe-coding-and-agentic-engineering-are-getting-closer-than--b31cc1cc"
+    },
+    {
       "source": "/kb/articles/simon-willison-b36c4b11",
       "destination": "/kb/articles/package-managers-need-to-cool-down-b36c4b11"
     },
@@ -1794,6 +1826,10 @@
     {
       "source": "/kb/articles/simon-willison-bd816c12",
       "destination": "/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bdab1d03",
+      "destination": "/kb/articles/live-blog-code-w-claude-2026-bdab1d03"
     },
     {
       "source": "/kb/articles/simon-willison-bdef2945",
@@ -1900,6 +1936,10 @@
       "destination": "/kb/articles/a-quote-from-andreas-phlsson-notini-d45bbc3d"
     },
     {
+      "source": "/kb/articles/simon-willison-d4cc68f5",
+      "destination": "/kb/articles/release-datasette-llm-01a7-d4cc68f5"
+    },
+    {
       "source": "/kb/articles/simon-willison-d4d113b0",
       "destination": "/kb/articles/a-quote-from-joseph-weizenbaum-d4d113b0"
     },
@@ -1958,6 +1998,10 @@
     {
       "source": "/kb/articles/simon-willison-e0fc849e",
       "destination": "/kb/articles/release-datasette-10a27-e0fc849e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e14020ec",
+      "destination": "/kb/articles/release-datasette-referrer-policy-01-e14020ec"
     },
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
@@ -2264,6 +2308,10 @@
       "destination": "/kb/articles/ainews-openai-closes-110b-raise-from-amazon-nvidia-softbank--6ca055dc"
     },
     {
+      "source": "/kb/articles/swyx-6ede5258",
+      "destination": "/kb/articles/ainews-anthropic-spacexais-300mw5byr-deal-for-colossus-i-arr-6ede5258"
+    },
+    {
       "source": "/kb/articles/swyx-71aec735",
       "destination": "/kb/articles/ainews-replit-agent-4-the-knowledge-work-agent-71aec735"
     },
@@ -2432,6 +2480,10 @@
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
     },
     {
+      "source": "/kb/articles/swyx-e452a7c5",
+      "destination": "/kb/articles/ainews-silicon-valley-gets-serious-about-services-e452a7c5"
+    },
+    {
       "source": "/kb/articles/swyx-ea4debd4",
       "destination": "/kb/articles/ainews-context-drought-ea4debd4"
     },
@@ -2450,6 +2502,10 @@
     {
       "source": "/kb/articles/swyx-ee58e399",
       "destination": "/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+    },
+    {
+      "source": "/kb/articles/swyx-f39f0e6c",
+      "destination": "/kb/articles/doing-vibe-physics-alex-lupsasca-openai-f39f0e6c"
     },
     {
       "source": "/kb/articles/swyx-f8f06b12",
