@@ -1084,6 +1084,10 @@
       "destination": "/kb/articles/a-quote-from-kyle-daigle-11fce8fa"
     },
     {
+      "source": "/kb/articles/simon-willison-128b0cca",
+      "destination": "/kb/articles/behind-the-scenes-hardening-firefox-with-claude-mythos-previ-128b0cca"
+    },
+    {
       "source": "/kb/articles/simon-willison-12f23a38",
       "destination": "/kb/articles/a-quote-from-les-orchard-12f23a38"
     },
@@ -1290,6 +1294,10 @@
     {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-46e67c5e",
+      "destination": "/kb/articles/tool-github-repo-stats-46e67c5e"
     },
     {
       "source": "/kb/articles/simon-willison-47fc8cda",
@@ -1836,6 +1844,10 @@
       "destination": "/kb/articles/gemma-4-audio-with-mlx-bdef2945"
     },
     {
+      "source": "/kb/articles/simon-willison-beb3e6a5",
+      "destination": "/kb/articles/release-llm-gemini-031-beb3e6a5"
+    },
+    {
       "source": "/kb/articles/simon-willison-bf3be779",
       "destination": "/kb/articles/tool-millisecond-converter-bf3be779"
     },
@@ -2084,6 +2096,10 @@
       "destination": "/kb/articles/introducing-deno-sandbox-f73e70a3"
     },
     {
+      "source": "/kb/articles/simon-willison-f85e8e73",
+      "destination": "/kb/articles/tool-big-words-f85e8e73"
+    },
+    {
       "source": "/kb/articles/simon-willison-f87be7dc",
       "destination": "/kb/articles/what-is-agentic-engineering-agentic-engineering-patterns-f87be7dc"
     },
@@ -2102,6 +2118,10 @@
     {
       "source": "/kb/articles/simon-willison-fb5286c6",
       "destination": "/kb/articles/a-quote-from-a-member-of-anthropics-alignment-science-team-fb5286c6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fba0b078",
+      "destination": "/kb/articles/notes-on-the-xaianthropic-data-center-deal-fba0b078"
     },
     {
       "source": "/kb/articles/simon-willison-fbd470c1",
@@ -2478,6 +2498,10 @@
     {
       "source": "/kb/articles/swyx-dae507b8",
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+    },
+    {
+      "source": "/kb/articles/swyx-db8af209",
+      "destination": "/kb/articles/ainews-gpt-realtime-2-translate-and-whisper-new-sota-realtim-db8af209"
     },
     {
       "source": "/kb/articles/swyx-e452a7c5",
