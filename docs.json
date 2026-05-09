@@ -1564,6 +1564,10 @@
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
     },
     {
+      "source": "/kb/articles/simon-willison-887578b6",
+      "destination": "/kb/articles/a-quote-from-luke-curley-887578b6"
+    },
+    {
       "source": "/kb/articles/simon-willison-89da678b",
       "destination": "/kb/articles/the-axios-supply-chain-attack-used-individually-targeted-soc-89da678b"
     },
@@ -1794,6 +1798,10 @@
     {
       "source": "/kb/articles/simon-willison-b2672669",
       "destination": "/kb/articles/gpt-55-prompting-guide-b2672669"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b2d0a22c",
+      "destination": "/kb/articles/using-claude-code-the-unreasonable-effectiveness-of-html-b2d0a22c"
     },
     {
       "source": "/kb/articles/simon-willison-b31cc1cc",
@@ -2298,6 +2306,10 @@
     {
       "source": "/kb/articles/swyx-53d92955",
       "destination": "/kb/articles/ainews-ai-engineer-worlds-fair-autoresearch-memory-world-mod-53d92955"
+    },
+    {
+      "source": "/kb/articles/swyx-57489e33",
+      "destination": "/kb/articles/ainews-anthropic-growing-10xyear-while-everyone-else-is-layi-57489e33"
     },
     {
       "source": "/kb/articles/swyx-5acd0fdd",
