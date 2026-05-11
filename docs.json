@@ -900,6 +900,10 @@
       "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9fc122d2",
+      "destination": "/kb/articles/how-to-build-a-company-that-withstands-any-era-eric-ries-lea-9fc122d2"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-a2e3c1be",
       "destination": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be"
     },
@@ -1516,6 +1520,10 @@
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
     },
     {
+      "source": "/kb/articles/simon-willison-741115e1",
+      "destination": "/kb/articles/a-quote-from-new-york-times-editors-note-741115e1"
+    },
+    {
       "source": "/kb/articles/simon-willison-7474b8be",
       "destination": "/kb/articles/production-query-plans-without-production-data-7474b8be"
     },
@@ -1886,6 +1894,10 @@
     {
       "source": "/kb/articles/simon-willison-c5b36972",
       "destination": "/kb/articles/clinejection-compromising-clines-production-releases-just-by-c5b36972"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c5fc3ab0",
+      "destination": "/kb/articles/a-quote-from-andrew-quinn-c5fc3ab0"
     },
     {
       "source": "/kb/articles/simon-willison-c77aff7b",
