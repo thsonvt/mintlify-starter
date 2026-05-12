@@ -1,0 +1,80 @@
+---
+title: 'TIL: Using LLM in the shebang line of a script'
+description: 'The article discusses using LLM in the shebang line of scripts, showcasing various examples of how to leverage LLM for generating outputs and executin'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-11'
+sourceUrl: 'https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything'
+topics: ["llm","scripting","programming","automation"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything) · 11/05/2026
+</Info>
+
+## Summary
+
+The article discusses using LLM in the shebang line of scripts, showcasing various examples of how to leverage LLM for generating outputs and executing functions.
+
+## Key Insights
+
+> "you can put a shebang on an english text file now"
+>
+> — Kim_Bruning on Hacker News
+
+> "This inspired me to look at patterns for doing exactly that with LLM."
+>
+> — Introduction to the article
+
+> "outputs (thanks to that --td tools debug option)"
+>
+> — Example of executing YAML templates
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [scripting](/kb/topics/scripting)
+- [programming](/kb/topics/programming)
+- [automation](/kb/topics/automation)
+
+---
+
+## Full Article
+
+Kim_Bruning on Hacker News: But seriously, you can put a shebang on an english text file now (if you're sufficiently brave) [...] This inspired me to look at patterns for doing exactly that with LLM. Here's the simplest, which takes advantage of LLM fragments: #!/usr/bin/env -S llm -f Generate an SVG of a pelican riding a bicycle But you can also incorporate tool calls using the -T name_of_tool option: #!/usr/bin/env -S llm -T llm_time -f Write a haiku that mentions the exact current time Or even execute YAML templates directly that define extra tools as Python functions: #!/usr/bin/env -S llm -t model: gpt-5.4-mini system: | Use tools to run calculations functions: | def add(a: int, b: int) -> int: return a + b def multiply(a: int, b: int) -> int: return a * b Then: ./calc.sh 'what is 2344 * 5252 + 134' --td Which outputs (thanks to that --td tools debug option): Tool call: multiply(&#123;'a': 2344, 'b': 5252&#125;) 12310688 Tool call: add(&#123;'a': 12310688, 'b': 134&#125;) 12310822 2344 × 5252 + 134 = **12,310,822** Read the full TIL for a more complex example that uses the Datasette SQL API to answer questions about content on my blog.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="LLM 0.32a0  is a major backwards-compatible refactor"
+    icon="newspaper"
+    href="/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+  >
+    Simon Willison · reference · 57% similar
+  </Card>
+  <Card
+    title="Can a LLM convert C, to ASM to specs and then to a working Z/80 Speccy tape? Yes."
+    icon="newspaper"
+    href="/kb/articles/can-a-llm-convert-c-to-asm-to-specs-and-then-to-a-working-z8-1073b1de"
+  >
+    Geoffrey Huntley · explanation · 57% similar
+  </Card>
+  <Card
+    title="Release: research-llm-apis 2026-04-04"
+    icon="newspaper"
+    href="/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
+  >
+    Simon Willison · explanation · 53% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything](https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything).
+</Note>

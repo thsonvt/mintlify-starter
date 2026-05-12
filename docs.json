@@ -756,6 +756,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4dc5313e",
+      "destination": "/kb/articles/spec-driven-development-the-ai-engineering-workflow-at-notio-4dc5313e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4de3be9c",
       "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
     },
@@ -882,6 +886,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-9005bf61",
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-9005bf61"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-93d7168f",
+      "destination": "/kb/articles/-how-i-ai-quests-token-leaderboards-and-the-elite-ai-adoptio-93d7168f"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-944c4313",
@@ -1108,6 +1116,10 @@
       "destination": "/kb/articles/coding-after-coders-the-end-of-computer-programming-as-we-kn-1364a25f"
     },
     {
+      "source": "/kb/articles/simon-willison-13c696f6",
+      "destination": "/kb/articles/your-ai-use-is-breaking-my-brain-13c696f6"
+    },
+    {
       "source": "/kb/articles/simon-willison-13f0f387",
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
@@ -1172,6 +1184,10 @@
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
     {
+      "source": "/kb/articles/simon-willison-2153c9f6",
+      "destination": "/kb/articles/learning-on-the-shop-floor-2153c9f6"
+    },
+    {
       "source": "/kb/articles/simon-willison-231bc475",
       "destination": "/kb/articles/deepseek-v4almost-on-the-frontier-a-fraction-of-the-price-231bc475"
     },
@@ -1190,6 +1206,10 @@
     {
       "source": "/kb/articles/simon-willison-28898060",
       "destination": "/kb/articles/anthropic-and-the-pentagon-28898060"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2d4372de",
+      "destination": "/kb/articles/a-quote-from-james-shore-2d4372de"
     },
     {
       "source": "/kb/articles/simon-willison-2d77e434",
@@ -1600,6 +1620,10 @@
       "destination": "/kb/articles/release-datasette-llm-01a5-8f4b0133"
     },
     {
+      "source": "/kb/articles/simon-willison-8f613b8a",
+      "destination": "/kb/articles/til-using-llm-in-the-shebang-line-of-a-script-8f613b8a"
+    },
+    {
       "source": "/kb/articles/simon-willison-9053483c",
       "destination": "/kb/articles/the-zig-projects-rationale-for-their-firm-anti-ai-contributi-9053483c"
     },
@@ -1806,6 +1830,10 @@
     {
       "source": "/kb/articles/simon-willison-af54c792",
       "destination": "/kb/articles/a-quote-from-georgi-gerganov-af54c792"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b1437402",
+      "destination": "/kb/articles/thoughts-on-gitlabs-workforce-reduction-b1437402"
     },
     {
       "source": "/kb/articles/simon-willison-b2672669",
@@ -2298,6 +2326,10 @@
     {
       "source": "/kb/articles/swyx-46eff22b",
       "destination": "/kb/articles/the-end-of-swe-bench-verified-mia-glaese-olivia-watkins-open-46eff22b"
+    },
+    {
+      "source": "/kb/articles/swyx-4735a4ca",
+      "destination": "/kb/articles/ainews-thinking-machines-native-interaction-models-tml-inter-4735a4ca"
     },
     {
       "source": "/kb/articles/swyx-50b11fd3",
