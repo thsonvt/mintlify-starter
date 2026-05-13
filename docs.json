@@ -1176,6 +1176,10 @@
       "destination": "/kb/articles/our-evaluation-of-openais-gpt-55-cyber-capabilities-1dff5c0f"
     },
     {
+      "source": "/kb/articles/simon-willison-1e4ad5f8",
+      "destination": "/kb/articles/release-datasette-10a29-1e4ad5f8"
+    },
+    {
       "source": "/kb/articles/simon-willison-1f3b8622",
       "destination": "/kb/articles/a-quote-from-john-gruber-1f3b8622"
     },
@@ -1302,6 +1306,10 @@
     {
       "source": "/kb/articles/simon-willison-4119b526",
       "destination": "/kb/articles/tool-datasetteio-news-preview-4119b526"
+    },
+    {
+      "source": "/kb/articles/simon-willison-416b6100",
+      "destination": "/kb/articles/a-quote-from-mo-bitar-416b6100"
     },
     {
       "source": "/kb/articles/simon-willison-417198d8",
@@ -1508,6 +1516,10 @@
       "destination": "/kb/articles/release-llm-all-models-async-01-68c4826d"
     },
     {
+      "source": "/kb/articles/simon-willison-6998d31c",
+      "destination": "/kb/articles/tool-csp-allow-list-experiment-6998d31c"
+    },
+    {
       "source": "/kb/articles/simon-willison-69e1867f",
       "destination": "/kb/articles/tool-gemini-31-flash-tts-69e1867f"
     },
@@ -1610,6 +1622,10 @@
     {
       "source": "/kb/articles/simon-willison-8d6d3e47",
       "destination": "/kb/articles/a-quote-from-christopher-mims-8d6d3e47"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8db1edb7",
+      "destination": "/kb/articles/release-llm-032a2-8db1edb7"
     },
     {
       "source": "/kb/articles/simon-willison-8f0b7b58",
@@ -2044,6 +2060,10 @@
       "destination": "/kb/articles/reply-guy-dd345ddf"
     },
     {
+      "source": "/kb/articles/simon-willison-dd6ce69b",
+      "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-dd6ce69b"
+    },
+    {
       "source": "/kb/articles/simon-willison-de0f1213",
       "destination": "/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
     },
@@ -2270,6 +2290,10 @@
     {
       "source": "/kb/articles/swyx-2a8428b0",
       "destination": "/kb/articles/-training-transformers-to-solve-95-failure-rate-of-cancer-tr-2a8428b0"
+    },
+    {
+      "source": "/kb/articles/swyx-2c2e1519",
+      "destination": "/kb/articles/ainews-the-end-of-finetuning-2c2e1519"
     },
     {
       "source": "/kb/articles/swyx-2e52dbf3",

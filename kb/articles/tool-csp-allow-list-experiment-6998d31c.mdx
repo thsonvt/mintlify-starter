@@ -1,0 +1,80 @@
+---
+title: 'Tool: CSP Allow-list Experiment'
+description: 'The article discusses an experiment demonstrating how to load an app in a CSP-protected sandboxed iframe and handle CSP errors effectively.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-13'
+sourceUrl: 'https://simonwillison.net/2026/May/13/csp-allow/#atom-everything'
+topics: ["csp","sandboxing","web-development","security"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/13/csp-allow/#atom-everything) · 13/05/2026
+</Info>
+
+## Summary
+
+The article discusses an experiment demonstrating how to load an app in a CSP-protected sandboxed iframe and handle CSP errors effectively.
+
+## Key Insights
+
+> "you can load an app in a CSP-protected sandboxed iframe"
+>
+> — Introduction to the experiment
+
+> "intercepts CSP errors and passes them up to the parent window"
+>
+> — Description of the custom fetch() functionality
+
+> "prompt the user to add that domain to an allow-list"
+>
+> — Outcome of handling CSP errors
+
+## Topics
+
+- [csp](/kb/topics/csp)
+- [sandboxing](/kb/topics/sandboxing)
+- [web-development](/kb/topics/web-development)
+- [security](/kb/topics/security)
+
+---
+
+## Full Article
+
+13th May 2026 Tool CSP Allow-list Experiment An experiment that shows that you can load an app in a CSP-protected sandboxed iframe (see previous note) and have a custom fetch() that intercepts CSP errors and passes them up to the parent window... which can then prompt the user to add that domain to an allow-list and then refresh the page. I built this one with GPT-5.5 xhigh running in the Codex desktop app. Posted 13th May 2026 at 4:50 am
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: Can JavaScript Escape a CSP Meta Tag Inside an Iframe?"
+    icon="newspaper"
+    href="/kb/articles/research-can-javascript-escape-a-csp-meta-tag-inside-an-ifra-0ded8b95"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+  <Card
+    title="Snowflake Cortex AI Escapes Sandbox and Executes Malware"
+    icon="newspaper"
+    href="/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
+  >
+    Simon Willison · explanation · 50% similar
+  </Card>
+  <Card
+    title="Research: JavaScript Sandboxing Research"
+    icon="newspaper"
+    href="/kb/articles/research-javascript-sandboxing-research-d8de17a0"
+  >
+    Simon Willison · explanation · 50% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/13/csp-allow/#atom-everything](https://simonwillison.net/2026/May/13/csp-allow/#atom-everything).
+</Note>

@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette 1.0a29'
+description: 'The release of datasette 1.0a29 introduces new features and fixes, including improved visibility for table headers and a resolution for a critical seg'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-12'
+sourceUrl: 'https://simonwillison.net/2026/May/12/datasette/#atom-everything'
+topics: ["open-source","data-exploration","bug-fixes"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/12/datasette/#atom-everything) · 12/05/2026
+</Info>
+
+## Summary
+
+The release of datasette 1.0a29 introduces new features and fixes, including improved visibility for table headers and a resolution for a critical segfault bug.
+
+## Key Insights
+
+> "New TokenRestrictions.abbreviated(datasette) utility method for creating '_r' dictionaries."
+>
+> — Introduction of a new utility method in the release.
+
+> "Table headers and column options are now visible even if a table contains zero rows."
+>
+> — Highlighting a new feature that improves user experience.
+
+> "That segfault bug was gnarly."
+>
+> — Commenting on the complexity of fixing a critical bug.
+
+## Topics
+
+- [open-source](/kb/topics/open-source)
+- [data-exploration](/kb/topics/data-exploration)
+- [bug-fixes](/kb/topics/bug-fixes)
+
+---
+
+## Full Article
+
+Release datasette 1.0a29 — An open source multi-tool for exploring and publishing data New TokenRestrictions.abbreviated(datasette) utility method for creating "_r" dictionaries. #2695 Table headers and column options are now visible even if a table contains zero rows. #2701 Fixed bug with display of column actions dialog on Mobile Safari. #2708 Fixed bug where tests could crash with a segfault due to a race condition between Datasette.close() and Datasette.close(). #2709 That segfault bug was gnarly. I added a mechanism to Datasette recently that would automatically close connections at the end of each test, but it turned out that introduced a race condition where an in-flight query could sometimes be executing in a thread against a connection while it was being closed. I ended up solving that by having Codex CLI (with GPT-5.5 xhigh) create a minimal Dockerfile that recreated the bug.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a28"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a28-9401b4b8"
+  >
+    Simon Willison · reference · 79% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 77% similar
+  </Card>
+  <Card
+    title="Release: datasette-referrer-policy 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-referrer-policy-01-e14020ec"
+  >
+    Simon Willison · how-to · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/12/datasette/#atom-everything](https://simonwillison.net/2026/May/12/datasette/#atom-everything).
+</Note>

@@ -1,0 +1,79 @@
+---
+title: 'Release: llm 0.32a2'
+description: 'The release of llm 0.32a2 introduces a new endpoint for OpenAI models, enhancing reasoning capabilities and allowing users to see summarized reasoning'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-12'
+sourceUrl: 'https://simonwillison.net/2026/May/12/llm/#atom-everything'
+topics: ["openai","llms","generative-ai"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/12/llm/#atom-everything) · 12/05/2026
+</Info>
+
+## Summary
+
+The release of llm 0.32a2 introduces a new endpoint for OpenAI models, enhancing reasoning capabilities and allowing users to see summarized reasoning tokens.
+
+## Key Insights
+
+> "Most reasoning-capable OpenAI models now use the /v1/responses endpoint instead of /v1/chat/completions."
+>
+> — Describing the key change in the new llm 0.32a2 release.
+
+> "This enables interleaved reasoning across tool calls for GPT-5 class models."
+>
+> — Explaining the benefits of the new endpoint.
+
+> "Use the -R or --hide-reasoning flags if you don't want to see that."
+>
+> — Instructions for users regarding the new reasoning tokens display.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [llms](/kb/topics/llms)
+- [generative-ai](/kb/topics/generative-ai)
+
+---
+
+## Full Article
+
+12th May 2026 Release llm 0.32a2 — Access large language models from the command-line A bunch of useful stuff in this LLM alpha, but the most important detail is this one: Most reasoning-capable OpenAI models now use the /v1/responses endpoint instead of /v1/chat/completions. This enables interleaved reasoning across tool calls for GPT-5 class models. #1435 This means you can now see the summarized reasoning tokens when you run prompts against an OpenAI model, displayed in a different color to standard error. Use the -R or --hide-reasoning flags if you don't want to see that. Posted 12th May 2026 at 5:45 pm Recent articles Notes on the xAI/Anthropic data center deal - 7th May 2026 Live blog: Code w/ Claude 2026 - 6th May 2026 Vibe coding and agentic engineering are getting closer than I'd like - 6th May 2026 This is a beat by Simon Willison, posted on 12th May 2026. projects 528 ai 2018 annotated-release-notes 49 openai 419 generative-ai 1786 llms 1752 llm 599 Monthly briefing Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. Pay me to send you less! Sponsor & subscribe
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="LLM 0.32a0  is a major backwards-compatible refactor"
+    icon="newspaper"
+    href="/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Release: llm 0.31"
+    icon="newspaper"
+    href="/kb/articles/release-llm-031-51ea461a"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="Release: llm-echo 0.5a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-echo-05a0-5da60b1d"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/12/llm/#atom-everything](https://simonwillison.net/2026/May/12/llm/#atom-everything).
+</Note>
