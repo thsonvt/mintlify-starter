@@ -1340,6 +1340,10 @@
       "destination": "/kb/articles/perhaps-not-boring-technology-after-all-47fc8cda"
     },
     {
+      "source": "/kb/articles/simon-willison-48724683",
+      "destination": "/kb/articles/quoting-boris-mann-48724683"
+    },
+    {
       "source": "/kb/articles/simon-willison-48ff65d4",
       "destination": "/kb/articles/tool-inaturalist-sightings-48ff65d4"
     },
@@ -1350,6 +1354,10 @@
     {
       "source": "/kb/articles/simon-willison-4973cabb",
       "destination": "/kb/articles/a-social-network-for-ai-bots-only-no-humans-allowed-4973cabb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-499c7d7f",
+      "destination": "/kb/articles/welcome-to-the-datasette-blog-499c7d7f"
     },
     {
       "source": "/kb/articles/simon-willison-4a95457e",
@@ -2502,6 +2510,10 @@
     {
       "source": "/kb/articles/swyx-963a4413",
       "destination": "/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+    },
+    {
+      "source": "/kb/articles/swyx-983c46c3",
+      "destination": "/kb/articles/ainews-codex-rises-claude-meters-programmatic-usage-983c46c3"
     },
     {
       "source": "/kb/articles/swyx-985dc0b3",
