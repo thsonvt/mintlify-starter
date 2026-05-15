@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-ip-rate-limit 0.1a0'
+description: 'Simon Willison introduces the datasette-ip-rate-limit plugin, designed to block IPs that overload the datasette.io site with requests.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-14'
+sourceUrl: 'https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything'
+topics: ["rate-limiting","datasette","web-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything) · 14/05/2026
+</Info>
+
+## Summary
+
+Simon Willison introduces the datasette-ip-rate-limit plugin, designed to block IPs that overload the datasette.io site with requests.
+
+## Key Insights
+
+> "I had Codex (GPT-5.5 xhigh) build a configurable rate limiting plugin"
+>
+> — Introduction of the plugin's development process.
+
+> "block IPs that were hammering specific areas of the site too quickly"
+>
+> — Explanation of the plugin's purpose.
+
+> "Here's the production configuration I'm using on that site for the new plugin"
+>
+> — Sharing the configuration details for implementation.
+
+## Topics
+
+- [rate-limiting](/kb/topics/rate-limiting)
+- [datasette](/kb/topics/datasette)
+- [web-development](/kb/topics/web-development)
+
+---
+
+## Full Article
+
+The datasette.io site was being hammered by poorly-behaved crawlers, so I had Codex (GPT-5.5 xhigh) build a configurable rate limiting plugin to block IPs that were hammering specific areas of the site too quickly. Here's the production configuration I'm using on that site for the new plugin: datasette-ip-rate-limit: header: Fly-Client-IP max_keys: 10000 exempt_paths: - "/static/*" - "/-/turnstile*" rules: - name: demo-databases paths: - "/global-power-plants/*" - "/legislators/*" window_seconds: 60 max_requests: 60 block_seconds: 20
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-referrer-policy 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-referrer-policy-01-e14020ec"
+  >
+    Simon Willison · how-to · 62% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a29"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a29-1e4ad5f8"
+  >
+    Simon Willison · reference · 58% similar
+  </Card>
+  <Card
+    title="Release: datasette-ports 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-ports-01-60170551"
+  >
+    Simon Willison · how-to · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything](https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything).
+</Note>

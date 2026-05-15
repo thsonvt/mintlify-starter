@@ -1076,6 +1076,10 @@
       "destination": "/kb/articles/tool-github-repo-size-0bdc0534"
     },
     {
+      "source": "/kb/articles/simon-willison-0c2d6e2f",
+      "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-0c2d6e2f"
+    },
+    {
       "source": "/kb/articles/simon-willison-0d49796a",
       "destination": "/kb/articles/speech-translation-in-google-meet-is-now-rolling-out-to-mobi-0d49796a"
     },
@@ -1604,6 +1608,10 @@
       "destination": "/kb/articles/experimenting-with-starlette-10-with-claude-skills-8015e4ff"
     },
     {
+      "source": "/kb/articles/simon-willison-81737517",
+      "destination": "/kb/articles/release-datasette-ip-rate-limit-01a0-81737517"
+    },
+    {
       "source": "/kb/articles/simon-willison-8416606f",
       "destination": "/kb/articles/sorting-algorithms-8416606f"
     },
@@ -2088,6 +2096,10 @@
       "destination": "/kb/articles/release-scan-for-secrets-03-dfb9e67b"
     },
     {
+      "source": "/kb/articles/simon-willison-e0353207",
+      "destination": "/kb/articles/not-so-locked-in-any-more-e0353207"
+    },
+    {
       "source": "/kb/articles/simon-willison-e0fc849e",
       "destination": "/kb/articles/release-datasette-10a27-e0fc849e"
     },
@@ -2532,6 +2544,10 @@
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
     },
     {
+      "source": "/kb/articles/swyx-a27bf774",
+      "destination": "/kb/articles/ainews-everything-is-conductor-a27bf774"
+    },
+    {
       "source": "/kb/articles/swyx-a6afd69d",
       "destination": "/kb/articles/physical-ai-that-moves-the-world-qasar-younis-peter-ludwig-a-a6afd69d"
     },
@@ -2594,6 +2610,10 @@
     {
       "source": "/kb/articles/swyx-dae507b8",
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+    },
+    {
+      "source": "/kb/articles/swyx-db1db1df",
+      "destination": "/kb/articles/ai-native-healthcare-100m-doctor-visits-1020-hours-saved-pri-db1db1df"
     },
     {
       "source": "/kb/articles/swyx-db8af209",
