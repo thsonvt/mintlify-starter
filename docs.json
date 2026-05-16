@@ -248,6 +248,10 @@
       "destination": "/kb/articles/compound-engineering-the-definitive-guide-26bb66b9"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-2bd8e7fe",
+      "destination": "/kb/articles/we-gave-every-employee-an-ai-agent-heres-what-were-doing-dif-2bd8e7fe"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-2e6d3626",
       "destination": "/kb/articles/i-stopped-reading-code-my-code-reviews-got-better-2e6d3626"
     },
@@ -1224,6 +1228,10 @@
       "destination": "/kb/articles/kkp-mug-by-karen-james-2d77e434"
     },
     {
+      "source": "/kb/articles/simon-willison-2dd9b888",
+      "destination": "/kb/articles/tool-qr-code-generator-2dd9b888"
+    },
+    {
       "source": "/kb/articles/simon-willison-2f86da03",
       "destination": "/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
     },
@@ -1582,6 +1590,10 @@
     {
       "source": "/kb/articles/simon-willison-76bce63b",
       "destination": "/kb/articles/a-quote-from-bobby-holley-76bce63b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7918fe9d",
+      "destination": "/kb/articles/release-inaturalist-clumper-01-7918fe9d"
     },
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
@@ -2172,6 +2184,10 @@
       "destination": "/kb/articles/release-llm-030-f08e2d6c"
     },
     {
+      "source": "/kb/articles/simon-willison-f0941b17",
+      "destination": "/kb/articles/sighting-western-gull-rock-pigeon-f0941b17"
+    },
+    {
       "source": "/kb/articles/simon-willison-f0f15fdb",
       "destination": "/kb/articles/release-llm-gemini-030-f0f15fdb"
     },
@@ -2218,6 +2234,10 @@
     {
       "source": "/kb/articles/simon-willison-fbd470c1",
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fde7dbeb",
+      "destination": "/kb/articles/release-datasette-llm-limits-01a0-fde7dbeb"
     },
     {
       "source": "/kb/articles/simon-willison-fe0a7bea",
@@ -2398,6 +2418,10 @@
     {
       "source": "/kb/articles/swyx-53d92955",
       "destination": "/kb/articles/ainews-ai-engineer-worlds-fair-autoresearch-memory-world-mod-53d92955"
+    },
+    {
+      "source": "/kb/articles/swyx-56c76c34",
+      "destination": "/kb/articles/ainews-cerebras-60b-ipo-slowly-then-all-at-once-56c76c34"
     },
     {
       "source": "/kb/articles/swyx-57489e33",
