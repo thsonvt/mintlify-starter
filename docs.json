@@ -1008,6 +1008,10 @@
       "destination": "/kb/articles/-community-wisdom-what-to-do-when-non-pms-start-shipping-dir-f0275d37"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-f3ac6ec8",
+      "destination": "/kb/articles/-community-wisdom-screening-ai-slop-in-hiring-wispr-flow-alt-f3ac6ec8"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-f7af004a",
       "destination": "/kb/articles/the-internal-ai-tool-thats-transforming-how-stripe-designs-p-f7af004a"
     },
@@ -1240,6 +1244,10 @@
       "destination": "/kb/articles/its-a-big-one-2ff4cd00"
     },
     {
+      "source": "/kb/articles/simon-willison-3020e741",
+      "destination": "/kb/articles/a-quote-from-julia-evans-3020e741"
+    },
+    {
       "source": "/kb/articles/simon-willison-306f627c",
       "destination": "/kb/articles/claude-code-remote-control-306f627c"
     },
@@ -1374,6 +1382,10 @@
     {
       "source": "/kb/articles/simon-willison-4a95457e",
       "destination": "/kb/articles/a-quote-from-soohoon-choi-4a95457e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4b791eed",
+      "destination": "/kb/articles/warelay-openclaw-4b791eed"
     },
     {
       "source": "/kb/articles/simon-willison-4dd505b8",
