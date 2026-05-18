@@ -396,6 +396,10 @@
       "destination": "/kb/articles/a-sneak-preview-behind-an-embedded-software-factory-i-suspec-675f0e5a"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-6869e085",
+      "destination": "/kb/articles/the-aussie-gov-just-screwed-startup-founders-my-musings-6869e085"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-6d0f6075",
       "destination": "/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075"
     },
@@ -880,6 +884,10 @@
       "destination": "/kb/articles/an-ai-state-of-the-union-weve-passed-the-inflection-point-da-8a45e903"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8a8f7365",
+      "destination": "/kb/articles/why-were-at-the-beginning-of-the-ai-hardware-boom-caitlin-ka-8a8f7365"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8c13973d",
       "destination": "/kb/articles/how-this-visually-impaired-engineer-uses-claude-code-to-make-8c13973d"
     },
@@ -1338,6 +1346,10 @@
     {
       "source": "/kb/articles/simon-willison-441abb85",
       "destination": "/kb/articles/tool-cleanup-claude-code-paste-441abb85"
+    },
+    {
+      "source": "/kb/articles/simon-willison-447f5269",
+      "destination": "/kb/articles/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-sour-447f5269"
     },
     {
       "source": "/kb/articles/simon-willison-4574d440",
