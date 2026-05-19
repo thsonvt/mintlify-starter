@@ -88,7 +88,8 @@
               "kb/admin-suggestions"
             ]
           }
-        ]
+        ],
+        "hidden": true
       }
     ]
   },
