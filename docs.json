@@ -59,7 +59,8 @@
               "framework/scaling/leadership-adoption"
             ]
           }
-        ]
+        ],
+        "hidden": true
       },
       {
         "tab": "Knowledge Base",
