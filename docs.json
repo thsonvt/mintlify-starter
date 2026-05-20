@@ -728,6 +728,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-30e8af9f",
+      "destination": "/kb/articles/what-launched-at-google-io-2026-30-minute-day-1-recap-30e8af9f"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-324c0ef3",
       "destination": "/kb/articles/-community-wisdom-when-ai-velocity-outpaces-your-product-str-324c0ef3"
     },
@@ -870,6 +874,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-7b6943e4",
       "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-7de634ec",
+      "destination": "/kb/articles/the-lenny-and-friends-summit-is-back-7de634ec"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-7f4b29cb",
@@ -1376,6 +1384,10 @@
       "destination": "/kb/articles/a-quote-from-andrew-kelley-457a26e1"
     },
     {
+      "source": "/kb/articles/simon-willison-4589c841",
+      "destination": "/kb/articles/release-llm-gemini-032-4589c841"
+    },
+    {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
     },
@@ -1414,6 +1426,10 @@
     {
       "source": "/kb/articles/simon-willison-4b791eed",
       "destination": "/kb/articles/warelay-openclaw-4b791eed"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4cf009ad",
+      "destination": "/kb/articles/release-datasette-llm-accountant-01a4-4cf009ad"
     },
     {
       "source": "/kb/articles/simon-willison-4dd505b8",
@@ -1518,6 +1534,10 @@
     {
       "source": "/kb/articles/simon-willison-5e43bab8",
       "destination": "/kb/articles/qwen36-35b-a3b-on-my-laptop-drew-me-a-better-pelican-than-cl-5e43bab8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5e81eef1",
+      "destination": "/kb/articles/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-5e81eef1"
     },
     {
       "source": "/kb/articles/simon-willison-5ea51482",
@@ -1664,8 +1684,16 @@
       "destination": "/kb/articles/release-datasette-ip-rate-limit-01a0-81737517"
     },
     {
+      "source": "/kb/articles/simon-willison-82ee5038",
+      "destination": "/kb/articles/release-datasette-llm-01a8-82ee5038"
+    },
+    {
       "source": "/kb/articles/simon-willison-8416606f",
       "destination": "/kb/articles/sorting-algorithms-8416606f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8560706c",
+      "destination": "/kb/articles/release-llm-gemini-032a0-8560706c"
     },
     {
       "source": "/kb/articles/simon-willison-86a8ff57",
@@ -2334,6 +2362,10 @@
     {
       "source": "/kb/articles/swyx-0eab1fd7",
       "destination": "/kb/articles/aie-europe-debrief-agent-labs-thesis-unsupervised-learning-x-0eab1fd7"
+    },
+    {
+      "source": "/kb/articles/swyx-0f13a16d",
+      "destination": "/kb/articles/ainews-google-io-2026-gemini-35-flash-omni-nanobanana-for-vi-0f13a16d"
     },
     {
       "source": "/kb/articles/swyx-126b8d87",
