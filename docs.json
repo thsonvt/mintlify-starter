@@ -1104,6 +1104,10 @@
       "destination": "/kb/articles/the-cognitive-impact-of-coding-agents-0ad9d874"
     },
     {
+      "source": "/kb/articles/simon-willison-0b6bf39a",
+      "destination": "/kb/articles/datasette-agent-0b6bf39a"
+    },
+    {
       "source": "/kb/articles/simon-willison-0b7f8147",
       "destination": "/kb/articles/ai-doesnt-reduce-workit-intensifies-it-0b7f8147"
     },
@@ -1258,6 +1262,10 @@
     {
       "source": "/kb/articles/simon-willison-28898060",
       "destination": "/kb/articles/anthropic-and-the-pentagon-28898060"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2b654654",
+      "destination": "/kb/articles/ftc-to-require-cox-media-group-two-other-firms-to-pay-nearly-2b654654"
     },
     {
       "source": "/kb/articles/simon-willison-2d4372de",
@@ -1738,6 +1746,10 @@
     {
       "source": "/kb/articles/simon-willison-8f613b8a",
       "destination": "/kb/articles/til-using-llm-in-the-shebang-line-of-a-script-8f613b8a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8fc28d1f",
+      "destination": "/kb/articles/release-datasette-agent-charts-01a2-8fc28d1f"
     },
     {
       "source": "/kb/articles/simon-willison-9053483c",
@@ -2224,6 +2236,10 @@
       "destination": "/kb/articles/release-datasette-enrichments-llm-02a0-e67b66fe"
     },
     {
+      "source": "/kb/articles/simon-willison-e8237e03",
+      "destination": "/kb/articles/datasette-agent-sprites-01a0-e8237e03"
+    },
+    {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
       "destination": "/kb/articles/redgreen-tdd-agentic-engineering-patterns-simon-willisons-we-e8f8f0fd"
     },
@@ -2280,8 +2296,16 @@
       "destination": "/kb/articles/release-llm-gemini-030-f0f15fdb"
     },
     {
+      "source": "/kb/articles/simon-willison-f19f062d",
+      "destination": "/kb/articles/release-datasette-agent-01a3-f19f062d"
+    },
+    {
       "source": "/kb/articles/simon-willison-f28d353c",
       "destination": "/kb/articles/tracking-the-history-of-the-now-deceased-openai-microsoft-ag-f28d353c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f3d56117",
+      "destination": "/kb/articles/release-datasette-agent-charts-01a1-f3d56117"
     },
     {
       "source": "/kb/articles/simon-willison-f6ef390b",
@@ -2366,6 +2390,10 @@
     {
       "source": "/kb/articles/swyx-0db41a58",
       "destination": "/kb/articles/dreamer-the-personal-agent-os-david-singleton-0db41a58"
+    },
+    {
+      "source": "/kb/articles/swyx-0e161fbb",
+      "destination": "/kb/articles/ainews-new-ai-infra-unicorns-exa-modal-turbopuffer-0e161fbb"
     },
     {
       "source": "/kb/articles/swyx-0e4e25e9",
@@ -2534,6 +2562,10 @@
     {
       "source": "/kb/articles/swyx-5fb4f0d9",
       "destination": "/kb/articles/railway-the-agent-native-cloud-jake-cooper-5fb4f0d9"
+    },
+    {
+      "source": "/kb/articles/swyx-6469fb3c",
+      "destination": "/kb/articles/giving-agents-computers-ivan-burazin-daytona-6469fb3c"
     },
     {
       "source": "/kb/articles/swyx-69028ae0",
