@@ -884,6 +884,10 @@
       "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-81f3a4f9",
+      "destination": "/kb/articles/goodbye-lennys-reads-81f3a4f9"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8217338b",
       "destination": "/kb/articles/your-couch-to-5k-for-ai-8217338b"
     },
@@ -2056,6 +2060,10 @@
       "destination": "/kb/articles/beats-now-have-notes-c255be60"
     },
     {
+      "source": "/kb/articles/simon-willison-c3606a76",
+      "destination": "/kb/articles/the-memory-shortage-is-causing-a-repricing-of-consumer-elect-c3606a76"
+    },
+    {
       "source": "/kb/articles/simon-willison-c548126a",
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
@@ -2682,6 +2690,10 @@
     {
       "source": "/kb/articles/swyx-963a4413",
       "destination": "/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+    },
+    {
+      "source": "/kb/articles/swyx-968a3393",
+      "destination": "/kb/articles/ainews-all-model-labs-are-now-agent-labs-968a3393"
     },
     {
       "source": "/kb/articles/swyx-983c46c3",
