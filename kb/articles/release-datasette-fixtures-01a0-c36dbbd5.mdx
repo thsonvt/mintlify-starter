@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-fixtures 0.1a0'
+description: 'The article introduces the datasette-fixtures 0.1a0 plugin, which utilizes a new helper for creating fixture database tables in Datasette''s tests.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-24'
+sourceUrl: 'https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything'
+topics: ["datasette","plugins","testing"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything) · 24/05/2026
+</Info>
+
+## Summary
+
+The article introduces the datasette-fixtures 0.1a0 plugin, which utilizes a new helper for creating fixture database tables in Datasette's tests.
+
+## Key Insights
+
+> "New documented datasette.fixtures.populate_fixture_database(conn) helper for creating the fixture database tables"
+>
+> — Describing the new feature in Datasette 1.0a30.
+
+> "This new plugin takes advantage of that API."
+>
+> — Explaining the purpose of the datasette-fixtures plugin.
+
+> "You can try it out using uvx without even installing Datasette."
+>
+> — Instructions on how to test the new plugin.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [plugins](/kb/topics/plugins)
+- [testing](/kb/topics/testing)
+
+---
+
+## Full Article
+
+One of the smaller features in Datasette 1.0a30 is this: New documented datasette.fixtures.populate_fixture_database(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites. This new plugin takes advantage of that API. You can try it out using uvx without even installing Datasette like this: uvx --prerelease=allow \ --with datasette-fixtures datasette \ --get /fixtures/roadside_attractions.json Which outputs: &#123; "ok": true, "next": null, "rows": [ &#123;"pk": 1, "name": "The Mystery Spot", "address": "465 Mystery Spot Road, Santa Cruz, CA 95065", "url": "https://www.mysteryspot.com/", "latitude": 37.0167, "longitude": -122.0024&#125;, &#123;"pk": 2, "name": "Winchester Mystery House", "address": "525 South Winchester Boulevard, San Jose, CA 95128", "url": "https://winchestermysteryhouse.com/", "latitude": 37.3184, "longitude": -121.9511&#125;, &#123;"pk": 3, "name": "Burlingame Museum of PEZ Memorabilia", "address": "214 California Drive, Burlingame, CA 94010", "url": null, "latitude": 37.5793, "longitude": -122.3442&#125;, &#123;"pk": 4, "name": "Bigfoot Discovery Museum", "address": "5497 Highway 9, Felton, CA 95018", "url": "https://www.bigfootdiscoveryproject.com/", "latitude": 37.0414, "longitude": -122.0725&#125; ], "truncated": false &#125;
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a29"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a29-1e4ad5f8"
+  >
+    Simon Willison · reference · 63% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 61% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a28"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a28-9401b4b8"
+  >
+    Simon Willison · reference · 61% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything](https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything).
+</Note>

@@ -684,6 +684,10 @@
       "destination": "/kb/articles/-community-wisdom-vibe-coding-as-a-team-sport-teaching-inter-16ada60d"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-17257806",
+      "destination": "/kb/articles/the-ai-paradox-more-automation-more-humans-more-work-dan-shi-17257806"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1a78b4a3",
       "destination": "/kb/articles/code-with-claude-the-5-biggest-updates-explained-1a78b4a3"
     },
@@ -1472,6 +1476,10 @@
       "destination": "/kb/articles/release-llm-031-51ea461a"
     },
     {
+      "source": "/kb/articles/simon-willison-51fc5a28",
+      "destination": "/kb/articles/release-datasette-agent-01a4-51fc5a28"
+    },
+    {
       "source": "/kb/articles/simon-willison-53a6ac3d",
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
@@ -2072,6 +2080,10 @@
       "destination": "/kb/articles/the-memory-shortage-is-causing-a-repricing-of-consumer-elect-c3606a76"
     },
     {
+      "source": "/kb/articles/simon-willison-c36dbbd5",
+      "destination": "/kb/articles/release-datasette-fixtures-01a0-c36dbbd5"
+    },
+    {
       "source": "/kb/articles/simon-willison-c548126a",
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
@@ -2240,6 +2252,10 @@
       "destination": "/kb/articles/a-quote-from-daniel-stenberg-e1df2f9a"
     },
     {
+      "source": "/kb/articles/simon-willison-e4eac78f",
+      "destination": "/kb/articles/release-datasette-10a30-e4eac78f"
+    },
+    {
       "source": "/kb/articles/simon-willison-e613c8df",
       "destination": "/kb/articles/turbo-pascal-302a-deconstructed-e613c8df"
     },
@@ -2254,6 +2270,10 @@
     {
       "source": "/kb/articles/simon-willison-e8237e03",
       "destination": "/kb/articles/datasette-agent-sprites-01a0-e8237e03"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e832069d",
+      "destination": "/kb/articles/a-quote-from-armin-ronacher-e832069d"
     },
     {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
@@ -2302,6 +2322,10 @@
     {
       "source": "/kb/articles/simon-willison-f08e2d6c",
       "destination": "/kb/articles/release-llm-030-f08e2d6c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f0932c33",
+      "destination": "/kb/articles/tool-mad-house-usborne-creepy-computer-games-f0932c33"
     },
     {
       "source": "/kb/articles/simon-willison-f0941b17",
