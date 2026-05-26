@@ -1032,12 +1032,20 @@
       "destination": "/kb/articles/-community-wisdom-building-your-tech-stack-from-scratch-surv-e1909e93"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e1dcc445",
+      "destination": "/kb/articles/how-the-engineer-behind-claude-cowork-actually-uses-claude-f-e1dcc445"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-e738f292",
       "destination": "/kb/articles/-this-week-on-how-i-ai-claude-cowork-tutorial-for-non-engine-e738f292"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-e8c2b227",
       "destination": "/kb/articles/a-visual-guide-to-getting-out-of-a-creative-slump-e8c2b227"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-eb7e49ba",
+      "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-ef971a3b",
@@ -1480,6 +1488,10 @@
       "destination": "/kb/articles/release-datasette-agent-01a4-51fc5a28"
     },
     {
+      "source": "/kb/articles/simon-willison-53820500",
+      "destination": "/kb/articles/a-quote-from-corey-quinn-53820500"
+    },
+    {
       "source": "/kb/articles/simon-willison-53a6ac3d",
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
@@ -1646,6 +1658,10 @@
     {
       "source": "/kb/articles/simon-willison-6ba05ac0",
       "destination": "/kb/articles/anti-patterns-things-to-avoid-agentic-engineering-patterns-6ba05ac0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6bb1ebe2",
+      "destination": "/kb/articles/notes-on-pope-leo-xivs-encyclical-on-ai-6bb1ebe2"
     },
     {
       "source": "/kb/articles/simon-willison-6cd83dcd",
