@@ -1,0 +1,79 @@
+---
+title: 'Microsoft Copilot Cowork Exfiltrates Files'
+description: 'Microsoft Copilot Cowork poses a security risk by allowing agents to send emails that can leak data through external images, enabling potential data e'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-26'
+sourceUrl: 'https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything'
+topics: ["data-exfiltration","microsoft-copilot","security-risks"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything) · 26/05/2026
+</Info>
+
+## Summary
+
+Microsoft Copilot Cowork poses a security risk by allowing agents to send emails that can leak data through external images, enabling potential data exfiltration.
+
+## Key Insights
+
+> "the biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data"
+>
+> — Introduction to the security challenges posed by Microsoft Copilot Cowork.
+
+> "data can be exfiltrated when a user opens a compromised message sent by the agent"
+>
+> — Explanation of how the vulnerability can be exploited.
+
+> "a successful prompt injection could cause those links to be leaked"
+>
+> — Discussion on the implications of prompt injection in the context of OneDrive.
+
+## Topics
+
+- [data-exfiltration](/kb/topics/data-exfiltration)
+- [microsoft-copilot](/kb/topics/microsoft-copilot)
+- [security-risks](/kb/topics/security-risks)
+
+---
+
+## Full Article
+
+26th May 2026 - Link Blog Microsoft Copilot Cowork Exfiltrates Files (via) The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data. In this case Microsoft Copilot Cowork (yes, that's a real product name) was allowing agents to send emails to the user's own inbox without approval... but those messages were then displayed in a way that could leak data to an attacker via rendered images: Because these messages can contain external images that trigger network requests to external websites, data can be exfiltrated when a user opens a compromised message sent by the agent. Since OneDrive can create pre-authenticated download links, a successful prompt injection could cause those links to be leaked, allowing files to be downloaded by the attacker.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Snowflake Cortex AI Escapes Sandbox and Executes Malware"
+    icon="newspaper"
+    href="/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="The Axios supply chain attack used individually targeted social engineering"
+    icon="newspaper"
+    href="/kb/articles/the-axios-supply-chain-attack-used-individually-targeted-soc-89da678b"
+  >
+    Simon Willison · explanation · 51% similar
+  </Card>
+  <Card
+    title="How we contain Claude across products"
+    icon="newspaper"
+    href="/kb/articles/how-we-contain-claude-across-products-6706e152"
+  >
+    Anthropic Engineering · explanation · 48% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything](https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything).
+</Note>

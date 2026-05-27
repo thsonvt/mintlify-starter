@@ -172,6 +172,10 @@
       "destination": "/kb/articles/claude-code-overview-64f2e1e0"
     },
     {
+      "source": "/kb/articles/anthropic-engineering-6706e152",
+      "destination": "/kb/articles/how-we-contain-claude-across-products-6706e152"
+    },
+    {
       "source": "/kb/articles/anthropic-engineering-67d63c59",
       "destination": "/kb/articles/building-a-c-compiler-with-a-team-of-parallel-claudes-67d63c59"
     },
@@ -696,6 +700,10 @@
       "destination": "/kb/articles/why-half-of-product-managers-are-in-trouble-nikhyl-singhal-m-1ac8b259"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1b36911e",
+      "destination": "/kb/articles/essential-books-for-product-builderspart-1-1b36911e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1bd8b063",
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-1bd8b063"
     },
@@ -1164,6 +1172,10 @@
       "destination": "/kb/articles/google-ai-edge-gallery-1046f7e6"
     },
     {
+      "source": "/kb/articles/simon-willison-10a28f10",
+      "destination": "/kb/articles/a-quote-from-kyle-ferrana-10a28f10"
+    },
+    {
       "source": "/kb/articles/simon-willison-11fce8fa",
       "destination": "/kb/articles/a-quote-from-kyle-daigle-11fce8fa"
     },
@@ -1254,6 +1266,10 @@
     {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
+    },
+    {
+      "source": "/kb/articles/simon-willison-213ca8c9",
+      "destination": "/kb/articles/the-pressure-213ca8c9"
     },
     {
       "source": "/kb/articles/simon-willison-2153c9f6",
@@ -1828,6 +1844,10 @@
       "destination": "/kb/articles/release-datasette-10a28-9401b4b8"
     },
     {
+      "source": "/kb/articles/simon-willison-95ecf88e",
+      "destination": "/kb/articles/microsoft-copilot-cowork-exfiltrates-files-95ecf88e"
+    },
+    {
       "source": "/kb/articles/simon-willison-960458f7",
       "destination": "/kb/articles/release-scan-for-secrets-02-960458f7"
     },
@@ -2192,6 +2212,10 @@
       "destination": "/kb/articles/a-quote-from-joseph-weizenbaum-d4d113b0"
     },
     {
+      "source": "/kb/articles/simon-willison-d4f9e078",
+      "destination": "/kb/articles/sighting-california-brown-pelican-snowy-egret-california-sea-d4f9e078"
+    },
+    {
       "source": "/kb/articles/simon-willison-d4fb177f",
       "destination": "/kb/articles/can-coding-agents-relicense-open-source-through-a-clean-room-d4fb177f"
     },
@@ -2290,6 +2314,10 @@
     {
       "source": "/kb/articles/simon-willison-e832069d",
       "destination": "/kb/articles/a-quote-from-armin-ronacher-e832069d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e88903d3",
+      "destination": "/kb/articles/a-quote-from-paul-graham-e88903d3"
     },
     {
       "source": "/kb/articles/simon-willison-e8f8f0fd",
@@ -2870,6 +2898,10 @@
     {
       "source": "/kb/articles/swyx-f39f0e6c",
       "destination": "/kb/articles/doing-vibe-physics-alex-lupsasca-openai-f39f0e6c"
+    },
+    {
+      "source": "/kb/articles/swyx-f876a015",
+      "destination": "/kb/articles/ainews-new-ai-infra-decacorns-fireworks-baseten-with-openrou-f876a015"
     },
     {
       "source": "/kb/articles/swyx-f8f06b12",
