@@ -1056,6 +1056,10 @@
       "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-ef2a5fea",
+      "destination": "/kb/articles/the-codex-feature-that-works-while-you-sleep-ef2a5fea"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-ef971a3b",
       "destination": "/kb/articles/how-i-built-a-1m-subscriber-newsletter-and-top-10-tech-podca-ef971a3b"
     },
@@ -1216,12 +1220,20 @@
       "destination": "/kb/articles/a-quote-from-john-gruber-159947cd"
     },
     {
+      "source": "/kb/articles/simon-willison-1671fa5b",
+      "destination": "/kb/articles/i-think-anthropic-and-openai-have-found-product-market-fit-1671fa5b"
+    },
+    {
       "source": "/kb/articles/simon-willison-16b49489",
       "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
     },
     {
       "source": "/kb/articles/simon-willison-180a68ef",
       "destination": "/kb/articles/release-llm-openai-via-codex-01a0-180a68ef"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1879b5d8",
+      "destination": "/kb/articles/sqlite-agentsmd-1879b5d8"
     },
     {
       "source": "/kb/articles/simon-willison-18bf3456",
@@ -2556,6 +2568,10 @@
       "destination": "/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
     },
     {
+      "source": "/kb/articles/swyx-39911a3a",
+      "destination": "/kb/articles/esmfold2-the-bitter-lesson-is-coming-for-proteins-alex-rives-39911a3a"
+    },
+    {
       "source": "/kb/articles/swyx-3a8f5bf7",
       "destination": "/kb/articles/ainews-anthropic-19b-arr-qwen-team-leaves-gemini-and-gpt-bum-3a8f5bf7"
     },
@@ -2626,6 +2642,10 @@
     {
       "source": "/kb/articles/swyx-53d92955",
       "destination": "/kb/articles/ainews-ai-engineer-worlds-fair-autoresearch-memory-world-mod-53d92955"
+    },
+    {
+      "source": "/kb/articles/swyx-54def346",
+      "destination": "/kb/articles/ainews-cognition-raises-1b-in-26b-series-d-54def346"
     },
     {
       "source": "/kb/articles/swyx-56c76c34",
