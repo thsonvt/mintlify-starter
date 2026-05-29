@@ -1056,6 +1056,10 @@
       "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-ed4d187b",
+      "destination": "/kb/articles/claude-opus-48-is-here-is-it-as-good-as-they-say-ed4d187b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-ef2a5fea",
       "destination": "/kb/articles/the-codex-feature-that-works-while-you-sleep-ef2a5fea"
     },
@@ -1572,6 +1576,10 @@
       "destination": "/kb/articles/1m-context-is-now-generally-available-for-opus-46-and-sonnet-5abed48c"
     },
     {
+      "source": "/kb/articles/simon-willison-5b5d4f77",
+      "destination": "/kb/articles/claude-opus-48-a-modest-but-tangible-improvement-5b5d4f77"
+    },
+    {
       "source": "/kb/articles/simon-willison-5c4dd7f1",
       "destination": "/kb/articles/release-datasette-extract-03a0-5c4dd7f1"
     },
@@ -1856,6 +1864,10 @@
       "destination": "/kb/articles/release-datasette-10a28-9401b4b8"
     },
     {
+      "source": "/kb/articles/simon-willison-94cf787b",
+      "destination": "/kb/articles/release-llm-anthropic-0251-94cf787b"
+    },
+    {
       "source": "/kb/articles/simon-willison-95ecf88e",
       "destination": "/kb/articles/microsoft-copilot-cowork-exfiltrates-files-95ecf88e"
     },
@@ -2132,6 +2144,10 @@
       "destination": "/kb/articles/release-datasette-fixtures-01a0-c36dbbd5"
     },
     {
+      "source": "/kb/articles/simon-willison-c4ab1b43",
+      "destination": "/kb/articles/tool-markdown-svg-renderer-c4ab1b43"
+    },
+    {
       "source": "/kb/articles/simon-willison-c548126a",
       "destination": "/kb/articles/skills-in-openai-api-c548126a"
     },
@@ -2166,6 +2182,10 @@
     {
       "source": "/kb/articles/simon-willison-caf70c66",
       "destination": "/kb/articles/til-sql-functions-in-google-sheets-to-fetch-data-from-datase-caf70c66"
+    },
+    {
+      "source": "/kb/articles/simon-willison-cb4ed50f",
+      "destination": "/kb/articles/release-datasette-10a31-cb4ed50f"
     },
     {
       "source": "/kb/articles/simon-willison-cc1e6806",
@@ -2412,6 +2432,10 @@
       "destination": "/kb/articles/introducing-deno-sandbox-f73e70a3"
     },
     {
+      "source": "/kb/articles/simon-willison-f8151eff",
+      "destination": "/kb/articles/anthropics-run-rate-revenue-hits-47-billion-f8151eff"
+    },
+    {
       "source": "/kb/articles/simon-willison-f85e8e73",
       "destination": "/kb/articles/tool-big-words-f85e8e73"
     },
@@ -2560,6 +2584,10 @@
       "destination": "/kb/articles/ainews-anthropic-claude-opus-47-literally-one-step-better-th-310b0451"
     },
     {
+      "source": "/kb/articles/swyx-328f2282",
+      "destination": "/kb/articles/ainews-anthropic-raises-965b-series-h-releases-opus-48-and-d-328f2282"
+    },
+    {
       "source": "/kb/articles/swyx-33fd2c03",
       "destination": "/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
     },
@@ -2658,6 +2686,10 @@
     {
       "source": "/kb/articles/swyx-5acd0fdd",
       "destination": "/kb/articles/claude-code-for-finance-the-global-memory-shortage-doug-olau-5acd0fdd"
+    },
+    {
+      "source": "/kb/articles/swyx-5b672f28",
+      "destination": "/kb/articles/the-age-of-async-agents-cognitions-walden-yan-openinspects-c-5b672f28"
     },
     {
       "source": "/kb/articles/swyx-5ce9775c",
