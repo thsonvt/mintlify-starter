@@ -984,6 +984,10 @@
       "destination": "/kb/articles/html-is-the-new-markdown-how-anthropic-engineers-are-buildin-b61426e3"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-b7e8c195",
+      "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-c0183879",
       "destination": "/kb/articles/from-a-690-newsletter-to-3m-api-how-a-non-coder-built-memelo-c0183879"
     },
@@ -1284,12 +1288,20 @@
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
     },
     {
+      "source": "/kb/articles/simon-willison-20dca3df",
+      "destination": "/kb/articles/research-running-python-asgi-apps-in-the-browser-via-pyodide-20dca3df"
+    },
+    {
       "source": "/kb/articles/simon-willison-213ca8c9",
       "destination": "/kb/articles/the-pressure-213ca8c9"
     },
     {
       "source": "/kb/articles/simon-willison-2153c9f6",
       "destination": "/kb/articles/learning-on-the-shop-floor-2153c9f6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-21bd1716",
+      "destination": "/kb/articles/how-we-contain-claude-across-products-21bd1716"
     },
     {
       "source": "/kb/articles/simon-willison-231bc475",
@@ -1454,6 +1466,10 @@
     {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-46dce3d6",
+      "destination": "/kb/articles/i-am-retiring-from-tech-to-live-offline-46dce3d6"
     },
     {
       "source": "/kb/articles/simon-willison-46e67c5e",
@@ -1678,6 +1694,10 @@
     {
       "source": "/kb/articles/simon-willison-6998d31c",
       "destination": "/kb/articles/tool-csp-allow-list-experiment-6998d31c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-69d93c42",
+      "destination": "/kb/articles/a-quote-from-karen-kwok-for-reuters-breakingviews-69d93c42"
     },
     {
       "source": "/kb/articles/simon-willison-69e1867f",
@@ -1966,6 +1986,10 @@
     {
       "source": "/kb/articles/simon-willison-a624fb3a",
       "destination": "/kb/articles/a-quote-from-paul-ford-a624fb3a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a6d074f8",
+      "destination": "/kb/articles/a-quote-from-daniel-jalkut-a6d074f8"
     },
     {
       "source": "/kb/articles/simon-willison-a6d5bdba",

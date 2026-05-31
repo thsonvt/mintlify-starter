@@ -1,0 +1,81 @@
+---
+title: 'Research: Running Python ASGI apps in the browser via Pyodide + a service worker'
+description: 'The article discusses running Python ASGI web applications in the browser using Pyodide and service workers, eliminating the need for a backend server'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-05-30'
+sourceUrl: 'https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything'
+topics: ["python","asgi","web-development","pyodide","service-workers"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything) · 30/05/2026
+</Info>
+
+## Summary
+
+The article discusses running Python ASGI web applications in the browser using Pyodide and service workers, eliminating the need for a backend server for dynamic requests.
+
+## Key Insights
+
+> "this project intercepts all same-origin requests under `/app/` and executes them against the Python app via the ASGI protocol"
+>
+> — Describing the mechanism of running ASGI apps in the browser.
+
+> "Datasette Lite is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly."
+>
+> — Introducing the author's project that utilizes the discussed technology.
+
+> "it seems to work!"
+>
+> — Expressing the success of the new approach using service workers.
+
+## Topics
+
+- [python](/kb/topics/python)
+- [asgi](/kb/topics/asgi)
+- [web-development](/kb/topics/web-development)
+- [pyodide](/kb/topics/pyodide)
+- [service-workers](/kb/topics/service-workers)
+
+---
+
+## Full Article
+
+Research Running Python ASGI apps in the browser via Pyodide + a service worker — By running Python ASGI web applications entirely in the browser using Pyodide and a dedicated service worker, this project intercepts all same-origin requests under `/app/` and executes them against the Python app via the ASGI protocol—removing the need for a backend server except for static files. The mechanism is demonstrated with both a FastAPI demo and the full Datasette app, confirming its generality across ASGI apps. Datasette Lite is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly. When I first built it four years ago I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app. This worked, but had the disadvantage that any JavaScript in &lt;script> tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins. This morning I set Claude Opus 4.8 the task (in Claude Code for web) of figuring out how to run Python ASGI apps in Pyodide using Service Workers instead, and it seems to work! Here's a basic ASGI FastCGI demo and here's a demo that runs Datasette 1.0a31. I'm still getting my head around exactly how it works, but once I've done that I plan to upgrade Datasette Lite itself.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: Syntaqlite Playground"
+    icon="newspaper"
+    href="/kb/articles/tool-syntaqlite-playground-08289a33"
+  >
+    Simon Willison · tutorial · 52% similar
+  </Card>
+  <Card
+    title="[AINews] Claude Cowork Dispatch: Anthropic's Answer to OpenClaw"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+  >
+    Swyx · explanation · 49% similar
+  </Card>
+  <Card
+    title="Coding agents for data analysis"
+    icon="newspaper"
+    href="/kb/articles/coding-agents-for-data-analysis-f086afa3"
+  >
+    Simon Willison · tutorial · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything).
+</Note>
