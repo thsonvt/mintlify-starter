@@ -816,6 +816,10 @@
       "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-54ae3f25"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-55ad8874",
+      "destination": "/kb/articles/building-an-iphone-app-with-zero-technical-skills-bryce-ratt-55ad8874"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-57f4a349",
       "destination": "/kb/articles/how-microsofts-ai-vp-automates-everything-with-warp-marco-ca-57f4a349"
     },
@@ -1010,6 +1014,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-d16a3274",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-d3743ee8",
+      "destination": "/kb/articles/-how-i-ai-codex-goals-explained-claude-opus-48-review-buildi-d3743ee8"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-d75dc58c",
@@ -2140,6 +2148,10 @@
       "destination": "/kb/articles/april-2026-newsletter-bb59146f"
     },
     {
+      "source": "/kb/articles/simon-willison-bd117c09",
+      "destination": "/kb/articles/hackers-simply-asked-meta-ai-to-give-them-access-to-high-pro-bd117c09"
+    },
+    {
       "source": "/kb/articles/simon-willison-bd816c12",
       "destination": "/kb/articles/malicious-litellm_initpth-in-litellm-1828-credential-stealer-bd816c12"
     },
@@ -2322,6 +2334,10 @@
     {
       "source": "/kb/articles/simon-willison-da86c0c4",
       "destination": "/kb/articles/tool-dns-lookup-da86c0c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dbf581b1",
+      "destination": "/kb/articles/tool-pasted-file-editor-dbf581b1"
     },
     {
       "source": "/kb/articles/simon-willison-dd345ddf",
@@ -2656,6 +2672,10 @@
       "destination": "/kb/articles/ainews-everything-is-cli-3b7375ca"
     },
     {
+      "source": "/kb/articles/swyx-3d7ee285",
+      "destination": "/kb/articles/why-video-agent-models-are-next-ethan-he-xai-grok-imagine-3d7ee285"
+    },
+    {
       "source": "/kb/articles/swyx-3f1e5b71",
       "destination": "/kb/articles/ainews-the-claude-code-source-leak-3f1e5b71"
     },
@@ -2926,6 +2946,10 @@
     {
       "source": "/kb/articles/swyx-be70bd66",
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-c9b1697d",
+      "destination": "/kb/articles/ainews-nvidia-cosmos-3-nemotron-3-ultra-and-rtx-spark-c9b1697d"
     },
     {
       "source": "/kb/articles/swyx-c9dc19c4",
