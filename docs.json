@@ -1228,6 +1228,10 @@
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
     {
+      "source": "/kb/articles/simon-willison-14e330fc",
+      "destination": "/kb/articles/release-micropython-wasm-01a1-14e330fc"
+    },
+    {
       "source": "/kb/articles/simon-willison-151a4dd1",
       "destination": "/kb/articles/russellromneyhonker-151a4dd1"
     },
@@ -1656,6 +1660,10 @@
       "destination": "/kb/articles/release-llm-032a1-5ea51482"
     },
     {
+      "source": "/kb/articles/simon-willison-5ed1083b",
+      "destination": "/kb/articles/release-micropython-wasm-01a0-5ed1083b"
+    },
+    {
       "source": "/kb/articles/simon-willison-5f2ace57",
       "destination": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57"
     },
@@ -1666,6 +1674,10 @@
     {
       "source": "/kb/articles/simon-willison-60170551",
       "destination": "/kb/articles/release-datasette-ports-01-60170551"
+    },
+    {
+      "source": "/kb/articles/simon-willison-612211c9",
+      "destination": "/kb/articles/release-datasette-agent-micropython-01a0-612211c9"
     },
     {
       "source": "/kb/articles/simon-willison-61d4e239",
@@ -1722,6 +1734,10 @@
     {
       "source": "/kb/articles/simon-willison-6a6efa1a",
       "destination": "/kb/articles/research-sqlite-wal-mode-across-docker-containers-sharing-a--6a6efa1a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6b8fbd73",
+      "destination": "/kb/articles/microsofts-new-mai-models-6b8fbd73"
     },
     {
       "source": "/kb/articles/simon-willison-6b96427c",
@@ -1926,6 +1942,10 @@
     {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9acc9a44",
+      "destination": "/kb/articles/sighting-california-brown-pelican-9acc9a44"
     },
     {
       "source": "/kb/articles/simon-willison-9b566851",
@@ -2852,6 +2872,10 @@
       "destination": "/kb/articles/ainews-the-biggest-claude-launch-of-all-time-8508c5cb"
     },
     {
+      "source": "/kb/articles/swyx-85cb3ec0",
+      "destination": "/kb/articles/ainews-microsoft-build-mai-thinking-1-and-mai-family-models-85cb3ec0"
+    },
+    {
       "source": "/kb/articles/swyx-8a8141ef",
       "destination": "/kb/articles/-automating-science-world-models-scientific-taste-agent-loop-8a8141ef"
     },
@@ -2910,6 +2934,10 @@
     {
       "source": "/kb/articles/swyx-a27bf774",
       "destination": "/kb/articles/ainews-everything-is-conductor-a27bf774"
+    },
+    {
+      "source": "/kb/articles/swyx-a27e0dc1",
+      "destination": "/kb/articles/githubs-plan-for-agents-kyle-daigle-github-a27e0dc1"
     },
     {
       "source": "/kb/articles/swyx-a6afd69d",
