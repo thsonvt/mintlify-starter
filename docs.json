@@ -1004,6 +1004,10 @@
       "destination": "/kb/articles/anthropics-1b-to-19b-growth-run-how-claude-became-the-fastes-c632ad0c"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-c644ef57",
+      "destination": "/kb/articles/gemini-omni-clone-yourself-with-ai-in-under-15-minutes-c644ef57"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-c72610e3",
       "destination": "/kb/articles/listen-not-all-ai-agents-are-created-equal-c72610e3"
     },
@@ -1426,6 +1430,10 @@
     {
       "source": "/kb/articles/simon-willison-3c1fb58c",
       "destination": "/kb/articles/glm-51-towards-long-horizon-tasks-3c1fb58c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3cf43235",
+      "destination": "/kb/articles/uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs-3cf43235"
     },
     {
       "source": "/kb/articles/simon-willison-3dde9a3b",
@@ -2568,6 +2576,10 @@
       "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
     },
     {
+      "source": "/kb/articles/swyx-038320ff",
+      "destination": "/kb/articles/ainews-reve-2-and-ideogram-4-layouts-in-imagegen-038320ff"
+    },
+    {
       "source": "/kb/articles/swyx-04433b95",
       "destination": "/kb/articles/live-anthropic-distillation-how-models-cheat-swe-bench-dead--04433b95"
     },
@@ -2614,6 +2626,10 @@
     {
       "source": "/kb/articles/swyx-19c500da",
       "destination": "/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
+    },
+    {
+      "source": "/kb/articles/swyx-1edb47a3",
+      "destination": "/kb/articles/scaling-past-informal-ai-carina-hong-axiom-math-1edb47a3"
     },
     {
       "source": "/kb/articles/swyx-20d4d25a",
@@ -2746,6 +2762,10 @@
     {
       "source": "/kb/articles/swyx-532e0dfd",
       "destination": "/kb/articles/notions-token-town-5-rebuilds-100-tools-mcp-vs-clis-and-the--532e0dfd"
+    },
+    {
+      "source": "/kb/articles/swyx-534e200d",
+      "destination": "/kb/articles/satya-nadella-no-priors-x-latent-space-crossover-special-at--534e200d"
     },
     {
       "source": "/kb/articles/swyx-539304b7",
