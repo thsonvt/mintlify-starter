@@ -2408,6 +2408,14 @@
       "destination": "/kb/articles/a-quote-from-daniel-stenberg-e1df2f9a"
     },
     {
+      "source": "/kb/articles/simon-willison-e2bdb007",
+      "destination": "/kb/articles/a-quote-from-emanuel-maiberg-404-media-e2bdb007"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e49581f7",
+      "destination": "/kb/articles/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-e49581f7"
+    },
+    {
       "source": "/kb/articles/simon-willison-e4eac78f",
       "destination": "/kb/articles/release-datasette-10a30-e4eac78f"
     },
@@ -2586,6 +2594,10 @@
     {
       "source": "/kb/articles/swyx-05cd022f",
       "destination": "/kb/articles/extreme-harness-engineering-for-token-billionaires-1m-loc-1b-05cd022f"
+    },
+    {
+      "source": "/kb/articles/swyx-05cea5ca",
+      "destination": "/kb/articles/ainews-not-much-happened-today-05cea5ca"
     },
     {
       "source": "/kb/articles/swyx-08cc6a67",
@@ -2938,6 +2950,10 @@
     {
       "source": "/kb/articles/swyx-985dc0b3",
       "destination": "/kb/articles/ainews-dreamer-joins-meta-superintelligence-labs-9-month-ret-985dc0b3"
+    },
+    {
+      "source": "/kb/articles/swyx-99c2f3b6",
+      "destination": "/kb/articles/reality-the-final-eval-lukas-petersson-and-axel-backlund-of--99c2f3b6"
     },
     {
       "source": "/kb/articles/swyx-9ef5fd46",
