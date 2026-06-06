@@ -1,0 +1,80 @@
+---
+title: 'OpenAI Help: Lockdown Mode'
+description: 'OpenAI''s Lockdown Mode aims to prevent data exfiltration from prompt injection attacks by limiting outbound network requests, enhancing security for u'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-05'
+sourceUrl: 'https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything'
+topics: ["data-security","prompt-injection","openai","lockdown-mode"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything) · 05/06/2026
+</Info>
+
+## Summary
+
+OpenAI's Lockdown Mode aims to prevent data exfiltration from prompt injection attacks by limiting outbound network requests, enhancing security for user accounts.
+
+## Key Insights
+
+> "Lockdown Mode is designed to help prevent the final stage of data exfiltration from a prompt injection attack."
+>
+> — Description of Lockdown Mode's purpose.
+
+> "The only way to solve the trifecta is to cut off one of the three legs."
+>
+> — Discussion on addressing vulnerabilities in LLM systems.
+
+> "The existence of lockdown mode does however imply that ChatGPT, in its default settings, does not provide robust protection against sufficiently determined data exfiltration attacks!"
+>
+> — Implication of Lockdown Mode on ChatGPT's security.
+
+## Topics
+
+- [data-security](/kb/topics/data-security)
+- [prompt-injection](/kb/topics/prompt-injection)
+- [openai](/kb/topics/openai)
+- [lockdown-mode](/kb/topics/lockdown-mode)
+
+---
+
+## Full Article
+
+5th June 2026 - Link Blog OpenAI Help: Lockdown Mode. OpenAI first teased this in February, but now it's live and "rolling out to eligible personal accounts, including Free, Go, Plus, and Pro, and self-serve ChatGPT Business accounts": Lockdown Mode is designed to help prevent the final stage of data exfiltration from a prompt injection attack by limiting outbound network requests that could transfer sensitive data to an attacker. Lockdown Mode does not prevent prompt injections from appearing in the content ChatGPT processes. For example, a prompt injection could appear in cached web content or in an uploaded file, and could still affect the behavior or accuracy of a response. This looks really good to me. The Lethal Trifecta occurs when an LLM system has access to all three of access to private data, exposure to untrusted content and a way to steal data and transmit it back to the attacker. The only way to solve the trifecta is to cut off one of the three legs, and by far the easiest leg to restrict without making your LLM systems far less useful is the exfiltration vectors to steal data. It looks to me like lockdown mode directly attacks that leg, using mechanisms that are deterministic and, crucially, are not evaluated by AI systems that themselves can be subverted by sufficiently devious attacks. The existence of lockdown mode does however imply that ChatGPT, in its default settings, does not provide robust protection against sufficiently determined data exfiltration attacks!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Auto mode for Claude Code"
+    icon="newspaper"
+    href="/kb/articles/auto-mode-for-claude-code-de999191"
+  >
+    Simon Willison · explanation · 59% similar
+  </Card>
+  <Card
+    title="Trusted access for the next era of cyber defense"
+    icon="newspaper"
+    href="/kb/articles/trusted-access-for-the-next-era-of-cyber-defense-ab91a6fb"
+  >
+    Simon Willison · explanation · 58% similar
+  </Card>
+  <Card
+    title="ChatGPT voice mode is a weaker model"
+    icon="newspaper"
+    href="/kb/articles/chatgpt-voice-mode-is-a-weaker-model-b6226695"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything](https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything).
+</Note>

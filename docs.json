@@ -1492,6 +1492,14 @@
       "destination": "/kb/articles/release-llm-gemini-032-4589c841"
     },
     {
+      "source": "/kb/articles/simon-willison-45b8ad75",
+      "destination": "/kb/articles/openai-help-lockdown-mode-45b8ad75"
+    },
+    {
+      "source": "/kb/articles/simon-willison-46689960",
+      "destination": "/kb/articles/release-micropython-wasm-01a2-46689960"
+    },
+    {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
     },
@@ -1978,6 +1986,10 @@
     {
       "source": "/kb/articles/simon-willison-9c28ec29",
       "destination": "/kb/articles/release-llm-032a0-9c28ec29"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9c4318b0",
+      "destination": "/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
     },
     {
       "source": "/kb/articles/simon-willison-9cb198d9",
@@ -2532,6 +2544,10 @@
       "destination": "/kb/articles/tool-big-words-f85e8e73"
     },
     {
+      "source": "/kb/articles/simon-willison-f86d01e6",
+      "destination": "/kb/articles/a-quote-from-andreas-kling-f86d01e6"
+    },
+    {
       "source": "/kb/articles/simon-willison-f87be7dc",
       "destination": "/kb/articles/what-is-agentic-engineering-agentic-engineering-patterns-f87be7dc"
     },
@@ -2754,6 +2770,10 @@
     {
       "source": "/kb/articles/swyx-4735a4ca",
       "destination": "/kb/articles/ainews-thinking-machines-native-interaction-models-tml-inter-4735a4ca"
+    },
+    {
+      "source": "/kb/articles/swyx-49c5ea47",
+      "destination": "/kb/articles/how-to-stop-shipping-low-quality-rl-environments-with-exampl-49c5ea47"
     },
     {
       "source": "/kb/articles/swyx-50b11fd3",
@@ -3034,6 +3054,10 @@
     {
       "source": "/kb/articles/swyx-d1434027",
       "destination": "/kb/articles/ainews-the-high-return-activity-of-raising-your-aspirations--d1434027"
+    },
+    {
+      "source": "/kb/articles/swyx-d296c35a",
+      "destination": "/kb/articles/ainews-not-much-happened-today-d296c35a"
     },
     {
       "source": "/kb/articles/swyx-d9235379",
