@@ -1036,6 +1036,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-5-openclaw-agents-run-my-home-finance-d82cd052"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d919eaf6",
+      "destination": "/kb/articles/father-of-the-ipod-and-iphone-on-building-taste-judgment-and-d919eaf6"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d939c0b5",
       "destination": "/kb/articles/why-cultivating-agency-matters-more-than-cultivating-skills--d939c0b5"
     },
@@ -1810,6 +1814,10 @@
     {
       "source": "/kb/articles/simon-willison-76bce63b",
       "destination": "/kb/articles/a-quote-from-bobby-holley-76bce63b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-78174dc0",
+      "destination": "/kb/articles/release-datasette-agent-edit-01a0-78174dc0"
     },
     {
       "source": "/kb/articles/simon-willison-7918fe9d",

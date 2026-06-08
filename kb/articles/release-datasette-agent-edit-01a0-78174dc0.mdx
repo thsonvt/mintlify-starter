@@ -1,0 +1,75 @@
+---
+title: 'Release: datasette-agent-edit 0.1a0'
+description: 'Simon Willison introduces the datasette-agent-edit plugin for collaborative editing in Datasette Agent, providing core tools for text manipulation.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-07'
+sourceUrl: 'https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything'
+topics: ["datasette","collaborative-editing","plugins"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything) · 07/06/2026
+</Info>
+
+## Summary
+
+Simon Willison introduces the datasette-agent-edit plugin for collaborative editing in Datasette Agent, providing core tools for text manipulation.
+
+## Key Insights
+
+> "Agentic editing of text is a little tricky to get right."
+>
+> — Discussing the challenges of collaborative text editing.
+
+> "I decided to create this base plugin, datasette-agent-edit, which implements the core tools."
+>
+> — Explaining the purpose of the datasette-agent-edit plugin.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [collaborative-editing](/kb/topics/collaborative-editing)
+- [plugins](/kb/topics/plugins)
+
+---
+
+## Full Article
+
+I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor, which implements the following tools: view - view sections of a file, with line numbers added to every line. str_replace - find an exact old_str and replace it with new_str - fail if the original string is not unique insert - insert the specified text after the specified line number Rather than recreate these patterns for every plugin that needs them I decided to create this base plugin, datasette-agent-edit, which implements the core tools in a way that allows them to be adapted for other plugins.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Datasette Agent"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-0b6bf39a"
+  >
+    Simon Willison · explanation · 75% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.1a4"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-01a4-51fc5a28"
+  >
+    Simon Willison · reference · 67% similar
+  </Card>
+  <Card
+    title="datasette-agent-sprites 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-sprites-01a0-e8237e03"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything](https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything).
+</Note>
