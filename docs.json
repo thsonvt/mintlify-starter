@@ -664,6 +664,10 @@
       "destination": "/kb/articles/listen-a-visual-guide-to-getting-out-of-a-creative-slump-04e05b37"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-0595709e",
+      "destination": "/kb/articles/-how-i-ai-gemini-omni-clone-yourself-with-ai-in-under-15-min-0595709e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-09bfa2d9",
       "destination": "/kb/articles/-community-wisdom-beating-the-solo-founder-procrastination-t-09bfa2d9"
     },
@@ -998,6 +1002,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-b7e8c195",
       "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-be846a1a",
+      "destination": "/kb/articles/shopping-with-claude-how-to-find-quality-brands-automate-ret-be846a1a"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-c0183879",
@@ -2216,6 +2224,10 @@
       "destination": "/kb/articles/gemma-4-audio-with-mlx-bdef2945"
     },
     {
+      "source": "/kb/articles/simon-willison-be173a1e",
+      "destination": "/kb/articles/siri-ai-at-wwdc-2026-be173a1e"
+    },
+    {
       "source": "/kb/articles/simon-willison-beb3e6a5",
       "destination": "/kb/articles/release-llm-gemini-031-beb3e6a5"
     },
@@ -2666,6 +2678,10 @@
     {
       "source": "/kb/articles/swyx-19c500da",
       "destination": "/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
+    },
+    {
+      "source": "/kb/articles/swyx-1a1f4627",
+      "destination": "/kb/articles/ainews-frontiercode-benchmarking-for-code-quality-over-slop-1a1f4627"
     },
     {
       "source": "/kb/articles/swyx-1edb47a3",
