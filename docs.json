@@ -768,6 +768,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-notions-design-team-uses-claude-c-3a27394f"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-3b30d4d1",
+      "destination": "/kb/articles/essential-books-for-product-builderspart-2-3b30d4d1"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-421c595c",
       "destination": "/kb/articles/-community-wisdom-bootstrapping-vs-raising-funding-building--421c595c"
     },
@@ -786,6 +790,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-43585643",
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-43585643"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-444a5573",
+      "destination": "/kb/articles/claude-fable-5-review-what-the-new-mythos-model-gets-right-a-444a5573"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-44847dd6",
@@ -1452,6 +1460,10 @@
       "destination": "/kb/articles/uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs-3cf43235"
     },
     {
+      "source": "/kb/articles/simon-willison-3da2f0fb",
+      "destination": "/kb/articles/if-claude-fable-stops-helping-you-youll-never-know-3da2f0fb"
+    },
+    {
       "source": "/kb/articles/simon-willison-3dde9a3b",
       "destination": "/kb/articles/vibe-coding-swiftui-apps-is-a-lot-of-fun-3dde9a3b"
     },
@@ -1786,6 +1798,10 @@
     {
       "source": "/kb/articles/simon-willison-6ca6dc44",
       "destination": "/kb/articles/release-datasette-10a32-6ca6dc44"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6caf3d54",
+      "destination": "/kb/articles/a-quote-from-andrej-karpathy-6caf3d54"
     },
     {
       "source": "/kb/articles/simon-willison-6cd83dcd",
@@ -2332,6 +2348,10 @@
       "destination": "/kb/articles/anthropics-project-glasswingrestricting-claude-mythos-to-sec-d2496898"
     },
     {
+      "source": "/kb/articles/simon-willison-d2551c4e",
+      "destination": "/kb/articles/initial-impressions-of-claude-fable-5-d2551c4e"
+    },
+    {
       "source": "/kb/articles/simon-willison-d3069d40",
       "destination": "/kb/articles/gemini-31-pro-d3069d40"
     },
@@ -2342,6 +2362,10 @@
     {
       "source": "/kb/articles/simon-willison-d3598d5f",
       "destination": "/kb/articles/release-llm-openrouter-06-d3598d5f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d3c5735a",
+      "destination": "/kb/articles/release-llm-032a3-d3c5735a"
     },
     {
       "source": "/kb/articles/simon-willison-d424d881",
@@ -2550,6 +2574,10 @@
     {
       "source": "/kb/articles/simon-willison-f3d56117",
       "destination": "/kb/articles/release-datasette-agent-charts-01a1-f3d56117"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f5d93e93",
+      "destination": "/kb/articles/til-setting-a-custom-price-for-a-model-in-agentsview-f5d93e93"
     },
     {
       "source": "/kb/articles/simon-willison-f6ef390b",
@@ -2838,6 +2866,10 @@
     {
       "source": "/kb/articles/swyx-54def346",
       "destination": "/kb/articles/ainews-cognition-raises-1b-in-26b-series-d-54def346"
+    },
+    {
+      "source": "/kb/articles/swyx-5513e199",
+      "destination": "/kb/articles/ainews-anthropic-claude-fable-5-mythos-but-safe-with-controv-5513e199"
     },
     {
       "source": "/kb/articles/swyx-56c76c34",
