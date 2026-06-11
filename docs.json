@@ -1200,6 +1200,10 @@
       "destination": "/kb/articles/tool-github-repo-size-0bdc0534"
     },
     {
+      "source": "/kb/articles/simon-willison-0beea5be",
+      "destination": "/kb/articles/a-quote-from-jeremy-howard-0beea5be"
+    },
+    {
       "source": "/kb/articles/simon-willison-0c2d6e2f",
       "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-0c2d6e2f"
     },
@@ -1956,6 +1960,10 @@
       "destination": "/kb/articles/tool-python-vulnerability-lookup-9184893d"
     },
     {
+      "source": "/kb/articles/simon-willison-91b77305",
+      "destination": "/kb/articles/diffusiongemma-91b77305"
+    },
+    {
       "source": "/kb/articles/simon-willison-927b858a",
       "destination": "/kb/articles/research-claude-system-prompts-as-a-git-timeline-927b858a"
     },
@@ -2224,6 +2232,10 @@
       "destination": "/kb/articles/april-2026-newsletter-bb59146f"
     },
     {
+      "source": "/kb/articles/simon-willison-bb7416cb",
+      "destination": "/kb/articles/release-datasette-agent-02a0-bb7416cb"
+    },
+    {
       "source": "/kb/articles/simon-willison-bd117c09",
       "destination": "/kb/articles/hackers-simply-asked-meta-ai-to-give-them-access-to-high-pro-bd117c09"
     },
@@ -2318,6 +2330,10 @@
     {
       "source": "/kb/articles/simon-willison-cb4ed50f",
       "destination": "/kb/articles/release-datasette-10a31-cb4ed50f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-cbfe05b7",
+      "destination": "/kb/articles/anthropic-walks-back-policy-that-could-have-sabotaged-ai-res-cbfe05b7"
     },
     {
       "source": "/kb/articles/simon-willison-cc1e6806",
@@ -2934,6 +2950,10 @@
     {
       "source": "/kb/articles/swyx-75c7e173",
       "destination": "/kb/articles/ainews-moltbook-the-first-social-network-for-ai-agents-clawd-75c7e173"
+    },
+    {
+      "source": "/kb/articles/swyx-771f062e",
+      "destination": "/kb/articles/ainews-open-models-model-labs-vs-agent-labs-and-whats-untrai-771f062e"
     },
     {
       "source": "/kb/articles/swyx-77db97f0",

@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-agent 0.2a0'
+description: 'The release of datasette-agent 0.2a0 introduces features allowing tools to ask users questions mid-execution and a new built-in save_query tool for SQ'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-10'
+sourceUrl: 'https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything'
+topics: ["datasette","ai-agents","user-interaction"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything) · 10/06/2026
+</Info>
+
+## Summary
+
+The release of datasette-agent 0.2a0 introduces features allowing tools to ask users questions mid-execution and a new built-in save_query tool for SQL.
+
+## Key Insights
+
+> "Tools can now ask the user questions mid-execution."
+>
+> — Introduction of new features in datasette-agent 0.2a0
+
+> "The agent can save SQL it has written as a Datasette stored query."
+>
+> — Description of the new built-in save_query tool
+
+> "The ask_user() feature was enabled by the new LLM alpha I built yesterday."
+>
+> — Explanation of the technology behind the new features
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [ai-agents](/kb/topics/ai-agents)
+- [user-interaction](/kb/topics/user-interaction)
+
+---
+
+## Full Article
+
+Highlights from the release notes: Tools can now ask the user questions mid-execution. Tools that declare a context parameter receive a ToolContext object, and await context.ask_user(...) can ask a yes/no, multiple-choice (options=[...]) or free-text (free_text=True) question. While a question is unanswered the agent turn suspends: the question renders as a form in the chat UI and persists to the internal database, so suspended conversations survive a server restart. Once answered, the tool re-executes from the top with stored answers replayed, so call ask_user() before performing side effects. #20 New built-in save_query tool: the agent can save SQL it has written as a Datasette stored query. Saving always requires human approval - the agent shows the full SQL plus the proposed name, database and visibility, and nothing is stored until you click Yes. #20 The ask_user() feature was enabled by the new LLM alpha I built yesterday with the help of Claude Fable 5.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-agent 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-01a3-f19f062d"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a31"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a31-cb4ed50f"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+  <Card
+    title="Datasette Agent"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-0b6bf39a"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything](https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything).
+</Note>

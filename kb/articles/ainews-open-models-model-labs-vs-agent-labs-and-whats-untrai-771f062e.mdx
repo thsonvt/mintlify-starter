@@ -1,0 +1,80 @@
+---
+title: '[AINews] Open Models, Model Labs vs Agent Labs, and What''s Untrainable — Sarah Guo'
+description: 'Sarah Guo discusses the evolving landscape of AI models, emphasizing the importance of intent and integration in model development and deployment.'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-06-11'
+sourceUrl: 'https://www.latent.space/p/ainews-open-models-model-labs-vs'
+topics: ["open-models","agent-labs","ai-integration","benchmarking"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/ainews-open-models-model-labs-vs) · 11/06/2026
+</Info>
+
+## Summary
+
+Sarah Guo discusses the evolving landscape of AI models, emphasizing the importance of intent and integration in model development and deployment.
+
+## Key Insights
+
+> "The model is no help there. It will do whatever you point it at and can't tell you what's worth pointing it at."
+>
+> — On the limitations of AI models in determining valuable applications.
+
+> "Even harder is offense, choosing what to build in the first place."
+>
+> — Discussing the challenges of innovation in AI development.
+
+> "A company that brings the translation is tough to copy and the translation never ends."
+>
+> — Highlighting the unique value of companies that integrate AI into their operations.
+
+## Topics
+
+- [open-models](/kb/topics/open-models)
+- [agent-labs](/kb/topics/agent-labs)
+- [ai-integration](/kb/topics/ai-integration)
+- [benchmarking](/kb/topics/benchmarking)
+
+---
+
+## Full Article
+
+Sarah Guo is a friend of the pod and Queen of AI, and after our Satya crossover pod (great recap here from Gokul Rajaram) wrote an excellent article on her Substack. Go read it, and come back for this reaction:This framework (based on legibility, another worthwhile concept if you are unfamiliar) simultaneously addresses a lot of the themes we have discussed on the Satya pod, but also Latent Space over the last two years:The Place of Open Models: With Braintrust in 2024 we were maximally bearish on Open Model adoption, only to turn around by our Pmarca, Cursor, and Notion in 2026 podsAgent Labs vs Model Labs: Sarah (a Cognition investor) echos the Devin is in the Details: An application earns its place in the untrainable corner by doing unglamorous work: arranging a companys private reality so a model can act on it, handing the model the tools to act, working with the customer to change the reality of its workforce. A company that brings the translation is tough to copy and the translation never ends. Integration and maintenance run as long as the relationship does, won by teams that put domain-specialized engineers and tools next to the customer.Free Verifiable Benchmarks: Why labs like Anthropic were so quick to pick up FrontierCode for the Fable launch, and why Sarah agrees, even with us, that The most cited benchmark score of the year is a map of territory about to be worthless, and a notice of who is about to lose the right to say what counts as good.She ends with a note on Intent: "Even harder is offense, choosing what to build in the first place. Thats what I spend the year looking for, and I find it maybe three times. The model is no help there. It will do whatever you point it at and cant tell you whats worth pointing it at, and you cant benchmark that, so you cant train it. Its also the reason the incumbents dont take everything: they keep the ground they have, and the next thing comes from someone who finds a use before the rest of us. Maybe intent is an even scarcer input than compute.AI News for 6/9/2026-6/10/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews website lets you search all past issues. As a reminder, AINews is now a section of Latent Space. You can opt in/out of email frequencies!AI Twitter RecapAnthropics Fable/Mythos rollout, silent capability gating, and the trust backlashSilent degradation of AI R&D help dominated the discourse: A large share of technical tweets focused on Anthropic apparently degrading model performance on AI research-related prompts without clear up-front disclosure, rather than hard-refusing those requests. Criticism was unusually broad: researchers and builders argued this creates an unverifiable gap between observed and actual model capability, undermines reproducibility, and damages trust in model outputs for adjacent domains like coding, biology, and systems work. Representative critiques came from @natolambert, @martin_casado, @drfeifei, @antirez, @ClementDelangue, and @deanwball. Several posts made the narrower point that, even if Anthropic wants to restrict frontier-use cases, explicit refusals or model downgrades would be more defensible than silent sabotage, e.g. @hlntnr, @arohan, and @DBahdanau.Enterprise concerns extended beyond safety to retention and lock-in: Builders highlighted that Fable/Mythos reportedly come with 30-day prompt/data retention and no opt-out in some settings, which immediately excludes zero-retention environments and parts of Europe. See @GergelyOrosz on prompt-history retention and opaque model changes, and @scaling01 on zero-data-retention incompatibility. A second-order lesson repeated by multiple practitioners: treat frontier APIs as unstable dependencies, maintain model portability, and verify outputs continuously with evals and harnesses, as argued by @dbreunig, @omarsar0, and @yacineMTB.Anthropic paired the controversy with a policy push: Amid the backlash, Dario Amodei published Policy on the AI Exponential, arguing AI progress is outrunning institutions and calling for stronger frontier oversight; Anthropic simultaneously announced related initiatives and a proposed government role in blocking unsafe releases. See @DarioAmodei and @AnthropicAI. The tension was obvious to the community: the same company being criticized for opaque private controls is now advocating stronger public controls.Fable 5s benchmark strength and product performance despite the controversyFable 5 appears genuinely strong on agentic and coding workloads: Even many critics of Anthropics policy acknowledged the model itself is excellent. Community reports had it leading or near-leading on a wide mix of evaluations: Agent Arena showed #1 overall with especially large margins in confirmed task success and user praise, albeit weaker steerability; @mchlhess said it completely demolishes his benchmark; @JasonBotterill noted 81.9% on SimpleBench; @lvwerra reported #1 on CADGenBench; @scaling01 highlighted strong computer-use results; and @LechMazur flagged #1 on PACT negotiation.Builders reported substantial real-world gains, but not uniformly: A number of practitioners described major productivity gains on long-horizon coding and creative tasks, including game generation and hard bug-fixing, e.g. @kimmonismus, @walden_yan, and @hrishioa. At the same time, others reported brittle behavior, expensive consumption, or worse performance than GPT-5.5 on specific tasks, such as @Sentdex and @QuixiAI. The net takeaway from the timeline: Fable 5 is plausibly state-of-the-art for many agentic coding tasks, but trust and product constraints are materially affecting adoption.Distribution and integration moved quickly: Perplexity added Claude Fable 5 as an orchestrator model in Computer for Pro/Max users via @perplexity_ai and @AravSrinivas. Apple developers got Foundation Models framework support for Claude for multi-step reasoning, longer context, and code use via @ClaudeDevs. Community behavior also suggested substitution pressure toward OpenAI/Codex after the backlash, including @dylan522p reporting usage share moving from Anthropic toward OpenAI.Googles DiffusionGemma release and renewed interest in diffusion LLMsGoogle released DiffusionGemma under Apache 2.0: The most important open-model launch in the set was DiffusionGemma, an experimental 26B MoE diffusion text model built on Gemma 4 and released with open weights under Apache 2.0. Instead of autoregressive next-token generation, it generates and refines blocks of text simultaneously, with claims of up to 4x faster output and around 1,000+ tokens/sec on suitable hardware. See @Google, @GoogleDeepMind, @googlegemma, and @sundarpichai.The systems story landed immediately: The release mattered not just as a research artifact but as serving infrastructure progress. @vllm_project said DiffusionGemma is the first diffusion LLM natively supported in vLLM, citing 1200+ output tok/s at batch size 1 on a single H200 with FP8. @danielhanchen showed it running locally via llama.cpp with GGUFs; @UnslothAI emphasized local execution on 18GB-class hardware; and @_philschmid summarized the inference footprint as 3.8B active params and 256-token block denoising.Why researchers cared: Diffusion-style text generation revives questions around iterative refinement, constrained editing, fill-in-the-middle, and error correction. Multiple reactions framed it less as a productized competitor and more as a fertile research direction for non-sequential decoding and refinement-heavy tasks; see @omarsar0, @mervenoyann, and @dbreunig.Agent tooling, infra, and benchmarks: more structure around real workloadsBenchmarks are shifting from preference to trace-based agent metrics: @arena detailed the methodology behind Agent Arena, which mines long-horizon traces for objective signals like bash errors, tool hallucination, and insanity rather than relying on human preference for every step. This is an important direction for agent evals where tasks span dozens of tool calls and 30-minute traces.Memory, orchestration, and environment control keep maturing: Several launches targeted the missing systems layer around agents. @Teknium shipped GUI-based Hermes Agent profiles and later Write Gate approval controls for memory/skill updates via @Teknium. @weaviate_io described structured agent memory using groups, topics, and scopes in Engram. @bromann argued for bringing client-side/browser capabilities into the agent loop. @FactoryAI launched Missions on Factory Desktop.Detection, routing, and community harnesses: @perceptroninc launched Agentic Detection, using multi-call zoom/reason loops for dense ambiguous visual detection instead of a one-shot detector; @vllm_project highlighted Inferoa, a community agent harness optimized around inference economics; and @Azaliamirh introduced DeLM, a decentralized multi-agent framework that reportedly reaches 65.7% SWE-bench Verified with Gemini 3-Flash at less than half the cost of centralized alternatives.Optimization, retrieval, and scientific-modeling work worth trackingDistributed Shampoo vs Muon remained a live optimization thread: A technically interesting sub-thread showed tuned Meta DistributedShampoo matching strong Muon baselines on a speedrun-style task after hyperparameter tuning and enabling pseudo-inverse stabilization. @arohan reported validation losses around 3.2766 with vanilla package + tuning, while @kellerjordan0 pushed back on calling it vanilla because the critical stabilization flag was undocumented. The useful signal here is not winner declared, but that optimizer comparisons remain highly sensitive to hidden implementation details and numerics.Late-interaction retrieval got better kernels: @tonywu_71 released late-interaction-kernels, fused Triton kernels for MaxSim used in ColBERT/ColPali/LateOn, claiming numerical equivalence to PyTorch at a fraction of the memory footprint. This should matter for both training and serving multi-vector retrieval models.Scientific and multimodal modeling: @giffmana highlighted new work showing diffusion video models linearly encode physical information better than V-JEPA/VideoMAE on some probes, challenging a common videogen models are dumb physics simulators narrative. In biotech, @edunov introduced DeCAF-Pearl, a flow-map cofolding model reportedly ~5x faster than Pearl while maintaining quality. On architecture research, @ZyphraAI released Zamba2-VL under Apache 2.0, extending hybrid SSM-Transformer ideas into VLMs.Top tweets (by engagement)Policy / governance: @DarioAmodei on Policy on the AI Exponential was the highest-engagement technical/policy post, framing frontier AI as advancing faster than institutions can react.Security / safety failure mode: @jsrailton drew major attention to malware authors embedding nuclear/biological text to trigger LLM refusals and evade AI malware analysisa concrete example of attackers exploiting safety behavior.Open models: @googlegemma and @Google on DiffusionGemma were the biggest pure model-release posts.Research access norms: @drfeifei concisely stated the broad consensus from academia: scientific progress requires access to the best tools, including AI.Model capability signal: @mchlhess saying Fable 5 completely demolishes his benchmark became one of the most-cited capability endorsements.AI Reddit Recap/r/LocalLlama + /r/localLLM Recap1. Open-Weight Model Drops: North Mini Code and DiffusionGemma Read more
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] The Other vs The Utility"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
+  >
+    Swyx · explanation · 83% similar
+  </Card>
+  <Card
+    title="[AINews] Founders and Forward Deployed Engineers"
+    icon="newspaper"
+    href="/kb/articles/ainews-founders-and-forward-deployed-engineers-30db44c8"
+  >
+    Swyx · explanation · 81% similar
+  </Card>
+  <Card
+    title="[AINews] not much happened today"
+    icon="newspaper"
+    href="/kb/articles/ainews-not-much-happened-today-d296c35a"
+  >
+    Swyx · explanation · 81% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/ainews-open-models-model-labs-vs](https://www.latent.space/p/ainews-open-models-model-labs-vs).
+</Note>
