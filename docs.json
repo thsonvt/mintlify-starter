@@ -1436,6 +1436,10 @@
       "destination": "/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
     },
     {
+      "source": "/kb/articles/simon-willison-371c30ca",
+      "destination": "/kb/articles/release-asyncinject-07-371c30ca"
+    },
+    {
       "source": "/kb/articles/simon-willison-38c97ff6",
       "destination": "/kb/articles/a-quote-from-kimiai-kimi_moonshot-38c97ff6"
     },
@@ -1818,6 +1822,10 @@
     {
       "source": "/kb/articles/simon-willison-6ebdc648",
       "destination": "/kb/articles/microsoftvibevoice-6ebdc648"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6f6a085a",
+      "destination": "/kb/articles/release-datasette-10a33-6f6a085a"
     },
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
@@ -2406,6 +2414,10 @@
     {
       "source": "/kb/articles/simon-willison-d4fb177f",
       "destination": "/kb/articles/can-coding-agents-relicense-open-source-through-a-clean-room-d4fb177f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d5c4c4cb",
+      "destination": "/kb/articles/claude-fable-is-relentlessly-proactive-d5c4c4cb"
     },
     {
       "source": "/kb/articles/simon-willison-d6d5aa87",
@@ -3054,6 +3066,10 @@
     {
       "source": "/kb/articles/swyx-99c2f3b6",
       "destination": "/kb/articles/reality-the-final-eval-lukas-petersson-and-axel-backlund-of--99c2f3b6"
+    },
+    {
+      "source": "/kb/articles/swyx-99de1e7d",
+      "destination": "/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
     },
     {
       "source": "/kb/articles/swyx-9ef5fd46",
