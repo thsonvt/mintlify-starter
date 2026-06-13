@@ -2172,6 +2172,10 @@
       "destination": "/kb/articles/we-need-rss-for-sharing-abundant-vibe-coded-apps-ae87c268"
     },
     {
+      "source": "/kb/articles/simon-willison-ae893b2d",
+      "destination": "/kb/articles/a-quote-from-andrew-singleton-ae893b2d"
+    },
+    {
       "source": "/kb/articles/simon-willison-af1ea9b9",
       "destination": "/kb/articles/quoting-steve-yegge-af1ea9b9"
     },
@@ -2440,6 +2444,10 @@
       "destination": "/kb/articles/glm-5-from-vibe-coding-to-agentic-engineering-da1b9f87"
     },
     {
+      "source": "/kb/articles/simon-willison-da2035cc",
+      "destination": "/kb/articles/openai-webrtc-audio-session-now-with-document-context-da2035cc"
+    },
+    {
       "source": "/kb/articles/simon-willison-da5529d8",
       "destination": "/kb/articles/introducing-talkie-a-13b-vintage-language-model-from-1930-da5529d8"
     },
@@ -2538,6 +2546,10 @@
     {
       "source": "/kb/articles/simon-willison-e92548ee",
       "destination": "/kb/articles/a-quote-from-bryan-cantrill-e92548ee"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e9e6fe9f",
+      "destination": "/kb/articles/statement-on-the-us-government-directive-to-suspend-access-t-e9e6fe9f"
     },
     {
       "source": "/kb/articles/simon-willison-e9f08cfc",
@@ -2854,6 +2866,10 @@
     {
       "source": "/kb/articles/swyx-4735a4ca",
       "destination": "/kb/articles/ainews-thinking-machines-native-interaction-models-tml-inter-4735a4ca"
+    },
+    {
+      "source": "/kb/articles/swyx-4974943a",
+      "destination": "/kb/articles/ainews-fable-and-mythos-officially-too-dangerous-to-release-4974943a"
     },
     {
       "source": "/kb/articles/swyx-49c5ea47",
