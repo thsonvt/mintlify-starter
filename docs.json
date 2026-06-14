@@ -1124,6 +1124,10 @@
       "destination": "/kb/articles/-community-wisdom-screening-ai-slop-in-hiring-wispr-flow-alt-f3ac6ec8"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-f6ba3306",
+      "destination": "/kb/articles/-community-wisdom-how-ai-is-changing-product-operating-model-f6ba3306"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-f7af004a",
       "destination": "/kb/articles/the-internal-ai-tool-thats-transforming-how-stripe-designs-p-f7af004a"
     },
@@ -1194,6 +1198,10 @@
     {
       "source": "/kb/articles/simon-willison-0bb24078",
       "destination": "/kb/articles/a-quote-from-craig-mod-0bb24078"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0bbbcf14",
+      "destination": "/kb/articles/publishing-wasm-wheels-to-pypi-for-use-with-pyodide-0bbbcf14"
     },
     {
       "source": "/kb/articles/simon-willison-0bdc0534",
@@ -1616,6 +1624,10 @@
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
     },
     {
+      "source": "/kb/articles/simon-willison-53d5a4e7",
+      "destination": "/kb/articles/research-mapping-sqlite-result-columns-back-to-their-source--53d5a4e7"
+    },
+    {
       "source": "/kb/articles/simon-willison-548dc4c0",
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
     },
@@ -1674,6 +1686,10 @@
     {
       "source": "/kb/articles/simon-willison-5caece01",
       "destination": "/kb/articles/on-the-dl-5caece01"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5d131547",
+      "destination": "/kb/articles/release-luau-wasm-01a0-5d131547"
     },
     {
       "source": "/kb/articles/simon-willison-5d5b3c91",

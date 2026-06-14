@@ -1,0 +1,80 @@
+---
+title: 'Research: Mapping SQLite result columns back to their source `table.column`'
+description: 'The article discusses methods to map SQLite result columns back to their source tables using SQLite''s column-metadata API and third-party libraries.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-13'
+sourceUrl: 'https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything'
+topics: ["sqlite","database","python","metadata"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything) · 13/06/2026
+</Info>
+
+## Summary
+
+The article discusses methods to map SQLite result columns back to their source tables using SQLite's column-metadata API and third-party libraries.
+
+## Key Insights
+
+> "Determining the source `table.column` for each result column in arbitrary SQLite queries is feasible."
+>
+> — Introduction to the problem of mapping result columns.
+
+> "Using the third-party `apsw` library provides direct access with `cursor.description_full`."
+>
+> — Description of a method to access column metadata.
+
+> "It would be neat if arbitrary SQL queries in Datasette could be rendered with additional information."
+>
+> — Discussion on potential applications of the findings.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [database](/kb/topics/database)
+- [python](/kb/topics/python)
+- [metadata](/kb/topics/metadata)
+
+---
+
+## Full Article
+
+Research Mapping SQLite result columns back to their source `table.column` — Determining the source `table.column` for each result column in arbitrary SQLite queries is feasible because SQLite computes this internally and exposes it via its column-metadata API when compiled with `SQLITE_ENABLE_COLUMN_METADATA`. While Python’s standard `sqlite3` module doesn’t surface this information, robust methods exist: using the third-party `apsw` library provides direct access with `cursor.description_full`, or a pure-stdlib ctypes bridge (`column_provenance.py`) can retrieve the… It would be neat if arbitrary SQL queries in Datasette could be rendered with additional information based on which columns from which tables were included in the results. To build that, we would need to be able to look at a SQL query like select users.name, orders.total from users join orders on orders.user_id = users.id and programmatically identify the table.column for each result - navigating not just joins but also more complex syntax like CTEs. I decided to set Claude Code (Opus 4.8, since Fable is currently banned by the US government) on the problem. It found several promising solutions - one using apsw, another that uses ctypes to access the SQLite sqlite3_column_table_name() C function (which is not otherwise exposed to Python), and one using clever interrogation of the output of EXPLAIN.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: SQLite Query Result Formatter Demo"
+    icon="newspaper"
+    href="/kb/articles/tool-sqlite-query-result-formatter-demo-56f579fb"
+  >
+    Simon Willison · tutorial · 57% similar
+  </Card>
+  <Card
+    title="SQLite 3.53.0"
+    icon="newspaper"
+    href="/kb/articles/sqlite-3530-13f0f387"
+  >
+    Simon Willison · reference · 53% similar
+  </Card>
+  <Card
+    title="cysqlite - a new sqlite driver"
+    icon="newspaper"
+    href="/kb/articles/cysqlite-a-new-sqlite-driver-9cb198d9"
+  >
+    Simon Willison · explanation · 51% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything](https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything).
+</Note>
