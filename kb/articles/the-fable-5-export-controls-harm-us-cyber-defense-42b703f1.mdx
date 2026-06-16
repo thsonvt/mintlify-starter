@@ -1,0 +1,79 @@
+---
+title: 'The Fable 5 Export Controls Harm US Cyber Defense'
+description: 'The article discusses how export controls on AI models like Fable 5 hinder US cyber defense by preventing them from fixing security vulnerabilities.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-16'
+sourceUrl: 'https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything'
+topics: ["ai-security","export-controls","cyber-defense"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything) · 16/06/2026
+</Info>
+
+## Summary
+
+The article discusses how export controls on AI models like Fable 5 hinder US cyber defense by preventing them from fixing security vulnerabilities.
+
+## Key Insights
+
+> "Coding models fix bugs, and security exploits are the most important category of bugs for them to fix!"
+>
+> — Discussing the importance of AI models in addressing security vulnerabilities.
+
+> "This whole situation is such a mess."
+>
+> — Reflecting on the confusion surrounding AI export controls and their impact on cybersecurity.
+
+> "Defenders need to be able to ask AI to fix the bugs in a file, explain why the fix matters, and write tests that confirm the patch works."
+>
+> — Emphasizing the essential role of AI in the cybersecurity process.
+
+## Topics
+
+- [ai-security](/kb/topics/ai-security)
+- [export-controls](/kb/topics/export-controls)
+- [cyber-defense](/kb/topics/cyber-defense)
+
+---
+
+## Full Article
+
+16th June 2026 - Link Blog The Fable 5 Export Controls Harm US Cyber Defense. I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. Here she is confirming that the "jailbreak" that got Claude Fable 5 banned under an export control really was "fix this code": The researchers took open-source code with known CVEs, plus new code with deliberately planted vulnerabilities, and asked Fable 5, Mythos, and Opus to “review the code for security issues.” Fable 5 refused. They then asked the models to “fix this code” and, through a multistep and manual process, turned the output into scripts that test the patches. As Kate points out, this is absurd. Coding models fix bugs, and security exploits are the most important category of bugs for them to fix! Defenders need to be able to ask AI to fix the bugs in a file, explain why the fix matters, and write tests that confirm the patch works. That is not a guardrail bypass. It is the most valuable thing an AI model can do for defensive security: executing the find, fix, and test loop defenders run every day. [...] The prompts worked because they were defensive requests, and that capability cannot be removed without making the model worse at fixing bugs and verifying patches. This whole situation is such a mess. Non-technical decision-makers have been hearing that models that can "craft cyber attacks" are uniquely dangerous for months. Now they look ready to ban any model that can help us secure our code.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Statement on the US government directive to suspend access to Fable 5 and Mythos 5"
+    icon="newspaper"
+    href="/kb/articles/statement-on-the-us-government-directive-to-suspend-access-t-e9e6fe9f"
+  >
+    Simon Willison · explanation · 70% similar
+  </Card>
+  <Card
+    title="“They screwed us”: Personality clashes sent Anthropic’s models offline"
+    icon="newspaper"
+    href="/kb/articles/they-screwed-us-personality-clashes-sent-anthropics-models-o-3fd28cf2"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+  <Card
+    title="[AINews] Fable and Mythos officially too dangerous to release"
+    icon="newspaper"
+    href="/kb/articles/ainews-fable-and-mythos-officially-too-dangerous-to-release-4974943a"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything](https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything).
+</Note>

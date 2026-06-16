@@ -984,12 +984,20 @@
       "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9d89a3bb",
+      "destination": "/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9fc122d2",
       "destination": "/kb/articles/how-to-build-a-company-that-withstands-any-era-eric-ries-lea-9fc122d2"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a2e3c1be",
       "destination": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a37ceded",
+      "destination": "/kb/articles/how-braintrust-uses-ai-agents-evals-and-ci-to-ship-better-so-a37ceded"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
@@ -1276,6 +1284,10 @@
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
     {
+      "source": "/kb/articles/simon-willison-142648a3",
+      "destination": "/kb/articles/release-datasette-agent-03a0-142648a3"
+    },
+    {
       "source": "/kb/articles/simon-willison-14e330fc",
       "destination": "/kb/articles/release-micropython-wasm-01a1-14e330fc"
     },
@@ -1508,6 +1520,10 @@
       "destination": "/kb/articles/release-datasette-llm-usage-02a0-3fb8f61d"
     },
     {
+      "source": "/kb/articles/simon-willison-3fd28cf2",
+      "destination": "/kb/articles/they-screwed-us-personality-clashes-sent-anthropics-models-o-3fd28cf2"
+    },
+    {
       "source": "/kb/articles/simon-willison-40a27698",
       "destination": "/kb/articles/research-starlette-10-skill-40a27698"
     },
@@ -1522,6 +1538,10 @@
     {
       "source": "/kb/articles/simon-willison-417198d8",
       "destination": "/kb/articles/a-quote-from-benedict-evans-417198d8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-42b703f1",
+      "destination": "/kb/articles/the-fable-5-export-controls-harm-us-cyber-defense-42b703f1"
     },
     {
       "source": "/kb/articles/simon-willison-441abb85",
@@ -2124,6 +2144,10 @@
       "destination": "/kb/articles/a-quote-from-paul-ford-a624fb3a"
     },
     {
+      "source": "/kb/articles/simon-willison-a6618876",
+      "destination": "/kb/articles/a-quote-from-matteo-wong-the-atlantic-a6618876"
+    },
+    {
       "source": "/kb/articles/simon-willison-a6d074f8",
       "destination": "/kb/articles/a-quote-from-daniel-jalkut-a6d074f8"
     },
@@ -2696,6 +2720,10 @@
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
     },
     {
+      "source": "/kb/articles/simon-willison-fc367062",
+      "destination": "/kb/articles/til-cloudflare-captcha-on-at-least-one-ampersand-fc367062"
+    },
+    {
       "source": "/kb/articles/simon-willison-fde7dbeb",
       "destination": "/kb/articles/release-datasette-llm-limits-01a0-fde7dbeb"
     },
@@ -2866,6 +2894,10 @@
     {
       "source": "/kb/articles/swyx-3f1e5b71",
       "destination": "/kb/articles/ainews-the-claude-code-source-leak-3f1e5b71"
+    },
+    {
+      "source": "/kb/articles/swyx-3f8afcc4",
+      "destination": "/kb/articles/ainews-satya-on-loopcraft-building-frontier-ecosystems-3f8afcc4"
     },
     {
       "source": "/kb/articles/swyx-41a159da",

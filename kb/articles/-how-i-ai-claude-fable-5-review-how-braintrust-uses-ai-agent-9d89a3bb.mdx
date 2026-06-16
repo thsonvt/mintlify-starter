@@ -1,0 +1,80 @@
+---
+title: '🎙️ How I AI: Claude Fable 5 review & How Braintrust uses AI agents, evals, and CI to ship better software'
+description: 'The article reviews Claude Fable 5, highlighting its strengths in vision tasks and weaknesses in design and execution, while also discussing AI''s role'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-06-15'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and'
+topics: ["ai-agents","software-development","model-evaluation","product-design"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and) · 15/06/2026
+</Info>
+
+## Summary
+
+The article reviews Claude Fable 5, highlighting its strengths in vision tasks and weaknesses in design and execution, while also discussing AI's role in software development.
+
+## Key Insights
+
+> "match model intelligence to task complexity"
+>
+> — Claire recommends using Fable 5 for hard technical problems where extreme detail matters.
+
+> "the best teams won't just use AI to write more code; they'll build the feedback loops, benchmarks, and systems that let AI improve the quality of the product itself."
+>
+> — Ankur Goyal discusses the importance of integrating AI into software development processes.
+
+> "Fable 5 works like a seasoned engineer which is both its superpower and its Achilles heel."
+>
+> — Claire describes the dual nature of Fable 5's thoroughness in problem-solving.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [software-development](/kb/topics/software-development)
+- [model-evaluation](/kb/topics/model-evaluation)
+- [product-design](/kb/topics/product-design)
+
+---
+
+## Full Article
+
+Claude Fable 5 review: what the new Mythos model gets right (and very wrong)Listen now on YouTube Spotify Apple PodcastsClaire puts Claude Fable 5, Anthropics first generally available Mythos-class model, through a series of real-world tests: product specs, agent workflows, design tasks, vision tasks, and multi-agent orchestration. She breaks down what Anthropic is claiming, where the model genuinely feels like a leap forward, and where it surprisingly falls short. Biggest takeaways:Fable 5 is Anthropics first Mythos-class model to reach general availability, and its crushing benchmarks across the board. It hit 80% on SWBench Pro, significantly outperforming Opus 4.8, GPT-4.5, and Gemini 3.1 Pro. Claire found the model excels in specific areas while falling short in others that matter for everyday product work.The model is expensive by design: $10 per million input tokens and $50 per million output tokens. Thats a new tier above Opus, and it consumes tokens at roughly twice the rate of other models. You need to be strategic about when to deploy this level of intelligence versus using cheaper models like Sonnet or Opus for simpler tasks.Fable 5 works like a seasoned engineerwhich is both its superpower and its Achilles heel. Its thorough, autonomous, and will investigate every corner of a problem to be 120% sure its shipping the right thing. Sometimes you need a model thats a little less thorough, a little dumber, to actually ship something useful quickly.The model is exceptionally good at vision tasks, particularly document formatting and PDF parsing. Claire tested it on creating handwriting worksheets for her 7-year-old and found it dramatically outperformed Opus 4.8better spacing, clearer layout, appropriate white space. This extends to other vision tasks where you want something to look good or need to parse complex documents.The writing is nearly unreadable for specs and PRDs. Claire found that Fable 5 produces extremely detailed, technically complete documents that are almost impossible to parse. It gets wrapped around the axle on details, creates big blocks of dense paragraphs with internal references, and makes it hard to see the forest for the trees.Design output is shockingly bad, at least for one-shot design tasks. When Claire asked Fable to design a skills registry, it produced fundamentally terrible design: gray, black, red, simple outlines. This was a real surprise given the models benchmark performance.The model is conservative on execution and takes minimal very literally. When Claire asked it to ship an MVP that would deliver customer value, Fable produced something extremely narrow and not actually that useful. This conservatism may stem from the safety guardrails built into the model.Fable 5 includes specific safeguards for cybersecurity, biology, chemistry, and distillation tasks. Instead of blocking you entirely, it uses a new fallback conceptif you get classified into one of these categories, it gracefully falls back to Opus 4.8. Anthropic reports that 95% of sessions dont hit a fallback, and they maintain a 30-day retention policy solely to catch misuse.Multi-agent orchestration is technically possible but not yet reliable. Claire tested the dynamic workflows and subagent capabilities extensively and had some successful multi-agent runs, but also encountered frequent stalls and errors. She walked away from her laptop and came back to find subagents had stalled after about three hours.The key insight: match model intelligence to task complexity. Claire recommends using it for hard technical problems where extreme detail matters, long-horizon work, and vision tasks. But for front-end work, strategy, specs, and design, other models in the ecosystem will serve you better and cost less.This is baby Mythos, not the full Mythos model. Fable 5 has guardrails that the unrestricted Mythos model (available only to Project Glasswing partners) doesnt have. The underlying model is the same, but Fable is tuned for safety and general availability.Blog from this episode:How I AI: My Honest Review of Claude Fable 5: https://www.chatprd.ai/how-i-ai/claude-fable-5-reviewHow Braintrust uses AI agents, evals, and CI to ship better software | Ankur GoyalListen now on YouTube Spotify Apple PodcastsBrought to you by:GuruThe AI layer of truthPersonaTrusted identity verification for any use caseClaire sits down with Ankur Goyal, the founder and CEO of Braintrust, to unpack how top engineering teams are using AI agents, evals, and CI to ship better software faster. They get into why agents are now capable of tackling hard infrastructure problems, how to decide what work sits below the agent line, and why evals are quickly becoming the modern version of a PRD. Ankurs core message: the best teams wont just use AI to write more code; theyll build the feedback loops, benchmarks, and systems that let AI improve the quality of the product itself.Biggest takeaways:Theres no staff engineer running as many rigorous benchmarks as someone using an agent. Ankur viscerally disagrees with engineers who say AI cant handle complicated problems. While models might not be perfect at writing highly concurrent code, they excel at running exhaustive experimentstesting every column store format, every execution engine, every optimization strategy. The baseline of rigor you get from agents is incredible, and theres simply no excuse anymore to skip benchmarks because theyre tedious.The agent line keeps going upand you need to identify whats below it. Many interactions, decisions, and directions that feel like they need human judgment actually fit below the agent line. If you took the information from a meeting and gave it to an agent, would it solve the same problem? Increasingly, the answer is yes. The best teams push this line higher by building smart skills and integrations that expand what agents can handle autonomously.Practical quality beats theoretical quality every time. In theory, a human engineer with infinite time and focus might produce better code than an AI agent. In practice, humans lose context over days, have decaying attention spans on hard-but-tedious problems, and skip benchmarks they know they should run. AI agents maintain consistent focus, run every test, and can work on problems continuously for days or weeks. The practical quality of AI-assisted engineering is higher because of sustained rigor, not because the code is theoretically better.You can now bite off much harder technical problems than before. Companies historically avoid major infrastructure changes because the cost of testing alternatives is prohibitively high and the unknown unknowns are risky. With AI agents, you can exhaustively test six different database solutions, run thousands of benchmarks on production-scale data, and make informed decisions about platform shifts that would have been impossible before. The business case for deep technical work becomes much easier when agents do the heavy lifting.Run four to six foreground agents simultaneouslythats the human concurrency limit. Ankur runs different agents working on different problems. This matches the personal concurrency limit most people can manage; you cant effectively context switch between more than that. Some agents run locally, and others run remotely on cloud infrastructure with production-scale data. The key is isolation: each agent has its own environment, ports, and services.Evals are the modern PRDthey define what success looks like, not how to achieve it. Machine learning shifts programming from defining implementation details to defining success criteria. Just like the best PRDs include user stories and examples, the best evals include concrete test cases and scoring functions. The difference is that evals quantify success in ways that can be automatically measured and improved. This lets you focus on outcomes while AI figures out the implementation.Build a feedback loop that automatically turns real-world data into evals. For AI product teams, the #1 engineering priority isnt prompt engineering or picking an agent frameworkits building a pipeline that summons real-world data and converts it into evals. This is the same principle as investing in CI for traditional software: youre building the platform that lets agents do the work engineers used to do manually. Without this feedback loop, youre stuck in whack-a-mole mode, fixing individual cases without systematic improvement.Quantify your designers taste so it scales across your product. Ankur runs hundreds of evals to improve things quantitatively, then asks David (their tastemaker designer) for a vibe check every few days. When David destroys his work, Ankur captures the feedback (David thinks its OK to show both languages as long as . . .) and improves the scoring functions to encode Davids palette. This doesnt replace David; it amplifies him. Theyre able to apply Davids quality bar to more things than he could ever review manually.Product building is now carving, not constructing. Its extremely fast to create something with too many features, too many buttons, and too much code. The hard part is removing stuff. When customers complain, Braintrust removes the thing causing confusion 90% of the time, making the system work better by eliminating complexity. This is the opposite of traditional product development, where you carefully add features one by one.Invest in CI to earn the ability to move fasterits the platform for AI-powered engineering. Every engineer is now building a platform upon which agents do the work engineers used to do manually. For traditional software, that platform is CI. If you feel constrained by velocity, dont ship crappy stuff faster. Instead, pause and improve CI so you earn the ability to move faster safely. The same principle applies to AI products: build the eval pipeline first, then let agents optimize within that system.When agents fail, close the session and improve the evalsdont yell or bribe. Ankurs back-pocket strategy is remarkably disciplined: he doesnt try to prompt his way out of problems. He closes the session, improves the evaluation criteria or success metrics, and starts fresh. Sometimes this means hand-writing code to better understand the problem (like when he spent a weekend hand-writing a 3,000-line eval that had become trash through vibe coding). The solution is always better evals, not better prompting.Blog and detailed workflow walkthroughs from this episode:Blog: Ankur Goyals Playbook for Agent-Driven Benchmarking and AI Evals https://www.chatprd.ai/how-i-ai/ankur-goyals-playbook-for-agent-driven-benchmarking-and-ai-evalsWorkflows: How to Scale Expert Judgment in AI Systems with a Human Feedback Loop: https://www.chatprd.ai/how-i-ai/workflows/how-to-scale-expert-judgment-in-ai-systems-with-a-human-feedback-loop How to Use AI Coding Agents for Exhaustive Infrastructure Benchmarking: https://www.chatprd.ai/how-i-ai/workflows/how-to-use-ai-coding-agents-for-exhaustive-infrastructure-benchmarkingIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Claude Fable 5 review: what the new Mythos model gets right (and very wrong)"
+    icon="newspaper"
+    href="/kb/articles/claude-fable-5-review-what-the-new-mythos-model-gets-right-a-444a5573"
+  >
+    Lenny Rachitsky · explanation · 88% similar
+  </Card>
+  <Card
+    title="[AINews] Anthropic Claude Fable 5 — Mythos but Safe, with Controversial Terms"
+    icon="newspaper"
+    href="/kb/articles/ainews-anthropic-claude-fable-5-mythos-but-safe-with-controv-5513e199"
+  >
+    Swyx · explanation · 80% similar
+  </Card>
+  <Card
+    title="[AINews] Loopcraft: The Art of Stacking Loops"
+    icon="newspaper"
+    href="/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
+  >
+    Swyx · explanation · 76% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and](https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and).
+</Note>

@@ -1,0 +1,80 @@
+---
+title: 'TIL: Cloudflare CAPTCHA on at least one ampersand'
+description: 'The article discusses how to configure Cloudflare''s CAPTCHA to only trigger for search URLs containing an ampersand, improving user experience on a fa'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-16'
+sourceUrl: 'https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything'
+topics: ["cloudflare","captcha","web-development","faceted-search"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything) · 16/06/2026
+</Info>
+
+## Summary
+
+The article discusses how to configure Cloudflare's CAPTCHA to only trigger for search URLs containing an ampersand, improving user experience on a faceted search engine.
+
+## Key Insights
+
+> "the CAPTCHA only kicks in for search URLs containing at least one ampersand"
+>
+> — Describing the new rule implemented to optimize the CAPTCHA behavior.
+
+> "/search/?q=lemur works without triggering a CAPTCHA!"
+>
+> — Highlighting the successful outcome of the new configuration.
+
+> "I had Claude Code switch to the Cloudflare API instead."
+>
+> — Mentioning the workaround used when Claude Code couldn't edit the rules.
+
+## Topics
+
+- [cloudflare](/kb/topics/cloudflare)
+- [captcha](/kb/topics/captcha)
+- [web-development](/kb/topics/web-development)
+- [faceted-search](/kb/topics/faceted-search)
+
+---
+
+## Full Article
+
+TIL Cloudflare CAPTCHA on at least one ampersand — I use Cloudflare's CAPTCHA (they call it a "Managed Challenge") on [simonwillison.net/search/](https://simonwillison.net/search/) to prevent crawlers from following every single possible combination of my [faceted search](https://simonwillison.net/2017/Oct/5/django-postgresql-faceted-search/) UI. I'm using Cloudflare's CAPTCHA (they call it a "Web Application Firewall > Custom rules > Managed Challenge" these days) to prevent crawlers from aggresively spidering my faceted search engine on this site, but I got fed up of even simple ?q=term searches triggering the challenge. After some mucking around with Claude Code it turns out you can register the following rule instead, so the CAPTCHA only kicks in for search URLs containing at least one ampersand: (http.request.uri.path wildcard r"/search/*" and http.request.uri.query contains "&") And now /search/?q=lemur works without triggering a CAPTCHA! Also included: notes on trying out the Cloudflare MCP with Claude Code, though it turned out not to be able to edit the rules in question so I had Claude Code switch to the Cloudflare API instead.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Unicode Explorer using binary search over fetch() HTTP range requests"
+    icon="newspaper"
+    href="/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
+  >
+    Simon Willison · how-to · 49% similar
+  </Card>
+  <Card
+    title="Tool: DNS Lookup"
+    icon="newspaper"
+    href="/kb/articles/tool-dns-lookup-da86c0c4"
+  >
+    Simon Willison · how-to · 46% similar
+  </Card>
+  <Card
+    title="I'm Boris and I created Claude Code. I wanted to quickly share a few tips for using…"
+    icon="newspaper"
+    href="/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
+  >
+    Boris Cherny · how-to · 45% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything](https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything).
+</Note>

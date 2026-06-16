@@ -1,0 +1,80 @@
+---
+title: 'Release: datasette-agent 0.3a0'
+description: 'The release of datasette-agent 0.3a0 introduces the execute_write_sql tool for user-approved database modifications and enhances chat terminal capabil'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-15'
+sourceUrl: 'https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything'
+topics: ["datasette","database-tools","user-approval","chat-interface"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything) · 15/06/2026
+</Info>
+
+## Summary
+
+The release of datasette-agent 0.3a0 introduces the execute_write_sql tool for user-approved database modifications and enhances chat terminal capabilities.
+
+## Key Insights
+
+> "The new execute_write_sql tool can now prompt the user for all kinds of useful operations."
+>
+> — Describing the new functionality of the execute_write_sql tool.
+
+> "Three new options for datasette agent chat - --root to run as root, --yes to approve all ask user questions, and --unsafe for both."
+>
+> — Listing new options available in the datasette agent chat.
+
+> "The datasette agent chat content.db -m gpt-5.5 --unsafe command can now be used to chat directly with a specific database."
+>
+> — Explaining how to interact with a database using the chat command.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [database-tools](/kb/topics/database-tools)
+- [user-approval](/kb/topics/user-approval)
+- [chat-interface](/kb/topics/chat-interface)
+
+---
+
+## Full Article
+
+New tool, execute_write_sql, which requests user approval and then writes to a database - taking user permissions into account. #27 I added a mechanism for asking user approval in datasette agent 0.2a0. The new execute_write_sql tool can now prompt the user for all kinds of useful operations. Here's an example where I add some pelican sightings to my pelican_sightings table: The new version also enhances the datasette agent chat terminal mode to support approvals, and adds several new options including --unsafe mode for auto-approving them: datasette agent chat can execute tools that require user approval. #30 Three new options for datasette agent chat - --root to run as root, --yes to approve all ask user questions, and --unsafe for both. Tools can now provide plain text alternatives to HTML, for display in the datasette agent chat CLI. #31 The datasette agent chat content.db -m gpt-5.5 --unsafe command can now be used to chat directly with a specific database and directly modify it through prompts like "create a notes table", "add a note about X" etc.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-agent 0.2a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-02a0-bb7416cb"
+  >
+    Simon Willison · reference · 77% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a31"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a31-cb4ed50f"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-01a3-f19f062d"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything](https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything).
+</Note>
