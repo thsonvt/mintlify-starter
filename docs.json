@@ -248,6 +248,10 @@
       "destination": "/kb/articles/im-boris-and-i-created-claude-code-i-wanted-to-quickly-share-51f5b43b"
     },
     {
+      "source": "/kb/articles/bcherny-be2d97a9",
+      "destination": "/kb/articles/boris-cherny-bcherny-on-x-be2d97a9"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-118be905",
       "destination": "/kb/articles/stop-coding-and-start-planning-118be905"
     },
@@ -1180,6 +1184,10 @@
       "destination": "/kb/articles/a-quote-from-giles-turnbull-076a1a4a"
     },
     {
+      "source": "/kb/articles/simon-willison-079413e7",
+      "destination": "/kb/articles/tool-click-to-play-a-still-that-plays-079413e7"
+    },
+    {
       "source": "/kb/articles/simon-willison-08289a33",
       "destination": "/kb/articles/tool-syntaqlite-playground-08289a33"
     },
@@ -1346,6 +1354,10 @@
     {
       "source": "/kb/articles/simon-willison-1b93707c",
       "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1ce25b0a",
+      "destination": "/kb/articles/release-datasette-tailscale-01a0-1ce25b0a"
     },
     {
       "source": "/kb/articles/simon-willison-1dff5c0f",
@@ -1618,6 +1630,10 @@
     {
       "source": "/kb/articles/simon-willison-4cf009ad",
       "destination": "/kb/articles/release-datasette-llm-accountant-01a4-4cf009ad"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4d19cd84",
+      "destination": "/kb/articles/release-datasette-10a34-4d19cd84"
     },
     {
       "source": "/kb/articles/simon-willison-4dd505b8",
@@ -2056,6 +2072,10 @@
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
     },
     {
+      "source": "/kb/articles/simon-willison-99d28f39",
+      "destination": "/kb/articles/netnewswire-status-99d28f39"
+    },
+    {
       "source": "/kb/articles/simon-willison-9acc9a44",
       "destination": "/kb/articles/sighting-california-brown-pelican-9acc9a44"
     },
@@ -2262,6 +2282,10 @@
     {
       "source": "/kb/articles/simon-willison-b451738f",
       "destination": "/kb/articles/release-datasette-files-s3-01a1-b451738f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b5feb2c2",
+      "destination": "/kb/articles/a-quote-from-georgi-gerganov-b5feb2c2"
     },
     {
       "source": "/kb/articles/simon-willison-b6226695",
@@ -2958,6 +2982,10 @@
     {
       "source": "/kb/articles/swyx-534e200d",
       "destination": "/kb/articles/satya-nadella-no-priors-x-latent-space-crossover-special-at--534e200d"
+    },
+    {
+      "source": "/kb/articles/swyx-53645069",
+      "destination": "/kb/articles/ainews-glm-52-the-top-frontend-coding-model-in-the-world-ind-53645069"
     },
     {
       "source": "/kb/articles/swyx-539304b7",

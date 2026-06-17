@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-tailscale 0.1a0'
+description: 'The release of datasette-tailscale 0.1a0 introduces an experimental plugin that allows running a Datasette instance on a Tailscale network.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-16'
+sourceUrl: 'https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything'
+topics: ["datasette","tailscale","plugins"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything) · 16/06/2026
+</Info>
+
+## Summary
+
+The release of datasette-tailscale 0.1a0 introduces an experimental plugin that allows running a Datasette instance on a Tailscale network.
+
+## Key Insights
+
+> "A very experimental alpha plugin which lets you do this:"
+>
+> — Introduction to the plugin functionality.
+
+> "This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet."
+>
+> — Description of how the plugin operates.
+
+> "I filed an issue asking if there's a cleaner way of setting up the proxy mechanism."
+>
+> — Author's note on seeking improvements.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [tailscale](/kb/topics/tailscale)
+- [plugins](/kb/topics/plugins)
+
+---
+
+## Full Article
+
+16th June 2026 Release datasette-tailscale 0.1a0 — Run a Datasette instance on a Tailscale network A very experimental alpha plugin which lets you do this: datasette tailscale mydata.db \ --ts-authkey tskey-auth-xxxx --ts-hostname datasette-preview This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism. Posted 16th June 2026 at 4:18 pm
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-ports 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-ports-01-60170551"
+  >
+    Simon Willison · how-to · 63% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 62% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything](https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything).
+</Note>
