@@ -944,6 +944,10 @@
       "destination": "/kb/articles/how-i-built-lennyrpg-87f53d1c"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-89f5d5e8",
+      "destination": "/kb/articles/how-to-design-ai-agent-loops-schedules-goals-and-subagents-i-89f5d5e8"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8a45e903",
       "destination": "/kb/articles/an-ai-state-of-the-union-weve-passed-the-inflection-point-da-8a45e903"
     },
@@ -1578,6 +1582,10 @@
     {
       "source": "/kb/articles/simon-willison-45b8ad75",
       "destination": "/kb/articles/openai-help-lockdown-mode-45b8ad75"
+    },
+    {
+      "source": "/kb/articles/simon-willison-464f9a7d",
+      "destination": "/kb/articles/a-quote-from-charity-majors-464f9a7d"
     },
     {
       "source": "/kb/articles/simon-willison-46689960",
@@ -2544,6 +2552,10 @@
       "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-dd6ce69b"
     },
     {
+      "source": "/kb/articles/simon-willison-ddd74909",
+      "destination": "/kb/articles/glm-52-is-probably-the-most-powerful-text-only-open-weights--ddd74909"
+    },
+    {
       "source": "/kb/articles/simon-willison-de0f1213",
       "destination": "/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
     },
@@ -2816,6 +2828,10 @@
       "destination": "/kb/articles/ainews-google-io-2026-gemini-35-flash-omni-nanobanana-for-vi-0f13a16d"
     },
     {
+      "source": "/kb/articles/swyx-10e52cb9",
+      "destination": "/kb/articles/ainews-midjourney-medical-scan-your-organs-like-you-step-on--10e52cb9"
+    },
+    {
       "source": "/kb/articles/swyx-126b8d87",
       "destination": "/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
     },
@@ -2934,6 +2950,10 @@
     {
       "source": "/kb/articles/swyx-44bb07f5",
       "destination": "/kb/articles/ainews-qwen35-397b-a17b-the-smallest-open-opus-class-very-ef-44bb07f5"
+    },
+    {
+      "source": "/kb/articles/swyx-44db9091",
+      "destination": "/kb/articles/-the-self-driving-lab-joseph-krause-radical-ai--44db9091"
     },
     {
       "source": "/kb/articles/swyx-4534c43e",

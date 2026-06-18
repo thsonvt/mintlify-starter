@@ -1,0 +1,80 @@
+---
+title: 'How to design AI agent loops: schedules, goals, and subagents in Claude Code and Codex'
+description: 'The article explores the design of AI agent loops, detailing types, essential components, and practical implementations in Claude Code and Codex.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-06-17'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules'
+topics: ["ai-agents","loop-design","automation","workflow-optimization"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules) · 17/06/2026
+</Info>
+
+## Summary
+
+The article explores the design of AI agent loops, detailing types, essential components, and practical implementations in Claude Code and Codex.
+
+## Key Insights
+
+> "The plain-English definition of a loop—and why it's just an automated prompt, not a scary new paradigm."
+>
+> — Introduction to the concept of loops in AI.
+
+> "The five things every effective loop needs: work trees, skills, plugins/connectors, subagents, and state tracking."
+>
+> — Key components necessary for effective loop design.
+
+> "Goal-based loops are the hardest to write well—and where most people burn tokens for nothing."
+>
+> — Challenges associated with designing goal-based loops.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [loop-design](/kb/topics/loop-design)
+- [automation](/kb/topics/automation)
+- [workflow-optimization](/kb/topics/workflow-optimization)
+
+---
+
+## Full Article
+
+I break down every loop type from scratchwhat a heartbeat, cron, hook, and goal loop actually are, when each one fits, and the five things any effective loop needs before it touches production. Then I build two live loops: a daily aging-PR reviewer in Claude Code that schedules itself at 10:15 a.m. and spins off its own subagents, and a weekly skills-identification loop in Codex that spawns goal-based subagents to validate its own output in real time.Listen or watch on YouTube, Spotify, or Apple PodcastsWhat youll learn:The plain-English definition of a loopand why its just an automated prompt, not a scary new paradigmThe four loop types (heartbeat, cron, hook, and goal) and when each one actually fits your workflowHow to think about loop design using the onboarding an employee mental modelThe five things every effective loop needs: work trees, skills, plugins/connectors, subagents, and state trackingHow to build a scheduled PR-review routine in Claude Code that babysits aging PRs and alerts your teamHow to set up a weekly skills-identification automation in Codex that spawns its own validating subagentsWhy goal-based loops are the hardest to write welland where most people burn tokens for nothingThe two warning signs that your loop is going to get expensive before it gets usefulBrought to you by:WorkOSMake your app enterprise-ready todayRunwayThe creative AI platform for images, video, and moreIn this episode, we cover:(00:00) Prompts are out and loops are in(02:30) Defining a loop(03:03) The four ways to automate a prompt: heartbeat, cron, hooks, and goals(06:03) Five things every effective loop needs(09:26) The onboarding an employee framework for designing loops(11:58) Live build #1: Daily aging PR loop in Claude Code(17:08) Subagents inside loops(19:00) Live build #2: Weekly skills identification loop in Codex(22:57) Watching subagents spin up in real time(25:28) Warning signals around loops(27:31) What listeners are doing with loopsTools referenced: Claude Code: https://claude.ai/code Codex: https://chatgpt.com/codex OpenClaw: https://openclaw.ai/Other references: Claires article Why OpenClaw Feels Alive Even Though Its Not: https://x.com/clairevo/article/2017741569521271175 Addy Osmanis article on loop engineering: https://addyosmani.com/blog/loop-engineering/ Using Goals in Codex: https://developers.openai.com/cookbook/examples/codex/using_goals_in_codexWhere to find Claire Vo:ChatPRD: https://www.chatprd.ai/Website: https://clairevo.com/LinkedIn: https://www.linkedin.com/in/clairevo/X: https://x.com/clairevoProduction and marketing by https://penname.co/. For inquiries about sponsoring the podcast, email jordan@penname.co.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="The Codex feature that works while you sleep"
+    icon="newspaper"
+    href="/kb/articles/the-codex-feature-that-works-while-you-sleep-ef2a5fea"
+  >
+    Lenny Rachitsky · how-to · 80% similar
+  </Card>
+  <Card
+    title="Code with Claude: The 5 biggest updates explained"
+    icon="newspaper"
+    href="/kb/articles/code-with-claude-the-5-biggest-updates-explained-1a78b4a3"
+  >
+    Lenny Rachitsky · explanation · 75% similar
+  </Card>
+  <Card
+    title="How to turn Claude Code into your personal life operating system | Hilary Gridley"
+    icon="newspaper"
+    href="/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
+  >
+    Lenny Rachitsky · how-to · 74% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules](https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules).
+</Note>
