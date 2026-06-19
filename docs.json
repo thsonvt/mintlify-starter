@@ -1704,6 +1704,10 @@
       "destination": "/kb/articles/release-datasette-ports-02-5810b898"
     },
     {
+      "source": "/kb/articles/simon-willison-58a136ba",
+      "destination": "/kb/articles/release-datasette-acl-06a0-58a136ba"
+    },
+    {
       "source": "/kb/articles/simon-willison-59bcb94a",
       "destination": "/kb/articles/quoting-andrej-karpathy-59bcb94a"
     },
@@ -2508,6 +2512,10 @@
       "destination": "/kb/articles/google-io-gemini-spark-antigravity-d6d5aa87"
     },
     {
+      "source": "/kb/articles/simon-willison-d700bbb5",
+      "destination": "/kb/articles/datasette-apps-host-custom-html-applications-inside-datasett-d700bbb5"
+    },
+    {
       "source": "/kb/articles/simon-willison-d793786e",
       "destination": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e"
     },
@@ -2852,6 +2860,10 @@
       "destination": "/kb/articles/scaling-past-informal-ai-carina-hong-axiom-math-1edb47a3"
     },
     {
+      "source": "/kb/articles/swyx-202dd475",
+      "destination": "/kb/articles/the-professor-of-outputmaxxing-anjney-midha-amp-202dd475"
+    },
+    {
       "source": "/kb/articles/swyx-20d4d25a",
       "destination": "/kb/articles/ainews-moonshot-kimi-k25-beats-sonnet-45-at-half-the-cost-so-20d4d25a"
     },
@@ -3046,6 +3058,10 @@
     {
       "source": "/kb/articles/swyx-5fb4f0d9",
       "destination": "/kb/articles/railway-the-agent-native-cloud-jake-cooper-5fb4f0d9"
+    },
+    {
+      "source": "/kb/articles/swyx-607572ec",
+      "destination": "/kb/articles/ainews-glm-gpt-glm-52-passes-vibe-check-zai-forecasts-open-f-607572ec"
     },
     {
       "source": "/kb/articles/swyx-6469fb3c",
