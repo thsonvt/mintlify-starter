@@ -1204,6 +1204,10 @@
       "destination": "/kb/articles/tool-merge-state-visualizer-0949cffa"
     },
     {
+      "source": "/kb/articles/simon-willison-096b02cc",
+      "destination": "/kb/articles/a-quote-from-sean-lynch-096b02cc"
+    },
+    {
       "source": "/kb/articles/simon-willison-0ad233f1",
       "destination": "/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
     },
@@ -2938,6 +2942,10 @@
     {
       "source": "/kb/articles/swyx-3b7375ca",
       "destination": "/kb/articles/ainews-everything-is-cli-3b7375ca"
+    },
+    {
+      "source": "/kb/articles/swyx-3d39f955",
+      "destination": "/kb/articles/ainews-not-much-happened-today-3d39f955"
     },
     {
       "source": "/kb/articles/swyx-3d7ee285",
