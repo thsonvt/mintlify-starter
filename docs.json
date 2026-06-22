@@ -668,6 +668,10 @@
       "destination": "/kb/articles/listen-a-visual-guide-to-getting-out-of-a-creative-slump-04e05b37"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-05671515",
+      "destination": "/kb/articles/building-the-most-ai-pilled-engineering-team-in-the-world-fi-05671515"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-0595709e",
       "destination": "/kb/articles/-how-i-ai-gemini-omni-clone-yourself-with-ai-in-under-15-min-0595709e"
     },
@@ -1512,6 +1516,10 @@
       "destination": "/kb/articles/we-rewrote-jsonata-with-ai-in-a-day-saved-500kyear-3ab6467f"
     },
     {
+      "source": "/kb/articles/simon-willison-3ad2d843",
+      "destination": "/kb/articles/release-sqlite-utils-40rc1-3ad2d843"
+    },
+    {
       "source": "/kb/articles/simon-willison-3c1fb58c",
       "destination": "/kb/articles/glm-51-towards-long-horizon-tasks-3c1fb58c"
     },
@@ -1640,6 +1648,10 @@
       "destination": "/kb/articles/a-quote-from-soohoon-choi-4a95457e"
     },
     {
+      "source": "/kb/articles/simon-willison-4aa7c94b",
+      "destination": "/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+    },
+    {
       "source": "/kb/articles/simon-willison-4b791eed",
       "destination": "/kb/articles/warelay-openclaw-4b791eed"
     },
@@ -1742,6 +1754,10 @@
     {
       "source": "/kb/articles/simon-willison-5b5d4f77",
       "destination": "/kb/articles/claude-opus-48-a-modest-but-tangible-improvement-5b5d4f77"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5bb83c11",
+      "destination": "/kb/articles/temporary-cloudflare-accounts-for-ai-agents-5bb83c11"
     },
     {
       "source": "/kb/articles/simon-willison-5c4dd7f1",
@@ -3082,6 +3098,10 @@
     {
       "source": "/kb/articles/swyx-69028ae0",
       "destination": "/kb/articles/ainews-gpt-54-sota-knowledge-work-and-coding-and-cua-model-o-69028ae0"
+    },
+    {
+      "source": "/kb/articles/swyx-69fb2912",
+      "destination": "/kb/articles/how-to-aie-good-69fb2912"
     },
     {
       "source": "/kb/articles/swyx-6a6656f2",

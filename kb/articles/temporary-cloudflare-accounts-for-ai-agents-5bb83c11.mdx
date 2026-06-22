@@ -1,0 +1,80 @@
+---
+title: 'Temporary Cloudflare Accounts for AI agents'
+description: 'Cloudflare now allows the creation of temporary accounts for deploying Workers projects without a full account, useful for quick testing and developme'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-21'
+sourceUrl: 'https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything'
+topics: ["cloudflare","ai-agents","temporary-accounts","web-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything) · 21/06/2026
+</Info>
+
+## Summary
+
+Cloudflare now allows the creation of temporary accounts for deploying Workers projects without a full account, useful for quick testing and development.
+
+## Key Insights
+
+> "you can now create a Cloudflare Workers project and run this, without even creating a Cloudflare account"
+>
+> — Introduction to the new feature
+
+> "the temporary deployment worked as advertised"
+>
+> — User experience with the new feature
+
+> "for if you want it to last for more than 60 minutes"
+>
+> — Explanation of the temporary project's duration
+
+## Topics
+
+- [cloudflare](/kb/topics/cloudflare)
+- [ai-agents](/kb/topics/ai-agents)
+- [temporary-accounts](/kb/topics/temporary-accounts)
+- [web-development](/kb/topics/web-development)
+
+---
+
+## Full Article
+
+21st June 2026 - Link Blog Temporary Cloudflare Accounts for AI agents (via) The announcement says this is "for AI agents" but (as is pretty common these days) the AI hook isn't really necessary, this is an interesting feature for everyone else as well. Short version: you can now create a Cloudflare Workers project and run this, without even creating a Cloudflare account: npx wrangler deploy --temporary Cloudflare will deploy the application to a new, ephemeral project which will stay live for 60 minutes. I had GPT-5.5 xhigh in Codex Desktop build this test application providing a tool for following HTTP redirects and returning the final destination. The temporary deployment worked as advertised. Running the deployment spits out the URL to a page for claiming the new project, for if you want it to last for more than 60 minutes. Here's what that claim screen looks like:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] RIP Pull Requests (2005-2026)"
+    icon="newspaper"
+    href="/kb/articles/ainews-rip-pull-requests-2005-2026-ed74eac1"
+  >
+    Swyx · explanation · 54% similar
+  </Card>
+  <Card
+    title="[AINews] Humanity's Last Gasp"
+    icon="newspaper"
+    href="/kb/articles/ainews-humanitys-last-gasp-fec8efc9"
+  >
+    Swyx · explanation · 53% similar
+  </Card>
+  <Card
+    title="[AINews] Everything is CLI"
+    icon="newspaper"
+    href="/kb/articles/ainews-everything-is-cli-3b7375ca"
+  >
+    Swyx · explanation · 52% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything](https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything).
+</Note>
