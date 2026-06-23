@@ -1,0 +1,80 @@
+---
+title: 'How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead'
+description: 'Brian Grinstead discusses a bug-finding pipeline that uncovered a 15-year-old bug in Firefox, emphasizing the balance between AI models and human over'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-06-22'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-claude-mythos-found-a-15-year'
+topics: ["bug-finding","mozilla-firefox","ai-models","software-security"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-claude-mythos-found-a-15-year) · 22/06/2026
+</Info>
+
+## Summary
+
+Brian Grinstead discusses a bug-finding pipeline that uncovered a 15-year-old bug in Firefox, emphasizing the balance between AI models and human oversight.
+
+## Key Insights
+
+> "the harness and pipeline did just as much of the work"
+>
+> — Brian Grinstead's perspective on the contributions of the bug-finding pipeline.
+
+> "give an agent a tightly scoped problem, a clear pass/fail signal, and let it retry far past the point a human would quit"
+>
+> — Describing the goal-loop pattern for effective bug detection.
+
+> "humans still review every fix"
+>
+> — Highlighting the importance of human oversight in the bug-fixing process.
+
+## Topics
+
+- [bug-finding](/kb/topics/bug-finding)
+- [mozilla-firefox](/kb/topics/mozilla-firefox)
+- [ai-models](/kb/topics/ai-models)
+- [software-security](/kb/topics/software-security)
+
+---
+
+## Full Article
+
+Brian Grinstead is a distinguished engineer at Mozilla, where hes worked on Firefox and the web platform since 2013 (he joined to help launch Firefox DevTools). Recently he and his team pointed an agentic bug-finding pipeline at Firefoxa codebase with tens of thousands of files and tens of millions of lines of codeand shipped a record month of security fixes. The viral chart everyone saw gave the credit to Anthropics new Mythos model. Brians take is that the harness and pipeline did just as much of the work, and he walks through exactly how it runs and how anyone can build a starter version.Listen or watch on YouTube, Spotify, or Apple PodcastsWhat youll learn:How to build a basic bug-finding harness by running Claude Code or Codex with one prompt and the -p flag, no SDK requiredWhy pointing an agent at a whole codebase fails, and how an LLM judge can score and rank files before you spend any computeHow a verifier subagent kills false positives by catching the agent when it cheatsThe goal-loop pattern: give an agent a tightly scoped problem, a clear pass/fail signal, and let it retry far past the point a human would quitWhy teams that already invested in fuzzing, CI, and dev tooling are so far aheadHow to weigh model versus harness, and why Brian splits the credit close to 50-50How a non-engineer can reuse the same score, verify, and fix the loop for design quality, conversion rate, or tech debtWhy AI-generated patches still cant ship on their own, and where humans stay in the loopBrought to you by:WorkOSMake your app enterprise-ready todayMetaviewThe agentic recruiting platform for winning teamsIn this episode, we cover:(00:00) Introduction to Brian Grinstead(02:43) The viral chart: Firefox Security Bug Fixes by Month(05:32) How the custom harness works(10:22) Goal loops and guardrails(14:45) How they built it(16:55) Real bugs, including a 15-year-old one(23:00) Open-sourcing it(26:26) Why humans still review every fix(32:30) Live demo and prioritizing files(40:18) Mobilizing the team and recap(42:33) Lightning roundTools referenced: Claude Code: https://claude.ai/code Claude Agent SDK: https://code.claude.com/docs/en/agent-sdk/overview Codex: https://openai.com/index/openai-codex/ OpenAI Agent SDK: https://developers.openai.com/api/docs/guides/agents VS Code: https://code.visualstudio.com/ Docker: https://www.docker.com/ Firefox: https://www.mozilla.org/firefox/ Address Sanitizer: https://github.com/google/sanitizers RLBox: https://rlbox.dev/Other references: Mozilla Bug Bounty Program: https://www.mozilla.org/security/bug-bounty/ Mozilla GitHub: https://github.com/mozillaWhere to find Brian Grinstead:LinkedIn: https://www.linkedin.com/in/bgrins/GitHub: https://github.com/bgrinsWhere to find Claire Vo:ChatPRD: https://www.chatprd.ai/Website: https://clairevo.com/LinkedIn: https://www.linkedin.com/in/clairevo/X: https://x.com/clairevoProduction and marketing by https://penname.co/. For inquiries about sponsoring the podcast, email jordan@penname.co.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-how-to-write-ai-agent-loops-in-claude-code-and-cod-6b7e0510"
+  >
+    Lenny Rachitsky · tutorial · 83% similar
+  </Card>
+  <Card
+    title="How Intercom 2x’d their engineering velocity in 9 months with Claude Code | Brian Scanlan"
+    icon="newspaper"
+    href="/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
+  >
+    Lenny Rachitsky · how-to · 75% similar
+  </Card>
+  <Card
+    title="How Braintrust uses AI agents, evals, and CI to ship better software | Ankur Goyal"
+    icon="newspaper"
+    href="/kb/articles/how-braintrust-uses-ai-agents-evals-and-ci-to-ship-better-so-a37ceded"
+  >
+    Lenny Rachitsky · how-to · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-claude-mythos-found-a-15-year](https://www.lennysnewsletter.com/p/how-claude-mythos-found-a-15-year).
+</Note>

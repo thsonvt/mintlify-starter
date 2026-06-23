@@ -708,6 +708,10 @@
       "destination": "/kb/articles/code-with-claude-the-5-biggest-updates-explained-1a78b4a3"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1ac05d15",
+      "destination": "/kb/articles/how-claude-mythos-found-a-15-year-old-bug-in-mozilla-firefox-1ac05d15"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1ac8b259",
       "destination": "/kb/articles/why-half-of-product-managers-are-in-trouble-nikhyl-singhal-m-1ac8b259"
     },
@@ -902,6 +906,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-6873f9f5",
       "destination": "/kb/articles/the-design-process-is-dead-heres-whats-replacing-it-jenny-we-6873f9f5"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-6b7e0510",
+      "destination": "/kb/articles/-how-i-ai-how-to-write-ai-agent-loops-in-claude-code-and-cod-6b7e0510"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-6c6993d4",
@@ -1912,6 +1920,10 @@
       "destination": "/kb/articles/release-datasette-enrichments-llm-02a1-6cd83dcd"
     },
     {
+      "source": "/kb/articles/simon-willison-6ce132ae",
+      "destination": "/kb/articles/porting-the-moebius-02b-image-inpainting-model-to-run-in-the-6ce132ae"
+    },
+    {
       "source": "/kb/articles/simon-willison-6e68bb8b",
       "destination": "/kb/articles/release-asgi-gzip-03-6e68bb8b"
     },
@@ -2476,6 +2488,10 @@
       "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
     },
     {
+      "source": "/kb/articles/simon-willison-d07d7e8f",
+      "destination": "/kb/articles/prompt-injection-as-role-confusion-d07d7e8f"
+    },
+    {
       "source": "/kb/articles/simon-willison-d234ac03",
       "destination": "/kb/articles/introducing-the-codex-app-d234ac03"
     },
@@ -2846,6 +2862,10 @@
     {
       "source": "/kb/articles/swyx-0e161fbb",
       "destination": "/kb/articles/ainews-new-ai-infra-unicorns-exa-modal-turbopuffer-0e161fbb"
+    },
+    {
+      "source": "/kb/articles/swyx-0e192374",
+      "destination": "/kb/articles/red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-sw-0e192374"
     },
     {
       "source": "/kb/articles/swyx-0e4e25e9",
@@ -3350,6 +3370,10 @@
     {
       "source": "/kb/articles/swyx-e452a7c5",
       "destination": "/kb/articles/ainews-silicon-valley-gets-serious-about-services-e452a7c5"
+    },
+    {
+      "source": "/kb/articles/swyx-e6b68217",
+      "destination": "/kb/articles/ainews-spacex-is-already-a-28byr-neocloud-e6b68217"
     },
     {
       "source": "/kb/articles/swyx-ea4debd4",
