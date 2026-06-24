@@ -820,6 +820,10 @@
       "destination": "/kb/articles/a-rational-conversation-on-where-ai-is-actually-going-benedi-49a1f665"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4ac279a9",
+      "destination": "/kb/articles/the-new-inner-game-your-unfair-advantage-in-the-age-of-ai-4ac279a9"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4dc5313e",
       "destination": "/kb/articles/spec-driven-development-the-ai-engineering-workflow-at-notio-4dc5313e"
     },
@@ -1952,6 +1956,10 @@
       "destination": "/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
     },
     {
+      "source": "/kb/articles/simon-willison-76757baf",
+      "destination": "/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
+    },
+    {
       "source": "/kb/articles/simon-willison-76b24dc2",
       "destination": "/kb/articles/something-is-afoot-in-the-land-of-qwen-76b24dc2"
     },
@@ -2290,6 +2298,10 @@
     {
       "source": "/kb/articles/simon-willison-ae893b2d",
       "destination": "/kb/articles/a-quote-from-andrew-singleton-ae893b2d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-aee31477",
+      "destination": "/kb/articles/release-datasette-10a35-aee31477"
     },
     {
       "source": "/kb/articles/simon-willison-af1ea9b9",
@@ -3274,6 +3286,10 @@
     {
       "source": "/kb/articles/swyx-a19b939a",
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+    },
+    {
+      "source": "/kb/articles/swyx-a21344ca",
+      "destination": "/kb/articles/ainews-claude-tag-multiplayer-proactive-persistent-agents-in-a21344ca"
     },
     {
       "source": "/kb/articles/swyx-a27bf774",
