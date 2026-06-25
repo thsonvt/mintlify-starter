@@ -1,0 +1,76 @@
+---
+title: 'simonw/browser-compat-db'
+description: 'Simon Willison created a SQLite database from Mozilla''s browser compatibility data, making it accessible via GitHub with open CORS headers.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-24'
+sourceUrl: 'https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything'
+topics: ["browser-compatibility","sqlite","github-actions","datasette"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything) · 24/06/2026
+</Info>
+
+## Summary
+
+Simon Willison created a SQLite database from Mozilla's browser compatibility data, making it accessible via GitHub with open CORS headers.
+
+## Key Insights
+
+> "I decided to try converting their comprehensive mdn/browser-compat-data repository full of browser compatibility data into a SQLite database."
+>
+> — Introduction to the project and its purpose.
+
+> "You can download the resulting database from here, and since it's hosted with open CORS headers you can also explore it with Datasette Lite."
+>
+> — Information on accessing the database.
+
+## Topics
+
+- [browser-compatibility](/kb/topics/browser-compatibility)
+- [sqlite](/kb/topics/sqlite)
+- [github-actions](/kb/topics/github-actions)
+- [datasette](/kb/topics/datasette)
+
+---
+
+## Full Article
+
+simonw/browser-compat-db. Inspired by Mozilla's new MDN MCP service - source code here - I decided to try converting their comprehensive mdn/browser-compat-data repository full of browser compatibility data into a SQLite database. This new GitHub repo includes a Claude Code for web (Opus 4.8) generated script for doing that using sqlite-utils. I wanted the resulting ~66MB SQLite database to be available via the GitHub CDN with open CORS headers. GitHub releases don't have those, but any file stored in a regular GitHub repository does - so I had Codex Desktop (GPT-5.5) build a GitHub Actions workflow that builds the database and then force-pushes it to a db "orphan" branch. You can download the resulting database from here, and since it's hosted with open CORS headers you can also explore it with Datasette Lite.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: OPFS + Pyodide test harness"
+    icon="newspaper"
+    href="/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
+  >
+    Simon Willison · explanation · 58% similar
+  </Card>
+  <Card
+    title="SQLite 3.53.0"
+    icon="newspaper"
+    href="/kb/articles/sqlite-3530-13f0f387"
+  >
+    Simon Willison · reference · 51% similar
+  </Card>
+  <Card
+    title="Tool: GitHub Repo Size"
+    icon="newspaper"
+    href="/kb/articles/tool-github-repo-size-0bdc0534"
+  >
+    Simon Willison · reference · 48% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything](https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything).
+</Note>

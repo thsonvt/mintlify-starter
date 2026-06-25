@@ -1036,6 +1036,10 @@
       "destination": "/kb/articles/state-of-the-product-job-market-in-early-2026-a81c2053"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-ad784c0d",
+      "destination": "/kb/articles/glm-52-why-im-replacing-opus-in-claude-code-with-this-new-mo-ad784c0d"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-b21fa5af",
       "destination": "/kb/articles/engineers-are-becoming-sorcerers-the-future-of-software-deve-b21fa5af"
     },
@@ -2036,6 +2040,10 @@
       "destination": "/kb/articles/adding-a-new-content-type-to-my-blog-to-newsletter-tool-agen-8a6a1c68"
     },
     {
+      "source": "/kb/articles/simon-willison-8cb40258",
+      "destination": "/kb/articles/a-quote-from-tom-macwright-8cb40258"
+    },
+    {
       "source": "/kb/articles/simon-willison-8d6d3e47",
       "destination": "/kb/articles/a-quote-from-christopher-mims-8d6d3e47"
     },
@@ -2094,6 +2102,10 @@
     {
       "source": "/kb/articles/simon-willison-92e1146e",
       "destination": "/kb/articles/experimenting-with-sponsorship-for-my-blog-and-newsletter-92e1146e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-931931c0",
+      "destination": "/kb/articles/simonwbrowser-compat-db-931931c0"
     },
     {
       "source": "/kb/articles/simon-willison-93420151",
@@ -3104,6 +3116,10 @@
       "destination": "/kb/articles/ainews-anthropic-growing-10xyear-while-everyone-else-is-layi-57489e33"
     },
     {
+      "source": "/kb/articles/swyx-592cfb3d",
+      "destination": "/kb/articles/why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-re-592cfb3d"
+    },
+    {
       "source": "/kb/articles/swyx-5acd0fdd",
       "destination": "/kb/articles/claude-code-for-finance-the-global-memory-shortage-doug-olau-5acd0fdd"
     },
@@ -3410,6 +3426,10 @@
     {
       "source": "/kb/articles/swyx-ee58e399",
       "destination": "/kb/articles/ainews-context-graphs-and-agent-traces-ee58e399"
+    },
+    {
+      "source": "/kb/articles/swyx-ee9ec22a",
+      "destination": "/kb/articles/ainews-its-meta-harness-summer-ee9ec22a"
     },
     {
       "source": "/kb/articles/swyx-f39f0e6c",
