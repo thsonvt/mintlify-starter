@@ -1424,6 +1424,10 @@
       "destination": "/kb/articles/how-we-contain-claude-across-products-21bd1716"
     },
     {
+      "source": "/kb/articles/simon-willison-22c6769f",
+      "destination": "/kb/articles/ai-and-liability-22c6769f"
+    },
+    {
       "source": "/kb/articles/simon-willison-231bc475",
       "destination": "/kb/articles/deepseek-v4almost-on-the-frontier-a-fraction-of-the-price-231bc475"
     },
@@ -2744,6 +2748,10 @@
       "destination": "/kb/articles/why-ai-hasnt-replaced-software-engineers-and-wont-ee239bf2"
     },
     {
+      "source": "/kb/articles/simon-willison-ef2d2eca",
+      "destination": "/kb/articles/release-datasette-export-database-03a2-ef2d2eca"
+    },
+    {
       "source": "/kb/articles/simon-willison-f086afa3",
       "destination": "/kb/articles/coding-agents-for-data-analysis-f086afa3"
     },
@@ -3434,6 +3442,10 @@
     {
       "source": "/kb/articles/swyx-f39f0e6c",
       "destination": "/kb/articles/doing-vibe-physics-alex-lupsasca-openai-f39f0e6c"
+    },
+    {
+      "source": "/kb/articles/swyx-f500f35c",
+      "destination": "/kb/articles/ainews-openai-reports-median-internal-codex-output-tokens-gr-f500f35c"
     },
     {
       "source": "/kb/articles/swyx-f876a015",
