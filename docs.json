@@ -288,6 +288,10 @@
       "destination": "/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-76093318",
+      "destination": "/kb/articles/claude-code-is-the-openclaw-alternative-you-already-have-76093318"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-929cb875",
       "destination": "/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
     },
@@ -386,6 +390,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-4fd35e5a",
       "destination": "/kb/articles/porting-software-has-been-trivial-for-a-while-now-heres-how--4fd35e5a"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-54b4347c",
+      "destination": "/kb/articles/a-couple-of-months-ago-in-miami-i-sat-down-and-dumped-my-bra-54b4347c"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-57ce8bac",
@@ -1564,6 +1572,10 @@
       "destination": "/kb/articles/tldraw-issue-move-tests-to-closed-source-repo-3df8c9b0"
     },
     {
+      "source": "/kb/articles/simon-willison-3e856a2a",
+      "destination": "/kb/articles/a-quote-from-openai-3e856a2a"
+    },
+    {
       "source": "/kb/articles/simon-willison-3fb2d677",
       "destination": "/kb/articles/a-quote-from-tim-schilling-3fb2d677"
     },
@@ -1884,6 +1896,10 @@
       "destination": "/kb/articles/a-quote-from-andy-masley-67f548b8"
     },
     {
+      "source": "/kb/articles/simon-willison-67f6fedf",
+      "destination": "/kb/articles/a-quote-from-timothy-b-lee-67f6fedf"
+    },
+    {
       "source": "/kb/articles/simon-willison-68c4826d",
       "destination": "/kb/articles/release-llm-all-models-async-01-68c4826d"
     },
@@ -2002,6 +2018,10 @@
     {
       "source": "/kb/articles/simon-willison-7f547407",
       "destination": "/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7fee49ef",
+      "destination": "/kb/articles/what-happened-after-2000-people-tried-to-hack-my-ai-assistan-7fee49ef"
     },
     {
       "source": "/kb/articles/simon-willison-8015e4ff",
@@ -2440,6 +2460,10 @@
       "destination": "/kb/articles/beats-now-have-notes-c255be60"
     },
     {
+      "source": "/kb/articles/simon-willison-c2885300",
+      "destination": "/kb/articles/incident-report-cve-2026-lgtm-c2885300"
+    },
+    {
       "source": "/kb/articles/simon-willison-c3606a76",
       "destination": "/kb/articles/the-memory-shortage-is-causing-a-repricing-of-consumer-elect-c3606a76"
     },
@@ -2614,6 +2638,10 @@
     {
       "source": "/kb/articles/simon-willison-da86c0c4",
       "destination": "/kb/articles/tool-dns-lookup-da86c0c4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dbdef19f",
+      "destination": "/kb/articles/a-quote-from-dean-w-ball-dbdef19f"
     },
     {
       "source": "/kb/articles/simon-willison-dbf581b1",
@@ -3438,6 +3466,10 @@
     {
       "source": "/kb/articles/swyx-ee9ec22a",
       "destination": "/kb/articles/ainews-its-meta-harness-summer-ee9ec22a"
+    },
+    {
+      "source": "/kb/articles/swyx-f0f8ce35",
+      "destination": "/kb/articles/ainews-openai-gpt-56-sol-terra-luna-restricted-to-trusted-pa-f0f8ce35"
     },
     {
       "source": "/kb/articles/swyx-f39f0e6c",
