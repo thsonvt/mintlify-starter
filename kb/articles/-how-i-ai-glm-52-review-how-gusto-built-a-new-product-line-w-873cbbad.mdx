@@ -1,0 +1,80 @@
+---
+title: '🎙️ How I AI: GLM-5.2 review & How Gusto built a new product line with Claude Code'
+description: 'The article reviews GLM-5.2, an open-weight AI model, and discusses how Gusto built a new product line using Claude Code with minimal processes.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-06-29'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-i-ai-glm-52-review-and-how-gusto'
+topics: ["ai-models","product-development","open-weight-models","coding-workflows"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-i-ai-glm-52-review-and-how-gusto) · 29/06/2026
+</Info>
+
+## Summary
+
+The article reviews GLM-5.2, an open-weight AI model, and discusses how Gusto built a new product line using Claude Code with minimal processes.
+
+## Key Insights
+
+> "Open-weight models are no longer a hobbyist curiosity; they are production-grade alternatives."
+>
+> — Discussing the capabilities of GLM-5.2 compared to other models.
+
+> "Zero code to tier-one launch is now a viable founding path."
+>
+> — Eddie Kim on the efficiency of using AI in product development.
+
+> "The constraint wasn't a liability—it was the design."
+>
+> — Eddie Kim explaining how a small team can outperform larger teams with AI assistance.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [product-development](/kb/topics/product-development)
+- [open-weight-models](/kb/topics/open-weight-models)
+- [coding-workflows](/kb/topics/coding-workflows)
+
+---
+
+## Full Article
+
+GLM-5.2: why Im replacing Opus in Claude Code with this new modelListen now on YouTube Spotify Apple PodcastsBrought to you by:MercuryRadically different banking, loved by over 300K entrepreneursClaire tests GLM-5.2, the new open-weight model from Z.ai, inside her actual ChatPRD codebase. She runs it through codebase audits, UI redesigns, and a 45-minute autonomous bug-hunting task in Cursor and Claude Code, and breaks down where it surprised her, where it struggled, and why it may be good enough to replace Opus for some coding workflows.Biggest takeaways:Open-weight models are no longer a hobbyist curiositythey are production-grade alternatives. GLM-5.2, built by Beijing-based Z.ai, benchmarks near Claude Opus 4.8 and above GPT-5.5 on SWE Bench Pro, with a million-token context window and full support for reasoning mode, function calling, structured output, and context caching. The decision is no longer about capability ceilings but, instead, about cost, control, and vendor dependency. Claires live testing confirmed it: this is not a toy.Self-hosting changes the vendor power dynamic in ways that matter at scale. Open-weight means the trained model weights are publicly available, letting teams run inference on their own hardware, fine-tune on proprietary data, and route around any single providers API terms. When frontier labs change pricing or policy, teams using open-weight models can switch inference providers without touching a line of application code. The key: youre not locked in.Getting GLM-5.2 running in Cursor took 30 minutes, and Claire documented the undocumented part. Route your API key through Open Router, override the OpenAI base URL in Cursors settings to openrouter.ai/api/v1/cursor (the /cursor suffix isnt documented anywhere), and add z-ai/glm-5.2 as a custom model. Claude Code requires two environment variable changes and one edit to claude/settings.json. Total time: under an hour, once you have the exact strings.The 45-minute autonomous task revealed both the ceiling and the floor. Claire gave GLM-5.2 a single prompt inside Claude Code: pull the last 72 hours of Sentry errors and Vercel logs, then build a prioritized bug-fix plan. Over 45 minutes, it ran MCP tool calls, authenticated into external services, and produced a dark-mode engineering canvas with 20 Sentry errors, five Vercel log signals, and 14 planned fixes, including two P0s Claire hadnt spotted through normal monitoring. The model surfaced signal-to-noise issues in their error pipeline that werent showing up elsewhere.It hit a wall with React, then recovered. During the long-running task, GLM-5.2 struggled with TypeScript compilation errors before eventually producing clean React output. Claires read: HTML and CSS generation is reliable; React under agentic, multi-step pressure is shakier. For teams whose codebase is primarily React (she estimates it covers 98% of her own use), this is the friction point to test before committing the model to critical paths.The cost math is striking: $3.36 for 6 million tokens, including the full 45-minute agentic session. A 72% cache rate helped, but even at full price, open-weight inference through Open Router sits well below Opus or GPT-5.5 rates for equivalent coding capability. For agents accumulating long context windows over extended sessions (the exact workload where frontier model costs compound fastest), open-weight alternatives offer a structurally different cost curve.Claires recommendation: put GLM-5.2 in rotation, not in the spotlight. Shes keeping it in Cursor for frontend and design work, and in Claude Code for long-running agentic tasks, alongside closed frontier models rather than as a replacement. The constraint shes watching: can it handle her React-heavy workload at the same consistency she gets from Composer? If it can, the cost-and-control argument gets much harder to ignore.Blog and detailed workflow walkthroughs from this episode:GLM 5.2: A Live Review of an Opus-Level Open-Weights Model: https://www.chatprd.ai/how-i-ai/glm-5-2-review-open-weights-model How to Deploy an Autonomous AI Agent for Bug Triage and Prioritization: https://www.chatprd.ai/how-i-ai/workflows/how-to-deploy-an-autonomous-ai-agent-for-bug-triage-and-prioritization How to Perform an AI-Powered Codebase Audit and Architecture Visualization: https://www.chatprd.ai/how-i-ai/workflows/how-to-perform-an-ai-powered-codebase-audit-and-architecture-visualization How to Configure the Open-Weight GLM 5.2 Model in Cursor: https://www.chatprd.ai/how-i-ai/workflows/how-to-configure-the-open-weight-glm-5-2-model-in-cursorNo Figma. No Jira. No docs. How Gusto built a new product line with Claude Code | Eddie Kim (CTO)Listen now on YouTube Spotify Apple PodcastsBrought to you by:Magic PatternsPrototypes that look like your productJira Product DiscoveryPrioritize with insights, build with confidenceEddie Kim is the co-founder and CTO of Gusto. In this episode, he shares how a five-person team used Claude Code, a permanent Zoom room, and almost none of the usual product processno PM, no Figma, no Jira, no long specsto build Gusto Cofounder from scratch in just 10 weeks.Biggest takeaways:A five-person team with no process can outship a large team with full process, if AI handles the engineering. Eddies product launched at Gustos tier-one level after 10 weeks, starting from zero code. The constraint wasnt a liabilityit was the design. When AI does the building, coordination overhead doesnt scale the engineering; it just slows it down. The key: strip process to what the team actually needs, then let AI fill the gap.Zero code to tier-one launch is now a viable founding path. The team reached a production milestone at Gusto without a line of pre-existing code. This flips the assumption that early teams spend months on infrastructure before shipping anything real. With Claude Code as the primary builder, the initial sprint becomes about direction and judgment, not typing. It compresses the time between idea validation and real user contact from months to weeks.No meetings, no Jira, no text threads. It shipped anyway. The team had no standup cadence, no ticket system, no async thread to resolve blockers. What replaced all of that: shared context held inside the AI loop. When the model carries state and the team is small and aligned, human coordination overhead becomes optional.The technical stack for a production AI agent is shockingly minimal. The entire agent loop ran on Cloudflare Workers with the Vercel AI SDK. Nothing else. No proprietary orchestration layer, no third-party agent framework. Everything else was built in-house. Teams often over-architect before theyve proven anything; Eddies stack is evidence that infrastructure minimalism accelerates the path to learning what the agent actually needs to do.Building agents is not as complicated as the community makes it sound. An agent is an AI SDK running somewhere in the cloud, able to look up files and call tools. Thats the full definition. The complexity people fear (state management, orchestration, reliability) is solvable with the same judgment calls any backend system requires. Eddies team shipped one at production quality in 10 weeks without specialist AI infrastructure experience.The permanent Zoom model of AI development changes how teams think about context. Claude Code running in a persistent loop means the model has continuous access to the codebases current state. Thats closer to having an engineer who never closes their laptop than a chat interface you query on demand. For small teams, this is the equivalent of a senior engineer who is always available, always current, and never needs onboarding after a break.The lesson for founding teams isnt use Claude Code. Its design your process for AI as a team member. Most early teams graft AI tools onto a human-scaled workflow: standups, tickets, PRs reviewed by three people. Eddies team treated the AI as a primary contributor from day one and built their coordination model around that assumption. The result: a workflow that gets faster as the AI improves, not one that merely offloads tasks to it.Blog and detailed workflow walkthroughs from this episode:How Gusto Built a New Product Line in 10 Weeks with Claude Code, No Jira, and No Docs: https://www.chatprd.ai/how-i-ai/how-gusto-built-a-new-product-line-in-10-weeks-with-claude-code-no-jira-and-no-docs How to Build a New AI Product in 10 Weeks Using the No-Process Method: https://www.chatprd.ai/how-i-ai/workflows/how-to-build-a-new-ai-product-in-10-weeks-using-the-no-process-method How to Fix Bugs Using an AI-Powered Test-Driven Development (TDD) Workflow: https://www.chatprd.ai/how-i-ai/workflows/how-to-fix-bugs-using-an-ai-powered-test-driven-development-tdd-workflowIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="GLM 5.2: why I’m replacing Opus in Claude Code with this new model"
+    icon="newspaper"
+    href="/kb/articles/glm-52-why-im-replacing-opus-in-claude-code-with-this-new-mo-ad784c0d"
+  >
+    Lenny Rachitsky · explanation · 87% similar
+  </Card>
+  <Card
+    title="[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December"
+    icon="newspaper"
+    href="/kb/articles/ainews-glm-gpt-glm-52-passes-vibe-check-zai-forecasts-open-f-607572ec"
+  >
+    Swyx · explanation · 78% similar
+  </Card>
+  <Card
+    title="[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding "
+    icon="newspaper"
+    href="/kb/articles/ainews-glm-52-the-top-frontend-coding-model-in-the-world-ind-53645069"
+  >
+    Swyx · reference · 78% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-i-ai-glm-52-review-and-how-gusto](https://www.lennysnewsletter.com/p/how-i-ai-glm-52-review-and-how-gusto).
+</Note>

@@ -1,0 +1,80 @@
+---
+title: 'Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding'
+description: 'Ornith-1.0 is a new open weights model from DeepReinforce, achieving state-of-the-art performance on coding benchmarks with various configurations.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-06-29'
+sourceUrl: 'https://simonwillison.net/2026/Jun/29/ornith/#atom-everything'
+topics: ["llms","agentic-coding","open-source-models","deep-reinforcement-learning"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jun/29/ornith/#atom-everything) · 29/06/2026
+</Info>
+
+## Summary
+
+Ornith-1.0 is a new open weights model from DeepReinforce, achieving state-of-the-art performance on coding benchmarks with various configurations.
+
+## Key Insights
+
+> "this is an interesting new open weights (MIT licensed) model"
+>
+> — Introduction to Ornith-1.0
+
+> "it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks"
+>
+> — Performance evaluation of Ornith-1.0
+
+> "Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way."
+>
+> — User experience with the model
+
+## Topics
+
+- [llms](/kb/topics/llms)
+- [agentic-coding](/kb/topics/agentic-coding)
+- [open-source-models](/kb/topics/open-source-models)
+- [deep-reinforcement-learning](/kb/topics/deep-reinforcement-learning)
+
+---
+
+## Full Article
+
+29th June 2026 - Link Blog Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding. This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce. [...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks. As far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional Gemma Terms of Use that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well. I've been running the model using LM Studio and the ornith-1.0-35b-Q4_K_M.gguf (20GB) GGUF, hooked up to Pi. Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way. Here's a terminal session where I asked it to "find the code that decodes the actor cookie" and then "find the code that opens the insert dialog when thebutton is clicked" against a Datasette checkout, which it handled with ease. I also had it draw this pelican, which came out at 103 tokens/second: It's a little bit mangled but the pelican is clearly a pelican. I couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning from June 2025.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="GLM-5.2 is probably the most powerful text-only open weights LLM"
+    icon="newspaper"
+    href="/kb/articles/glm-52-is-probably-the-most-powerful-text-only-open-weights--ddd74909"
+  >
+    Simon Willison · explanation · 67% similar
+  </Card>
+  <Card
+    title="[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen"
+    icon="newspaper"
+    href="/kb/articles/ainews-reve-2-and-ideogram-4-layouts-in-imagegen-038320ff"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+  <Card
+    title="Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model"
+    icon="newspaper"
+    href="/kb/articles/qwen36-27b-flagship-level-coding-in-a-27b-dense-model-18ec5cad"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jun/29/ornith/#atom-everything](https://simonwillison.net/2026/Jun/29/ornith/#atom-everything).
+</Note>

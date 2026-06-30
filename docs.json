@@ -704,6 +704,10 @@
       "destination": "/kb/articles/openclaw-the-complete-guide-to-building-training-and-living--0e6a80ac"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-10a69bbc",
+      "destination": "/kb/articles/no-figma-no-jira-no-docs-how-gusto-built-a-new-product-line--10a69bbc"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-160e48b9",
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
@@ -970,6 +974,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-8670162b",
       "destination": "/kb/articles/5-openclaw-agents-run-my-home-finances-and-code-jesse-genet-8670162b"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-873cbbad",
+      "destination": "/kb/articles/-how-i-ai-glm-52-review-how-gusto-built-a-new-product-line-w-873cbbad"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-87f53d1c",
@@ -1616,6 +1624,10 @@
       "destination": "/kb/articles/a-quote-from-benedict-evans-417198d8"
     },
     {
+      "source": "/kb/articles/simon-willison-41ae3a80",
+      "destination": "/kb/articles/ornith-10-self-scaffolding-llms-for-agentic-coding-41ae3a80"
+    },
+    {
       "source": "/kb/articles/simon-willison-42b703f1",
       "destination": "/kb/articles/the-fable-5-export-controls-harm-us-cyber-defense-42b703f1"
     },
@@ -1738,6 +1750,10 @@
     {
       "source": "/kb/articles/simon-willison-53a6ac3d",
       "destination": "/kb/articles/quoting-thibault-sottiaux-53a6ac3d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-53b243fe",
+      "destination": "/kb/articles/tool-html-table-extractor-53b243fe"
     },
     {
       "source": "/kb/articles/simon-willison-53d5a4e7",
@@ -2122,6 +2138,10 @@
     {
       "source": "/kb/articles/simon-willison-915b03d0",
       "destination": "/kb/articles/ggmlai-joins-hugging-face-to-ensure-the-long-term-progress-o-915b03d0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-916d6eb3",
+      "destination": "/kb/articles/count-the-number-of-safari-tabs-916d6eb3"
     },
     {
       "source": "/kb/articles/simon-willison-9171ed5d",
@@ -3282,6 +3302,10 @@
     {
       "source": "/kb/articles/swyx-81ffa40b",
       "destination": "/kb/articles/ainews-tasteful-tokenmaxxing-81ffa40b"
+    },
+    {
+      "source": "/kb/articles/swyx-82a5d66a",
+      "destination": "/kb/articles/ainews-not-much-happened-today-82a5d66a"
     },
     {
       "source": "/kb/articles/swyx-8508c5cb",
