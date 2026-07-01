@@ -720,6 +720,10 @@
       "destination": "/kb/articles/the-ai-paradox-more-automation-more-humans-more-work-dan-shi-17257806"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-17574da8",
+      "destination": "/kb/articles/how-top-pms-increase-their-leverage-with-ai--17574da8"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1a78b4a3",
       "destination": "/kb/articles/code-with-claude-the-5-biggest-updates-explained-1a78b4a3"
     },
@@ -1088,6 +1092,10 @@
       "destination": "/kb/articles/from-a-690-newsletter-to-3m-api-how-a-non-coder-built-memelo-c0183879"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-c4020731",
+      "destination": "/kb/articles/sonnet-5-review-i-ran-64-generations-to-find-out-if-its-wort-c4020731"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-c632ad0c",
       "destination": "/kb/articles/anthropics-1b-to-19b-growth-run-how-claude-became-the-fastes-c632ad0c"
     },
@@ -1320,6 +1328,10 @@
       "destination": "/kb/articles/a-quote-from-kyle-ferrana-10a28f10"
     },
     {
+      "source": "/kb/articles/simon-willison-1134350f",
+      "destination": "/kb/articles/a-quote-from-anthropic-1134350f"
+    },
+    {
       "source": "/kb/articles/simon-willison-11fce8fa",
       "destination": "/kb/articles/a-quote-from-kyle-daigle-11fce8fa"
     },
@@ -1418,6 +1430,10 @@
     {
       "source": "/kb/articles/simon-willison-1dff5c0f",
       "destination": "/kb/articles/our-evaluation-of-openais-gpt-55-cyber-capabilities-1dff5c0f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1e0a59cd",
+      "destination": "/kb/articles/release-shot-scraper-110-1e0a59cd"
     },
     {
       "source": "/kb/articles/simon-willison-1e4ad5f8",
@@ -2084,6 +2100,10 @@
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
     },
     {
+      "source": "/kb/articles/simon-willison-88292c28",
+      "destination": "/kb/articles/whats-new-in-claude-sonnet-5-88292c28"
+    },
+    {
       "source": "/kb/articles/simon-willison-887578b6",
       "destination": "/kb/articles/a-quote-from-luke-curley-887578b6"
     },
@@ -2472,6 +2492,10 @@
       "destination": "/kb/articles/siri-ai-at-wwdc-2026-be173a1e"
     },
     {
+      "source": "/kb/articles/simon-willison-be23d706",
+      "destination": "/kb/articles/nano-banana-2-lite-be23d706"
+    },
+    {
       "source": "/kb/articles/simon-willison-beb3e6a5",
       "destination": "/kb/articles/release-llm-gemini-031-beb3e6a5"
     },
@@ -2540,6 +2564,10 @@
       "destination": "/kb/articles/a-quote-from-greg-kroah-hartman-c978e84a"
     },
     {
+      "source": "/kb/articles/simon-willison-ca378440",
+      "destination": "/kb/articles/the-ai-compass-ca378440"
+    },
+    {
       "source": "/kb/articles/simon-willison-ca44e59a",
       "destination": "/kb/articles/agentic-manual-testing-agentic-engineering-patterns-ca44e59a"
     },
@@ -2570,6 +2598,10 @@
     {
       "source": "/kb/articles/simon-willison-cdfcfdee",
       "destination": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee"
+    },
+    {
+      "source": "/kb/articles/simon-willison-cf5015cb",
+      "destination": "/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
     },
     {
       "source": "/kb/articles/simon-willison-cffdf1dd",
@@ -2996,6 +3028,10 @@
       "destination": "/kb/articles/ainews-frontiercode-benchmarking-for-code-quality-over-slop-1a1f4627"
     },
     {
+      "source": "/kb/articles/swyx-1e7a9528",
+      "destination": "/kb/articles/ahmad-osman-on-why-local-ai-is-catching-up-1e7a9528"
+    },
+    {
       "source": "/kb/articles/swyx-1edb47a3",
       "destination": "/kb/articles/scaling-past-informal-ai-carina-hong-axiom-math-1edb47a3"
     },
@@ -3054,6 +3090,10 @@
     {
       "source": "/kb/articles/swyx-328f2282",
       "destination": "/kb/articles/ainews-anthropic-raises-965b-series-h-releases-opus-48-and-d-328f2282"
+    },
+    {
+      "source": "/kb/articles/swyx-33a96f8f",
+      "destination": "/kb/articles/ainews-sonnet-5-today-and-fable-5-tomorrow-33a96f8f"
     },
     {
       "source": "/kb/articles/swyx-33fd2c03",
@@ -3198,6 +3238,10 @@
     {
       "source": "/kb/articles/swyx-5b672f28",
       "destination": "/kb/articles/the-age-of-async-agents-cognitions-walden-yan-openinspects-c-5b672f28"
+    },
+    {
+      "source": "/kb/articles/swyx-5cc34ee1",
+      "destination": "/kb/articles/aiewf-daily-dispatch-loops-software-factories-forward-deploy-5cc34ee1"
     },
     {
       "source": "/kb/articles/swyx-5ce9775c",
@@ -3482,6 +3526,10 @@
     {
       "source": "/kb/articles/swyx-e6b68217",
       "destination": "/kb/articles/ainews-spacex-is-already-a-28byr-neocloud-e6b68217"
+    },
+    {
+      "source": "/kb/articles/swyx-e8b69d77",
+      "destination": "/kb/articles/forward-deployed-engineers-and-the-future-of-software-engine-e8b69d77"
     },
     {
       "source": "/kb/articles/swyx-ea4debd4",

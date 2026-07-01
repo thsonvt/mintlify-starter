@@ -1,0 +1,80 @@
+---
+title: 'Ahmad Osman on why local AI is catching up'
+description: 'Ahmad Osman discusses the rise of local AI and its advantages over proprietary models, emphasizing the importance of open-source systems and hands-on '
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-06-30'
+sourceUrl: 'https://www.latent.space/p/ahmad-osman-local-ai'
+topics: ["local-ai","open-source","ai-workshops","model-efficiency"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/ahmad-osman-local-ai) · 30/06/2026
+</Info>
+
+## Summary
+
+Ahmad Osman discusses the rise of local AI and its advantages over proprietary models, emphasizing the importance of open-source systems and hands-on workshops.
+
+## Key Insights
+
+> "The gap between open-source models and closed-frontier models keeps shrinking."
+>
+> — Osman's perspective on the evolving landscape of AI models.
+
+> "When you use a hosted agent, you are not only using a model. You are using search, tools, infrastructure and other services around it."
+>
+> — Osman's explanation of the misconceptions surrounding local AI.
+
+> "The broader trend is that models are becoming much more efficient."
+>
+> — Osman's insights on the advancements in AI model efficiency.
+
+## Topics
+
+- [local-ai](/kb/topics/local-ai)
+- [open-source](/kb/topics/open-source)
+- [ai-workshops](/kb/topics/ai-workshops)
+- [model-efficiency](/kb/topics/model-efficiency)
+
+---
+
+## Full Article
+
+Ahmad Osman at the AI Engineer Worlds Fair today.Ahmad Osman has been advocating for local AI running models on your own computer, workstation or dedicated hardware long before it became a major theme at this years AI Engineer Worlds Fair. He is also the founder of Osmantic, a company building open source software for deploying and operating local AI systems.One of the themes emerging from AIEWF is that open source LLMs are becoming increasingly credible alternatives to large, proprietary frontier models. Since most local AI systems depend on open models, that shift strengthens the case Osman has been making. As he told Latent Space, the gap between open-source models and closed-frontier models keeps shrinking.Osman makes the argument even more explicitly on a website called Open Source AI Must Win, where he writes that the ability to study, build, repair, deploy, audit, adapt, teach, preserve, and run intelligence systems without asking permission is of existential importance.At AIEWF, Osman ran a two-part workshop on local LLMs and workstation agents. The sessions showed how quickly the field is moving from models running on phones and laptops, to dedicated GPU workstations and enterprise infrastructure.The interest in Osmans workshops was not limited to hardware hobbyists, either. Attendees ranged from students considering their first AI-capable machine to enterprise executives thinking about model routing, private infrastructure and control over company data.In the following Q&A, Osman explains why local AI is attracting more attention, how the model and hardware landscape has changed, and why he expects more developers and enterprises to begin treating local AI as serious infrastructure.Making local AI tangibleLatent Space: Can you summarize what the workshops were about and what attendees were looking for?Ahmad Osman: It was a two-part workshop, and there was more demand than we had space for. Some people unfortunately had to be turned away.I came in with a website we had prepared to demonstrate local AI. It was essentially a hardware arena where people could compare systems such as the DGX Spark, AMD Strix Halo machines and other devices. You could run them against one another, or compare them with a frontier cloud model, and see the performance, output quality, speed and latency for yourself.The main idea was to make local AI feel real. There is still a perception of it that dates back to 2022, when the models were much less capable. But everything has improved substantially since then.There is still a lag behind frontier models perhaps four to eight months but local and open models are catching up. We wanted people to interact with these systems rather than just hear a theoretical argument about them.The software behind the demo is open source and available on GitHub. The second workshop went further into setting it up and showing the full system in action.A model is only one part of the systemLatent Space: What is missing when people think of local AI as simply running a model on their own machine?Osman: There is a big misconception about products such as ChatGPT or Claude Code. They come with a complete infrastructure around the model and around the agent. It is not just one thing.A friend of mine bought an RTX 5090 to run Qwen 3.5 locally. He connected Claude Code to the model and asked it to change the RGB lighting on the GPU, but it failed. He then used the hosted Claude Code service, and it worked.I asked whether he had given the local model internet search access. He had not. The models training data had a cutoff date, while the software and documentation he needed had since changed.Once we gave the local system access to a search endpoint, it was able to complete the task.That is the point: when you use a hosted agent, you are not only using a model. You are using search, tools, infrastructure and other services around it.With our open source deployment system, we are trying to provide the complete experience from a chat interface and document ingestion to agents, harnesses and search tools. That end-to-end layer has been lacking in the local AI ecosystem.Interest spans students, enthusiasts and enterprisesLatent Space: Who came to the workshop? Were they mainly hardware enthusiasts, or people trying to build privacy-based applications?Osman: It was a very wide audience.At the end of the second workshop, a student asked me what hardware she should buy before going to college. An executive from Intel asked how we could get the software running on Windows in a particular way to improve the user experience.Some people were enthusiasts. Others had very enterprise-focused questions. The common thread was interest in running something they can control, whether that means a model on a MacBook, a GPU at home or a dedicated cluster of high-end enterprise hardware.People asked about enterprise model routing, data collection, traces, agent sandboxing and latency. Others asked how many GPUs I have at home. The answer is 22 RTX 3090s.The breadth of interest surprised me. This was my first AI workshop, and I was lucky enough to do two of them back to back.You may not need to buy a GPULatent Space: Do developers need to go out and buy GPUs to experiment with local AI?Osman: It depends on the size of the model you want to use.You can run a four-bit Qwen model on a MacBook. At the other extreme, a very large frontier-class open model might require several RTX Pro 6000 GPUs.But the broader trend is that models are becoming much more efficient. On a modern phone, you can now run a model that outperforms systems people were using in the cloud only a couple of years ago, without using all of the devices memory.That shows how far model efficiency has come in a relatively short time.Models and hardware are improving togetherLatent Space: Is the progress mainly coming from better software and models, or from hardware as well?Osman: The models have improved dramatically.Architectures are becoming more efficient, and many small improvements compound. Once a frontier lab demonstrates that a capability is possible, the open source ecosystem can work backwards from that and find ways to reproduce it more efficiently.We are seeing models with tens of billions of parameters deliver performance that would previously have required much larger systems. Some of those models can run on an RTX 3090 released in 2020. Two years ago, that level of capability on that hardware would not have been realistic.This is still a very new field, and we do not know the end state. But we know the systems will continue to improve.The rise of hybrid and sovereign AILatent Space: Do you expect more applications to combine local and cloud AI?Osman: Yes. Edge models are going to become more popular, and this is not only about consumers.Enterprises are increasingly aware that the models they depend on may not always remain available to them in the same form. Providers can change quality, pricing, access or policies.That creates an incentive to move toward dedicated hardware and secure compute. It does not necessarily have to sit on premises. A company can use dedicated, colocated hardware that it controls.The benefit is that the quality of the model does not unexpectedly change, access cannot simply be removed, and the company retains control over its intellectual property, data, privacy and compliance obligations.Open source models are also continuing to close the gap with frontier proprietary systems. We have seen a rapid progression through Llama, Mistral, Qwen, DeepSeek, GLM and Kimi models. Each generation narrows the gap.Specialized models may be the real opportunityLatent Space: Where do you think this leads for businesses?Osman: I have believed for some time that smaller, specialized models are the future for many business use cases.An enterprise may begin with a general model and collect traces, messages and feedback from how employees use it. Over time, that data can support a more specialized model tuned to the companys particular work.That can improve performance, reduce costs and make the system more useful for the business.I also think open source model companies may increasingly monetize through licensing for fine-tuning, reinforcement learning or specialized commercial deployments.As more companies move away from relying entirely on cloud APIs and secure their own compute, these labs will have an incentive to keep releasing strong open models while capturing value when businesses adapt them for proprietary use cases.The broader direction is toward greater sovereignty: companies and individuals controlling their models, compute and data, while still benefiting from the rapid progress of the open source ecosystem.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="AI as economic warfare"
+    icon="newspaper"
+    href="/kb/articles/ai-as-economic-warfare-bfd48a7a"
+  >
+    Geoffrey Huntley · explanation · 71% similar
+  </Card>
+  <Card
+    title="[AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo"
+    icon="newspaper"
+    href="/kb/articles/ainews-open-models-model-labs-vs-agent-labs-and-whats-untrai-771f062e"
+  >
+    Swyx · explanation · 69% similar
+  </Card>
+  <Card
+    title="cognitive security"
+    icon="newspaper"
+    href="/kb/articles/cognitive-security-b2ce2a44"
+  >
+    Geoffrey Huntley · explanation · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/ahmad-osman-local-ai](https://www.latent.space/p/ahmad-osman-local-ai).
+</Note>
