@@ -1,0 +1,80 @@
+---
+title: 'Warp CEO Zach Lloyd on why software factories are the next phase of coding'
+description: 'Warp CEO Zach Lloyd discusses the evolution of Warp from a terminal tool to a software factory platform, emphasizing the shift towards automated softw'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-07-01'
+sourceUrl: 'https://www.latent.space/p/software-factories'
+topics: ["software-factories","ai-engineering","automation","developer-tools"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/software-factories) · 01/07/2026
+</Info>
+
+## Summary
+
+Warp CEO Zach Lloyd discusses the evolution of Warp from a terminal tool to a software factory platform, emphasizing the shift towards automated software development.
+
+## Key Insights
+
+> "The essential shift is from interactive development to automated development."
+>
+> — Zach Lloyd discussing the transition in software development practices.
+
+> "It has always been about empowering developers and companies to ship better software more quickly."
+>
+> — Lloyd reflecting on Warp's mission throughout its evolution.
+
+> "The world keeps changing. The underlying AI improves so quickly that my view of the future is what I described in the talk."
+>
+> — Lloyd on the rapid advancements in AI and their impact on software development.
+
+## Topics
+
+- [software-factories](/kb/topics/software-factories)
+- [ai-engineering](/kb/topics/ai-engineering)
+- [automation](/kb/topics/automation)
+- [developer-tools](/kb/topics/developer-tools)
+
+---
+
+## Full Article
+
+Warp founder Zach Lloyd in the AI Engineer Worlds Fair expo hall.Ive been covering Warp for a couple of years now, and its rapid evolution from a command-line interface tool to a software factory platform has been fascinating to watch. The company began in the pre-ChatGPT days, in mid-2021, as a Rust-based terminal. Then when AI hit, it turned into a terminal with integrated coding agents.But the competition among CLI tools has dramatically increased in recent years, including from Claude Code, Codex CLI, and Gemini CLI three products backed by massive tech companies. This likely led to Warps decision to open-source its core CLI tool in April this year.Im a Warp user myself, finding it a much more sophisticated tool than my native Mac CLI. But I also admire the companys ability to adapt to the times a trait I spotted in CEO Zach Lloyd during my first interview with him a couple of years ago. So I was keen to catch up with him at the AI Engineer Worlds Fair this week, where he presented a keynote session on software factories, the new term for orchestrating a team (ahem, a factory) of agents.Warp has a new agent orchestration platform called Oz. Its the companys answer to what Lloyd believes is an industry transition, from engineers working interactively with agents to automated systems that continuously triage, implement, review, verify and monitor software changes. Oz is intended to connect multiple models and coding harnesses across local environments and isolated cloud sandboxes, while fitting into tools developers already use.I spoke to Lloyd just after he made his presentation on-stage, which you can view on YouTube its a good primer to what software factories are. In our one-on-one discussion, we get into the reasons Warp made its software factory pivot, how Lloyd came up with the term (independently, it seems, from similar companies like Factory), and why he expects most significant software projects to operate some form of automated factory within the next year.From individual agents to an automated development loopLatent Space: When did you first come across the term software factory, and what attracted you to the concept?Zach Lloyd: I cant remember exactly when I started conceiving of it in those terms, but it was within the last six months, as the ability to automate software development became more complete.We started with more one-off automation: run an agent in the cloud. A lot of platforms began there. Then it became: run an agent in the cloud on a timer.The next question was, what is the most valuable loop to automate? The answer is basically the main loop of software engineering: triage, specification, implementation, review, verification, shipping and monitoring.We began building toward this cloud-automation vision about a year ago, before we started building Oz. Over the past few months, the industry has also begun coalescing around the factory term. There is an entire software-factory track at this conference.It is literally what we are gearing our product around. In the next version of Oz, you will set up your factory, see what it looks like and manage the factory floor.But I dont care that much whether the term sticks. The essential shift is from interactive development to automated development. Factory is a useful metaphor for that.Building the factory around existing workflowsLatent Space: In your presentation, you showed a software-factory stack containing several of your own products. Is Warps plan to provide the tools that make up that stack?Lloyd: Yes. When you enter Oz, our cloud-agent platform, you will be walked through setting up a factory.You choose your repositories, the parts of the software lifecycle you want to automate, and the points where humans should be brought into the loop. Different organizations and codebases will have different preferences. Do you fully automate code review? Do you have humans review certain high-risk changes?The system then starts creating the loop. It might pull issues from Jira or Linear, let people submit them through Slack or Teams, and allow developers to redirect an agent from GitHub.What is interesting from a product perspective is that most of the factory is not necessarily a new interface. It is an integration into peoples existing workflows. That is how we are conceiving it, at least.Why Warp is moving beyond the terminalLatent Space: When I first wrote about Warp, it was building a modern terminal. Code is still important now, but increasingly it is being produced by agents. It looks like Warp has broadened its product vision accordingly...Lloyd: One hundred percent. A good way to think about it is that the companys mission has stayed the same since we founded it. It has always been about empowering developers and companies to ship better software more quickly.The product has evolved tremendously. It began as a modern version of the terminal, before the current AI wave. The next iteration was a terminal with agents built into it, which we are still investing in and which we have now open-sourced.But the world keeps changing. The underlying AI improves so quickly that my view of the future is what I described in the talk: the interactive component is going to become less important.As a company, you will want a central place where software gets built and where you can measure the efficiency of that process. Im not afraid to redirect what the product becomes. As the underlying technology gets better, companies that do not adapt are going to be left behind.Factory engineering as a new disciplineLatent Space: The word factory may be off-putting to some developers, given its connotations with mechanism and rote work. What feedback have you received from AI engineers about this pivot?Lloyd: The concept resonates strongly with the economic buyer the person running the engineering team.For an individual engineer, it can sound mechanized and uncreative. They may think: I enjoy coding. Why would I want to work in a factory?One point I tried to communicate in the talk is that this will become a new engineering discipline. I think it can be extremely interesting if you view the job as meta-engineering: building the system that builds the product.It uses many of the same problem-solving skills. You are asking why an agent performs one task well and another poorly. How should you adjust its feedback? What context does it need? How should the workflow change?But, for better or worse, the power of these systems and their ability to accelerate software development are so great that writing everything by hand is not going to make sense for much longer.Where forward-deployed engineers fitLatent Space: Another trend at the conference is forward-deployed engineering, which often combines aspects of product management, consulting and traditional engineering. How does that fit into the software-factory model?Lloyd: Standing up a software factory potentially involves integrating with a large number of existing systems, depending on the company.The factory will work most effectively when it has context from those systems and is integrated throughout the organizations workflow. A lot of forward-deployed engineering work in this area is effectively a transformation project.It requires real engineering from someone who understands how to configure and deploy one of these systems. We do some of that, and some of our competitors do as well.I dont know what the final state will look like. Warp is approaching it more as a platform business than a services business. But there is certainly a business today in sending smart people into a company to transform its workflow using these products.Warp as the test bed for OzLatent Space: I use Warp as my terminal, including for some coding tasks. What happens to the original Warp CLI product in the software-factory era?Lloyd: When we open-sourced Warp, we put the repository under the control of Oz. We built a software factory around the open-source project, using our own factory platform.We are still trying to improve Warp as much as possible. We are doing it with the community, and we are doing a lot of it with agents. In that sense, Warp is a test bed for the factory concept.But it is also a product used by almost a million developers, many of whom rely on it as their primary development environment. We use it constantly ourselves, and we still have internal engineers whose job is to improve it. We are simply approaching that work with a factory mindset.Gradual automation, not an overnight replacementLatent Space: What do you expect the next year to look like, in terms of adoption of software factories?Lloyd: This will not happen all at once. Engineers are not going to wake up one morning and discover that a software factory has replaced their jobs.Companies will start with specific use cases, certain types of issues or lower-risk repositories. Those are places where they may be comfortable not having a human review every single line of code.They will see how it performs. Then the engineering challenge becomes: instead of merging 20% of pull requests automatically, can we get to 30%, 40%, 50% or 60%?There will still be a remaining percentage of work done by people because it is too difficult, ambiguous or dependent on greenfield thinking.But I think this shift will happen over the next year. My prediction is that every significant software project will have some engine of code something resembling a factory continuously driving it forward.It will become similar to GitHub or CI/CD: a standard part of how serious software projects operate. I would be surprised if that did not happen.Start by automating the annoying partsLatent Space: There are thousands of AI engineers at this conference. What should they do to prepare for this shift?Lloyd: Instead of only building the product directly, try building some automation toward a factory and see what it feels like.Suppose you want an agent to implement incoming user issues automatically. What is involved in making that work? What prevents you from adopting it?Perhaps code review is the bottleneck. Perhaps the agent is making changes, but you cannot clearly see what it did. You only discover those problems by trying to build the loop.Get out of the mindset of building everything by hand. Find an annoying part of your job and try to create a loop that handles it for you using a factory approach.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers"
+    icon="newspaper"
+    href="/kb/articles/aiewf-daily-dispatch-loops-software-factories-forward-deploy-5cc34ee1"
+  >
+    Swyx · explanation · 82% similar
+  </Card>
+  <Card
+    title="Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony"
+    icon="newspaper"
+    href="/kb/articles/extreme-harness-engineering-for-token-billionaires-1m-loc-1b-05cd022f"
+  >
+    Swyx · explanation · 65% similar
+  </Card>
+  <Card
+    title="a sneak preview behind an embedded software factory. I suspect rapid application dev is back"
+    icon="newspaper"
+    href="/kb/articles/a-sneak-preview-behind-an-embedded-software-factory-i-suspec-675f0e5a"
+  >
+    Geoffrey Huntley · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/software-factories](https://www.latent.space/p/software-factories).
+</Note>

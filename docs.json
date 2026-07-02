@@ -2968,6 +2968,10 @@
       "destination": "/kb/articles/live-anthropic-distillation-how-models-cheat-swe-bench-dead--04433b95"
     },
     {
+      "source": "/kb/articles/swyx-053cf34c",
+      "destination": "/kb/articles/warp-ceo-zach-lloyd-on-why-software-factories-are-the-next-p-053cf34c"
+    },
+    {
       "source": "/kb/articles/swyx-05cd022f",
       "destination": "/kb/articles/extreme-harness-engineering-for-token-billionaires-1m-loc-1b-05cd022f"
     },
@@ -3018,6 +3022,10 @@
     {
       "source": "/kb/articles/swyx-14e970f9",
       "destination": "/kb/articles/ainews-meta-superintelligence-labs-announces-muse-spark-firs-14e970f9"
+    },
+    {
+      "source": "/kb/articles/swyx-19c048cf",
+      "destination": "/kb/articles/ainews-not-much-happened-today-19c048cf"
     },
     {
       "source": "/kb/articles/swyx-19c500da",
@@ -3098,6 +3106,10 @@
     {
       "source": "/kb/articles/swyx-33fd2c03",
       "destination": "/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+    },
+    {
+      "source": "/kb/articles/swyx-3489483d",
+      "destination": "/kb/articles/aiewf-daily-dispatch-autoresearch-and-the-tension-between-ai-3489483d"
     },
     {
       "source": "/kb/articles/swyx-351c2fbe",
@@ -3444,6 +3456,10 @@
       "destination": "/kb/articles/ainews-not-much-happened-today-a72f0190"
     },
     {
+      "source": "/kb/articles/swyx-aa94504d",
+      "destination": "/kb/articles/-the-coolest-diffusion-research-isnt-in-llms-evan-feinberg-s-aa94504d"
+    },
+    {
       "source": "/kb/articles/swyx-aae99147",
       "destination": "/kb/articles/ainews-gemma-4-crosses-2-million-downloads-aae99147"
     },
@@ -3470,6 +3486,10 @@
     {
       "source": "/kb/articles/swyx-be70bd66",
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-c303feae",
+      "destination": "/kb/articles/autoresearch-the-feedback-loop-behind-self-improving-agents-c303feae"
     },
     {
       "source": "/kb/articles/swyx-c9b1697d",
@@ -3530,6 +3550,10 @@
     {
       "source": "/kb/articles/swyx-e8b69d77",
       "destination": "/kb/articles/forward-deployed-engineers-and-the-future-of-software-engine-e8b69d77"
+    },
+    {
+      "source": "/kb/articles/swyx-ea14f3eb",
+      "destination": "/kb/articles/how-cursor-deploys-ai-inside-the-enterprise-ea14f3eb"
     },
     {
       "source": "/kb/articles/swyx-ea4debd4",
