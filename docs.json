@@ -2428,6 +2428,10 @@
       "destination": "/kb/articles/package-managers-need-to-cool-down-b36c4b11"
     },
     {
+      "source": "/kb/articles/simon-willison-b418e382",
+      "destination": "/kb/articles/understand-to-participate-b418e382"
+    },
+    {
       "source": "/kb/articles/simon-willison-b4384d05",
       "destination": "/kb/articles/a-quote-from-summer-yue-b4384d05"
     },
@@ -2562,6 +2566,10 @@
     {
       "source": "/kb/articles/simon-willison-c978e84a",
       "destination": "/kb/articles/a-quote-from-greg-kroah-hartman-c978e84a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c9ef244f",
+      "destination": "/kb/articles/research-using-dspy-to-evaluate-and-improve-datasette-agents-c9ef244f"
     },
     {
       "source": "/kb/articles/simon-willison-ca378440",
@@ -2868,6 +2876,10 @@
       "destination": "/kb/articles/release-llm-gemini-030-f0f15fdb"
     },
     {
+      "source": "/kb/articles/simon-willison-f10991ab",
+      "destination": "/kb/articles/release-llm-coding-agent-01a0-f10991ab"
+    },
+    {
       "source": "/kb/articles/simon-willison-f19f062d",
       "destination": "/kb/articles/release-datasette-agent-01a3-f19f062d"
     },
@@ -2986,6 +2998,10 @@
     {
       "source": "/kb/articles/swyx-09329b6c",
       "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-0d6836e7",
+      "destination": "/kb/articles/skill-engineering-and-the-case-against-one-shot-ai-design-0d6836e7"
     },
     {
       "source": "/kb/articles/swyx-0db41a58",
@@ -3464,6 +3480,10 @@
       "destination": "/kb/articles/ainews-gemma-4-crosses-2-million-downloads-aae99147"
     },
     {
+      "source": "/kb/articles/swyx-acccbbbe",
+      "destination": "/kb/articles/aiewf-daily-dispatch-the-great-loops-debate-and-the-state-of-acccbbbe"
+    },
+    {
       "source": "/kb/articles/swyx-ad7f592a",
       "destination": "/kb/articles/marc-andreessen-introspects-on-the-death-of-the-browser-pi-o-ad7f592a"
     },
@@ -3476,6 +3496,10 @@
       "destination": "/kb/articles/why-there-is-no-alphafold-for-materials-ai-for-materials-dis-b18788c6"
     },
     {
+      "source": "/kb/articles/swyx-b940259b",
+      "destination": "/kb/articles/vercels-andrew-qu-on-why-agents-are-a-new-kind-of-software-b940259b"
+    },
+    {
       "source": "/kb/articles/swyx-b9a15207",
       "destination": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207"
     },
@@ -3486,6 +3510,10 @@
     {
       "source": "/kb/articles/swyx-be70bd66",
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-c11b8776",
+      "destination": "/kb/articles/the-website-of-the-future-may-assemble-itself-for-every-visi-c11b8776"
     },
     {
       "source": "/kb/articles/swyx-c303feae",

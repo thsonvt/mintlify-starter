@@ -1,0 +1,79 @@
+---
+title: 'Vercel''s Andrew Qu on why agents are a new kind of software'
+description: 'Andrew Qu from Vercel discusses the evolution of software towards agents, their unique characteristics, and the importance of frameworks like eve for '
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-07-03'
+sourceUrl: 'https://www.latent.space/p/vercel-agents-new-software'
+topics: ["ai-agents","software-development","emerging-technologies"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/vercel-agents-new-software) · 03/07/2026
+</Info>
+
+## Summary
+
+Andrew Qu from Vercel discusses the evolution of software towards agents, their unique characteristics, and the importance of frameworks like eve for building them.
+
+## Key Insights
+
+> "I think agents are a new type of software."
+>
+> — Qu explains the distinction between agents and traditional web applications.
+
+> "Skills are useful as portable, on-demand knowledge."
+>
+> — Qu highlights the importance of skills in keeping agent models updated.
+
+> "The future of the web is therefore to be as accessible to bots and agents as possible."
+>
+> — Qu discusses the evolving nature of web traffic and the role of agents.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [software-development](/kb/topics/software-development)
+- [emerging-technologies](/kb/topics/emerging-technologies)
+
+---
+
+## Full Article
+
+Vercels Andrew Qu on the AIEWF expo floor.Andrew Qu is Chief of Software at Vercel, where he works with the CTO across internal engineering, product experimentation and emerging technologies. He has built libraries for MCP, created skills.sh and led the development of eve, Vercels framework for building agents.In this interview with Latent Space, Qu explains why agents represent a new form of software, what Vercel learned from building its own, and why Vercel itself is turning into an agent!From web applications to agentsLatent Space: What does a Chief of Software do at Vercel?Andrew Qu: My role is pretty unique. I work with the CTO to ship impact in any way, shape or form. Its a mix of internal engineering, external experimentation and staying on the frontier by building things.That means building new libraries and frameworks and showing people how to do things for the first time. I built an MCP library that made it easier to create some of the first MCP servers, and I also built skills.sh to make agent skills easier to discover and use.Latent Space: How did Vercel evolve from focusing on web development to investing heavily in agents?Qu: Vercels origins were about making it easy for developers to ship websites and web applications. More recently, weve seen a shift from people building pages to people building agents.While building our own agent in v0, our vibe-coding product, we ran into a lot of paper cuts that existing tooling did not solve: switching models or providers, adding fallbacks and making runs resumable.We turned those solutions into reusable libraries that could support v0 and also help customers build their own agents. Over time, we accumulated a set of primitives and decided to assemble them more cohesively. That became eve.Why eve became necessaryLatent Space: How did you reach the point where Vercel needed a dedicated agent framework?Qu: About a year ago, I started working toward putting an agent on every desk inside Vercel. That led me to build a successful data agent, and along the way a number of best practices emerged: filesystem agents, skills, compaction and subagents.These were all things I wished had come out of the box. Eventually, we asked: what if there were a prescriptive way to do this, so other developers did not have to go through the same exploration? That is where eve came from.Latent Space: Are agents simply another kind of application, or a genuinely new form of software?Qu: I think agents are a new type of software. They are not as predictable as web applications. The infrastructure can look similar, but the interaction, interface and outputs are much more dynamic.That changes how you build them. You need different primitives for context, tools, resumability and long-running work.Latent Space: What kinds of problems are particularly well suited to agents?Qu: We see a lot of business agents. Internally at Vercel, we use them for repetitive work ranging from a first pass at legal contract redlining, to marketing retrospectives and identifying people to contact, to writing queries against our data stores.A good candidate is often a repetitive task that still requires some reasoning. It is not just fixed automation, because the system has to interpret the situation and decide what to do.Building effective agentsLatent Space: When should an agent work autonomously, and when should a human remain in the loop?Qu: I dont think the future is all autonomous loops, and I dont think it is all human-in-the-loop. It is about choosing a feedback cycle that fits the task.If the task is well defined and you know what the final output should look like, it can be reasonable to let a loop continue until it is done. For more careful or surgical engineering work, you should check back in and make sure you are steering the model correctly.Latent Space: Your approach evolved through prompting, bespoke tools, coding-agent harnesses, filesystem agents and skills. What was the main lesson?Qu: We are still figuring out what makes an agent productive. Along the way, we have been collecting these primitives and bringing them together in eve.There will be more to add as best practices emerge. A year ago, we did not know sandboxes would become so important, or how much demand there would be for secure code execution and long-running jobs. As we learn more from production, there will be much more to build.Latent Space: Is Vercel creating an end-to-end agent platform comparable to the one it built for web development?Qu: Yes and no. We value partners that provide specialized parts of the agent lifecycle, but we also want it to be very easy for developers to get started.If you deploy eve to Vercel, you get observability and evaluations out of the box. We want to make that experience more comprehensive while making it easy to integrate with partners rather than owning every component.Skills and current knowledgeLatent Space: Why have skills become so important?Qu: Skills are useful as portable, on-demand knowledge. Models often contain outdated information. For example, they still sometimes recommend Vercel Postgres, even though we deprecated it years ago in favor of our marketplace.A skill can tell the agent that Vercel Postgres is deprecated and steer it toward the current approach. Until companies can audit and update every old piece of content, skills provide a way to forward-correct the model.I would recommend publishing skills for the latest version of your product. But companies should also audit their existing content, identify what is outdated and update it or add clear notes.An agent-readable webLatent Space: How will websites evolve as more traffic comes from agents?Qu: We have published reports showing bot traffic rising while human traffic is stagnant or declining, even as impressions increase, because agents and bots are hitting websites more frequently.The future of the web is therefore to be as accessible to bots and agents as possible, so they can learn about your product and use it successfully.At Vercel, we already detect when an agent makes a request and serve Markdown directly. Instead of forcing it to process HTML designed for a visual browser, we provide a format that is easier to read.Latent Space: Does that mean one experience for humans and another for agents?Qu: I think so. Humans may continue to receive the visual site, while agents receive a more structured, machine-readable representation. We are already doing that today.What comes nextLatent Space: What problems are you most interested in solving next?Qu: One of the things at the top of my agenda is multiplayer agent development. Whenever a team collaborates, people struggle to share context.I may have techniques for getting a front-end interface right on the first attempt, but another person may not know them. I am interested in how we can share that context between teammates and allow them to contribute to it.Latent Space: Will agents become a separate application category, or a standard capability built into most software?Qu: It depends on who you are and what you are building. For Vercel, Vercel itself is becoming an agent. We have an agent on the website, in Slack and in the dashboard that can do things on your behalf.Other companies will ship agents as standalone products. For us, agents are tightly coupled to everything we build. We want the entire platform to be agent-friendly and, in many ways, to make the platform itself an agent.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray"
+    icon="newspaper"
+    href="/kb/articles/the-age-of-async-agents-cognitions-walden-yan-openinspects-c-5b672f28"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+  <Card
+    title="Mini-Vibe Check: Claude Managed Agents Handle the Infrastructure Work"
+    icon="newspaper"
+    href="/kb/articles/mini-vibe-check-claude-managed-agents-handle-the-infrastruct-d5d2f0e4"
+  >
+    Dan Shipper (Every) · explanation · 70% similar
+  </Card>
+  <Card
+    title="Autoresearch: The feedback loop behind self-improving agents"
+    icon="newspaper"
+    href="/kb/articles/autoresearch-the-feedback-loop-behind-self-improving-agents-c303feae"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/vercel-agents-new-software](https://www.latent.space/p/vercel-agents-new-software).
+</Note>

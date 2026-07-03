@@ -1,0 +1,80 @@
+---
+title: 'Skill engineering and the case against one-shot AI design'
+description: 'Paul Bakaus discusses skill engineering as a way to enhance AI design processes while keeping human creativity central, emphasizing the need for domai'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-07-02'
+sourceUrl: 'https://www.latent.space/p/skill-engineering-design'
+topics: ["skill-engineering","ai-design","human-in-the-loop","frontend-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/skill-engineering-design) · 02/07/2026
+</Info>
+
+## Summary
+
+Paul Bakaus discusses skill engineering as a way to enhance AI design processes while keeping human creativity central, emphasizing the need for domain knowledge and context.
+
+## Key Insights
+
+> "Agents need more than instructions, they need domain knowledge, context and carefully defined ways for humans to steer the result."
+>
+> — Bakaus on the requirements for effective AI design.
+
+> "You really have to tell the agent what you mean."
+>
+> — Bakaus on the importance of precise vocabulary in AI design.
+
+> "Designers are moving into code, engineers are moving into design, and vice versa."
+>
+> — Bakaus on the evolving roles of designers and engineers in the AI landscape.
+
+## Topics
+
+- [skill-engineering](/kb/topics/skill-engineering)
+- [ai-design](/kb/topics/ai-design)
+- [human-in-the-loop](/kb/topics/human-in-the-loop)
+- [frontend-development](/kb/topics/frontend-development)
+
+---
+
+## Full Article
+
+Impeccables Paul Bakaus at the AI Engineer Worlds Fair.Paul Bakaus thinks the emerging discipline of skill engineering can make AI agents more capable but he absolutely does not want to remove people from the creative process. He chats to Latent Space about his approach to design in the AI age.Bakaus is the creator of Impeccable, an open-source design skills system that gives coding agents a vocabulary for improving interfaces. Instead of asking an agent to redesign an entire website in one shot, users can tell it to make a section bolder, quieter, denser, or more polished.Behind those apparently simple commands is a larger argument about how AI products should be built. Agents need more than instructions, Bakaus said: they need domain knowledge, context and carefully defined ways for humans to steer the result.The point is to give you a way to steer what you want to end up with, he said during a session at the AI Engineer Worlds Fair. Its never going to be a tool for one-shot design. Thats not the intent.The emerging craft of skill engineeringImpeccable began as a relatively simple extension of Anthropics frontend design skill. As its audience grew, Bakaus expanded it into a more complex system with multiple components and workflows.That process led him to start thinking of skill engineering as a discipline in its own right. His workshop at the conference explored what he called the dark arts of building skills.One of the interesting topics was that most skills [and] most models are not very creative, Bakaus told me. They converge in one direction, and if everybody uses the same skill to do frontend design work or something like that, everything ends up looking the same.Skill engineers must also account for differences between agent harnesses and models. Codex and Claude, for example, do not necessarily handle subagents or permissions in the same way. A skill intended to run across Claude Code, Cursor, GitHub Copilot and Codex cannot assume they all provide identical capabilities.Bakaus has also experimented with routing inside a skill, allowing it to combine several capabilities and direct a task toward the relevant instructions. He compared this to a mixture-of-experts model, with routing used both to conserve tokens and improve effectiveness.Giving agents a design vocabularyImpeccables core innovation is to take terms familiar to designers and give them a more precise operational meaning for an agent.An unassisted model asked to make a page bolder may add gradients, neon effects or glass-like surfaces. Impeccable instead defines boldness through concepts such as hierarchy, scale and decisive typography changes that attract attention without necessarily breaking the existing design system.An adjective with nothing behind it is just a nice apostrophe, Bakaus said. You really have to tell the agent what you mean.He described these terms as words that have been imbued with meaning. The model already has some conception of what words such as bold or quiet mean, but the skill translates them into a specific professional domain.This is the key, because experts often possess a vocabulary that non-experts do not. Bakaus said he had observed large differences between the work produced by a designer and an engineer using the same model, simply because the designer knew how to articulate the desired result.Ive been trying to put that language basically compress it into a skill and into a system to be able to express yourselves better, he said.However, he does not believe every part of design can be controlled from this level of abstraction. Directly manipulating spacing may still be the fastest option for a small adjustment, while open-ended prompting can be useful during initial exploration.The objective is not to replace every tool with an agent, he insisted. It is to determine the exact level of control and insert the person at the point where their judgment is most valuable.Designers and engineers move up the stackBakaus sees the boundaries between design, engineering and product management becoming less distinct.Designers are moving into code, engineers are moving into design, and vice versa, he said. These worlds are all colliding.That shift will be uncomfortable for people whose work primarily consists of translating an existing artifact into another form. Engineers who mainly turn Figma designs into code face growing automation, while designers whose contribution is limited to making an existing interface look competent face similar pressure.Designers all have to move one layer up the stack to think more about the what, he said. I think the role of the product manager and designer is actually converging.At the same time, designers are moving closer to implementation into code. Bakaus initially expected Impeccable to appeal mostly to engineers and assumed professional designers might resent that. Instead, he estimates that designers now make up at least half of its audience.So rather than moving directly into code and, you know, having no help, Bakaus said about designers, they use Impeccable as a bridge, because it communicates the way they communicate. And that was not obvious to me when I first built it.Impeccable also has a live mode that combines visual selection with an underlying coding agent. A user can select a section inside a development environment and request several alternative layouts or (for example) ask for a bolder or quieter treatment. The system operates within the projects existing code and design system rather than exporting an isolated mockup from a third-party design tool.Bakaus described this as a potential design harness at the intersection of chat and direct visual manipulation.There will be no auto modeThe AI industry often treats complete automation as the natural endpoint of product development. Bakaus rejects that premise.He sees two dominant camps: people trying to preserve the traditional Figma-centered workflow, and on the other side advocates of loopmaxxing who want agents to work with as little human intervention as possible.The truth is somewhere in the middle, he said.His preferred model is for AI to produce the first 80% quickly: the competent layout and basic implementation that would otherwise consume a lot of time. The person then owns the final 20%, where taste, context and a distinctive point of view enter the product. This is a key part of Bakauss design philosophy in the agentic era.People need purpose, and they want to play a role in whatever they create, Bakaus said. When you work with the agent, then you feel more ownership of the product.Users regularly ask him to add an automatic mode to Impeccable so that the system chooses the commands itself. He has no intention of doing so.There is no auto, he said, and there will be no auto.Asked about the language of software factories and other visions that appear to remove people from engineering altogether, his response was unambiguous.Im squarely against that.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency"
+    icon="newspaper"
+    href="/kb/articles/aiewf-daily-dispatch-autoresearch-and-the-tension-between-ai-3489483d"
+  >
+    Swyx · explanation · 74% similar
+  </Card>
+  <Card
+    title="Latent Space Engineering"
+    icon="newspaper"
+    href="/kb/articles/latent-space-engineering-e9ce28f5"
+  >
+    Jesse Chen · explanation · 67% similar
+  </Card>
+  <Card
+    title="Equipping agents for the real world with Agent Skills"
+    icon="newspaper"
+    href="/kb/articles/equipping-agents-for-the-real-world-with-agent-skills-6c56c360"
+  >
+    Anthropic Engineering · explanation · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/skill-engineering-design](https://www.latent.space/p/skill-engineering-design).
+</Note>

@@ -1,0 +1,76 @@
+---
+title: 'Research: Using DSPy to evaluate and improve Datasette Agent''s SQL system prompts'
+description: 'This research explores using DSPy to enhance the SQL prompts of Datasette Agent, focusing on evaluation and refinement through a live testing harness.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-02'
+sourceUrl: 'https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything'
+topics: ["sql-prompts","datasette-agent","dspy","evaluation-methodology"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything) · 02/07/2026
+</Info>
+
+## Summary
+
+This research explores using DSPy to enhance the SQL prompts of Datasette Agent, focusing on evaluation and refinement through a live testing harness.
+
+## Key Insights
+
+> "The schema listing gives only table names; the 'don't call describe_table if you already have the information' advice caused column-name guessing."
+>
+> — Discussing the limitations of the current system prompts and the need for improvement.
+
+> "Fable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements."
+>
+> — Highlighting the testing process and outcomes in the research.
+
+## Topics
+
+- [sql-prompts](/kb/topics/sql-prompts)
+- [datasette-agent](/kb/topics/datasette-agent)
+- [dspy](/kb/topics/dspy)
+- [evaluation-methodology](/kb/topics/evaluation-methodology)
+
+---
+
+## Full Article
+
+Research Using DSPy to evaluate and improve Datasette Agent's SQL system prompts — Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics. One of this morning's AIE keynotes covered dspy, which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data. Fable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one: The schema listing gives only table names; the "don't call describe_table if you already have the information" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Datasette Agent"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-0b6bf39a"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.2a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-02a0-bb7416cb"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.1a3"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-01a3-f19f062d"
+  >
+    Simon Willison · reference · 63% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything](https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything).
+</Note>
