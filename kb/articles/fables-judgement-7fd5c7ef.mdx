@@ -1,0 +1,75 @@
+---
+title: 'Fable''s judgement'
+description: 'Simon Willison shares insights from a Fireside Chat about allowing Fable to use its own judgement for coding tasks, enhancing efficiency and reducing '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-03'
+sourceUrl: 'https://simonwillison.net/2026/Jul/3/judgement/#atom-everything'
+topics: ["ai-agents","coding-efficiency","model-usage"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/3/judgement/#atom-everything) · 03/07/2026
+</Info>
+
+## Summary
+
+Simon Willison shares insights from a Fireside Chat about allowing Fable to use its own judgement for coding tasks, enhancing efficiency and reducing costs.
+
+## Key Insights
+
+> "For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent."
+>
+> — Stated by Simon on 2026-07-03
+
+> "cost/efficiency — implementation work rarely needs the top-tier model; judgment, review, and synthesis stay with the main loop."
+>
+> — Explanation of the approach to using Fable
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [coding-efficiency](/kb/topics/coding-efficiency)
+- [model-usage](/kb/topics/model-usage)
+
+---
+
+## Full Article
+
+3rd July 2026 One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example they gave was testing. You can tell Fable "only use automated testing for larger features, don't update and run tests for small copy or design changes" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead. Jesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use. I prompted Claude Code just now with: For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent Claude saved this memory file in ~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md: --- name: delegate-coding-to-subagents description: Simon wants coding tasks delegated to subagents running an appropriately lower-power model metadata: node_type: memory type: feedback originSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a --- Stated by Simon on 2026-07-03: "For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent." Why: cost/efficiency — implementation work rarely needs the top-tier model; judgment, review, and synthesis stay with the main loop. How to apply: when a task in this project is primarily writing/editing code, spawn an Agent with a model override (sonnet for substantive implementation, haiku for trivial/mechanical edits) and a self-contained prompt; review the result in the main loop before committing. Design, auditing, data synthesis, and anything judgment-heavy stays in the main model. See also [[project-goals]]. So far it seems to be working well. I'm getting a ton of work done and my Fable allowance is shrinking less quickly than before.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="🎙️ How I AI: Claude Fable 5 review & How Braintrust uses AI agents, evals, and CI to ship better software"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
+  >
+    Lenny Rachitsky · how-to · 70% similar
+  </Card>
+  <Card
+    title="[AINews] Loopcraft: The Art of Stacking Loops"
+    icon="newspaper"
+    href="/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
+  >
+    Swyx · explanation · 69% similar
+  </Card>
+  <Card
+    title="If Claude Fable stops helping you, you’ll never know"
+    icon="newspaper"
+    href="/kb/articles/if-claude-fable-stops-helping-you-youll-never-know-3da2f0fb"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/3/judgement/#atom-everything](https://simonwillison.net/2026/Jul/3/judgement/#atom-everything).
+</Note>

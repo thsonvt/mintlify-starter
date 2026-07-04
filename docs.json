@@ -2068,6 +2068,10 @@
       "destination": "/kb/articles/interactive-explanations-agentic-engineering-patterns-simon--7f547407"
     },
     {
+      "source": "/kb/articles/simon-willison-7fd5c7ef",
+      "destination": "/kb/articles/fables-judgement-7fd5c7ef"
+    },
+    {
       "source": "/kb/articles/simon-willison-7fee49ef",
       "destination": "/kb/articles/what-happened-after-2000-people-tried-to-hack-my-ai-assistan-7fee49ef"
     },
@@ -2270,6 +2274,10 @@
     {
       "source": "/kb/articles/simon-willison-9f31bc8e",
       "destination": "/kb/articles/profiling-hacker-news-users-based-on-their-comments-9f31bc8e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a0d32032",
+      "destination": "/kb/articles/june-2026-newsletter-a0d32032"
     },
     {
       "source": "/kb/articles/simon-willison-a105fb98",
@@ -2616,6 +2624,10 @@
       "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
     },
     {
+      "source": "/kb/articles/simon-willison-d013d581",
+      "destination": "/kb/articles/open-source-ai-gap-map-d013d581"
+    },
+    {
       "source": "/kb/articles/simon-willison-d07d7e8f",
       "destination": "/kb/articles/prompt-injection-as-role-confusion-d07d7e8f"
     },
@@ -2674,6 +2686,10 @@
     {
       "source": "/kb/articles/simon-willison-d5c4c4cb",
       "destination": "/kb/articles/claude-fable-is-relentlessly-proactive-d5c4c4cb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d66899ae",
+      "destination": "/kb/articles/a-quote-from-josh-w-comeau-d66899ae"
     },
     {
       "source": "/kb/articles/simon-willison-d6d5aa87",
