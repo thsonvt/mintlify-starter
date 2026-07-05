@@ -1,0 +1,79 @@
+---
+title: 'Better Models: Worse Tools'
+description: 'The article discusses how newer Anthropic models like Opus 4.8 and Sonnet 5 are worse at using specific tool schemas compared to their older versions,'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-04'
+sourceUrl: 'https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything'
+topics: ["ai-models","tool-usage","coding-harnesses"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything) · 04/07/2026
+</Info>
+
+## Summary
+
+The article discusses how newer Anthropic models like Opus 4.8 and Sonnet 5 are worse at using specific tool schemas compared to their older versions, leading to issues in coding harnesses like Pi.
+
+## Key Insights
+
+> "the SOTA models of the family are worse at this specific tool schema than their older siblings"
+>
+> — Discussing the performance of newer Anthropic models compared to older ones.
+
+> "this is getting worse with newer Anthropic models"
+>
+> — Highlighting the increasing issues with tool calls in recent models.
+
+> "should implement multiple edit tools just so they can use the one with the best performance"
+>
+> — Questioning whether third-party coding harnesses need to adapt to model performance variations.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [tool-usage](/kb/topics/tool-usage)
+- [coding-harnesses](/kb/topics/coding-harnesses)
+
+---
+
+## Full Article
+
+4th July 2026 - Link Blog Better Models: Worse Tools. Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8. The edit itself is usually correct but the arguments do not match the schema as the model invents made-up keys and Pi thus rejects the tool call and asks to try again. That alone is not too surprising as models emit malformed tool calls sometimes. Particularly small ones. What surprised me is that this is getting worse with newer Anthropic models as both Opus 4.8 and Sonnet 5 show it but none of the older models. In other words, the SOTA models of the family are worse at this specific tool schema than their older siblings. Armin theorizes that this is because more recent Anthropic models have been specifically trained (presumably via Reinforcement Learning) to better use the edit tools that are baked into Claude Code. This has the unfortunate effect that other coding harnesses, such as Pi, may find that their own custom edit tools are more likely to be used incorrectly. Claude's edit tool uses search and replace. OpenAI's Codex uses an apply_patch mechanism instead, and OpenAI have talked in the past about how their models are trained to use that tool effectively. Does this mean third-party coding harnesses like Pi should implement multiple edit tools just so they can use the one with the best performance for the underlying model the user has selected?
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="An update on recent Claude Code quality reports"
+    icon="newspaper"
+    href="/kb/articles/an-update-on-recent-claude-code-quality-reports-25f465b1"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+  <Card
+    title="[AINews] The Other vs The Utility"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
+  >
+    Swyx · explanation · 63% similar
+  </Card>
+  <Card
+    title="Claude Opus 4.8: “a modest but tangible improvement”"
+    icon="newspaper"
+    href="/kb/articles/claude-opus-48-a-modest-but-tangible-improvement-5b5d4f77"
+  >
+    Simon Willison · explanation · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything).
+</Note>

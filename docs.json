@@ -964,6 +964,10 @@
       "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-80c58976",
+      "destination": "/kb/articles/-community-wisdom-quarterly-planning-and-ai-cash-vs-equity-c-80c58976"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-81f3a4f9",
       "destination": "/kb/articles/goodbye-lennys-reads-81f3a4f9"
     },
@@ -1472,6 +1476,10 @@
       "destination": "/kb/articles/deepseek-v4almost-on-the-frontier-a-fraction-of-the-price-231bc475"
     },
     {
+      "source": "/kb/articles/simon-willison-241e8429",
+      "destination": "/kb/articles/building-a-world-map-with-only-500-bytes-241e8429"
+    },
+    {
       "source": "/kb/articles/simon-willison-25f465b1",
       "destination": "/kb/articles/an-update-on-recent-claude-code-quality-reports-25f465b1"
     },
@@ -1538,6 +1546,10 @@
     {
       "source": "/kb/articles/simon-willison-320c1f29",
       "destination": "/kb/articles/release-datasette-llm-01a6-320c1f29"
+    },
+    {
+      "source": "/kb/articles/simon-willison-32f03f8d",
+      "destination": "/kb/articles/release-sqlite-utils-40rc2-32f03f8d"
     },
     {
       "source": "/kb/articles/simon-willison-340c8ee8",
@@ -1934,6 +1946,10 @@
     {
       "source": "/kb/articles/simon-willison-67189a5f",
       "destination": "/kb/articles/taalas-serves-llama-31-8b-at-17000-tokenssecond-67189a5f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-67c65db1",
+      "destination": "/kb/articles/better-models-worse-tools-67c65db1"
     },
     {
       "source": "/kb/articles/simon-willison-67f548b8",
@@ -2946,6 +2962,10 @@
     {
       "source": "/kb/articles/simon-willison-fa552a8d",
       "destination": "/kb/articles/a-pelican-for-gpt-55-via-the-semi-official-codex-backdoor-ap-fa552a8d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fa7299e4",
+      "destination": "/kb/articles/sqlite-utils-40rc2-mostly-written-by-claude-fable-for-about--fa7299e4"
     },
     {
       "source": "/kb/articles/simon-willison-fb5286c6",
