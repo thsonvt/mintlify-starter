@@ -1,0 +1,75 @@
+---
+title: 'Release: sqlite-utils 4.0rc3'
+description: 'The release of sqlite-utils 4.0rc3 introduces support for compound foreign keys and aligns with SQLite''s case insensitive column naming convention.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-06'
+sourceUrl: 'https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything'
+topics: ["sqlite","database","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything) · 06/07/2026
+</Info>
+
+## Summary
+
+The release of sqlite-utils 4.0rc3 introduces support for compound foreign keys and aligns with SQLite's case insensitive column naming convention.
+
+## Key Insights
+
+> "the biggest new feature is support for introspecting and creating compound foreign keys"
+>
+> — Discussing the major updates in sqlite-utils 4.0rc3.
+
+> "sqlite-utils also now follows SQLite's convention for case insensitive column names"
+>
+> — Highlighting a significant change in the new release.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [database](/kb/topics/database)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+I hoped to release sqlite-utils 4.0 stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2 kept getting bigger. The biggest new feature is support for introspecting and creating compound foreign keys - a feature that involves a subtle breaking change to table.foreign_keys and hence needed to land for the 4.0 stable release. sqlite-utils also now follows SQLite's convention for case insensitive column names, which turned out to touch a bunch of different places at once.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="sqlite-utils 4.0rc1 adds migrations and nested transactions"
+    icon="newspaper"
+    href="/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc2"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc2-32f03f8d"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc1"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc1-3ad2d843"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything](https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything).
+</Note>

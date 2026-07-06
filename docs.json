@@ -2560,6 +2560,10 @@
       "destination": "/kb/articles/release-datasette-fixtures-01a0-c36dbbd5"
     },
     {
+      "source": "/kb/articles/simon-willison-c3e1a021",
+      "destination": "/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
+    },
+    {
       "source": "/kb/articles/simon-willison-c4ab1b43",
       "destination": "/kb/articles/tool-markdown-svg-renderer-c4ab1b43"
     },
