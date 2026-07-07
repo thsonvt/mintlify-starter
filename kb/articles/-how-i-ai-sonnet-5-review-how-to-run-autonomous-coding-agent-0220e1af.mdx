@@ -1,0 +1,79 @@
+---
+title: '🎙️ How I AI: Sonnet 5 review & How to run autonomous coding agents from your phone '
+description: 'Lenny Rachitsky reviews Sonnet 5 and discusses how to benchmark AI models effectively, emphasizing the importance of repeatability in evaluations.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-07-06'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-i-ai-sonnet-5-review-and-how'
+topics: ["ai-benchmarking","autonomous-agents","model-evaluation"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-i-ai-sonnet-5-review-and-how) · 06/07/2026
+</Info>
+
+## Summary
+
+Lenny Rachitsky reviews Sonnet 5 and discusses how to benchmark AI models effectively, emphasizing the importance of repeatability in evaluations.
+
+## Key Insights
+
+> "One-off vibe checks feel useful, but they’re not repeatable—and repeatability is what makes a benchmark actually matter."
+>
+> — Discussing the importance of repeatability in AI model evaluations.
+
+> "The shift from agent prompter to agent manager is the unlock most people are still missing."
+>
+> — Alessio Fanelli on the transition in managing autonomous coding agents.
+
+> "Sonnet 4.6 is still Claire's choice for daily agent work because of its personality, not its benchmark scores."
+>
+> — Claire's preference for Sonnet 4.6 based on user experience rather than just performance metrics.
+
+## Topics
+
+- [ai-benchmarking](/kb/topics/ai-benchmarking)
+- [autonomous-agents](/kb/topics/autonomous-agents)
+- [model-evaluation](/kb/topics/model-evaluation)
+
+---
+
+## Full Article
+
+Sonnet 5 review: I ran 64 generations to find out if its worth itListen now on YouTube Spotify Apple PodcastsBrought to you by:RunwayThe creative AI platform for images, video, and moreHyperagentDeploy fleets of agents that handle real workClaire puts Anthropics new Sonnet 5 through a real benchmark. She builds the How I AI Bench live using Claude Code, then blind-tests Sonnet 5 against Sonnet 4.6, Opus 4.8, GPT-5.5, and Gemini 3 Pro across PRDs, prototypes, agentic tasks, and agent personality. She breaks down what won, what failed, and how builders can create their own repeatable benchmark before trusting the next model release.Biggest takeaways:Sonnet 5 is priced closer to previous Sonnet models than to Opus, but it doesnt automatically replace either one. At $2 per million input tokens and $10 per million output tokens through the end of summer, Sonnet 5 sits in an interesting middle band. In Claires benchmark, it finished near the bottom of her personal preference ranking, which means the cost argument only holds if the quality argument also holds for your specific use case.One-off vibe checks feel useful, but theyre not repeatableand repeatability is what makes a benchmark actually matter. Claire has tested GPT-5.5, open-weight models like GLM-5.2, and others this way before, but she could never compare results across time. The How I AI Bench fixes that by using frozen inputs, a fixed rubric, and the same tasks every time a new model comes out.Claude Code can read old session history and use it to generate benchmark ideas tailored to a persons actual work. Claire gave Claude Code a simple prompt asking it to brainstorm eval tasks based on what theyd worked on together, and it pulled from stored sessions on her desktop. Builders can do the same with Codex. That context is sitting there unused for most people.Building an HTML scoring page to rate outputs based on gut feel and export JSON takes maybe 45 minutes with Claude Code, and Claire argues its worth every minute. She scored 64 generations across five models by hand, gave each one a 1-to-5 gut score, added loose notes, and found that the human signal turned out to be the most useful part of the whole benchmark.LLM-as-judge evals are too generous and cluster toward the middle of the scale. Claire had both GPT-5.5 and Opus 4.8 judge the outputs, and neither was spiky enough. They missed things she flagged immediately on a visual pass, like broken prototypes and ignored wireframe constraints. Models cant yet see what the human eye catches in the first screenshot.Claires taste and the automated benchmark disagreed almost completely, and she thinks her taste was at least partly right. The LLM judges ranked Gemini 3 Pro highest and Sonnet 4.6 lowest. Claires ranking was almost exactly the opposite. When she ran a 70/30 Claire-to-LLM weighted index, Sonnet 4.6 jumped to first. That divergence tells her the eval rubric needs to encode more of what she actually cares about before she can trust the automated scores.Sonnet 4.6 is still Claires choice for daily agent work because of its personality, not its benchmark scores. She pays for API credits to run her OpenClaw on Sonnet 4.6 specifically because she likes how it talks to her. No other model in this test matched it on the voice eval, which asked things like ugh, deploys are red again and waited to see how the model responded.For builders, Claire recommends GPT-5.5 for PRDs, Sonnet 4.6 for prototypes and chitchat, and Opus 4.8 or Sonnet 5 for codebase navigation. Those are the task-by-task recommendations that came out of the Claire-weighted index. Complex, dense UI work is where Opus 4.8 still earns its price premium; for everything simpler, Sonnet 4.6 holds up.The How I AI Bench is version one, and a lot of it needs to get sharper. The agentic bug-hunting task turned out to be too easy: every model aced it, which means it cant differentiate between good and great. Claire plans to retire that task, encode more of her taste into the rubric, and keep running the benchmark blind every time a new model drops. The goal is to make this a benchmark the labs actually care about.Blog and detailed workflow walkthroughs from this episode:Building a Custom Benchmark for Sonnet 5, and Why the Results Surprised Me: https://www.chatprd.ai/how-i-ai/sonnet-5-review-and-custom-benchmark How to Conduct a Blind Vibe Check to Evaluate AI Model Quality: https://www.chatprd.ai/how-i-ai/workflows/how-to-conduct-a-blind-vibe-check-to-evaluate-ai-model-quality How to Build a Custom AI Model Benchmark Using Claude Code: https://www.chatprd.ai/how-i-ai/workflows/how-to-build-a-custom-ai-model-benchmark-using-claude-code How to Create a Weighted Index for AI Model Benchmark Results: https://www.chatprd.ai/how-i-ai/workflows/how-to-create-a-weighted-index-for-ai-model-benchmark-resultsHow I run autonomous coding agents from my phone with OpenAI Symphony + Linear | Alessio Fanelli (Kernel Labs)Listen now on YouTube Spotify Apple PodcastsBrought to you by:FirecrawlPower AI agents with clean web dataJira Product DiscoveryPrioritize with insights, build with confidenceAlessio Fanelli, the founder of Kernel Labs and co-host of Latent Space podcast, shows Claire how he manages autonomous coding agents from his phone using OpenAI Symphony, Linear, and a cloud VPS. He walks through the shift from agent prompter to agent manager, explains why Linear works as a state machine for async agent work, and shares what hes learned from tracking token costs, purging skills files, and giving agents better senses. He also demos a very different use case: using Codex with browser access to hunt for underpriced Pokmon cards on eBay.Biggest takeaways:The shift from agent prompter to agent manager is the unlock most people are still missing. Alessio described how early agentic workflows felt fine until the second or third intervention, when the friction of local runtimes and clunky interfaces killed momentum. Moving to a cloud VPS with multiple communication channels (Linear, shell, mobile) made real async management possible.Symphony isnt magic; its just a very opinionated Markdown spec that tells the model how to behave. Claire made this point explicitly during the episode, and its the most important corrective to the complex agent orchestration framing that intimidates people. The whole framework is a Markdown file, and the models are good enough now to lock to it faithfully.Token cost tracking per task is the primitive that most agent setups dont have, and it should be table stakes. Alessio showed tasks ranging from 15 million to 221 million tokens, and the 221-million-token job (making an app deployable on Vercel) made complete sense in hindsight. Without that ledger, you have no feedback loop for improving your specs or your tooling.Purge your skills files every few months or they become a liability. Models have a strong tendency to add instructions rather than replace them, so a skills file that grows over time eventually contradicts itself. Alessios advice is to keep files short, tight, and explicit about what the agent needs to ask for, not exhaustive lists of every possible behavior.AIs biggest unlocked opportunity is businesses built on heterogeneous data. The category Alessio describedthings like trading cards, vintage clothing, and fish inventoryhas always been impossible to scale because the data is inconsistent, visual, and contextual. LLMs are the first technology malleable enough to handle that messiness without extensive preprocessing.Giving agents better senses (screenshots, visual diffs, video) extends autonomous runs dramatically. Kernel Labs built Glimpse, a Playwright extension for coding agents, specifically because the bottleneck wasnt orchestration but rather agents hitting ambiguity in the UI and calling for help. Better tooling at the perception layer keeps the run going.Context offloading is an underrated AI use case, and its worth building deliberately. Alessios email monitoring setup gave him the certainty that nothing important was slipping through, which removed a low-grade background anxiety. The same logic applies to personal finance, inventory, and any domain where staying on top of information is taking cognitive bandwidth youd rather spend elsewhere.The Pokmon card demo is the clearest proof that AI is compressing the information advantage that scale used to provide. Finding underpriced PSA-graded cards at $10,000-plus price points was previously a function of having more time, more people, and more domain expertise than competitors. Codex with browser access and a custom pricing skill collapses that advantage to a single well-written prompt.Small businesses are the most interesting AI story, and theyre being underreported. Alessios observation from Japan, that small two- and three-person operations are running happily and profitably, points to a different kind of AI opportunity than the enterprise narrative suggests. The leverage AI gives a one-person operation is asymmetric in a way that bigger organizations cant replicate at the same cost.Blog and detailed workflow walkthroughs from this episode:How Alessio Fanelli uses Open AI Symphony for Autonomous Coding and Pokmon Card Trading Workflows: https://www.chatprd.ai/how-i-ai/alessio-fanelli-uses-open-ai-symphony-for-autonomous-coding-and-pokemon-card-trading Build an AI Agent to Find Underpriced Pokmon Cards for Arbitrage: https://www.chatprd.ai/how-i-ai/workflows/build-an-ai-agent-to-find-underpriced-pok-mon-cards-for-arbitrage Automate Software Development with an AI Agent Manager using OpenAI Symphony and Linear: https://www.chatprd.ai/how-i-ai/workflows/automate-software-development-with-an-ai-agent-manager-using-openai-symphony-and-linearIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Sonnet 5 review: I ran 64 generations to find out if it's worth it"
+    icon="newspaper"
+    href="/kb/articles/sonnet-5-review-i-ran-64-generations-to-find-out-if-its-wort-c4020731"
+  >
+    Lenny Rachitsky · how-to · 88% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: GLM-5.2 review & How Gusto built a new product line with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-glm-52-review-how-gusto-built-a-new-product-line-w-873cbbad"
+  >
+    Lenny Rachitsky · how-to · 76% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: Claude Fable 5 review & How Braintrust uses AI agents, evals, and CI to ship better software"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
+  >
+    Lenny Rachitsky · how-to · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-i-ai-sonnet-5-review-and-how](https://www.lennysnewsletter.com/p/how-i-ai-sonnet-5-review-and-how).
+</Note>

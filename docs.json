@@ -660,8 +660,16 @@
       "destination": "/kb/articles/pi-the-architecture-of-an-ai-coding-agent-a19b5b8e"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-01e7ef91",
+      "destination": "/kb/articles/how-i-run-autonomous-coding-agents-from-my-phone-with-openai-01e7ef91"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-020958e5",
       "destination": "/kb/articles/how-this-pm-uses-mcps-to-automate-his-meeting-prep-crm-updat-020958e5"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-0220e1af",
+      "destination": "/kb/articles/-how-i-ai-sonnet-5-review-how-to-run-autonomous-coding-agent-0220e1af"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-02dc875f",
@@ -2864,6 +2872,10 @@
       "destination": "/kb/articles/a-quote-from-maggie-appleton-ea8b9d42"
     },
     {
+      "source": "/kb/articles/simon-willison-eaa3a9e8",
+      "destination": "/kb/articles/tencenthy3-eaa3a9e8"
+    },
+    {
       "source": "/kb/articles/simon-willison-eb2223a0",
       "destination": "/kb/articles/malusclean-room-as-a-service-eb2223a0"
     },
@@ -3434,6 +3446,10 @@
     {
       "source": "/kb/articles/swyx-8b5d31f4",
       "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
+    },
+    {
+      "source": "/kb/articles/swyx-8bf11a58",
+      "destination": "/kb/articles/ainews-the-field-guide-to-fable-8bf11a58"
     },
     {
       "source": "/kb/articles/swyx-8d6f339c",
