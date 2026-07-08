@@ -1040,6 +1040,10 @@
       "destination": "/kb/articles/how-coinbase-scaled-ai-to-1000-engineers-chintan-turakhia-9638a3bd"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-98c26f6a",
+      "destination": "/kb/articles/how-tech-workers-are-feeling-in-2026-a-workforce-splitting-i-98c26f6a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-98efb619",
       "destination": "/kb/articles/-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-a-98efb619"
     },
@@ -1568,6 +1572,10 @@
       "destination": "/kb/articles/subagents-agentic-engineering-patterns-344780b7"
     },
     {
+      "source": "/kb/articles/simon-willison-34889f15",
+      "destination": "/kb/articles/tool-github-code-web-component-34889f15"
+    },
+    {
       "source": "/kb/articles/simon-willison-351b1187",
       "destination": "/kb/articles/a-quote-from-anthropic-351b1187"
     },
@@ -1674,6 +1682,10 @@
     {
       "source": "/kb/articles/simon-willison-447f5269",
       "destination": "/kb/articles/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-sour-447f5269"
+    },
+    {
+      "source": "/kb/articles/simon-willison-45560e32",
+      "destination": "/kb/articles/release-sqlite-migrate-02-45560e32"
     },
     {
       "source": "/kb/articles/simon-willison-4574d440",
@@ -2384,6 +2396,10 @@
       "destination": "/kb/articles/may-2026-newsletter-aa50f159"
     },
     {
+      "source": "/kb/articles/simon-willison-ab700ef7",
+      "destination": "/kb/articles/release-sqlite-utils-40rc4-ab700ef7"
+    },
+    {
       "source": "/kb/articles/simon-willison-ab91a6fb",
       "destination": "/kb/articles/trusted-access-for-the-next-era-of-cyber-defense-ab91a6fb"
     },
@@ -2406,6 +2422,10 @@
     {
       "source": "/kb/articles/simon-willison-ad81f1a9",
       "destination": "/kb/articles/steve-yegge-ad81f1a9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ae0efbe3",
+      "destination": "/kb/articles/release-sqlite-utils-40-ae0efbe3"
     },
     {
       "source": "/kb/articles/simon-willison-ae4f0509",
@@ -2806,6 +2826,10 @@
     {
       "source": "/kb/articles/simon-willison-e14020ec",
       "destination": "/kb/articles/release-datasette-referrer-policy-01-e14020ec"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e17545c6",
+      "destination": "/kb/articles/sqlite-utils-40-now-with-database-schema-migrations-e17545c6"
     },
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
@@ -3458,6 +3482,10 @@
     {
       "source": "/kb/articles/swyx-8e8765e0",
       "destination": "/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0"
+    },
+    {
+      "source": "/kb/articles/swyx-8ff0e86a",
+      "destination": "/kb/articles/ainews-lilian-weng-summarizes-35-papers-on-harness-engineeri-8ff0e86a"
     },
     {
       "source": "/kb/articles/swyx-90022aa3",

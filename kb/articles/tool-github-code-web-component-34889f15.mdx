@@ -1,0 +1,80 @@
+---
+title: 'Tool: github-code Web Component'
+description: 'This article introduces an experimental Web Component for embedding GitHub code snippets, utilizing GPT-5.5 to fetch and display specified line ranges'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-07'
+sourceUrl: 'https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything'
+topics: ["web-components","github","gpt-5-5","code-embedding"]
+diataxisType: 'tutorial'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything) · 07/07/2026
+</Info>
+
+## Summary
+
+This article introduces an experimental Web Component for embedding GitHub code snippets, utilizing GPT-5.5 to fetch and display specified line ranges.
+
+## Key Insights
+
+> "let's build a Web Component for embedding code from GitHub"
+>
+> — Introduction to the purpose of the Web Component.
+
+> "It takes URLs like that, converts them to raw content"
+>
+> — Explanation of how the component processes GitHub URLs.
+
+> "no syntax highlighting though"
+>
+> — Note on the limitations of the current implementation.
+
+## Topics
+
+- [web-components](/kb/topics/web-components)
+- [github](/kb/topics/github)
+- [gpt-5-5](/kb/topics/gpt-5-5)
+- [code-embedding](/kb/topics/code-embedding)
+
+---
+
+## Full Article
+
+An experimental Web Component built using GPT-5.5 and the following prompt: let's build a Web Component for embedding code from GitHub &lt;github-code href="https://github.com/simonw/sqlite-ast/blob/437c759129154f05296324a7f82aa1246340dd14/sqlite_ast/parser.py#L9-L18">&lt;/github-code> It takes URLs like that, converts them to https://raw.githubusercontent.com/simonw/sqlite-ast/437c759129154f05296324a7f82aa1246340dd14/sqlite_ast/parser.py, then uses fetch() to fetch them and displays the specified range of lines - with line numbers, no syntax highlighting though Show me a preview web browser so I can see your work Here's what it looks like embedded on this page:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="simonw/browser-compat-db"
+    icon="newspaper"
+    href="/kb/articles/simonwbrowser-compat-db-931931c0"
+  >
+    Simon Willison · how-to · 55% similar
+  </Card>
+  <Card
+    title="Using Claude Code: The Unreasonable Effectiveness of HTML"
+    icon="newspaper"
+    href="/kb/articles/using-claude-code-the-unreasonable-effectiveness-of-html-b2d0a22c"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+  <Card
+    title="Tool: GitHub Repo Stats"
+    icon="newspaper"
+    href="/kb/articles/tool-github-repo-stats-46e67c5e"
+  >
+    Simon Willison · reference · 51% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything](https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything).
+</Note>
