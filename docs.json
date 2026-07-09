@@ -840,6 +840,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-stripe-built-minionsai-coding-age-44847dd6"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-453356fc",
+      "destination": "/kb/articles/what-a-harness-is-and-how-to-build-one-with-claude-agent-sdk-453356fc"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-46856582",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
     },
@@ -2348,6 +2352,10 @@
       "destination": "/kb/articles/quoting-thomas-ptacek-a4d04dbc"
     },
     {
+      "source": "/kb/articles/simon-willison-a4de7efc",
+      "destination": "/kb/articles/rewriting-bun-in-rust-a4de7efc"
+    },
+    {
       "source": "/kb/articles/simon-willison-a581c385",
       "destination": "/kb/articles/a-quote-from-martin-fowler-a581c385"
     },
@@ -2752,6 +2760,10 @@
       "destination": "/kb/articles/an-ai-agent-coding-skeptic-tries-ai-agent-coding-in-excessiv-d793786e"
     },
     {
+      "source": "/kb/articles/simon-willison-d7c827b1",
+      "destination": "/kb/articles/a-quote-from-kenton-varda-d7c827b1"
+    },
+    {
       "source": "/kb/articles/simon-willison-d8de17a0",
       "destination": "/kb/articles/research-javascript-sandboxing-research-d8de17a0"
     },
@@ -2966,6 +2978,10 @@
     {
       "source": "/kb/articles/simon-willison-f5d93e93",
       "destination": "/kb/articles/til-setting-a-custom-price-for-a-model-in-agentsview-f5d93e93"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f670a31d",
+      "destination": "/kb/articles/introducing-gptlive-f670a31d"
     },
     {
       "source": "/kb/articles/simon-willison-f6ef390b",
@@ -3364,6 +3380,10 @@
       "destination": "/kb/articles/giving-agents-computers-ivan-burazin-daytona-6469fb3c"
     },
     {
+      "source": "/kb/articles/swyx-659bbd12",
+      "destination": "/kb/articles/ainews-spacexai-launches-grok-45-first-opus-class-model-post-659bbd12"
+    },
+    {
       "source": "/kb/articles/swyx-69028ae0",
       "destination": "/kb/articles/ainews-gpt-54-sota-knowledge-work-and-coding-and-cua-model-o-69028ae0"
     },
@@ -3718,6 +3738,10 @@
     {
       "source": "/kb/articles/swyx-f9aa6dd4",
       "destination": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
+    },
+    {
+      "source": "/kb/articles/swyx-fabf6f85",
+      "destination": "/kb/articles/why-ai-infrastructure-must-evolve-for-agent-experience-aksha-fabf6f85"
     },
     {
       "source": "/kb/articles/swyx-fba0d39a",

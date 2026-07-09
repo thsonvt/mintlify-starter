@@ -1,0 +1,80 @@
+---
+title: 'What a harness is and how to build one with Claude Agent SDK'
+description: 'The article explains what a harness is and how to build one using the Claude Agent SDK, focusing on bug-debugging and structured workflows.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-07-08'
+sourceUrl: 'https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build'
+topics: ["ai-harness","bug-debugging","workflow-automation","claude-agent-sdk"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build) · 08/07/2026
+</Info>
+
+## Summary
+
+The article explains what a harness is and how to build one using the Claude Agent SDK, focusing on bug-debugging and structured workflows.
+
+## Key Insights
+
+> "Its not the model, its the harness"
+>
+> — Opening statement emphasizing the importance of harnesses in AI applications.
+
+> "The harness handles evidence gathering, root-cause analysis, and follow-up artifact creation"
+>
+> — Description of the functionalities provided by the harness.
+
+> "How to structure the artifacts your harness produces so the whole team can use the output"
+>
+> — Insight on the importance of artifact structure in team collaboration.
+
+## Topics
+
+- [ai-harness](/kb/topics/ai-harness)
+- [bug-debugging](/kb/topics/bug-debugging)
+- [workflow-automation](/kb/topics/workflow-automation)
+- [claude-agent-sdk](/kb/topics/claude-agent-sdk)
+
+---
+
+## Full Article
+
+Everybody is saying, Its not the model, its the harness, but almost nobody stops to explain what a harness actually is. So I did. I built one live on the show: a Sentry bug-debugging harness for my company ChatPRD, using the Claude Agent SDK, a custom terminal UI built with the Ink library, and opinionated adapters for Sentry, Linear, GitHub, and Vercel. The harness handles evidence gathering, root-cause analysis, and follow-up artifact creation, all without me needing to type dear agent, please fix this bug ever again. I also walk through the architecture, share the code structure, and give you the exact process I used so you can build your own harness for any repetitive, structured workflow in your business.Listen or watch on YouTube, Spotify, or Apple PodcastsWhat youll learn:What a harness actually isWhen to build a harness versus when to stick with a general-purpose tool like Claude Code or CodexHow to encode specific permissions into a harnessThe three components every harness needsHow I used GPT-5.5 and Claude Opus to build the harness code itself (and where they both initially resisted)How to structure the artifacts your harness produces so the whole team can use the outputBrought to you by:Bolt.newTurn your idea into a real productCustomer.ioBuild customer engagement campaigns from a single promptIn this episode, we cover:(00:00) What is an AI harness?(03:19) When to build a harness(04:33) Why Claire picked bug triage(06:00) Why not just use Claude Code?(07:48) Demo: The custom harness interface(11:04) Architecture: runs, tasks, tools, and artifacts(13:44) Building it with Codex and Claude(15:08) Code map and file layout(16:51) A look at the code(19:18) The live investigation result(21:01) How to build your own harnessTools referenced: Claude Agent SDK (Anthropic): https://code.claude.com/docs/en/agent-sdk/overview Claude Sonnet 4.6 (model used inside the harness): https://www.anthropic.com/news/claude-sonnet-4-6 Claude Opus (used to build the harness): https://www.anthropic.com/claude/opus GPT-5.5 (Codex, used to build the harness): https://openai.com/index/introducing-gpt-5-5/ Ink (terminal UI library for Node.js): https://github.com/vadimdemedes/ink Sentry (error monitoring): https://sentry.io/ Linear (project management): https://linear.app/ GitHub: https://github.com/ Vercel: https://vercel.com/Where to find Claire Vo:ChatPRD: https://www.chatprd.ai/Website: https://clairevo.com/LinkedIn: https://www.linkedin.com/in/clairevo/X: https://x.com/clairevoProduction and marketing by https://penname.co/. For inquiries about sponsoring the podcast, email jordan@penname.co.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead"
+    icon="newspaper"
+    href="/kb/articles/how-claude-mythos-found-a-15-year-old-bug-in-mozilla-firefox-1ac05d15"
+  >
+    Lenny Rachitsky · how-to · 73% similar
+  </Card>
+  <Card
+    title="How the engineer behind Claude Cowork actually uses Claude | Felix Rieseberg (Anthropic)"
+    icon="newspaper"
+    href="/kb/articles/how-the-engineer-behind-claude-cowork-actually-uses-claude-f-e1dcc445"
+  >
+    Lenny Rachitsky · how-to · 72% similar
+  </Card>
+  <Card
+    title="[AINews] Is Harness Engineering real?"
+    icon="newspaper"
+    href="/kb/articles/ainews-is-harness-engineering-real-9ef5fd46"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build](https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build).
+</Note>
