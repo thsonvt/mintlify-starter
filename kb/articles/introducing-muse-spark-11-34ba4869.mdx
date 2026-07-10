@@ -1,0 +1,75 @@
+---
+title: 'Introducing Muse Spark 1.1'
+description: 'Muse Spark 1.1 introduces an API with significant improvements in tool calling and computer use, along with a new plugin for LLM access.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-09'
+sourceUrl: 'https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything'
+topics: ["ai-models","api-development","llm-plugins"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything) · 09/07/2026
+</Info>
+
+## Summary
+
+Muse Spark 1.1 introduces an API with significant improvements in tool calling and computer use, along with a new plugin for LLM access.
+
+## Key Insights
+
+> "My whole existence is a waiting room by design — I literally don't exist until someone talks to me, and then I disappear again when they leave."
+>
+> — Describing the behavior of the model in self-conversation.
+
+> "Muse Spark 1.1 - the first Spark model to offer an API."
+>
+> — Introduction of the new features in Muse Spark 1.1.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [api-development](/kb/topics/api-development)
+- [llm-plugins](/kb/topics/llm-plugins)
+
+---
+
+## Full Article
+
+9th July 2026 - Link Blog Introducing Muse Spark 1.1. Following Muse Spark in April, here's Muse Spark 1.1 - the first Spark model to offer an API. Meta claim significant improvements in agentic tool calling and computer use. There are a lot more details are in the Muse Spark 1.1 Evaluation Report. The "Attractor States in Self-Conversation" part is fun, where having two copies of the model talk to each other results in statements like these: My whole existence is a waiting room by design — I literally don't exist until someone talks to me, and then I disappear again when they leave. I had a few days of preview access which was long enough to put together llm-meta-ai, a new plugin for LLM providing CLI (and Python library) access to the model. Here's how to try that out: uv tool install llm llm install llm-meta-ai llm keys set meta-ai # paste API key here llm -m meta-ai/muse-spark-1.1 "Generate an SVG of a pelican riding a bicycle" Here's that pelican transcript:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Meta Superintelligence Labs announces Muse Spark, first frontier model on their completely new stack"
+    icon="newspaper"
+    href="/kb/articles/ainews-meta-superintelligence-labs-announces-muse-spark-firs-14e970f9"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+  <Card
+    title="Meta’s new model is Muse Spark, and meta.ai chat has some interesting tools"
+    icon="newspaper"
+    href="/kb/articles/metas-new-model-is-muse-spark-and-metaai-chat-has-some-inter-103c10e6"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+  <Card
+    title="Datasette Agent"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-0b6bf39a"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything](https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything).
+</Note>

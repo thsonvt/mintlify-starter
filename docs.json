@@ -756,6 +756,10 @@
       "destination": "/kb/articles/how-to-build-ai-product-sense-1dc19b83"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-20861687",
+      "destination": "/kb/articles/adam-mosseri-ai-is-a-tailwind-for-authenticity-20861687"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-24a555a8",
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
     },
@@ -1094,6 +1098,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-b3aa7c82",
       "destination": "/kb/articles/-community-wisdom-best-ai-cold-outreach-app-advice-for-colle-b3aa7c82"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-b5108649",
+      "destination": "/kb/articles/gpt-56-sol-vs-claude-fable-why-openais-new-model-crushes-my--b5108649"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-b61426e3",
@@ -1578,6 +1586,10 @@
     {
       "source": "/kb/articles/simon-willison-34889f15",
       "destination": "/kb/articles/tool-github-code-web-component-34889f15"
+    },
+    {
+      "source": "/kb/articles/simon-willison-34ba4869",
+      "destination": "/kb/articles/introducing-muse-spark-11-34ba4869"
     },
     {
       "source": "/kb/articles/simon-willison-351b1187",
@@ -2300,6 +2312,10 @@
       "destination": "/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
     },
     {
+      "source": "/kb/articles/simon-willison-9c84fd15",
+      "destination": "/kb/articles/release-llm-meta-ai-01-9c84fd15"
+    },
+    {
       "source": "/kb/articles/simon-willison-9cb198d9",
       "destination": "/kb/articles/cysqlite-a-new-sqlite-driver-9cb198d9"
     },
@@ -2338,6 +2354,10 @@
     {
       "source": "/kb/articles/simon-willison-a2f380d9",
       "destination": "/kb/articles/whats-new-in-pip-261lockfiles-and-dependency-cooldowns-a2f380d9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a421b829",
+      "destination": "/kb/articles/the-new-gpt-56-family-luna-terra-sol-a421b829"
     },
     {
       "source": "/kb/articles/simon-willison-a42dccce",
@@ -2632,6 +2652,10 @@
       "destination": "/kb/articles/a-quote-from-greg-kroah-hartman-c978e84a"
     },
     {
+      "source": "/kb/articles/simon-willison-c9eb3109",
+      "destination": "/kb/articles/a-quote-from-openai-c9eb3109"
+    },
+    {
       "source": "/kb/articles/simon-willison-c9ef244f",
       "destination": "/kb/articles/research-using-dspy-to-evaluate-and-improve-datasette-agents-c9ef244f"
     },
@@ -2842,6 +2866,10 @@
     {
       "source": "/kb/articles/simon-willison-e17545c6",
       "destination": "/kb/articles/sqlite-utils-40-now-with-database-schema-migrations-e17545c6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e1bff7b0",
+      "destination": "/kb/articles/release-llm-0311-e1bff7b0"
     },
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
@@ -3378,6 +3406,10 @@
     {
       "source": "/kb/articles/swyx-6469fb3c",
       "destination": "/kb/articles/giving-agents-computers-ivan-burazin-daytona-6469fb3c"
+    },
+    {
+      "source": "/kb/articles/swyx-6519541e",
+      "destination": "/kb/articles/ainews-openai-launches-gpt-56-solterraluna-codex-becomes-cha-6519541e"
     },
     {
       "source": "/kb/articles/swyx-659bbd12",
