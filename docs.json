@@ -2880,6 +2880,10 @@
       "destination": "/kb/articles/a-quote-from-emanuel-maiberg-404-media-e2bdb007"
     },
     {
+      "source": "/kb/articles/simon-willison-e2ff0d2a",
+      "destination": "/kb/articles/a-quote-from-nilay-patel-e2ff0d2a"
+    },
+    {
       "source": "/kb/articles/simon-willison-e49581f7",
       "destination": "/kb/articles/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-e49581f7"
     },
@@ -3730,6 +3734,10 @@
     {
       "source": "/kb/articles/swyx-ebedd1c9",
       "destination": "/kb/articles/every-agent-needs-a-box-aaron-levie-box-ebedd1c9"
+    },
+    {
+      "source": "/kb/articles/swyx-ec9066d3",
+      "destination": "/kb/articles/ainews-not-much-happened-today-ec9066d3"
     },
     {
       "source": "/kb/articles/swyx-ed74eac1",
