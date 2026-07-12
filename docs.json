@@ -752,6 +752,10 @@
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-1bd8b063"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1c00e27d",
+      "destination": "/kb/articles/-community-wisdom-negative-network-effects-managing-overconf-1c00e27d"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1dc19b83",
       "destination": "/kb/articles/how-to-build-ai-product-sense-1dc19b83"
     },
@@ -2634,6 +2638,10 @@
     {
       "source": "/kb/articles/simon-willison-c5fc3ab0",
       "destination": "/kb/articles/a-quote-from-andrew-quinn-c5fc3ab0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c6c46289",
+      "destination": "/kb/articles/release-sqlite-utils-41-c6c46289"
     },
     {
       "source": "/kb/articles/simon-willison-c77aff7b",

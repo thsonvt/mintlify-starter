@@ -1,0 +1,80 @@
+---
+title: 'Release: sqlite-utils 4.1'
+description: 'The release of sqlite-utils 4.1 introduces several minor features, including new options for inserting data and managing table strictness.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-11'
+sourceUrl: 'https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything'
+topics: ["sqlite","python","data-management","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything) · 11/07/2026
+</Info>
+
+## Summary
+
+The release of sqlite-utils 4.1 introduces several minor features, including new options for inserting data and managing table strictness.
+
+## Key Insights
+
+> "sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code."
+>
+> — Describing new features in the sqlite-utils 4.1 release.
+
+> "sqlite-utils upsert can now infer the primary key of an existing table, so --pk can be omitted."
+>
+> — Highlighting improvements in the upsert functionality.
+
+> "The sqlite-utils transform command now accepts --strict and --no-strict to change a table’s strict mode."
+>
+> — Explaining enhancements related to table strictness.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [python](/kb/topics/python)
+- [data-management](/kb/topics/data-management)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+The first dot-release since 4.0 a few days ago, introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a file. (#684) sqlite-utils already had features that allow you to pass blocks of Python code as CLI arguments, for example this one for the sqlite-utils convert command: sqlite-utils convert content.db articles headline ' def convert(value): return value.upper()' Allowing blocks of code to generate new rows directly was on obvious extension of that pattern: sqlite-utils insert data.db creatures --code ' def rows(): yield &#123;"id": 1, "name": "Cleo"&#125; yield &#123;"id": 2, "name": "Suna"&#125; ' --pk id sqlite-utils insert and sqlite-utils upsert now accept --type column-name type to override the type automatically chosen when the table is created. This is useful for CSV or TSV columns such as ZIP codes that look like integers but should be stored as TEXT to preserve leading zeros. (#131) A long-standing feature request which turned out to be a simple implementation. New table.drop_index(name) method and sqlite-utils drop-index command for dropping an index by name. Both accept ignore=True/--ignore to ignore a missing index. (#626) sqlite-utils query can now read the SQL query from standard input by passing - in place of the query, for example echo "select * from dogs" | sqlite-utils query dogs.db -. (#765) Two more small features. I had Codex review all open issues and highlight the easiest ones! sqlite-utils upsert can now infer the primary key of an existing table, so --pk can be omitted when upserting into a table that already has a primary key. Another Codex suggestion, an obvious missing CLI feature from a Python library improvement that shipped in the 4.0 release. table.transform() and table.transform_sql() now accept strict=True or strict=False to change a table’s SQLite strict mode. Omitting the option preserves the existing mode. (#787) The sqlite-utils transform command now accepts --strict and --no-strict to change a table’s strict mode. (#787) These two were inspired by Prefer STRICT tables in SQLite by Evan Hahn, which did the rounds on Hacker News today. Evan pointed out that: Unfortunately, I don’t think there’s a way to ALTER a table to make it strict. I think you have to copy the data out of the non-strict table into the strict one. That's exactly what the sqlite-utils transform mechanism does, so I extended it to add the ability to switch tables from strict to non-strict and vice-versa. Here's the GPT-5.6 Sol xhigh Codex transcript I used to implement those new strict table features. One of the most useful prompts I ran was this one: use uv run python -c and manually exercise the new .transform(strict=) option, see if you can find any edge-cases or bugs Effectively telling the model to manually test its work, outside of the automated tests it had already written. This turned up two minor issues that we then fixed.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="sqlite-utils 4.0rc1 adds migrations and nested transactions"
+    icon="newspaper"
+    href="/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+  <Card
+    title="sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)"
+    icon="newspaper"
+    href="/kb/articles/sqlite-utils-40rc2-mostly-written-by-claude-fable-for-about--fa7299e4"
+  >
+    Simon Willison · reference · 72% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc3"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything](https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything).
+</Note>
