@@ -1,0 +1,75 @@
+---
+title: 'Release: sqlite-utils 4.1.1'
+description: 'The release of sqlite-utils 4.1.1 addresses an edge case related to foreign key actions during table transformations and improves documentation cross-'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-12'
+sourceUrl: 'https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything'
+topics: ["sqlite","database","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything) · 12/07/2026
+</Info>
+
+## Summary
+
+The release of sqlite-utils 4.1.1 addresses an edge case related to foreign key actions during table transformations and improves documentation cross-referencing.
+
+## Key Insights
+
+> "table.transform() now raises a TransactionError if called while a transaction is open with PRAGMA foreign_keys enabled."
+>
+> — Discussing the new error handling in the sqlite-utils 4.1.1 release.
+
+> "The CLI and Python API documentation now cross-reference each other."
+>
+> — Highlighting improvements in documentation for better usability.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [database](/kb/topics/database)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+Mainly a fix for an edge case that regular Claude chat spotted while experimenting with the 4.1 release to answer a question about ON DELETE. table.transform() now raises a TransactionError if called while a transaction is open with PRAGMA foreign_keys enabled and the table is referenced by foreign keys with destructive ON DELETE actions - CASCADE, SET NULL or SET DEFAULT. The pragma cannot be changed inside a transaction, so previously dropping the old table as part of the transform could fire those actions and silently delete or modify referencing rows. See Foreign keys and transactions for details and workarounds. (#794) The CLI and Python API documentation now cross-reference each other: CLI sections link to the equivalent Python API functionality and Python API sections link back to the corresponding CLI command. (#791)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: sqlite-utils 4.1"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-41-c6c46289"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc3"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="sqlite-utils 4.0rc1 adds migrations and nested transactions"
+    icon="newspaper"
+    href="/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything](https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything).
+</Note>

@@ -1,0 +1,79 @@
+---
+title: 'Release: shot-scraper 1.11'
+description: 'The release of shot-scraper 1.11 introduces minor improvements for a CLI utility that captures website screenshots, records video demos, and scrapes s'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-12'
+sourceUrl: 'https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything'
+topics: ["cli-tools","web-scraping","javascript"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything) · 12/07/2026
+</Info>
+
+## Summary
+
+The release of shot-scraper 1.11 introduces minor improvements for a CLI utility that captures website screenshots, records video demos, and scrapes sites using JavaScript.
+
+## Key Insights
+
+> "Some minor improvements, mainly around command option consistency."
+>
+> — Introduction to the release and its enhancements.
+
+> "The shot-scraper javascript and shot-scraper html commands now have a --timeout option for consistency with other commands."
+>
+> — Details about new command options in the update.
+
+> "server: processes used by shot-scraper multi and shot-scraper video now wait up to 30 seconds for the target URL to accept connections."
+>
+> — Explanation of the improved server connection handling.
+
+## Topics
+
+- [cli-tools](/kb/topics/cli-tools)
+- [web-scraping](/kb/topics/web-scraping)
+- [javascript](/kb/topics/javascript)
+
+---
+
+## Full Article
+
+Release shot-scraper 1.11 — A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript Some minor improvements, mainly around command option consistency and making the server: mechanism used by both shot-scraper video and shot-scraper multi work if the server takes longer than a second to start serving traffic. server: processes used by shot-scraper multi and shot-scraper video now wait up to 30 seconds for the target URL to accept connections, polling for port availability and replacing the previous fixed one-second delay. #197 The shot-scraper, pdf, html, accessibility and har commands now have a --js-file option for loading JavaScript from a local file, standard input or gh:username/script, as an alternative to --javascriptwhich accepts the string of JavaScript directly as an argument. #192 shot-scraper multi supports the equivalent js_file: YAML key. The shot-scraper javascript and shot-scraper html commands now have a --timeout option for consistency with other commands. #118
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: shot-scraper 1.10"
+    icon="newspaper"
+    href="/kb/articles/release-shot-scraper-110-1e0a59cd"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+  <Card
+    title="Have your agent record video demos of its work with shot-scraper video"
+    icon="newspaper"
+    href="/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
+  >
+    Simon Willison · how-to · 62% similar
+  </Card>
+  <Card
+    title="Rodney v0.4.0"
+    icon="newspaper"
+    href="/kb/articles/rodney-v040-f6ef390b"
+  >
+    Simon Willison · reference · 48% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything](https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything).
+</Note>

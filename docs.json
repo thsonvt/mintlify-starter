@@ -820,6 +820,10 @@
       "destination": "/kb/articles/essential-books-for-product-builderspart-2-3b30d4d1"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-3dacc77a",
+      "destination": "/kb/articles/how-tech-workers-actually-feel-about-ai-in-2026-annual-ai-se-3dacc77a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-421c595c",
       "destination": "/kb/articles/-community-wisdom-bootstrapping-vs-raising-funding-building--421c595c"
     },
@@ -1320,6 +1324,10 @@
       "destination": "/kb/articles/publishing-wasm-wheels-to-pypi-for-use-with-pyodide-0bbbcf14"
     },
     {
+      "source": "/kb/articles/simon-willison-0bcf6f3d",
+      "destination": "/kb/articles/fable-gets-another-bump-0bcf6f3d"
+    },
+    {
       "source": "/kb/articles/simon-willison-0bdc0534",
       "destination": "/kb/articles/tool-github-repo-size-0bdc0534"
     },
@@ -1474,6 +1482,10 @@
     {
       "source": "/kb/articles/simon-willison-1f3b8622",
       "destination": "/kb/articles/a-quote-from-john-gruber-1f3b8622"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1f3d23d9",
+      "destination": "/kb/articles/release-sqlite-utils-411-1f3d23d9"
     },
     {
       "source": "/kb/articles/simon-willison-1f635a54",
@@ -1998,6 +2010,10 @@
     {
       "source": "/kb/articles/simon-willison-67f6fedf",
       "destination": "/kb/articles/a-quote-from-timothy-b-lee-67f6fedf"
+    },
+    {
+      "source": "/kb/articles/simon-willison-67fc02fc",
+      "destination": "/kb/articles/directly-responsible-individuals-dri-67fc02fc"
     },
     {
       "source": "/kb/articles/simon-willison-68c4826d",
@@ -3050,6 +3066,10 @@
     {
       "source": "/kb/articles/simon-willison-f8eb5057",
       "destination": "/kb/articles/typing-without-having-to-type-f8eb5057"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f9691bab",
+      "destination": "/kb/articles/release-shot-scraper-111-f9691bab"
     },
     {
       "source": "/kb/articles/simon-willison-fa10205d",
