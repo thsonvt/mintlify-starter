@@ -1,0 +1,80 @@
+---
+title: 'How I Polish Software That Agents Built'
+description: 'Dan Shipper discusses the evolving role of software engineers as automation takes over coding tasks, emphasizing the importance of human judgment in t'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-07-13'
+sourceUrl: 'https://every.to/source-code/how-i-polish-software-that-agents-built'
+topics: ["software-engineering","automation","human-judgment","polish"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/how-i-polish-software-that-agents-built) · 13/07/2026
+</Info>
+
+## Summary
+
+Dan Shipper discusses the evolving role of software engineers as automation takes over coding tasks, emphasizing the importance of human judgment in the final polish of software.
+
+## Key Insights
+
+> "Without that final human judgment, everything the agent produces is functional, but forgettable."
+>
+> — On the necessity of human oversight in software development.
+
+> "Polish is the final step in compound engineering—the discipline I’ve been developing over the past year for building software."
+>
+> — Describing the importance of polish in the software development process.
+
+> "I had to see it and decide for myself."
+>
+> — Highlighting the engineer's role in assessing the quality of the software.
+
+## Topics
+
+- [software-engineering](/kb/topics/software-engineering)
+- [automation](/kb/topics/automation)
+- [human-judgment](/kb/topics/human-judgment)
+- [polish](/kb/topics/polish)
+
+---
+
+## Full Article
+
+in Source CodeMidjourney/Every illustration.Was this newsletter forwarded to you? Sign up to get it in your inbox.For most of the history of making software, writing code was the work. You spent your days typing out functions, fighting errors, debugging migrations, and reading through other people’s code to figure out why a function did what it did. Another day in the code factory. That’s mostly over. With a good brainstorm and a well-structured plan, today’s models will write code, run tests, fix failures, and hand you back a clean pull request with code changes ready for review. I’ll open my laptop in the morning to a stack of green pull requests that agents shipped overnight, with features ready to merge before my first meeting. The factory has been automated. What I’m left to do is sit with the result and decide whether it’s any good—and then push it further than the agent could take it itself. A model doesn’t know what I would call good, sitting in front of this feature in this product I’m building for these users. Without that final human judgment, everything the agent produces is functional, but forgettable. A few weeks ago I clicked on an email card in Cora and knew instantly the animation was wrong—it slid in from the top of the screen instead of opening from where I’d clicked mid-screen. I told the agent, it fixed it, and I clicked again—better. Polish is the final step in compound engineering—the discipline I’ve been developing over the past year for building software in a way that gets smarter with every iteration. As more of the middle parts of the process gets automated, polish matters more now, because it’s the part of the work that’s still yours. Instead of the assembly line worker putting the code together, you’re the person at the end of the line who decides whether it’s good enough to put your name on. Polish in practiceThe card animation that looked wrong is a good example of how polish works, because animation is something that agents still struggle with (although it will improve over time). The pull request had passed every automated check. The review agents had nothing left to flag for me. I ran /ce-polish—part of the compound engineering plugin—which does three things and then gets out of my way. It checks out the branch I want to polish, starts the development server in the background, and opens the running app inside my editor, right next to the agent. From there, I clicked on an email card to open it and started my assessment. The updated version of the Cora Brief in development, which I refined using the polish step. (Image courtesy of Kieran Klaassen.)Once the new design was open beside the agent, I could see that it still felt too loose. There was too much whitespace, and the cards needed to be more compact. I said so out loud via Monologue. The agent tightened the layout; the app hot-reloaded; I looked again—better. A plan could tell the agent to make the Brief feel like a magazine. It couldn’t tell the agent when the page had the right density. I had to see it and decide for myself.This is what polish looks like:...Become a paid subscriber to Every to unlock this piece and learn about:Why polish changed Kieran’s planning and reviewing, not just the end of the loopWhen a muttered complaint becomes a rule the agent follows on every future featureHow the job of a great engineer has shifted from building to deciding what’s good enoughSubscribeClick here to read the full postWant the full text of all articles in RSS? Become a subscriber, or learn more.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="My AI Had Already Fixed the Code Before I Saw It"
+    icon="newspaper"
+    href="/kb/articles/my-ai-had-already-fixed-the-code-before-i-saw-it-716f6ab5"
+  >
+    Dan Shipper (Every) · explanation · 70% similar
+  </Card>
+  <Card
+    title="I Stopped Reading Code. My Code Reviews Got Better."
+    icon="newspaper"
+    href="/kb/articles/i-stopped-reading-code-my-code-reviews-got-better-2e6d3626"
+  >
+    Dan Shipper (Every) · explanation · 70% similar
+  </Card>
+  <Card
+    title="Compound Engineering: How Every Codes With Agents"
+    icon="newspaper"
+    href="/kb/articles/compound-engineering-how-every-codes-with-agents-9cd24849"
+  >
+    Dan Shipper (Every) · explanation · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/how-i-polish-software-that-agents-built](https://every.to/source-code/how-i-polish-software-that-agents-built).
+</Note>

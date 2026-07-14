@@ -324,6 +324,10 @@
       "destination": "/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-c417d7d6",
+      "destination": "/kb/articles/how-i-polish-software-that-agents-built-c417d7d6"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-c7ba8580",
       "destination": "/kb/articles/the-folder-is-the-agent--c7ba8580"
     },
@@ -710,6 +714,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-0e6a80ac",
       "destination": "/kb/articles/openclaw-the-complete-guide-to-building-training-and-living--0e6a80ac"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-106cc6c6",
+      "destination": "/kb/articles/this-solo-builder-runs-247-local-ai-on-his-own-hardware-alex-106cc6c6"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-10a69bbc",
@@ -1186,6 +1194,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-de9d49c7",
       "destination": "/kb/articles/-community-wisdom-getting-a-skeptical-cto-to-adopt-ai-coding-de9d49c7"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-df949045",
+      "destination": "/kb/articles/-how-i-ai-gpt-56-review-how-a-solo-builder-runs-247-local-ai-df949045"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-e090fefd",
@@ -2152,6 +2164,10 @@
       "destination": "/kb/articles/experimenting-with-starlette-10-with-claude-skills-8015e4ff"
     },
     {
+      "source": "/kb/articles/simon-willison-80b3db71",
+      "destination": "/kb/articles/datasette-code-frequency-chart-on-github-80b3db71"
+    },
+    {
       "source": "/kb/articles/simon-willison-81737517",
       "destination": "/kb/articles/release-datasette-ip-rate-limit-01a0-81737517"
     },
@@ -2664,6 +2680,10 @@
       "destination": "/kb/articles/how-i-think-about-codex-c77aff7b"
     },
     {
+      "source": "/kb/articles/simon-willison-c7bd9aa8",
+      "destination": "/kb/articles/til-using-uvx-in-github-actions-in-a-cache-friendly-way-c7bd9aa8"
+    },
+    {
       "source": "/kb/articles/simon-willison-c8601f50",
       "destination": "/kb/articles/using-git-with-coding-agents-agentic-engineering-patterns-c8601f50"
     },
@@ -2906,6 +2926,10 @@
     {
       "source": "/kb/articles/simon-willison-e2ff0d2a",
       "destination": "/kb/articles/a-quote-from-nilay-patel-e2ff0d2a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e44a9b71",
+      "destination": "/kb/articles/doomql-e44a9b71"
     },
     {
       "source": "/kb/articles/simon-willison-e49581f7",
@@ -3630,6 +3654,10 @@
     {
       "source": "/kb/articles/swyx-a27e0dc1",
       "destination": "/kb/articles/githubs-plan-for-agents-kyle-daigle-github-a27e0dc1"
+    },
+    {
+      "source": "/kb/articles/swyx-a3d80cea",
+      "destination": "/kb/articles/ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the--a3d80cea"
     },
     {
       "source": "/kb/articles/swyx-a6afd69d",
