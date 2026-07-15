@@ -1392,6 +1392,10 @@
       "destination": "/kb/articles/behind-the-scenes-hardening-firefox-with-claude-mythos-previ-128b0cca"
     },
     {
+      "source": "/kb/articles/simon-willison-129a437f",
+      "destination": "/kb/articles/lobsters-is-now-running-on-sqlite-129a437f"
+    },
+    {
       "source": "/kb/articles/simon-willison-12f23a38",
       "destination": "/kb/articles/a-quote-from-les-orchard-12f23a38"
     },
@@ -1556,8 +1560,16 @@
       "destination": "/kb/articles/anthropic-and-the-pentagon-28898060"
     },
     {
+      "source": "/kb/articles/simon-willison-28bc2f7b",
+      "destination": "/kb/articles/a-quote-from-github-changelog-28bc2f7b"
+    },
+    {
       "source": "/kb/articles/simon-willison-2b654654",
       "destination": "/kb/articles/ftc-to-require-cox-media-group-two-other-firms-to-pay-nearly-2b654654"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2cef4fe7",
+      "destination": "/kb/articles/simonwpedalican-2cef4fe7"
     },
     {
       "source": "/kb/articles/simon-willison-2d4372de",
@@ -2392,6 +2404,10 @@
       "destination": "/kb/articles/whats-new-in-pip-261lockfiles-and-dependency-cooldowns-a2f380d9"
     },
     {
+      "source": "/kb/articles/simon-willison-a4073bfb",
+      "destination": "/kb/articles/release-datasette-10a37-a4073bfb"
+    },
+    {
       "source": "/kb/articles/simon-willison-a421b829",
       "destination": "/kb/articles/the-new-gpt-56-family-luna-terra-sol-a421b829"
     },
@@ -2746,6 +2762,10 @@
     {
       "source": "/kb/articles/simon-willison-cffdf1dd",
       "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d0051fb1",
+      "destination": "/kb/articles/a-quote-from-armin-ronacher-d0051fb1"
     },
     {
       "source": "/kb/articles/simon-willison-d013d581",
@@ -3758,6 +3778,14 @@
     {
       "source": "/kb/articles/swyx-db8af209",
       "destination": "/kb/articles/ainews-gpt-realtime-2-translate-and-whisper-new-sota-realtim-db8af209"
+    },
+    {
+      "source": "/kb/articles/swyx-dc11a4b7",
+      "destination": "/kb/articles/5-trends-that-defined-ai-engineering-at-worlds-fair-2026-dc11a4b7"
+    },
+    {
+      "source": "/kb/articles/swyx-e20a97d6",
+      "destination": "/kb/articles/ainews-not-much-happened-today-e20a97d6"
     },
     {
       "source": "/kb/articles/swyx-e412f7cb",
