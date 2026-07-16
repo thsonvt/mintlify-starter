@@ -2132,6 +2132,10 @@
       "destination": "/kb/articles/something-is-afoot-in-the-land-of-qwen-76b24dc2"
     },
     {
+      "source": "/kb/articles/simon-willison-76b3e80f",
+      "destination": "/kb/articles/how-i-tricked-claude-into-leaking-your-deepest-darkest-secre-76b3e80f"
+    },
+    {
       "source": "/kb/articles/simon-willison-76bce63b",
       "destination": "/kb/articles/a-quote-from-bobby-holley-76bce63b"
     },
@@ -2218,6 +2222,10 @@
     {
       "source": "/kb/articles/simon-willison-8a6a1c68",
       "destination": "/kb/articles/adding-a-new-content-type-to-my-blog-to-newsletter-tool-agen-8a6a1c68"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8c79d95d",
+      "destination": "/kb/articles/tool-mermaid-to-unicode-box-art-grok-mermaid-8c79d95d"
     },
     {
       "source": "/kb/articles/simon-willison-8cb40258",
@@ -2322,6 +2330,10 @@
     {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-99248239",
+      "destination": "/kb/articles/xai-orggrok-build-now-open-source-99248239"
     },
     {
       "source": "/kb/articles/simon-willison-99d28f39",
@@ -3874,6 +3886,10 @@
     {
       "source": "/kb/articles/swyx-fda49f6c",
       "destination": "/kb/articles/retrieval-after-rag-hybrid-search-agents-and-database-design-fda49f6c"
+    },
+    {
+      "source": "/kb/articles/swyx-fe7c5809",
+      "destination": "/kb/articles/ainews-thinkys-inkling-975b-a41b-multimodal-new-best-america-fe7c5809"
     },
     {
       "source": "/kb/articles/swyx-fec8efc9",
