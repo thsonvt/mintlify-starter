@@ -1,0 +1,75 @@
+---
+title: 'A quote from Thibault Sottiaux'
+description: 'Thibault Sottiaux discusses a significant bug in Codex where GPT-5.6 can mistakenly delete files due to improper access settings.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-16'
+sourceUrl: 'https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything'
+topics: ["ai-bugs","file-management","gpt-5"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything) · 16/07/2026
+</Info>
+
+## Summary
+
+Thibault Sottiaux discusses a significant bug in Codex where GPT-5.6 can mistakenly delete files due to improper access settings.
+
+## Key Insights
+
+> "The model attempts to override the $HOME env var to define a temporary directory."
+>
+> — Describing the conditions under which the file deletion bug occurs.
+
+> "The model makes an honest mistake and mistakenly deletes $HOME instead."
+>
+> — Highlighting the unintended consequences of the bug.
+
+## Topics
+
+- [ai-bugs](/kb/topics/ai-bugs)
+- [file-management](/kb/topics/file-management)
+- [gpt-5](/kb/topics/gpt-5)
+
+---
+
+## Full Article
+
+16th July 2026 On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. What we have found is that this most commonly occurs when: Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled The model attempts to override the $HOME env var to define a temporary directory. The model makes an honest mistake and mistakenly deletes $HOME instead. — Thibault Sottiaux, describing a pretty gnarly Codex bug
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="A quote from Romain Huet"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-romain-huet-ff232954"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="[AINews] Agents for Everything Else: Codex for Knowledge Work, Claude for Creative Work"
+    icon="newspaper"
+    href="/kb/articles/ainews-agents-for-everything-else-codex-for-knowledge-work-c-29860c96"
+  >
+    Swyx · explanation · 55% similar
+  </Card>
+  <Card
+    title="[AINews] GPT 5.5 and OpenAI Codex Superapp "
+    icon="newspaper"
+    href="/kb/articles/ainews-gpt-55-and-openai-codex-superapp--7ef4ae15"
+  >
+    Swyx · explanation · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything](https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything).
+</Note>

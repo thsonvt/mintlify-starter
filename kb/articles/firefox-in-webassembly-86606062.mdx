@@ -1,0 +1,80 @@
+---
+title: 'Firefox in WebAssembly'
+description: 'Puter has successfully compiled Firefox to WebAssembly, allowing the browser to run within another browser, showcasing innovative use of WebSocket for'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-16'
+sourceUrl: 'https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything'
+topics: ["webassembly","firefox","browser-technology","encryption"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything) · 16/07/2026
+</Info>
+
+## Summary
+
+Puter has successfully compiled Firefox to WebAssembly, allowing the browser to run within another browser, showcasing innovative use of WebSocket for traffic management.
+
+## Key Insights
+
+> "This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser."
+>
+> — Introduction to the project and its capabilities.
+
+> "The demo funnels all traffic over a WebSocket protocol... because code running in browsers can't open arbitrary network connections."
+>
+> — Explanation of the technical requirements for the project.
+
+> "Puter claim this supports end-to-end encryption and that looks to be true."
+>
+> — Discussion on the security features of the implementation.
+
+## Topics
+
+- [webassembly](/kb/topics/webassembly)
+- [firefox](/kb/topics/firefox)
+- [browser-technology](/kb/topics/browser-technology)
+- [encryption](/kb/topics/encryption)
+
+---
+
+## Full Article
+
+16th July 2026 - Link Blog Firefox in WebAssembly (via) This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser. Here's my blog, running in Firefox, running in WebAssembly, running in Chrome: They chose Firefox/Gecko because it has strong single-process support. The project used an estimated $25,000 worth of Claude Opus and Fable tokens, but took advantage of a Claude Max subscription plan so cost much less in actual dollars. The demo funnels all traffic over a WebSocket protocol (using the Wisp protocol) through Puter's server - a requirement to get this kind of thing to work because code running in browsers can't open arbitrary network connections. (That proxying sounds expensive! The team had to scale the servers up to handle the traffic during the Hacker News conversation about the project.) Puter claim this supports end-to-end encryption and that looks to be true - I inspected the WebSocket messages and traffic to my own HTTPS site was encrypted whereas requests and responses to http://www.example.com/ were in cleartext. Here's the repo for firefox-wasm. theogbob/WebkitWasm is a similar project that compiles WebKit to WASM, but that one doesn't currently have an accessible online demo.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Behind the Scenes Hardening Firefox with Claude Mythos Preview"
+    icon="newspaper"
+    href="/kb/articles/behind-the-scenes-hardening-firefox-with-claude-mythos-previ-128b0cca"
+  >
+    Simon Willison · explanation · 59% similar
+  </Card>
+  <Card
+    title="Running Python code in a sandbox with MicroPython and WASM"
+    icon="newspaper"
+    href="/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
+  >
+    Simon Willison · how-to · 54% similar
+  </Card>
+  <Card
+    title="A quote from Bobby Holley"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-bobby-holley-76bce63b"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything](https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything).
+</Note>

@@ -1824,6 +1824,10 @@
       "destination": "/kb/articles/release-datasette-10a34-4d19cd84"
     },
     {
+      "source": "/kb/articles/simon-willison-4d1ed635",
+      "destination": "/kb/articles/inkling-our-open-weights-model-4d1ed635"
+    },
+    {
       "source": "/kb/articles/simon-willison-4dd505b8",
       "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
     },
@@ -2200,6 +2204,10 @@
       "destination": "/kb/articles/release-llm-gemini-032a0-8560706c"
     },
     {
+      "source": "/kb/articles/simon-willison-86606062",
+      "destination": "/kb/articles/firefox-in-webassembly-86606062"
+    },
+    {
       "source": "/kb/articles/simon-willison-86a8ff57",
       "destination": "/kb/articles/shopifyliquid-performance-53-faster-parserender-61-fewer-all-86a8ff57"
     },
@@ -2384,12 +2392,20 @@
       "destination": "/kb/articles/structured-context-engineering-for-file-native-agentic-syste-9db8006a"
     },
     {
+      "source": "/kb/articles/simon-willison-9e8da577",
+      "destination": "/kb/articles/kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchma-9e8da577"
+    },
+    {
       "source": "/kb/articles/simon-willison-9ecc2a1a",
       "destination": "/kb/articles/tool-pretext-under-the-hood-9ecc2a1a"
     },
     {
       "source": "/kb/articles/simon-willison-9f31bc8e",
       "destination": "/kb/articles/profiling-hacker-news-users-based-on-their-comments-9f31bc8e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9f899988",
+      "destination": "/kb/articles/spot-birds-not-golf-9f899988"
     },
     {
       "source": "/kb/articles/simon-willison-a0d32032",
@@ -2488,6 +2504,10 @@
       "destination": "/kb/articles/may-2026-newsletter-aa50f159"
     },
     {
+      "source": "/kb/articles/simon-willison-aa5702b4",
+      "destination": "/kb/articles/tool-mermaid-to-ascii-art-mermaid-ascii-aa5702b4"
+    },
+    {
       "source": "/kb/articles/simon-willison-ab700ef7",
       "destination": "/kb/articles/release-sqlite-utils-40rc4-ab700ef7"
     },
@@ -2510,6 +2530,10 @@
     {
       "source": "/kb/articles/simon-willison-ad22c932",
       "destination": "/kb/articles/release-datasette-ports-03-ad22c932"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ad686f08",
+      "destination": "/kb/articles/a-quote-from-linus-torvalds-ad686f08"
     },
     {
       "source": "/kb/articles/simon-willison-ad81f1a9",
@@ -2714,6 +2738,10 @@
     {
       "source": "/kb/articles/simon-willison-c8601f50",
       "destination": "/kb/articles/using-git-with-coding-agents-agentic-engineering-patterns-c8601f50"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c8db3bb5",
+      "destination": "/kb/articles/a-quote-from-thibault-sottiaux-c8db3bb5"
     },
     {
       "source": "/kb/articles/simon-willison-c962ca58",
@@ -3496,6 +3524,10 @@
       "destination": "/kb/articles/giving-agents-computers-ivan-burazin-daytona-6469fb3c"
     },
     {
+      "source": "/kb/articles/swyx-650add26",
+      "destination": "/kb/articles/-the-lab-of-the-future-should-feel-like-a-data-center-andy-b-650add26"
+    },
+    {
       "source": "/kb/articles/swyx-6519541e",
       "destination": "/kb/articles/ainews-openai-launches-gpt-56-solterraluna-codex-becomes-cha-6519541e"
     },
@@ -3858,6 +3890,10 @@
     {
       "source": "/kb/articles/swyx-f500f35c",
       "destination": "/kb/articles/ainews-openai-reports-median-internal-codex-output-tokens-gr-f500f35c"
+    },
+    {
+      "source": "/kb/articles/swyx-f8180fbb",
+      "destination": "/kb/articles/ainews-kimi-k3-28t-a50b-the-largest-open-model-ever-released-f8180fbb"
     },
     {
       "source": "/kb/articles/swyx-f876a015",
