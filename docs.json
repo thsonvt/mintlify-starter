@@ -1532,6 +1532,10 @@
       "destination": "/kb/articles/deepseek-v4almost-on-the-frontier-a-fraction-of-the-price-231bc475"
     },
     {
+      "source": "/kb/articles/simon-willison-231c33c8",
+      "destination": "/kb/articles/a-quote-from-kimi-k3-231c33c8"
+    },
+    {
       "source": "/kb/articles/simon-willison-241e8429",
       "destination": "/kb/articles/building-a-world-map-with-only-500-bytes-241e8429"
     },
@@ -2524,6 +2528,10 @@
       "destination": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c"
     },
     {
+      "source": "/kb/articles/simon-willison-ac4867b0",
+      "destination": "/kb/articles/tool-llm-clich-highlighter-ac4867b0"
+    },
+    {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
@@ -2784,6 +2792,10 @@
       "destination": "/kb/articles/a-quote-from-claudecomimport-memory-cc1e6806"
     },
     {
+      "source": "/kb/articles/simon-willison-cc471d6d",
+      "destination": "/kb/articles/naschemequixote-cc471d6d"
+    },
+    {
       "source": "/kb/articles/simon-willison-cd0d8dfe",
       "destination": "/kb/articles/release-datasette-llm-01a4-cd0d8dfe"
     },
@@ -2930,6 +2942,10 @@
     {
       "source": "/kb/articles/simon-willison-dd345ddf",
       "destination": "/kb/articles/reply-guy-dd345ddf"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dd5dd7d3",
+      "destination": "/kb/articles/claude-make-fable-5-permanent-dd5dd7d3"
     },
     {
       "source": "/kb/articles/simon-willison-dd6ce69b",
@@ -3402,6 +3418,10 @@
     {
       "source": "/kb/articles/swyx-41a159da",
       "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
+    },
+    {
+      "source": "/kb/articles/swyx-4233851d",
+      "destination": "/kb/articles/ainews-not-much-happened-today-4233851d"
     },
     {
       "source": "/kb/articles/swyx-42ddf81c",
