@@ -1,0 +1,76 @@
+---
+title: 'Tool: SQLite Query Explainer'
+description: 'SQLite Query Explainer is a tool that allows users to run SQL queries in their browser and understand how SQLite executes them through detailed annota'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-18'
+sourceUrl: 'https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything'
+topics: ["sqlite","query-planning","web-tools","data-visualization"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything) · 18/07/2026
+</Info>
+
+## Summary
+
+SQLite Query Explainer is a tool that allows users to run SQL queries in their browser and understand how SQLite executes them through detailed annotations.
+
+## Key Insights
+
+> "the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output"
+>
+> — Describing the functionality of the SQLite Query Explainer tool.
+
+> "Approach with caution, since I don't know enough about SQLite query plans to verify the results myself"
+>
+> — A note of caution from the author regarding the reliability of the tool's explanations.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [query-planning](/kb/topics/query-planning)
+- [web-tools](/kb/topics/web-tools)
+- [data-visualization](/kb/topics/data-visualization)
+
+---
+
+## Full Article
+
+Tool SQLite Query Explainer — Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing. Julia Evan's, in Learning a few things about running SQLite: Maybe one day I’ll learn to read a query plan. Big same.... which inspired me to have Fable build this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN. Approach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: SQLite Query Result Formatter Demo"
+    icon="newspaper"
+    href="/kb/articles/tool-sqlite-query-result-formatter-demo-56f579fb"
+  >
+    Simon Willison · tutorial · 68% similar
+  </Card>
+  <Card
+    title="Tool: Syntaqlite Playground"
+    icon="newspaper"
+    href="/kb/articles/tool-syntaqlite-playground-08289a33"
+  >
+    Simon Willison · tutorial · 65% similar
+  </Card>
+  <Card
+    title="Research: Mapping SQLite result columns back to their source `table.column`"
+    icon="newspaper"
+    href="/kb/articles/research-mapping-sqlite-result-columns-back-to-their-source--53d5a4e7"
+  >
+    Simon Willison · how-to · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything](https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything).
+</Note>
