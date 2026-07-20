@@ -776,6 +776,10 @@
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-26a37f46",
+      "destination": "/kb/articles/netflix-cpto-on-ai-and-the-future-of-product-and-tech-roles--26a37f46"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-29d1c26c",
       "destination": "/kb/articles/why-saas-freemium-playbooks-dont-work-in-ai-and-what-to-do-i-29d1c26c"
     },
@@ -1994,6 +1998,10 @@
     {
       "source": "/kb/articles/simon-willison-5ed1083b",
       "destination": "/kb/articles/release-micropython-wasm-01a0-5ed1083b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5f01dd79",
+      "destination": "/kb/articles/a-quote-from-sam-altman-5f01dd79"
     },
     {
       "source": "/kb/articles/simon-willison-5f2ace57",
