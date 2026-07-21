@@ -664,6 +664,10 @@
       "destination": "/kb/articles/pi-the-architecture-of-an-ai-coding-agent-a19b5b8e"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-01c83505",
+      "destination": "/kb/articles/-how-i-ai-how-the-founder-of-morning-brew-built-a-claude-con-01c83505"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-01e7ef91",
       "destination": "/kb/articles/how-i-run-autonomous-coding-agents-from-my-phone-with-openai-01e7ef91"
     },
@@ -774,6 +778,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-24a555a8",
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-253743d9",
+      "destination": "/kb/articles/how-the-founder-of-morning-brew-built-a-claude-content-machi-253743d9"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-26a37f46",
@@ -2104,6 +2112,10 @@
       "destination": "/kb/articles/notes-on-pope-leo-xivs-encyclical-on-ai-6bb1ebe2"
     },
     {
+      "source": "/kb/articles/simon-willison-6c6314e8",
+      "destination": "/kb/articles/whos-afraid-of-chinese-models-6c6314e8"
+    },
+    {
       "source": "/kb/articles/simon-willison-6ca6dc44",
       "destination": "/kb/articles/release-datasette-10a32-6ca6dc44"
     },
@@ -2422,6 +2434,10 @@
     {
       "source": "/kb/articles/simon-willison-9ecc2a1a",
       "destination": "/kb/articles/tool-pretext-under-the-hood-9ecc2a1a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9f2c611f",
+      "destination": "/kb/articles/reverse-engineering-is-cheap-now-9f2c611f"
     },
     {
       "source": "/kb/articles/simon-willison-9f31bc8e",
@@ -3378,6 +3394,10 @@
     {
       "source": "/kb/articles/swyx-2e52dbf3",
       "destination": "/kb/articles/ainews-top-local-models-list-april-2026-2e52dbf3"
+    },
+    {
+      "source": "/kb/articles/swyx-30d30fbf",
+      "destination": "/kb/articles/ainews-not-much-happened-today-30d30fbf"
     },
     {
       "source": "/kb/articles/swyx-30db44c8",
