@@ -800,6 +800,10 @@
       "destination": "/kb/articles/sequoia-ceo-coach-why-its-never-been-easier-to-start-a-compa-2afb2858"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2b9becdb",
+      "destination": "/kb/articles/why-a-sabbatical-can-change-everything-2b9becdb"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2e3c1d42",
       "destination": "/kb/articles/mastering-midjourney-how-to-create-consistent-beautiful-bran-2e3c1d42"
     },
@@ -1236,6 +1240,10 @@
       "destination": "/kb/articles/a-visual-guide-to-getting-out-of-a-creative-slump-e8c2b227"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e91c1fcf",
+      "destination": "/kb/articles/computer-and-browser-use-in-codex-5-real-examples-e91c1fcf"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-eb7e49ba",
       "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
@@ -1302,6 +1310,10 @@
     {
       "source": "/kb/articles/resources-anthropic-889ad878",
       "destination": "/kb/articles/the-complete-guide-889ad878"
+    },
+    {
+      "source": "/kb/articles/simon-willison-035fb1d7",
+      "destination": "/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
     },
     {
       "source": "/kb/articles/simon-willison-076a1a4a",
@@ -1418,6 +1430,10 @@
     {
       "source": "/kb/articles/simon-willison-12f23a38",
       "destination": "/kb/articles/a-quote-from-les-orchard-12f23a38"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1336aa73",
+      "destination": "/kb/articles/orchestrions-1336aa73"
     },
     {
       "source": "/kb/articles/simon-willison-133c5e00",
@@ -1872,6 +1888,10 @@
       "destination": "/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
     },
     {
+      "source": "/kb/articles/simon-willison-50fc13e6",
+      "destination": "/kb/articles/are-ai-labs-pelicanmaxxing-50fc13e6"
+    },
+    {
       "source": "/kb/articles/simon-willison-51ea461a",
       "destination": "/kb/articles/release-llm-031-51ea461a"
     },
@@ -1898,6 +1918,10 @@
     {
       "source": "/kb/articles/simon-willison-548dc4c0",
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-56939ccf",
+      "destination": "/kb/articles/a-quote-from-seth-larson-56939ccf"
     },
     {
       "source": "/kb/articles/simon-willison-569cbf4f",
@@ -2144,6 +2168,10 @@
       "destination": "/kb/articles/microsoftvibevoice-6ebdc648"
     },
     {
+      "source": "/kb/articles/simon-willison-6f3375a1",
+      "destination": "/kb/articles/a-quote-from-thomas-ptacek-6f3375a1"
+    },
+    {
       "source": "/kb/articles/simon-willison-6f6a085a",
       "destination": "/kb/articles/release-datasette-10a33-6f6a085a"
     },
@@ -2362,6 +2390,10 @@
     {
       "source": "/kb/articles/simon-willison-960458f7",
       "destination": "/kb/articles/release-scan-for-secrets-02-960458f7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9665cd65",
+      "destination": "/kb/articles/a-fireside-chat-with-cat-and-thariq-from-the-claude-code-tea-9665cd65"
     },
     {
       "source": "/kb/articles/simon-willison-969c5220",
@@ -2848,6 +2880,10 @@
       "destination": "/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
     },
     {
+      "source": "/kb/articles/simon-willison-cff0f800",
+      "destination": "/kb/articles/sighting-california-sea-lion-cff0f800"
+    },
+    {
       "source": "/kb/articles/simon-willison-cffdf1dd",
       "destination": "/kb/articles/introducing-claude-sonnet-46-cffdf1dd"
     },
@@ -2898,6 +2934,10 @@
     {
       "source": "/kb/articles/simon-willison-d45bbc3d",
       "destination": "/kb/articles/a-quote-from-andreas-phlsson-notini-d45bbc3d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d473012b",
+      "destination": "/kb/articles/nativ-run-ai-models-locally-on-your-mac-d473012b"
     },
     {
       "source": "/kb/articles/simon-willison-d4cc68f5",
@@ -3344,6 +3384,10 @@
       "destination": "/kb/articles/ainews-frontiercode-benchmarking-for-code-quality-over-slop-1a1f4627"
     },
     {
+      "source": "/kb/articles/swyx-1c8ca64e",
+      "destination": "/kb/articles/ainews-ai-cybersecurity-becomes-top-of-mind-1c8ca64e"
+    },
+    {
       "source": "/kb/articles/swyx-1e7a9528",
       "destination": "/kb/articles/ahmad-osman-on-why-local-ai-is-catching-up-1e7a9528"
     },
@@ -3728,6 +3772,10 @@
       "destination": "/kb/articles/ainews-new-gemini-3-deep-think-anthropic-30b-380b-gpt-53-cod-90022aa3"
     },
     {
+      "source": "/kb/articles/swyx-9043d3f3",
+      "destination": "/kb/articles/ainews-laguna-s-21-released-cheaper-than-deepseek-v4-flash-b-9043d3f3"
+    },
+    {
       "source": "/kb/articles/swyx-907a164c",
       "destination": "/kb/articles/ainews-why-openai-should-build-slack-907a164c"
     },
@@ -3758,6 +3806,10 @@
     {
       "source": "/kb/articles/swyx-99de1e7d",
       "destination": "/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
+    },
+    {
+      "source": "/kb/articles/swyx-9d4017e1",
+      "destination": "/kb/articles/causal-models-need-causal-data-xairas-x-cell-model-for-drug--9d4017e1"
     },
     {
       "source": "/kb/articles/swyx-9ef5fd46",
@@ -3818,6 +3870,10 @@
     {
       "source": "/kb/articles/swyx-b18788c6",
       "destination": "/kb/articles/why-there-is-no-alphafold-for-materials-ai-for-materials-dis-b18788c6"
+    },
+    {
+      "source": "/kb/articles/swyx-b8f20132",
+      "destination": "/kb/articles/inside-the-model-factory-eiso-kant-poolside-ai-b8f20132"
     },
     {
       "source": "/kb/articles/swyx-b940259b",
