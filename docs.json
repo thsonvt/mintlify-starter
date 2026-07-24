@@ -448,6 +448,10 @@
       "destination": "/kb/articles/this-should-not-be-possible-952b6277"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-a9cc0427",
+      "destination": "/kb/articles/engineer-away-the-slop-a9cc0427"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-af5730e8",
       "destination": "/kb/articles/the-printer-that-transcends-dimensions-and-corrupts-reality-af5730e8"
     },
@@ -2784,6 +2788,10 @@
       "destination": "/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
     },
     {
+      "source": "/kb/articles/simon-willison-c3e44c4a",
+      "destination": "/kb/articles/the-first-known-runaway-ai-agentor-a-very-bad-marketing-stun-c3e44c4a"
+    },
+    {
       "source": "/kb/articles/simon-willison-c4ab1b43",
       "destination": "/kb/articles/tool-markdown-svg-renderer-c4ab1b43"
     },
@@ -3870,6 +3878,10 @@
     {
       "source": "/kb/articles/swyx-b18788c6",
       "destination": "/kb/articles/why-there-is-no-alphafold-for-materials-ai-for-materials-dis-b18788c6"
+    },
+    {
+      "source": "/kb/articles/swyx-b23b65e3",
+      "destination": "/kb/articles/ainews-black-forest-labs-flux-3-multimodal-flow-models-that--b23b65e3"
     },
     {
       "source": "/kb/articles/swyx-b8f20132",
