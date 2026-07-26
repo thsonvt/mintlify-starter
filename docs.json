@@ -1068,6 +1068,10 @@
       "destination": "/kb/articles/hard-truths-about-building-in-the-ai-era-keith-rabois-khosla-8c3047ad"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8f9b20a4",
+      "destination": "/kb/articles/-community-wisdom-staying-on-a-clients-radar-during-pilot-pu-8f9b20a4"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9005bf61",
       "destination": "/kb/articles/how-to-debug-a-team-that-isnt-working-the-waterline-model-9005bf61"
     },
@@ -2188,6 +2192,10 @@
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
     },
     {
+      "source": "/kb/articles/simon-willison-71d11f50",
+      "destination": "/kb/articles/ruff-v0160-71d11f50"
+    },
+    {
       "source": "/kb/articles/simon-willison-741115e1",
       "destination": "/kb/articles/a-quote-from-new-york-times-editors-note-741115e1"
     },
@@ -2664,6 +2672,10 @@
       "destination": "/kb/articles/thoughts-on-gitlabs-workforce-reduction-b1437402"
     },
     {
+      "source": "/kb/articles/simon-willison-b1bd4510",
+      "destination": "/kb/articles/a-quote-from-boris-cherny-b1bd4510"
+    },
+    {
       "source": "/kb/articles/simon-willison-b2672669",
       "destination": "/kb/articles/gpt-55-prompting-guide-b2672669"
     },
@@ -2958,6 +2970,10 @@
     {
       "source": "/kb/articles/simon-willison-d4d113b0",
       "destination": "/kb/articles/a-quote-from-joseph-weizenbaum-d4d113b0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d4ee6e3b",
+      "destination": "/kb/articles/introducing-claude-opus-5-d4ee6e3b"
     },
     {
       "source": "/kb/articles/simon-willison-d4f9e078",
