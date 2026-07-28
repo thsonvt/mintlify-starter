@@ -1224,6 +1224,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-to-build-your-own-ai-developer-to-db8b7ca4"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-dc1a8d29",
+      "destination": "/kb/articles/from-zero-coding-background-to-hardware-hacker-how-cursor-a--dc1a8d29"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-ddc306e9",
       "destination": "/kb/articles/-community-wisdom-making-your-product-enterprise-ready-when--ddc306e9"
     },
@@ -1246,6 +1250,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-e1dcc445",
       "destination": "/kb/articles/how-the-engineer-behind-claude-cowork-actually-uses-claude-f-e1dcc445"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-e3459065",
+      "destination": "/kb/articles/-how-i-ai-claude-opus-5-review-browser-use-in-codex-how-curs-e3459065"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-e738f292",
@@ -1838,6 +1846,10 @@
     {
       "source": "/kb/articles/simon-willison-46e67c5e",
       "destination": "/kb/articles/tool-github-repo-stats-46e67c5e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-47b53538",
+      "destination": "/kb/articles/moonshotaikimi-k3-47b53538"
     },
     {
       "source": "/kb/articles/simon-willison-47fc8cda",
@@ -2602,6 +2614,10 @@
     {
       "source": "/kb/articles/simon-willison-aa5702b4",
       "destination": "/kb/articles/tool-mermaid-to-ascii-art-mermaid-ascii-aa5702b4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ab657bcc",
+      "destination": "/kb/articles/an-opinionated-guide-to-which-ai-to-use-to-do-stuff-ab657bcc"
     },
     {
       "source": "/kb/articles/simon-willison-ab700ef7",
@@ -3958,6 +3974,10 @@
     {
       "source": "/kb/articles/swyx-cc001aff",
       "destination": "/kb/articles/ainews-the-inference-inflection-cc001aff"
+    },
+    {
+      "source": "/kb/articles/swyx-cf57cb90",
+      "destination": "/kb/articles/ainews-much-ado-about-open-weights-cf57cb90"
     },
     {
       "source": "/kb/articles/swyx-d1434027",
