@@ -1,0 +1,79 @@
+---
+title: 'uv 0.12.0'
+description: 'The release of uv 0.12.0 introduces significant changes, including a new project structure and improved build configurations.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-28'
+sourceUrl: 'https://simonwillison.net/2026/Jul/28/uv/#atom-everything'
+topics: ["project-structure","build-tools","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/28/uv/#atom-everything) · 28/07/2026
+</Info>
+
+## Summary
+
+The release of uv 0.12.0 introduces significant changes, including a new project structure and improved build configurations.
+
+## Key Insights
+
+> "uv init now defaults to a src/ shaped package"
+>
+> — Discussing the changes in the project structure for new uv projects.
+
+> "it also configures the uv_build backend for building wheels and .tar.gz distribution files"
+>
+> — Highlighting the improvements in the build process with the new version.
+
+> "I wonder when uv will be judged ready for a 1.0 release?"
+>
+> — Reflecting on the future readiness of the uv project.
+
+## Topics
+
+- [project-structure](/kb/topics/project-structure)
+- [build-tools](/kb/topics/build-tools)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+28th July 2026 - Link Blog uv 0.12.0. Some interesting breaking changes in this release of uv, in particular to the default project produced by the uv init command. uv init is the uv shortcut for creating a new project. The previous version of uv, version 0.11.x, produced this directory when you ran uv init uv-init. Here's what you get with uv 0.12. I have a GitHub repository that automatically snapshots the output of uv init, so you can also see the full diff: uv init now defaults to a src/ shaped package, instead of dropping main.py in the root of the project. It also configures the uv_build backend for building wheels and .tar.gz distribution files when you run uv build. Finally, it sets up uv-init as a script alias which, when run with uv run uv-init, executes a new main() function in src/uv_init/__init__.py. I've so far avoided using src layout in my own projects just out of inertia. I think it's time I switched. I wonder when uv will be judged ready for a 1.0 release?
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="TIL: Using uvx in GitHub Actions in a cache-friendly way"
+    icon="newspaper"
+    href="/kb/articles/til-using-uvx-in-github-actions-in-a-cache-friendly-way-c7bd9aa8"
+  >
+    Simon Willison · how-to · 48% similar
+  </Card>
+  <Card
+    title="Ruff v0.16.0"
+    icon="newspaper"
+    href="/kb/articles/ruff-v0160-71d11f50"
+  >
+    Simon Willison · how-to · 41% similar
+  </Card>
+  <Card
+    title="Thoughts on OpenAI acquiring Astral and uv/ruff/ty"
+    icon="newspaper"
+    href="/kb/articles/thoughts-on-openai-acquiring-astral-and-uvruffty-19af0653"
+  >
+    Simon Willison · explanation · 40% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/28/uv/#atom-everything](https://simonwillison.net/2026/Jul/28/uv/#atom-everything).
+</Note>

@@ -852,6 +852,10 @@
       "destination": "/kb/articles/how-tech-workers-actually-feel-about-ai-in-2026-annual-ai-se-3dacc77a"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-41c80420",
+      "destination": "/kb/articles/11-products-i-love-free-for-a-yearthe-biggest-product-pass-e-41c80420"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-421c595c",
       "destination": "/kb/articles/-community-wisdom-bootstrapping-vs-raising-funding-building--421c595c"
     },
@@ -1804,6 +1808,10 @@
       "destination": "/kb/articles/tool-cleanup-claude-code-paste-441abb85"
     },
     {
+      "source": "/kb/articles/simon-willison-4439d23e",
+      "destination": "/kb/articles/discovering-cryptographic-weaknesses-with-claude-4439d23e"
+    },
+    {
       "source": "/kb/articles/simon-willison-447f5269",
       "destination": "/kb/articles/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-sour-447f5269"
     },
@@ -1836,6 +1844,10 @@
       "destination": "/kb/articles/release-micropython-wasm-01a2-46689960"
     },
     {
+      "source": "/kb/articles/simon-willison-467aaf9b",
+      "destination": "/kb/articles/release-sqlite-utils-3391-467aaf9b"
+    },
+    {
       "source": "/kb/articles/simon-willison-46db46c4",
       "destination": "/kb/articles/supervisor-not-overseer-46db46c4"
     },
@@ -1862,6 +1874,10 @@
     {
       "source": "/kb/articles/simon-willison-48ff65d4",
       "destination": "/kb/articles/tool-inaturalist-sightings-48ff65d4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-49057605",
+      "destination": "/kb/articles/anatomy-of-a-frontier-lab-agent-intrusion-a-technical-timeli-49057605"
     },
     {
       "source": "/kb/articles/simon-willison-495218f8",
@@ -2420,6 +2436,10 @@
       "destination": "/kb/articles/release-llm-anthropic-0251-94cf787b"
     },
     {
+      "source": "/kb/articles/simon-willison-95ddcfa9",
+      "destination": "/kb/articles/a-quote-from-akshat-bubna-95ddcfa9"
+    },
+    {
       "source": "/kb/articles/simon-willison-95ecf88e",
       "destination": "/kb/articles/microsoft-copilot-cowork-exfiltrates-files-95ecf88e"
     },
@@ -2442,6 +2462,10 @@
     {
       "source": "/kb/articles/simon-willison-97a8866c",
       "destination": "/kb/articles/quoting-anthropic-97a8866c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-98df17c6",
+      "destination": "/kb/articles/uv-0120-98df17c6"
     },
     {
       "source": "/kb/articles/simon-willison-99248239",
@@ -3524,6 +3548,10 @@
       "destination": "/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
     },
     {
+      "source": "/kb/articles/swyx-377fc1ef",
+      "destination": "/kb/articles/codex-from-0-to-10m-users-building-chatgpt-work-akshay-natha-377fc1ef"
+    },
+    {
       "source": "/kb/articles/swyx-39911a3a",
       "destination": "/kb/articles/esmfold2-the-bitter-lesson-is-coming-for-proteins-alex-rives-39911a3a"
     },
@@ -3738,6 +3766,10 @@
     {
       "source": "/kb/articles/swyx-771f062e",
       "destination": "/kb/articles/ainews-open-models-model-labs-vs-agent-labs-and-whats-untrai-771f062e"
+    },
+    {
+      "source": "/kb/articles/swyx-777f1dfa",
+      "destination": "/kb/articles/ainews-fearing-rsi-openai-anthropic-gdm-meta-thinky-cosign-l-777f1dfa"
     },
     {
       "source": "/kb/articles/swyx-77db97f0",
