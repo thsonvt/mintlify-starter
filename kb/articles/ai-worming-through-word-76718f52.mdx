@@ -1,0 +1,80 @@
+---
+title: 'AI Worming through Word'
+description: 'The article discusses a new prompt injection variant that allows attackers to create self-replicating worms in Microsoft Word documents using Copilot.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-29'
+sourceUrl: 'https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything'
+topics: ["ai-security","prompt-injection","microsoft-word","cybersecurity"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything) · 29/07/2026
+</Info>
+
+## Summary
+
+The article discusses a new prompt injection variant that allows attackers to create self-replicating worms in Microsoft Word documents using Copilot.
+
+## Key Insights
+
+> "An attacker places hidden instructions in a document that is later used as source material in Copilot for Word."
+>
+> — Describing how the prompt injection attack works.
+
+> "This is the first one I've seen that deliberately copies instructions to self-replicate itself."
+>
+> — Highlighting the novelty of the self-replicating worm technique.
+
+> "There’s no mitigation that covers the full class of attack."
+>
+> — Commenting on the lack of comprehensive solutions from Microsoft.
+
+## Topics
+
+- [ai-security](/kb/topics/ai-security)
+- [prompt-injection](/kb/topics/prompt-injection)
+- [microsoft-word](/kb/topics/microsoft-word)
+- [cybersecurity](/kb/topics/cybersecurity)
+
+---
+
+## Full Article
+
+29th July 2026 - Link Blog AI Worming through Word (via) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present. We've seen plenty of hidden white-on-white text before - the kids are using it in their job applications now - but this is the first one I've seen that deliberately copies instructions to self-replicate itself. It was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Microsoft Copilot Cowork Exfiltrates Files"
+    icon="newspaper"
+    href="/kb/articles/microsoft-copilot-cowork-exfiltrates-files-95ecf88e"
+  >
+    Simon Willison · explanation · 63% similar
+  </Card>
+  <Card
+    title="Snowflake Cortex AI Escapes Sandbox and Executes Malware"
+    icon="newspaper"
+    href="/kb/articles/snowflake-cortex-ai-escapes-sandbox-and-executes-malware-7f0acf20"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+  <Card
+    title="What happened after 2,000 people tried to hack my AI assistant"
+    icon="newspaper"
+    href="/kb/articles/what-happened-after-2000-people-tried-to-hack-my-ai-assistan-7fee49ef"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything](https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything).
+</Note>

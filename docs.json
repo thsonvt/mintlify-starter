@@ -1984,6 +1984,10 @@
       "destination": "/kb/articles/release-datasette-files-01a3-57346664"
     },
     {
+      "source": "/kb/articles/simon-willison-578b2fad",
+      "destination": "/kb/articles/a-quote-from-matthew-green-578b2fad"
+    },
+    {
       "source": "/kb/articles/simon-willison-5810b898",
       "destination": "/kb/articles/release-datasette-ports-02-5810b898"
     },
@@ -2240,6 +2244,10 @@
       "destination": "/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
     },
     {
+      "source": "/kb/articles/simon-willison-76718f52",
+      "destination": "/kb/articles/ai-worming-through-word-76718f52"
+    },
+    {
       "source": "/kb/articles/simon-willison-76757baf",
       "destination": "/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
     },
@@ -2410,6 +2418,10 @@
     {
       "source": "/kb/articles/simon-willison-91b77305",
       "destination": "/kb/articles/diffusiongemma-91b77305"
+    },
+    {
+      "source": "/kb/articles/simon-willison-923aeb39",
+      "destination": "/kb/articles/til-adding-a-custom-mcp-server-to-claude-and-chatgpt-923aeb39"
     },
     {
       "source": "/kb/articles/simon-willison-927b858a",
@@ -3160,6 +3172,10 @@
       "destination": "/kb/articles/doomql-e44a9b71"
     },
     {
+      "source": "/kb/articles/simon-willison-e470be81",
+      "destination": "/kb/articles/a-quote-from-d-richard-hipp-e470be81"
+    },
+    {
       "source": "/kb/articles/simon-willison-e49581f7",
       "destination": "/kb/articles/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-e49581f7"
     },
@@ -3706,6 +3722,10 @@
     {
       "source": "/kb/articles/swyx-607572ec",
       "destination": "/kb/articles/ainews-glm-gpt-glm-52-passes-vibe-check-zai-forecasts-open-f-607572ec"
+    },
+    {
+      "source": "/kb/articles/swyx-6138ce53",
+      "destination": "/kb/articles/ainews-ai-is-eating-finance-aie-nyc-now-open--6138ce53"
     },
     {
       "source": "/kb/articles/swyx-6469fb3c",
