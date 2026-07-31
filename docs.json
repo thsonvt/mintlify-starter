@@ -1448,6 +1448,10 @@
       "destination": "/kb/articles/a-quote-from-kyle-daigle-11fce8fa"
     },
     {
+      "source": "/kb/articles/simon-willison-1241ba44",
+      "destination": "/kb/articles/investigating-three-real-world-incidents-in-our-cybersecurit-1241ba44"
+    },
+    {
       "source": "/kb/articles/simon-willison-128b0cca",
       "destination": "/kb/articles/behind-the-scenes-hardening-firefox-with-claude-mythos-previ-128b0cca"
     },
@@ -1918,6 +1922,10 @@
     {
       "source": "/kb/articles/simon-willison-4dd505b8",
       "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4e18f5f6",
+      "destination": "/kb/articles/release-llm-032rc1-4e18f5f6"
     },
     {
       "source": "/kb/articles/simon-willison-4f4fcb91",
@@ -2632,6 +2640,10 @@
       "destination": "/kb/articles/why-are-you-like-this-a82092c1"
     },
     {
+      "source": "/kb/articles/simon-willison-a846fb69",
+      "destination": "/kb/articles/release-llm-chat-completions-server-01a0-a846fb69"
+    },
+    {
       "source": "/kb/articles/simon-willison-a90df1e1",
       "destination": "/kb/articles/release-llm-echo-04-a90df1e1"
     },
@@ -2674,6 +2686,10 @@
     {
       "source": "/kb/articles/simon-willison-ac4867b0",
       "destination": "/kb/articles/tool-llm-clich-highlighter-ac4867b0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ac57cb88",
+      "destination": "/kb/articles/a-quote-from-bruce-schneier-ac57cb88"
     },
     {
       "source": "/kb/articles/simon-willison-acb02cac",
@@ -3372,6 +3388,14 @@
       "destination": "/kb/articles/til-cloudflare-captcha-on-at-least-one-ampersand-fc367062"
     },
     {
+      "source": "/kb/articles/simon-willison-fc441441",
+      "destination": "/kb/articles/advancing-the-price-performance-frontier-with-gpt56-fc441441"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fd4966fb",
+      "destination": "/kb/articles/release-llm-032rc2-fd4966fb"
+    },
+    {
       "source": "/kb/articles/simon-willison-fde7dbeb",
       "destination": "/kb/articles/release-datasette-llm-limits-01a0-fde7dbeb"
     },
@@ -3644,6 +3668,10 @@
       "destination": "/kb/articles/how-to-stop-shipping-low-quality-rl-environments-with-exampl-49c5ea47"
     },
     {
+      "source": "/kb/articles/swyx-5007e60e",
+      "destination": "/kb/articles/ontologies-are-so-back-why-ai-agents-are-reviving-the-semant-5007e60e"
+    },
+    {
       "source": "/kb/articles/swyx-50b11fd3",
       "destination": "/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
     },
@@ -3714,6 +3742,10 @@
     {
       "source": "/kb/articles/swyx-5ce9775c",
       "destination": "/kb/articles/ainews-yann-lecuns-ami-labs-launches-with-a-103b-seed-to-bui-5ce9775c"
+    },
+    {
+      "source": "/kb/articles/swyx-5deee27a",
+      "destination": "/kb/articles/ainews-gpt-56-price-cut-by-20-80-cost-of-gpt-54-intelligence-5deee27a"
     },
     {
       "source": "/kb/articles/swyx-5fb4f0d9",

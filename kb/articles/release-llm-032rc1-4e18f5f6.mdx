@@ -1,0 +1,75 @@
+---
+title: 'Release: llm 0.32rc1'
+description: 'The LLM 0.32rc1 release introduces a new schema design for better prompt and response handling, including content-addressable hash IDs for message de-'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-30'
+sourceUrl: 'https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything'
+topics: ["llm-release","schema-design","gpt-support"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything) · 30/07/2026
+</Info>
+
+## Summary
+
+The LLM 0.32rc1 release introduces a new schema design for better prompt and response handling, including content-addressable hash IDs for message de-duplication.
+
+## Key Insights
+
+> "This allows de-duplication in the database, and means that LLM can now represent trees of messages for forked conversations."
+>
+> — On the new schema design and its benefits.
+
+> "It's worth running a backup of your existing logs.db before upgrading to the RC."
+>
+> — Advice regarding data backup before upgrading.
+
+## Topics
+
+- [llm-release](/kb/topics/llm-release)
+- [schema-design](/kb/topics/schema-design)
+- [gpt-support](/kb/topics/gpt-support)
+
+---
+
+## Full Article
+
+This RC for LLM 0.32 finishes the work that started in LLM 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the latest model families. The most important change is the use of content-addressable hash IDs for stored messages. This allows de-duplication in the database, and means that LLM can now represent trees of messages for forked conversations. Since it involves a significant schema change - new tables only, and old data should not be affected at all - it's worth running a backup of your existing logs.db before upgrading to the RC: llm logs backup logs-backup.db The RC also adds support for gpt-5.6-sol, gpt-5.6-terra, and gpt-5.6-luna.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="Release: llm-chat-completions-server 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-chat-completions-server-01a0-a846fb69"
+  >
+    Simon Willison · how-to · 65% similar
+  </Card>
+  <Card
+    title="LLM 0.32a0  is a major backwards-compatible refactor"
+    icon="newspaper"
+    href="/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+  >
+    Simon Willison · reference · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything](https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything).
+</Note>

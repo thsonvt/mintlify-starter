@@ -1,0 +1,79 @@
+---
+title: 'Release: llm 0.32rc2'
+description: 'The release of llm 0.32rc2 introduces GPT-5.6 Luna as the new default model and adds a command for using OpenAI-compatible endpoints without configura'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-30'
+sourceUrl: 'https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything'
+topics: ["llm-release","gpt-5","openai-endpoints"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything) · 30/07/2026
+</Info>
+
+## Summary
+
+The release of llm 0.32rc2 introduces GPT-5.6 Luna as the new default model and adds a command for using OpenAI-compatible endpoints without configuration.
+
+## Key Insights
+
+> "The default model for users who have not set their own default is now GPT-5.6 Luna."
+>
+> — Discussing the new default model in llm 0.32rc2.
+
+> "These calls are not logged."
+>
+> — Explaining the new llm openai endpoint command functionality.
+
+> "I got frustrated at the lack of an obvious CLI tool for trying out prompts."
+>
+> — Describing the motivation behind adding the new command to LLM.
+
+## Topics
+
+- [llm-release](/kb/topics/llm-release)
+- [gpt-5](/kb/topics/gpt-5)
+- [openai-endpoints](/kb/topics/openai-endpoints)
+
+---
+
+## Full Article
+
+Hot on the heels of RC1, this fixes a dependency issue and also adds two neat new features: The default model for users who have not set their own default is now GPT-5.6 Luna. It was previously GPT-4o mini. Luna is a much better and more recent model, albeit slightly more expensive - $0.20 per million input tokens and $1.20 per million output tokens, compared to $0.15/$0.60 for 4o mini. You can switch back to 4o mini using llm models default gpt-4o-mini, or switch to GPT-5 nano, an even cheaper default model ($0.05/$0.40), using llm models default gpt-5-nano. #1576 New llm openai endpoint command for running prompts, chats and model listings against arbitrary OpenAI-compatible endpoints without first configuring a model. These calls are not logged. #1565 The llm openai endpoint command is really cool. I got frustrated at the lack of an obvious CLI tool for trying out prompts against arbitrary OpenAI Chat Completions imitation endpoints, so I decided to add that to LLM itself. You don't even have to install LLM to use this. Here's a uvx one-liner for running a prompt - with tools - against an LM Studio local model: uvx --pre llm openai endpoint http://127.0.0.1:1234/v1 \ T llm_version -T llm_time --td \ -m google/gemma-4-31b 'what is the current LLM version? And the time?' Output here.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.31"
+    icon="newspaper"
+    href="/kb/articles/release-llm-031-51ea461a"
+  >
+    Simon Willison · reference · 75% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a2-8db1edb7"
+  >
+    Simon Willison · reference · 75% similar
+  </Card>
+  <Card
+    title="LLM 0.32a0  is a major backwards-compatible refactor"
+    icon="newspaper"
+    href="/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything](https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything).
+</Note>

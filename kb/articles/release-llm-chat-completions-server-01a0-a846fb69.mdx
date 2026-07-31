@@ -1,0 +1,80 @@
+---
+title: 'Release: llm-chat-completions-server 0.1a0'
+description: 'The article discusses the release of llm-chat-completions-server 0.1a0, which supports OpenAI Chat Completion style requests with a new schema design '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-30'
+sourceUrl: 'https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything'
+topics: ["llm","chat-completions","openai","plugin-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything) · 30/07/2026
+</Info>
+
+## Summary
+
+The article discusses the release of llm-chat-completions-server 0.1a0, which supports OpenAI Chat Completion style requests with a new schema design for conversation tracking.
+
+## Key Insights
+
+> "The new schema design in LLM is designed to de-duplicate these using hashes of the individual message parts."
+>
+> — Discussing the technical improvements in the new version.
+
+> "Running this starts a localhost server on port 9001 that exposes your full collection of LLM models."
+>
+> — Instructions on how to run the server.
+
+> "GPT-5.6 Sol wrote the whole thing - it turns out it knows the OpenAI Chat Completions API shape really well."
+>
+> — Highlighting the capabilities of the AI in developing the plugin.
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [chat-completions](/kb/topics/chat-completions)
+- [openai](/kb/topics/openai)
+- [plugin-development](/kb/topics/plugin-development)
+
+---
+
+## Full Article
+
+A key goal of the new content-addressable logs in LLM 0.32rc1 was being able to support OpenAI Chat Completion style requests where each incoming message extends the previous conversation, like this: curl http://localhost:8002/v1/chat/completions \ -H 'Content-Type: application/json' \ -d '&#123; "model": "qwen3.5-4b", "messages": [ &#123;"role": "user", "content": "Capital of France?"&#125;, &#123;"role": "assistant", "content": "Paris."&#125;, &#123;"role": "user", "content": "Germany?"&#125; ] &#125;' Here the conversation state is tracked by the client, so each of these requests gets longer and longer. The new schema design in LLM is designed to de-duplicate these using hashes of the individual message parts. To test that out, I built this plugin: uv tool install llm --pre llm install llm-chat-completions-server llm chat-completions-server -p 9001 Running this starts a localhost server on port 9001 that exposes your full collection of LLM models (from any plugins you have installed) using a ChatGPT Completions compatible endpoint. GPT-5.6 Sol wrote the whole thing - it turns out it knows the OpenAI Chat Completions API shape really well.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 72% similar
+  </Card>
+  <Card
+    title="LLM 0.32a0  is a major backwards-compatible refactor"
+    icon="newspaper"
+    href="/kb/articles/llm-032a0-is-a-major-backwards-compatible-refactor-36c09739"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer"
+    icon="newspaper"
+    href="/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
+  >
+    Simon Willison · how-to · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything](https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything).
+</Note>

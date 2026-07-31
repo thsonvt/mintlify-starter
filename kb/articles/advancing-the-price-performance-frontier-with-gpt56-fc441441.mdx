@@ -1,0 +1,81 @@
+---
+title: 'Advancing the price-performance frontier with GPT‑5.6'
+description: 'OpenAI''s GPT-5.6 models see significant price drops, with Luna now being the most cost-effective option for AI inference, outperforming competitors.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-07-30'
+sourceUrl: 'https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything'
+topics: ["gpt-5-6","price-performance","ai-inference","openai","gpu-optimization"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything) · 30/07/2026
+</Info>
+
+## Summary
+
+OpenAI's GPT-5.6 models see significant price drops, with Luna now being the most cost-effective option for AI inference, outperforming competitors.
+
+## Key Insights
+
+> "GPT‑5.6 Sol found work that could be precomputed, avoided, or parallelized."
+>
+> — Discussing the optimization techniques used in GPT-5.6 Sol.
+
+> "That Luna price drop completely changes the landscape with respect to lower priced models."
+>
+> — Highlighting the impact of Luna's price reduction on the AI model market.
+
+> "Luna is now cheaper than Google's Gemini 3.1 Flash-Lite."
+>
+> — Comparing the pricing of Luna with other AI models.
+
+## Topics
+
+- [gpt-5-6](/kb/topics/gpt-5-6)
+- [price-performance](/kb/topics/price-performance)
+- [ai-inference](/kb/topics/ai-inference)
+- [openai](/kb/topics/openai)
+- [gpu-optimization](/kb/topics/gpu-optimization)
+
+---
+
+## Full Article
+
+30th July 2026 - Link Blog Advancing the price-performance frontier with GPT‑5.6 (via) Huge price drop from OpenAI today: GPT-5.6 Terra got a 20% reduction, and GPT-5.6 Luna got a massive 80% drop. OpenAI credit 5.6 Sol with enabling this: in How GPT‑5.6 fuses frontier intelligence with frontier efficiency they describe using 5.6 Sol to optimize load balancing, and more impressively to optimize inference itself: We also used GPT‑5.6 Sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. Even when individual operations are fast, excess memory movement, synchronization, and inefficient data layouts can leave GPUs idle. To avoid this, GPT‑5.6 Sol found work that could be precomputed, avoided, or parallelized. With Codex, GPT‑5.6 Sol autonomously rewrote and optimized our production kernels, the core code that executes the mathematical operations that make up the model. This worked in part because we’ve trained GPT‑5.6 to be effective at writing and improving kernels in Triton⁠and Gluon⁠, two open-source GPU programming languages maintained by OpenAI. These efforts, combined with broader kernel advancements from GPT‑5.6 Sol, reduced end-to-end serving costs by 20%. That Luna price drop completely changes the landscape with respect to lower priced models. At $0.20/million tokens for input and $1.20/million for output Luna is now cheaper than Google's Gemini 3.1 Flash-Lite ($.025/$1.50). Anthropic's cheapest current model is Claude Haiku 4.5, and that's $1/$5 - Luna is now 1/5th of that for input, previously it cost the same. My agent.datasette.io demo site was running on Gemini 3.1 Flash-Lite. I've switched it over to Luna.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization"
+    icon="newspaper"
+    href="/kb/articles/ainews-gpt-56-price-cut-by-20-80-cost-of-gpt-54-intelligence-5deee27a"
+  >
+    Swyx · explanation · 86% similar
+  </Card>
+  <Card
+    title="A quote from OpenAI"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-openai-3e856a2a"
+  >
+    Simon Willison · reference · 82% similar
+  </Card>
+  <Card
+    title="The new GPT-5.6 family: Luna, Terra, Sol"
+    icon="newspaper"
+    href="/kb/articles/the-new-gpt-56-family-luna-terra-sol-a421b829"
+  >
+    Simon Willison · explanation · 80% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything](https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything).
+</Note>
