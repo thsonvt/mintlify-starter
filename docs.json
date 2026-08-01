@@ -1612,6 +1612,10 @@
       "destination": "/kb/articles/building-a-world-map-with-only-500-bytes-241e8429"
     },
     {
+      "source": "/kb/articles/simon-willison-24894364",
+      "destination": "/kb/articles/release-llm-mcp-client-01a0-24894364"
+    },
+    {
       "source": "/kb/articles/simon-willison-25f465b1",
       "destination": "/kb/articles/an-update-on-recent-claude-code-quality-reports-25f465b1"
     },
@@ -1850,6 +1854,10 @@
     {
       "source": "/kb/articles/simon-willison-467aaf9b",
       "destination": "/kb/articles/release-sqlite-utils-3391-467aaf9b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-46953fcd",
+      "destination": "/kb/articles/stateless-mcp-has-recaptured-my-interest-and-inspired-mcp-ex-46953fcd"
     },
     {
       "source": "/kb/articles/simon-willison-46db46c4",
@@ -2344,6 +2352,10 @@
       "destination": "/kb/articles/gemini-3-deep-think-86aff01b"
     },
     {
+      "source": "/kb/articles/simon-willison-8827e237",
+      "destination": "/kb/articles/deepseek-aideepseek-v4-flash-0731-8827e237"
+    },
+    {
       "source": "/kb/articles/simon-willison-88292c28",
       "destination": "/kb/articles/whats-new-in-claude-sonnet-5-88292c28"
     },
@@ -2652,6 +2664,10 @@
       "destination": "/kb/articles/headless-everything-for-personal-ai-a91e2371"
     },
     {
+      "source": "/kb/articles/simon-willison-a928d57a",
+      "destination": "/kb/articles/release-datasette-agent-04a0-a928d57a"
+    },
+    {
       "source": "/kb/articles/simon-willison-a9aa5256",
       "destination": "/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
     },
@@ -2706,6 +2722,10 @@
     {
       "source": "/kb/articles/simon-willison-ad81f1a9",
       "destination": "/kb/articles/steve-yegge-ad81f1a9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ade422a1",
+      "destination": "/kb/articles/oxide-and-friends-the-open-weight-revolution-with-simon-will-ade422a1"
     },
     {
       "source": "/kb/articles/simon-willison-ae0efbe3",
@@ -3240,6 +3260,10 @@
       "destination": "/kb/articles/kkp-parrots-e9f08cfc"
     },
     {
+      "source": "/kb/articles/simon-willison-ea389ac9",
+      "destination": "/kb/articles/smevalsa-small-eval-suite-for-evaluating-models-prompts-and--ea389ac9"
+    },
+    {
       "source": "/kb/articles/simon-willison-ea3d9c15",
       "destination": "/kb/articles/january-sponsors-only-newsletter-is-out-ea3d9c15"
     },
@@ -3438,6 +3462,10 @@
     {
       "source": "/kb/articles/swyx-05cea5ca",
       "destination": "/kb/articles/ainews-not-much-happened-today-05cea5ca"
+    },
+    {
+      "source": "/kb/articles/swyx-076c54b8",
+      "destination": "/kb/articles/ainews-not-much-happened-today-076c54b8"
     },
     {
       "source": "/kb/articles/swyx-08cc6a67",
