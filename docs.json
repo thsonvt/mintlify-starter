@@ -1008,6 +1008,10 @@
       "destination": "/kb/articles/i-built-a-custom-slack-inbox-it-was-easier-than-youd-think-y-72d57342"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-793a3aad",
+      "destination": "/kb/articles/-community-wisdom-getting-started-with-open-source-models-ma-793a3aad"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7b6943e4",
       "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
     },
@@ -1556,6 +1560,10 @@
       "destination": "/kb/articles/release-datasette-tailscale-01a0-1ce25b0a"
     },
     {
+      "source": "/kb/articles/simon-willison-1cf8993d",
+      "destination": "/kb/articles/open-letters-about-ai-development-1cf8993d"
+    },
+    {
       "source": "/kb/articles/simon-willison-1dff5c0f",
       "destination": "/kb/articles/our-evaluation-of-openais-gpt-55-cyber-capabilities-1dff5c0f"
     },
@@ -2040,6 +2048,10 @@
       "destination": "/kb/articles/claude-opus-48-a-modest-but-tangible-improvement-5b5d4f77"
     },
     {
+      "source": "/kb/articles/simon-willison-5ba1abe7",
+      "destination": "/kb/articles/ten-advances-in-mathematics-and-theoretical-computer-science-5ba1abe7"
+    },
+    {
       "source": "/kb/articles/simon-willison-5bb83c11",
       "destination": "/kb/articles/temporary-cloudflare-accounts-for-ai-agents-5bb83c11"
     },
@@ -2294,6 +2306,10 @@
     {
       "source": "/kb/articles/simon-willison-7d8b84f7",
       "destination": "/kb/articles/a-quote-from-matt-webb-7d8b84f7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7e17d474",
+      "destination": "/kb/articles/a-quote-from-greg-brockman-7e17d474"
     },
     {
       "source": "/kb/articles/simon-willison-7e5ada0d",
@@ -2996,6 +3012,10 @@
       "destination": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee"
     },
     {
+      "source": "/kb/articles/simon-willison-ce29cef9",
+      "destination": "/kb/articles/july-2026-newsletter-ce29cef9"
+    },
+    {
       "source": "/kb/articles/simon-willison-cf5015cb",
       "destination": "/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
     },
@@ -3414,6 +3434,10 @@
     {
       "source": "/kb/articles/simon-willison-fc441441",
       "destination": "/kb/articles/advancing-the-price-performance-frontier-with-gpt56-fc441441"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fd2ff761",
+      "destination": "/kb/articles/release-datasette-apps-02a0-fd2ff761"
     },
     {
       "source": "/kb/articles/simon-willison-fd4966fb",

@@ -1,0 +1,76 @@
+---
+title: 'Release: datasette-apps 0.2a0'
+description: 'The release of datasette-apps 0.2a0 introduces new tools for improving app creation and editing with Datasette Agent, including app_debug() and app_li'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-01'
+sourceUrl: 'https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything'
+topics: ["datasette","app-development","javascript","datasette-agent"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything) · 01/08/2026
+</Info>
+
+## Summary
+
+The release of datasette-apps 0.2a0 introduces new tools for improving app creation and editing with Datasette Agent, including app_debug() and app_list().
+
+## Key Insights
+
+> "New app_debug() tool allowing agent to open an app (invisibly) and test it using JavaScript."
+>
+> — Introduction of new features in datasette-apps 0.2a0.
+
+> "This means the agent can smoke test that the app is working and even do things like measure the dimensions of different elements."
+>
+> — Explanation of the functionality of the app_debug() tool.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [app-development](/kb/topics/app-development)
+- [javascript](/kb/topics/javascript)
+- [datasette-agent](/kb/topics/datasette-agent)
+
+---
+
+## Full Article
+
+Changes that improve Datasette Apps when created and edited using Datasette Agent: New app_debug() tool allowing agent to open an app (invisibly) and test it using JavaScript. #33 New app_list() tool for listing apps the user has permission to edit, so the agent can edit them. #36 The app_debug() tool is pretty neat: it works by displaying the app in a opacity: 0 iframe with pointer-events: none (so it can't be seen or interacted with) and then executing agent-provided JavaScript inside that sandboxed iframe. This means the agent can smoke test that the app is working and even do things like measure the dimensions of different elements. This uses the new context.browser_task() mechanism added in datasette-agent 0.4a0.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a34"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a34-4d19cd84"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.3a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-03a0-142648a3"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent-edit 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-edit-01a0-78174dc0"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything](https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything).
+</Note>
