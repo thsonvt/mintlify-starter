@@ -1264,6 +1264,10 @@
       "destination": "/kb/articles/-how-i-ai-claude-opus-5-review-browser-use-in-codex-how-curs-e3459065"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e4822e34",
+      "destination": "/kb/articles/this-cpo-regrets-that-product-management-exists-tom-verrilli-e4822e34"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-e738f292",
       "destination": "/kb/articles/-this-week-on-how-i-ai-claude-cowork-tutorial-for-non-engine-e738f292"
     },
@@ -1718,6 +1722,10 @@
     {
       "source": "/kb/articles/simon-willison-34ba4869",
       "destination": "/kb/articles/introducing-muse-spark-11-34ba4869"
+    },
+    {
+      "source": "/kb/articles/simon-willison-34c9a490",
+      "destination": "/kb/articles/release-condense-json-10-34c9a490"
     },
     {
       "source": "/kb/articles/simon-willison-351b1187",
