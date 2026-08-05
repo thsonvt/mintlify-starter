@@ -1,0 +1,79 @@
+---
+title: 'Release: condense-json 1.1'
+description: 'The release of condense-json 1.1 introduces new features such as structural replacements and improved merge operations for better integration with LLM'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-03'
+sourceUrl: 'https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything'
+topics: ["json","software-development","llm-integration"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything) · 03/08/2026
+</Info>
+
+## Summary
+
+The release of condense-json 1.1 introduces new features such as structural replacements and improved merge operations for better integration with LLM.
+
+## Key Insights
+
+> "Replacements object can now include values other than strings."
+>
+> — Discussing new features in condense-json 1.1.
+
+> "condense_json() will identify if there are objects that are a close match."
+>
+> — Explaining the merge operations in the updated version.
+
+> "I also added some round-trip tests using the Hypothesis property-based Python testing library."
+>
+> — Mentioning testing improvements in the release.
+
+## Topics
+
+- [json](/kb/topics/json)
+- [software-development](/kb/topics/software-development)
+- [llm-integration](/kb/topics/llm-integration)
+
+---
+
+## Full Article
+
+After shipping condense-json 1.0 I started integrating it into LLM, and found there were some desirable new features already: Replacements object can now include values other than strings. These will be identified and used as structural replacements by condense_json() and uncondense_json(). #8 Objects can be used as the basis for merge operations. condense_json() will identify if there are objects that are a close match and will store instructions for keys to update or delete. uncondense_json() can then apply these merges. I also added some round-trip tests using the Hypothesis property-based Python testing library.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: condense-json 1.0"
+    icon="newspaper"
+    href="/kb/articles/release-condense-json-10-34c9a490"
+  >
+    Simon Willison · reference · 79% similar
+  </Card>
+  <Card
+    title="Release: research-llm-apis 2026-04-04"
+    icon="newspaper"
+    href="/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
+  >
+    Simon Willison · explanation · 50% similar
+  </Card>
+  <Card
+    title="Release: llm-anthropic 0.25"
+    icon="newspaper"
+    href="/kb/articles/release-llm-anthropic-025-133c5e00"
+  >
+    Simon Willison · reference · 47% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything](https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything).
+</Note>

@@ -1,0 +1,80 @@
+---
+title: 'Release: llm-anthropic 0.26'
+description: 'The release of llm-anthropic 0.26 introduces new models and server-side tools, streamlining functionality and enhancing reasoning capabilities.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-04'
+sourceUrl: 'https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything'
+topics: ["llm","anthropic","model-updates","server-side-tools"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything) · 04/08/2026
+</Info>
+
+## Summary
+
+The release of llm-anthropic 0.26 introduces new models and server-side tools, streamlining functionality and enhancing reasoning capabilities.
+
+## Key Insights
+
+> "New models: claude-fable-5, claude-sonnet-5, and claude-opus-5."
+>
+> — Introduction of new models in the llm-anthropic 0.26 release.
+
+> "Reasoning for llm CLI prompts now displays to standard error unless you pass --hide-reasoning/-R."
+>
+> — Changes in how reasoning is displayed in the command line interface.
+
+> "-R/--hide-reasoning now omits reasoning from responses and logs."
+>
+> — Update on the functionality of the reasoning display options.
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [anthropic](/kb/topics/anthropic)
+- [model-updates](/kb/topics/model-updates)
+- [server-side-tools](/kb/topics/server-side-tools)
+
+---
+
+## Full Article
+
+Includes new features enabled by LLM 0.32: New models: claude-fable-5, claude-sonnet-5, and claude-opus-5. #75, #76 Added server-side tools for WebSearch, WebFetch, CodeExecution, and AnthropicMCP, available through LLM's -T interface or Python tools=. The previous -o web_search* options have been removed in favor of -T WebSearch. #79 Upgraded to llm>=0.32. Reasoning, tool calls, tool results, and server-side tool results now stream as typed events. Reasoning for llm CLI prompts now displays to standard error unless you pass --hide-reasoning/-R. Simplified extended thinking to thinking and thinking_effort (low, medium, high, xhigh, or max). Claude 5 models think by default; -o thinking 0 disables thinking for Sonnet 5 and Opus 5, while Fable 5 always thinks. -R/--hide-reasoning now omits reasoning from responses and logs. The thinking_budget, thinking_display, and thinking_adaptive options have been removed. #80
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-anthropic 0.25"
+    icon="newspaper"
+    href="/kb/articles/release-llm-anthropic-025-133c5e00"
+  >
+    Simon Willison · reference · 86% similar
+  </Card>
+  <Card
+    title="New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging"
+    icon="newspaper"
+    href="/kb/articles/new-release-of-llm-adds-support-for-reasoning-traces-openai--996b94aa"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a2-8db1edb7"
+  >
+    Simon Willison · reference · 75% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything](https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything).
+</Note>
