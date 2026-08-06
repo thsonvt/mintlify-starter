@@ -1,0 +1,81 @@
+---
+title: 'Build an AI code review bot in 30 minutes with Vercel Eve'
+description: 'Lenny Rachitsky discusses building an AI code review bot named Merge Mommy using Vercel Eve, which automates PR reviews and improves efficiency.'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-08-05'
+sourceUrl: 'https://www.lennysnewsletter.com/p/build-an-ai-code-review-bot-in-30'
+topics: ["ai-code-review","vercel-eve","automation","pr-approval","risk-management"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/build-an-ai-code-review-bot-in-30) · 05/08/2026
+</Info>
+
+## Summary
+
+Lenny Rachitsky discusses building an AI code review bot named Merge Mommy using Vercel Eve, which automates PR reviews and improves efficiency.
+
+## Key Insights
+
+> "AI writes most of my code now, and that created a new problem: a PR queue I couldn't keep up with."
+>
+> — Introduction to the challenges faced with AI-generated code.
+
+> "Why you don't have to review every AI-generated PR."
+>
+> — Highlighting the main argument of the article regarding AI in PR processes.
+
+> "How I built a full PR review agent in Codex with one prompt and a few steering turns."
+>
+> — Describing the simplicity of creating the AI agent.
+
+## Topics
+
+- [ai-code-review](/kb/topics/ai-code-review)
+- [vercel-eve](/kb/topics/vercel-eve)
+- [automation](/kb/topics/automation)
+- [pr-approval](/kb/topics/pr-approval)
+- [risk-management](/kb/topics/risk-management)
+
+---
+
+## Full Article
+
+AI writes most of my code now, and that created a new problem: a PR queue I couldnt keep up with. In this episode, I walk through how I built Merge Mommy, a Vercel Eve agent that reads every PR after checks pass, scores it across six risk dimensions, auto-approves the low-risk ones, and pings me in Slack for anything that needs a human. I built the whole thing in one Codex session, its SOC 2 compatible, and its already cleared my backlog.Listen or watch on YouTube, Spotify, or Apple PodcastsWhat youll learn:Why AI-generated PRs create a review bottleneck and why the answer isnt reviewing all of themHow Intercom 5xd PR approval speed and reduced revert rates by putting AI in the review loopWhy Vercel Eve is the simplest framework Ive found for deploying AI agents in Slack and GitHubHow I built a full PR review agent in Codex with one prompt and a few steering turnsThe six components I use to score PR risk (blast radius, reversibility, data security, ops impact, verification gap, and change surface)How I used Chrome browser use to handle Slack bot and GitHub app configuration so I never had to click through setup screens manuallyWhy auto-approved PRs can be SOC 2 compliant as long as the process is auditable, queryable, and in your risk policyHow to set up Slack escalation so low-risk PRs become a two-click merge with no manual reviewBrought to you by:WorkOSMake your app Enterprise Ready todayIn this episode, we cover:(00:00) The PR review backlog problem nobodys talking about(02:35) Why you dont have to review every AI-generated PR(05:14) How Intercom built AI-approved PRs (and proved theyre safer)(06:10) How the Eve framework works (directory, skills, channels, connectors)(09:16) The Codex prompt I used to build the entire bot(11:36) What the agent actually does: read, score, approve, or escalate(13:07) Setting up your Eve agent(15:47) The six-component risk scoring model(17:23) Merge Mommy in action: three live PR examples(21:10) Recap and how to build your own versionTools referenced: Vercel Eve: https://vercel.com/eve Vercel AI SDK: https://sdk.vercel.ai/ Vercel Chat SDK: https://chat-sdk.dev/ Codex (OpenAI): https://openai.com/codexOther references: AI is approving our pull requests: Heres how we made it safe: https://www.intercom.com/blog/ai-is-approving-our-pull-requests-heres-how-we-made-it-safe/ Review is the bottleneck now: How we let AI approve pull requests (safely): https://rewind.com/blog/ai-approve-pull-requests-safely/Where to find Claire Vo:ChatPRD: https://www.chatprd.ai/Website: https://clairevo.com/LinkedIn: https://www.linkedin.com/in/clairevo/X: https://x.com/clairevoProduction and marketing by https://penname.co/. For inquiries about sponsoring the podcast, email jordan@penname.co.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How Intercom 2x’d their engineering velocity in 9 months with Claude Code | Brian Scanlan"
+    icon="newspaper"
+    href="/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
+  >
+    Lenny Rachitsky · how-to · 76% similar
+  </Card>
+  <Card
+    title="How Braintrust uses AI agents, evals, and CI to ship better software | Ankur Goyal"
+    icon="newspaper"
+    href="/kb/articles/how-braintrust-uses-ai-agents-evals-and-ci-to-ship-better-so-a37ceded"
+  >
+    Lenny Rachitsky · how-to · 76% similar
+  </Card>
+  <Card
+    title="How Coinbase scaled AI to 1,000+ engineers | Chintan Turakhia"
+    icon="newspaper"
+    href="/kb/articles/how-coinbase-scaled-ai-to-1000-engineers-chintan-turakhia-9638a3bd"
+  >
+    Lenny Rachitsky · how-to · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/build-an-ai-code-review-bot-in-30](https://www.lennysnewsletter.com/p/build-an-ai-code-review-bot-in-30).
+</Note>

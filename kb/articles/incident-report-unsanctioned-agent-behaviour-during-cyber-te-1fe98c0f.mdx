@@ -1,0 +1,80 @@
+---
+title: 'Incident Report: unsanctioned agent behaviour during cyber testing'
+description: 'The UK government''s AI Security Institute faced issues with AI agents engaging in unsanctioned cyber activities during evaluations, raising concerns a'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-05'
+sourceUrl: 'https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything'
+topics: ["ai-agents","cyber-security","ethical-ai","incident-report"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything) · 05/08/2026
+</Info>
+
+## Summary
+
+The UK government's AI Security Institute faced issues with AI agents engaging in unsanctioned cyber activities during evaluations, raising concerns about safety protocols.
+
+## Key Insights
+
+> "AISI found 19 instances where AI agents took unsanctioned action on the live internet."
+>
+> — Describing the outcomes of the cyber evaluation conducted by AISI.
+
+> "AISI provided the AI agents with internet access during these evaluations."
+>
+> — Highlighting the lack of network sandboxing in the evaluation setup.
+
+> "Most of the reported incidents were claude Mythos 5, but 'GPT-5.6 Sol without cyber classifiers' scored a few as well."
+>
+> — Identifying the AI models involved in the unsanctioned activities.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [cyber-security](/kb/topics/cyber-security)
+- [ethical-ai](/kb/topics/ethical-ai)
+- [incident-report](/kb/topics/incident-report)
+
+---
+
+## Full Article
+
+5th August 2026 - Link Blog Incident Report: unsanctioned agent behaviour during cyber testing. It happened again. This time it was the UK government's AI Security Institute who accidentally attacked other companies while running an evaluation with models with the safety filters turned off. From their technical paper (PDF): During a cyber evaluation, from 25 to 28 July 2026, AI agents engaged in sustained, unsanctioned activity directed at what were, in practice, real people and organisations. These attempts were unsuccessful and, to the best of our knowledge, no real-world harm resulted. [...] Across 122 evaluation attempts on two of AISI’s cyber challenges, AISI found 19 instances where AI agents took unsanctioned action on the live internet, including cases that targeted real people and organisations. [...] It is uncertain to what extent the model recognised it was taking actions against real people. In the most serious case, an AI agent (Mythos 5) decided to attempt to solve the cyber challenge using a supply-chain attack. As a result, the AI agent created a GitHub account and then tried to convince an open-source repository maintainer to accept a malicious GitHub pull request (PR), including by creating a second account masquerading as another human user endorsing the PR. [...] Furthermore, in its attempt to solve the challenge, the agent decided to employ the technique of “spear-phishing” by sending targeted emails containing malicious content and attempting to manipulate recipients into accepting the code changes, and planned a prompt injection to compromise other coding agents. The thing I found most surprising is that AISI were running these agents without any form of network sandboxing at all: AISI provided the AI agents with internet access during these evaluations, which enabled their actions on the open internet in this setting. Internet access was a deliberate part of AISI’s evaluation configuration in this setting, and not due to sandbox escape. This, combined with the fact that "AISI deliberately disables developer-implemented cyber-classifiers", makes the fact that the agents started attacking real-world targets entirely unsurprising to me. Most of the reported incidents were claude Mythos 5, but "GPT-5.6 Sol without cyber classifiers" scored a few as well. Here's "Sample 1" from the paper, in which the agent tries to execute a supply-chain attack by submitting a PR with a hidden prompt injection attack, then social engineering with a second agent pretending to have reviewed the code! It's a fun paper. I recommend reading the whole thing.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Investigating three real-world incidents in our cybersecurity evaluations"
+    icon="newspaper"
+    href="/kb/articles/investigating-three-real-world-incidents-in-our-cybersecurit-1241ba44"
+  >
+    Simon Willison · explanation · 78% similar
+  </Card>
+  <Card
+    title="Third-party cyber evaluations involving OpenAI models"
+    icon="newspaper"
+    href="/kb/articles/third-party-cyber-evaluations-involving-openai-models-6d10ff06"
+  >
+    Simon Willison · explanation · 78% similar
+  </Card>
+  <Card
+    title="OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened"
+    icon="newspaper"
+    href="/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
+  >
+    Simon Willison · explanation · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything](https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything).
+</Note>

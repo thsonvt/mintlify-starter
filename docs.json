@@ -900,6 +900,10 @@
       "destination": "/kb/articles/a-rational-conversation-on-where-ai-is-actually-going-benedi-49a1f665"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-49b625ed",
+      "destination": "/kb/articles/build-an-ai-code-review-bot-in-30-minutes-with-vercel-eve-49b625ed"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4ac279a9",
       "destination": "/kb/articles/the-new-inner-game-your-unfair-advantage-in-the-age-of-ai-4ac279a9"
     },
@@ -1360,6 +1364,10 @@
       "destination": "/kb/articles/the-complete-guide-889ad878"
     },
     {
+      "source": "/kb/articles/simon-willison-02af4c10",
+      "destination": "/kb/articles/one-shotting-a-raccoon-heist-game-using-claude-fable-5-02af4c10"
+    },
+    {
       "source": "/kb/articles/simon-willison-035fb1d7",
       "destination": "/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
     },
@@ -1610,6 +1618,10 @@
     {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1fe98c0f",
+      "destination": "/kb/articles/incident-report-unsanctioned-agent-behaviour-during-cyber-te-1fe98c0f"
     },
     {
       "source": "/kb/articles/simon-willison-20dca3df",
@@ -2020,6 +2032,10 @@
       "destination": "/kb/articles/unicode-explorer-using-binary-search-over-fetch-http-range-r-548dc4c0"
     },
     {
+      "source": "/kb/articles/simon-willison-54942343",
+      "destination": "/kb/articles/an-ai-model-from-meta-also-hacked-another-company-during-tes-54942343"
+    },
+    {
       "source": "/kb/articles/simon-willison-56939ccf",
       "destination": "/kb/articles/a-quote-from-seth-larson-56939ccf"
     },
@@ -2262,6 +2278,10 @@
     {
       "source": "/kb/articles/simon-willison-6ce132ae",
       "destination": "/kb/articles/porting-the-moebius-02b-image-inpainting-model-to-run-in-the-6ce132ae"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6d10ff06",
+      "destination": "/kb/articles/third-party-cyber-evaluations-involving-openai-models-6d10ff06"
     },
     {
       "source": "/kb/articles/simon-willison-6db9ecfa",
@@ -3172,6 +3192,10 @@
       "destination": "/kb/articles/a-quote-from-kenton-varda-d7c827b1"
     },
     {
+      "source": "/kb/articles/simon-willison-d8b0eed2",
+      "destination": "/kb/articles/introducing-muse-code-and-muse-spark-12-d8b0eed2"
+    },
+    {
       "source": "/kb/articles/simon-willison-d8de17a0",
       "destination": "/kb/articles/research-javascript-sandboxing-research-d8de17a0"
     },
@@ -3930,6 +3954,10 @@
     {
       "source": "/kb/articles/swyx-7379e7ff",
       "destination": "/kb/articles/cursors-third-era-cloud-agents-7379e7ff"
+    },
+    {
+      "source": "/kb/articles/swyx-74772026",
+      "destination": "/kb/articles/ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-c-74772026"
     },
     {
       "source": "/kb/articles/swyx-75c7e173",
