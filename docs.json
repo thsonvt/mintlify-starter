@@ -2112,6 +2112,10 @@
       "destination": "/kb/articles/on-the-dl-5caece01"
     },
     {
+      "source": "/kb/articles/simon-willison-5cfe69d3",
+      "destination": "/kb/articles/release-datasette-10a38-5cfe69d3"
+    },
+    {
       "source": "/kb/articles/simon-willison-5d131547",
       "destination": "/kb/articles/release-luau-wasm-01a0-5d131547"
     },
@@ -2162,6 +2166,10 @@
     {
       "source": "/kb/articles/simon-willison-5f2ace57",
       "destination": "/kb/articles/please-please-please-stop-using-passkeys-for-encrypting-user-5f2ace57"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5f62e769",
+      "destination": "/kb/articles/release-datasette-0653-5f62e769"
     },
     {
       "source": "/kb/articles/simon-willison-5fd79031",
@@ -2410,6 +2418,10 @@
     {
       "source": "/kb/articles/simon-willison-8560706c",
       "destination": "/kb/articles/release-llm-gemini-032a0-8560706c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-85c65922",
+      "destination": "/kb/articles/simon-willison-on-technical-blogging-85c65922"
     },
     {
       "source": "/kb/articles/simon-willison-86606062",
@@ -4010,6 +4022,10 @@
     {
       "source": "/kb/articles/swyx-815e6177",
       "destination": "/kb/articles/captaining-imo-gold-deep-think-on-policy-rl-feeling-the-agi--815e6177"
+    },
+    {
+      "source": "/kb/articles/swyx-81e4c26d",
+      "destination": "/kb/articles/ainews-amd-buys-taalas-81e4c26d"
     },
     {
       "source": "/kb/articles/swyx-81ffa40b",

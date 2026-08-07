@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette 1.0a38'
+description: 'This release addresses a SQL injection vulnerability in Datasette that could allow access to private tables when public and private tables are mixed i'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-06'
+sourceUrl: 'https://simonwillison.net/2026/Aug/6/datasette/#atom-everything'
+topics: ["sql-injection","datasette","security"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/6/datasette/#atom-everything) · 06/08/2026
+</Info>
+
+## Summary
+
+This release addresses a SQL injection vulnerability in Datasette that could allow access to private tables when public and private tables are mixed in the same database.
+
+## Key Insights
+
+> "Site administrators who serve private tables in this way are advised to disable the execute-sql permission on that database."
+>
+> — Advice for site administrators regarding security measures.
+
+> "The bug that has been fixed would have allowed users with access to any public table to execute SQL injection attacks."
+>
+> — Description of the vulnerability addressed in the release.
+
+> "This fix is also available in Datasette 0.65.3."
+>
+> — Information about the availability of the fix in a previous version.
+
+## Topics
+
+- [sql-injection](/kb/topics/sql-injection)
+- [datasette](/kb/topics/datasette)
+- [security](/kb/topics/security)
+
+---
+
+## Full Article
+
+This release fixes a SQL injection security issue that affects Datasette instances that serve a mixture of public and private tables in the same database, with access configured using the Datasette permissions system. Site administrators who serve private tables in this way are advised to disable the execute-sql permission ` on that database to prevent users from accessing private tables using raw SQL queries. The bug that has been fixed would have allowed users with access to any public table to execute SQL injection attacks despite that restriction, giving them read-only access to data in private tables in the same database. This fix is also available in Datasette 0.65.3. Thankfully this particular configuration - private tables and public tables exposed for the same database within the same instance - is likely to be rare. I've not encountered an instance like that myself.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a31"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a31-cb4ed50f"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a29"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a29-1e4ad5f8"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/6/datasette/#atom-everything](https://simonwillison.net/2026/Aug/6/datasette/#atom-everything).
+</Note>
