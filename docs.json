@@ -1580,6 +1580,10 @@
       "destination": "/kb/articles/release-datasette-llm-01a1-1a0b581b"
     },
     {
+      "source": "/kb/articles/simon-willison-1b53d227",
+      "destination": "/kb/articles/now-we-have-a-timeline-of-the-openai-accidental-attack-again-1b53d227"
+    },
+    {
       "source": "/kb/articles/simon-willison-1b54d4b1",
       "destination": "/kb/articles/gpt-54-mini-and-gpt-54-nano-which-can-describe-76000-photos--1b54d4b1"
     },
@@ -2196,6 +2200,10 @@
       "destination": "/kb/articles/thoughts-on-slowing-the-fuck-down-62e9956a"
     },
     {
+      "source": "/kb/articles/simon-willison-631c0434",
+      "destination": "/kb/articles/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop--631c0434"
+    },
+    {
       "source": "/kb/articles/simon-willison-635e0854",
       "destination": "/kb/articles/pretext-635e0854"
     },
@@ -2314,6 +2322,10 @@
     {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7178bc01",
+      "destination": "/kb/articles/a-quote-from-john-gruber-7178bc01"
     },
     {
       "source": "/kb/articles/simon-willison-71d11f50",
@@ -3528,6 +3540,10 @@
       "destination": "/kb/articles/pipenetworkminimax-h3-mlx-fcc5022a"
     },
     {
+      "source": "/kb/articles/simon-willison-fd1d9461",
+      "destination": "/kb/articles/moonlight-mayhem-raccoon-heist-by-codex-gpt-56-sol-ultra-fd1d9461"
+    },
+    {
       "source": "/kb/articles/simon-willison-fd2ff761",
       "destination": "/kb/articles/release-datasette-apps-02a0-fd2ff761"
     },
@@ -4282,6 +4298,10 @@
     {
       "source": "/kb/articles/swyx-e8b69d77",
       "destination": "/kb/articles/forward-deployed-engineers-and-the-future-of-software-engine-e8b69d77"
+    },
+    {
+      "source": "/kb/articles/swyx-e933f569",
+      "destination": "/kb/articles/ainews-zawinskis-law-of-multiagents-e933f569"
     },
     {
       "source": "/kb/articles/swyx-ea14f3eb",
