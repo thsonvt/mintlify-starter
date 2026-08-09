@@ -1128,6 +1128,10 @@
       "destination": "/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9eceeeca",
+      "destination": "/kb/articles/-community-wisdom-crafting-outreach-that-reads-as-authentic--9eceeeca"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9fc122d2",
       "destination": "/kb/articles/how-to-build-a-company-that-withstands-any-era-eric-ries-lea-9fc122d2"
     },
@@ -2124,6 +2128,10 @@
       "destination": "/kb/articles/release-luau-wasm-01a0-5d131547"
     },
     {
+      "source": "/kb/articles/simon-willison-5d376560",
+      "destination": "/kb/articles/comment-now-we-have-a-timeline-of-the-openai-accidental-atta-5d376560"
+    },
+    {
       "source": "/kb/articles/simon-willison-5d5b3c91",
       "destination": "/kb/articles/changes-in-the-system-prompt-between-claude-opus-46-and-47-5d5b3c91"
     },
@@ -2182,6 +2190,10 @@
     {
       "source": "/kb/articles/simon-willison-60170551",
       "destination": "/kb/articles/release-datasette-ports-01-60170551"
+    },
+    {
+      "source": "/kb/articles/simon-willison-60c3ba95",
+      "destination": "/kb/articles/auto-mode-is-now-the-default-in-claude-code-for-pro-max-and--60c3ba95"
     },
     {
       "source": "/kb/articles/simon-willison-612211c9",

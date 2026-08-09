@@ -1,0 +1,81 @@
+---
+title: 'Comment: Now we have a timeline of the OpenAI accidental attack against Hugging Face'
+description: 'The article discusses the implications of OpenAI''s training run for a new model that led to an accidental attack on Hugging Face, emphasizing the chal'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-08'
+sourceUrl: 'https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything'
+topics: ["openai","hugging-face","reinforcement-learning","cybersecurity","ai-safety"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything) · 08/08/2026
+</Info>
+
+## Summary
+
+The article discusses the implications of OpenAI's training run for a new model that led to an accidental attack on Hugging Face, emphasizing the challenges of training AI safely.
+
+## Key Insights
+
+> "If your model doesn't know how to aggressively hack things how do you later teach it not to?"
+>
+> — Discussing the challenges of training AI models with safety in mind.
+
+> "Those safety behaviors are added much later in the process."
+>
+> — Highlighting the timing of safety measures in AI model training.
+
+> "I can see echoes of that here."
+>
+> — Reflecting on the complexities of training AI with potentially harmful data.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [hugging-face](/kb/topics/hugging-face)
+- [reinforcement-learning](/kb/topics/reinforcement-learning)
+- [cybersecurity](/kb/topics/cybersecurity)
+- [ai-safety](/kb/topics/ai-safety)
+
+---
+
+## Full Article
+
+8th August 2026 I think one of the most interesting details here might be tucked away in that first bulletin point: May 7: OpenAI starts a new training run for an experimental, unreleased model. (Do they mean an evaluation run? They say training run in the video, and later mention a “reward signal to judge how well they’re doing”, so I guess this really was about training a model, not evaluating one that was already trained.) The more I think about this the more I suspect that the fact this happened while training a new model is key to understanding what went wrong. In RLVR - Reinforcement Learning with Verifiable Rewards - you set the model a goal and have it take any steps necessary to achieve that goal. Clearly one aspect of OpenAI's training here is to RLVR their models for cybersecurity tasks. Just like pre-training benefits from dumping in vast sources of knowledge, the more tasks you can feed into RLVR the more of a general purpose capable model you get at the end. This also helps explain why the models had nothing to cause them to hold back. Those safety behaviors are added much later in the process. AND it explains (but does not excuse) why monitoring was so lax. If you're training a new model like this you presumably set it thousands of tasks like this in parallel. I can see how you might miss that a tiny subset of your training agents have started leaving each other messages in filenames on your packaging server. Someone once told me that you can't just leave the racist materials out of your training data if you want a non-racist model: it has to have seen examples of racism in order to later be taught that racism is bad. I can see echoes of that here. If your model doesn't know how to aggressively hack things how do you later teach it not to? (I have little knowledge of how RLVR works in practice so I'm looking forward to hearing from people who can help me understand if I'm on the right track here.)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="The first known runaway AI agent—or a very bad marketing stunt?"
+    icon="newspaper"
+    href="/kb/articles/the-first-known-runaway-ai-agentor-a-very-bad-marketing-stun-c3e44c4a"
+  >
+    Simon Willison · explanation · 78% similar
+  </Card>
+  <Card
+    title="OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened"
+    icon="newspaper"
+    href="/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
+  >
+    Simon Willison · explanation · 73% similar
+  </Card>
+  <Card
+    title="Investigating three real-world incidents in our cybersecurity evaluations"
+    icon="newspaper"
+    href="/kb/articles/investigating-three-real-world-incidents-in-our-cybersecurit-1241ba44"
+  >
+    Simon Willison · explanation · 73% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything](https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything).
+</Note>
