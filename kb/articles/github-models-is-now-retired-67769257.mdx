@@ -1,0 +1,80 @@
+---
+title: 'GitHub Models is now retired'
+description: 'GitHub Models has been retired, impacting workflows that relied on its API for LLM integration in GitHub Actions.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-09'
+sourceUrl: 'https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything'
+topics: ["github-models","llm-integration","api-retirement","github-actions"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything) · 09/08/2026
+</Info>
+
+## Summary
+
+GitHub Models has been retired, impacting workflows that relied on its API for LLM integration in GitHub Actions.
+
+## Key Insights
+
+> "GitHub Models is temporarily unavailable as part of a scheduled retirement brownout."
+>
+> — Error message encountered during a GitHub Actions run.
+
+> "GitHub didn't share the reason behind the shutdown, but my bet is that it fits the pattern where coding agent patterns made it prohibitively expensive."
+>
+> — Speculation on the reasons for the retirement of GitHub Models.
+
+> "I swapped GitHub Models out for an OpenAI API key with a monthly spending limit."
+>
+> — Describing the transition to using OpenAI API after GitHub Models' retirement.
+
+## Topics
+
+- [github-models](/kb/topics/github-models)
+- [llm-integration](/kb/topics/llm-integration)
+- [api-retirement](/kb/topics/api-retirement)
+- [github-actions](/kb/topics/github-actions)
+
+---
+
+## Full Article
+
+9th August 2026 - Link Blog GitHub Models is now retired. I missed this news until today, when the GitHub Actions run for my simonw/research repository failed with this error message: GitHub Models is temporarily unavailable as part of a scheduled retirement brownout. That message is already stale, because the retirement has been completed. GitHub Models was an odd-shaped duck. GitHub provided a model playground tool and a unified API across a bunch of different LLM providers, with the biggest benefit being that code running in GitHub Actions could use the GitHub API key already present in that environment to execute prompts. This made it easy to build things that fit GitHub Next's Continuous AI concept. GitHub didn't share the reason behind the shutdown, but my bet is that it fits the pattern where coding agent patterns made it prohibitively expensive to offer free or subsidized tokens. My workflow uses an LLM call to create folder summaries for the README, using this code here. I swapped GitHub Models out for an OpenAI API key with a monthly spending limit, and I'm now generating my summaries using GPT-5.6 Luna.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Changes to GitHub Copilot Individual plans"
+    icon="newspaper"
+    href="/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+  <Card
+    title="[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December"
+    icon="newspaper"
+    href="/kb/articles/ainews-glm-gpt-glm-52-passes-vibe-check-zai-forecasts-open-f-607572ec"
+  >
+    Swyx · explanation · 53% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a2-8db1edb7"
+  >
+    Simon Willison · reference · 53% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything](https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything).
+</Note>

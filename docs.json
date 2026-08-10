@@ -1116,6 +1116,10 @@
       "destination": "/kb/articles/-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-a-98efb619"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-98f8ab27",
+      "destination": "/kb/articles/the-playbook-for-building-high-talent-density-teams-adam-war-98f8ab27"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9c26a6a0",
       "destination": "/kb/articles/head-of-claude-code-what-happens-after-coding-is-solved-bori-9c26a6a0"
     },
@@ -1666,6 +1670,10 @@
     {
       "source": "/kb/articles/simon-willison-24894364",
       "destination": "/kb/articles/release-llm-mcp-client-01a0-24894364"
+    },
+    {
+      "source": "/kb/articles/simon-willison-24996725",
+      "destination": "/kb/articles/a-quote-from-openclaw-24996725"
     },
     {
       "source": "/kb/articles/simon-willison-25f465b1",
@@ -2236,6 +2244,10 @@
       "destination": "/kb/articles/taalas-serves-llama-31-8b-at-17000-tokenssecond-67189a5f"
     },
     {
+      "source": "/kb/articles/simon-willison-67769257",
+      "destination": "/kb/articles/github-models-is-now-retired-67769257"
+    },
+    {
       "source": "/kb/articles/simon-willison-67c65db1",
       "destination": "/kb/articles/better-models-worse-tools-67c65db1"
     },
@@ -2254,6 +2266,10 @@
     {
       "source": "/kb/articles/simon-willison-68c4826d",
       "destination": "/kb/articles/release-llm-all-models-async-01-68c4826d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-68ebf32e",
+      "destination": "/kb/articles/research-sqlite-compressed-text-history-prototypes-68ebf32e"
     },
     {
       "source": "/kb/articles/simon-willison-6998d31c",
@@ -2738,6 +2754,10 @@
     {
       "source": "/kb/articles/simon-willison-a581c385",
       "destination": "/kb/articles/a-quote-from-martin-fowler-a581c385"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a5d46a8e",
+      "destination": "/kb/articles/a-quote-from-claude-opus-5-system-prompt-a5d46a8e"
     },
     {
       "source": "/kb/articles/simon-willison-a624fb3a",
