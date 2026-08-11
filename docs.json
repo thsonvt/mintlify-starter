@@ -1016,6 +1016,10 @@
       "destination": "/kb/articles/i-built-a-custom-slack-inbox-it-was-easier-than-youd-think-y-72d57342"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-77fc7844",
+      "destination": "/kb/articles/claude-code-for-normal-people-skills-voice-mode-and-how-to-c-77fc7844"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-793a3aad",
       "destination": "/kb/articles/-community-wisdom-getting-started-with-open-source-models-ma-793a3aad"
     },
@@ -1218,6 +1222,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-c7b51e5b",
       "destination": "/kb/articles/-community-wisdom-what-great-product-leaders-do-differently--c7b51e5b"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-ccb4fb63",
+      "destination": "/kb/articles/-how-i-ai-build-an-ai-code-review-bot-in-30-minutes-claude-c-ccb4fb63"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-d16a3274",
@@ -1470,6 +1478,10 @@
     {
       "source": "/kb/articles/simon-willison-0fa21631",
       "destination": "/kb/articles/london-stock-exchange-raspberry-pi-holdings-plc-0fa21631"
+    },
+    {
+      "source": "/kb/articles/simon-willison-100ca7eb",
+      "destination": "/kb/articles/introducing-muse-glimmer-100ca7eb"
     },
     {
       "source": "/kb/articles/simon-willison-103c10e6",
@@ -3678,6 +3690,10 @@
     {
       "source": "/kb/articles/swyx-126b8d87",
       "destination": "/kb/articles/ainews-anthropics-agent-autonomy-study-126b8d87"
+    },
+    {
+      "source": "/kb/articles/swyx-13f853d5",
+      "destination": "/kb/articles/ainews-muse-glimmer-and-spark-open-weights-return-personal-s-13f853d5"
     },
     {
       "source": "/kb/articles/swyx-14e970f9",
