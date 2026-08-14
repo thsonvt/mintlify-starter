@@ -1,0 +1,79 @@
+---
+title: 'Release: sqlite-utils 4.2'
+description: 'The release of sqlite-utils 4.2 introduces significant improvements to the table.transform() feature, enhancing support for complex schema alterations'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-13'
+sourceUrl: 'https://simonwillison.net/2026/Aug/13/sqlite-utils/'
+topics: ["sqlite","database","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/13/sqlite-utils/) · 13/08/2026
+</Info>
+
+## Summary
+
+The release of sqlite-utils 4.2 introduces significant improvements to the table.transform() feature, enhancing support for complex schema alterations.
+
+## Key Insights
+
+> "transform() now preserves a much larger array of edge-case schema definitions"
+>
+> — Discussing the enhancements made to the table.transform() feature.
+
+> "Includes contributions from Bunlong Heng, ethanhawkes-gif, Rami Abdelrazzaq, nyxst4ck, and ikatyal2110."
+>
+> — Acknowledging contributors to the release.
+
+> "It later turned out 4.2 had a crashing bug, fixed in 4.2.1."
+>
+> — Mentioning a bug that was present in the initial release.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [database](/kb/topics/database)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+Lots of improvements in this one relating to the table.transform() feature, which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one. transform() now preserves a much larger array of edge-case schema definitions, including check constraints, unique constraints and even comments describing the columns. There are also new introspection properties for check constraints, and a whole lot of other smaller changes. Includes contributions from Bunlong Heng, ethanhawkes-gif, Rami Abdelrazzaq, nyxst4ck, and ikatyal2110. (It later turned out 4.2 had a crashing bug, fixed in 4.2.1.)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: sqlite-utils 4.1.1"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-411-1f3d23d9"
+  >
+    Simon Willison · reference · 79% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.1"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-41-c6c46289"
+  >
+    Simon Willison · reference · 75% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc3"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/13/sqlite-utils/](https://simonwillison.net/2026/Aug/13/sqlite-utils/).
+</Note>

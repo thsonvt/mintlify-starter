@@ -1,0 +1,76 @@
+---
+title: 'Release: sqlite-utils 4.2.1'
+description: 'The release of sqlite-utils 4.2.1 fixes a crashing bug related to missing dependencies and introduces a smoke test for the CLI tool.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-13'
+sourceUrl: 'https://simonwillison.net/2026/Aug/13/sqlite-utils-2/'
+topics: ["sqlite","python","cli-tools","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/13/sqlite-utils-2/) · 13/08/2026
+</Info>
+
+## Summary
+
+The release of sqlite-utils 4.2.1 fixes a crashing bug related to missing dependencies and introduces a smoke test for the CLI tool.
+
+## Key Insights
+
+> "It turned out the typing-extensions package was not listed as a dependency for sqlite-utils"
+>
+> — Discussing the cause of the crashing bug.
+
+> "I figured out how to run a smoke test to ensure the CLI tool still works even without those dev dependencies"
+>
+> — Explaining the solution implemented in the release.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [python](/kb/topics/python)
+- [cli-tools](/kb/topics/cli-tools)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+Fixes a crashing bug in sqlite-utils 4.2. I'd introduced code that looks like this: from typing_extensions import Self It turned out the typing-extensions package was not listed as a dependency for sqlite-utils - it was installed by one of the other dependencies in the dev dependency group, but when you uvx sqlite-utils directly you don't get those dependencies. As part of fixing this I figured out how to run a smoke test to ensure the CLI tool still works even without those dev dependencies, which can be run from the project checkout: uv run --isolated --no-default-groups sqlite-utils --help The --no-default-groups argument prevents it from installing that default dev group, and --isolated means that even if there is a .venv/ folder containing extra dependencies they will be ignored for the duration of that uv run command.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="sqlite-utils 4.0rc1 adds migrations and nested transactions"
+    icon="newspaper"
+    href="/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+  >
+    Simon Willison · reference · 67% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc4"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc4-ab700ef7"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+  <Card
+    title="Release: sqlite-utils 4.0rc3"
+    icon="newspaper"
+    href="/kb/articles/release-sqlite-utils-40rc3-c3e1a021"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/13/sqlite-utils-2/](https://simonwillison.net/2026/Aug/13/sqlite-utils-2/).
+</Note>

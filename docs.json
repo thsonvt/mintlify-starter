@@ -912,6 +912,10 @@
       "destination": "/kb/articles/spec-driven-development-the-ai-engineering-workflow-at-notio-4dc5313e"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4dc70e92",
+      "destination": "/kb/articles/how-to-make-people-care-about-your-startup-4dc70e92"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4de3be9c",
       "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
     },
@@ -1528,6 +1532,10 @@
       "destination": "/kb/articles/release-llm-anthropic-025-133c5e00"
     },
     {
+      "source": "/kb/articles/simon-willison-134a4048",
+      "destination": "/kb/articles/there-are-no-lossless-transformations-of-natural-language-te-134a4048"
+    },
+    {
       "source": "/kb/articles/simon-willison-1364a25f",
       "destination": "/kb/articles/coding-after-coders-the-end-of-computer-programming-as-we-kn-1364a25f"
     },
@@ -1594,6 +1602,10 @@
     {
       "source": "/kb/articles/simon-willison-19af0653",
       "destination": "/kb/articles/thoughts-on-openai-acquiring-astral-and-uvruffty-19af0653"
+    },
+    {
+      "source": "/kb/articles/simon-willison-19b11f89",
+      "destination": "/kb/articles/there-are-no-lossless-transformations-of-natural-language-te-19b11f89"
     },
     {
       "source": "/kb/articles/simon-willison-1a0b581b",
@@ -1984,6 +1996,10 @@
       "destination": "/kb/articles/welcome-to-the-datasette-blog-499c7d7f"
     },
     {
+      "source": "/kb/articles/simon-willison-49a5531a",
+      "destination": "/kb/articles/release-sqlite-utils-42-49a5531a"
+    },
+    {
       "source": "/kb/articles/simon-willison-4a95457e",
       "destination": "/kb/articles/a-quote-from-soohoon-choi-4a95457e"
     },
@@ -2038,6 +2054,10 @@
     {
       "source": "/kb/articles/simon-willison-51fc5a28",
       "destination": "/kb/articles/release-datasette-agent-01a4-51fc5a28"
+    },
+    {
+      "source": "/kb/articles/simon-willison-52df6aca",
+      "destination": "/kb/articles/release-datasette-upload-dbs-05a0-52df6aca"
     },
     {
       "source": "/kb/articles/simon-willison-53820500",
@@ -2372,6 +2392,10 @@
       "destination": "/kb/articles/ruff-v0160-71d11f50"
     },
     {
+      "source": "/kb/articles/simon-willison-7274da00",
+      "destination": "/kb/articles/release-sqlite-utils-421-7274da00"
+    },
+    {
       "source": "/kb/articles/simon-willison-741115e1",
       "destination": "/kb/articles/a-quote-from-new-york-times-editors-note-741115e1"
     },
@@ -2384,12 +2408,20 @@
       "destination": "/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
     },
     {
+      "source": "/kb/articles/simon-willison-760a015a",
+      "destination": "/kb/articles/stealing-reasoning-traces-from-proprietary-llm-apis-760a015a"
+    },
+    {
       "source": "/kb/articles/simon-willison-76718f52",
       "destination": "/kb/articles/ai-worming-through-word-76718f52"
     },
     {
       "source": "/kb/articles/simon-willison-76757baf",
       "destination": "/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
+    },
+    {
+      "source": "/kb/articles/simon-willison-769b98ab",
+      "destination": "/kb/articles/release-alchemy-utils-01a1-769b98ab"
     },
     {
       "source": "/kb/articles/simon-willison-76b24dc2",
@@ -2508,6 +2540,10 @@
       "destination": "/kb/articles/adding-a-new-content-type-to-my-blog-to-newsletter-tool-agen-8a6a1c68"
     },
     {
+      "source": "/kb/articles/simon-willison-8aac5502",
+      "destination": "/kb/articles/a-quote-from-openclaw-running-opus-46-8aac5502"
+    },
+    {
       "source": "/kb/articles/simon-willison-8bc90fcd",
       "destination": "/kb/articles/an-inside-look-at-the-relay-market-powering-token-resellers--8bc90fcd"
     },
@@ -2582,6 +2618,10 @@
     {
       "source": "/kb/articles/simon-willison-927b858a",
       "destination": "/kb/articles/research-claude-system-prompts-as-a-git-timeline-927b858a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-92d0a7ab",
+      "destination": "/kb/articles/deepseek-v4-pro-0813-on-openrouter-92d0a7ab"
     },
     {
       "source": "/kb/articles/simon-willison-92e1146e",
@@ -2836,6 +2876,10 @@
       "destination": "/kb/articles/release-sqlite-utils-40rc4-ab700ef7"
     },
     {
+      "source": "/kb/articles/simon-willison-ab8f15bf",
+      "destination": "/kb/articles/release-datasette-upload-dbs-05a0-ab8f15bf"
+    },
+    {
       "source": "/kb/articles/simon-willison-ab91a6fb",
       "destination": "/kb/articles/trusted-access-for-the-next-era-of-cyber-defense-ab91a6fb"
     },
@@ -2924,6 +2968,10 @@
       "destination": "/kb/articles/gpt-55-prompting-guide-b2672669"
     },
     {
+      "source": "/kb/articles/simon-willison-b29f60b1",
+      "destination": "/kb/articles/release-alchemy-utils-01a0-b29f60b1"
+    },
+    {
       "source": "/kb/articles/simon-willison-b2d0a22c",
       "destination": "/kb/articles/using-claude-code-the-unreasonable-effectiveness-of-html-b2d0a22c"
     },
@@ -2984,12 +3032,20 @@
       "destination": "/kb/articles/release-datasette-agent-02a0-bb7416cb"
     },
     {
+      "source": "/kb/articles/simon-willison-bcde966a",
+      "destination": "/kb/articles/stealing-reasoning-traces-from-proprietary-llm-apis-bcde966a"
+    },
+    {
       "source": "/kb/articles/simon-willison-bd117c09",
       "destination": "/kb/articles/hackers-simply-asked-meta-ai-to-give-them-access-to-high-pro-bd117c09"
     },
     {
       "source": "/kb/articles/simon-willison-bd528335",
       "destination": "/kb/articles/release-condense-json-11-bd528335"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bd5bbb2b",
+      "destination": "/kb/articles/a-quote-from-florian-herrengt-bd5bbb2b"
     },
     {
       "source": "/kb/articles/simon-willison-bd816c12",
@@ -3240,6 +3296,10 @@
       "destination": "/kb/articles/claude-fable-is-relentlessly-proactive-d5c4c4cb"
     },
     {
+      "source": "/kb/articles/simon-willison-d666ce8e",
+      "destination": "/kb/articles/a-quote-from-claude-opus-5-system-prompt-d666ce8e"
+    },
+    {
       "source": "/kb/articles/simon-willison-d66899ae",
       "destination": "/kb/articles/a-quote-from-josh-w-comeau-d66899ae"
     },
@@ -3356,6 +3416,10 @@
       "destination": "/kb/articles/release-llm-0311-e1bff7b0"
     },
     {
+      "source": "/kb/articles/simon-willison-e1da82fd",
+      "destination": "/kb/articles/introducing-muse-glimmer-e1da82fd"
+    },
+    {
       "source": "/kb/articles/simon-willison-e1df2f9a",
       "destination": "/kb/articles/a-quote-from-daniel-stenberg-e1df2f9a"
     },
@@ -3458,6 +3522,10 @@
     {
       "source": "/kb/articles/simon-willison-ec23bdcc",
       "destination": "/kb/articles/sightings-ec23bdcc"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ec37b39a",
+      "destination": "/kb/articles/github-models-is-now-retired-ec37b39a"
     },
     {
       "source": "/kb/articles/simon-willison-ee239bf2",
@@ -3616,6 +3684,10 @@
       "destination": "/kb/articles/a-quote-from-romain-huet-ff232954"
     },
     {
+      "source": "/kb/articles/simon-willison-ffca2d4f",
+      "destination": "/kb/articles/release-llm-gemini-033-ffca2d4f"
+    },
+    {
       "source": "/kb/articles/swyx-02e6b89f",
       "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
     },
@@ -3654,6 +3726,10 @@
     {
       "source": "/kb/articles/swyx-09329b6c",
       "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-0ce8a065",
+      "destination": "/kb/articles/ainews-gemini-37-flash-brings-gdm-back-to-the-forefront-0ce8a065"
     },
     {
       "source": "/kb/articles/swyx-0d6836e7",
@@ -3750,6 +3826,10 @@
     {
       "source": "/kb/articles/swyx-26e65d48",
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
+    },
+    {
+      "source": "/kb/articles/swyx-29298f3d",
+      "destination": "/kb/articles/the-bioai-phase-shift-matthew-mcpartlon-neil-patil-chai-disc-29298f3d"
     },
     {
       "source": "/kb/articles/swyx-29860c96",
@@ -4340,6 +4420,10 @@
       "destination": "/kb/articles/ainews-silicon-valley-gets-serious-about-services-e452a7c5"
     },
     {
+      "source": "/kb/articles/swyx-e588612f",
+      "destination": "/kb/articles/ainews-how-to-steal-a-reasoning-trace-e588612f"
+    },
+    {
       "source": "/kb/articles/swyx-e6b68217",
       "destination": "/kb/articles/ainews-spacex-is-already-a-28byr-neocloud-e6b68217"
     },
@@ -4394,6 +4478,10 @@
     {
       "source": "/kb/articles/swyx-f500f35c",
       "destination": "/kb/articles/ainews-openai-reports-median-internal-codex-output-tokens-gr-f500f35c"
+    },
+    {
+      "source": "/kb/articles/swyx-f5d7dda0",
+      "destination": "/kb/articles/ainews-spacexai-grok-46-and-grok-bot-f5d7dda0"
     },
     {
       "source": "/kb/articles/swyx-f8180fbb",

@@ -1,0 +1,80 @@
+---
+title: 'Release: llm-gemini 0.33'
+description: 'The llm-gemini 0.33 release introduces support for Gemini 3.7 Flash and various embedding models, enhancing compatibility and functionality.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-13'
+sourceUrl: 'https://simonwillison.net/2026/Aug/13/llm-gemini/'
+topics: ["llm-gemini","gemini-flash","embedding-models","plugin-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/13/llm-gemini/) · 13/08/2026
+</Info>
+
+## Summary
+
+The llm-gemini 0.33 release introduces support for Gemini 3.7 Flash and various embedding models, enhancing compatibility and functionality.
+
+## Key Insights
+
+> "This version of the plugin adds support for today's Gemini 3.7 Flash release."
+>
+> — Introduction to the new features in llm-gemini 0.33.
+
+> "You can now see reasoning traces and you can also enable server-side tools."
+>
+> — Highlighting new functionalities available in the updated plugin.
+
+> "Both Firefox and Chrome render it differently, due to Safari being more tolerant."
+>
+> — Discussing rendering differences across browsers for the pelican image.
+
+## Topics
+
+- [llm-gemini](/kb/topics/llm-gemini)
+- [gemini-flash](/kb/topics/gemini-flash)
+- [embedding-models](/kb/topics/embedding-models)
+- [plugin-release](/kb/topics/plugin-release)
+
+---
+
+## Full Article
+
+It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash, gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001. The plugin is also upgraded for compatibility with LLM 0.32, which means you can now see reasoning traces and you can also enable server-side tools using this pattern: llm -m gemini-3.7-flash -T CodeExecution \ 'use python to calculate (factorial of 13) * 3' I had Gemini 3.7 Flash draw me some pelicans riding bicycles at high, medium, and low thinking efforts (minimal, which was an option in 3.6 Flash, has been removed in 3.7.) Here's the high level one, which is pretty great: One catch though: the pelican I showed here was rendered with Safari. Both Firefox and Chrome render it differently, due to Safari being more tolerant of empty SVG &lt;filter> elements than those other two browsers. They still display the bicycle, but the pelican is missing entirely!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Gemini 3.1 Flash-Lite"
+    icon="newspaper"
+    href="/kb/articles/gemini-31-flash-lite-969c5220"
+  >
+    Simon Willison · explanation · 70% similar
+  </Card>
+  <Card
+    title="Release: llm-gemini 0.32a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-gemini-032a0-8560706c"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="Release: llm-gemini 0.32"
+    icon="newspaper"
+    href="/kb/articles/release-llm-gemini-032-4589c841"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/13/llm-gemini/](https://simonwillison.net/2026/Aug/13/llm-gemini/).
+</Note>

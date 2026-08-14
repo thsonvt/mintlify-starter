@@ -1,0 +1,80 @@
+---
+title: 'Release: datasette-upload-dbs 0.5a0'
+description: 'The datasette-upload-dbs 0.5a0 plugin allows users to upload and swap SQLite databases on a Datasette instance, now with a formalized API for easier i'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-11'
+sourceUrl: 'https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/'
+topics: ["datasette","sqlite","api","database-management"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/) · 11/08/2026
+</Info>
+
+## Summary
+
+The datasette-upload-dbs 0.5a0 plugin allows users to upload and swap SQLite databases on a Datasette instance, now with a formalized API for easier integration.
+
+## Key Insights
+
+> "This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance."
+>
+> — Introduction to the plugin's functionality.
+
+> "The new release adds a formalized API, so you can replace an existing database (or add a new one)."
+>
+> — Description of the new features in the release.
+
+> "This means you can build fresh databases in an environment such as GitHub Actions and swap them in production."
+>
+> — Explaining the practical applications of the new API.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [sqlite](/kb/topics/sqlite)
+- [api](/kb/topics/api)
+- [database-management](/kb/topics/database-management)
+
+---
+
+## Full Article
+
+This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point that database will start being served by that instance. It can also be used to atomically swap a database with a more recent version. The uploaded database is saved to a file, verified, then swapped in so /name starts serving the new one. The new release adds a formalized API, so you can replace an existing database (or add a new one) like this: curl -X POST \ -H "Authorization: Bearer $API_TOKEN" \ -H "Accept: application/json" \ -F "db=@content.db" \ -F "db_name=content" \ https://your-instance.example.com/-/upload-dbs This means you can build fresh databases in an environment such as GitHub Actions and swap them in production as soon as that build has completed.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-upload-dbs 0.5a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-upload-dbs-05a0-ab8f15bf"
+  >
+    Simon Willison · how-to · 100% similar
+  </Card>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a31"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a31-cb4ed50f"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/](https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/).
+</Note>
