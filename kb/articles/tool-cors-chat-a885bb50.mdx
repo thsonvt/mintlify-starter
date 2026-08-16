@@ -1,0 +1,79 @@
+---
+title: 'Tool: CORS Chat'
+description: 'CORS Chat is a web tool for interacting with OpenAI Responses-compatible APIs, allowing users to manage chat sessions and export conversations.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-15'
+sourceUrl: 'https://simonwillison.net/2026/Aug/15/cors-chat/'
+topics: ["api-integration","web-tools","openai"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/15/cors-chat/) · 15/08/2026
+</Info>
+
+## Summary
+
+CORS Chat is a web tool for interacting with OpenAI Responses-compatible APIs, allowing users to manage chat sessions and export conversations.
+
+## Key Insights
+
+> "Chat directly with any OpenAI Responses-compatible API endpoint that supports CORS headers."
+>
+> — Introduction to the tool's functionality.
+
+> "Conversations are persisted in the browser and can be exported as copy-pasted JSON."
+>
+> — Feature description regarding conversation management.
+
+> "It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint."
+>
+> — Explanation of the tool's purpose.
+
+## Topics
+
+- [api-integration](/kb/topics/api-integration)
+- [web-tools](/kb/topics/web-tools)
+- [openai](/kb/topics/openai)
+
+---
+
+## Full Article
+
+Tool CORS Chat — Chat directly with any OpenAI Responses-compatible API endpoint that supports CORS headers, all within your browser. Configure endpoints with custom headers, save conversations locally, and manage multiple chat sessions with different models and reasoning settings. I built this today (with GPT-5.6-Sol xhigh) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted in the browser and can be exported as copy-pasted JSON. One fun detail is that it notices SVG images that are being generated and progressively renders them in the chat while the tokens are still streaming in.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-chat-completions-server 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-chat-completions-server-01a0-a846fb69"
+  >
+    Simon Willison · how-to · 60% similar
+  </Card>
+  <Card
+    title="TIL: Adding a custom MCP server to Claude and ChatGPT"
+    icon="newspaper"
+    href="/kb/articles/til-adding-a-custom-mcp-server-to-claude-and-chatgpt-923aeb39"
+  >
+    Simon Willison · how-to · 58% similar
+  </Card>
+  <Card
+    title="OpenAI WebRTC Audio Session, now with document context"
+    icon="newspaper"
+    href="/kb/articles/openai-webrtc-audio-session-now-with-document-context-da2035cc"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/15/cors-chat/](https://simonwillison.net/2026/Aug/15/cors-chat/).
+</Note>

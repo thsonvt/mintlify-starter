@@ -1136,6 +1136,10 @@
       "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9d366e6c",
+      "destination": "/kb/articles/-community-wisdom-recovering-from-burnout-what-airtables-sal-9d366e6c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9d89a3bb",
       "destination": "/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
     },
@@ -1594,6 +1598,10 @@
     {
       "source": "/kb/articles/simon-willison-18ec5cad",
       "destination": "/kb/articles/qwen36-27b-flagship-level-coding-in-a-27b-dense-model-18ec5cad"
+    },
+    {
+      "source": "/kb/articles/simon-willison-19084301",
+      "destination": "/kb/articles/dont-classify-hallucinate-19084301"
     },
     {
       "source": "/kb/articles/simon-willison-192d4e92",
@@ -2664,6 +2672,10 @@
       "destination": "/kb/articles/gemini-31-flash-lite-969c5220"
     },
     {
+      "source": "/kb/articles/simon-willison-96f648a0",
+      "destination": "/kb/articles/sighting-northern-gannet-96f648a0"
+    },
+    {
       "source": "/kb/articles/simon-willison-9767b320",
       "destination": "/kb/articles/release-llm-mrchatterbox-01-9767b320"
     },
@@ -2842,6 +2854,10 @@
     {
       "source": "/kb/articles/simon-willison-a846fb69",
       "destination": "/kb/articles/release-llm-chat-completions-server-01a0-a846fb69"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a885bb50",
+      "destination": "/kb/articles/tool-cors-chat-a885bb50"
     },
     {
       "source": "/kb/articles/simon-willison-a90df1e1",
@@ -3834,6 +3850,10 @@
     {
       "source": "/kb/articles/swyx-29860c96",
       "destination": "/kb/articles/ainews-agents-for-everything-else-codex-for-knowledge-work-c-29860c96"
+    },
+    {
+      "source": "/kb/articles/swyx-29f43cb3",
+      "destination": "/kb/articles/react-for-agents-astro-creator-brings-hooks-to-his-meta-harn-29f43cb3"
     },
     {
       "source": "/kb/articles/swyx-2a8428b0",

@@ -1,0 +1,80 @@
+---
+title: 'React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue'
+description: 'Swyx discusses the launch of Flue 2, an agent framework by Fred Schott that incorporates React-style hooks for dynamic agent development.'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-08-15'
+sourceUrl: 'https://www.latent.space/p/flue-2'
+topics: ["ai-agents","react","web-development","programming"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/flue-2) · 15/08/2026
+</Info>
+
+## Summary
+
+Swyx discusses the launch of Flue 2, an agent framework by Fred Schott that incorporates React-style hooks for dynamic agent development.
+
+## Key Insights
+
+> "I originally tweeted that we were building the Astro for agents or the Next.js for agents, but then I realized: maybe no one has even built the React for agents."
+>
+> — Fred Schott on the evolution of Flue and its comparison to existing frameworks.
+
+> "There is no agent without a harness."
+>
+> — Fred Schott emphasizing the importance of the harness in agent development.
+
+> "Hooks are authored in TypeScript... they let you build dynamic agents that can manage their own state."
+>
+> — Description of the capabilities provided by hooks in Flue 2.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [react](/kb/topics/react)
+- [web-development](/kb/topics/web-development)
+- [programming](/kb/topics/programming)
+
+---
+
+## Full Article
+
+Agent frameworks for developers are still at an early stage, with the likes of Vercels eve and Fred Schotts Flue both launched this year setting the early template.Schott is the creator of the web framework Astro, which led to his company being acquired by Cloudflare in January. Hes just released version 2 of Flue, its first stable release, which has as its foundation React-style Agent Hooks.In Flue, an agent is represented by a JavaScript function. This function re-renders on every turn, meaning before every model call.The addition of hooks came after Schott realized that Reacts composability would be a great fit for agent development.I originally tweeted that we were building the Astro for agents or the Next.js for agents, he told us. But then I realized: maybe no one has even built the React for agents.Editors Note: we last talked about the React for Agents with Bret Taylor, CEO of Sierra and Chairman of OpenAI:Were still trying to figure out who the reactive agents are and the jury is still out Were sort of in the jQuery era of agents, not the react era. Hooks are authored in TypeScript. According to the Flue 2 launch post, they let you build dynamic agents that can manage their own state, listen to agent lifecycle events, and even attach different resources and capabilities dynamically to enhance themselves at runtime.There are 16 built-in hooks in Flue 2, including useSkill(), useTool(), useSubagent(). You can also add custom hooks.How Flue evolved via React-style hooks; diagram by Richard MacManusWhat hooks open up for developers is that they make an agent much more dynamic, by allowing its configuration to change as a conversation or workflow progresses. Schott said this is needed to build real support bots, real triage bots, because they cant be fully configured in advance. The agent cant just be static it has to adapt in real-time to what the user wants or the situation demands.Agent hooks bring those capabilities to Flue. For example, a support agent might bring in an account management tool after first verifying a user.File based magic is an antipatternSchotts thinking about how to build an agent framework has evolved rapidly since he publicly launched Flue 1 in early May. Initially, he wanted to take existing web framework concepts and apply them to his new agent framework. He uses file-based routing as an example.So we kind of naively ported that over to Flue, thinking great, well, Ill put your five agents in these five files, and thatll be the five routes that they expose. But for a lot of people building with Flue, especially the bigger customers, their whole company is one agent. They dont care about routing. Theres one agent.So after the first Flue users showed these early patterns, composability became front of mind for Schott. That led him back to React.As you can see from the Flue 2 API, were taking it more from React [...] than we are from Astro or Next.js where its less about routing and these website concepts and more about, at its base level, how do you compose an agent on many different things?Flues central proposition: agents need a harnessA key concept in Flue is that an agent must have a harness meaning that its in an environment where it has access to the context and capabilities needed to accomplish various tasks.Instead of you and your code driving the LLM and telling it what to do with scripts, youre putting the agent into this harness, and it is able to drive itself and work through problems, explained Schott.Flue is built on top of Pi, an open source minimal harness. Essentially, Flue is an opinionated take on Pi adding features that Schott thinks are helpful to developers building agents. For example: hosted agents in Flue 2 are now built with Vite, an open source build tool.Indeed, Schott likens Pis role to the foundational role that Vite now plays beneath Astro.I think Pi can serve that role, where its the right abstraction it doesnt do too much, but it gives the right APIs that then we can go and say, well, lets have an opinionated take on this that does more.Building on Pi meant committing to having a built-in agent harness.Our early bet was that the harness is actually not a feature, but its fundamental to what you think an agent is, Schott said. There is no agent without a harness.Building Flue agents with coding agentsThe Flue project began earlier this year within the Astro repository, as an issue-triage system. At first, it was an LLM-driven script or workflow reviewing issues. But then, explained Schott, it gained the ability to take actions in the repo.It started to transition from just automation in a repo to wanting to take the Claude Code experience, make it headless, make it hostable and run it in the cloud.So thats when the idea of a harness as anchor emerged. Indeed, in his v1 launch post in early May, Schott described Flue as like Claude Code, but 100% headless and programmable.I myself tested out Flue using Claude Code, which guided me through setting up my first Flue agent. And Schott confirmed this is how many developers use Flue.We very much are building for them, he said, regarding AI coding agents. Our whole onboarding flow is that, you know, pass this prompt to your agent, its gonna guide you through it. All of our docs have markdown support.Where Flue fits in the agent development stackThe closest comparison to Flue is Vercels eve, which also treats the harness as foundational. Vercel and Cloudflare have been known to beef in public, but Schott is generous in his opinion of eve.Eve, I think, is the most directly competitive, Schott said. It came around at the same time, so it had that same take that a harness is built-in.Schott also referenced what he called the OG agent frameworks, which came before Flue and so werent created with a harness as the central concept. He listed Vercels AI SDK, Cloudflares Agents SDK, and Mastra (developed by the same team that built Gatsby, a web framework predating Astro).While these OG agent frameworks are all adding harnesses now, Schott considers that an added feature whereas Flue and eve both have built-in harnesses.I asked where Flue sits compared to emerging meta-harnesses, like Databricks Omnigent and perhaps even the self-improving Exo harness.Note: were also publishing our interview with Exo coauthor Alex Krentsel this weekend; its worth a watch and has a bonus discussion on OpenClaw architecture!Schott rightly noted that theres confusion about what the term meta-harness even means at this early stage. Regardless, he thinks having one API for working across all harnesses would muddle the story for Flue. His framework specifically defines how skills work in Flue, how subagents work, and so on. As he put it, the framework [Flue] and the harness are very intertwined.He personally finds the meta-harness discussion fascinating, and has played with Exo, but says its a different interest scenario that isnt really related to hosted agents.The Cloudflare connectionThroughout the interview, Schott referenced being able to take advantage of his employer Cloudflares tooling and infrastructure. But he was also very clear that Flue is an open source framework for every host, as he put it, and he wants it to stay that way.The best tools are the ones that float above the host, he said. That opens the door for the most developer adoption and the most innovation.Host portability is one of Flues defining principles and perhaps thats where the fundamental difference to Vercels eve is. While eve can also be self-hosted, it is optimized to take advantage of Vercels many features. Of course thats a known playbook of Vercel, which does the same thing with Next.js.All that said, Vercel itself has shown that a Flue agent can be deployed on Vercel. So the two companies can play nice together.I also mentioned LangChains new Managed Deep Agents offering as an example of hosted agent platforms coming onto the market. However, Schott said a managed agents product is not currently on Flues roadmap.Its so early for us, were just focused on building the best harness, he said.Links to find Flue and Fred online; Richard is at @ricmac. This is a new written interview series we are trying out for subscribers let us know your feedback!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] The Last 4 Jobs in Tech"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-last-4-jobs-in-tech-7f163b66"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+  <Card
+    title="Vercel's Andrew Qu on why agents are a new kind of software"
+    icon="newspaper"
+    href="/kb/articles/vercels-andrew-qu-on-why-agents-are-a-new-kind-of-software-b940259b"
+  >
+    Swyx · explanation · 65% similar
+  </Card>
+  <Card
+    title="[AINews] It's Meta-Harness Summer"
+    icon="newspaper"
+    href="/kb/articles/ainews-its-meta-harness-summer-ee9ec22a"
+  >
+    Swyx · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/flue-2](https://www.latent.space/p/flue-2).
+</Note>
