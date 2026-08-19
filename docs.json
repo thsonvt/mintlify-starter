@@ -1020,6 +1020,10 @@
       "destination": "/kb/articles/i-built-a-custom-slack-inbox-it-was-easier-than-youd-think-y-72d57342"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-77db78ce",
+      "destination": "/kb/articles/-how-i-ai-how-a-solo-founder-used-codex-and-chatgpt-to-launc-77db78ce"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-77fc7844",
       "destination": "/kb/articles/claude-code-for-normal-people-skills-voice-mode-and-how-to-c-77fc7844"
     },
@@ -1038,6 +1042,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-7f4b29cb",
       "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-7f999915",
+      "destination": "/kb/articles/how-a-solo-founder-used-codex-and-chatgpt-to-launch-a-fashio-7f999915"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-80c58976",
@@ -1066,6 +1074,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-87f53d1c",
       "destination": "/kb/articles/how-i-built-lennyrpg-87f53d1c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-89db038c",
+      "destination": "/kb/articles/i-tested-grok-bot-grok-46-and-cursor-origin-heres-my-honest--89db038c"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-89f5d5e8",
@@ -1150,6 +1162,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-9fc122d2",
       "destination": "/kb/articles/how-to-build-a-company-that-withstands-any-era-eric-ries-lea-9fc122d2"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a0d364d6",
+      "destination": "/kb/articles/announcing-lennys-jobs-the-best-place-in-the-world-to-find-v-a0d364d6"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a16e6c51",
@@ -1278,6 +1294,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-de9d49c7",
       "destination": "/kb/articles/-community-wisdom-getting-a-skeptical-cto-to-adopt-ai-coding-de9d49c7"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-df86395c",
+      "destination": "/kb/articles/openais-head-of-design-this-is-the-best-time-in-history-to-b-df86395c"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-df949045",
@@ -1578,6 +1598,10 @@
     {
       "source": "/kb/articles/simon-willison-16b49489",
       "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
+    },
+    {
+      "source": "/kb/articles/simon-willison-172b1bf6",
+      "destination": "/kb/articles/a-quote-from-dario-amodei-172b1bf6"
     },
     {
       "source": "/kb/articles/simon-willison-180a68ef",
@@ -2092,6 +2116,10 @@
       "destination": "/kb/articles/an-ai-model-from-meta-also-hacked-another-company-during-tes-54942343"
     },
     {
+      "source": "/kb/articles/simon-willison-553e8f24",
+      "destination": "/kb/articles/qwen-38-27b-scores-52-on-the-artificial-analysis-intelligenc-553e8f24"
+    },
+    {
       "source": "/kb/articles/simon-willison-56939ccf",
       "destination": "/kb/articles/a-quote-from-seth-larson-56939ccf"
     },
@@ -2244,6 +2272,10 @@
       "destination": "/kb/articles/auto-mode-is-now-the-default-in-claude-code-for-pro-max-and--60c3ba95"
     },
     {
+      "source": "/kb/articles/simon-willison-611d7325",
+      "destination": "/kb/articles/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-611d7325"
+    },
+    {
       "source": "/kb/articles/simon-willison-612211c9",
       "destination": "/kb/articles/release-datasette-agent-micropython-01a0-612211c9"
     },
@@ -2262,6 +2294,10 @@
     {
       "source": "/kb/articles/simon-willison-631c0434",
       "destination": "/kb/articles/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop--631c0434"
+    },
+    {
+      "source": "/kb/articles/simon-willison-63557853",
+      "destination": "/kb/articles/mojo-is-now-open-source-63557853"
     },
     {
       "source": "/kb/articles/simon-willison-635e0854",
@@ -2764,6 +2800,10 @@
       "destination": "/kb/articles/spot-birds-not-golf-9f899988"
     },
     {
+      "source": "/kb/articles/simon-willison-a00bfc11",
+      "destination": "/kb/articles/qwen-38-27b-is-excellent-but-it-defaults-to-wildly-overthink-a00bfc11"
+    },
+    {
       "source": "/kb/articles/simon-willison-a0c2f7b3",
       "destination": "/kb/articles/dont-be-a-meat-proxy-a0c2f7b3"
     },
@@ -3010,6 +3050,10 @@
     {
       "source": "/kb/articles/simon-willison-b451738f",
       "destination": "/kb/articles/release-datasette-files-s3-01a1-b451738f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b58e7970",
+      "destination": "/kb/articles/markdown-svg-upgrades-b58e7970"
     },
     {
       "source": "/kb/articles/simon-willison-b5feb2c2",
@@ -4400,12 +4444,24 @@
       "destination": "/kb/articles/ainews-the-high-return-activity-of-raising-your-aspirations--d1434027"
     },
     {
+      "source": "/kb/articles/swyx-d1f4ded7",
+      "destination": "/kb/articles/ainews-stripe-buys-openrouter-for-7b-d1f4ded7"
+    },
+    {
       "source": "/kb/articles/swyx-d296c35a",
       "destination": "/kb/articles/ainews-not-much-happened-today-d296c35a"
     },
     {
+      "source": "/kb/articles/swyx-d4ccc46c",
+      "destination": "/kb/articles/frontier-model-cost-and-open-weights-popularity-is-driving-d-d4ccc46c"
+    },
+    {
       "source": "/kb/articles/swyx-d9235379",
       "destination": "/kb/articles/ainews-moonshot-kimi-k26-the-worlds-leading-open-model-refre-d9235379"
+    },
+    {
+      "source": "/kb/articles/swyx-d9e7f998",
+      "destination": "/kb/articles/ainews-cursors-60b-acquisition-by-spacexai-closes-d9e7f998"
     },
     {
       "source": "/kb/articles/swyx-dae507b8",

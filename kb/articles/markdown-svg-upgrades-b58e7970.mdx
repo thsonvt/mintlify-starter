@@ -1,0 +1,80 @@
+---
+title: 'Markdown SVG upgrades'
+description: 'Simon Willison discusses the evolution of his markdown-svg-renderer tool, which simplifies sharing Markdown with SVG documents and includes new featur'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-16'
+sourceUrl: 'https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/'
+topics: ["markdown","svg","web-development","tools"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/) · 16/08/2026
+</Info>
+
+## Summary
+
+Simon Willison discusses the evolution of his markdown-svg-renderer tool, which simplifies sharing Markdown with SVG documents and includes new features like MP4 rendering.
+
+## Key Insights
+
+> "It's evolved into my ideal tool for sharing Markdown transcripts that include SVG documents."
+>
+> — Describing the purpose and evolution of the markdown-svg-renderer tool.
+
+> "The PNG and JPEG tabs render that SVG to those image formats in the browser and lets you copy or download them."
+>
+> — Highlighting the functionality of the tool for converting SVG to other image formats.
+
+> "Being able to turn an animated SVG into a MP4 again makes it easy to share on platforms that can't support SVG animation natively."
+>
+> — Explaining the new MP4 rendering feature and its benefits.
+
+## Topics
+
+- [markdown](/kb/topics/markdown)
+- [svg](/kb/topics/svg)
+- [web-development](/kb/topics/web-development)
+- [tools](/kb/topics/tools)
+
+---
+
+## Full Article
+
+16th August 2026 I started building my markdown-svg-renderer tool in May, but I've since added enough features to it that it's worth talking about here again. It's evolved into my ideal tool for sharing Markdown transcripts that include SVG documents. Given my proclivity for drawing pelicans riding bicycles this is a problem that I needed to solve! The tool is very simple. Navigate to markdown-svg-renderer in your browser and paste in some Markdown to see it rendered... or save that Markdown to a CORS-friendly URL or a GitHub Gist and paste in a URL to that document. The URL option will give you a bookmarkable page, for example https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F6f9e48293be5c916652d29f0dc0b0657 - which bakes in the URL to this Gist. If you visit the Gist you'll see raw SVG: In the rendered tool that looks like this instead: As you can see, that SVG block in the Markdown has been transformed into a rendered SVG (in this case animated) plus several tabs. The tabs are the really fun bit. The PNG and JPEG tabs render that SVG to those image formats in the browser and lets you copy or download them - useful for sharing on platforms that don't support SVG directly. The MP4 tab is new today - it examines the SVG to see if it contains any animations, attempts to guess how long the looped video should be, then renders a whole bunch of frames of the animation and loads 30+MB of ffmpeg.wasm so it can compile those frames into an MP4 video using the full power of FFMPEG compiled to WebAssembly and running in the browser. Being able to turn an animated SVG into a MP4 again makes it easy to share on platforms that can't support SVG animation natively. It's a neat trick!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: markdown-svg-renderer"
+    icon="newspaper"
+    href="/kb/articles/tool-markdown-svg-renderer-c4ab1b43"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="GIF optimization tool using WebAssembly and Gifsicle - Agentic Engineering Patterns"
+    icon="newspaper"
+    href="/kb/articles/gif-optimization-tool-using-webassembly-and-gifsicle-agentic-de0f1213"
+  >
+    Simon Willison · how-to · 62% similar
+  </Card>
+  <Card
+    title="Tool: Mermaid to Unicode box art (grok-mermaid)"
+    icon="newspaper"
+    href="/kb/articles/tool-mermaid-to-unicode-box-art-grok-mermaid-8c79d95d"
+  >
+    Simon Willison · how-to · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/](https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/).
+</Note>
