@@ -1408,6 +1408,10 @@
       "destination": "/kb/articles/the-complete-guide-889ad878"
     },
     {
+      "source": "/kb/articles/simon-willison-004864e3",
+      "destination": "/kb/articles/a-quote-from-jeremy-morrell-004864e3"
+    },
+    {
       "source": "/kb/articles/simon-willison-02af4c10",
       "destination": "/kb/articles/one-shotting-a-raccoon-heist-game-using-claude-fable-5-02af4c10"
     },
@@ -1710,6 +1714,10 @@
     {
       "source": "/kb/articles/simon-willison-22c6769f",
       "destination": "/kb/articles/ai-and-liability-22c6769f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-22f8e9e0",
+      "destination": "/kb/articles/research-smolmachines-smolvm-as-a-sandbox-for-untrusted-pyth-22f8e9e0"
     },
     {
       "source": "/kb/articles/simon-willison-231bc475",
@@ -2478,6 +2486,10 @@
     {
       "source": "/kb/articles/simon-willison-76bce63b",
       "destination": "/kb/articles/a-quote-from-bobby-holley-76bce63b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-780149f0",
+      "destination": "/kb/articles/conceptual-integrity-and-counting-lines-of-code-780149f0"
     },
     {
       "source": "/kb/articles/simon-willison-78174dc0",
@@ -3836,6 +3848,10 @@
       "destination": "/kb/articles/ainews-meta-superintelligence-labs-announces-muse-spark-firs-14e970f9"
     },
     {
+      "source": "/kb/articles/swyx-19a856ed",
+      "destination": "/kb/articles/ainews-memory-prices-up-500-in-12-months-19a856ed"
+    },
+    {
       "source": "/kb/articles/swyx-19c048cf",
       "destination": "/kb/articles/ainews-not-much-happened-today-19c048cf"
     },
@@ -4298,6 +4314,10 @@
     {
       "source": "/kb/articles/swyx-968a3393",
       "destination": "/kb/articles/ainews-all-model-labs-are-now-agent-labs-968a3393"
+    },
+    {
+      "source": "/kb/articles/swyx-97cd0eea",
+      "destination": "/kb/articles/ainews-death-of-params-zai-ceo-jie-tang-on-glm-53-and-the-ne-97cd0eea"
     },
     {
       "source": "/kb/articles/swyx-983c46c3",

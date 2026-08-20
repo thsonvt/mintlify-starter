@@ -1,0 +1,77 @@
+---
+title: 'Research: smolmachines / smolvm as a sandbox for untrusted Python & JavaScript'
+description: 'The article discusses the effectiveness of smolvm 1.8.3 for sandboxing untrusted Python and JavaScript, highlighting its features and testing challeng'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-19'
+sourceUrl: 'https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/'
+topics: ["sandboxing","python","javascript","virtual-machines","github-actions"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/) · 19/08/2026
+</Info>
+
+## Summary
+
+The article discusses the effectiveness of smolvm 1.8.3 for sandboxing untrusted Python and JavaScript, highlighting its features and testing challenges.
+
+## Key Insights
+
+> "smolvm machine run fails as expected: 'kvm not available'."
+>
+> — Describing the limitations encountered while testing smolvm in the Claude Code for web environment.
+
+> "Plan B is what it did, installing smolvm and running these tests directly in a GitHub Actions runner."
+>
+> — Explaining the alternative approach taken to overcome environmental limits.
+
+## Topics
+
+- [sandboxing](/kb/topics/sandboxing)
+- [python](/kb/topics/python)
+- [javascript](/kb/topics/javascript)
+- [virtual-machines](/kb/topics/virtual-machines)
+- [github-actions](/kb/topics/github-actions)
+
+---
+
+## Full Article
+
+Research smolmachines / smolvm as a sandbox for untrusted Python & JavaScript — Testing smolvm 1.8.3 shows it is well suited for sandboxing untrusted Python and JavaScript data transformations using hardware-isolated VMs rather than shared-kernel containers. Offline local images, no-network execution, CPU/RAM limits, guest-enforced timeouts, storage quotas, read-only input mounts, writable output mounts, and `--unprivileged` all worked as intended, with cold starts around 0.6–1.5 seconds and warm executions around 50 ms. I tasked Claude Fable 5 running in Claude Code for web with the following research task: Put https://smolmachines.com through its paces as a fast secure sandbox. Explore what it would take to use this to run untrusted Python and JavaScript code in a way that is limited in what RAM and CPU time it can take up (protection against "while true") with no network access and filesystem access only to designated files Goal is to be able to use this to execute user-provided tasks for things like data transformations It quickly ran into a problem: the Claude Code for web environment can't run smol machines. Quoting the notes it wrote: This Claude Code container: Linux 6.18.5-fc-v20 (itself a Firecracker guest), 4 vCPU, 15GB RAM. No /dev/kvm, no vmx/svm CPU flags → no nested virt. smolvm machine run fails as expected: "kvm not available". Plan B: GitHub Actions ubuntu runners DO expose /dev/kvm → run the real test battery via a temporary workflow on this branch, collect logs, remove workflow in final commit. And Plan B is what it did, installing smolvm and running these tests directly in a GitHub Actions runner against that branch. That was a creative solution to the environmental limits posed by Claude Code for web. Another example of Fable being relentlessly proactive.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: JavaScript Sandboxing Research"
+    icon="newspaper"
+    href="/kb/articles/research-javascript-sandboxing-research-d8de17a0"
+  >
+    Simon Willison · explanation · 62% similar
+  </Card>
+  <Card
+    title="Running Python code in a sandbox with MicroPython and WASM"
+    icon="newspaper"
+    href="/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
+  >
+    Simon Willison · how-to · 60% similar
+  </Card>
+  <Card
+    title="Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/porting-the-moebius-02b-image-inpainting-model-to-run-in-the-6ce132ae"
+  >
+    Simon Willison · how-to · 59% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/](https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/).
+</Note>
