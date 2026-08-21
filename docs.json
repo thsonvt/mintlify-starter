@@ -2536,6 +2536,10 @@
       "destination": "/kb/articles/experimenting-with-starlette-10-with-claude-skills-8015e4ff"
     },
     {
+      "source": "/kb/articles/simon-willison-803b5e64",
+      "destination": "/kb/articles/chatgpt-search-now-uses-the-siteoperator-at-scale-803b5e64"
+    },
+    {
       "source": "/kb/articles/simon-willison-80b3db71",
       "destination": "/kb/articles/datasette-code-frequency-chart-on-github-80b3db71"
     },
@@ -2786,6 +2790,10 @@
     {
       "source": "/kb/articles/simon-willison-9cb198d9",
       "destination": "/kb/articles/cysqlite-a-new-sqlite-driver-9cb198d9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9d9afa82",
+      "destination": "/kb/articles/research-a-shot-scraper-style-json-api-on-bun-14s-new-bunweb-9d9afa82"
     },
     {
       "source": "/kb/articles/simon-willison-9db8006a",
@@ -4316,6 +4324,10 @@
       "destination": "/kb/articles/ainews-all-model-labs-are-now-agent-labs-968a3393"
     },
     {
+      "source": "/kb/articles/swyx-9736455b",
+      "destination": "/kb/articles/ainews-poolside-gets-12b-reverse-execuhire-to-nvidia-founder-9736455b"
+    },
+    {
       "source": "/kb/articles/swyx-97cd0eea",
       "destination": "/kb/articles/ainews-death-of-params-zai-ceo-jie-tang-on-glm-53-and-the-ne-97cd0eea"
     },
@@ -4394,6 +4406,10 @@
     {
       "source": "/kb/articles/swyx-afdf8983",
       "destination": "/kb/articles/ainews-anthropic-launches-the-mcp-apps-open-spec-in-claudeai-afdf8983"
+    },
+    {
+      "source": "/kb/articles/swyx-b0234ae6",
+      "destination": "/kb/articles/the-wayfinder-skill-navigating-the-fog-of-war-of-planning-b0234ae6"
     },
     {
       "source": "/kb/articles/swyx-b18788c6",
