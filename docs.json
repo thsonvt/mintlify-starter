@@ -2048,6 +2048,10 @@
       "destination": "/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
     },
     {
+      "source": "/kb/articles/simon-willison-4b5ea28a",
+      "destination": "/kb/articles/stop-making-tuis-4b5ea28a"
+    },
+    {
       "source": "/kb/articles/simon-willison-4b791eed",
       "destination": "/kb/articles/warelay-openclaw-4b791eed"
     },
@@ -2318,6 +2322,10 @@
     {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
+    },
+    {
+      "source": "/kb/articles/simon-willison-67011d52",
+      "destination": "/kb/articles/a-quote-from-matt-webb-67011d52"
     },
     {
       "source": "/kb/articles/simon-willison-6715930b",
@@ -2968,6 +2976,10 @@
       "destination": "/kb/articles/a-quote-from-andrej-karpathy-abf70e4c"
     },
     {
+      "source": "/kb/articles/simon-willison-ac41bf01",
+      "destination": "/kb/articles/release-llm-0321-ac41bf01"
+    },
+    {
       "source": "/kb/articles/simon-willison-ac4867b0",
       "destination": "/kb/articles/tool-llm-clich-highlighter-ac4867b0"
     },
@@ -3444,6 +3456,10 @@
       "destination": "/kb/articles/tool-pasted-file-editor-dbf581b1"
     },
     {
+      "source": "/kb/articles/simon-willison-dc4e7ed4",
+      "destination": "/kb/articles/release-llm-openrouter-07-dc4e7ed4"
+    },
+    {
       "source": "/kb/articles/simon-willison-dd345ddf",
       "destination": "/kb/articles/reply-guy-dd345ddf"
     },
@@ -3866,6 +3882,10 @@
     {
       "source": "/kb/articles/swyx-19c500da",
       "destination": "/kb/articles/ainews-claude-sonnet-46-clean-upgrade-of-45-mostly-better-wi-19c500da"
+    },
+    {
+      "source": "/kb/articles/swyx-1a059271",
+      "destination": "/kb/articles/simulation-the-new-scaling-law-joon-sung-park-simile-ai-1a059271"
     },
     {
       "source": "/kb/articles/swyx-1a1f4627",
@@ -4480,6 +4500,10 @@
       "destination": "/kb/articles/ainews-the-high-return-activity-of-raising-your-aspirations--d1434027"
     },
     {
+      "source": "/kb/articles/swyx-d1c937bc",
+      "destination": "/kb/articles/the-evolution-of-the-agent-harness-d1c937bc"
+    },
+    {
       "source": "/kb/articles/swyx-d1f4ded7",
       "destination": "/kb/articles/ainews-stripe-buys-openrouter-for-7b-d1f4ded7"
     },
@@ -4586,6 +4610,10 @@
     {
       "source": "/kb/articles/swyx-f39f0e6c",
       "destination": "/kb/articles/doing-vibe-physics-alex-lupsasca-openai-f39f0e6c"
+    },
+    {
+      "source": "/kb/articles/swyx-f3b7c5f6",
+      "destination": "/kb/articles/ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-f3b7c5f6"
     },
     {
       "source": "/kb/articles/swyx-f500f35c",

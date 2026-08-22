@@ -1,0 +1,80 @@
+---
+title: 'Release: llm 0.32.1'
+description: 'The release of LLM 0.32.1 addresses issues caused by the OpenAI Python library''s removal of httpx, ensuring functionality by pinning dependencies.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-21'
+sourceUrl: 'https://simonwillison.net/2026/Aug/21/llm/'
+topics: ["llm","openai","python-library","httpx"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/21/llm/) · 21/08/2026
+</Info>
+
+## Summary
+
+The release of LLM 0.32.1 addresses issues caused by the OpenAI Python library's removal of httpx, ensuring functionality by pinning dependencies.
+
+## Key Insights
+
+> "Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx."
+>
+> — Introduction to the issue that prompted the release.
+
+> "This dot-release fixes that for the moment by pinning to openai&lt;3."
+>
+> — Explanation of the solution provided in the release.
+
+> "A soon-to-drop 0.33 release will switch from httpx to httpx2."
+>
+> — Future plans for the library's updates.
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [openai](/kb/topics/openai)
+- [python-library](/kb/topics/python-library)
+- [httpx](/kb/topics/httpx)
+
+---
+
+## Full Article
+
+Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx, and it turned out LLM depended on that library but only installed it via a transitive openai dependency. This dot-release fixes that for the moment by pinning to openai&lt;3, and a soon-to-drop 0.33 release will switch from httpx to httpx2.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a2-8db1edb7"
+  >
+    Simon Willison · reference · 67% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a3"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a3-d3c5735a"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/21/llm/](https://simonwillison.net/2026/Aug/21/llm/).
+</Note>
