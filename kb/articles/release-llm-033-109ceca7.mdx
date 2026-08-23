@@ -1,0 +1,80 @@
+---
+title: 'Release: llm 0.33'
+description: 'The release of llm 0.33 includes upgrades to the OpenAI Python library, new key handling for embedding models, and enhanced template functionality.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-22'
+sourceUrl: 'https://simonwillison.net/2026/Aug/22/llm/'
+topics: ["openai","python-library","embedding-models","llm"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/22/llm/) · 22/08/2026
+</Info>
+
+## Summary
+
+The release of llm 0.33 includes upgrades to the OpenAI Python library, new key handling for embedding models, and enhanced template functionality.
+
+## Key Insights
+
+> "The embedding models now use the same pattern for keys that regular LLM models do."
+>
+> — Discussing the new key handling in embedding models.
+
+> "This unlocks a neat pattern where you can create templates that package a model with a set of default options."
+>
+> — Explaining the new template functionality.
+
+> "Reasoning-capable Responses API models now support a reasoning_summary option with auto, concise, and detailed values."
+>
+> — Highlighting the new features in the Responses API.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [python-library](/kb/topics/python-library)
+- [embedding-models](/kb/topics/embedding-models)
+- [llm](/kb/topics/llm)
+
+---
+
+## Full Article
+
+My highlights from this release: Upgraded to the OpenAI Python library 3.x and switched the HTTP client dependency from httpx to httpx2. #1608, #1631 I shipped a quick 0.32.1 fix for this yesterday, but this is the more comprehensive fix. llm embed and llm embed-multi now accept --key. The Python EmbeddingModel.embed(), EmbeddingModel.embed_multi(), Collection.embed() and Collection.embed_multi() methods accept key= too, passing the resolved per-call key to embedding plugins without changing shared model state. Existing plugins that read self.key continue to work through a compatibility fallback. Thanks, ChrisJr404. #757, #1620 The embedding models now use the same pattern for keys that regular LLM models do. llm prompt -t/--template can now be repeated to combine templates in order. This allows model configuration and options from one template to be used with a prompt from another. This unlocks a neat pattern where you can create templates that package a model with a set of default options: llm -m gpt-5.6-luna -o reasoning_effort high --save lhigh llm "Generate an SVG of a pelican riding a bicycle" --save pelican # Combine and run the templates llm -t lhigh -t pelican Reasoning-capable Responses API models now support a reasoning_summary option with auto, concise, and detailed values. This can be used with llm openai endpoint --responses. #1600 This is particularly useful for exercising different models that provide their own imitation of the OpenAI Responses API.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging"
+    icon="newspaper"
+    href="/kb/articles/new-release-of-llm-adds-support-for-reasoning-traces-openai--996b94aa"
+  >
+    Simon Willison · reference · 72% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32a2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032a2-8db1edb7"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/22/llm/](https://simonwillison.net/2026/Aug/22/llm/).
+</Note>
