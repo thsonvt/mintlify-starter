@@ -1216,6 +1216,10 @@
       "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-bb9c1cad",
+      "destination": "/kb/articles/how-to-close-100k-enterprise-deals-step-by-step-jen-abel-bb9c1cad"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-be846a1a",
       "destination": "/kb/articles/shopping-with-claude-how-to-find-quality-brands-automate-ret-be846a1a"
     },
@@ -1702,6 +1706,10 @@
     {
       "source": "/kb/articles/simon-willison-1fe98c0f",
       "destination": "/kb/articles/incident-report-unsanctioned-agent-behaviour-during-cyber-te-1fe98c0f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-20b9a146",
+      "destination": "/kb/articles/a-quote-from-drew-breunig-20b9a146"
     },
     {
       "source": "/kb/articles/simon-willison-20dca3df",
@@ -2370,6 +2378,10 @@
     {
       "source": "/kb/articles/simon-willison-68c4826d",
       "destination": "/kb/articles/release-llm-all-models-async-01-68c4826d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-68d2e858",
+      "destination": "/kb/articles/anthropics-best-ai-model-struggles-to-attract-users-as-cheap-68d2e858"
     },
     {
       "source": "/kb/articles/simon-willison-68ebf32e",
