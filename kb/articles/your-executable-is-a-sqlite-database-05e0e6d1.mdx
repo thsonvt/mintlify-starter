@@ -1,0 +1,75 @@
+---
+title: 'Your executable is a SQLite database'
+description: 'The article discusses a method for creating a SQLite database that functions as an executable binary on Linux, utilizing the ELF format and binfmt_mis'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-24'
+sourceUrl: 'https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/'
+topics: ["sqlite","linux","executable-binaries"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/) · 24/08/2026
+</Info>
+
+## Summary
+
+The article discusses a method for creating a SQLite database that functions as an executable binary on Linux, utilizing the ELF format and binfmt_misc.
+
+## Key Insights
+
+> "The trick sets the SQLite file format's 4-byte application ID to SELF."
+>
+> — Explaining the method of creating an executable SQLite database.
+
+> "You can additionally use a Linux mechanism called binfmt_misc to teach the kernel to execute that any time it encounters an executable matching that binary pattern."
+>
+> — Describing how to register the executable with the Linux kernel.
+
+## Topics
+
+- [sqlite](/kb/topics/sqlite)
+- [linux](/kb/topics/linux)
+- [executable-binaries](/kb/topics/executable-binaries)
+
+---
+
+## Full Article
+
+24th August 2026 - Link Blog Your executable is a SQLite database (via) Farid Zakaria describes a neat Linux pattern for creating a SQLite database file that can be directly used as an executable binary. The trick sets the SQLite file format's 4-byte application ID (68 bytes into the file) to SELF, standing for Structured Executable & Linkable Format. The various components of the ELF executable format are then arranged into a number of different SQLite tables, using this schema. Their self-exec interpreter (C code here) can then extract and execute the necessary pieces. You can additionally use a Linux mechanism called binfmt_misc to teach the kernel to execute that any time it encounters an executable matching that binary pattern. Farid uses NixOS here, but without NixOS I think registration looks something like this: printf '%s\n' ':self:M:68:SELF::/usr/local/bin/self-exec:' \ > /proc/sys/fs/binfmt_misc/register
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: SQLite Query Explainer"
+    icon="newspaper"
+    href="/kb/articles/tool-sqlite-query-explainer-18b6da14"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+  <Card
+    title="TIL: Using LLM in the shebang line of a script"
+    icon="newspaper"
+    href="/kb/articles/til-using-llm-in-the-shebang-line-of-a-script-8f613b8a"
+  >
+    Simon Willison · how-to · 50% similar
+  </Card>
+  <Card
+    title="Tool: Syntaqlite Playground"
+    icon="newspaper"
+    href="/kb/articles/tool-syntaqlite-playground-08289a33"
+  >
+    Simon Willison · tutorial · 47% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/](https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/).
+</Note>

@@ -980,6 +980,10 @@
       "destination": "/kb/articles/what-claude-design-is-actually-good-for-and-why-figma-isnt-d-63e5c795"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-646dbd88",
+      "destination": "/kb/articles/-how-i-ai-grok-bot-grok-46whats-great-and-whats-still-hype-l-646dbd88"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-64d554bc",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-intercom-2xd-their-engineering-ve-64d554bc"
     },
@@ -1186,6 +1190,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
       "destination": "/kb/articles/from-figma-to-claude-code-and-back-gui-seiz-alex-kern-figma--a66fabc6"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a7817134",
+      "destination": "/kb/articles/i-spent-20000-on-devin-in-a-month-heres-what-i-learned-ryan--a7817134"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a81c2053",
@@ -1426,6 +1434,10 @@
     {
       "source": "/kb/articles/simon-willison-035fb1d7",
       "destination": "/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-05e0e6d1",
+      "destination": "/kb/articles/your-executable-is-a-sqlite-database-05e0e6d1"
     },
     {
       "source": "/kb/articles/simon-willison-076a1a4a",
@@ -2302,6 +2314,10 @@
     {
       "source": "/kb/articles/simon-willison-60c3ba95",
       "destination": "/kb/articles/auto-mode-is-now-the-default-in-claude-code-for-pro-max-and--60c3ba95"
+    },
+    {
+      "source": "/kb/articles/simon-willison-60eae651",
+      "destination": "/kb/articles/release-llm-anthropic-027-60eae651"
     },
     {
       "source": "/kb/articles/simon-willison-611d7325",
@@ -4494,6 +4510,10 @@
     {
       "source": "/kb/articles/swyx-c303feae",
       "destination": "/kb/articles/autoresearch-the-feedback-loop-behind-self-improving-agents-c303feae"
+    },
+    {
+      "source": "/kb/articles/swyx-c921d021",
+      "destination": "/kb/articles/ainews-andrew-ng-gets-into-ai-engineering-c921d021"
     },
     {
       "source": "/kb/articles/swyx-c9b1697d",
