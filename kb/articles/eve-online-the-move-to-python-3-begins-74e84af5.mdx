@@ -1,0 +1,80 @@
+---
+title: 'EVE Online: The Move to Python 3 Begins!'
+description: 'EVE Online is transitioning from Stackless Python to Python 3, marking a significant upgrade after 16 years, with a focus on code compatibility and en'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-25'
+sourceUrl: 'https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/'
+topics: ["python-upgrade","eve-online","game-development","software-engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/) · 25/08/2026
+</Info>
+
+## Summary
+
+EVE Online is transitioning from Stackless Python to Python 3, marking a significant upgrade after 16 years, with a focus on code compatibility and engine improvements.
+
+## Key Insights
+
+> "EVE Online has been one of the most interesting case studies in Python at scale for over twenty years now."
+>
+> — Introduction to the article discussing EVE Online's history with Python.
+
+> "Their upgrade to Python 3 will start using the futurize script against 2.4 million lines of code."
+>
+> — Details about the upgrade process to Python 3.
+
+> "They presented Scheduling in Carbon: Leaving Stackless Python Behind describing how they replaced Stackless in the Carbon engine."
+>
+> — Mention of a previous conference presentation related to their engine improvements.
+
+## Topics
+
+- [python-upgrade](/kb/topics/python-upgrade)
+- [eve-online](/kb/topics/eve-online)
+- [game-development](/kb/topics/game-development)
+- [software-engineering](/kb/topics/software-engineering)
+
+---
+
+## Full Article
+
+25th August 2026 - Link Blog EVE Online: The Move to Python 3 Begins! (via) EVE Online has been one of the most interesting case studies in Python at scale for over twenty years now. They've been running on Stackless Python since their launch in 2003, and their last major upgrade was 16 years ago, to Stackless Python 2.7 in 2010. Their upgrade to Python 3 will start using the futurize script against 2.4 million lines of code, followed by careful manual review of the ~20,000 places where Python 2 and 3 behavior differ - for example 1 / 2 is 0 in Python 2 but is 0.5 in Python 3. There's nothing in this announcement about how they plan to replace Stackless, but at their conference last year they presented Scheduling in Carbon: Leaving Stackless Python Behind describing how they replaced Stackless in the Carbon engine for their more recent game EVE Frontier, using their (now open source) carbonengine/scheduler library.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="A quote from Ken Jin"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-ken-jin-1b93707c"
+  >
+    Simon Willison · reference · 45% similar
+  </Card>
+  <Card
+    title="[AINews] Every Lab serious enough about Developers has bought their own Devtools"
+    icon="newspaper"
+    href="/kb/articles/ainews-every-lab-serious-enough-about-developers-has-bought--42ddf81c"
+  >
+    Swyx · explanation · 44% similar
+  </Card>
+  <Card
+    title="[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??"
+    icon="newspaper"
+    href="/kb/articles/ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the--a3d80cea"
+  >
+    Swyx · explanation · 44% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/](https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/).
+</Note>

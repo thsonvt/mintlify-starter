@@ -1184,6 +1184,10 @@
       "destination": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-a31d2830",
+      "destination": "/kb/articles/how-to-figure-out-your-next-career-move-a31d2830"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-a37ceded",
       "destination": "/kb/articles/how-braintrust-uses-ai-agents-evals-and-ci-to-ship-better-so-a37ceded"
     },
@@ -2356,6 +2360,10 @@
       "destination": "/kb/articles/wheres-the-raccoon-with-the-ham-radio-chatgpt-images-20-641f8362"
     },
     {
+      "source": "/kb/articles/simon-willison-645d64f0",
+      "destination": "/kb/articles/a-quote-from-paul-dix-645d64f0"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -2506,6 +2514,10 @@
     {
       "source": "/kb/articles/simon-willison-747b7034",
       "destination": "/kb/articles/changes-to-github-copilot-individual-plans-747b7034"
+    },
+    {
+      "source": "/kb/articles/simon-willison-74e84af5",
+      "destination": "/kb/articles/eve-online-the-move-to-python-3-begins-74e84af5"
     },
     {
       "source": "/kb/articles/simon-willison-760a015a",
