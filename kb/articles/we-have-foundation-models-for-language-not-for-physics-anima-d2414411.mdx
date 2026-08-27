@@ -1,0 +1,80 @@
+---
+title: '🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing'
+description: 'Anima Anandkumar discusses her pioneering work on FourCastNet, an AI weather model that challenges traditional physics simulations and explores the po'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-08-26'
+sourceUrl: 'https://www.latent.space/p/anima'
+topics: ["ai-models","weather-forecasting","neural-operators","physics-simulation"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/anima) · 26/08/2026
+</Info>
+
+## Summary
+
+Anima Anandkumar discusses her pioneering work on FourCastNet, an AI weather model that challenges traditional physics simulations and explores the potential of Neural Operators.
+
+## Key Insights
+
+> "We have foundation models for language, not for physics."
+>
+> — Anima Anandkumar emphasizes the gap in AI models for physical sciences compared to language.
+
+> "The physical world is more forgiving than you’d expect."
+>
+> — Anima reflects on the surprising efficiency of Neural Operators in predicting complex physical phenomena.
+
+> "It is a start, and it will take longer than the token-driven parts of AI."
+>
+> — Anima discusses the challenges and different approaches needed for building AI models in physics.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [weather-forecasting](/kb/topics/weather-forecasting)
+- [neural-operators](/kb/topics/neural-operators)
+- [physics-simulation](/kb/topics/physics-simulation)
+
+---
+
+## Full Article
+
+A few years ago, Caltech Prof. and co-founder of Accelerated Understanding, Anima Anandkumar set out to develop the first open-source weather model with AI. Talking to experts in the field, she was met with skepticism. Weather is chaotic, physics simulations are hard, have been developed for decades, and require supercomputers, the data just isnt there. Despite reservations, Anima went forth and built. Within a year her team had developed FourCastNet, a predictive model that is competitive with the best physics-based simulations available. Thanks to Anima, and her follow up work, anyone can now predict weather accurately over a short timescale using consumer grade GPUs.1 In the fifteen or so science episodes weve released on Latent.Space, weve covered atoms, molecules, materials, biology, and math. Anima is a pioneer in studying physical systems that are continuous. Weather, fusion, and fluid or heat flow are huge areas of science that are extremely difficult to model: they are large, chaotic, and fundamentally multi-scale. This is a field the AI community has somewhat neglected, but one we expect will grow fast. We plan to cover large physical systems more in coming episodes.One thing you can glean from Animas work is that this area of AI resists the scaling ideas that have permeated the rest of the field. The data isnt there: open source datasets in many of these domains are limited to tens or hundreds of thousands of examples, far from what token-hungry transformers need. Even worse, the resolution that physics demands pushes the context length into the hundreds of billions, so you cant just throw more tokens at the problem. That isnt a ceiling though, just a slower road: progress here comes from building in structure and inductive biases. Sorry for all you bitter-lesson-pilled language modelers.If each dimension is even a few hundred grid points, which is where industrial scale starts... were talking hundreds of billions to even a trillion context length. So forget ever having a transformer for anything of this scale, all of the worlds compute will not be enough.The math underneathTo tackle these systems, Anima pioneered a technique known as Neural Operators, one of the most beautiful theoretical developments in AI of the last decade.2 These allow you to combine data and physical laws to enable multi-scale inputs and outputs. Were no longer modeling a grid, were modeling a function that evolves over many scales. This allows Anima and crew to build in priors based upon physical intuition.Neural Operators What if we created a neural network where every layer was itself a function?To see how physical priors are still helpful for AI modeling, lets revisit the problem of weather forecasting on a global scale. The earth is a sphere, which meant that accurate modeling involved using the right basis set 3 the Spherical Harmonics. Run a weather model on a grid and it blows up fast. Move to the natural basis for the problem and it stays stable far longer, long enough to roll out months ahead instead of days. Animas Fourier Neural Operator learns directly in this frequency domain, and its spherical variant powers FourCastNet 3, which models the weather across the whole globe and keeps running stably far into the future.FourCastNet 3 The earth is (almost) a sphere bake the spherical harmonics into your network!The physical world is forgivingAnima explored Neural Operators across other physical domains too, and one striking observation is that the physical world is more forgiving than youd expect. In fusion, a few thousand samples are enough to predict plasma disruptions, and to do it a million times faster than traditional simulation.None of this is a rejection of scale, it is a different route to it. Anima ultimately still wants to build a foundation model for physics, a model that spans many phenomena and does both simulation and design. You get there by building in the structure the physical world already has, not by waiting for data that will never exist. It is a start, and it will take longer than the token-driven parts of AI, because for the physical world tokens were never the answer.All of the things that work with deep learning, lets take them, but make them a bit more principled.Weather is only the beginningNeural operators and weather modeling were a personal passion of mine, so weve spent much of this blog and the episode exploring this work. Anima has done so much more! In the episode, we cover several other recent developments from Anima:Anima has a series of works integrating neural networks and automated proof techniques. We talk about TorchLean, a new framework that lets you write PyTorch-style networks inside the proof assistant Lean and formally verify them. This is a major step for proving bounds on neural networks, something that would be really important for someone trying to, e.g., add a neural network as part of the control loop to their fusion reactor!Anima was recently appointed to the United Nations Scientific Advisory Board! We talk with her about her goals of bringing evidence-based viewpoints to policy, and how AI in scientific domains can improve peoples lives all over the world.This episode has something for every AI or science nerd! Elegant math? Old school harmonic analysis? Fundamental developments in modern AI? Practical ways of modeling the physical world? Give it a watch!1Work that has blossomed into an entire field of AI forecasting, a theme we will cover more on the podcast in coming months.2This is an elegant and very technically deep paper. Excellent nerd snipe if you have a big block of time to study!3All emdashes were human generated.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="🔬Searching the Space of All Possible Materials — Prof. Max Welling, CuspAI"
+    icon="newspaper"
+    href="/kb/articles/searching-the-space-of-all-possible-materials-prof-max-welli-cb33a12e"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+  <Card
+    title="[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer"
+    icon="newspaper"
+    href="/kb/articles/ainews-new-ai-infra-unicorns-exa-modal-turbopuffer-0e161fbb"
+  >
+    Swyx · reference · 64% similar
+  </Card>
+  <Card
+    title="🔬Doing Vibe Physics — Alex Lupsasca, OpenAI"
+    icon="newspaper"
+    href="/kb/articles/doing-vibe-physics-alex-lupsasca-openai-f39f0e6c"
+  >
+    Swyx · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/anima](https://www.latent.space/p/anima).
+</Note>

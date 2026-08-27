@@ -2704,6 +2704,10 @@
       "destination": "/kb/articles/the-zig-projects-rationale-for-their-firm-anti-ai-contributi-9053483c"
     },
     {
+      "source": "/kb/articles/simon-willison-90ab3667",
+      "destination": "/kb/articles/qwen38-flash-next-90ab3667"
+    },
+    {
       "source": "/kb/articles/simon-willison-912e723c",
       "destination": "/kb/articles/quantization-from-the-ground-up-912e723c"
     },
@@ -3948,6 +3952,10 @@
       "destination": "/kb/articles/ainews-frontiercode-benchmarking-for-code-quality-over-slop-1a1f4627"
     },
     {
+      "source": "/kb/articles/swyx-1bd07ba2",
+      "destination": "/kb/articles/ainews-nvidia-buys-huggingface-for-13b-as-openai-publishes-t-1bd07ba2"
+    },
+    {
       "source": "/kb/articles/swyx-1c8ca64e",
       "destination": "/kb/articles/ainews-ai-cybersecurity-becomes-top-of-mind-1c8ca64e"
     },
@@ -4126,6 +4134,10 @@
     {
       "source": "/kb/articles/swyx-49c5ea47",
       "destination": "/kb/articles/how-to-stop-shipping-low-quality-rl-environments-with-exampl-49c5ea47"
+    },
+    {
+      "source": "/kb/articles/swyx-4a0c4308",
+      "destination": "/kb/articles/ainews-hot-chips-openais-jalapeo-cerebras-cs-5-groq-3-lpx-ap-4a0c4308"
     },
     {
       "source": "/kb/articles/swyx-5007e60e",
@@ -4496,6 +4508,10 @@
       "destination": "/kb/articles/ainews-black-forest-labs-flux-3-multimodal-flow-models-that--b23b65e3"
     },
     {
+      "source": "/kb/articles/swyx-b3ed459e",
+      "destination": "/kb/articles/lovable-cto-the-future-of-saas-is-apps-that-agents-can-use-b3ed459e"
+    },
+    {
       "source": "/kb/articles/swyx-b8f20132",
       "destination": "/kb/articles/inside-the-model-factory-eiso-kant-poolside-ai-b8f20132"
     },
@@ -4566,6 +4582,10 @@
     {
       "source": "/kb/articles/swyx-d1f4ded7",
       "destination": "/kb/articles/ainews-stripe-buys-openrouter-for-7b-d1f4ded7"
+    },
+    {
+      "source": "/kb/articles/swyx-d2414411",
+      "destination": "/kb/articles/we-have-foundation-models-for-language-not-for-physics-anima-d2414411"
     },
     {
       "source": "/kb/articles/swyx-d296c35a",
