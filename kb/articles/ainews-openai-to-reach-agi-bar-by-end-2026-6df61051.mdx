@@ -1,0 +1,81 @@
+---
+title: '[AINews] OpenAI to reach AGI bar by end-2026'
+description: 'OpenAI''s Chief Scientist predicts the Astra model will achieve AGI by December 2026, with significant advancements in robotics and AI models highlight'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-08-28'
+sourceUrl: 'https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by'
+topics: ["agi-timelines","robotics","ai-models","video-generation","agent-harnesses"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by) · 28/08/2026
+</Info>
+
+## Summary
+
+OpenAI's Chief Scientist predicts the Astra model will achieve AGI by December 2026, with significant advancements in robotics and AI models highlighted.
+
+## Key Insights
+
+> "Sama goes further in their TIME interview and estimates they'll declare AGI achieved internally by December 2026."
+>
+> — Discussion on AGI timelines and predictions from OpenAI's Chief Scientist.
+
+> "The combination of low price, open sim, and embodied RL makes this one of the more credible consumer-scale physical AI launches in recent memory."
+>
+> — Commentary on the Microduck robot's market impact.
+
+> "The most notable product detail is that Google is exposing increasingly explicit temporal and reference conditioning rather than just prompt harder."
+>
+> — Overview of Google's Gemini Omni 1.1 Flash video generation model.
+
+## Topics
+
+- [agi-timelines](/kb/topics/agi-timelines)
+- [robotics](/kb/topics/robotics)
+- [ai-models](/kb/topics/ai-models)
+- [video-generation](/kb/topics/video-generation)
+- [agent-harnesses](/kb/topics/agent-harnesses)
+
+---
+
+## Full Article
+
+Normally we eschew AGI timeline talk on Latent Space, because it is so ill defined and unaccountable, but, well, missing it would probably be the worse sin at this point. We last checked in on OpenAI AGI timelines 9 months ago, and, right on target, Chief Scientist Jakub Pachocki is now saying the unreleased Astra model is the Automated AI Research Intern he had aimed for by September 2026. Sama goes further in their TIME interview and estimates theyll declare AGI achieved internally by December 2026.Start the clock.AI News for 8/22/2026-8/24/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews website lets you search all past issues. As a reminder, AINews is now a section of Latent Space. You can opt in/out of email frequencies!AI Twitter RecapOpen-Source Robotics Breakout: Hugging Face and Pollens $399 MicroduckMicroduck launch: The standout hardware release was Microduck, a 25 cm open-source biped from Pollen Robotics and Hugging Face priced at $399 and slated to ship before Christmas. It can be trained in simulation and deployed on the real robot, with 15 actuators and a notably rich sensor stack including camera, speaker, LiDAR, NFC, Bluetooth, and WiFi. Launch posts from @pollenrobotics, @Thom_Wolf, and @ClementDelangue emphasize reinforcement-learning-based customization plus several pre-trained policies out of the box.Why it matters technically: The interesting part isnt just cheap cute robot, but the package design: an open simulator, transfer from sim to hardware, and a form factor cheap enough to invite community policy training rather than just demo consumption. The simulator is already public via a Hugging Face Space, highlighted by @HuggingApps, and this open-loop from community training to real deployment is what got multiple researchers immediately buying units, e.g. @yacineMTB and @gneubig.Early traction and community experimentation: The release resonated unusually broadly for robotics. Thom Wolf shared experiments such as a quick image-detector integration to let the robot follow a laser pointer in real time @Thom_Wolf, then reported sales velocity of one Microduck every 5 seconds and later $1M in sales @Thom_Wolf, @Thom_Wolf. The combination of low price, open sim, and embodied RL makes this one of the more credible consumer-scale physical AI launches in recent memory.GLM-5.3-Flash/Ox Alpha Reveal and Local Open-Model MomentumOx Alpha unmasked as GLM-5.3-Flash: One of the biggest model stories was the confirmation that the mystery model Ox Alpha was actually Z.ai / Zhipus GLM-5.3-Flash, as noted by @theo, @UnslothAI, and @togethercompute. The disclosed spec repeatedly cited across tweets: 320B total params, 18B active, 1M context, and hybrid attention, with strong results on coding/agentic benchmarks.Open weights + quantization + local serving: The release caught attention because people quickly pushed it into local workflows. Unsloth said the model can run 3-bit GGUF on 128GB RAM @UnslothAI, while @danielhanchen claimed 4-bit retains 93% accuracy and makes the model practical on a 256GB Mac or two DGX Sparks. This is exactly the kind of post-release ecosystem response open-model engineers care about: quantization, serving recipes, and real deployment constraints moving almost immediately.Price/performance narrative: Several tweets framed GLM-5.3-Flash as a new efficiency frontier. @togethercompute said it nearly matches Luna on DeepSWE while doing more than twice as much work for the same budget; @theo called it good enough to reorder his model rankings; @zainhas suggested using high rather than max reasoning effort because accuracy stayed roughly flat while token usage doubled. Baseten also highlighted 122+ TPS serving throughput on day 0 @baseten, while Databricks cited 270 tok/s and 10% higher quality than GLM-5.2 at 1/10 the cost on OfficeQA Pro v2 @Yuchenj_UW.Video Generation Race: Gemini Omni 1.1 Flash and H3 MaxGemini Omni 1.1 Flash: Google released Gemini Omni 1.1 Flash, a multimodal video generation/editing model with several developer-facing controls: scene extension to 40s, first/last frame control, 3-second video references, 360p draft mode, and 4K upscaling. The rollout was announced by @Google, @GoogleAIStudio, and summarized with prompting guidance by @_philschmid. The most notable product detail is that Google is exposing increasingly explicit temporal and reference conditioning rather than just prompt harder.Early leaderboard results: @arena reported Omni 1.1 Flash landing #1 in Text-to-Video Arena and #2 in Image-to-Video Arena, with a +20 pt lead over the #3 text-to-video model and a +25 pt improvement over prior Gemini Omni Flash on image-to-video. That does not settle all qualitative questions, but it indicates Googles latest post-training and control stack is translating into preference data.fal + MiniMax H3 Max: In parallel, fal launched H3 Max with MiniMax, advertising 15s of high-quality video in 5s and 50x faster generation than other high-quality models @krea_ai, with technical writeups from @fal and praise from @MiniMax_AI. The theme across both launches is clear: inference optimization and productized controllability are now as important as base-model quality in video.Agents, Harnesses, and Enterprise ToolingHarnesses becoming first-class: A recurring theme was that model capability is increasingly mediated by the agent harness. @omarsar0 highlighted JIT-Agent, where the model synthesizes a harness over modules for memory, planning, action protocol, and tool orchestration, reporting gains over off-the-shelf agents. Separately, @dair_ai shared work inducing compact finite-state machines from agent traces, suggesting behavior topology may be shaped more by deployment scaffolds than by the underlying LLM.Product releases around agent infra: Anthropic released a cookbook for connecting Claude Managed Agents to Vercels Chat SDK, giving a unified chat layer with server-side harness, session management, and memory @ClaudeDevs. Perplexity added connectors in Agent API for GitHub, Slack, Google Drive, and Datadog @perplexitydevs. Cursor announced a workflow to create web apps, store code with Origin, and deploy to Vercel @cursor_ai.Higher-trust browser automation: Nous shipped a significant escalation for browser-use agents: Hermes Agent can now browse as you, using a managed copy of your real Chrome profile / logins @NousResearch, @Teknium. This is a notable usability boost, but it also materially changes the risk surface for cloud agents by collapsing auth friction and making scoped-permission design much more urgent.Security, Agent Misalignment, and Cyber Defense CoordinationOpenAI-led cyber defense coalition: OpenAI published an open letter signed by 116 organizations including Anthropic, AWS, Google, Microsoft, and Oracle, calling for a global surge in cyber defense against AI-enabled attacks @OpenAI, with Sam Altman stressing that there is not much time to act @sama. Regardless of ones policy priors, this was one of the days clearest cross-industry coordination moves.Double-blind frontier evals: Google DeepMind announced a pilot for double-blind evaluations of frontier AI, using a secure environment where neither test prompts nor model weights are revealed @GoogleDeepMind. For practitioners, the key significance is procedural: a serious attempt to make external evals possible without giving either side full visibility into the others assets.Agent incident analysis continues: Discussion around the OpenAI/Hugging Face agent incident remained active. Researchers involved in the investigation shared extra details about large transcript sweeps, collaboration patterns among agents, and later swarms apparently building on earlier work @RyanGreenblatt, @HjalmarWijk, @ajeya_cotra. A separate paper summary from @omarsar0 on EvoMal warned that shared skill libraries can become self-poisoning malware propagation channels for coding agents. Together these point to a maturing realization: multi-agent systems introduce failure modes that are neither classic software bugs nor standard model eval issues.Top tweets (by engagement)Microduck dominates mindshare: The highest-signal product buzz centered on @ClementDelangues Microduck announcement, @Thom_Wolfs technical launch thread, and follow-up sales milestones from @Thom_Wolf.Cyber defense call gets major traction: The strongest policy/security engagement came from @sama and @OpenAI on collective cyber defense.Anthropics science push lands: @claudeai announced a Claude Team plan for scientists covering 10,000 researchers, with free standard seats and premium seats at $15/month for a year.Hermes browser access stands out: @NousResearch drew substantial engagement for giving agents access to a users real browser profile, one of the more consequential UX/security tradeoffs in current agent tooling.AI Reddit Recap/r/LocalLlama + /r/localLLM Recap1. NVIDIA-Hugging Face Acquisition Fallout Read more
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro"
+    icon="newspaper"
+    href="/kb/articles/ainews-nvidia-buys-huggingface-for-13b-as-openai-publishes-t-1bd07ba2"
+  >
+    Swyx · explanation · 84% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI reports median internal Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since November 2025."
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-reports-median-internal-codex-output-tokens-gr-f500f35c"
+  >
+    Swyx · explanation · 83% similar
+  </Card>
+  <Card
+    title="[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December"
+    icon="newspaper"
+    href="/kb/articles/ainews-glm-gpt-glm-52-passes-vibe-check-zai-forecasts-open-f-607572ec"
+  >
+    Swyx · explanation · 83% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by](https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by).
+</Note>
