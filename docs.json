@@ -3388,6 +3388,10 @@
       "destination": "/kb/articles/prompt-injection-as-role-confusion-d07d7e8f"
     },
     {
+      "source": "/kb/articles/simon-willison-d198c4b1",
+      "destination": "/kb/articles/just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit--d198c4b1"
+    },
+    {
       "source": "/kb/articles/simon-willison-d234ac03",
       "destination": "/kb/articles/introducing-the-codex-app-d234ac03"
     },
@@ -4630,6 +4634,10 @@
     {
       "source": "/kb/articles/swyx-de01ad96",
       "destination": "/kb/articles/ainews-claude-opus-5-fable-level-performance-at-opus-price-h-de01ad96"
+    },
+    {
+      "source": "/kb/articles/swyx-e0f6c128",
+      "destination": "/kb/articles/ainews-openai-shuts-off-cursor-e0f6c128"
     },
     {
       "source": "/kb/articles/swyx-e20a97d6",
