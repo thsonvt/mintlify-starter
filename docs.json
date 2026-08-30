@@ -1240,6 +1240,10 @@
       "destination": "/kb/articles/from-a-690-newsletter-to-3m-api-how-a-non-coder-built-memelo-c0183879"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-c1d536d8",
+      "destination": "/kb/articles/-community-wisdom-building-without-clear-pm-requirements-sel-c1d536d8"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-c3f80057",
       "destination": "/kb/articles/claude-opus-5-review-this-model-is-brilliant-but-annoying-c3f80057"
     },
@@ -1266,6 +1270,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-c7b51e5b",
       "destination": "/kb/articles/-community-wisdom-what-great-product-leaders-do-differently--c7b51e5b"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-cb06a038",
+      "destination": "/kb/articles/ais-third-era-the-rise-of-persistent-ai-coworkers-tara-sesha-cb06a038"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-ccb4fb63",
@@ -1882,6 +1890,10 @@
     {
       "source": "/kb/articles/simon-willison-371c30ca",
       "destination": "/kb/articles/release-asyncinject-07-371c30ca"
+    },
+    {
+      "source": "/kb/articles/simon-willison-372a5c11",
+      "destination": "/kb/articles/introducing-hy4-preview-372a5c11"
     },
     {
       "source": "/kb/articles/simon-willison-38c97ff6",

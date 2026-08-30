@@ -1,0 +1,80 @@
+---
+title: 'Introducing Hy4 Preview'
+description: 'Tencent has launched Hy4 Preview, a new LLM with significant parameter increases and advanced reasoning capabilities compared to its predecessor, Hy3.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-08-29'
+sourceUrl: 'https://simonwillison.net/2026/Aug/29/hy4/'
+topics: ["llm","tencent","hy4","ai-research"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Aug/29/hy4/) · 29/08/2026
+</Info>
+
+## Summary
+
+Tencent has launched Hy4 Preview, a new LLM with significant parameter increases and advanced reasoning capabilities compared to its predecessor, Hy3.
+
+## Key Insights
+
+> "This is a big size increase from their previous Hy3 in July, which was 295B."
+>
+> — Discussing the improvements in the new Hy4 model.
+
+> "It looks like there are just two reasoning effort levels: 'high' (the default) and 'no_think'."
+>
+> — Explaining the reasoning capabilities of Hy4.
+
+> "It's interesting how the reasoning trace uses slightly truncated English."
+>
+> — Commenting on the efficiency of the reasoning process in the model.
+
+## Topics
+
+- [llm](/kb/topics/llm)
+- [tencent](/kb/topics/tencent)
+- [hy4](/kb/topics/hy4)
+- [ai-research](/kb/topics/ai-research)
+
+---
+
+## Full Article
+
+29th August 2026 - Link Blog Introducing Hy4 Preview. New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face. This is a big size increase from their previous Hy3 in July, which was 295B, 21B active, 256,000 context, 598GB. I recently started using model chat templates to better understand their capabilities. Here's Hy4's chat_template.jinja on Hugging Face, which includes this section: &#123;%- if not reasoning_effort is defined %&#125; &#123;%- set reasoning_effort = 'high' %&#125; &#123;%- elif reasoning_effort not in ['high', 'no_think'] %&#125; &#123;%- if reasoning_effort is none %&#125; &#123;&#123;- raise_exception('reasoning_effort error : None, should be no_think/high') &#125;&#125; &#123;%- else %&#125; &#123;&#123;- raise_exception('reasoning_effort error : ' + reasoning_effort + ', should be no_think/high') &#125;&#125; &#123;%- endif %&#125; &#123;%- endif %&#125; So it looks like there are just two reasoning effort levels: "high" (the default) and "no_think" (reason by disabled). I tried my "Generate an SVG of a pelican riding a bicycle" prompt with the default high reasoning via OpenRouter and got this: Quoting the reasoning trace: [...] Let's maybe add a helmet? It could improve riding theme, but may obscure head. Maybe a small cycling cap or helmet? The user didn't ask; can add red helmet? Might be cute. But pelican with big beak; a helmet might obscure. Better maybe no. Maybe add sunglasses? no. Maybe add water? no. It's interesting how the reasoning trace uses slightly truncated English, presumably because perfect grammar isn't useful or token efficient for hidden reasoning text.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] The Field Guide to Fable"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-field-guide-to-fable-8bf11a58"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+  <Card
+    title="[AINews] DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B), Base and Instruct — runnable on Huawei Ascend chips"
+    icon="newspaper"
+    href="/kb/articles/ainews-deepseek-v4-pro-16t-a49b-and-flash-284b-a13b-base-and-8d6f339c"
+  >
+    Swyx · reference · 66% similar
+  </Card>
+  <Card
+    title="[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)"
+    icon="newspaper"
+    href="/kb/articles/ainews-thinkys-inkling-975b-a41b-multimodal-new-best-america-fe7c5809"
+  >
+    Swyx · reference · 63% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Aug/29/hy4/](https://simonwillison.net/2026/Aug/29/hy4/).
+</Note>
