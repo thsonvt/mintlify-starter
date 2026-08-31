@@ -896,6 +896,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-470748a5",
+      "destination": "/kb/articles/-how-i-ai-how-this-pm-uses-claude-to-handle-70-to-80-of-his--470748a5"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-49a1f665",
       "destination": "/kb/articles/a-rational-conversation-on-where-ai-is-actually-going-benedi-49a1f665"
     },
@@ -1022,6 +1026,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-72d57342",
       "destination": "/kb/articles/i-built-a-custom-slack-inbox-it-was-easier-than-youd-think-y-72d57342"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-77c9b210",
+      "destination": "/kb/articles/how-i-turned-claude-into-a-self-improving-pm-assistant-danie-77c9b210"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-77db78ce",
@@ -3318,6 +3326,10 @@
     {
       "source": "/kb/articles/simon-willison-c962ca58",
       "destination": "/kb/articles/the-people-do-not-yearn-for-automation-c962ca58"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c9762303",
+      "destination": "/kb/articles/understanding-chatgpt-work-c9762303"
     },
     {
       "source": "/kb/articles/simon-willison-c978e84a",
