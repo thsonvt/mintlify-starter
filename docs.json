@@ -1232,6 +1232,10 @@
       "destination": "/kb/articles/html-is-the-new-markdown-how-anthropic-engineers-are-buildin-b61426e3"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-b6c01a8e",
+      "destination": "/kb/articles/how-to-turn-your-ai-into-a-world-class-designer-b6c01a8e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-b7e8c195",
       "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
     },
@@ -2684,6 +2688,10 @@
       "destination": "/kb/articles/a-quote-from-openclaw-running-opus-46-8aac5502"
     },
     {
+      "source": "/kb/articles/simon-willison-8aeae8ba",
+      "destination": "/kb/articles/introducing-wrapture-8aeae8ba"
+    },
+    {
       "source": "/kb/articles/simon-willison-8bc90fcd",
       "destination": "/kb/articles/an-inside-look-at-the-relay-market-powering-token-resellers--8bc90fcd"
     },
@@ -3310,6 +3318,10 @@
     {
       "source": "/kb/articles/simon-willison-c77aff7b",
       "destination": "/kb/articles/how-i-think-about-codex-c77aff7b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c7ad85f9",
+      "destination": "/kb/articles/a-quote-from-andrew-digby-c7ad85f9"
     },
     {
       "source": "/kb/articles/simon-willison-c7bd9aa8",
@@ -4238,6 +4250,10 @@
     {
       "source": "/kb/articles/swyx-5b672f28",
       "destination": "/kb/articles/the-age-of-async-agents-cognitions-walden-yan-openinspects-c-5b672f28"
+    },
+    {
+      "source": "/kb/articles/swyx-5caaa675",
+      "destination": "/kb/articles/ainews-fals-h3-max-live-breaks-the-infinite-videogen-barrier-5caaa675"
     },
     {
       "source": "/kb/articles/swyx-5cc34ee1",
