@@ -1,0 +1,80 @@
+---
+title: 'A quote from Rick Brewster'
+description: 'Rick Brewster discusses the challenges of implementing Direct2D in Paint.NET on WINE and praises Claude''s reverse-engineering efforts.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-02'
+sourceUrl: 'https://simonwillison.net/2026/Sep/2/rick-brewster/'
+topics: ["paint-dot-net","direct2d","wine","reverse-engineering"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/2/rick-brewster/) · 02/09/2026
+</Info>
+
+## Summary
+
+Rick Brewster discusses the challenges of implementing Direct2D in Paint.NET on WINE and praises Claude's reverse-engineering efforts.
+
+## Key Insights
+
+> "Direct2D has always been the biggest hurdle for Paint.NET on WINE."
+>
+> — Discussing the challenges faced in integrating Direct2D with Paint.NET.
+
+> "This was written by our good friend Claude, without whom this would NOT have been possible."
+>
+> — Acknowledging Claude's contributions to the project.
+
+> "At times, Claude was working with the fury of 10 freshly unshackled Einstein genius-level 10x coders."
+>
+> — Commenting on the varying levels of productivity and creativity in Claude's work.
+
+## Topics
+
+- [paint-dot-net](/kb/topics/paint-dot-net)
+- [direct2d](/kb/topics/direct2d)
+- [wine](/kb/topics/wine)
+- [reverse-engineering](/kb/topics/reverse-engineering)
+
+---
+
+## Full Article
+
+2nd September 2026 Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just "disable" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (triggered by using /wine). It lives in PaintDotNet.Windows.Direct2D1.Managed.dll. This was written by our good friend Claude, without whom this would NOT have been possible and would NEVER have happened. [...] Most of this code is, as they say, "vibe coded." By that I mean that it has not been thoroughly reviewed, it's more "trust me bro" style. I cannot possibly review 180,000 lines of code, it's just way way way too much. For reference, the rest of Paint.NET is about 700,000 lines of code and I've been working on it for over 20 years. [...] At times, Claude was working with the fury of 10 freshly unshackled Einstein genius-level 10x coders. And other times ... well, not so much. I had to babysit Claude quite a bit to make sure it did resource management correctly (for awhile it just wasn't doing the COM equivalent of AddRef() for reference counted objects, oops). I had to slap it a few times when I found some really bad design or architecture decisions. And I was also impressed at some rather clever and tireless reverse engineering work it did to figure out all the formulas needed for implementing Direct2D's built-in effects library. — Rick Brewster, author of Paint.NET
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Can coding agents relicense open source through a “clean room” implementation of code?"
+    icon="newspaper"
+    href="/kb/articles/can-coding-agents-relicense-open-source-through-a-clean-room-d4fb177f"
+  >
+    Simon Willison · explanation · 48% similar
+  </Card>
+  <Card
+    title="Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/porting-the-moebius-02b-image-inpainting-model-to-run-in-the-6ce132ae"
+  >
+    Simon Willison · how-to · 48% similar
+  </Card>
+  <Card
+    title="Engineering"
+    icon="newspaper"
+    href="/kb/articles/engineering-3c5f54b1"
+  >
+    Anthropic Engineering · explanation · 47% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/2/rick-brewster/](https://simonwillison.net/2026/Sep/2/rick-brewster/).
+</Note>

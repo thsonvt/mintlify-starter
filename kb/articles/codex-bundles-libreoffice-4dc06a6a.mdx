@@ -1,0 +1,75 @@
+---
+title: 'Codex bundles LibreOffice'
+description: 'The article discusses the discovery of a significant amount of data in the OpenAI Codex desktop app''s cache, including installations of Python, Node.j'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-01'
+sourceUrl: 'https://simonwillison.net/2026/Sep/1/codex-libreoffice/'
+topics: ["openai-codex","libreoffice","software-installation"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/1/codex-libreoffice/) · 01/09/2026
+</Info>
+
+## Summary
+
+The article discusses the discovery of a significant amount of data in the OpenAI Codex desktop app's cache, including installations of Python, Node.js, and LibreOffice.
+
+## Key Insights
+
+> "The OpenAI Codex desktop app has 1.7GB of stuff in there"
+>
+> — Introduction to the findings in the ~/.cache/ folder.
+
+> "including a full Python installation, a full Node.js installation, and native binaries for Poppler, git, and the LibreOffice open source office suite"
+>
+> — Details about the contents found in the codex-primary-runtime folder.
+
+## Topics
+
+- [openai-codex](/kb/topics/openai-codex)
+- [libreoffice](/kb/topics/libreoffice)
+- [software-installation](/kb/topics/software-installation)
+
+---
+
+## Full Article
+
+1st September 2026 I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime, including a full Python installation, a full Node.js installation, and native binaries for Poppler, git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010): The ~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents folder includes skills which tell Codex how to find and use those binaries.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Agents for Everything Else: Codex for Knowledge Work, Claude for Creative Work"
+    icon="newspaper"
+    href="/kb/articles/ainews-agents-for-everything-else-codex-for-knowledge-work-c-29860c96"
+  >
+    Swyx · explanation · 63% similar
+  </Card>
+  <Card
+    title="[AINews] GPT 5.5 and OpenAI Codex Superapp "
+    icon="newspaper"
+    href="/kb/articles/ainews-gpt-55-and-openai-codex-superapp--7ef4ae15"
+  >
+    Swyx · explanation · 62% similar
+  </Card>
+  <Card
+    title="Codex for Open Source"
+    icon="newspaper"
+    href="/kb/articles/codex-for-open-source-8f0b7b58"
+  >
+    Simon Willison · explanation · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/1/codex-libreoffice/](https://simonwillison.net/2026/Sep/1/codex-libreoffice/).
+</Note>

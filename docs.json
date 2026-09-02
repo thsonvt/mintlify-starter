@@ -1040,6 +1040,10 @@
       "destination": "/kb/articles/claude-code-for-normal-people-skills-voice-mode-and-how-to-c-77fc7844"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-7856ad82",
+      "destination": "/kb/articles/grok-bot-vs-openclaw-how-i-replaced-my-entire-agent-stack-7856ad82"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-793a3aad",
       "destination": "/kb/articles/-community-wisdom-getting-started-with-open-source-models-ma-793a3aad"
     },
@@ -1502,6 +1506,10 @@
     {
       "source": "/kb/articles/simon-willison-0aef7995",
       "destination": "/kb/articles/comment-devtools-must-be-open-source-exedev-0aef7995"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0b18cd85",
+      "destination": "/kb/articles/claude-fable-51-made-me-a-really-nice-animated-pelican-0b18cd85"
     },
     {
       "source": "/kb/articles/simon-willison-0b6bf39a",
@@ -2080,6 +2088,10 @@
       "destination": "/kb/articles/anatomy-of-a-frontier-lab-agent-intrusion-a-technical-timeli-49057605"
     },
     {
+      "source": "/kb/articles/simon-willison-49427796",
+      "destination": "/kb/articles/tool-geojson-map-viewer-49427796"
+    },
+    {
       "source": "/kb/articles/simon-willison-495218f8",
       "destination": "/kb/articles/hoard-things-you-know-how-to-do-agentic-engineering-patterns-495218f8"
     },
@@ -2102,6 +2114,10 @@
     {
       "source": "/kb/articles/simon-willison-4aa7c94b",
       "destination": "/kb/articles/sqlite-utils-40rc1-adds-migrations-and-nested-transactions-4aa7c94b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4b3aa67d",
+      "destination": "/kb/articles/a-quote-from-tarn-adams-4b3aa67d"
     },
     {
       "source": "/kb/articles/simon-willison-4b5ea28a",
@@ -2128,12 +2144,20 @@
       "destination": "/kb/articles/a-quote-from-linus-torvalds-4dae9786"
     },
     {
+      "source": "/kb/articles/simon-willison-4dc06a6a",
+      "destination": "/kb/articles/codex-bundles-libreoffice-4dc06a6a"
+    },
+    {
       "source": "/kb/articles/simon-willison-4dd505b8",
       "destination": "/kb/articles/ladybirdbrowserladybird-abandon-swift-adoption-4dd505b8"
     },
     {
       "source": "/kb/articles/simon-willison-4e18f5f6",
       "destination": "/kb/articles/release-llm-032rc1-4e18f5f6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4e860aee",
+      "destination": "/kb/articles/release-datasette-mcp-02-4e860aee"
     },
     {
       "source": "/kb/articles/simon-willison-4f4fcb91",
@@ -2290,6 +2314,10 @@
     {
       "source": "/kb/articles/simon-willison-5da60b1d",
       "destination": "/kb/articles/release-llm-echo-05a0-5da60b1d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5db06c61",
+      "destination": "/kb/articles/python-3150-candidate-2-is-here-5db06c61"
     },
     {
       "source": "/kb/articles/simon-willison-5dea7f7c",
@@ -2830,6 +2858,10 @@
     {
       "source": "/kb/articles/simon-willison-98574161",
       "destination": "/kb/articles/more-than-just-code-review-98574161"
+    },
+    {
+      "source": "/kb/articles/simon-willison-98810480",
+      "destination": "/kb/articles/a-quote-from-rick-brewster-98810480"
     },
     {
       "source": "/kb/articles/simon-willison-98df17c6",
@@ -4136,6 +4168,10 @@
       "destination": "/kb/articles/ainews-satya-on-loopcraft-building-frontier-ecosystems-3f8afcc4"
     },
     {
+      "source": "/kb/articles/swyx-4008e1a5",
+      "destination": "/kb/articles/prs-not-welcome-how-top-ai-open-source-projects-are-managing-4008e1a5"
+    },
+    {
       "source": "/kb/articles/swyx-41a159da",
       "destination": "/kb/articles/the-scientist-and-the-simulator-41a159da"
     },
@@ -4326,6 +4362,10 @@
     {
       "source": "/kb/articles/swyx-6df61051",
       "destination": "/kb/articles/ainews-openai-to-reach-agi-bar-by-end-2026-6df61051"
+    },
+    {
+      "source": "/kb/articles/swyx-6dfb5d31",
+      "destination": "/kb/articles/ainews-claude-fablemythos-51-new-sota-model-75-cache-price-c-6dfb5d31"
     },
     {
       "source": "/kb/articles/swyx-6ede5258",

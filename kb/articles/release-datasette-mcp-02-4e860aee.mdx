@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-mcp 0.2'
+description: 'The release of datasette-mcp 0.2 introduces an array of objects for ''rows'' in execute_sql, enhancing clarity for weaker models. This marks the first s'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-01'
+sourceUrl: 'https://simonwillison.net/2026/Sep/1/datasette-mcp/'
+topics: ["datasette","plugin-release","software-development"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/1/datasette-mcp/) · 01/09/2026
+</Info>
+
+## Summary
+
+The release of datasette-mcp 0.2 introduces an array of objects for 'rows' in execute_sql, enhancing clarity for weaker models. This marks the first stable release of the plugin.
+
+## Key Insights
+
+> "'rows' from execute_sql is now an array of objects."
+>
+> — Describing the change in data structure for the plugin.
+
+> "This should help weaker models avoid losing track of which positional array element maps to which column."
+>
+> — Explaining the benefit of the new data structure.
+
+> "This is the first non-alpha release of the plugin."
+>
+> — Indicating the stability of the release.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [plugin-release](/kb/topics/plugin-release)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+"rows" from execute_sql is now an array of objects. Previously it was an array of arrays. This should help weaker models avoid losing track of which positional array element maps to which column. #1 Now depends on mcp>=2.1.1. This is the first non-alpha release of the plugin. I'm confident it's ready as I've been using it quite a bit myself.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a34"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a34-4d19cd84"
+  >
+    Simon Willison · reference · 59% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 58% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a31"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a31-cb4ed50f"
+  >
+    Simon Willison · reference · 58% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/1/datasette-mcp/](https://simonwillison.net/2026/Sep/1/datasette-mcp/).
+</Note>

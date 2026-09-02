@@ -1,0 +1,79 @@
+---
+title: 'Python 3.15.0 candidate 2 is here!'
+description: 'Python 3.15.0 candidate 2 has been announced, encouraging maintainers to prepare their projects for the final release in October.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-01'
+sourceUrl: 'https://simonwillison.net/2026/Sep/1/python-315-rc-2/'
+topics: ["python","release-candidate","software-development"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/1/python-315-rc-2/) · 01/09/2026
+</Info>
+
+## Summary
+
+Python 3.15.0 candidate 2 has been announced, encouraging maintainers to prepare their projects for the final release in October.
+
+## Key Insights
+
+> "We strongly encourage maintainers of third-party Python projects to prepare their projects for 3.15 during this phase."
+>
+> — Encouragement for project maintainers regarding the upcoming Python release.
+
+> "Any binary wheels built against Python 3.15.0 release candidates will work with future versions of Python 3.15."
+>
+> — Information about compatibility of release candidates with future versions.
+
+> "The allow-prereleases and check-latest flags mean that today this will test against RC1, and when RC2 lands it will automatically switch to that version."
+>
+> — Explanation of testing setup for the new release candidate.
+
+## Topics
+
+- [python](/kb/topics/python)
+- [release-candidate](/kb/topics/release-candidate)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+1st September 2026 - Link Blog Python 3.15.0 candidate 2 is here! (via) Hugo van Kemenade (release manager for Python 3.14 and 3.15) announces the final release candidate for Python 3.15, scheduled for release in October: Entering the release candidate phase, only reviewed code changes which are clear bug fixes are allowed between this release candidate and the final release. [...] We strongly encourage maintainers of third-party Python projects to prepare their projects for 3.15 during this phase, and publish Python 3.15 wheels on PyPI to be ready for the final release of 3.15.0, and to help other projects do their own testing. Any binary wheels built against Python 3.15.0 release candidates will work with future versions of Python 3.15. Back in 2021 I found a bug in Python 3.10 by running my test suites against it... but I hadn't done this during the RC period, so that bug had already shipped! Since then I've always paid much closer attention to these RCs. The new RC isn't available for GitHub Actions just yet - keep an eye on actions/python-versions for that. For the moment though you can add this to a testing matrix: strategy: matrix: python-version: ["3.14", "3.15"] steps: - uses: actions/setup-python@v7 with: python-version: $&#123;&#123; matrix.python-version &#125;&#125; allow-prereleases: true check-latest: true The allow-prereleases and check-latest flags mean that today this will test against RC1, and when RC2 lands it will automatically switch to that version (and then the stable version once that comes out.) Update: Datasette passes, sqlite-utils passes, LLM is currently blocked waiting for a 3.15 wheel for scikit-learn, which is optionally used in the test suite.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="A quote from Ken Jin"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-ken-jin-1b93707c"
+  >
+    Simon Willison · reference · 53% similar
+  </Card>
+  <Card
+    title="What’s new in pip 26.1—lockfiles and dependency cooldowns!"
+    icon="newspaper"
+    href="/kb/articles/whats-new-in-pip-261lockfiles-and-dependency-cooldowns-a2f380d9"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+  <Card
+    title="EVE Online: The Move to Python 3 Begins!"
+    icon="newspaper"
+    href="/kb/articles/eve-online-the-move-to-python-3-begins-74e84af5"
+  >
+    Simon Willison · explanation · 47% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/1/python-315-rc-2/](https://simonwillison.net/2026/Sep/1/python-315-rc-2/).
+</Note>

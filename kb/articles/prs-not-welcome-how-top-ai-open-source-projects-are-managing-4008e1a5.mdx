@@ -1,0 +1,80 @@
+---
+title: 'PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors'
+description: 'Top AI open source projects are shutting off pull requests from external contributors, opting for automated agents to manage contributions instead.'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-09-01'
+sourceUrl: 'https://www.latent.space/p/pr-not-welcome'
+topics: ["ai-agents","open-source","pull-requests","software-factory"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/pr-not-welcome) · 01/09/2026
+</Info>
+
+## Summary
+
+Top AI open source projects are shutting off pull requests from external contributors, opting for automated agents to manage contributions instead.
+
+## Key Insights
+
+> "If we have a very specific agent with a very specific prompt that we optimized and we know that, over history, it was very successful in fixing a certain category of bugs..."
+>
+> — Lars Grammel explaining the trust in their own agents for managing PRs.
+
+> "Its totally shifted in the last six months, he said. We can now solve these issues with these automations handling triage..."
+>
+> — Fred Schott discussing the impact of automation on issue management in the Astro project.
+
+> "It just makes less sense to have people contributing code if the issue is decently well-specified and the code can be written by agents."
+>
+> — Steve Ruiz reflecting on the future of contributions in open source projects.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [open-source](/kb/topics/open-source)
+- [pull-requests](/kb/topics/pull-requests)
+- [software-factory](/kb/topics/software-factory)
+
+---
+
+## Full Article
+
+GitHub invented pull requests, and for 18 years they have been open by default. But now some of the top AI-native open source projects are shutting PRs off, because theyve found a better way.These projects, which include Flue and tldraw, refuse to accept PRs from external contributors in part because theyre usually AI-generated. Instead, the maintainers prefer to use their own agents to create and manage PRs.Also, many projects have begun using a software factory to manage community contributions. Typically this involves a team of agents triaging a PR, reproducing the issue (if its a bug), implementing a fix or a new feature, reviewing it, and then handing it back to a human to merge it.Vercels software factory for AI SDKVercel recently published a post entitled Building a software factory for AI SDK. It describes how the open source AI SDK project, which gets over 20 million npm downloads per week, deployed agents to get control over its PR and issue backlog which had reached over 1,000 open issues and almost 800 pull requests by late June.There are several types of agents in Vercels system, each of which focuses on a different task. For example, theres an agent that reproduces a bug, another that applies a fix, and yet another that reviews the fix.Diagram from Vercel; comments by Latent SpaceOne of the key reasons why Vercel set up this software factory is because it trusts its own agents to do the work, more so than agents run by community members.If we have a very specific agent with a very specific prompt that we optimized and we know that, over history, it was very successful in fixing a certain category of bugs then we develop trust in that particular agent configuration, Vercel engineer Lars Grammel explained in a YouTube video.For open-source projects, its worth considering having your own agents and your own setup, and not necessarily trusting the community, because it can actually cut down your time to review, he added.Example of software factory workflow in AI SDK project.Grammel also showed the deployment architecture for its system, noting that there is a UI, theres a web app, theres an underlying API, theres an execution space, and there are sandboxes. Its then synchronized with GitHub, which automatically triggers other actions. The UI Grammel mentioned was custom-made.Vercels software factory deployment architecture; diagram by Lars Grammel.Just four weeks after this software factory was implemented, Vercel claims the factory now authors between 25 and 35% of PRs we merge and closes 70-80% of issues.Astros auto-triage systemThe Astro web framework, which has 62,000 stars on GitHub, has also adopted what creator Fred Schott calls that software factory idea.For five years, we were in this place where issues came in faster than we could handle them, Schott told Latent Space.But now, with agents handling the triage work, theyve reestablished control.Its totally shifted in the last six months, he said. We can now solve these issues with these automations handling triage, reproduction, getting the user to actually verify the fix that the bot is suggesting before we even look at it.Example of an Astro factory bot in actionThe result was not just a large decrease in open issues, but a complete change in how the Astro team deals with incoming community requests.Ive never seen that in my entire decade-plus experience with open source, Schott said. Being able to essentially treat issues as a thing that every week, you prioritize no matter what versus a backlog that youre constantly trimming.Furthermore, the Astro auto-triage system directly led to Schott creating a brand new agent framework, called Flue.Flue doesnt accept your PRs, but is open for discussionWith Flue, Schott is trying an even more radical approach to PRs. Flues contributor guide states that were going to try to reimagine things partly to prevent what it calls Drive-by AI slop PRs.Basically, Schott explained, every external pull request in the Flue project is automatically closed and converted into an issue or discussion. Bug reports and fix proposals get turned into issues, feature requests become discussions.Agents can do most PR tasks now, according to Flues contributor guide.If you submit a PR, no hard feelings, were just going to go and represent it for you as issues and discussions. And from there, trying to figure out the right way to bring people on.Its kind of like treating incoming requests as leads, rather than as a piece of work a maintainer feels obliged to review. The contributor guide explains that it uses the teams own expertise combined with the best available SOTA [State-of-the-Art] LLMs that we have access to in order to help them decide what to work on next.Once a decision is made in the issue or discussion, agents are then deployed for research, design, implementation, and initial review.If our agents write the code, your external PRs are worthlessLike Flue, the source available React drawing tool tldraw (50,000 stars) automatically closes external PRs.Project creator Steve Ruiz announced this policy in January and five months later reiterated it, noting that it was an opinionated decision made in response to changes in how were coding (more discussion, more agents), the social practices around public contribution, and the changing landscape around code security.HashiCorp co-founder and Ghostty creator Mitchell Hashimoto, now a co-founder of Superlogical, takes it even further. He thinks the future is that large open source projects will close contributions completely.Ruiz responded, It just makes less sense to have people contributing code if the issue is decently well-specified and the code can be written by agents.Butwhat happens to the community?Traditionally in open source, pull requests have been reviewed by maintainers not only for the code, but to teach contributors and assess them as future maintainers. If projects like AI SDK and Astro are using their agents to do much of the code review and implementation, where does that leave community members who want to be more actively involved?Schott recognizes this as a risk.It still leaves this open hole of, well, if you just keep narrowing the project, at a certain point, you and I go on vacation what happens? It doesnt really solve every problem.However, the fact that both Flue and tldraw dont accept PRs but do accept new issues and discussions perhaps points to a solution. Which is that by talking to each other more, community members better get to know and trust one another, which is both a way to learn from peers and potentially prove yourself worthy of being a maintainer.Example of a tldraw issue (above) being turned into a PR (below)As for the code, if its easier for maintainers to use AI themselves than to accept external code contributions, then as tldraw founder Steve Ruiz put it, its better to limit community contribution to the places it still matters: reporting, discussion, perspective, and care.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] RIP Pull Requests (2005-2026)"
+    icon="newspaper"
+    href="/kb/articles/ainews-rip-pull-requests-2005-2026-ed74eac1"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: Build an AI code review bot in 30 minutes + Claude Code for normal people"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-build-an-ai-code-review-bot-in-30-minutes-claude-c-ccb4fb63"
+  >
+    Lenny Rachitsky · how-to · 70% similar
+  </Card>
+  <Card
+    title="[AINews] Autoresearch: Sparks of Recursive Self Improvement"
+    icon="newspaper"
+    href="/kb/articles/ainews-autoresearch-sparks-of-recursive-self-improvement-33fd2c03"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/pr-not-welcome](https://www.latent.space/p/pr-not-welcome).
+</Note>
