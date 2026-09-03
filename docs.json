@@ -3140,6 +3140,10 @@
       "destination": "/kb/articles/a-quote-from-jannis-leidel-ae4f0509"
     },
     {
+      "source": "/kb/articles/simon-willison-ae5f44cf",
+      "destination": "/kb/articles/claudes-new-system-prompt-really-doesnt-want-to-reproduce-so-ae5f44cf"
+    },
+    {
       "source": "/kb/articles/simon-willison-ae6359a2",
       "destination": "/kb/articles/free-claude-max-for-large-project-open-source-maintainers-ae6359a2"
     },
@@ -3654,6 +3658,10 @@
     {
       "source": "/kb/articles/simon-willison-e1df2f9a",
       "destination": "/kb/articles/a-quote-from-daniel-stenberg-e1df2f9a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e28f13d1",
+      "destination": "/kb/articles/release-llm-gemini-034-e28f13d1"
     },
     {
       "source": "/kb/articles/simon-willison-e2bdb007",
@@ -4542,6 +4550,10 @@
     {
       "source": "/kb/articles/swyx-a19b939a",
       "destination": "/kb/articles/ainews-truth-in-the-time-of-artifice-a19b939a"
+    },
+    {
+      "source": "/kb/articles/swyx-a1e28528",
+      "destination": "/kb/articles/ainews-muse-spark-13-matches-gpt-56-sol-confirming-meta-supe-a1e28528"
     },
     {
       "source": "/kb/articles/swyx-a21344ca",
