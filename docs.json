@@ -252,6 +252,10 @@
       "destination": "/kb/articles/boris-cherny-bcherny-on-x-be2d97a9"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-0c99d854",
+      "destination": "/kb/articles/the-folder-is-the-agent-0c99d854"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-118be905",
       "destination": "/kb/articles/stop-coding-and-start-planning-118be905"
     },
@@ -1660,6 +1664,10 @@
       "destination": "/kb/articles/i-think-anthropic-and-openai-have-found-product-market-fit-1671fa5b"
     },
     {
+      "source": "/kb/articles/simon-willison-1693fa26",
+      "destination": "/kb/articles/openais-rogue-agents-were-caught-communicating-via-public-wi-1693fa26"
+    },
+    {
       "source": "/kb/articles/simon-willison-16b49489",
       "destination": "/kb/articles/writing-about-agentic-engineering-patterns-16b49489"
     },
@@ -2970,6 +2978,10 @@
     {
       "source": "/kb/articles/simon-willison-a105fb98",
       "destination": "/kb/articles/release-scan-for-secrets-011-a105fb98"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a10fbf5e",
+      "destination": "/kb/articles/the-pelican-comparison-grid-for-astra-is-pretty-interesting-a10fbf5e"
     },
     {
       "source": "/kb/articles/simon-willison-a1ad656f",
