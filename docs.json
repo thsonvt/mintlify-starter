@@ -788,6 +788,10 @@
       "destination": "/kb/articles/adam-mosseri-ai-is-a-tailwind-for-authenticity-20861687"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-213388f1",
+      "destination": "/kb/articles/-community-wisdom-driving-ai-adoption-when-habits-are-the-bo-213388f1"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-24a555a8",
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
     },
@@ -1640,6 +1644,10 @@
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
     {
+      "source": "/kb/articles/simon-willison-14080670",
+      "destination": "/kb/articles/a-quote-from-zach-kehs-14080670"
+    },
+    {
       "source": "/kb/articles/simon-willison-142648a3",
       "destination": "/kb/articles/release-datasette-agent-03a0-142648a3"
     },
@@ -1914,6 +1922,10 @@
     {
       "source": "/kb/articles/simon-willison-351b1187",
       "destination": "/kb/articles/a-quote-from-anthropic-351b1187"
+    },
+    {
+      "source": "/kb/articles/simon-willison-360e7409",
+      "destination": "/kb/articles/til-using-blender-with-coding-agents-on-macos-360e7409"
     },
     {
       "source": "/kb/articles/simon-willison-36c09739",
@@ -2374,6 +2386,10 @@
     {
       "source": "/kb/articles/simon-willison-5f62e769",
       "destination": "/kb/articles/release-datasette-0653-5f62e769"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5f732abc",
+      "destination": "/kb/articles/introducing-gpt-6-astra-for-developers-5f732abc"
     },
     {
       "source": "/kb/articles/simon-willison-5fd79031",
@@ -4210,6 +4226,10 @@
     {
       "source": "/kb/articles/swyx-4233851d",
       "destination": "/kb/articles/ainews-not-much-happened-today-4233851d"
+    },
+    {
+      "source": "/kb/articles/swyx-4287d6cc",
+      "destination": "/kb/articles/openclaw-power-macbook-simplicity-five-days-with-grok-bot-4287d6cc"
     },
     {
       "source": "/kb/articles/swyx-42ddf81c",
