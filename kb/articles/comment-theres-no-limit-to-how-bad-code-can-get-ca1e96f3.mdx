@@ -1,0 +1,79 @@
+---
+title: 'Comment: There''s No Limit to How Bad Code Can Get'
+description: 'The article discusses the challenges of replacing legacy systems due to technical debt, emphasizing that rewriting from scratch often leads to more co'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-06'
+sourceUrl: 'https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/'
+topics: ["technical-debt","software-development","system-migration"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/) · 06/09/2026
+</Info>
+
+## Summary
+
+The article discusses the challenges of replacing legacy systems due to technical debt, emphasizing that rewriting from scratch often leads to more complications.
+
+## Key Insights
+
+> "It's so rare for that to work."
+>
+> — Referring to the common belief that starting from scratch can effectively resolve technical debt.
+
+> "You have TWO systems in production."
+>
+> — Highlighting the outcome of attempting to replace an old system without proper management.
+
+> "My strong recommendation will be to shore up the old system with as much automated testing as possible."
+>
+> — Suggesting a more effective approach to managing technical debt rather than a complete rewrite.
+
+## Topics
+
+- [technical-debt](/kb/topics/technical-debt)
+- [software-development](/kb/topics/software-development)
+- [system-migration](/kb/topics/system-migration)
+
+---
+
+## Full Article
+
+6th September 2026 [In reply to a comment about burning it down to start from scratch when technical debt becomes overwhelming] In my experience it's so rare for that to work. You announce the old thing is irrecoverably drowning in tech debt. You spin up a team to rewrite it from scratch. Work begins. Meanwhile the old thing remains a moving target: it's running the core business, so changes are still necessary. The developers working on it know that it's going to be made obsolete by the new thing soon, so they don't have any incentive to go beyond the smallest effort possible to add the new features. Technical debt continues to mount. Meanwhile, the team working on the new thing are ambitious and probably a little naive. They start out at a great pace - it's greenfield after all - but as time progresses it becomes apparent that nobody fully understands the behavior and scope of the thing they are replacing. If it was well documented and tested it wouldn't need to be replaced, after all... After months (or even years) without delivering value, the pressure is on to "ship it", so the new system is launched to handle a subset of what the old system handled - or often for some new feature that was too hard to build with the now mostly unmaintained old system. ... so now you have TWO systems in production - the janky old system that nobody wants to touch, and a new system which handles just a few production features and is 80% inactive code that is meant to replace the old system, eventually. If you're really lucky the company won't have lost patience with the new system and will allow that work to continue. The longer this all takes, and the longer the old system stays in production and stubbornly continues to work, the higher the risk that "priorities have changed" and the new system total replacement work is abandoned, leaving you with two systems where you used to have one. The best article I've read about completing this process responsibly is Migrations: the sole scalable fix to tech debt by Will Larson. If I run into a situation like this in the future, my strong recommendation will be to shore up the old system with as much automated testing as possible and then seeing if targeted refactors can get it to the desired shape. My hunch is that in many cases that will have a much higher chance of success than the siren call of a greenfield replacement.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="engineer away the slop"
+    icon="newspaper"
+    href="/kb/articles/engineer-away-the-slop-a9cc0427"
+  >
+    Geoffrey Huntley · explanation · 61% similar
+  </Card>
+  <Card
+    title="Writing code is cheap now - Agentic Engineering Patterns - Simon Willison's Weblog"
+    icon="newspaper"
+    href="/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
+  >
+    Simon Willison · explanation · 60% similar
+  </Card>
+  <Card
+    title="Thoughts on slowing the fuck down"
+    icon="newspaper"
+    href="/kb/articles/thoughts-on-slowing-the-fuck-down-62e9956a"
+  >
+    Simon Willison · explanation · 59% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/](https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/).
+</Note>
