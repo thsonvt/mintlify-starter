@@ -1,0 +1,80 @@
+---
+title: 'The Frontier AEO Tracker: What Astra Chooses (and every other frontier model, and what you can do about it)'
+description: 'The article discusses the Latent Space Frontier AEO tracker, analyzing model choices and biases in AI recommendations across various categories.'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-09-07'
+sourceUrl: 'https://www.latent.space/p/aeo'
+topics: ["ai-recommendations","model-bias","data-analysis","prompt-engineering"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/aeo) · 07/09/2026
+</Info>
+
+## Summary
+
+The article discusses the Latent Space Frontier AEO tracker, analyzing model choices and biases in AI recommendations across various categories.
+
+## Key Insights
+
+> "Naive autoresearch investment in our AEO have yielded impressive ROI."
+>
+> — Introduction to the article's focus on AEO investment and its outcomes.
+
+> "There are 28 categories (out of our total 161) which have a universally dominant primary choice."
+>
+> — Discussion on the dominance of certain products in specific categories.
+
+> "Astra seems to be just generally a lot more confident, or efficient, depending how you look at it."
+>
+> — Analysis of the confidence and efficiency of different models in sourcing recommendations.
+
+## Topics
+
+- [ai-recommendations](/kb/topics/ai-recommendations)
+- [model-bias](/kb/topics/model-bias)
+- [data-analysis](/kb/topics/data-analysis)
+- [prompt-engineering](/kb/topics/prompt-engineering)
+
+---
+
+## Full Article
+
+Naive autoresearch investment in our AEO have yielded impressive ROI, and so naturally it was time to take it seriously. We were inspired by What Claude Code Actually Chooses, and decided to extend/adjust it to our tastes. After a few billion tokens of prototyping, aligning, and scaling pipelines, heres the Latent Space Frontier AEO tracker. Our methodology extends AmplifyingAIs to run 6 prompt variations over 7 models1 (search on) in 161 categories, from coding agents to AI podcasts to AI Sandboxes to Managed Databases to ASR models to even oddball categories like Angel investors and Corporate spend and Payroll software.Answer extraction was done by Astra, and scored for a proprietary AEO score that gives weight to first choices, alternative choices, mentions, but also negative weights to mild and strong anti-recommendations (which are rare, but do happen). Because we know youll want it, we also extracted the top cited sources which influence Agent recommendations, as well as an analysis of top failures.Basic ResultsHere are the most dominant products (in their categories) in the world:There are some familiar names in there opening up the natural question of contamination, which we have checked. Since we have nothing to hide, every prompt and answer pair is inspectable.However, bias does exist - when models are asked for coding agent recommendations, Fable/Opus like Claude Code and Sol/Astra like Codex and Grok loves Cursor and Muse loves Muse Code and SWE-1.7 loves Devin and so on. I wonder why. You can see other soft biases emerge tooThat said there are notable examples of GPT models recommending Claude, a laudable nonbias:There are 28 categories (out of our total 161) which have a universally dominant primary choice - among all surveyed frontier models.There are a lot more close contests and always the vibesmaid, never the vibe categories which should be key AEO battlegrounds.Sol vs Astra, Opus vs FableNew pretrains for new model classes represents a new opportunity to check in on what the labs are moving towards in their data and RL priorities, and to check in on whether startups investments in AEO are paying off. We prepared special reports analyzing our rankings, observing VERY consequential flips in model choices between model generations from the same lab.We have separate OpusFable and SolAstra summary pages. For some flips, we highlighted a neutral analysis of what competitors did better in each scenario.Efficiency vs Confidence, and Recommendation SourcingOne of our most surprising findings between SolAstra and OpusFable is that Anthropic seems to be biasing their models to searching more sources (Sol median of 9 sources, vs Astra median of 5, vs Opus median of 11 sources, vs Fable of 15). Astra seems to be just generally a lot more confident, or efficient, depending how you look at it - Astra is FAR less likely to change its mind when you lightly paraphrase your question. This makes the value of AEO itself rise as choice randomness declines.Sources analysis also somewhat strongly predicts what the labs do prioritize vs dont. However the sample size is small here and only represents what we can scrape from attempted toolcalls, not the pretrain dataset. What we CAN validate is that AEO practices measured by Ora and Vercel, like markdown content-negotiation, are real and failures discourage models from reading your content.Just for funHere are the top Angels in the world according to LLMs (some dedupes left to do).See moreWe also made a little family feud type game where you can see if your priors align with the data. Fun!We are open to further suggestions and business enquiries to develop this if it is of interest. Ping @latentspacepod or email business@latent.space (we have a business manager now! woo!)1As we note in our methodology post, we did try VERY hard to include Gemini/Antigravity, GLM/Zcode, and DeepSeek/DeepCode, but errors and rate limits made them untenable to include in this first run analysis. Please let us know how to raise limits if you represent these companies.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour"
+    icon="newspaper"
+    href="/kb/articles/gpt-6-astra-an-automated-ai-engineer-you-can-hire-for-6-an-h-77ffa643"
+  >
+    Swyx · explanation · 74% similar
+  </Card>
+  <Card
+    title="[AINews] Loopcraft: The Art of Stacking Loops"
+    icon="newspaper"
+    href="/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+  <Card
+    title="[AINews] Founders and Forward Deployed Engineers"
+    icon="newspaper"
+    href="/kb/articles/ainews-founders-and-forward-deployed-engineers-30db44c8"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/aeo](https://www.latent.space/p/aeo).
+</Note>

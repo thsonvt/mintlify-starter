@@ -1068,6 +1068,10 @@
       "destination": "/kb/articles/the-lenny-and-friends-summit-is-back-7de634ec"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-7e627eae",
+      "destination": "/kb/articles/how-we-built-grok-bot-in-a-month-roman-ugarte-spacexai-7e627eae"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7f4b29cb",
       "destination": "/kb/articles/how-to-turn-claude-code-into-your-personal-life-operating-sy-7f4b29cb"
     },
@@ -1392,6 +1396,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-claude-cowork-tutorial-for-non-engine-e738f292"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-e7e5c808",
+      "destination": "/kb/articles/-how-i-ai-gpt-6-astra-is-a-banger-stripes-ai-playbook-grok-b-e7e5c808"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-e8c2b227",
       "destination": "/kb/articles/a-visual-guide-to-getting-out-of-a-creative-slump-e8c2b227"
     },
@@ -1566,6 +1574,10 @@
     {
       "source": "/kb/articles/simon-willison-0c2d6e2f",
       "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-0c2d6e2f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0c3cdc39",
+      "destination": "/kb/articles/tool-mercator-equal-earth-0c3cdc39"
     },
     {
       "source": "/kb/articles/simon-willison-0d49796a",
@@ -2340,6 +2352,10 @@
       "destination": "/kb/articles/release-datasette-10a38-5cfe69d3"
     },
     {
+      "source": "/kb/articles/simon-willison-5d0771a1",
+      "destination": "/kb/articles/a-quote-from-jakub-pachocki-5d0771a1"
+    },
+    {
       "source": "/kb/articles/simon-willison-5d131547",
       "destination": "/kb/articles/release-luau-wasm-01a0-5d131547"
     },
@@ -2658,6 +2674,10 @@
     {
       "source": "/kb/articles/simon-willison-7918fe9d",
       "destination": "/kb/articles/release-inaturalist-clumper-01-7918fe9d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7ae6c855",
+      "destination": "/kb/articles/release-llm-035-7ae6c855"
     },
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
@@ -3344,6 +3364,10 @@
       "destination": "/kb/articles/release-llm-gemini-031-beb3e6a5"
     },
     {
+      "source": "/kb/articles/simon-willison-bef0117c",
+      "destination": "/kb/articles/tool-video-compressor-bef0117c"
+    },
+    {
       "source": "/kb/articles/simon-willison-bf3be779",
       "destination": "/kb/articles/tool-millisecond-converter-bf3be779"
     },
@@ -3634,6 +3658,10 @@
     {
       "source": "/kb/articles/simon-willison-da5529d8",
       "destination": "/kb/articles/introducing-talkie-a-13b-vintage-language-model-from-1930-da5529d8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-da6e59a0",
+      "destination": "/kb/articles/creepy-crawlies-da6e59a0"
     },
     {
       "source": "/kb/articles/simon-willison-da845929",
@@ -4678,6 +4706,10 @@
     {
       "source": "/kb/articles/swyx-b23b65e3",
       "destination": "/kb/articles/ainews-black-forest-labs-flux-3-multimodal-flow-models-that--b23b65e3"
+    },
+    {
+      "source": "/kb/articles/swyx-b39ad98a",
+      "destination": "/kb/articles/the-frontier-aeo-tracker-what-astra-chooses-and-every-other--b39ad98a"
     },
     {
       "source": "/kb/articles/swyx-b3ed459e",
