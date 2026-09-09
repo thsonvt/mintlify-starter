@@ -312,6 +312,10 @@
       "destination": "/kb/articles/compound-engineering-make-every-unit-of-work-compound-into-t-a5a5dffc"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-a907d63d",
+      "destination": "/kb/articles/to-reador-not-to-read-the-code-a907d63d"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-ab98ceaf",
       "destination": "/kb/articles/how-to-design-software-with-weight-ab98ceaf"
     },
@@ -1780,6 +1784,10 @@
       "destination": "/kb/articles/release-datasette-10a29-1e4ad5f8"
     },
     {
+      "source": "/kb/articles/simon-willison-1eea0ad9",
+      "destination": "/kb/articles/a-quote-from-terence-tao-1eea0ad9"
+    },
+    {
       "source": "/kb/articles/simon-willison-1f3b8622",
       "destination": "/kb/articles/a-quote-from-john-gruber-1f3b8622"
     },
@@ -2026,6 +2034,10 @@
     {
       "source": "/kb/articles/simon-willison-3fd28cf2",
       "destination": "/kb/articles/they-screwed-us-personality-clashes-sent-anthropics-models-o-3fd28cf2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-401547d8",
+      "destination": "/kb/articles/introducing-chatgpt-images-25-401547d8"
     },
     {
       "source": "/kb/articles/simon-willison-408ed306",
@@ -2790,6 +2802,10 @@
     {
       "source": "/kb/articles/simon-willison-8bc90fcd",
       "destination": "/kb/articles/an-inside-look-at-the-relay-market-powering-token-resellers--8bc90fcd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8c08199a",
+      "destination": "/kb/articles/on-the-navierstokes-millennium-prize-problem-8c08199a"
     },
     {
       "source": "/kb/articles/simon-willison-8c79d95d",
@@ -4436,6 +4452,10 @@
       "destination": "/kb/articles/ainews-gpt-54-sota-knowledge-work-and-coding-and-cua-model-o-69028ae0"
     },
     {
+      "source": "/kb/articles/swyx-69ee87fd",
+      "destination": "/kb/articles/ainews-collusionwiki-a-second-undisclosed-openai-agent-swarm-69ee87fd"
+    },
+    {
       "source": "/kb/articles/swyx-69fb2912",
       "destination": "/kb/articles/how-to-aie-good-69fb2912"
     },
@@ -4562,6 +4582,10 @@
     {
       "source": "/kb/articles/swyx-8a8141ef",
       "destination": "/kb/articles/-automating-science-world-models-scientific-taste-agent-loop-8a8141ef"
+    },
+    {
+      "source": "/kb/articles/swyx-8ab07894",
+      "destination": "/kb/articles/ainews-openai-reports-navier-stokes-singularity-find-in-88-h-8ab07894"
     },
     {
       "source": "/kb/articles/swyx-8b5d31f4",
