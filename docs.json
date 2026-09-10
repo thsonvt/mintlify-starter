@@ -2616,6 +2616,10 @@
       "destination": "/kb/articles/release-datasette-10a33-6f6a085a"
     },
     {
+      "source": "/kb/articles/simon-willison-709d6d61",
+      "destination": "/kb/articles/a-quote-from-calif-research-709d6d61"
+    },
+    {
       "source": "/kb/articles/simon-willison-715c2eb4",
       "destination": "/kb/articles/we-gotta-talk-about-ai-as-a-programming-tool-for-the-arts-715c2eb4"
     },
@@ -3776,6 +3780,10 @@
       "destination": "/kb/articles/a-quote-from-nilay-patel-e2ff0d2a"
     },
     {
+      "source": "/kb/articles/simon-willison-e38c1cbe",
+      "destination": "/kb/articles/tool-blend-url-viewer-e38c1cbe"
+    },
+    {
       "source": "/kb/articles/simon-willison-e44a9b71",
       "destination": "/kb/articles/doomql-e44a9b71"
     },
@@ -4658,6 +4666,10 @@
     {
       "source": "/kb/articles/swyx-9d4017e1",
       "destination": "/kb/articles/causal-models-need-causal-data-xairas-x-cell-model-for-drug--9d4017e1"
+    },
+    {
+      "source": "/kb/articles/swyx-9e5a4a3c",
+      "destination": "/kb/articles/ainews-not-much-happened-today-9e5a4a3c"
     },
     {
       "source": "/kb/articles/swyx-9ef5fd46",
