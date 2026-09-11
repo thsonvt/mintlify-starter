@@ -2484,6 +2484,10 @@
       "destination": "/kb/articles/pretext-635e0854"
     },
     {
+      "source": "/kb/articles/simon-willison-63ffa097",
+      "destination": "/kb/articles/any-nix-package-live-in-your-browser-63ffa097"
+    },
+    {
       "source": "/kb/articles/simon-willison-641f8362",
       "destination": "/kb/articles/wheres-the-raccoon-with-the-ham-radio-chatgpt-images-20-641f8362"
     },
@@ -3392,6 +3396,10 @@
       "destination": "/kb/articles/tool-millisecond-converter-bf3be779"
     },
     {
+      "source": "/kb/articles/simon-willison-bf67b7e8",
+      "destination": "/kb/articles/datasette-10a39-and-0654-security-releases-bf67b7e8"
+    },
+    {
       "source": "/kb/articles/simon-willison-c04f7376",
       "destination": "/kb/articles/google-api-keys-werent-secrets-but-then-gemini-changed-the-r-c04f7376"
     },
@@ -3534,6 +3542,10 @@
     {
       "source": "/kb/articles/simon-willison-ce29cef9",
       "destination": "/kb/articles/july-2026-newsletter-ce29cef9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-cf26ce4c",
+      "destination": "/kb/articles/native-is-now-the-future-of-mobile-at-shopify-cf26ce4c"
     },
     {
       "source": "/kb/articles/simon-willison-cf5015cb",

@@ -1,0 +1,79 @@
+---
+title: 'Any Nix package, live in your browser'
+description: 'The article discusses trynix.dev, a platform that allows users to run any Nix package in a browser-based virtual machine using WebAssembly.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-10'
+sourceUrl: 'https://simonwillison.net/2026/Sep/10/trynix/'
+topics: ["nix-packages","web-assembly","virtual-machines"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/10/trynix/) · 10/09/2026
+</Info>
+
+## Summary
+
+The article discusses trynix.dev, a platform that allows users to run any Nix package in a browser-based virtual machine using WebAssembly.
+
+## Key Insights
+
+> "Farid Zakaria calls this his 'magnum opus of Nix work'"
+>
+> — Introduction to the significance of trynix.dev in the Nix community.
+
+> "That VM can then be booted with any Nix package from the past 13 years."
+>
+> — Describing the capabilities of the virtual machine provided by trynix.dev.
+
+> "No servers, just browsers."
+>
+> — Highlighting the innovative serverless nature of the platform.
+
+## Topics
+
+- [nix-packages](/kb/topics/nix-packages)
+- [web-assembly](/kb/topics/web-assembly)
+- [virtual-machines](/kb/topics/virtual-machines)
+
+---
+
+## Full Article
+
+10th September 2026 - Link Blog Any Nix package, live in your browser (via) Farid Zakaria calls this his "magnum opus of Nix work", and I can see why. trynix.dev provides a qemu-wasm powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with any Nix package from the past 13 years. They are URL addressable, so you can navigate to this page: https://trynix.dev/?pkg=python3%403.6.2 Then click "Load" and get an interactive shell against a virtual machine running Python 3.6.2 from 2017. Farid is building all sorts of neat things on top of this. One recent example: Review a pull request by booting it introduces trynix-preview, described like this: GitHub action that comments a link on a pull request which lets you boot the PR’s build in the browser using https://trynix.dev. No servers, just browsers.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Running Python code in a sandbox with MicroPython and WASM"
+    icon="newspaper"
+    href="/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
+  >
+    Simon Willison · how-to · 49% similar
+  </Card>
+  <Card
+    title="Firefox in WebAssembly"
+    icon="newspaper"
+    href="/kb/articles/firefox-in-webassembly-86606062"
+  >
+    Simon Willison · explanation · 49% similar
+  </Card>
+  <Card
+    title="Research: smolmachines / smolvm as a sandbox for untrusted Python & JavaScript"
+    icon="newspaper"
+    href="/kb/articles/research-smolmachines-smolvm-as-a-sandbox-for-untrusted-pyth-22f8e9e0"
+  >
+    Simon Willison · explanation · 48% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/10/trynix/](https://simonwillison.net/2026/Sep/10/trynix/).
+</Note>
