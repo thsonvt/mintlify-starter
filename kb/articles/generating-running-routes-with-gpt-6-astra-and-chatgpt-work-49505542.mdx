@@ -1,0 +1,81 @@
+---
+title: 'Generating running routes with GPT-6 Astra and ChatGPT Work'
+description: 'Simon Willison describes using ChatGPT Work with GPT-6 Astra to generate 5K and 10K running routes from his home, highlighting the process and limitat'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-12'
+sourceUrl: 'https://simonwillison.net/2026/Sep/12/astra-running-routes/'
+topics: ["ai-tools","running-routes","openstreetmap","gpt-6","chatgpt"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/12/astra-running-routes/) · 12/09/2026
+</Info>
+
+## Summary
+
+Simon Willison describes using ChatGPT Work with GPT-6 Astra to generate 5K and 10K running routes from his home, highlighting the process and limitations encountered.
+
+## Key Insights
+
+> "I used Nominatim to locate the address and Overpass to download local OpenStreetMap roads and trails."
+>
+> — Explanation of how the route was generated.
+
+> "This appears to be because the thread had been compacted."
+>
+> — Commenting on the limitations of the ChatGPT UI regarding code visibility.
+
+> "I think any LLM system that uses compaction needs to both preserve the pre-compacted text."
+>
+> — Discussing the need for transparency in LLM systems.
+
+## Topics
+
+- [ai-tools](/kb/topics/ai-tools)
+- [running-routes](/kb/topics/running-routes)
+- [openstreetmap](/kb/topics/openstreetmap)
+- [gpt-6](/kb/topics/gpt-6)
+- [chatgpt](/kb/topics/chatgpt)
+
+---
+
+## Full Article
+
+12th September 2026 Here’s a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at &lt;my address>. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I’d asked for, as both an embedded visualization and downloadable GPX file and GeoJSON files. Here’s that 5K route: When I asked it how it had created the route, it replied: I used Nominatim to locate the address and Overpass to download local OpenStreetMap roads and trails, then calculated the loops locally. Frustratingly, the actual code it ran and exact details of what it did weren’t visible to me in the ChatGPT UI. I see this lack of transparency is an anti-feature. By the time I thought to ask for a copy of the Python code it had used, ChatGPT was unable to provide it. This appears to be because the thread had been compacted. I think any LLM system that uses compaction needs to both preserve the pre-compacted text and make that text available via agent tool calls, to protect against this kind of problem. As for displaying the map to me, that used the visualize skill. It created a file called /workspace/el-granada-5k-share.html to embed directly into the ChatGPT UI. Here’s a copy of that HTML, which starts like this: &lt;div id="eg-share-loop"> &lt;div class="viz-row">&lt;h3>El Granada harbor loop&lt;/h3>&lt;span class="text-small">5.1 km&lt;/span>&lt;/div> &lt;div id="eg-share-stage">&lt;/div> &lt;div class="text-small text-muted">Map data © &lt;a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors&lt;/a>&lt;/div> &lt;style> #eg-share-loop &#123; width:100%; &#125; #eg-share-loop #eg-share-stage &#123; width:100%; margin:8px 0; &#125; #eg-share-loop .eg-share-map &#123; display:block; width:100%; touch-action:none; &#125; #eg-share-loop .eg-share-map text &#123; fill:var(--foreground); font-size:12px; font-weight:400; &#125; #eg-share-loop .eg-share-label &#123; paint-order:stroke; stroke:var(--background); stroke-width:3px; stroke-linejoin:round; &#125; &lt;/style> &lt;script type="application/json" id="eg-share-data">&#123;"route":&#123;"type":"LineString","coordinates":[[-122.467425,37.4997753] ...&lt;/script> &lt;script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js">&lt;/script> &lt;script> (() => &#123; const root=document.getElementById('eg-share-loop'); The &lt;script type="application/json"> element contains the full geometry needed to render both the running route and the map itself, using D3, which is loaded from an allow-listed CDN location described in this section of the visualize skill: External resources The CSP allows only cdnjs.cloudflare.com, esm.sh, cdn.jsdelivr.net, unpkg.com, fonts.googleapis.com, fonts.gstatic.com, and fonts.bunny.net. Other origins are blocked and fail silently.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: GeoJSON Map Viewer"
+    icon="newspaper"
+    href="/kb/articles/tool-geojson-map-viewer-49427796"
+  >
+    Simon Willison · how-to · 62% similar
+  </Card>
+  <Card
+    title="Understanding ChatGPT Work"
+    icon="newspaper"
+    href="/kb/articles/understanding-chatgpt-work-c9762303"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+  <Card
+    title="GPT-6 Astra is a banger - here’s everything I’ve built"
+    icon="newspaper"
+    href="/kb/articles/gpt-6-astra-is-a-banger-heres-everything-ive-built-faeb4491"
+  >
+    Lenny Rachitsky · explanation · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/12/astra-running-routes/](https://simonwillison.net/2026/Sep/12/astra-running-routes/).
+</Note>

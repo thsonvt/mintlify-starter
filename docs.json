@@ -1324,6 +1324,10 @@
       "destination": "/kb/articles/how-to-use-ai-for-your-next-job-interview-d16a3274"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d231b1b4",
+      "destination": "/kb/articles/-community-wisdom-ai-basketball-coaching-jira-vs-linear-buil-d231b1b4"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d3743ee8",
       "destination": "/kb/articles/-how-i-ai-codex-goals-explained-claude-opus-48-review-buildi-d3743ee8"
     },
@@ -2104,6 +2108,10 @@
       "destination": "/kb/articles/openai-help-lockdown-mode-45b8ad75"
     },
     {
+      "source": "/kb/articles/simon-willison-4618ab40",
+      "destination": "/kb/articles/a-quote-from-huggingfacecosecuritytxt-4618ab40"
+    },
+    {
       "source": "/kb/articles/simon-willison-464f9a7d",
       "destination": "/kb/articles/a-quote-from-charity-majors-464f9a7d"
     },
@@ -2154,6 +2162,10 @@
     {
       "source": "/kb/articles/simon-willison-49427796",
       "destination": "/kb/articles/tool-geojson-map-viewer-49427796"
+    },
+    {
+      "source": "/kb/articles/simon-willison-49505542",
+      "destination": "/kb/articles/generating-running-routes-with-gpt-6-astra-and-chatgpt-work-49505542"
     },
     {
       "source": "/kb/articles/simon-willison-495218f8",
@@ -2560,6 +2572,10 @@
       "destination": "/kb/articles/research-sqlite-wal-mode-across-docker-containers-sharing-a--6a6efa1a"
     },
     {
+      "source": "/kb/articles/simon-willison-6a7987a1",
+      "destination": "/kb/articles/comment-feeling-sad-about-ai-6a7987a1"
+    },
+    {
       "source": "/kb/articles/simon-willison-6b8fbd73",
       "destination": "/kb/articles/microsofts-new-mai-models-6b8fbd73"
     },
@@ -2694,6 +2710,10 @@
     {
       "source": "/kb/articles/simon-willison-7918fe9d",
       "destination": "/kb/articles/release-inaturalist-clumper-01-7918fe9d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-79ac62c5",
+      "destination": "/kb/articles/sighting-california-brown-pelican-79ac62c5"
     },
     {
       "source": "/kb/articles/simon-willison-7ae6c855",
@@ -2938,6 +2958,14 @@
     {
       "source": "/kb/articles/simon-willison-96f648a0",
       "destination": "/kb/articles/sighting-northern-gannet-96f648a0"
+    },
+    {
+      "source": "/kb/articles/simon-willison-971efa10",
+      "destination": "/kb/articles/dont-sleep-on-wrapture-971efa10"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9759992a",
+      "destination": "/kb/articles/openai-agents-attacked-rubygems-back-in-may-9759992a"
     },
     {
       "source": "/kb/articles/simon-willison-9767b320",
@@ -3400,6 +3428,10 @@
       "destination": "/kb/articles/datasette-10a39-and-0654-security-releases-bf67b7e8"
     },
     {
+      "source": "/kb/articles/simon-willison-c0109d4a",
+      "destination": "/kb/articles/soft-deprecating-rematch-c0109d4a"
+    },
+    {
       "source": "/kb/articles/simon-willison-c04f7376",
       "destination": "/kb/articles/google-api-keys-werent-secrets-but-then-gemini-changed-the-r-c04f7376"
     },
@@ -3466,6 +3498,10 @@
     {
       "source": "/kb/articles/simon-willison-c7bd9aa8",
       "destination": "/kb/articles/til-using-uvx-in-github-actions-in-a-cache-friendly-way-c7bd9aa8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c8075d93",
+      "destination": "/kb/articles/a-quote-from-boris-cherny-c8075d93"
     },
     {
       "source": "/kb/articles/simon-willison-c8601f50",
@@ -3868,6 +3904,10 @@
       "destination": "/kb/articles/tencenthy3-eaa3a9e8"
     },
     {
+      "source": "/kb/articles/simon-willison-eafc5e5a",
+      "destination": "/kb/articles/so-you-want-to-use-openrouter-eafc5e5a"
+    },
+    {
       "source": "/kb/articles/simon-willison-eb2223a0",
       "destination": "/kb/articles/malusclean-room-as-a-service-eb2223a0"
     },
@@ -3934,6 +3974,10 @@
     {
       "source": "/kb/articles/simon-willison-f28d353c",
       "destination": "/kb/articles/tracking-the-history-of-the-now-deceased-openai-microsoft-ag-f28d353c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-f2b4e0fb",
+      "destination": "/kb/articles/a-quote-from-paul-ford-f2b4e0fb"
     },
     {
       "source": "/kb/articles/simon-willison-f3d56117",
@@ -4134,6 +4178,10 @@
     {
       "source": "/kb/articles/swyx-13f853d5",
       "destination": "/kb/articles/ainews-muse-glimmer-and-spark-open-weights-return-personal-s-13f853d5"
+    },
+    {
+      "source": "/kb/articles/swyx-148b30e0",
+      "destination": "/kb/articles/ainews-deepseek-v41-flash-763b-p8b-d16b-novel-causal-encoder-148b30e0"
     },
     {
       "source": "/kb/articles/swyx-14e970f9",
@@ -4962,6 +5010,10 @@
     {
       "source": "/kb/articles/swyx-f5d7dda0",
       "destination": "/kb/articles/ainews-spacexai-grok-46-and-grok-bot-f5d7dda0"
+    },
+    {
+      "source": "/kb/articles/swyx-f64003e1",
+      "destination": "/kb/articles/the-rise-of-the-forward-deployed-engineer-and-how-to-do-the--f64003e1"
     },
     {
       "source": "/kb/articles/swyx-f8180fbb",

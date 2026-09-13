@@ -1,0 +1,79 @@
+---
+title: 'Soft-deprecating re.match()'
+description: 'The article discusses the soft deprecation of Python''s re.match() function in version 3.15, introducing re.prefixmatch() as a clearer alternative.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-11'
+sourceUrl: 'https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/'
+topics: ["python","regex","software-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/) · 11/09/2026
+</Info>
+
+## Summary
+
+The article discusses the soft deprecation of Python's re.match() function in version 3.15, introducing re.prefixmatch() as a clearer alternative.
+
+## Key Insights
+
+> "Python has a concept of soft deprecation, where APIs are marked as 'should no longer be used to write new code'"
+>
+> — Introduction to the concept of soft deprecation in Python.
+
+> "It's now available with the much clearer alternative re.prefixmatch() name"
+>
+> — Description of the new function replacing re.match().
+
+> "Most of the time you probably want re.search() or re.fullmatch() instead."
+>
+> — Advice on using more appropriate regex functions.
+
+## Topics
+
+- [python](/kb/topics/python)
+- [regex](/kb/topics/regex)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+11th September 2026 - Link Blog Soft-deprecating re.match() (via) Python has a concept of soft deprecation, where APIs are marked as "should no longer be used to write new code" without any promise/threat to remove them in the future. Python 3.15 release manager Hugo van Kemenade describes how in the upcoming 3.15 release soft deprecation has come for the venerable but deeply confusing re.match() function. It's now available with the much clearer alternative re.prefixmatch() name - reflecting how it anchors at the beginning of the string but not the end. Most of the time you probably want re.search() (match this pattern anywhere in the string) or re.fullmatch() (match the entire string) instead.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: scan-for-secrets 0.3"
+    icon="newspaper"
+    href="/kb/articles/release-scan-for-secrets-03-dfb9e67b"
+  >
+    Simon Willison · reference · 42% similar
+  </Card>
+  <Card
+    title="Research: TRE Python binding — ReDoS robustness demo"
+    icon="newspaper"
+    href="/kb/articles/research-tre-python-binding-redos-robustness-demo-340c8ee8"
+  >
+    Simon Willison · explanation · 42% similar
+  </Card>
+  <Card
+    title="Python 3.15.0 candidate 2 is here!"
+    icon="newspaper"
+    href="/kb/articles/python-3150-candidate-2-is-here-5db06c61"
+  >
+    Simon Willison · reference · 37% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/](https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/).
+</Note>
