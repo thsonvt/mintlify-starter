@@ -1,0 +1,75 @@
+---
+title: 'Release: commit-rewriter 0.1'
+description: 'Simon Willison introduces commit-rewriter 0.1, a web app for editing commit messages in repositories, particularly useful for cleaning up security rel'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-14'
+sourceUrl: 'https://simonwillison.net/2026/Sep/14/commit-rewriter/'
+topics: ["commit-messages","web-apps","datasette"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/14/commit-rewriter/) · 14/09/2026
+</Info>
+
+## Summary
+
+Simon Willison introduces commit-rewriter 0.1, a web app for editing commit messages in repositories, particularly useful for cleaning up security release messages.
+
+## Key Insights
+
+> "I built this little web app the other day to help edit the commit messages for the Datasette security releases."
+>
+> — Introduction to the purpose of the commit-rewriter tool.
+
+> "When you submit your edits the tool creates a timestamped branch of your current repo state."
+>
+> — Explanation of how the tool manages changes to commit messages.
+
+## Topics
+
+- [commit-messages](/kb/topics/commit-messages)
+- [web-apps](/kb/topics/web-apps)
+- [datasette](/kb/topics/datasette)
+
+---
+
+## Full Article
+
+I built this little web app the other day to help edit the commit messages for the Datasette security releases. The initial commits were full of coding agent cruft and references to issue IDs from our private repository, so they weren't fit for publication. If you want to edit the commit messages for a repository you can run it like this: uvx commit-rewriter path/to/repo Omit the path if you are already in the directory for that repo. When you submit your edits the tool creates a timestamped branch of your current repo state - to allow you to revert if you need to - and then rewrites every commit from the first one you edited to the most recent.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-agent-edit 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-edit-01a0-78174dc0"
+  >
+    Simon Willison · explanation · 51% similar
+  </Card>
+  <Card
+    title="Tool: datasette.io news preview"
+    icon="newspaper"
+    href="/kb/articles/tool-datasetteio-news-preview-4119b526"
+  >
+    Simon Willison · how-to · 51% similar
+  </Card>
+  <Card
+    title="Research: Claude system prompts as a git timeline"
+    icon="newspaper"
+    href="/kb/articles/research-claude-system-prompts-as-a-git-timeline-927b858a"
+  >
+    Simon Willison · how-to · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/14/commit-rewriter/](https://simonwillison.net/2026/Sep/14/commit-rewriter/).
+</Note>

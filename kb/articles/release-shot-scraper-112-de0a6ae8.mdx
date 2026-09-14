@@ -1,0 +1,75 @@
+---
+title: 'Release: shot-scraper 1.12'
+description: 'The release of shot-scraper 1.12 introduces WebP support for website screenshots, enhancing file size efficiency compared to JPEG or PNG formats.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-13'
+sourceUrl: 'https://simonwillison.net/2026/Sep/13/shot-scraper/'
+topics: ["web-scraping","screenshot-tools","javascript"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/13/shot-scraper/) · 13/09/2026
+</Info>
+
+## Summary
+
+The release of shot-scraper 1.12 introduces WebP support for website screenshots, enhancing file size efficiency compared to JPEG or PNG formats.
+
+## Key Insights
+
+> "You can now take a WebP screenshot of a web page like this: shot-scraper https://simonwillison.net -o screenshot.webp --quality 80"
+>
+> — Introduction of WebP support in shot-scraper
+
+> "In my experience WebP screenshots are almost always significantly smaller in file size than their JPEG or PNG equivalents."
+>
+> — Comparison of WebP with other image formats
+
+## Topics
+
+- [web-scraping](/kb/topics/web-scraping)
+- [screenshot-tools](/kb/topics/screenshot-tools)
+- [javascript](/kb/topics/javascript)
+
+---
+
+## Full Article
+
+Release shot-scraper 1.12 — A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript I've added WebP support to my shot-scraper screenshot automation tool. You can now take a WebP screenshot of a web page like this: shot-scraper https://simonwillison.net -o screenshot.webp --quality 80 The --quality option sets the quality - without that option the WebP file will be lossless. In my experience WebP screenshots are almost always significantly smaller in file size than their JPEG or PNG equivalents. See the PR for some examples. I shipped this feature so I could use it to generate the screenshot for my new commit-rewriter tool.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: shot-scraper 1.11"
+    icon="newspaper"
+    href="/kb/articles/release-shot-scraper-111-f9691bab"
+  >
+    Simon Willison · reference · 76% similar
+  </Card>
+  <Card
+    title="Release: shot-scraper 1.10"
+    icon="newspaper"
+    href="/kb/articles/release-shot-scraper-110-1e0a59cd"
+  >
+    Simon Willison · reference · 63% similar
+  </Card>
+  <Card
+    title="Have your agent record video demos of its work with shot-scraper video"
+    icon="newspaper"
+    href="/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
+  >
+    Simon Willison · how-to · 51% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/13/shot-scraper/](https://simonwillison.net/2026/Sep/13/shot-scraper/).
+</Note>
