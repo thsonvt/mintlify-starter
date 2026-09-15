@@ -784,6 +784,10 @@
       "destination": "/kb/articles/-community-wisdom-negative-network-effects-managing-overconf-1c00e27d"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-1d09f488",
+      "destination": "/kb/articles/-how-i-ai-how-two-spacexai-designers-use-grok-bot-to-do-thei-1d09f488"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-1dc19b83",
       "destination": "/kb/articles/how-to-build-ai-product-sense-1dc19b83"
     },
@@ -1224,6 +1228,10 @@
       "destination": "/kb/articles/how-braintrust-uses-ai-agents-evals-and-ci-to-ship-better-so-a37ceded"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-a4179bc5",
+      "destination": "/kb/articles/60-new-creative-growth-ideas-a4179bc5"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
       "destination": "/kb/articles/from-figma-to-claude-code-and-back-gui-seiz-alex-kern-figma--a66fabc6"
     },
@@ -1542,6 +1550,10 @@
     {
       "source": "/kb/articles/simon-willison-0ad233f1",
       "destination": "/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0ad9425b",
+      "destination": "/kb/articles/comment-what-blog-posts-influenced-your-thinking-the-most-0ad9425b"
     },
     {
       "source": "/kb/articles/simon-willison-0ad9d874",
@@ -2226,6 +2238,10 @@
     {
       "source": "/kb/articles/simon-willison-4d1ed635",
       "destination": "/kb/articles/inkling-our-open-weights-model-4d1ed635"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4d9afb9d",
+      "destination": "/kb/articles/the-contagion-of-fear-4d9afb9d"
     },
     {
       "source": "/kb/articles/simon-willison-4dae9786",
@@ -4356,6 +4372,10 @@
       "destination": "/kb/articles/why-video-agent-models-are-next-ethan-he-xai-grok-imagine-3d7ee285"
     },
     {
+      "source": "/kb/articles/swyx-3eabd449",
+      "destination": "/kb/articles/ainews-aef-1-standard-emerges-for-third-party-evaluators-as--3eabd449"
+    },
+    {
       "source": "/kb/articles/swyx-3f1e5b71",
       "destination": "/kb/articles/ainews-the-claude-code-source-leak-3f1e5b71"
     },
@@ -4726,6 +4746,10 @@
     {
       "source": "/kb/articles/swyx-983c46c3",
       "destination": "/kb/articles/ainews-codex-rises-claude-meters-programmatic-usage-983c46c3"
+    },
+    {
+      "source": "/kb/articles/swyx-984f191e",
+      "destination": "/kb/articles/humanitys-last-invention-richard-socher-of-recursive-984f191e"
     },
     {
       "source": "/kb/articles/swyx-985dc0b3",
