@@ -1164,6 +1164,10 @@
       "destination": "/kb/articles/how-stripe-built-minionsai-coding-agents-that-ship-1300-prs--944c4313"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-9587606c",
+      "destination": "/kb/articles/muse-review-the-personal-ai-agent-that-gets-consumer-ux-righ-9587606c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9638a3bd",
       "destination": "/kb/articles/how-coinbase-scaled-ai-to-1000-engineers-chintan-turakhia-9638a3bd"
     },
@@ -2498,6 +2502,10 @@
     {
       "source": "/kb/articles/simon-willison-612211c9",
       "destination": "/kb/articles/release-datasette-agent-micropython-01a0-612211c9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-61b0b783",
+      "destination": "/kb/articles/tool-gemini-live-audio-61b0b783"
     },
     {
       "source": "/kb/articles/simon-willison-61d4e239",
@@ -4844,6 +4852,10 @@
       "destination": "/kb/articles/ainews-black-forest-labs-flux-3-multimodal-flow-models-that--b23b65e3"
     },
     {
+      "source": "/kb/articles/swyx-b242678f",
+      "destination": "/kb/articles/can-skills-learned-in-games-transfer-to-real-world-work-b242678f"
+    },
+    {
       "source": "/kb/articles/swyx-b39ad98a",
       "destination": "/kb/articles/the-frontier-aeo-tracker-what-astra-chooses-and-every-other--b39ad98a"
     },
@@ -4986,6 +4998,10 @@
     {
       "source": "/kb/articles/swyx-e588612f",
       "destination": "/kb/articles/ainews-how-to-steal-a-reasoning-trace-e588612f"
+    },
+    {
+      "source": "/kb/articles/swyx-e611a316",
+      "destination": "/kb/articles/ainews-jev-a-system-one-model-that-only-decidesclassifiesrou-e611a316"
     },
     {
       "source": "/kb/articles/swyx-e6b68217",

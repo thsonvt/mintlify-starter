@@ -1,0 +1,80 @@
+---
+title: 'Tool: Gemini Live audio'
+description: 'Google''s Gemini 3.8 Live introduces new speech-to-speech models, allowing users to interact via a web UI that supports real-time voice conversations.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-15'
+sourceUrl: 'https://simonwillison.net/2026/Sep/15/gemini-live/'
+topics: ["speech-to-speech","web-ui","google-gemini","audio-technology"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/15/gemini-live/) · 15/09/2026
+</Info>
+
+## Summary
+
+Google's Gemini 3.8 Live introduces new speech-to-speech models, allowing users to interact via a web UI that supports real-time voice conversations.
+
+## Key Insights
+
+> "You can select a model and voice preset, enter an optional system prompt and then start a voice conversation through your browser."
+>
+> — Description of the web UI functionality.
+
+> "The implementation uses no libraries."
+>
+> — Highlighting the simplicity of the implementation.
+
+> "Here's the Gemini Live tutorial for getting started with that WebSockets API."
+>
+> — Reference to the tutorial for users.
+
+## Topics
+
+- [speech-to-speech](/kb/topics/speech-to-speech)
+- [web-ui](/kb/topics/web-ui)
+- [google-gemini](/kb/topics/google-gemini)
+- [audio-technology](/kb/topics/audio-technology)
+
+---
+
+## Full Article
+
+Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live family. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying out the new models. You can select a model and voice preset, enter an optional system prompt and then start a voice conversation through your browser, including the ability to interrupt the model while it is talking. The implementation uses no libraries. It connects to the wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=... WebSocket endpoint and uses a Web Audio API AudioContext for both capture and playback. Here's the Gemini Live tutorial for getting started with that WebSockets API.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: Gemini 3.1 Flash TTS"
+    icon="newspaper"
+    href="/kb/articles/tool-gemini-31-flash-tts-69e1867f"
+  >
+    Simon Willison · how-to · 76% similar
+  </Card>
+  <Card
+    title="Gemini 3.1 Flash TTS"
+    icon="newspaper"
+    href="/kb/articles/gemini-31-flash-tts-d32e21db"
+  >
+    Simon Willison · explanation · 75% similar
+  </Card>
+  <Card
+    title="[AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana for Video), Spark (background agents), and Antigravity 2.0"
+    icon="newspaper"
+    href="/kb/articles/ainews-google-io-2026-gemini-35-flash-omni-nanobanana-for-vi-0f13a16d"
+  >
+    Swyx · explanation · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/15/gemini-live/](https://simonwillison.net/2026/Sep/15/gemini-live/).
+</Note>

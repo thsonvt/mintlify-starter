@@ -1,0 +1,80 @@
+---
+title: 'Can Skills Learned in Games Transfer to Real-World Work?'
+description: 'The article discusses how games can be used as effective training tools for AI models, exploring their potential to teach skills applicable in real-wo'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-09-15'
+sourceUrl: 'https://www.latent.space/p/good-start-labs'
+topics: ["ai-training","game-design","reinforcement-learning","strategic-thinking"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/good-start-labs) · 15/09/2026
+</Info>
+
+## Summary
+
+The article discusses how games can be used as effective training tools for AI models, exploring their potential to teach skills applicable in real-world tasks.
+
+## Key Insights
+
+> "Games have always been these underrated educational tools."
+>
+> — Alex Duffy, co-founder and CEO of Good Start Labs, emphasizes the educational value of games.
+
+> "The way a game is presented to an AI can determine which skills it learns."
+>
+> — Duffy discusses the impact of game design on AI skill acquisition.
+
+> "You can imagine a model that is looking at pictures is going to learn different things than one that's reading through natural text."
+>
+> — Duffy explains how different learning environments affect model training.
+
+## Topics
+
+- [ai-training](/kb/topics/ai-training)
+- [game-design](/kb/topics/game-design)
+- [reinforcement-learning](/kb/topics/reinforcement-learning)
+- [strategic-thinking](/kb/topics/strategic-thinking)
+
+---
+
+## Full Article
+
+Games have always been these underrated educational tools. Theyre super approachable. Theyre very human.Those are the words of Alex Duffy, co-founder and CEO of Good Start Labs, who spoke to Latent Space about why his company is turning games into training material for AI models. The company was spun out of AI media and tools company Every last October, with $3.6 million in funding from General Catalyst, Inovia, Every, and angel investors.The idea came from a 2025 Twitch stream of frontier models playing the game Diplomacy, which Duffy said normally takes days or weeks to play. This was when he worked at Every as its head of AI training.2025 Twitch stream showing a Diplomacy betrayal by OpenAIs o3 model.(For more on Diplomacy and LLMs, see our interview last year with Noam Brown, soon after he won the 2025 World Diplomacy Championship!)Watching the AI agents battle it out in Diplomacy showed Alex Duffy how each frontier model acts differently when faced with gaming scenarios. In particular, he noticed the OpenAI model (o3) winning all the games by planning a future betrayal, whereas the Claude model (Opus 4) refused to lie and thus got destroyed.From this, Duffy concluded that training AI models on games like Diplomacy could teach them skills like strategic thinking. Especially because those kinds of games have outcomes that can be verified. In a later article published on Every, Duffy wrote that fine-tuning a model on the strategy game Diplomacy improved its performance on customer support and industrial operations benchmarks.Grok 4 Fast is the least likely to betray you in Diplomacy, according to these September 2026 rankings by Good Start Labs.On the other hand, dont trust Gemini 2.5 Pro in Diplomacy!Duffy and his co-founder Tyler Marques launched Good Start Labs with the intention of exploring other games that could teach useful skills to AI models. It became really clear that reinforcement learning environments were one of the most reliable ways to teach models anything you could verify, he said.The bigger idea is that the way a game is presented to an AI can determine which skills it learns, and whether those skills carry into work outside the game. And the best evidence for that so far comes from a nineteenth-century railroad game.When game training transfers to financial researchGood Start Labs recently trained a 30B model inside the game 1830: The Game of Railroads and Robber Barons, described on Wikipedia as a strategy game where the only element of luck involved is in determining the initial play order.They then tested the same model on financial research tasks. The experiment was designed to test whether habits learned in a game could transfer outside the game.That game has a stock market mechanic within it, Duffy explained. Youre bidding on stock of these railroad companies to try and create this logistics network. And weve set up tasks where models are going through a database to find information about how the games been played, putting it into an Excel file, reasoning over it, creating some functions within it, and then calculating its answer in that way. And so it mirrors what you would typically do in a finance workflow, but youre doing it in this game.The published results compare single-turn question answering where the model is presented with a game state and asked to make the next move with a multi-turn terminal agent that uses tools to explore its environment, plan a strategy, and adapt in real time.Both training designs improved their respective in-game objectives, but only the terminal-agent design improved performance on the Finance-Agent benchmark.Designing a learning environment to teach capabilitiesThe 1830 result showed that the training design is key. But more generally, Duffy said Good Start Labs can also add an expert model that provides denser, stepwise rewards.The harness also allows an environment to approach the same game in different ways.How you design that [the harness] totally changes what the model can learn, Duffy said. You can imagine a model that is looking at pictures is going to learn different things than one thats reading through natural text [or] one that has everything framed as Python.Duffy described the overall goal of Good Start Labs as figuring out how do you design a learning environment to teach specific capabilities?That question is explored in COS-PLAY: Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks, a paper co-authored by Duffy and Marques with researchers from several universities.In the paper, the system gives a decision agent access to what the authors call a learnable skill bank to guide action taking. A separate skill-bank agent studies the trajectory and makes changes to the skill bank, which is then looped back for the next run.What about the latest frontier models?I asked whether Good Start Labs has compared newer models, such as Claude Fable 5.1 and GPT-6 Astra, in the same game environments? And by extension, do increasingly capable base models make the harness and training environment less important?We compare every new model, Duffy replied, adding that the newer, more capable models tend to be better at the games. However, similar to what the original Twitch streams showed with the 2025 models, the new models diverge on the personality axes: betrayal, collaboration, theory of mind, etc.@playbadcards hands, Astra tops our updated LOL-Alignment benchmark\nmatching the human judge 50% of the time\n \nJust 2% ahead of GPT-4o after 2 years!\n\nHumor is subjective. Games make it measurable. ","username":"alxai_","name":"alex duffy","profile_image_url":"https://pbs.substack.com/profile_images/1907250164156465152/NJeB2MBR_normal.jpg","date":"2026-09-09T16:39:49.000Z","photos":[&#123;"img_url":"https://substackcdn.com/image/fetch/$s_!KTK-!,w_1028,c_limit,f_auto,q_auto:best,fl_progressive:steep/l_play_button_usfui2,w_88,e_colorize:0/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2097726590843052039.jpg","link_url":"https://t.co/yKClPd3Udt"&#125;],"quoted_tweet":&#123;&#125;,"reply_count":3,"retweet_count":3,"like_count":37,"impression_count":2019,"expanded_url":null,"video_url":"https://video.twimg.com/amplify_video/2097726590843052039/vid/avc1/1280x720/rOenGQLL3ebKPiXf.mp4","video_preview_media_key":"13_2097726590843052039","belowTheFold":true&#125;" data-component-name="Twitter2ToDOM">As for harnesses, he said that a more capable model needs less handholding to finish the same task, certainly.But for what Good Start Labs is doing treating the environment as curriculum the harness matters more, not less.GPT-6 Astra reports doing less chain-of-thought and jumps to answers, Duffy said. If you want a model to work a certain way while solving a problem, the harness is what forces it. Astra can probably do the math in its head, but youd rather it use code so you can trust the result.What is Good Start Labs selling?In a recent blog post, the company described its work on improvement loops, which include training systems, harnesses, and observability. But how does that translate into products that Good Start Labs offers other companies?The main thing that we sell in terms of AI improvement is data and learning environments, Duffy replied. Its main customers are frontier labs for which they provide reinforcement learning data to help further train their models.He describes the data part of its offering as one of two things. The first is trajectories of agents playing games what an agent observed, what it decided, which actions it took and what happened afterward.The second is custom data for specific game publishers, where agents are live in their games. The agents can play inside those games, generating interactions that may be useful for training and evaluation. Duffy said any data sold to model developers is anonymized and stripped of personally identifiable information.The learning environments that Good Start Labs sells are full games where models can play end to end, he noted. It isnt about winning the games, though. Its more about teaching AI models to solve problems.Well also make a lot of tasks where the models are using the game engine as the verifiable source of rewards, but are solving problems in a way that you might not expect.So can game skills be transferred to real-world work?Alongside its custom work for clients, Good Start Labs is also training a general model from the expert models it has built for specific games. The idea, said Duffy, is to unify those expert models into this general game intelligence that could be applicable everywhere.But while the 1830 experiment suggests that agentic game training can transfer to a structurally similar financial-research task, its unclear if there will be broader real-world transfer. I asked Duffy what the evidence actually states today?Todays evidence supports pretty clearly that goal-directed execution matters, and reasoning transfers, he replied. He pointed to a recent article by Surge AI showing that office work post-training improved coding, adding that DeepSeek R1 showed it more broadly.Weve seen it twice ourselves: the 1830 finance task, and Diplomacy training that produced a better customer support agent. Every environment weve built also improves tool use downstream.So that makes the answer to our big question a qualified yes: some game skills can transfer to real-world work. But Duffy says how broadly and reliably they transfer remains an open question.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over"
+    icon="newspaper"
+    href="/kb/articles/ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-f3b7c5f6"
+  >
+    Swyx · explanation · 66% similar
+  </Card>
+  <Card
+    title="[AINews] Loopcraft: The Art of Stacking Loops"
+    icon="newspaper"
+    href="/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d"
+  >
+    Swyx · explanation · 65% similar
+  </Card>
+  <Card
+    title="Experts Have World Models. LLMs Have Word Models."
+    icon="newspaper"
+    href="/kb/articles/experts-have-world-models-llms-have-word-models-78eca57f"
+  >
+    Swyx · explanation · 63% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/good-start-labs](https://www.latent.space/p/good-start-labs).
+</Note>

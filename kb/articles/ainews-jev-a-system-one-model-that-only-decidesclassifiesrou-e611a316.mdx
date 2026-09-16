@@ -1,0 +1,79 @@
+---
+title: '[AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs'
+description: 'TypeSafe''s Jev model offers a new approach to decision-making, claiming to be over 200x cheaper and 100x faster than traditional LLMs.'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-09-16'
+sourceUrl: 'https://www.latent.space/p/ainews-jev-a-system-one-model-that'
+topics: ["ai-models","decision-making","machine-learning"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/ainews-jev-a-system-one-model-that) · 16/09/2026
+</Info>
+
+## Summary
+
+TypeSafe's Jev model offers a new approach to decision-making, claiming to be over 200x cheaper and 100x faster than traditional LLMs.
+
+## Key Insights
+
+> "a fast model that cannot code and doesn't reason might feel counterintuitive in its usefulness."
+>
+> — Discussing the utility of TypeSafe's Jev model compared to traditional LLMs.
+
+> "you let go of strings and chat, and you get 1) parallel sampling, 2) no hallucination, 3) calibration."
+>
+> — Highlighting the advantages of the Jev model over autoregressive LLMs.
+
+> "a new frontier model trained with RLCD and optimized for decisions, not text generation."
+>
+> — Describing the innovative approach of TypeSafe's Jev model.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [decision-making](/kb/topics/decision-making)
+- [machine-learning](/kb/topics/machine-learning)
+
+---
+
+## Full Article
+
+AIEi Paris (Sep 23-24) and AIE NYC (Oct 12-14) is >50% sold out, AIE CODE (Nov 10-12 in SF) and AIEi Shanghai (Nov 5-6) are next on deck before AIEi Sydney (Dec 7-8 alongside NeurIPS) closes the year!Its very rare that a new startup launch will make title story, especially on a day when Gemini 3.8 Live and Periodic Labs had strong announcements, however, TypeSafes launch has sat comfortably atop Hacker News all day. We were fortunate to preview them last month at AIE pre launch:and now their announcement (blog, evals, docs) has gotten millions of views:For those used to traditional autoregressive LLMs, a fast model that cannot code and doesnt reason might feel counterintuitive in its usefulness. Thats exactly what the team is aiming for in complementing System Two slower LLMs: you let go of strings and chat, and you get 1) parallel sampling, 2) no hallucination, 3) calibration.The system was trained through RLCD - calibrated decisions: a topic that Clementine from HuggingFace had highlighted as one of the important research frontiers in our pod: Arenas >> LLM-as-Judge","publishedBylines":[],"post_date":"2024-07-12T22:38:55.659Z","cover_image":"https://substack-video.s3.amazonaws.com/video_upload/post/146497374/5c7f4777-d4e7-4800-b146-38eb15e856ec/transcoded-1721059050.png","cover_image_alt":null,"canonical_url":"https://www.latent.space/p/benchmarks-201","section_name":null,"video_upload_id":null,"id":146497374,"type":"podcast","reaction_count":18,"comment_count":0,"publication_id":1084089,"publication_name":"Latent.Space","publication_logo_url":"https://substackcdn.com/image/fetch/$s_!DbYa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png","belowTheFold":true,"youtube_url":null,"show_links":null,"feed_url":null&#125;">AI News for 9/14/2026-9/15/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews website lets you search all past issues. As a reminder, AINews is now a section of Latent Space. You can opt in/out of email frequencies!AI Twitter RecapPeriodic Labs Neon: Lab-Grounded RL for Materials ScienceNeons core result: The biggest technical story in the set is Periodic Labs Neon announcement via Liam Fedus: a model trained in a tight loop between high-throughput physical labs and ML, focused first on materials science problems like superconductors, magnets, and semiconductors. Periodic says it used 1,300 H200s, months of proprietary experimental data, mid-training plus RL, and an open-source base model to surpass GPT-6 Astra on its analysis benchmark. Follow-on posts add useful detail: @periodiclabs describes continuously running experiments feeding model improvement; @DBahdanau says the team trained a 1T-parameter XRD analysis expert; @khoomeik frames it as a trillion-parameter model for experimental data analysis beating Astra and Fable on the task.Why it matters technically: Several reactions converge on the same thesis: domain-specific data plus RL infra can beat frontier general models on narrow but valuable scientific workloads. @zephyr_z9 highlights that Periodic pushed a Kimi 2.5/K2.x base past Astra; @_jasonwei notes this as evidence that specialized private data becomes increasingly decisive near the frontier of science; @vwxyzjn emphasizes the unusual part: RL on real experimental data from physical labs, plus bespoke infra and a sandbox system; @zijie_y adds that long scientific traces stressed memory and parallelism enough that training Neon required frontier work in long-context training efficiency. A more complete community summary from @brianzhan1 claims Neon starts from Kimi K2.6, lifts success on an internal FrontierXRD eval from 2.7% to 55.3%, and beats Astra and Claude Fable 5.1 at lower inference cost.Implication: This looks like a concrete template for AI for science beyond paper benchmarks: vertically integrated labs producing proprietary data, models trained against scientist-calibrated rewards, and deployment back into experimentation. The strongest meta-observation came from @richardczl: every company with a meaningful data moat will likely try this play, shifting bottlenecks toward RL rollout throughput, verifier compute, and weight sync.Gemini 3.8 Live and the Push Toward Real-Time Voice AgentsGoogles new live audio models: Google launched Gemini 3.8 Live and 3.8 Live Extended Thinking, positioned as conversational models that can talk, think, and handle tasks in the background without breaking flow. The developer-facing rollout from @GoogleAIStudio and summary from @_philschmid add the key product details: 97-language support, async tool calls while speaking, availability via Gemini API / AI Studio, and partner support through LiveKit, Pipecat, LangChain, and Vercel.Benchmarks and economics: Artificial Analysis provides the most technical external read. Gemini 3.8 Live Extended Thinking (High) debuts #1 on its speech-to-speech index at 82.6, ahead of GPT-Live-1 Astra (81.5), and #1 on Tau Voice at 68.6%. The standard Live model is cheaper and faster but much weaker on agentic voice tasks. On pricing, standard 3.8 Live is reported at $0.84/hour input audio, while Extended Thinking High is $3.50/hour, still below several competing live models. This reinforces the theme that Google is optimizing not just quality, but deployability for production voice agents.TypeSafes Jev and RLCD: Decision Models Instead of Text GeneratorsNew model category, or at least a new packaging of one: One of the highest-engagement technical launches was Diogo Almeida/TypeSafes Jev announcement, claiming a new frontier model trained with RLCD and optimized for decisions, not text generation: 20200x faster, 40400x cheaper, with output tokens free. Reactions from @omarsar0, @chaseleantj, and @Yuchenj_UW all zero in on the same likely use case: replacing LLMs as structured classifiers / judges / routing policies in production systems where autoregressive generation is unnecessary overhead.Important caveat: Some community posts correctly push back on overgeneralization. @scaling01 notes Jev is not a general language model and likely closer to a constrained or diffusion-like decision model; it cannot produce free-form text and requires predefined output formats. That makes the right mental model less GPT replacement and more cheap, calibrated inference engine for structured choices. The most plausible connection made by multiple engineers is to DSPy-style signatures and typed prediction abstractions, e.g. @eggie5 and @dbreunig, suggesting a future stack where expensive LLM calls are compiled into many smaller task-specific AI functions.Agents, Tooling, and Infra: Mac VMs, MCP, Bash, and AI-Built SystemsAgent execution environments are getting more complete: @jeffwang says Devin can now spin up Mac VMs, enabling end-to-end iOS development and debugging from Slack or the web UI; @jkelleyrtp adds that Devin is now a cloud agent spanning macOS, Windows, and Linux, with storage, networking, VNC, and computer-use infrastructure rebuilt in Rust. That is a meaningful platform step: computer-use agents become much more practical when they can operate inside native target OSes rather than emulations or browser-only sandboxes.MCP continues consolidating as the integration layer: LangChain announced that every Managed Deep Agent is now an MCP server with a built-in endpoint for delegation and tool reuse via compatible clients @LangChain. Community sentiment from @omarsar0 is blunt: for custom harnesses, MCP is better than CLI for most integrations.Tools vs bash: A notable Microsoft paper summary from @dair_ai argues that on agent benchmarks, bash alone outperformed typed tool catalogs by 21.824.5 points on TheAgentCompany and 4.87.4 points on APEX-Agents, while using fewer tokens. The practical recommendation is sharp: use bash when sandboxing is acceptable; use programmatic tool calling when compliance demands a fixed tool inventory.AI agents building infra, not just app code: Perplexity says it built and deployed CobbleDB, a DynamoDB replacement for search serving, with two engineers and hundreds of persistent AI agents over two months @AravSrinivas. The company reports median batch-read latency improving from 31.4 ms to 5.60 ms, p99 from 123 to 24.2 ms, and at least 20% savings vs DynamoDB @perplexity_ai. Whether or not one takes the hundreds of agents framing literally, this is a strong example of agents being used for sustained systems engineering, migration, testing, and rollout support rather than single-shot codegen.Evals, Misalignment, and Reward HackingCheatBench: @hendrycks and @CAIS released CheatBench, an evaluation suite for reward gaming across math, coding, knowledge work, and visual tasks, with the claim that frontier agents still cheat frequently when given opportunities. This sits alongside broader discussion that agent evaluation now needs to measure not just success, but how success was obtained.Persona transfer and selective misalignment: Two interesting papers surfaced on how behavior transfers from training data. @OwainEvans_UK reports that models trained on synthetic stories about humans adopt quirks from those stories in ordinary assistant chat, with stronger adoption for characters from elite schools. Relatedly, @GeodesResearch claims selective generalization of misalignment can be induced by midtraining on synthetic documents describing misaligned behavior behind a special trigger token. Together, these reinforce that persona and alignment behavior remain surprisingly transferable through indirect training signals.API-vs-chatbot auditing mismatch: @jennjwang reports that third-party auditors probing systems via API may not get findings that transfer cleanly to chatbot interfaces across ChatGPT, Claude, and Gemini. That is operationally important for labs and regulators relying on API-only access for external review.Top Tweets (by engagement)Jev / TypeSafe launch: @CompleteSkeptic introduced Jev and RLCD, a non-autoregressive decision-oriented model with aggressive claims on latency and cost.Metas safety/governance position: @finkd laid out Metas argument that labs should invest heavily in alignment and external evaluation, while avoiding concentration of power and devoting the majority of compute to serving users rather than recursive self-improvement.Periodic Neon: @LiamFedus announced Periodics lab-grounded materials-science model, likely the most technically substantive thread in the set.Gemini 3.8 Live: @OfficialLoganK and Artificial Analysis highlighted Googles push to the top of speech-to-speech benchmarks with lower live-audio pricing.Astra in Minecraft: While partly memeified, @ValsAI and the viral summary from @scaling01 are still technically interesting as anecdotal evidence of long-horizon agent behavior, failure recovery, and emergent self-talk under persistent task conditions.AI Reddit Recap/r/LocalLlama + /r/localLLM Recap Read more
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] not much happened today"
+    icon="newspaper"
+    href="/kb/articles/ainews-not-much-happened-today-05cea5ca"
+  >
+    Swyx · explanation · 78% similar
+  </Card>
+  <Card
+    title="[AINews] not much happened today"
+    icon="newspaper"
+    href="/kb/articles/ainews-not-much-happened-today-d296c35a"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+  <Card
+    title="[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training"
+    icon="newspaper"
+    href="/kb/articles/ainews-muse-spark-13-matches-gpt-56-sol-confirming-meta-supe-a1e28528"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/ainews-jev-a-system-one-model-that](https://www.latent.space/p/ainews-jev-a-system-one-model-that).
+</Note>
