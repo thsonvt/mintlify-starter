@@ -2096,6 +2096,10 @@
       "destination": "/kb/articles/the-fable-5-export-controls-harm-us-cyber-defense-42b703f1"
     },
     {
+      "source": "/kb/articles/simon-willison-42da1743",
+      "destination": "/kb/articles/release-datasette-10a40-42da1743"
+    },
+    {
       "source": "/kb/articles/simon-willison-4336e0ec",
       "destination": "/kb/articles/a-quote-from-david-crawshaws-prompt-4336e0ec"
     },
@@ -3032,6 +3036,10 @@
       "destination": "/kb/articles/new-release-of-llm-adds-support-for-reasoning-traces-openai--996b94aa"
     },
     {
+      "source": "/kb/articles/simon-willison-99b9ea83",
+      "destination": "/kb/articles/claude-cowork-and-chat-are-now-one-claude-99b9ea83"
+    },
+    {
       "source": "/kb/articles/simon-willison-99d28f39",
       "destination": "/kb/articles/netnewswire-status-99d28f39"
     },
@@ -3396,6 +3404,10 @@
       "destination": "/kb/articles/the-last-six-months-in-llms-in-five-minutes-b781057e"
     },
     {
+      "source": "/kb/articles/simon-willison-b7b38925",
+      "destination": "/kb/articles/a-quote-from-mustafa-suleyman-b7b38925"
+    },
+    {
       "source": "/kb/articles/simon-willison-b90eddcf",
       "destination": "/kb/articles/how-fast-is-10-tokens-per-second-really-b90eddcf"
     },
@@ -3478,6 +3490,10 @@
     {
       "source": "/kb/articles/simon-willison-c159f4a6",
       "destination": "/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c1b6b25f",
+      "destination": "/kb/articles/release-datasette-0655-c1b6b25f"
     },
     {
       "source": "/kb/articles/simon-willison-c255be60",
@@ -4380,6 +4396,10 @@
       "destination": "/kb/articles/why-video-agent-models-are-next-ethan-he-xai-grok-imagine-3d7ee285"
     },
     {
+      "source": "/kb/articles/swyx-3e843f7e",
+      "destination": "/kb/articles/ainews-reality-checks-on-ai-news-yegge-shuts-down-gas-town-d-3e843f7e"
+    },
+    {
       "source": "/kb/articles/swyx-3eabd449",
       "destination": "/kb/articles/ainews-aef-1-standard-emerges-for-third-party-evaluators-as--3eabd449"
     },
@@ -4542,6 +4562,10 @@
     {
       "source": "/kb/articles/swyx-6138ce53",
       "destination": "/kb/articles/ainews-ai-is-eating-finance-aie-nyc-now-open--6138ce53"
+    },
+    {
+      "source": "/kb/articles/swyx-638b18d8",
+      "destination": "/kb/articles/underwriting-superintelligence-backing-agents-you-can-sue-ru-638b18d8"
     },
     {
       "source": "/kb/articles/swyx-6469fb3c",
