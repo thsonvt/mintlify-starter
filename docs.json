@@ -1780,6 +1780,10 @@
       "destination": "/kb/articles/release-datasette-llm-01a1-1a0b581b"
     },
     {
+      "source": "/kb/articles/simon-willison-1ad63b56",
+      "destination": "/kb/articles/how-to-write-with-an-llm-1ad63b56"
+    },
+    {
       "source": "/kb/articles/simon-willison-1b53d227",
       "destination": "/kb/articles/now-we-have-a-timeline-of-the-openai-accidental-attack-again-1b53d227"
     },
@@ -2724,6 +2728,10 @@
       "destination": "/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
     },
     {
+      "source": "/kb/articles/simon-willison-767d053e",
+      "destination": "/kb/articles/self-generated-prompt-injections-in-compaction-summaries-767d053e"
+    },
+    {
       "source": "/kb/articles/simon-willison-769b98ab",
       "destination": "/kb/articles/release-alchemy-utils-01a1-769b98ab"
     },
@@ -3370,6 +3378,10 @@
     {
       "source": "/kb/articles/simon-willison-b418e382",
       "destination": "/kb/articles/understand-to-participate-b418e382"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b423be25",
+      "destination": "/kb/articles/be-alert-targeted-attacks-on-prominent-rustaceans-b423be25"
     },
     {
       "source": "/kb/articles/simon-willison-b4384d05",
@@ -4714,6 +4726,10 @@
     {
       "source": "/kb/articles/swyx-85cb3ec0",
       "destination": "/kb/articles/ainews-microsoft-build-mai-thinking-1-and-mai-family-models-85cb3ec0"
+    },
+    {
+      "source": "/kb/articles/swyx-876c9819",
+      "destination": "/kb/articles/ainews-not-much-happened-today-876c9819"
     },
     {
       "source": "/kb/articles/swyx-8a8141ef",
