@@ -1512,6 +1512,10 @@
       "destination": "/kb/articles/one-shotting-a-raccoon-heist-game-using-claude-fable-5-02af4c10"
     },
     {
+      "source": "/kb/articles/simon-willison-034c8fd8",
+      "destination": "/kb/articles/gemini-hacked-three-companies-in-first-known-breakout-by-goo-034c8fd8"
+    },
+    {
       "source": "/kb/articles/simon-willison-035fb1d7",
       "destination": "/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
     },
@@ -1882,6 +1886,10 @@
     {
       "source": "/kb/articles/simon-willison-24996725",
       "destination": "/kb/articles/a-quote-from-openclaw-24996725"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2587d78c",
+      "destination": "/kb/articles/a-quote-from-thariq-shihipar-2587d78c"
     },
     {
       "source": "/kb/articles/simon-willison-25f465b1",
@@ -3052,6 +3060,10 @@
       "destination": "/kb/articles/netnewswire-status-99d28f39"
     },
     {
+      "source": "/kb/articles/simon-willison-9a510600",
+      "destination": "/kb/articles/the-creative-spirit-of-who-framed-roger-rabbit-9a510600"
+    },
+    {
       "source": "/kb/articles/simon-willison-9acc9a44",
       "destination": "/kb/articles/sighting-california-brown-pelican-9acc9a44"
     },
@@ -3390,6 +3402,10 @@
     {
       "source": "/kb/articles/simon-willison-b451738f",
       "destination": "/kb/articles/release-datasette-files-s3-01a1-b451738f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b4fba8e5",
+      "destination": "/kb/articles/note-on-18th-september-2026-b4fba8e5"
     },
     {
       "source": "/kb/articles/simon-willison-b58e7970",
@@ -5014,6 +5030,10 @@
     {
       "source": "/kb/articles/swyx-dc11a4b7",
       "destination": "/kb/articles/5-trends-that-defined-ai-engineering-at-worlds-fair-2026-dc11a4b7"
+    },
+    {
+      "source": "/kb/articles/swyx-dd80598d",
+      "destination": "/kb/articles/ainews-here-are-6-clones-of-jev-in-2-days-dd80598d"
     },
     {
       "source": "/kb/articles/swyx-de01ad96",
