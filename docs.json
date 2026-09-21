@@ -868,6 +868,10 @@
       "destination": "/kb/articles/essential-books-for-product-builderspart-2-3b30d4d1"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-3d46860d",
+      "destination": "/kb/articles/how-warp-ships-2000-prs-a-month-with-ai-factories-zach-lloyd-3d46860d"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-3dacc77a",
       "destination": "/kb/articles/how-tech-workers-actually-feel-about-ai-in-2026-annual-ai-se-3dacc77a"
     },
@@ -1034,6 +1038,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-7003f23c",
       "destination": "/kb/articles/build-your-own-company-brain-the-enterprise-ai-playbook-from-7003f23c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-71b91cdd",
+      "destination": "/kb/articles/90-minutes-of-unfiltered-product-advice-from-snap-and-discor-71b91cdd"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-729c3062",
@@ -1366,6 +1374,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-d9593374",
       "destination": "/kb/articles/-community-wisdom-evaluating-startup-equity-navigating-pre-s-d9593374"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-dab1269b",
+      "destination": "/kb/articles/-community-wisdom-finding-your-first-users-before-the-produc-dab1269b"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-db8b7ca4",
@@ -1860,6 +1872,10 @@
       "destination": "/kb/articles/how-we-contain-claude-across-products-21bd1716"
     },
     {
+      "source": "/kb/articles/simon-willison-2237b2c7",
+      "destination": "/kb/articles/release-datasette-auth-github-10-2237b2c7"
+    },
+    {
       "source": "/kb/articles/simon-willison-22c6769f",
       "destination": "/kb/articles/ai-and-liability-22c6769f"
     },
@@ -2042,6 +2058,10 @@
     {
       "source": "/kb/articles/simon-willison-3cf43235",
       "destination": "/kb/articles/uber-caps-usage-of-ai-tools-like-claude-code-to-manage-costs-3cf43235"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3d15e2d2",
+      "destination": "/kb/articles/release-datasette-explain-022-3d15e2d2"
     },
     {
       "source": "/kb/articles/simon-willison-3da2f0fb",
@@ -2560,6 +2580,10 @@
       "destination": "/kb/articles/a-quote-from-paul-dix-645d64f0"
     },
     {
+      "source": "/kb/articles/simon-willison-65f8e516",
+      "destination": "/kb/articles/sighting-california-sea-lion-brandts-cormorant-65f8e516"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -2766,6 +2790,10 @@
     {
       "source": "/kb/articles/simon-willison-7918fe9d",
       "destination": "/kb/articles/release-inaturalist-clumper-01-7918fe9d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-797b0daf",
+      "destination": "/kb/articles/release-llm-keys-ui-01-797b0daf"
     },
     {
       "source": "/kb/articles/simon-willison-79ac62c5",
@@ -3846,6 +3874,10 @@
     {
       "source": "/kb/articles/simon-willison-dd6ce69b",
       "destination": "/kb/articles/a-quote-from-mitchell-hashimoto-dd6ce69b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ddc6c238",
+      "destination": "/kb/articles/a-quote-from-voxium-ddc6c238"
     },
     {
       "source": "/kb/articles/simon-willison-ddd74909",

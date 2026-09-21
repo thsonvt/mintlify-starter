@@ -1,0 +1,79 @@
+---
+title: 'Release: llm-keys-ui 0.1'
+description: 'The llm-keys-ui plugin allows users to securely manage API keys for coding agents without directly pasting them into sessions, enhancing workflow effi'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-20'
+sourceUrl: 'https://simonwillison.net/2026/Sep/20/llm-keys-ui/'
+topics: ["api-management","coding-agents","llm-projects"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/20/llm-keys-ui/) · 20/09/2026
+</Info>
+
+## Summary
+
+The llm-keys-ui plugin allows users to securely manage API keys for coding agents without directly pasting them into sessions, enhancing workflow efficiency.
+
+## Key Insights
+
+> "I don't like pasting API keys into agent sessions."
+>
+> — Author's reasoning for developing the plugin.
+
+> "With this plugin, I can tell Codex to run: uvx --with llm-keys-ui llm keys-ui --all."
+>
+> — Description of how to use the plugin.
+
+> "Then later it can use a command like llm keys get anthropic as part of a shell command."
+>
+> — Explanation of the plugin's functionality.
+
+## Topics
+
+- [api-management](/kb/topics/api-management)
+- [coding-agents](/kb/topics/coding-agents)
+- [llm-projects](/kb/topics/llm-projects)
+
+---
+
+## Full Article
+
+This plugin solves a very specific problem. I've started using Codex Remote to run coding agents on various machines while controlling them from my phone. Sometimes I use those machines to hack on LLM projects, and occasionally that means I need to configure an API key. I don't like pasting API keys into agent sessions, so I wanted a way to get those keys onto a machine without pasting them into the ChatGPT app directly. With this plugin, I can tell Codex to run: uvx --with llm-keys-ui llm keys-ui --all Then have it tell me the URL - including local network or Tailscale device IPs - for an interface to save additional API keys. Then later it can use a command like llm keys get anthropic as part of a shell command when it needs to use a key.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.33"
+    icon="newspaper"
+    href="/kb/articles/release-llm-033-109ceca7"
+  >
+    Simon Willison · reference · 59% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 57% similar
+  </Card>
+  <Card
+    title="Release: llm-coding-agent 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-coding-agent-01a0-f10991ab"
+  >
+    Simon Willison · how-to · 56% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/20/llm-keys-ui/](https://simonwillison.net/2026/Sep/20/llm-keys-ui/).
+</Note>
