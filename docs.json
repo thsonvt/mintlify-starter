@@ -800,6 +800,10 @@
       "destination": "/kb/articles/-community-wisdom-driving-ai-adoption-when-habits-are-the-bo-213388f1"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-22cabb7c",
+      "destination": "/kb/articles/advanced-evals-how-to-find-and-fix-hidden-ai-failures-in-you-22cabb7c"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-24a555a8",
       "destination": "/kb/articles/how-intercom-2xd-their-engineering-velocity-in-9-months-with-24a555a8"
     },
@@ -942,6 +946,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-4de3be9c",
       "destination": "/kb/articles/-community-wisdom-common-mistakes-when-hiring-a-growth-pm-us-4de3be9c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-4f4aecd0",
+      "destination": "/kb/articles/-how-i-ai-metas-muse-review-how-warp-ships-2000-prs-a-month--4f4aecd0"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-5062827b",
@@ -2500,6 +2508,10 @@
       "destination": "/kb/articles/release-micropython-wasm-01a0-5ed1083b"
     },
     {
+      "source": "/kb/articles/simon-willison-5ef9b07f",
+      "destination": "/kb/articles/cloudflare-python-workers-are-now-generally-available-5ef9b07f"
+    },
+    {
       "source": "/kb/articles/simon-willison-5f01dd79",
       "destination": "/kb/articles/a-quote-from-sam-altman-5f01dd79"
     },
@@ -3094,6 +3106,10 @@
     {
       "source": "/kb/articles/simon-willison-9acc9a44",
       "destination": "/kb/articles/sighting-california-brown-pelican-9acc9a44"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9afffea7",
+      "destination": "/kb/articles/comment-mcp-was-always-a-bad-idea-9afffea7"
     },
     {
       "source": "/kb/articles/simon-willison-9b566851",
@@ -4084,6 +4100,10 @@
       "destination": "/kb/articles/release-llm-coding-agent-01a0-f10991ab"
     },
     {
+      "source": "/kb/articles/simon-willison-f11406ff",
+      "destination": "/kb/articles/jev-introduces-a-new-shape-of-llmsystem-one-aka-decision-mod-f11406ff"
+    },
+    {
       "source": "/kb/articles/simon-willison-f19f062d",
       "destination": "/kb/articles/release-datasette-agent-01a3-f19f062d"
     },
@@ -4924,6 +4944,10 @@
       "destination": "/kb/articles/marc-andreessen-introspects-on-the-death-of-the-browser-pi-o-ad7f592a"
     },
     {
+      "source": "/kb/articles/swyx-af44e556",
+      "destination": "/kb/articles/jev-system-one-models-for-prod-not-god-with-diogo-almeida-ce-af44e556"
+    },
+    {
       "source": "/kb/articles/swyx-afdf8983",
       "destination": "/kb/articles/ainews-anthropic-launches-the-mcp-apps-open-spec-in-claudeai-afdf8983"
     },
@@ -5070,6 +5094,10 @@
     {
       "source": "/kb/articles/swyx-de01ad96",
       "destination": "/kb/articles/ainews-claude-opus-5-fable-level-performance-at-opus-price-h-de01ad96"
+    },
+    {
+      "source": "/kb/articles/swyx-de9f2e6a",
+      "destination": "/kb/articles/ainews-xiaomi-mimo-v26-pro-1t-a42b-the-new-top-open-weights--de9f2e6a"
     },
     {
       "source": "/kb/articles/swyx-e0f6c128",

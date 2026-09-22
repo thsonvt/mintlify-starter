@@ -1,0 +1,80 @@
+---
+title: 'Cloudflare Python Workers are now generally available'
+description: 'Cloudflare has announced the general availability of Python Workers, allowing Python code to run on their server-side platform, enhancing support for '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-21'
+sourceUrl: 'https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/'
+topics: ["cloudflare","python","webassembly","developers"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/) · 21/09/2026
+</Info>
+
+## Summary
+
+Cloudflare has announced the general availability of Python Workers, allowing Python code to run on their server-side platform, enhancing support for the Python ecosystem.
+
+## Key Insights
+
+> "Python is now a first-class, fully supported language on the Cloudflare Developer Platform."
+>
+> — Announcement of Python Workers' general availability.
+
+> "This comes with some limitations, documented here - most notably both multiprocessing and threading are non-functional in the WebAssembly VM."
+>
+> — Details about the limitations of Python Workers.
+
+> "Python Workers represent a significant investment in the wider Python ecosystem by Cloudflare."
+>
+> — Significance of the release for the Python community.
+
+## Topics
+
+- [cloudflare](/kb/topics/cloudflare)
+- [python](/kb/topics/python)
+- [webassembly](/kb/topics/webassembly)
+- [developers](/kb/topics/developers)
+
+---
+
+## Full Article
+
+21st September 2026 - Link Blog Cloudflare Python Workers are now generally available (via) After a two year preview, Cloudflare's support for running Python code in their server-side Workers platform is now stable: "Python is now a first-class, fully supported language on the Cloudflare Developer Platform". A neat thing about this is how it works. Cloudflare are running Python compiled to WebAssembly via Pyodide in their V8-based workerd runtime. This comes with some limitations, documented here - most notably both multiprocessing and threading are non-functional in the WebAssembly VM. One particularly interesting detail of this is the local development environment story - their pywrangler development tool (confusingly packaged as workers-py on PyPI) runs a full local simulation of their stack, including executing code with Pyodide in WebAssembly in V8 in a 123MB workerd binary, which for me ended up in node_modules/@cloudflare/workerd-darwin-arm64/bin/workerd. Python Workers represent a significant investment in the wider Python ecosystem by Cloudflare. The release announcement is credited to Gyeongjae Choi, Dominik Picheta, and Hood Chatham - Gyeongjae and Hood are both Pyodide core maintainers.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Research: Running Python ASGI apps in the browser via Pyodide + a service worker"
+    icon="newspaper"
+    href="/kb/articles/research-running-python-asgi-apps-in-the-browser-via-pyodide-20dca3df"
+  >
+    Simon Willison · explanation · 53% similar
+  </Card>
+  <Card
+    title="Temporary Cloudflare Accounts for AI agents"
+    icon="newspaper"
+    href="/kb/articles/temporary-cloudflare-accounts-for-ai-agents-5bb83c11"
+  >
+    Simon Willison · how-to · 53% similar
+  </Card>
+  <Card
+    title="Publishing WASM wheels to PyPI for use with Pyodide"
+    icon="newspaper"
+    href="/kb/articles/publishing-wasm-wheels-to-pypi-for-use-with-pyodide-0bbbcf14"
+  >
+    Simon Willison · how-to · 49% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/](https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/).
+</Note>
