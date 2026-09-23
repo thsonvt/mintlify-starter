@@ -936,6 +936,10 @@
       "destination": "/kb/articles/the-new-inner-game-your-unfair-advantage-in-the-age-of-ai-4ac279a9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4be30be1",
+      "destination": "/kb/articles/opus-55-vs-gpt-6-sol-which-model-won-my-blind-taste-test-4be30be1"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4dc5313e",
       "destination": "/kb/articles/spec-driven-development-the-ai-engineering-workflow-at-notio-4dc5313e"
     },
@@ -1456,6 +1460,10 @@
       "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-eb7e58c2",
+      "destination": "/kb/articles/i-left-claude-for-months-opus-55-is-why-im-back-eb7e58c2"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-ed4d187b",
       "destination": "/kb/articles/claude-opus-48-is-here-is-it-as-good-as-they-say-ed4d187b"
     },
@@ -1574,6 +1582,10 @@
     {
       "source": "/kb/articles/simon-willison-096b02cc",
       "destination": "/kb/articles/a-quote-from-sean-lynch-096b02cc"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0a783ba5",
+      "destination": "/kb/articles/claude-opus-55-gpt-6-sol-gpt-6-luna-and-a-new-price-war-0a783ba5"
     },
     {
       "source": "/kb/articles/simon-willison-0ad233f1",
@@ -2036,6 +2048,10 @@
       "destination": "/kb/articles/introducing-hy4-preview-372a5c11"
     },
     {
+      "source": "/kb/articles/simon-willison-37765e53",
+      "destination": "/kb/articles/release-llm-anthropic-029-37765e53"
+    },
+    {
       "source": "/kb/articles/simon-willison-38c97ff6",
       "destination": "/kb/articles/a-quote-from-kimiai-kimi_moonshot-38c97ff6"
     },
@@ -2218,6 +2234,10 @@
     {
       "source": "/kb/articles/simon-willison-48724683",
       "destination": "/kb/articles/quoting-boris-mann-48724683"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4876c371",
+      "destination": "/kb/articles/release-llm-typesafe-01a0-4876c371"
     },
     {
       "source": "/kb/articles/simon-willison-48ff65d4",
@@ -3344,6 +3364,10 @@
       "destination": "/kb/articles/a-quote-from-bruce-schneier-ac57cb88"
     },
     {
+      "source": "/kb/articles/simon-willison-ac6d70f8",
+      "destination": "/kb/articles/sf-october-14th-a-birds-of-a-feather-session-on-agentic-engi-ac6d70f8"
+    },
+    {
       "source": "/kb/articles/simon-willison-acb02cac",
       "destination": "/kb/articles/singing-the-gospel-of-collective-efficacy-acb02cac"
     },
@@ -3594,6 +3618,10 @@
     {
       "source": "/kb/articles/simon-willison-c4ab1b43",
       "destination": "/kb/articles/tool-markdown-svg-renderer-c4ab1b43"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c4bcc466",
+      "destination": "/kb/articles/release-llm-036-c4bcc466"
     },
     {
       "source": "/kb/articles/simon-willison-c548126a",
@@ -3990,6 +4018,10 @@
     {
       "source": "/kb/articles/simon-willison-e67b66fe",
       "destination": "/kb/articles/release-datasette-enrichments-llm-02a0-e67b66fe"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e6fe3a8e",
+      "destination": "/kb/articles/a-quote-from-therealcornpop-e6fe3a8e"
     },
     {
       "source": "/kb/articles/simon-willison-e8237e03",
@@ -4632,6 +4664,10 @@
       "destination": "/kb/articles/ainews-gpt-56-price-cut-by-20-80-cost-of-gpt-54-intelligence-5deee27a"
     },
     {
+      "source": "/kb/articles/swyx-5fad0d0c",
+      "destination": "/kb/articles/ainews-claude-opus-55-the-new-default-model-for-ainews-and-e-5fad0d0c"
+    },
+    {
       "source": "/kb/articles/swyx-5fb4f0d9",
       "destination": "/kb/articles/railway-the-agent-native-cloud-jake-cooper-5fb4f0d9"
     },
@@ -4986,6 +5022,10 @@
     {
       "source": "/kb/articles/swyx-b9a15207",
       "destination": "/kb/articles/owning-the-ai-pareto-frontier-jeff-dean-b9a15207"
+    },
+    {
+      "source": "/kb/articles/swyx-ba7acfb6",
+      "destination": "/kb/articles/-an-oscar-two-asteroids-and-the-algorithm-in-your-sklearn-jo-ba7acfb6"
     },
     {
       "source": "/kb/articles/swyx-bc19574f",

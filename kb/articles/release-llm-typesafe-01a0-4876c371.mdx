@@ -1,0 +1,80 @@
+---
+title: 'Release: llm-typesafe 0.1a0'
+description: 'Simon Willison introduces the llm-typesafe plugin for TypeSafe AI''s Jev model, detailing installation and usage for various question types.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-22'
+sourceUrl: 'https://simonwillison.net/2026/Sep/22/llm-typesafe/'
+topics: ["llm-plugin","typesafe-ai","jev-model","ai-tools"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/22/llm-typesafe/) · 22/09/2026
+</Info>
+
+## Summary
+
+Simon Willison introduces the llm-typesafe plugin for TypeSafe AI's Jev model, detailing installation and usage for various question types.
+
+## Key Insights
+
+> "Install it like this: llm install llm-typesafe"
+>
+> — Instructions for installing the llm-typesafe plugin.
+
+> "You can ask yes/no 'noul' questions like this: llm -m jev 'Please refund my last payment.'"
+>
+> — Example of using the plugin for yes/no questions.
+
+> "See the README for more details."
+>
+> — Encouragement to refer to the README for comprehensive information.
+
+## Topics
+
+- [llm-plugin](/kb/topics/llm-plugin)
+- [typesafe-ai](/kb/topics/typesafe-ai)
+- [jev-model](/kb/topics/jev-model)
+- [ai-tools](/kb/topics/ai-tools)
+
+---
+
+## Full Article
+
+I built this new plugin for LLM to add support for TypeSafe AI's new Jev model. Install it like this: llm install llm-typesafe Then set an API key (get one here, the waitlist seems to move pretty fast): llm keys set typesafe # Paste key And now you can ask yes/no "noul" questions like this: llm -m jev 'Please refund my last payment.' \ -s 'Does this message explicitly request a refund?' Output: &#123;"type": "noul", "noul": 0.99&#125; Or choice questions like this: cat message.txt | llm -m jev \ -s 'Which team should handle this message? If billing and technical issues both occur, choose billing.' \ -o answer_type choice \ -o criteria '&#123; "billing":"Charges, invoices, payments, or refunds", "technical":"Problems installing or using the product", "other":"Neither category fits" &#125;' Or scoring questions like this: cat report.txt | llm -m jev \ -s 'How reproducible is the problem described in this report?' \ -o answer_type score \ -o criteria '[ "No reproduction instructions", "Some instructions, but important steps are missing", "Complete steps with expected and actual results" ]' See the README for more details.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Jev introduces a new shape of LLM—System One, aka Decision Models"
+    icon="newspaper"
+    href="/kb/articles/jev-introduces-a-new-shape-of-llmsystem-one-aka-decision-mod-f11406ff"
+  >
+    Simon Willison · explanation · 72% similar
+  </Card>
+  <Card
+    title="New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging"
+    icon="newspaper"
+    href="/kb/articles/new-release-of-llm-adds-support-for-reasoning-traces-openai--996b94aa"
+  >
+    Simon Willison · reference · 60% similar
+  </Card>
+  <Card
+    title="Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI"
+    icon="newspaper"
+    href="/kb/articles/jev-system-one-models-for-prod-not-god-with-diogo-almeida-ce-af44e556"
+  >
+    Swyx · explanation · 58% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/22/llm-typesafe/](https://simonwillison.net/2026/Sep/22/llm-typesafe/).
+</Note>
