@@ -1,0 +1,80 @@
+---
+title: 'Tool: Gemini 3.8 TTS Playground'
+description: 'The Gemini 3.8 TTS Playground allows users to experiment with Google''s text-to-speech API, featuring multi-speaker conversations and custom voice crea'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-09-23'
+sourceUrl: 'https://simonwillison.net/2026/Sep/23/gemini-tts-playground/'
+topics: ["text-to-speech","google-gemini","audio-synthesis","voice-technology"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Sep/23/gemini-tts-playground/) · 23/09/2026
+</Info>
+
+## Summary
+
+The Gemini 3.8 TTS Playground allows users to experiment with Google's text-to-speech API, featuring multi-speaker conversations and custom voice creation.
+
+## Key Insights
+
+> "Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts."
+>
+> — Introduction of new models in the Gemini TTS Playground.
+
+> "It makes it easy to define a full conversation between multiple characters, each with different voices and voice style instructions."
+>
+> — Highlighting a notable feature of the Gemini API.
+
+> "It took ~20 seconds to generate 1m 18s of audio using Gemini 3.8 Flash TTS."
+>
+> — Performance metrics of the audio generation process.
+
+## Topics
+
+- [text-to-speech](/kb/topics/text-to-speech)
+- [google-gemini](/kb/topics/google-gemini)
+- [audio-synthesis](/kb/topics/audio-synthesis)
+- [voice-technology](/kb/topics/voice-technology)
+
+---
+
+## Full Article
+
+Tool Gemini 3.8 TTS Playground — Test and experiment with Google's Gemini 3.8 text-to-speech API through an interactive playground where you can compose single-voice narration or multi-speaker conversations, preview the generated audio, and explore request and response details. Save your compose settings to bookmarkable URLs for easy sharing, and generate high-quality speech synthesis powered by your Gemini API key. Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts. They come with a library of over 2,000 voices, plus the ability to create a custom voice with "just a 30-second audio sample of your voice or a voice you have the rights to use". I vibe coded this bring-your-own-key playground interface with GPT-6 Astra, taking advantage of the open CORS policy of the underlying Gemini API. A notable feature of the API is that it makes it easy to define a full conversation between multiple characters, each with different voices and voice style instructions. Here's a short demo clip of a conversation between two pelicans debating if they should move to the Pacifica Pier. I had Claude 4.5 Opus write the script and generate a URL to render it using the tool. Your browser does not support the audio element. It took ~20 seconds to generate 1m 18s of audio using Gemini 3.8 Flash TTS (not the cheaper Flash-Lite), at a cost of 2.74 cents.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: Gemini 3.1 Flash TTS"
+    icon="newspaper"
+    href="/kb/articles/tool-gemini-31-flash-tts-69e1867f"
+  >
+    Simon Willison · how-to · 86% similar
+  </Card>
+  <Card
+    title="Gemini 3.1 Flash TTS"
+    icon="newspaper"
+    href="/kb/articles/gemini-31-flash-tts-d32e21db"
+  >
+    Simon Willison · explanation · 82% similar
+  </Card>
+  <Card
+    title="Tool: Gemini Live audio"
+    icon="newspaper"
+    href="/kb/articles/tool-gemini-live-audio-61b0b783"
+  >
+    Simon Willison · how-to · 82% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Sep/23/gemini-tts-playground/](https://simonwillison.net/2026/Sep/23/gemini-tts-playground/).
+</Note>

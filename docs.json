@@ -2332,6 +2332,10 @@
       "destination": "/kb/articles/release-datasette-mcp-02-4e860aee"
     },
     {
+      "source": "/kb/articles/simon-willison-4eedd40d",
+      "destination": "/kb/articles/tool-gemini-38-tts-playground-4eedd40d"
+    },
+    {
       "source": "/kb/articles/simon-willison-4f4fcb91",
       "destination": "/kb/articles/a-quote-from-willy-tarreau-4f4fcb91"
     },
@@ -2942,6 +2946,10 @@
     {
       "source": "/kb/articles/simon-willison-8aeae8ba",
       "destination": "/kb/articles/introducing-wrapture-8aeae8ba"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8bac4eec",
+      "destination": "/kb/articles/tool-shadow-roots-explained-with-live-examples-8bac4eec"
     },
     {
       "source": "/kb/articles/simon-willison-8bc90fcd",
@@ -4824,6 +4832,10 @@
       "destination": "/kb/articles/ainews-not-much-happened-today-82a5d66a"
     },
     {
+      "source": "/kb/articles/swyx-82c68784",
+      "destination": "/kb/articles/ainews-meta-connect-2026-muse-glasses-voice-video-and-charm-82c68784"
+    },
+    {
       "source": "/kb/articles/swyx-8508c5cb",
       "destination": "/kb/articles/ainews-the-biggest-claude-launch-of-all-time-8508c5cb"
     },
@@ -5146,6 +5158,10 @@
     {
       "source": "/kb/articles/swyx-e20a97d6",
       "destination": "/kb/articles/ainews-not-much-happened-today-e20a97d6"
+    },
+    {
+      "source": "/kb/articles/swyx-e331e22a",
+      "destination": "/kb/articles/bio-security-is-an-ai-arms-race-eric-nguyen-ceo-radical-nume-e331e22a"
     },
     {
       "source": "/kb/articles/swyx-e412f7cb",
