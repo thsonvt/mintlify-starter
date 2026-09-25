@@ -2388,6 +2388,10 @@
       "destination": "/kb/articles/an-ai-model-from-meta-also-hacked-another-company-during-tes-54942343"
     },
     {
+      "source": "/kb/articles/simon-willison-54bf8234",
+      "destination": "/kb/articles/release-datasette-10a41-54bf8234"
+    },
+    {
       "source": "/kb/articles/simon-willison-550ffbf6",
       "destination": "/kb/articles/release-commit-rewriter-01-550ffbf6"
     },
@@ -3130,6 +3134,10 @@
     {
       "source": "/kb/articles/simon-willison-9a510600",
       "destination": "/kb/articles/the-creative-spirit-of-who-framed-roger-rabbit-9a510600"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9ac3eba7",
+      "destination": "/kb/articles/release-commit-rewriter-02-9ac3eba7"
     },
     {
       "source": "/kb/articles/simon-willison-9acc9a44",
@@ -4628,6 +4636,10 @@
       "destination": "/kb/articles/ainews-ai-engineer-worlds-fair-autoresearch-memory-world-mod-53d92955"
     },
     {
+      "source": "/kb/articles/swyx-5482839e",
+      "destination": "/kb/articles/foundries-vs-navigators-lowering-the-cost-of-science-5482839e"
+    },
+    {
       "source": "/kb/articles/swyx-54def346",
       "destination": "/kb/articles/ainews-cognition-raises-1b-in-26b-series-d-54def346"
     },
@@ -4750,6 +4762,10 @@
     {
       "source": "/kb/articles/swyx-6ede5258",
       "destination": "/kb/articles/ainews-anthropic-spacexais-300mw5byr-deal-for-colossus-i-arr-6ede5258"
+    },
+    {
+      "source": "/kb/articles/swyx-7167fd27",
+      "destination": "/kb/articles/ainews-the-future-of-latent-space-7167fd27"
     },
     {
       "source": "/kb/articles/swyx-71aec735",
@@ -5194,6 +5210,10 @@
     {
       "source": "/kb/articles/swyx-ea14f3eb",
       "destination": "/kb/articles/how-cursor-deploys-ai-inside-the-enterprise-ea14f3eb"
+    },
+    {
+      "source": "/kb/articles/swyx-ea423363",
+      "destination": "/kb/articles/runways-worldprompt-and-the-engineering-of-real-time-worlds-ea423363"
     },
     {
       "source": "/kb/articles/swyx-ea4debd4",
