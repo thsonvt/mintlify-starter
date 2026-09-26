@@ -1652,6 +1652,10 @@
       "destination": "/kb/articles/research-can-javascript-escape-a-csp-meta-tag-inside-an-ifra-0ded8b95"
     },
     {
+      "source": "/kb/articles/simon-willison-0e3ee047",
+      "destination": "/kb/articles/a-quote-from-john-gruber-0e3ee047"
+    },
+    {
       "source": "/kb/articles/simon-willison-0e83ddc8",
       "destination": "/kb/articles/a-quote-from-julia-evans-0e83ddc8"
     },
@@ -2582,6 +2586,10 @@
     {
       "source": "/kb/articles/simon-willison-61b0b783",
       "destination": "/kb/articles/tool-gemini-live-audio-61b0b783"
+    },
+    {
+      "source": "/kb/articles/simon-willison-61c1a611",
+      "destination": "/kb/articles/sighting-northern-gannet-great-blue-heron-california-brown-p-61c1a611"
     },
     {
       "source": "/kb/articles/simon-willison-61d4e239",
@@ -4272,6 +4280,10 @@
       "destination": "/kb/articles/datasette-pr-2689-replace-token-based-csrf-with-sec-fetch-si-febc892b"
     },
     {
+      "source": "/kb/articles/simon-willison-ff1faed6",
+      "destination": "/kb/articles/note-on-24th-september-2026-ff1faed6"
+    },
+    {
       "source": "/kb/articles/simon-willison-ff232954",
       "destination": "/kb/articles/a-quote-from-romain-huet-ff232954"
     },
@@ -5062,6 +5074,10 @@
     {
       "source": "/kb/articles/swyx-be70bd66",
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
+    },
+    {
+      "source": "/kb/articles/swyx-bed54565",
+      "destination": "/kb/articles/openrouter-from-seed-to-stripe-with-openrouters-alex-atallah-bed54565"
     },
     {
       "source": "/kb/articles/swyx-c11b8776",
