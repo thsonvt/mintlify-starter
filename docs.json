@@ -400,6 +400,10 @@
       "destination": "/kb/articles/llm-weights-vs-the-papercuts-of-corporate-3950c718"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-4fadf8ff",
+      "destination": "/kb/articles/the-eighteen-month-recap-ai-engineer-singapore-may-2026-4fadf8ff"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-4fd35e5a",
       "destination": "/kb/articles/porting-software-has-been-trivial-for-a-while-now-heres-how--4fd35e5a"
     },
@@ -740,6 +744,10 @@
       "destination": "/kb/articles/no-figma-no-jira-no-docs-how-gusto-built-a-new-product-line--10a69bbc"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-13655d1a",
+      "destination": "/kb/articles/the-grief-loneliness-and-burnout-sweeping-through-the-tech-i-13655d1a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-160e48b9",
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
@@ -878,6 +886,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-3dacc77a",
       "destination": "/kb/articles/how-tech-workers-actually-feel-about-ai-in-2026-annual-ai-se-3dacc77a"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-3fc77bb5",
+      "destination": "/kb/articles/-community-wisdom-ai-doomerism-speeding-up-discovery-in-a-bi-3fc77bb5"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-41c80420",
@@ -4262,6 +4274,10 @@
     {
       "source": "/kb/articles/simon-willison-fd4966fb",
       "destination": "/kb/articles/release-llm-032rc2-fd4966fb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fdb82ea3",
+      "destination": "/kb/articles/tool-kkp-party-fdb82ea3"
     },
     {
       "source": "/kb/articles/simon-willison-fde7dbeb",
