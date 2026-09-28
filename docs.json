@@ -804,6 +804,10 @@
       "destination": "/kb/articles/adam-mosseri-ai-is-a-tailwind-for-authenticity-20861687"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-20f3884b",
+      "destination": "/kb/articles/-how-i-ai-jev-for-beginners-i-left-claude-for-months-opus-55-20f3884b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-213388f1",
       "destination": "/kb/articles/-community-wisdom-driving-ai-adoption-when-habits-are-the-bo-213388f1"
     },
@@ -1266,6 +1270,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-a4179bc5",
       "destination": "/kb/articles/60-new-creative-growth-ideas-a4179bc5"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a4b2488e",
+      "destination": "/kb/articles/jev-for-beginners-how-to-use-it-and-what-to-build-a4b2488e"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
@@ -1862,6 +1870,10 @@
     {
       "source": "/kb/articles/simon-willison-1e0a59cd",
       "destination": "/kb/articles/release-shot-scraper-110-1e0a59cd"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1e35bb0c",
+      "destination": "/kb/articles/a-quote-from-muse-ai-agent-1e35bb0c"
     },
     {
       "source": "/kb/articles/simon-willison-1e4ad5f8",
@@ -2492,6 +2504,10 @@
       "destination": "/kb/articles/on-the-dl-5caece01"
     },
     {
+      "source": "/kb/articles/simon-willison-5cb28e94",
+      "destination": "/kb/articles/2026-in-llms-so-far-5cb28e94"
+    },
+    {
       "source": "/kb/articles/simon-willison-5cfe69d3",
       "destination": "/kb/articles/release-datasette-10a38-5cfe69d3"
     },
@@ -2786,6 +2802,10 @@
     {
       "source": "/kb/articles/simon-willison-71d11f50",
       "destination": "/kb/articles/ruff-v0160-71d11f50"
+    },
+    {
+      "source": "/kb/articles/simon-willison-71e5b938",
+      "destination": "/kb/articles/tool-bluesky-reply-bot-checker-71e5b938"
     },
     {
       "source": "/kb/articles/simon-willison-7274da00",
@@ -3270,6 +3290,10 @@
     {
       "source": "/kb/articles/simon-willison-a4073bfb",
       "destination": "/kb/articles/release-datasette-10a37-a4073bfb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a4081081",
+      "destination": "/kb/articles/comment-s3-is-the-future-s3-is-the-past-a4081081"
     },
     {
       "source": "/kb/articles/simon-willison-a421b829",

@@ -1,0 +1,80 @@
+---
+title: '🎙️ How I AI: Jev for beginners + I left Claude for months, Opus 5.5 brought me back + Opus 5.5 vs. GPT-6 Sol bench'
+description: 'Claire tests Jev, a decision model for AI, and Opus 5.5, highlighting their practical applications and improvements in efficiency and cost for various'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-09-28'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left'
+topics: ["ai-decision-models","opus-5-5","real-time-ai","workflow-optimization"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left) · 28/09/2026
+</Info>
+
+## Summary
+
+Claire tests Jev, a decision model for AI, and Opus 5.5, highlighting their practical applications and improvements in efficiency and cost for various workflows.
+
+## Key Insights
+
+> "Jev is a decision model, not a language model, and that distinction can make many tasks dramatically cheaper."
+>
+> — Discussing the advantages of using Jev for structured decision-making.
+
+> "A models personality can matter just as much as its intelligence."
+>
+> — Reflecting on the user experience with Claude and the improvements in Opus 5.5.
+
+> "Where does this workflow simply need to make a decision? That is where Jev belongs."
+>
+> — Claire's approach to identifying the appropriate use cases for Jev.
+
+## Topics
+
+- [ai-decision-models](/kb/topics/ai-decision-models)
+- [opus-5-5](/kb/topics/opus-5-5)
+- [real-time-ai](/kb/topics/real-time-ai)
+- [workflow-optimization](/kb/topics/workflow-optimization)
+
+---
+
+## Full Article
+
+Jev for beginners: how to use it and what to buildListen now on YouTube Spotify Apple PodcastsBrought to you by:OpenArtAn all-in-one AI creation platform for images, videos, music, audio, and moreIn this solo episode, Claire tests Jev, TypeSafe AIs new decision model that returns structured choices, scores, and probabilities instead of generated text. She uses it to analyze 1,700 pull requests for 9 cents, map her Claude and Codex usage, triage email, search 4,500 YouTube comments, and process 200,000 classifications for about $4. She also explains why Jev works best alongside a frontier model and how its speed and pricing make entirely new kinds of real-time apps and large-scale analysis practical.Biggest takeaways:Jev is a decision model, not a language model, and that distinction can make many tasks dramatically cheaper. Instead of generating text, it returns predefined values such as a category, score, or probability. Claire believes this covers roughly 90% of what many software workflows actually need, at 4 cents per million input tokens with no output-token fee.It cost Claire 9 cents to understand where two years of engineering work went. She used Jev to compare 1,700 ChatPRD pull requests across 17,000 pairs, then had Gemini Flash Lite label the resulting clusters. In about two minutes, she learned that nearly 30% of the companys engineering work had gone toward platform, security, and infrastructure.Some of the most useful analysis is already sitting on a local computer. Claude Code and Codex store past sessions locally, allowing Jev to classify them in minutes. Claire discovered that engineering had fallen from nearly 100% of her AI usage in January to less than 40% by September, with agents and media publishing filling the gap.Jev becomes far more powerful when paired with a frontier model. Claire uses Jev to classify, cluster, filter, and route large datasets, then sends only the most important groups to GPT-6 Astra for deeper reasoning. For ChatPRDs product insights graph, this approach processed 1,100 signals and completed 200,000 operations for about $4 on the Jev side.Jevs pricing changes which ideas are worth building. Because it returns small predefined values instead of generating long responses, TypeSafe charges nothing for output tokens. Claire spent less than $10 on Jev during the week, making classification workloads that would normally be expensive at scale feel almost free.Jev makes real-time AI loops practical. Claire built a voice app that turns a spoken phrase into a color, matches it with a quote based on sentiment, and displays everything almost instantly. Jev made its decisions so quickly that the quote API became the slowest part of the workflow.YouTube comment analysis is an immediate use case for any podcast team. Claire classified 4,500 How I AI comments by sentiment, identified 58 containing episode ideas, and built a keyword search that scans the full dataset in under a second. The results showed strong demand for a Grok versus Muse comparison and an 80% positive response to the Claude Code for product managers episode.The real skill is recognizing where a pipeline only needs a decision. Jev will not write documentation or design an interface, but it can sort, route, rank, and filter enormous datasets quickly and cheaply. Claire now asks one question before every build: Where does this workflow simply need to make a decision? That is where Jev belongs.Blog and detailed workflow walkthroughs from this episode:Jev: AI Data Analysis and Product Insights: https://www.chatprd.ai/how-i-ai/jev-ai-data-analysis-product-insights Jev GitHub PR Analysis: https://www.chatprd.ai/how-i-ai/workflows/jev-github-pr-analysis Jev YouTube Comment Analysis: https://www.chatprd.ai/how-i-ai/workflows/jev-youtube-comment-analysis Jev Multi-Model Product Insights: https://www.chatprd.ai/how-i-ai/workflows/jev-multi-model-product-insightsI left Claude for months. Opus 5.5 is why Im back.Listen now on YouTube Spotify Apple PodcastsClaire tests Claude Opus 5.5 after months of leaving Claude out of her daily workflow. She puts it through long-running agentic tasks, frontend prototyping, writing, SVG illustration, computer use, and video editing to see where it earns a place back in her stack. She also shares why she is pairing it with Codex for cross-model code review, where Claudes safety limits still get in the way, and which tasks remain firmly in Codex territory.Biggest takeaways:A models personality can matter just as much as its intelligence. Claire stopped using Claude for months because its rambling, preachy, and overly verbose replies made it unpleasant to work with. Opus 5.5 is the first model in the family that no longer makes her blood boil, which is a meaningful improvement even if no benchmark captures it.Opus 5.5s lower price and faster performance make long-running agent work more practical. It is 40% cheaper than Opus 5, and Claire found it noticeably faster. It successfully completed four complex tasks spanning inbox triage, backend development, research, and computer use, including runs of up to 82 steps from a single prompt.Silence during long-running tasks creates its own user experience problem. Opus 5.5 sometimes remains quiet for eight or nine minutes, leaving users unsure whether it is still working. It is a reminder that perceived latency matters alongside actual latency, especially when agents run for extended periods.Opus 5.5 is the strongest frontend designer Claire has tested so far. Its ChatPRD homepage redesign was bold and polished enough that she plans to ship it. The model handles hierarchy, white space, and visual rhythm exceptionally well, though it still struggles with consumer-app aesthetics and defaults to Claude orange without direction.SVG illustration is an unexpected strength of Opus 5.5. It was the only model Claire tested that produced clean, charming, and animatable character SVGs with consistent styling across multiple expressions. The characters remained visually coherent, and their anatomy mostly made sense.Opus 5.5 has a clear safety posture, and sometimes that means saying no. It refused when Claire asked it to skip testing and push directly to production, and it may route cybersecurity work to Opus 4.8. Whether that feels reassuring or frustrating depends on the workflow, but its boundaries are consistent.The best use of Opus 5.5 may be as an adversarial reviewer for another model. Claire now has Codex and Opus review each others work rather than using one to replace the other. This cross-model loop catches issues either model might miss alone, making the additional cost worthwhile when quality matters.Computer use and video editing still belong to Codex in Claires workflow. Opus 5.5s ElevenLabs MCP video test produced weak color grading, too few jump cuts, and sloppy overlays. Codex also remains stronger at computer use in her current setup, giving her no reason to shift either category to Claude.Claude is back, but it has not replaced Codex as Claires daily driver. Opus 5.5 has earned a role in pull-request reviews, architecture questions, and frontend development. Codexs desktop experience, computer use, and workflow integration still keep it in the primary position.Blog and detailed workflow walkthroughs from this episode:Claude Opus 5.5 Review: https://www.chatprd.ai/how-i-ai/claude-opus-5-5-review Claude Opus 5.5 SVG Illustrations: https://www.chatprd.ai/how-i-ai/workflows/claude-opus-5-5-svg-illustrations Claude Opus 5.5 Frontend Prototypes: https://www.chatprd.ai/how-i-ai/workflows/claude-opus-5-5-frontend-prototypesOpus 5.5 vs. GPT-6 Sol: which model won my blind taste test?Listen now on YouTube Spotify Apple PodcastsClaire takes the How I AI bench live to compare GPT-6 Astra, GPT-6 Sol, Claude Opus 5.5, and more across the work she actually does. She blind-scores writing, frontend prototypes, agent personality, and SVG illustrations, with an AI judge helping evaluate backend work, long-running agents, and computer use. She also checks video edits and a 3D Barbie game build. Along the way, she explains why Astra won her heart, Opus 5.5 won her week, and Sol delivered mixed results while remaining a favorite for everyday work.Biggest takeaways:Expanding the benchmark from two categories to eight changed what Claire could see. The original How I AI Vibe Review focused on PRDs and frontend prototypes. Adding personal productivity tasks like inbox triage, along with backend development, long-running agent tasks, computer use, SVGs, and video editing exposed clear differences between the models Claire preferred for design and those she enjoyed interacting with.Opus 5.5 returned to Claires workflow because of ergonomics, not benchmarks. After repeatedly asking Claude to communicate like a normal person, she found Opus 5.5 concise, clear, and far less irritating. At one point, Claire thought the old frustration had returned, then realized she had accidentally selected Opus 5. The difference was that obvious.Making Opus 5.5 quieter also made it feel slower, even when it was not. Long stretches of silence can make users wonder whether the model is still working. GPT-6 Sol found a better balance in Claires testing, narrating enough to feel responsive without creating additional noise.GPT-6 Sols lower price changes how teams should think about model selection. Learning that Sol costs roughly half as much as Opus 5.5 immediately changed how Claire thought about routing work. She also believes teams should optimize caching before obsessing over model choice, since ChatPRD has seen significant savings when its caches are configured properly.Dash-heavy writing is an immediate warning sign in Claires benchmark. Two models received a 1 out of 5 for agent personality because nearly every message contained an em dash. It may sound overly specific, but Claire sees it as a reliable signal that a customer-facing agent will sound like generic AI writing instead of a natural collaborator.Claire and the AI judge disagree, which makes the benchmark more useful. The judge favored Fable and rated Sol lower, while Claire preferred Astra. The difference reflects two definitions of quality: the judge rewards correctness and structure, while Claire measures how much she actually wants to use the model.The blind SVG comparison changed Claires earlier verdict. In her standalone Opus 5.5 review, Claire favored its character illustrations. But in this live blind comparison, Astra and Sol came out ahead on character SVGs, surprising her after she had predicted a Claude win. Blog and detailed workflow walkthroughs from this episode:Opus 5.5 vs. GPT-6 Sol Blind Test: https://www.chatprd.ai/how-i-ai/opus-5-5-vs-gpt-6-sol-blind-test AI SVG Icon Generation: https://www.chatprd.ai/how-i-ai/workflows/ai-svg-icon-generation AI Inbox Triage and Email Drafts: https://www.chatprd.ai/how-i-ai/workflows/ai-inbox-triage-email-drafts Blind Test AI Models: https://www.chatprd.ai/how-i-ai/workflows/blind-test-ai-modelsIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Jev for beginners: how to use it and what to build"
+    icon="newspaper"
+    href="/kb/articles/jev-for-beginners-how-to-use-it-and-what-to-build-a4b2488e"
+  >
+    Lenny Rachitsky · how-to · 91% similar
+  </Card>
+  <Card
+    title="Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI"
+    icon="newspaper"
+    href="/kb/articles/jev-system-one-models-for-prod-not-god-with-diogo-almeida-ce-af44e556"
+  >
+    Swyx · explanation · 79% similar
+  </Card>
+  <Card
+    title="[AINews] not much happened today"
+    icon="newspaper"
+    href="/kb/articles/ainews-not-much-happened-today-876c9819"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left](https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left).
+</Note>
