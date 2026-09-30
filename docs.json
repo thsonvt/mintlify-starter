@@ -1096,6 +1096,10 @@
       "destination": "/kb/articles/claude-code-for-normal-people-skills-voice-mode-and-how-to-c-77fc7844"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-780cfbf6",
+      "destination": "/kb/articles/all-of-the-lenny-friends-summit-talks-are-now-online-780cfbf6"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7856ad82",
       "destination": "/kb/articles/grok-bot-vs-openclaw-how-i-replaced-my-entire-agent-stack-7856ad82"
     },
@@ -1222,6 +1226,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-98f8ab27",
       "destination": "/kb/articles/the-playbook-for-building-high-talent-density-teams-adam-war-98f8ab27"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9a71a187",
+      "destination": "/kb/articles/jev-8-real-use-cases-for-the-fastest-cheapest-model-ive-ever-9a71a187"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-9c26a6a0",
@@ -2660,6 +2668,10 @@
       "destination": "/kb/articles/sighting-california-sea-lion-brandts-cormorant-65f8e516"
     },
     {
+      "source": "/kb/articles/simon-willison-66170539",
+      "destination": "/kb/articles/claude-sonnet-55-66170539"
+    },
+    {
       "source": "/kb/articles/simon-willison-66e96290",
       "destination": "/kb/articles/writing-code-is-cheap-now-agentic-engineering-patterns-simon-66e96290"
     },
@@ -2886,6 +2898,10 @@
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
       "destination": "/kb/articles/a-quote-from-john-carmack-7b7eda20"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7c7a8c44",
+      "destination": "/kb/articles/a-quote-from-joedaroo-7c7a8c44"
     },
     {
       "source": "/kb/articles/simon-willison-7d8b84f7",
@@ -3440,6 +3456,10 @@
       "destination": "/kb/articles/a-quote-from-linus-torvalds-ad686f08"
     },
     {
+      "source": "/kb/articles/simon-willison-ad771bc1",
+      "destination": "/kb/articles/tool-photo-scrubber-local-face-blur-metadata-removal-ad771bc1"
+    },
+    {
       "source": "/kb/articles/simon-willison-ad81f1a9",
       "destination": "/kb/articles/steve-yegge-ad81f1a9"
     },
@@ -3800,6 +3820,10 @@
       "destination": "/kb/articles/have-your-agent-record-video-demos-of-its-work-with-shot-scr-cf5015cb"
     },
     {
+      "source": "/kb/articles/simon-willison-cf591bf6",
+      "destination": "/kb/articles/a-quote-from-anthropic-frontier-red-team-cf591bf6"
+    },
+    {
       "source": "/kb/articles/simon-willison-cff0f800",
       "destination": "/kb/articles/sighting-california-sea-lion-cff0f800"
     },
@@ -4006,6 +4030,10 @@
     {
       "source": "/kb/articles/simon-willison-dfb9e67b",
       "destination": "/kb/articles/release-scan-for-secrets-03-dfb9e67b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dffadfa3",
+      "destination": "/kb/articles/comment-gpt-61-sol-near-astra-intelligence-for-a-fifth-of-th-dffadfa3"
     },
     {
       "source": "/kb/articles/simon-willison-e0353207",
@@ -4312,6 +4340,10 @@
       "destination": "/kb/articles/a-quote-from-kyle-kingsbury-fe0a7bea"
     },
     {
+      "source": "/kb/articles/simon-willison-fe1d8260",
+      "destination": "/kb/articles/openai-devday-2026-live-blog-fe1d8260"
+    },
+    {
       "source": "/kb/articles/simon-willison-fe678ac4",
       "destination": "/kb/articles/a-quote-from-richard-fontana-fe678ac4"
     },
@@ -4334,6 +4366,10 @@
     {
       "source": "/kb/articles/swyx-02e6b89f",
       "destination": "/kb/articles/ainews-minimax-27-glm-5-at-13-cost-sota-open-model-02e6b89f"
+    },
+    {
+      "source": "/kb/articles/swyx-031e2384",
+      "destination": "/kb/articles/ainews-opus-55-is-good-at-explainer-videos-031e2384"
     },
     {
       "source": "/kb/articles/swyx-038320ff",
@@ -4568,6 +4604,10 @@
       "destination": "/kb/articles/ainews-everything-is-cli-3b7375ca"
     },
     {
+      "source": "/kb/articles/swyx-3d2202ef",
+      "destination": "/kb/articles/claude-codes-next-era-thariq-shihipar-anthropic-3d2202ef"
+    },
+    {
       "source": "/kb/articles/swyx-3d39f955",
       "destination": "/kb/articles/ainews-not-much-happened-today-3d39f955"
     },
@@ -4682,6 +4722,10 @@
     {
       "source": "/kb/articles/swyx-539304b7",
       "destination": "/kb/articles/ainews-openai-gpt-next-disproves-80-year-old-erds-planar-uni-539304b7"
+    },
+    {
+      "source": "/kb/articles/swyx-53933f07",
+      "destination": "/kb/articles/ainews-openai-devday-2026-dots-61-sol-ultrafast-decisions-ap-53933f07"
     },
     {
       "source": "/kb/articles/swyx-53d92955",
@@ -5042,6 +5086,10 @@
     {
       "source": "/kb/articles/swyx-a72f0190",
       "destination": "/kb/articles/ainews-not-much-happened-today-a72f0190"
+    },
+    {
+      "source": "/kb/articles/swyx-a96af80e",
+      "destination": "/kb/articles/ainews-amd-buys-world-labs-for-82b-as-atlas-solves-sparse-re-a96af80e"
     },
     {
       "source": "/kb/articles/swyx-aa94504d",
