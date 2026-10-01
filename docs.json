@@ -1496,6 +1496,10 @@
       "destination": "/kb/articles/claude-opus-48-is-here-is-it-as-good-as-they-say-ed4d187b"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-ed4dca83",
+      "destination": "/kb/articles/openai-dev-day-2026-the-releases-that-actually-matter-ed4dca83"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-ef2a5fea",
       "destination": "/kb/articles/the-codex-feature-that-works-while-you-sleep-ef2a5fea"
     },
@@ -1862,6 +1866,10 @@
     {
       "source": "/kb/articles/simon-willison-1b93707c",
       "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1caa288c",
+      "destination": "/kb/articles/a-quote-from-matthew-green-1caa288c"
     },
     {
       "source": "/kb/articles/simon-willison-1ce25b0a",
@@ -3680,6 +3688,10 @@
       "destination": "/kb/articles/incident-report-cve-2026-lgtm-c2885300"
     },
     {
+      "source": "/kb/articles/simon-willison-c330a16a",
+      "destination": "/kb/articles/he-built-this-city-c330a16a"
+    },
+    {
       "source": "/kb/articles/simon-willison-c3606a76",
       "destination": "/kb/articles/the-memory-shortage-is-causing-a-repricing-of-consumer-elect-c3606a76"
     },
@@ -4460,6 +4472,10 @@
       "destination": "/kb/articles/ainews-meta-superintelligence-labs-announces-muse-spark-firs-14e970f9"
     },
     {
+      "source": "/kb/articles/swyx-15c0b1dc",
+      "destination": "/kb/articles/ainews-gemini-4-argon-gdms-answer-to-astrafable-with-1m-outp-15c0b1dc"
+    },
+    {
       "source": "/kb/articles/swyx-19a856ed",
       "destination": "/kb/articles/ainews-memory-prices-up-500-in-12-months-19a856ed"
     },
@@ -4690,6 +4706,10 @@
     {
       "source": "/kb/articles/swyx-5007e60e",
       "destination": "/kb/articles/ontologies-are-so-back-why-ai-agents-are-reviving-the-semant-5007e60e"
+    },
+    {
+      "source": "/kb/articles/swyx-506e319c",
+      "destination": "/kb/articles/why-dwarkesh-is-wrong-about-computer-use-how-openai-shipped--506e319c"
     },
     {
       "source": "/kb/articles/swyx-50b11fd3",
