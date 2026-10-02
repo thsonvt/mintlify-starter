@@ -1,0 +1,80 @@
+---
+title: 'Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience'
+description: 'Ahmad Al-Dahle, Airbnb''s CTO, discusses the company''s transformation into an AI-native organization, focusing on internal processes and customer suppo'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-10-02'
+sourceUrl: 'https://www.latent.space/p/airbnb'
+topics: ["ai-transformation","customer-support","product-development","organizational-change"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/airbnb) · 02/10/2026
+</Info>
+
+## Summary
+
+Ahmad Al-Dahle, Airbnb's CTO, discusses the company's transformation into an AI-native organization, focusing on internal processes and customer support enhancements through AI.
+
+## Key Insights
+
+> "We moved away from excessive artifact generation to the code being the artifact that we reason upon."
+>
+> — Discussing the shift in Airbnb's software engineering process.
+
+> "Roughly half of Airbnb's support tickets are now resolved purely by AI."
+>
+> — On the impact of AI in customer support.
+
+> "Because of this context graph that exists across the codebase, we're able to have generalists work across very specialist parts of the code."
+>
+> — Explaining the benefits of the internal organizational context graph, Everest.
+
+## Topics
+
+- [ai-transformation](/kb/topics/ai-transformation)
+- [customer-support](/kb/topics/customer-support)
+- [product-development](/kb/topics/product-development)
+- [organizational-change](/kb/topics/organizational-change)
+
+---
+
+## Full Article
+
+Prior to joining Airbnb as CTO in January, Ahmad Al-Dahle was head of generative AI at Meta and led the launch of its open source Llama models over 2023-2025. Now Al-Dahle is in charge of turning Airbnb into an AI-native company.What that means in practice is using AI internally to speed up product development, then using those same capabilities to transform the customer experience. Were calling this an inside-out AI approach and in this article well dig into the details.An example of inside-out AI: Airbnb used a custom internal tool called Everest to help accelerate the launch of a new external service. (Diagram by Latent Space)Al-Dahle spoke with Latent Space about Airbnbs AI transformation. We began by asking him why he made the shift from building frontier models at Meta to deploying them at Airbnb.Fundamentally, I like to chase where I believe the hard frontiers live, he replied, pun perhaps intended. We kind of knew [at Meta] what the flywheel looks like, we understood how to improve the model capabilities, generation on generation.Al-Dahles tweet in January on joining Airbnb from MetaThe next challenge, Al-Dahle thinks, is deploying models at scale. At Airbnb, his goals are to push people to work differently, because these tools are transforming how you work, and to take these systems and deploy them in production, in creative ways that actually add value to a core user experience.Jumping to prototypes, code is the artifactFrom its launch in 2008, Airbnb has been considered a technology company operating in the hospitality industry. The company went public in 2020 and now has a market capitalization of approximately $93 billion (at time of writing). So its a big operation to try and make AI-native.Al-Dahle reeled off a few statistics to show that Airbnb is AI-pilled now: 60% of its code is now AI-authored, it has shipped nearly 80% more features and improvements year over year, and pull-request throughput for the average engineer is up about 1.6x.But how exactly has Airbnb done all this?Firstly, he said its about changing the organizational process for software engineering. Traditionally, you might do product requirements, then design work in Figma, then engineering implementation, and eventually production testing. In the past, these wouldve required handoffs from one team to another. But now, Airbnb has its product, design and engineering teams move directly to working with prototypes.Breaking that time down is actually one of the biggest savings that a lot of traditional software companies have to make the leap to do, said Al-Dahle. And so we made that leap and it actually ended up adding a ton of tailwind to our product development process.A byproduct of this change is that teams deal directly with code, rather than dealing with artifacts like a product requirements document.We moved away from excessive artifact generation to the code being the artifact that we reason upon, and prototypes, he said.AI resolves roughly half of support ticketsAl-Dahle told us that customer support was the first user-facing area that it introduced AI into. He described it as the hardest problem to deploy, because the stakes and the consequences of a mistake are really high.Roughly half of Airbnbs support tickets are now resolved purely by AI, said Al-Dahle (this is in line with the companys Q2 results, which put the figure at nearly 45%).The key to this, he says, is using synthetic data to thoroughly test the system before taking it to production.We start with: build a model, build the agent, and begin to generate a battery of synthetic data before you ever go into production.He notes that although agents handle about half of customer support queries, they are careful about what requires human assistance with safety issues, for example.So while we solve 50% of the tickets, were actually deliberate about the tickets we dont choose to solve yet [with agents].Everest, Airbnbs AI context graphTwo Airbnb Services projects you may not be familiar with yet are grocery deliveries and airport pickups (the grocery service has just been expanded to more cities). Both were launched earlier this year, thanks in part to Airbnbs inside-out AI approach.It was an internal organizational context graph called Everest that helped bring these products to market quickly. Al-Dahle said that Everest uses technologies such as LLMs, embeddings and AI-based retrieval to build and query the graph.He explained that the grocery delivery and airport pickup services are kind of similar services API integrations with partner services [external companies] that integrated onto our platform. Airbnbs new grocery delivery serviceThe grocery service was built first, and learnings from it were made available in Everest. That enabled the airport pickup team to do its project much more quickly. In its Q2 earnings report, Airbnb states that groceries took eight months, nine months and airport pickups took about six weeks to develop.Additionally, using Everest means its developers dont necessarily need specialist knowledge to work on projects.Because of this context graph that exists across the codebase, said Al-Dahle, were able to have generalists work across very specialist parts of the code.Both of the new services were highlighted by CEO Brian Chesky at Airbnbs 2026 Summer Release in May.Choosing which models to use and customizing open modelsTo give more of a sense of Airbnbs internal AI usage, Al-Dahle described it as a multi-model company and says it deploys a lot of different models in its production systems.Airbnb uses a mixture of frontier and open models, but conducts most of its own post-training and reinforcement learning on open models. Al-Dahle said the company deploys at least 10 customized models for production use cases.It also evaluates models along a Pareto frontier for cost, performance and latency, selecting a different trade-off for each application.We run evals specifically for each use case, he explained. So if were using a model for search, we have a set of search queries that are sampled from production that we measure against. If were doing customer support, we also sample all the production queries that we care most about including edge cases.We try to use the right tool for the right job, he added. For example, coding can tolerate more latency but mistakes are expensive. So they prefer to use the strongest available frontier model for coding tasks.It makes sense to use the absolute most frontier coding model, because for every defect that a model produces, it could easily cost us a lot more.On the other hand, search is used at scale by Airbnbs users and so is very latency-sensitive. So for that job, they prefer smaller specialized models. Al-Dahle claimed that smaller, post-trained models sometimes out-perform frontier models.For narrow use cases, weve been able to take really small, really nimble models that are very fast and cheap and post-train them beyond the frontier.Async agents: the next big shiftLike other AI-native companies, Airbnb has created an internal agent in its case called AirChat.We have our own internal agent that we call AirChat, which [includes] basically all the necessary MCP organizational context, said Al-Dahle.But Airbnb is also starting to implement what Al-Dahle sees as the next development in agents: asynchronous agents running in containers and activated by events.A lot of our teams are starting to basically automate their on-calls, he explained. So if something trips, if a Grafana limit or whatever monitoring system that you use trips, agents spin up to then triage and run your on-call, your initial on-call.A human engineer can review a PR proposed by the agent, while the agent may close the incident itself if it determines that the alert was flaky.This process reminds us of how open source projects like Vercels AI SDK, Astro, Flue and tldraw use software factories teams of agents to apply fixes and features.Al-Dahle sees this approach eventually being used across its entire marketplace platform; for example to monitor fraud, trust violations, marketplace quality, and software defects.My vision is large amounts of asynchronous agents that are helping automate and manage the marketplace.Maintaining the craft of software engineeringAl-Dahle believes that organizing teams around outcomes rather than features is key to becoming an AI-native company.If youre a company that organizes by feature development, youre going to struggle in the age of AI, he said. If youre a company that organizes by objectives and missions and results that youre trying to achieve, youre going to be fine.That said, theres one thing Al-Dahle worries about during this AI-native transition: whether junior engineers are developing their craft and judgement, given that AI is able to do so much work for them now.Senior engineers, he says, have acquired their judgement through many years of shipping systems and operating software in production including the mistakes they made along the way.Part of the solution, Al-Dahle says, is ensuring all of their engineers can explain the work AI does for them.One of the things Im pushing very strongly is that every engineer must be able to explain, even if an AI generated the PR, must be able to explain what they built. I think if that fundamental premise remains true, then more junior engineers will learn the craft of interface design and architecture, and the importance of testing and unit testing and integration tests. So were trying to keep our craft really high.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="🎙️ How I AI: Quests, token leaderboards, and the elite AI adoption playbook & Notion’s spec-driven development "
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-quests-token-leaderboards-and-the-elite-ai-adoptio-93d7168f"
+  >
+    Lenny Rachitsky · how-to · 65% similar
+  </Card>
+  <Card
+    title="[AINews] Silicon Valley gets Serious about Services"
+    icon="newspaper"
+    href="/kb/articles/ainews-silicon-valley-gets-serious-about-services-e452a7c5"
+  >
+    Swyx · explanation · 65% similar
+  </Card>
+  <Card
+    title="How to turn your AI into a world-class designer"
+    icon="newspaper"
+    href="/kb/articles/how-to-turn-your-ai-into-a-world-class-designer-b6c01a8e"
+  >
+    Lenny Rachitsky · how-to · 62% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/airbnb](https://www.latent.space/p/airbnb).
+</Note>

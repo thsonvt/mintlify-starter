@@ -400,6 +400,10 @@
       "destination": "/kb/articles/llm-weights-vs-the-papercuts-of-corporate-3950c718"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-3d982565",
+      "destination": "/kb/articles/the-craft-has-been-commoditized-but-access-has-not-3d982565"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-4fadf8ff",
       "destination": "/kb/articles/the-eighteen-month-recap-ai-engineer-singapore-may-2026-4fadf8ff"
     },
@@ -458,6 +462,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-952b6277",
       "destination": "/kb/articles/this-should-not-be-possible-952b6277"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-9bd38efd",
+      "destination": "/kb/articles/software-doesnt-need-to-be-readable-anymore-it-needs-to-be-e-9bd38efd"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-a9cc0427",
@@ -4452,6 +4460,10 @@
       "destination": "/kb/articles/ainews-google-io-2026-gemini-35-flash-omni-nanobanana-for-vi-0f13a16d"
     },
     {
+      "source": "/kb/articles/swyx-0f97a582",
+      "destination": "/kb/articles/ainews-pi-10-pi-durable-and-aie-nyc-0f97a582"
+    },
+    {
       "source": "/kb/articles/swyx-10e52cb9",
       "destination": "/kb/articles/ainews-midjourney-medical-scan-your-organs-like-you-step-on--10e52cb9"
     },
@@ -5024,6 +5036,10 @@
       "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
     },
     {
+      "source": "/kb/articles/swyx-943a1d77",
+      "destination": "/kb/articles/inside-out-ai-rebuilding-airbnb-behind-the-scenes-and-across-943a1d77"
+    },
+    {
       "source": "/kb/articles/swyx-963a4413",
       "destination": "/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
     },
@@ -5158,6 +5174,10 @@
     {
       "source": "/kb/articles/swyx-b3ed459e",
       "destination": "/kb/articles/lovable-cto-the-future-of-saas-is-apps-that-agents-can-use-b3ed459e"
+    },
+    {
+      "source": "/kb/articles/swyx-b809118d",
+      "destination": "/kb/articles/academia-is-for-ambition-alex-zhang-mit-b809118d"
     },
     {
       "source": "/kb/articles/swyx-b8f20132",
