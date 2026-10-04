@@ -1032,6 +1032,10 @@
       "destination": "/kb/articles/-this-week-on-how-i-ai-from-figma-to-claude-code-and-back-fr-5eff2998"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-621b3d5b",
+      "destination": "/kb/articles/-community-wisdom-getting-value-from-personal-ai-agents-with-621b3d5b"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-62f7ee41",
       "destination": "/kb/articles/-this-week-on-how-i-ai-mastering-midjourney-how-to-create-co-62f7ee41"
     },
@@ -1294,6 +1298,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
       "destination": "/kb/articles/from-figma-to-claude-code-and-back-gui-seiz-alex-kern-figma--a66fabc6"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a6b734f3",
+      "destination": "/kb/articles/openais-head-of-chatgpt-were-entering-a-new-era-of-ai-again--a6b734f3"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a7817134",
@@ -2130,6 +2138,10 @@
     {
       "source": "/kb/articles/simon-willison-3c1fb58c",
       "destination": "/kb/articles/glm-51-towards-long-horizon-tasks-3c1fb58c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3c945b42",
+      "destination": "/kb/articles/september-sponsors-only-newsletter-3c945b42"
     },
     {
       "source": "/kb/articles/simon-willison-3cf43235",
@@ -3142,6 +3154,10 @@
     {
       "source": "/kb/articles/simon-willison-95ecf88e",
       "destination": "/kb/articles/microsoft-copilot-cowork-exfiltrates-files-95ecf88e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-95fa2d90",
+      "destination": "/kb/articles/were-going-to-need-default-hard-budget-caps-on-pretty-much-e-95fa2d90"
     },
     {
       "source": "/kb/articles/simon-willison-960458f7",
@@ -4366,6 +4382,10 @@
     {
       "source": "/kb/articles/simon-willison-fe678ac4",
       "destination": "/kb/articles/a-quote-from-richard-fontana-fe678ac4"
+    },
+    {
+      "source": "/kb/articles/simon-willison-feae7a5a",
+      "destination": "/kb/articles/museum-rexs-dino-store-feae7a5a"
     },
     {
       "source": "/kb/articles/simon-willison-febc892b",
