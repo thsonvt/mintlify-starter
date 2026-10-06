@@ -1,0 +1,80 @@
+---
+title: 'Release: pwasm 0.2a0'
+description: 'Simon Willison discusses the development of pwasm, a pure Python WebAssembly engine, and its improvements after using AI for enhancements.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-01'
+sourceUrl: 'https://simonwillison.net/2026/Oct/1/pwasm/'
+topics: ["webassembly","python","ai-improvements","software-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/1/pwasm/) · 01/10/2026
+</Info>
+
+## Summary
+
+Simon Willison discusses the development of pwasm, a pure Python WebAssembly engine, and its improvements after using AI for enhancements.
+
+## Key Insights
+
+> "I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it"
+>
+> — Willison reflects on the decision to use AI to improve his project.
+
+> "it now handles almost all of the WASM specification"
+>
+> — Describing the progress made in the development of pwasm.
+
+> "I wouldn't trust this thing at all - hence the alpha version tag"
+>
+> — Willison expresses caution regarding the reliability of the alpha version of pwasm.
+
+## Topics
+
+- [webassembly](/kb/topics/webassembly)
+- [python](/kb/topics/python)
+- [ai-improvements](/kb/topics/ai-improvements)
+- [software-development](/kb/topics/software-development)
+
+---
+
+## Full Article
+
+pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of AI mania. I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it and see if it could make any significant improvements: Evaluate current state of pwasm - then consider what it would take to get the MicroPython and micro JavaScript experiments from the research repo working under it - and what it would take to speed it up 42 commits later (with minimal follow-up prompting) it now handles almost all of the WASM specification, and the wheel from PyPI bundles working WASM builds of MicroPython, QuickJS and Micro QuickJS. I wouldn't trust this thing at all - hence the alpha version tag - but it's interesting seeing how today's models can improve on the work of models from 10 months ago.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: micropython-wasm 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-micropython-wasm-01a0-5ed1083b"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+  <Card
+    title="Release: micropython-wasm 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-micropython-wasm-01a2-46689960"
+  >
+    Simon Willison · reference · 64% similar
+  </Card>
+  <Card
+    title="Release: micropython-wasm 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-micropython-wasm-01a1-14e330fc"
+  >
+    Simon Willison · reference · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/1/pwasm/](https://simonwillison.net/2026/Oct/1/pwasm/).
+</Note>

@@ -3716,6 +3716,10 @@
       "destination": "/kb/articles/release-datasette-0655-c1b6b25f"
     },
     {
+      "source": "/kb/articles/simon-willison-c1efb200",
+      "destination": "/kb/articles/release-pwasm-02a0-c1efb200"
+    },
+    {
       "source": "/kb/articles/simon-willison-c255be60",
       "destination": "/kb/articles/beats-now-have-notes-c255be60"
     },
@@ -4030,6 +4034,10 @@
     {
       "source": "/kb/articles/simon-willison-dbf581b1",
       "destination": "/kb/articles/tool-pasted-file-editor-dbf581b1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-dc223968",
+      "destination": "/kb/articles/a-quote-from-felix-rieseberg-dc223968"
     },
     {
       "source": "/kb/articles/simon-willison-dc4e7ed4",
@@ -4662,6 +4670,10 @@
     {
       "source": "/kb/articles/swyx-3a8f5bf7",
       "destination": "/kb/articles/ainews-anthropic-19b-arr-qwen-team-leaves-gemini-and-gpt-bum-3a8f5bf7"
+    },
+    {
+      "source": "/kb/articles/swyx-3adf0e2c",
+      "destination": "/kb/articles/ainews-reflection-beam-501b-a23b-american-open-model-3adf0e2c"
     },
     {
       "source": "/kb/articles/swyx-3b185a0d",
