@@ -1,0 +1,81 @@
+---
+title: '[AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing'
+description: 'Anthropic has launched Claude Haiku 5.5, positioning it as a more affordable and capable alternative to OpenAI''s GPT-6 Luna, with significant updates '
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-10-08'
+sourceUrl: 'https://www.latent.space/p/ainews-claude-haiku-55-better-than'
+topics: ["ai-models","anthropic","gpt-6","haiku-5-5","pricing-strategy"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/ainews-claude-haiku-55-better-than) · 08/10/2026
+</Info>
+
+## Summary
+
+Anthropic has launched Claude Haiku 5.5, positioning it as a more affordable and capable alternative to OpenAI's GPT-6 Luna, with significant updates and pricing adjustments.
+
+## Key Insights
+
+> "Anthropic calls it the cheapest, fastest, and most capable small model we've ever released."
+>
+> — Official launch announcement of Claude Haiku 5.5.
+
+> "It is priced to match OpenAI's GPT-6 Luna."
+>
+> — Comparison of pricing between Claude Haiku 5.5 and GPT-6 Luna.
+
+> "This is the first Haiku with Anthropic's effort settings and adaptive thinking."
+>
+> — Description of new features in Claude Haiku 5.5.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [anthropic](/kb/topics/anthropic)
+- [gpt-6](/kb/topics/gpt-6)
+- [haiku-5-5](/kb/topics/haiku-5-5)
+- [pricing-strategy](/kb/topics/pricing-strategy)
+
+---
+
+## Full Article
+
+Its been about a year since Anthropic shipped Haiku 4.5, and with successive launches of Sonnet and Opus and Fable up to 5.5 it was seeming a little forgotten, especially as OpenAI launched Luna 6 alongside Astra and Sol 6.Well, its here, and its a welcome update. More in the summary below.AI News for 10/06/2026-10/7/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews website lets you search all past issues. As a reminder, AINews is now a section of Latent Space. You can opt in/out of email frequencies!AI Twitter RecapTop Story: Anthropic releases Claude Haiku 5.5What happenedAnthropic shipped Claude Haiku 5.5, its first Haiku-tier update in about a year. It is priced to match OpenAIs GPT-6 Luna, and Anthropic cut prices on Sonnet 5.5 and its subscription plans the same day.Pre-launch signals. @scaling01 posted happy Haiku 5.5 day before the announcement. @kimmonismus said the model had already appeared in a Claude Code update and predicted Luna-pricing. He then posted the pricing ahead of the official post (@kimmonismus) and confirmed when it went live (@kimmonismus).Official launch. @claudeai and @AnthropicAI called it the cheapest, fastest, and most capable small model weve ever released, costing about 75% less to run than Haiku 4.5 on average.Availability and intended use. It is live on the Claude Platform and in Claude Code (@ClaudeDevs). Anthropic positions it as a subagent paired with Opus 5.5 or Sonnet 5.5, for high-volume, cost-sensitive work such as summaries, compactions and database queries. @mikeyk described the split as Opus does the heavy thinking, Haiku does the high-volume work.Tiered pricing (@ClaudeDevs):Prompt lengthInput / output per 1M tokensCache reads per 1MUnder 100K tokens$0.10 / $0.50$0.01Over 100K tokens$0.50 / $2.50$0.05Sonnet 5.5 price cut. Cache reads were halved from $0.20 to $0.10 per 1M tokens. Anthropic says this makes Sonnet 5.5 about 20% cheaper on most long-running or agentic work (@claudeai).API credits for subscribers. Monthly Claude Platform API credits now come with Max 5x ($100), Max 20x ($200) and Team (up to $500, pooled). They work on any model, including Haiku 5.5, and in third-party harnesses (@ClaudeDevs).Same-day SDK update. Computer-use and browser-use toolsets are now built into the Python and TypeScript Claude SDKs. The SDK runs the action loop and sends clicks and keystrokes to drivers from browser_use, Browserbase, E2B or Daytona, so developers no longer write that loop themselves (@ClaudeDevs, quickstart).Partner rollouts on day one:Cursor: @cursor_ai claims 10x less than Haiku 4.5 on shorter requests and published CursorBench comparisons (@cursor_ai).GitHub Copilot in VS Code: @code reports it matched Claude Sonnet 5 on many coding tasks while using fewer tokens and steps.Devin: @cognition reports 58.4% on FrontierCode 1.1, ahead of Sonnet 5 at roughly one-eighth the cost per task, and recommends it as a sidekick under an Opus 5.5 lead in Fusion.Arena: added to Agent Arena, Code Arena WebDev, Text, Document and Vision, with scores pending (@arena).OpenDocRouter: added the same day (details below).Independent evaluation: Artificial Analysis@ArtificialAnlys published the most detailed third-party numbers (per-eval breakdown, comparison page).Intelligence Index: 43 at max effort, up 26 points from the previous Haiku.Slightly ahead of GLM-5.3 Flash (42), Gemini 3.8 Flash (41) and GPT-6 Luna (38).Comparable to Kimi K3 (44), a 2.8T-parameter open-weights model.Trails Claude Sonnet 5.5 at max effort (56) by 13 points.New controls. This is the first Haiku with Anthropics effort settings and adaptive thinking.Token usage is the main caveat.At max effort it uses about 162k output tokens per Index task, roughly 3x GPT-6 Luna at max (~50k).Going from xhigh to max adds 2 points for about 1.8x the tokens.At equal score it is still more verbose: Haiku 5.5 at high effort scores 38 using ~55k tokens, versus Luna at max scoring 38 with ~50k. The gap widens at lower effort settings.Cost figures are provisional. Artificial Analysis does not yet model the 5x price step above 100K tokens. Cost-per-task numbers will follow.AA-Briefcase (private agentic knowledge-work eval): 1578 Elo. That is ahead of Kimi K3 and GLM-5.3, and comparable to Muse Spark 1.3 at max.Terminal-Bench 4.0: 33%, up from 0% for Haiku 4.5.Level with GLM-5.3 Flash.Ahead of Gemini 3.8 Flash (20%) and GPT-6 Luna (13%).Knowledge versus hallucination (AA-Omniscience):ModelAccuracyHallucination rateHaiku 5.536%40%Gemini 3.8 Flash55%55%GPT-6 Luna44%77%Part of Haikus lower accuracy comes from being more willing to say it doesnt know.AutomationBench-AA: 35%, versus 5360% for Luna, Gemini 3.8 Flash and GLM-5.3 Flash. A pre-release safety bug caused the model to over-refuse. Anthropic is working on a fix, and Artificial Analysis will re-run the eval and expects the score to rise.Specs:1M-token context, up from 200k for Haiku 4.5.Text and image input, text output.5-minute cache writes cost $0.125 per 1M tokens ($0.625 above 100K).Other benchmark claims (mostly vendor or secondhand)@ShayneRedford summarized Anthropics reported jumps:OSWorld (computer use): 15% 72%.TerminalBench: 0% 39%. This differs from Artificial Analysiss independent 33% on Terminal-Bench 4.0.1050% gains in knowledge work and reasoning.Beats Luna on most of these.1M context with roughly 12k max output tokens.@alexalbert__ (Anthropic) stressed that Haiku 4.5 shipped Oct 15, 2025, so the comparison spans less than a year.@TheRundownAI reported that it beats GPT-6 Luna across a variety of benchmarks.Document parsing (independent, on ParseBench):@LoganMarkewich: overall close to Luna, slightly better on tables, worse on chart understanding.@jerryjliu0: about $1.2 per 1,000 pages. Good at tables and reading order for the price; weaker on charts, semantic formatting and bounding boxes.Anecdotal:@simonw wrote pricing notes and ran his pelican-on-a-bicycle test. He says it is SO MUCH better than Haiku 4.5, which costs 10x more (comparison).@AI_Screening says Haiku 5.5 cooked Luna on a Three.js zebra simulation (single prompt, not systematic).Opinions and reactionsBullish@kimmonismus: Way better than GPT-6-Luna, close[r] to Sonnet 5.5 Cheap and smart.@theo likes the tiered pricing: charging a fifth of the price under 100K tokens makes it really clear what the model is for. He also found it striking to see an Anthropic model so far to the left on the cost/intelligence charts (@theo) and covered the launch on stream (@theo).@draecomino: Haiku at max effort performs like a frontier model.@kipperrii argues small, cheap models matter more now that they can do a ton of useful things.@scaling01 (cheap af) and later (@scaling01): 5.5 models are looking good.@NotTomBrown (small but mighty) and @edwinarbus, both from the Anthropic side, posted celebratory notes.Competitive framingThe launch is widely read as aimed at OpenAIs GPT-6 Luna: rip gpt 6 luna (@dejavucoder), time to cook Luna (@scaling01).@kimmonismus framed the Sonnet cache-read cut as Anthropic pressuring OpenAI. On the API credits he added, OpenAI: your turn (@kimmonismus).@teortaxesTex says Anthropic now has the deepest product lineup of all labs (Haiku/Sonnet/Opus/Fable plus Mythos) versus OpenAIs Luna/Sol/Astra. He still thinks Anthropic cares less about products, which he reads as a sign of how much slack it has had through 2026.ThursdAIs @altryne questioned the middle tier: Sonnet made sense when Opus was expensive. The show plans to cover Haiku 5.5 (@thursdai_pod).Caveats (mostly from the data, not loud critics)The headline price may overstate real savings.Heavy token use (about 3x Luna at max effort) offsets part of the per-token discount.Prompts over 100K tokens pay 5x more, which matters for long-context agent loops.These two effects likely explain why Cursors 10x cheaper on short requests differs from Anthropics 75% cheaper on average.Factual recall is weaker than Gemini 3.8 Flash and Luna.The over-refusal bug currently depresses the automation score.Not yet benchmarked: Arena scores are pending, and independent cost-per-task figures await tiered-pricing support.ContextHaiku 4.5 has been Anthropics small model since October 2025. Since then, OpenAIs GPT-6 Luna, Gemini 3.8 Flash, GLM-5.3 Flash and DeepSeek V4.1 Flash have competed at the low-cost end.Haiku 5.5 matches Lunas sticker price exactly. It adds effort control and a 1M context.It is explicitly positioned as the cheap worker inside multi-model agent harnesses: Claude Code subagents, Devin Fusion, Copilot subagents, and compaction or summarization steps.Anthropic paired it with Sonnet cache-read cuts and subscription API credits, a coordinated push on agent economics. That push lands amid wider debate over token bills (see @theo below).Other NewsOpenAIs 722 Math Manuscripts: Scale, Efficiency and Fallout Read more
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-opus-55-the-new-default-model-for-ainews-and-e-5fad0d0c"
+  >
+    Swyx · explanation · 86% similar
+  </Card>
+  <Card
+    title="Claude Haiku 5.5"
+    icon="newspaper"
+    href="/kb/articles/claude-haiku-55-c18b39e3"
+  >
+    Simon Willison · explanation · 82% similar
+  </Card>
+  <Card
+    title="[AINews] AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more"
+    icon="newspaper"
+    href="/kb/articles/ainews-amd-buys-world-labs-for-82b-as-atlas-solves-sparse-re-a96af80e"
+  >
+    Swyx · explanation · 81% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/ainews-claude-haiku-55-better-than](https://www.latent.space/p/ainews-claude-haiku-55-better-than).
+</Note>

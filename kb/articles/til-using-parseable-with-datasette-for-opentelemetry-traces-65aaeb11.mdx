@@ -1,0 +1,80 @@
+---
+title: 'TIL: Using Parseable with Datasette for OpenTelemetry traces'
+description: 'This article discusses using Parseable with Datasette for OpenTelemetry traces, highlighting its features and integration.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-06'
+sourceUrl: 'https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/'
+topics: ["observability","opentelemetry","datasette","parseable"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/) · 06/10/2026
+</Info>
+
+## Summary
+
+This article discusses using Parseable with Datasette for OpenTelemetry traces, highlighting its features and integration.
+
+## Key Insights
+
+> "Parseable is a brand new observability tool, compatible with OpenTelemetry."
+>
+> — Introduction to Parseable and its compatibility.
+
+> "I decided to fire up Codex and have it figure out how to run Parseable and feed it traces from Datasette."
+>
+> — The author's approach to integrating Parseable with Datasette.
+
+> "Here's a screenshot of a Datasette trace displayed within the Parseable localhost web application."
+>
+> — Demonstration of the integration outcome.
+
+## Topics
+
+- [observability](/kb/topics/observability)
+- [opentelemetry](/kb/topics/opentelemetry)
+- [datasette](/kb/topics/datasette)
+- [parseable](/kb/topics/parseable)
+
+---
+
+## Full Article
+
+TIL Using Parseable with Datasette for OpenTelemetry traces — [Parseable](https://www.parseable.com) is a brand new observability tool, compatible with [OpenTelemetry](https://opentelemetry.io), for storing and querying observability data. I saw Parseable in a Show HN today - it's a new observability platform with both an open source (AGPL) Rust implementation (a single ~180MB binary), an "Enterprise" version with extra features and a cloud hosted option. Since Datasette 1.0a41 added OpenTelemetry support (thanks, Alex Garcia), I decided to fire up Codex and have it figure out how to run Parseable and feed it traces from Datasette. Here's my (human-written) TIL showing the patterns that worked, and here's a screenshot of a Datasette trace displayed within the Parseable localhost web application:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a33"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a33-6f6a085a"
+  >
+    Simon Willison · reference · 56% similar
+  </Card>
+  <Card
+    title="Welcome to the Datasette blog"
+    icon="newspaper"
+    href="/kb/articles/welcome-to-the-datasette-blog-499c7d7f"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+  <Card
+    title="Extract PDF text in your browser with LiteParse for the web"
+    icon="newspaper"
+    href="/kb/articles/extract-pdf-text-in-your-browser-with-liteparse-for-the-web-31978327"
+  >
+    Simon Willison · how-to · 55% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/](https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/).
+</Note>

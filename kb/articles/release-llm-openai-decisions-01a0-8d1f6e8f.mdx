@@ -1,0 +1,81 @@
+---
+title: 'Release: llm-openai-decisions 0.1a0'
+description: 'OpenAI has launched the Jev-style Decisions API, which supports image input alongside text, and is similar in structure to the Jev model.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-06'
+sourceUrl: 'https://simonwillison.net/2026/Oct/6/llm-openai-decisions/'
+topics: ["openai","api","llm","decisions","image-input"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/6/llm-openai-decisions/) · 06/10/2026
+</Info>
+
+## Summary
+
+OpenAI has launched the Jev-style Decisions API, which supports image input alongside text, and is similar in structure to the Jev model.
+
+## Key Insights
+
+> "OpenAI released their new Jev-style Decisions API, as previously announced at last week's DevDay."
+>
+> — Introduction to the article
+
+> "Unlike Jev, the new gpt-6-luna decision model supports image input in addition to text."
+>
+> — Comparison of models
+
+> "Install the plugin like this: llm install llm-openai-decisions"
+>
+> — Instructions for installation
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [api](/kb/topics/api)
+- [llm](/kb/topics/llm)
+- [decisions](/kb/topics/decisions)
+- [image-input](/kb/topics/image-input)
+
+---
+
+## Full Article
+
+OpenAI released their new Jev-style Decisions API, as previously announced at last week's DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I had GPT-6 Astra read the new OpenAI API documentation and build an llm-openai-decisions plugin inspired by llm-typesafe. Unlike Jev, the new gpt-6-luna decision model supports image input in addition to text. Both models charge for input it and not for output: OpenAI's is 10 cents per million input tokens, Jev's is 4.2 cents per million. Otherwise the API shape is very similar to Jev, at least conceptually. Jev supports three question types for yes/no, choices, or scores. OpenAI Decisions supports the same three types. Install the plugin like this: llm install llm-openai-decisions Here's an example query against an image attachment: llm -m openai-decisions/gpt-6-luna \ -a https://static.simonwillison.net/static/2025/two-pelicans.jpg \ -s 'Does this image contain any mammals?' And example output: &#123;"type": "predicate", "name": "evaluation", "probability": 0.0&#125; Consult the README for full details of how to run the other types of questions.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-typesafe 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-typesafe-01a0-4876c371"
+  >
+    Simon Willison · how-to · 71% similar
+  </Card>
+  <Card
+    title="Jev introduces a new shape of LLM—System One, aka Decision Models"
+    icon="newspaper"
+    href="/kb/articles/jev-introduces-a-new-shape-of-llmsystem-one-aka-decision-mod-f11406ff"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+  <Card
+    title="[AINews] Here are 6 Clones of Jev in 2 days"
+    icon="newspaper"
+    href="/kb/articles/ainews-here-are-6-clones-of-jev-in-2-days-dd80598d"
+  >
+    Swyx · explanation · 67% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/6/llm-openai-decisions/](https://simonwillison.net/2026/Oct/6/llm-openai-decisions/).
+</Note>

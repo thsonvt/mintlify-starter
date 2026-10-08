@@ -476,6 +476,10 @@
       "destination": "/kb/articles/engineer-away-the-slop-a9cc0427"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-af268ef2",
+      "destination": "/kb/articles/the-world-hasnt-figured-out-yet-that-you-can-literally-just--af268ef2"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-af5730e8",
       "destination": "/kb/articles/the-printer-that-transcends-dimensions-and-corrupts-reality-af5730e8"
     },
@@ -530,6 +534,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-f1d3f9df",
       "destination": "/kb/articles/if-you-are-redlining-the-llm-you-arent-headlining-f1d3f9df"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-f1ebf406",
+      "destination": "/kb/articles/to-kodak-yourself-out-of-business-f1ebf406"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-f4c40d90",
@@ -2048,6 +2056,10 @@
       "destination": "/kb/articles/tool-qr-code-generator-2dd9b888"
     },
     {
+      "source": "/kb/articles/simon-willison-2ec813cd",
+      "destination": "/kb/articles/openai-rogue-agent-activities-found-on-wikimedia-projects-2ec813cd"
+    },
+    {
       "source": "/kb/articles/simon-willison-2f86da03",
       "destination": "/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
     },
@@ -2370,6 +2382,10 @@
     {
       "source": "/kb/articles/simon-willison-4b791eed",
       "destination": "/kb/articles/warelay-openclaw-4b791eed"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4bf1a0a2",
+      "destination": "/kb/articles/a-quote-from-ben-affleck-4bf1a0a2"
     },
     {
       "source": "/kb/articles/simon-willison-4cf009ad",
@@ -2704,6 +2720,10 @@
       "destination": "/kb/articles/a-quote-from-paul-dix-645d64f0"
     },
     {
+      "source": "/kb/articles/simon-willison-65aaeb11",
+      "destination": "/kb/articles/til-using-parseable-with-datasette-for-opentelemetry-traces-65aaeb11"
+    },
+    {
       "source": "/kb/articles/simon-willison-65f8e516",
       "destination": "/kb/articles/sighting-california-sea-lion-brandts-cormorant-65f8e516"
     },
@@ -3028,6 +3048,10 @@
       "destination": "/kb/articles/whats-new-in-claude-sonnet-5-88292c28"
     },
     {
+      "source": "/kb/articles/simon-willison-8856af10",
+      "destination": "/kb/articles/introducing-mistral-large-4-le-chonk-8856af10"
+    },
+    {
       "source": "/kb/articles/simon-willison-887578b6",
       "destination": "/kb/articles/a-quote-from-luke-curley-887578b6"
     },
@@ -3048,6 +3072,10 @@
       "destination": "/kb/articles/introducing-wrapture-8aeae8ba"
     },
     {
+      "source": "/kb/articles/simon-willison-8b2980ff",
+      "destination": "/kb/articles/release-llm-mistral-016-8b2980ff"
+    },
+    {
       "source": "/kb/articles/simon-willison-8bac4eec",
       "destination": "/kb/articles/tool-shadow-roots-explained-with-live-examples-8bac4eec"
     },
@@ -3066,6 +3094,10 @@
     {
       "source": "/kb/articles/simon-willison-8cb40258",
       "destination": "/kb/articles/a-quote-from-tom-macwright-8cb40258"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8d1f6e8f",
+      "destination": "/kb/articles/release-llm-openai-decisions-01a0-8d1f6e8f"
     },
     {
       "source": "/kb/articles/simon-willison-8d6d3e47",
@@ -3174,6 +3206,10 @@
     {
       "source": "/kb/articles/simon-willison-960458f7",
       "destination": "/kb/articles/release-scan-for-secrets-02-960458f7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-962fe8f5",
+      "destination": "/kb/articles/comment-mistral-large-4-962fe8f5"
     },
     {
       "source": "/kb/articles/simon-willison-9665cd65",
@@ -3290,6 +3326,10 @@
     {
       "source": "/kb/articles/simon-willison-9db8006a",
       "destination": "/kb/articles/structured-context-engineering-for-file-native-agentic-syste-9db8006a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-9dc066aa",
+      "destination": "/kb/articles/a-quote-from-victoria-kim-9dc066aa"
     },
     {
       "source": "/kb/articles/simon-willison-9e8da577",
@@ -3708,8 +3748,16 @@
       "destination": "/kb/articles/covering-electricity-price-increases-from-our-data-centers-c0d75f4e"
     },
     {
+      "source": "/kb/articles/simon-willison-c141ab7b",
+      "destination": "/kb/articles/comment-embeddinggemma-2-c141ab7b"
+    },
+    {
       "source": "/kb/articles/simon-willison-c159f4a6",
       "destination": "/kb/articles/ladybird-adopts-rust-with-help-from-ai-c159f4a6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c18b39e3",
+      "destination": "/kb/articles/claude-haiku-55-c18b39e3"
     },
     {
       "source": "/kb/articles/simon-willison-c1b6b25f",
@@ -3726,6 +3774,10 @@
     {
       "source": "/kb/articles/simon-willison-c2885300",
       "destination": "/kb/articles/incident-report-cve-2026-lgtm-c2885300"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c28d474a",
+      "destination": "/kb/articles/anti-patterns-in-software-blogging-c28d474a"
     },
     {
       "source": "/kb/articles/simon-willison-c330a16a",
@@ -3746,6 +3798,10 @@
     {
       "source": "/kb/articles/simon-willison-c3e44c4a",
       "destination": "/kb/articles/the-first-known-runaway-ai-agentor-a-very-bad-marketing-stun-c3e44c4a"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c411bb7e",
+      "destination": "/kb/articles/a-quote-from-jake-boggan-c411bb7e"
     },
     {
       "source": "/kb/articles/simon-willison-c4ab1b43",
@@ -5040,6 +5096,10 @@
       "destination": "/kb/articles/ainews-microsoft-build-mai-thinking-1-and-mai-family-models-85cb3ec0"
     },
     {
+      "source": "/kb/articles/swyx-868b87cf",
+      "destination": "/kb/articles/can-a-cloud-native-harness-make-agents-reliable-beyond-the-d-868b87cf"
+    },
+    {
       "source": "/kb/articles/swyx-876c9819",
       "destination": "/kb/articles/ainews-not-much-happened-today-876c9819"
     },
@@ -5296,6 +5356,10 @@
       "destination": "/kb/articles/ainews-the-inference-inflection-cc001aff"
     },
     {
+      "source": "/kb/articles/swyx-ccf30f99",
+      "destination": "/kb/articles/ainews-claude-haiku-55-better-than-gpt-6-luna-at-the-same-pr-ccf30f99"
+    },
+    {
       "source": "/kb/articles/swyx-cf57cb90",
       "destination": "/kb/articles/ainews-much-ado-about-open-weights-cf57cb90"
     },
@@ -5370,6 +5434,10 @@
     {
       "source": "/kb/articles/swyx-e20a97d6",
       "destination": "/kb/articles/ainews-not-much-happened-today-e20a97d6"
+    },
+    {
+      "source": "/kb/articles/swyx-e2fb5b97",
+      "destination": "/kb/articles/ainews-quasi-riemann-hypothesis-openai-publishes-722-math-pa-e2fb5b97"
     },
     {
       "source": "/kb/articles/swyx-e331e22a",

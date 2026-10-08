@@ -1,0 +1,79 @@
+---
+title: 'Comment: EmbeddingGemma 2'
+description: 'The author discusses the advantages of using open-source models like EmbeddingGemma 2 under the Apache 2.0 license, emphasizing the risks of proprieta'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-06'
+sourceUrl: 'https://simonwillison.net/2026/Oct/6/hn-49983751/'
+topics: ["embedding-models","open-source","apache-license"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/6/hn-49983751/) · 06/10/2026
+</Info>
+
+## Summary
+
+The author discusses the advantages of using open-source models like EmbeddingGemma 2 under the Apache 2.0 license, emphasizing the risks of proprietary models.
+
+## Key Insights
+
+> "I don't think it makes sense to use a closed, proprietary, hosted-only model."
+>
+> — The author expresses concerns about the limitations of proprietary embedding models.
+
+> "If your model is proprietary, the vendor is likely someday going to decide to stop offering that model."
+>
+> — The author highlights the risks associated with relying on proprietary models.
+
+> "I'd much rather pay a provider for a hosted model while knowing that if they ever stop hosting it I can run the open weights version myself."
+>
+> — The author prefers the flexibility of open weights models over proprietary options.
+
+## Topics
+
+- [embedding-models](/kb/topics/embedding-models)
+- [open-source](/kb/topics/open-source)
+- [apache-license](/kb/topics/apache-license)
+
+---
+
+## Full Article
+
+6th October 2026 I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding models involve calculating thousands or even millions of embedding vectors and storing them for later comparison. If your model is proprietary, the vendor is likely someday going to decide to stop offering that model. They'll have a better model to replace it, but you still need to pay to re-calculate those millions of stored existing vectors. (In April 2024 OpenAI offered to "cover the financial cost of users re-embedding content with these new models" - https://openai.com/index/gpt-4-api-general-availability/ - but I don't think that's something we can rely on from every provider.) Notably, I don't want to host the model myself. I'd much rather pay a provider for a hosted model while knowing that if they ever stop hosting it I can run the open weights version myself - or find another vendor who can do that for me.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Gemma 4: The best small Multimodal Open Models, dramatically better than Gemma 3 in every way"
+    icon="newspaper"
+    href="/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
+  >
+    Swyx · explanation · 60% similar
+  </Card>
+  <Card
+    title="Gemma 4: Byte for byte, the most capable open models"
+    icon="newspaper"
+    href="/kb/articles/gemma-4-byte-for-byte-the-most-capable-open-models-0ad233f1"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+  <Card
+    title="AI as economic warfare"
+    icon="newspaper"
+    href="/kb/articles/ai-as-economic-warfare-bfd48a7a"
+  >
+    Geoffrey Huntley · explanation · 57% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/6/hn-49983751/](https://simonwillison.net/2026/Oct/6/hn-49983751/).
+</Note>
