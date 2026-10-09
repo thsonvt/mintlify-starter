@@ -328,6 +328,10 @@
       "destination": "/kb/articles/how-every-is-harnessing-the-world-changing-shift-of-opus-45-b1aa53b4"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-b8482644",
+      "destination": "/kb/articles/why-we-handed-our-agents-infrastructure-to-anthropic-b8482644"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-b9266aa5",
       "destination": "/kb/articles/claude-code-the-most-common-questions-beginners-ask-b9266aa5"
     },
@@ -408,6 +412,10 @@
       "destination": "/kb/articles/the-craft-has-been-commoditized-but-access-has-not-3d982565"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-4ecb001e",
+      "destination": "/kb/articles/if-your-team-is-too-busy-doing-their-normal-job-to-experimen-4ecb001e"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-4fadf8ff",
       "destination": "/kb/articles/the-eighteen-month-recap-ai-engineer-singapore-may-2026-4fadf8ff"
     },
@@ -450,6 +458,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-6d0f6075",
       "destination": "/kb/articles/ralph-wiggum-as-a-software-engineer-6d0f6075"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-70f6a314",
+      "destination": "/kb/articles/-help-on-your-cli-is-all-you-need-for-llm-context-until-you--70f6a314"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-7630c3d9",
@@ -1716,6 +1728,10 @@
       "destination": "/kb/articles/speech-translation-in-google-meet-is-now-rolling-out-to-mobi-0d49796a"
     },
     {
+      "source": "/kb/articles/simon-willison-0dec90cb",
+      "destination": "/kb/articles/release-ttok-04-0dec90cb"
+    },
+    {
       "source": "/kb/articles/simon-willison-0ded8b95",
       "destination": "/kb/articles/research-can-javascript-escape-a-csp-meta-tag-inside-an-ifra-0ded8b95"
     },
@@ -2004,6 +2020,10 @@
       "destination": "/kb/articles/a-quote-from-openclaw-24996725"
     },
     {
+      "source": "/kb/articles/simon-willison-249c2194",
+      "destination": "/kb/articles/a-new-feature-for-my-blog-built-using-my-voice-249c2194"
+    },
+    {
       "source": "/kb/articles/simon-willison-2587d78c",
       "destination": "/kb/articles/a-quote-from-thariq-shihipar-2587d78c"
     },
@@ -2090,6 +2110,10 @@
     {
       "source": "/kb/articles/simon-willison-32f03f8d",
       "destination": "/kb/articles/release-sqlite-utils-40rc2-32f03f8d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3361f458",
+      "destination": "/kb/articles/release-ttok-10-3361f458"
     },
     {
       "source": "/kb/articles/simon-willison-340c8ee8",
@@ -4120,6 +4144,10 @@
       "destination": "/kb/articles/a-quote-from-voxium-ddc6c238"
     },
     {
+      "source": "/kb/articles/simon-willison-ddd71582",
+      "destination": "/kb/articles/a-quote-from-carson-gross-ddd71582"
+    },
+    {
       "source": "/kb/articles/simon-willison-ddd74909",
       "destination": "/kb/articles/glm-52-is-probably-the-most-powerful-text-only-open-weights--ddd74909"
     },
@@ -4526,6 +4554,14 @@
     {
       "source": "/kb/articles/swyx-09329b6c",
       "destination": "/kb/articles/beyond-alphafold-how-boltz-is-open-sourcing-the-future-of-dr-09329b6c"
+    },
+    {
+      "source": "/kb/articles/swyx-09d6ad4f",
+      "destination": "/kb/articles/ainews-not-much-happened-today-09d6ad4f"
+    },
+    {
+      "source": "/kb/articles/swyx-0b9c52ec",
+      "destination": "/kb/articles/synthesis-superintelligence-from-semiconductors-to-supercond-0b9c52ec"
     },
     {
       "source": "/kb/articles/swyx-0ce8a065",

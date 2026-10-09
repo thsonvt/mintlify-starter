@@ -1,0 +1,81 @@
+---
+title: 'Release: ttok 1.0'
+description: 'Simon Willison announces the release of ttok 1.0, addressing tokenizer defaults and confirming similarities between GPT-5 and GPT-6 tokenizers.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-09'
+sourceUrl: 'https://simonwillison.net/2026/Oct/9/ttok/'
+topics: ["tokenization","gpt-5","gpt-6","openai","software-release"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/9/ttok/) · 09/10/2026
+</Info>
+
+## Summary
+
+Simon Willison announces the release of ttok 1.0, addressing tokenizer defaults and confirming similarities between GPT-5 and GPT-6 tokenizers.
+
+## Key Insights
+
+> "I figured switching the default was a reasonable excuse to finally ship a 1.0."
+>
+> — Discussing the rationale behind releasing ttok 1.0.
+
+> "OpenAI haven't actually confirmed that GPT-6 uses the same tokenizer as the GPT-5 family yet."
+>
+> — Highlighting the uncertainty regarding the tokenizer compatibility between GPT-5 and GPT-6.
+
+> "All seven GPT models (5.5, 5.6 Sol/Terra/Luna, 6 Astra/Sol/Luna) report 44,794 tokens."
+>
+> — Citing findings that suggest consistency in token counts across multiple GPT models.
+
+## Topics
+
+- [tokenization](/kb/topics/tokenization)
+- [gpt-5](/kb/topics/gpt-5)
+- [gpt-6](/kb/topics/gpt-6)
+- [openai](/kb/topics/openai)
+- [software-release](/kb/topics/software-release)
+
+---
+
+## Full Article
+
+I released ttok 0.4, ran uv tool upgrade ttok, piped a file into the new version... and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead! I figured switching the default was a reasonable excuse to finally ship a 1.0. OpenAI haven't actually confirmed that GPT-6 uses the same tokenizer as the GPT-5 family yet - there's an angry issue about it - but I found this commit by William Liu which reports on an experiment he ran confirming that the tokenizers are likely the same: All seven GPT models (5.5, 5.6 Sol/Terra/Luna, 6 Astra/Sol/Luna) report 44,794 tokens and match each other on every one of the 31 fixtures. GPT-6 introduces no input-count change on this corpus.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: ttok 0.4"
+    icon="newspaper"
+    href="/kb/articles/release-ttok-04-0dec90cb"
+  >
+    Simon Willison · reference · 69% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI GPT-5.6 Sol / Terra / Luna — restricted to trusted partners"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-gpt-56-sol-terra-luna-restricted-to-trusted-pa-f0f8ce35"
+  >
+    Swyx · explanation · 58% similar
+  </Card>
+  <Card
+    title="[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp"
+    icon="newspaper"
+    href="/kb/articles/ainews-openai-launches-gpt-56-solterraluna-codex-becomes-cha-6519541e"
+  >
+    Swyx · explanation · 58% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/9/ttok/](https://simonwillison.net/2026/Oct/9/ttok/).
+</Note>
