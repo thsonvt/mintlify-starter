@@ -976,6 +976,10 @@
       "destination": "/kb/articles/-how-i-ai-how-this-pm-uses-claude-to-handle-70-to-80-of-his--470748a5"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-490775f0",
+      "destination": "/kb/articles/-community-wisdom-community-wisdom-top-contributors-summer-c-490775f0"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-49a1f665",
       "destination": "/kb/articles/a-rational-conversation-on-where-ai-is-actually-going-benedi-49a1f665"
     },
@@ -2460,6 +2464,10 @@
       "destination": "/kb/articles/adding-tils-releases-museums-tools-and-research-to-my-blog-4ff8e177"
     },
     {
+      "source": "/kb/articles/simon-willison-509d0315",
+      "destination": "/kb/articles/a-quote-from-the-new-york-times-509d0315"
+    },
+    {
       "source": "/kb/articles/simon-willison-50a8274d",
       "destination": "/kb/articles/autoresearching-apples-llm-in-a-flash-to-run-qwen-397b-local-50a8274d"
     },
@@ -3504,6 +3512,10 @@
       "destination": "/kb/articles/release-research-llm-apis-2026-04-04-a9aa5256"
     },
     {
+      "source": "/kb/articles/simon-willison-a9e1a8cc",
+      "destination": "/kb/articles/deno-is-joining-cloudflare-a9e1a8cc"
+    },
+    {
       "source": "/kb/articles/simon-willison-aa50f159",
       "destination": "/kb/articles/may-2026-newsletter-aa50f159"
     },
@@ -4438,6 +4450,10 @@
     {
       "source": "/kb/articles/simon-willison-fb5286c6",
       "destination": "/kb/articles/a-quote-from-a-member-of-anthropics-alignment-science-team-fb5286c6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fb5f3755",
+      "destination": "/kb/articles/a-quote-from-matthew-green-fb5f3755"
     },
     {
       "source": "/kb/articles/simon-willison-fba0b078",
@@ -5432,6 +5448,10 @@
       "destination": "/kb/articles/ainews-moonshot-kimi-k26-the-worlds-leading-open-model-refre-d9235379"
     },
     {
+      "source": "/kb/articles/swyx-d9478693",
+      "destination": "/kb/articles/ainews-typesafejev-at-100m-arr-75b-valuation-3-weeks-after-l-d9478693"
+    },
+    {
       "source": "/kb/articles/swyx-d9e7f998",
       "destination": "/kb/articles/ainews-cursors-60b-acquisition-by-spacexai-closes-d9e7f998"
     },
@@ -5462,6 +5482,10 @@
     {
       "source": "/kb/articles/swyx-de9f2e6a",
       "destination": "/kb/articles/ainews-xiaomi-mimo-v26-pro-1t-a42b-the-new-top-open-weights--de9f2e6a"
+    },
+    {
+      "source": "/kb/articles/swyx-e04dc44c",
+      "destination": "/kb/articles/why-alphafold-didnt-solve-protein-folding-pushmeet-kohli-goo-e04dc44c"
     },
     {
       "source": "/kb/articles/swyx-e0f6c128",
@@ -5526,6 +5550,10 @@
     {
       "source": "/kb/articles/swyx-ebedd1c9",
       "destination": "/kb/articles/every-agent-needs-a-box-aaron-levie-box-ebedd1c9"
+    },
+    {
+      "source": "/kb/articles/swyx-ec8b1a9b",
+      "destination": "/kb/articles/building-ai-for-reliable-execution-lessons-from-industrial-r-ec8b1a9b"
     },
     {
       "source": "/kb/articles/swyx-ec9066d3",
