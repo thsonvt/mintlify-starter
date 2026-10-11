@@ -532,6 +532,10 @@
       "destination": "/kb/articles/ai-for-my-10-year-old-son-e3800d3d"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-e44b7737",
+      "destination": "/kb/articles/unikernels-were-hard-key-word-were-e44b7737"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-e51acff6",
       "destination": "/kb/articles/how-to-build-a-coding-agent-free-workshop-e51acff6"
     },
@@ -1262,6 +1266,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-97e67474",
       "destination": "/kb/articles/-community-wisdom-favorite-lennys-product-pass-tools-how-ai--97e67474"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-987c6713",
+      "destination": "/kb/articles/why-every-company-now-needs-to-think-and-operate-like-a-lab--987c6713"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-98c26f6a",
@@ -2062,6 +2070,10 @@
     {
       "source": "/kb/articles/simon-willison-2b654654",
       "destination": "/kb/articles/ftc-to-require-cox-media-group-two-other-firms-to-pay-nearly-2b654654"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2cab0fb3",
+      "destination": "/kb/articles/dwarf-fortress-uses-version-control-now-2cab0fb3"
     },
     {
       "source": "/kb/articles/simon-willison-2cef4fe7",
@@ -2986,6 +2998,10 @@
     {
       "source": "/kb/articles/simon-willison-7ae6c855",
       "destination": "/kb/articles/release-llm-035-7ae6c855"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7b250b0d",
+      "destination": "/kb/articles/python-3150-added-to-actionspython-versions-7b250b0d"
     },
     {
       "source": "/kb/articles/simon-willison-7b7eda20",
@@ -5330,6 +5346,10 @@
     {
       "source": "/kb/articles/swyx-b242678f",
       "destination": "/kb/articles/can-skills-learned-in-games-transfer-to-real-world-work-b242678f"
+    },
+    {
+      "source": "/kb/articles/swyx-b306fc9d",
+      "destination": "/kb/articles/subscriber-exclusive-nyc-subscriber-meetups-b306fc9d"
     },
     {
       "source": "/kb/articles/swyx-b39ad98a",
