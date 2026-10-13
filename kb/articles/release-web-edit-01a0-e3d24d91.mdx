@@ -1,0 +1,79 @@
+---
+title: 'Release: web-edit 0.1a0'
+description: 'Simon Willison introduces web-edit 0.1a0, a Python web app for editing files via Tailscale, designed for mobile use with a user-friendly interface.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-12'
+sourceUrl: 'https://simonwillison.net/2026/Oct/12/web-edit/'
+topics: ["web-development","mobile-apps","file-editing"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/12/web-edit/) · 12/10/2026
+</Info>
+
+## Summary
+
+Simon Willison introduces web-edit 0.1a0, a Python web app for editing files via Tailscale, designed for mobile use with a user-friendly interface.
+
+## Key Insights
+
+> "I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself."
+>
+> — Introduction to the need for the web-edit app.
+
+> "It's intended to be run over Tailscale, so I can have an agent start this running and then edit files via my Tailscale network directly from my phone."
+>
+> — Explanation of the app's intended use case.
+
+> "Editing uses CodeMirror 6 - I was going to use Monaco but that still doesn't have a great mobile experience yet."
+>
+> — Details about the technology used for editing.
+
+## Topics
+
+- [web-development](/kb/topics/web-development)
+- [mobile-apps](/kb/topics/mobile-apps)
+- [file-editing](/kb/topics/file-editing)
+
+---
+
+## Full Article
+
+I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to be run over Tailscale, so I can have an agent start this running and then edit files via my Tailscale network directly from my phone. Here's the interface for browsing files in a folder: Editing uses CodeMirror 6 - I was going to use Monaco but that still doesn't have a great mobile experience yet.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-agent-edit 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-edit-01a0-78174dc0"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+  <Card
+    title="Tool: OPFS + Pyodide test harness"
+    icon="newspaper"
+    href="/kb/articles/tool-opfs-pyodide-test-harness-76757baf"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+  <Card
+    title="Release: datasette-tailscale 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-tailscale-01a0-1ce25b0a"
+  >
+    Simon Willison · how-to · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/12/web-edit/](https://simonwillison.net/2026/Oct/12/web-edit/).
+</Note>

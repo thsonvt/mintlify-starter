@@ -468,6 +468,10 @@
       "destination": "/kb/articles/deliberate-intentional-practice-7630c3d9"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-79c55763",
+      "destination": "/kb/articles/nobody-should-type-code-by-hand-anymore-heres-whats-left-79c55763"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-85a560d5",
       "destination": "/kb/articles/from-design-doc-to-code-the-groundhog-ai-coding-assistant-an-85a560d5"
     },
@@ -932,6 +936,10 @@
       "destination": "/kb/articles/-community-wisdom-ai-doomerism-speeding-up-discovery-in-a-bi-3fc77bb5"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-41954ec1",
+      "destination": "/kb/articles/how-to-tell-if-a-startup-has-a-moat--41954ec1"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-41c80420",
       "destination": "/kb/articles/11-products-i-love-free-for-a-yearthe-biggest-product-pass-e-41c80420"
     },
@@ -1320,6 +1328,10 @@
       "destination": "/kb/articles/anthropics-first-technical-pm-on-token-maxing-the-jagged-edg-a16e6c51"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-a2d15ee5",
+      "destination": "/kb/articles/how-meta-designed-muse-an-ai-agent-people-actually-want-to-t-a2d15ee5"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-a2e3c1be",
       "destination": "/kb/articles/i-havent-written-a-single-line-of-front-end-code-in-3-months-a2e3c1be"
     },
@@ -1382,6 +1394,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-b7e8c195",
       "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-b9b16039",
+      "destination": "/kb/articles/-how-i-ai-how-meta-designed-muse-with-alex-cornell-b9b16039"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-bb9c1cad",
@@ -2214,6 +2230,10 @@
     {
       "source": "/kb/articles/simon-willison-3d15e2d2",
       "destination": "/kb/articles/release-datasette-explain-022-3d15e2d2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3d263ec8",
+      "destination": "/kb/articles/a-quote-from-geoffrey-huntley-3d263ec8"
     },
     {
       "source": "/kb/articles/simon-willison-3da2f0fb",
@@ -3070,6 +3090,10 @@
     {
       "source": "/kb/articles/simon-willison-8560706c",
       "destination": "/kb/articles/release-llm-gemini-032a0-8560706c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-85b2dca9",
+      "destination": "/kb/articles/release-datasette-ports-04-85b2dca9"
     },
     {
       "source": "/kb/articles/simon-willison-85c65922",
@@ -4248,6 +4272,10 @@
       "destination": "/kb/articles/tool-blend-url-viewer-e38c1cbe"
     },
     {
+      "source": "/kb/articles/simon-willison-e3d24d91",
+      "destination": "/kb/articles/release-web-edit-01a0-e3d24d91"
+    },
+    {
       "source": "/kb/articles/simon-willison-e44a9b71",
       "destination": "/kb/articles/doomql-e44a9b71"
     },
@@ -4478,6 +4506,10 @@
     {
       "source": "/kb/articles/simon-willison-fbd470c1",
       "destination": "/kb/articles/introducing-mistral-small-4-fbd470c1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-fbff85ae",
+      "destination": "/kb/articles/hello-python-315-goodbye-310-and-now-i-can-use-311-fbff85ae"
     },
     {
       "source": "/kb/articles/simon-willison-fc367062",
@@ -4890,6 +4922,10 @@
     {
       "source": "/kb/articles/swyx-4a0c4308",
       "destination": "/kb/articles/ainews-hot-chips-openais-jalapeo-cerebras-cs-5-groq-3-lpx-ap-4a0c4308"
+    },
+    {
+      "source": "/kb/articles/swyx-4d56ee27",
+      "destination": "/kb/articles/ainews-meta-muse-wonder-wonder-full-msls-claude-55-tier-fron-4d56ee27"
     },
     {
       "source": "/kb/articles/swyx-5007e60e",
@@ -5470,6 +5506,10 @@
     {
       "source": "/kb/articles/swyx-d9478693",
       "destination": "/kb/articles/ainews-typesafejev-at-100m-arr-75b-valuation-3-weeks-after-l-d9478693"
+    },
+    {
+      "source": "/kb/articles/swyx-d94c0eab",
+      "destination": "/kb/articles/how-anthropics-dynamic-workflows-coordinate-claude-agents-d94c0eab"
     },
     {
       "source": "/kb/articles/swyx-d9e7f998",
