@@ -1,0 +1,80 @@
+---
+title: 'Research: Profiling web-edit with Python 3.15: flame graphs and source heatmaps'
+description: 'The article discusses profiling the web-edit app using Python 3.15''s built-in profiling tools, highlighting key performance metrics and the importance'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-12'
+sourceUrl: 'https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/'
+topics: ["python","profiling","flame-graphs","web-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/) · 12/10/2026
+</Info>
+
+## Summary
+
+The article discusses profiling the web-edit app using Python 3.15's built-in profiling tools, highlighting key performance metrics and the importance of sampling all threads.
+
+## Key Insights
+
+> "mixed line-ending preservation dominated a busy editing workload"
+>
+> — Discussing the findings from profiling the web-edit app.
+
+> "Sampling all threads was essential, since 95.1% of stacks came from AnyIO’s worker thread"
+>
+> — Emphasizing the importance of comprehensive profiling.
+
+> "I need a Python 3.15 flame graph and heatmap demo of the 'web-edit' app"
+>
+> — Requesting specific profiling visualizations for the application.
+
+## Topics
+
+- [python](/kb/topics/python)
+- [profiling](/kb/topics/profiling)
+- [flame-graphs](/kb/topics/flame-graphs)
+- [web-development](/kb/topics/web-development)
+
+---
+
+## Full Article
+
+Research Profiling web-edit with Python 3.15: flame graphs and source heatmaps — Profiling the unmodified web-edit app with Python 3.15’s built-in `profiling.sampling` revealed that mixed line-ending preservation dominated a busy editing workload: `preserve_endings` appeared in 64.8% of 15,296 recorded CPU stacks, with `SequenceMatcher.find_longest_match` contributing 38.3% of leaf samples. Sampling all threads was essential, since 95.1% of stacks came from AnyIO’s worker thread and would have been missed by a main-thread-only profile. I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app: I need a Python 3.15 flame graph and heatmap demo of the "web-edit" app from PyPI - research first then make me those demos Here's the resulting example flame graph and heatmap.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Hello Python 3.15, goodbye 3.10, and now I can use 3.11"
+    icon="newspaper"
+    href="/kb/articles/hello-python-315-goodbye-310-and-now-i-can-use-311-fbff85ae"
+  >
+    Simon Willison · explanation · 57% similar
+  </Card>
+  <Card
+    title="Release: web-edit 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-web-edit-01a0-e3d24d91"
+  >
+    Simon Willison · how-to · 54% similar
+  </Card>
+  <Card
+    title="Research: Running Python ASGI apps in the browser via Pyodide + a service worker"
+    icon="newspaper"
+    href="/kb/articles/research-running-python-asgi-apps-in-the-browser-via-pyodide-20dca3df"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/](https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/).
+</Note>

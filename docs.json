@@ -1008,6 +1008,10 @@
       "destination": "/kb/articles/opus-55-vs-gpt-6-sol-which-model-won-my-blind-taste-test-4be30be1"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-4d1c7d3a",
+      "destination": "/kb/articles/metas-new-muse-wonder-model-good-for-ai-agents-bad-for-desig-4d1c7d3a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-4dc5313e",
       "destination": "/kb/articles/spec-driven-development-the-ai-engineering-workflow-at-notio-4dc5313e"
     },
@@ -2112,6 +2116,10 @@
       "destination": "/kb/articles/openai-rogue-agent-activities-found-on-wikimedia-projects-2ec813cd"
     },
     {
+      "source": "/kb/articles/simon-willison-2f1aa41d",
+      "destination": "/kb/articles/research-profiling-web-edit-with-python-315-flame-graphs-and-2f1aa41d"
+    },
+    {
       "source": "/kb/articles/simon-willison-2f86da03",
       "destination": "/kb/articles/mr-chatterbox-is-a-weak-victorian-era-ethically-trained-mode-2f86da03"
     },
@@ -2738,6 +2746,10 @@
     {
       "source": "/kb/articles/simon-willison-612211c9",
       "destination": "/kb/articles/release-datasette-agent-micropython-01a0-612211c9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-6130423f",
+      "destination": "/kb/articles/redesigning-source-control-at-anthropic-6130423f"
     },
     {
       "source": "/kb/articles/simon-willison-61b0b783",
@@ -3564,6 +3576,10 @@
       "destination": "/kb/articles/tool-mermaid-to-ascii-art-mermaid-ascii-aa5702b4"
     },
     {
+      "source": "/kb/articles/simon-willison-ab36a234",
+      "destination": "/kb/articles/release-web-edit-01a1-ab36a234"
+    },
+    {
       "source": "/kb/articles/simon-willison-ab657bcc",
       "destination": "/kb/articles/an-opinionated-guide-to-which-ai-to-use-to-do-stuff-ab657bcc"
     },
@@ -4124,6 +4140,10 @@
       "destination": "/kb/articles/introducing-muse-code-and-muse-spark-12-d8b0eed2"
     },
     {
+      "source": "/kb/articles/simon-willison-d8d2cf18",
+      "destination": "/kb/articles/release-llm-meta-ai-02-d8d2cf18"
+    },
+    {
       "source": "/kb/articles/simon-willison-d8de17a0",
       "destination": "/kb/articles/research-javascript-sandboxing-research-d8de17a0"
     },
@@ -4306,6 +4326,10 @@
     {
       "source": "/kb/articles/simon-willison-e6fe3a8e",
       "destination": "/kb/articles/a-quote-from-therealcornpop-e6fe3a8e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e7e1d007",
+      "destination": "/kb/articles/release-llm-gemini-035-e7e1d007"
     },
     {
       "source": "/kb/articles/simon-willison-e8237e03",
@@ -5632,6 +5656,10 @@
       "destination": "/kb/articles/ainews-its-meta-harness-summer-ee9ec22a"
     },
     {
+      "source": "/kb/articles/swyx-efeb5a85",
+      "destination": "/kb/articles/dyna-2-general-purpose-physical-agents-with-hour-long-autono-efeb5a85"
+    },
+    {
       "source": "/kb/articles/swyx-f0f8ce35",
       "destination": "/kb/articles/ainews-openai-gpt-56-sol-terra-luna-restricted-to-trusted-pa-f0f8ce35"
     },
@@ -5674,6 +5702,10 @@
     {
       "source": "/kb/articles/swyx-f9aa6dd4",
       "destination": "/kb/articles/ainews-the-custom-asic-thesis-f9aa6dd4"
+    },
+    {
+      "source": "/kb/articles/swyx-fa09c1e8",
+      "destination": "/kb/articles/ainews-ai-engineer-nyc-gemini-4-argon-vals-ai-benchmarks-fa09c1e8"
     },
     {
       "source": "/kb/articles/swyx-fabf6f85",
