@@ -404,6 +404,10 @@
       "destination": "/kb/articles/from-luddites-to-ai-the-overton-window-of-disruption-308ec4d4"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-36dba57d",
+      "destination": "/kb/articles/a-new-model-for-open-source-closed-to-pull-requests-open-to--36dba57d"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-3950c718",
       "destination": "/kb/articles/llm-weights-vs-the-papercuts-of-corporate-3950c718"
     },
@@ -2516,6 +2520,10 @@
       "destination": "/kb/articles/are-ai-labs-pelicanmaxxing-50fc13e6"
     },
     {
+      "source": "/kb/articles/simon-willison-51d4b098",
+      "destination": "/kb/articles/tool-tree-appreciator-51d4b098"
+    },
+    {
       "source": "/kb/articles/simon-willison-51ea461a",
       "destination": "/kb/articles/release-llm-031-51ea461a"
     },
@@ -4460,6 +4468,10 @@
       "destination": "/kb/articles/a-quote-from-paul-ford-f2b4e0fb"
     },
     {
+      "source": "/kb/articles/simon-willison-f3c9e9b6",
+      "destination": "/kb/articles/ai-is-mass-decompiling-games-thats-both-awesome-and-scary-f3c9e9b6"
+    },
+    {
       "source": "/kb/articles/simon-willison-f3d56117",
       "destination": "/kb/articles/release-datasette-agent-charts-01a1-f3d56117"
     },
@@ -5176,6 +5188,10 @@
       "destination": "/kb/articles/ainews-gemma-4-the-best-small-multimodal-open-models-dramati-795c39ae"
     },
     {
+      "source": "/kb/articles/swyx-7b993c81",
+      "destination": "/kb/articles/ainews-modals-1b-arr-16b-series-d-makes-it-nycs-newest-ai-in-7b993c81"
+    },
+    {
       "source": "/kb/articles/swyx-7d12fd00",
       "destination": "/kb/articles/shopifys-ai-phase-transition-2026-usage-explosion-unlimited--7d12fd00"
     },
@@ -5240,12 +5256,20 @@
       "destination": "/kb/articles/ainews-openai-reports-navier-stokes-singularity-find-in-88-h-8ab07894"
     },
     {
+      "source": "/kb/articles/swyx-8b453c16",
+      "destination": "/kb/articles/lab-in-the-loop-at-compute-speed-ian-quigley-leash-bio--8b453c16"
+    },
+    {
       "source": "/kb/articles/swyx-8b5d31f4",
       "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
     },
     {
       "source": "/kb/articles/swyx-8bf11a58",
       "destination": "/kb/articles/ainews-the-field-guide-to-fable-8bf11a58"
+    },
+    {
+      "source": "/kb/articles/swyx-8c1981c9",
+      "destination": "/kb/articles/crossing-the-threshold-how-openai-and-anthropic-approach-aut-8c1981c9"
     },
     {
       "source": "/kb/articles/swyx-8d6f339c",

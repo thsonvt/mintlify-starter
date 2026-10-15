@@ -1,0 +1,80 @@
+---
+title: 'Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents'
+description: 'The article discusses how OpenAI and Anthropic are addressing autonomy and safety in financial agents, emphasizing the balance between control and inn'
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-10-14'
+sourceUrl: 'https://www.latent.space/p/crossing-the-threshold'
+topics: ["ai-agents","financial-services","safety-and-security","autonomy"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://www.latent.space/p/crossing-the-threshold) · 14/10/2026
+</Info>
+
+## Summary
+
+The article discusses how OpenAI and Anthropic are addressing autonomy and safety in financial agents, emphasizing the balance between control and innovation.
+
+## Key Insights
+
+> "Safe autonomy depends on where you put controls and human judgment, rather than how many restrictions you impose."
+>
+> — Joseph Kim's keynote at AIE NY
+
+> "Safety and innovation shouldn't be viewed as opposite ends of a spectrum."
+>
+> — John Feminella's presentation at AIE NY
+
+> "By building once with a foundational layer that you trust, you can work at speed to deploy many agents at scale."
+>
+> — Keon Shahab's discussion on building trust in agents
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [financial-services](/kb/topics/financial-services)
+- [safety-and-security](/kb/topics/safety-and-security)
+- [autonomy](/kb/topics/autonomy)
+
+---
+
+## Full Article
+
+OpenAIs Joseph Kim talks about the threshold phenomenon at AIE NY today.One of the key themes at the AI Engineer New York conference this week was how to balance agent autonomy with security and safety. Both frontier labs and financial firms focused on this issue in their presentations this week.The main lesson: safe autonomy depends on where you put controls and human judgment, rather than how many restrictions you impose.Sponsor: Build shopping into your agent with shop.devAdding commerce to an agent usually means rebuilding search and checkout from scratch. shop.dev gives you a single API for shopping in any agent or app. One connection gives you access to over a billion products with current price and availability, instant sign in with Shop, and one-tap Shop Pay checkout that happens right in the conversation. Its open to any developer, with no account or key needed to try it. Try shop.dev todayJoseph Kim, Head of ChatGPT for Financial Services at OpenAI, gave a keynote at AIE New York today. (We also did a special podcast with Kim, which will be released shortly.) He talked about reliability and a threshold of usefulness, which he said is the point where a model becomes capable and reliable enough to save you time.Kim argued that ever-growing model capability will soon take financial analysts over the threshold and allow them to delegate more work to agents.He made some specific predictions about AIs role in finance in 2027. Not only will the financial industry rely less on Excel and PowerPoint next year, he claimed, but agents will be good enough to do investment idea generation and trading.The rising tide of model capabilities is also leading to better traceability.In finance, you need to be able to check where a number came from and understand the context around it, said Kim. We wanted that review to be a natural part of the [ChatGPT for Financial Services] experience. These are the kind of product details that help turn a models capabilities into work that someone can use.Joseph Kim at AIE NY; photo by Richard MacManusAs for when a human needs to be in the loop, Kim framed this as a product design decision.How would the interface change? What would the user still need to control, review, or approve? Those are product design questions you can start working on now.Balancing AI Safety and Innovation at a Hedge FundJohn Feminella, SVP Architecture at the hedge fund Two Sigma, is tackling the exact kinds of product design questions Kim referenced. In a keynote, he talked about five of the controls theyve implemented to keep agents in check without limiting model capabilities.Feminella argued that safety and innovation shouldnt be viewed as opposite ends of a spectrum. He was especially critical of approval fatigue, where a person approving everything can hold back innovation and also introduce risk, if theyre not fully paying attention to all the decisions theyre required to make.At Two Sigma, theyve implemented a set of controls, which he defined as guardrails and shared capabilities that let teams move in ways that dont hinder what theyre trying to do.The controls are composable, meaning each one does one job and then together they let us run agents with real autonomy at an appropriate level of safety.One of the controls is to use auto-mode classifiers, which Feminella said make decisions about routine calls and then send a person only the requests that are most important, the ones that are most likely to make a difference.Classifiers can be used for ambiguous cases, whereas deterministic rules are better for clear cases.Anthropic: Give agents context, then define the boundaries of trustAnthropics presentation outlined a similar framework, in its case with the goal of building trust into financial agentic workflows.Last month, Anthropic announced Claude for Financial Advisors, allowing financial advisors to connect their systems to Claude and a set of workflow skills.At AIE this week, Belinda Neal, Managing Director of Financial Services at Anthropic, explained why Anthropic has partnered with financial firms on the new product.Every so often, a model crosses a threshold. And when it does, a wave of working changes.Neals colleague Keon Shahab, who works on applied AI at Anthropic, then talked about building the trust layer for the agents. He said this involves three steps:Who the agent is acting as with an identity and permissions layer. How we can sandbox and determine the approval layer of the agent, so that someone is signing off before it acts. And lastly, how we know the agent will still work once we adjust any variables over time.Shahab illustrated the boundary between proposing and acting with a trade break investigation agent, which would recommend an order amendment for human approval.We want it [the agent] to just propose new amendments to our orders data, not actually make those amendments, he said.By building once with a foundational layer that you trust, you can work at speed to deploy many agents at scale, Shahab concluded.Bloomberg: Enforce security outside the modelAs Head of Architecture & Emerging Technologies in the Office of the CTO at Bloomberg, Andrey Rybka has the responsibility to balance autonomy and scale at the company.In a presentation today at AIE, Rybka talked about a series of real-life events where agents caused havoc and the defenses that can help prevent it. These include scoped identities and credentials, controls over tool calls, outbound traffic restrictions, audit trails, budgets, and kill switches.In one example, an agent treated instructions embedded in a marketplace review as an instruction to stock a product. Rybka recommended input validation, prompt injection defenses, provenance tracking, and human approval for high-value actions.We want deterministic controls outside the model, Rybka said. Check every call, log it, and keep a kill switch.Go fast and stop safelyEven though frontier labs like OpenAI and Anthropic are building a trust framework for financial agents, ultimately its up to financial firms to put controls around their agents. Two Sigmas John Feminella hit the nail on the head: implement controls that enable autonomy to happen, but dont put up roadblocks.Or as he put it in his conclusion: Why do cars have brakes? Its not just so that you can stop, its so that you can go fast and stop safely.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] AI is eating Finance; AIE NYC now open "
+    icon="newspaper"
+    href="/kb/articles/ainews-ai-is-eating-finance-aie-nyc-now-open--6138ce53"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+  <Card
+    title="[AINews] Founders and Forward Deployed Engineers"
+    icon="newspaper"
+    href="/kb/articles/ainews-founders-and-forward-deployed-engineers-30db44c8"
+  >
+    Swyx · explanation · 72% similar
+  </Card>
+  <Card
+    title="[AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo"
+    icon="newspaper"
+    href="/kb/articles/ainews-open-models-model-labs-vs-agent-labs-and-whats-untrai-771f062e"
+  >
+    Swyx · explanation · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.latent.space/p/crossing-the-threshold](https://www.latent.space/p/crossing-the-threshold).
+</Note>
