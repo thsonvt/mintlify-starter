@@ -496,6 +496,10 @@
       "destination": "/kb/articles/engineer-away-the-slop-a9cc0427"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-ab857c9c",
+      "destination": "/kb/articles/state-of-agentic-coding-11-the-curiosity-test-lisp-and-labs--ab857c9c"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-af268ef2",
       "destination": "/kb/articles/the-world-hasnt-figured-out-yet-that-you-can-literally-just--af268ef2"
     },
@@ -530,6 +534,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-c97a39e4",
       "destination": "/kb/articles/a-model-context-protocol-server-mcp-for-microsoft-paint-c97a39e4"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-cbb3fa85",
+      "destination": "/kb/articles/revisiting-some-of-my-priors-about-openclaw-cbb3fa85"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-d99c1db2",
@@ -3148,6 +3156,10 @@
       "destination": "/kb/articles/a-quote-from-luke-curley-887578b6"
     },
     {
+      "source": "/kb/articles/simon-willison-8929886b",
+      "destination": "/kb/articles/anthropic-tells-investors-quarterly-revenue-up-nearly-50-to--8929886b"
+    },
+    {
       "source": "/kb/articles/simon-willison-89da678b",
       "destination": "/kb/articles/the-axios-supply-chain-attack-used-individually-targeted-soc-89da678b"
     },
@@ -4416,6 +4428,10 @@
       "destination": "/kb/articles/github-models-is-now-retired-ec37b39a"
     },
     {
+      "source": "/kb/articles/simon-willison-ed8e797b",
+      "destination": "/kb/articles/tool-chirp-pong-ed8e797b"
+    },
+    {
       "source": "/kb/articles/simon-willison-ee239bf2",
       "destination": "/kb/articles/why-ai-hasnt-replaced-software-engineers-and-wont-ee239bf2"
     },
@@ -4818,6 +4834,10 @@
     {
       "source": "/kb/articles/swyx-2e52dbf3",
       "destination": "/kb/articles/ainews-top-local-models-list-april-2026-2e52dbf3"
+    },
+    {
+      "source": "/kb/articles/swyx-2f700815",
+      "destination": "/kb/articles/ainews-agents-disprove-polysemanticity-greatly-improve-inter-2f700815"
     },
     {
       "source": "/kb/articles/swyx-30d30fbf",
