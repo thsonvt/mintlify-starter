@@ -1,0 +1,75 @@
+---
+title: 'Inline rendering with document​.currentScript'
+description: 'The article discusses a technique using document.currentScript to create inline scripts that can dynamically replace themselves with content, such as '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-17'
+sourceUrl: 'https://simonwillison.net/2026/Oct/17/document-currentscript/'
+topics: ["inline-scripting","javascript","web-development"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/17/document-currentscript/) · 17/10/2026
+</Info>
+
+## Summary
+
+The article discusses a technique using document.currentScript to create inline scripts that can dynamically replace themselves with content, such as the current year.
+
+## Key Insights
+
+> "You can use that to drop in a tiny inline &lt;script> element that replaces itself when the page loads."
+>
+> — Describing the functionality of document.currentScript.
+
+> "You get a tiny template language: The year is &lt;script>$(new Date().getFullYear())&lt;/script>"
+>
+> — Explaining the shortcut function for inline rendering.
+
+## Topics
+
+- [inline-scripting](/kb/topics/inline-scripting)
+- [javascript](/kb/topics/javascript)
+- [web-development](/kb/topics/web-development)
+
+---
+
+## Full Article
+
+17th October 2026 - Link Blog Inline rendering with document​.currentScript. Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline &lt;script> element that replaces itself when the page loads: The year is &lt;script> document.currentScript.replaceWith( new Date().getFullYear())&lt;/script> If you define a shortcut function like this: $=(...n)=>document.currentScript.replaceWith(...n) You get a tiny template language: The year is &lt;script>$(new Date().getFullYear())&lt;/script>
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Tool: LaTeX renderer"
+    icon="newspaper"
+    href="/kb/articles/tool-latex-renderer-0841bafa"
+  >
+    Simon Willison · how-to · 46% similar
+  </Card>
+  <Card
+    title="Tool: <click-to-play> — a still that plays"
+    icon="newspaper"
+    href="/kb/articles/tool-click-to-play-a-still-that-plays-079413e7"
+  >
+    Simon Willison · explanation · 41% similar
+  </Card>
+  <Card
+    title="Markdown SVG upgrades"
+    icon="newspaper"
+    href="/kb/articles/markdown-svg-upgrades-b58e7970"
+  >
+    Simon Willison · explanation · 40% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/17/document-currentscript/](https://simonwillison.net/2026/Oct/17/document-currentscript/).
+</Note>

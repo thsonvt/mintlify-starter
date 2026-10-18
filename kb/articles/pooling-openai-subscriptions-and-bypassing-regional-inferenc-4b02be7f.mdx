@@ -1,0 +1,80 @@
+---
+title: 'pooling OpenAI subscriptions and bypassing regional inference capacity limits'
+description: 'Geoffrey Huntley discusses the challenges of OpenAI''s inferencing capacity and introduces software solutions like Underclass and GeoClass to optimize '
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2026-10-17'
+sourceUrl: 'https://ghuntley.com/underclass/'
+topics: ["openai","inference-capacity","software-development","geo-routing"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/underclass/) · 17/10/2026
+</Info>
+
+## Summary
+
+Geoffrey Huntley discusses the challenges of OpenAI's inferencing capacity and introduces software solutions like Underclass and GeoClass to optimize usage across regions.
+
+## Key Insights
+
+> "What if inferencing capacity constraints were region-based?"
+>
+> — Huntley reflects on the regional limitations of inferencing capacity.
+
+> "We can solve these problems."
+>
+> — Huntley emphasizes the capability of software engineers to address compute issues.
+
+> "Today I’m releasing a new experimental prototype called geoclass which routes your requests to different inference regions around the world."
+>
+> — Huntley introduces his new software aimed at improving inferencing performance.
+
+## Topics
+
+- [openai](/kb/topics/openai)
+- [inference-capacity](/kb/topics/inference-capacity)
+- [software-development](/kb/topics/software-development)
+- [geo-routing](/kb/topics/geo-routing)
+
+---
+
+## Full Article
+
+by now, most people should be aware that we&apos;re in a cost of compute crisis. The cost of CPU and memory is through the roof. There just isn&apos;t enough. Meanwhile, there definitely aren&apos;t enough GPUs in the world. If you&apos;ve been using ChatGPT lately, you might have seen the meme circulating in the space that OpenAI just doesn&apos;t have enough inferencing capacity. Heck, even Tibo admits publicly that they&apos;re having compute issues.It&#x2019;s the compute that is cooked&#x2014; Tibo (@thsottiaux) October 6, 2026 In the last couple of weeks, I have lost so much time babysitting agents because of inferencing capacity issues, and it&apos;s got me wondering: what if inferencing capacity constraints were region-based? Last year, before this crunch, even with Anthropic models, inferencing was noticeably faster in Australia because everyone else in America was sleeping. Day to day, I do all my open-source software development on bare-metal machines in Germany, and I&apos;ve started to notice similar patterns when Europe wakes up: all of a sudden, inferencing performance plummets and I&apos;m being greeted with walls of &apos;model is at capacity, try again&apos; errors.Above is what I woke up to this morning. Imagine my dismay at losing time on a strict get-overalls-done-and-released-before-my-conference-talk timeframe. You can complain online all you want, but we&apos;re software engineers. We can solve these problems.underclassThe first piece of the puzzle is a piece of software that I wrote last month called Underclass. Underclass pools many ChatGPT subscriptions together and works as a proxy. It can automatically claim resets and correctly handles the prompt cache key to ensure usage isn&apos;t wasted.I haven&apos;t written about it before, but it is now a month old, and I consider it stable. It&apos;s available on GitHub, and I use it with six ChatGPT 500 accounts, but there&apos;s no real upper limit on how many accounts you can configure.GitHub - ghuntley/underclass: underclass: an OpenAI-compatible pooling proxy that pins sessions to one account (prompt cache stays warm), cools quota-exhausted subscriptions until their window resets, and fails fast with the earliest Retry-After when the whole pool is dry.underclass: an OpenAI-compatible pooling proxy that pins sessions to one account (prompt cache stays warm), cools quota-exhausted subscriptions until their window resets, and fails fast with the ea&#x2026;Installation is easy, and it&apos;s well documented. It&apos;s also available as a Nix Flake.preflightAnother piece of software I wrote last month is a local LLM proxy that scans requests and attachments for secrets and proactively scrubs and redacts them before they hit the model. It&apos;s on GitHub (below)GitHub - ghuntley/preflight: A local proxy that scans LLM requests and attachments for secrets before they reach the model.A local proxy that scans LLM requests and attachments for secrets before they reach the model. - ghuntley/preflightTo use Preflight, run a single instance of Preflight and one instance of Underclass, then point Underclass to use Preflight. Preflight scrubs requests and sends them out for inference, ensuring sensitive material never reaches the inference providers. unburying the ledeBy now you&apos;re probably wondering either, "Wow, that&apos;s two really cool projects," or why I opened with geographic routing. It&apos;s because... today I&apos;m releasing a new experimental prototype called geoclass which routes your requests to different inferencing regions around the world. Like underclass and preflight, it is composable. You can use all of them, none of them, or any combination you can imagine, since they are separate pieces of software that compose well together. How it works is simple. Set up a Tailscale network and deploy virtual machines around the world, then tag those virtual machines with a Tailscale tag; GeoClass can then identify these machines via the tag. From that point forward, all you need to do is point UnderClass to GeoClass, and the rest just works (in theory!).I don&apos;t know yet if geoclass will solve my inferencing woes, but there&apos;s also no way in hell I&apos;m going to sit here and stew when the performance of OpenAI in Europe has been miserable over the last 30 days.So I&apos;m going to try experimenting with geo-routing. If the below works for you, let me know; I&apos;m keen to catch up with folks thinking along the same wavelength. You never know until you try!GitHub - ghuntley/geoclass: [experimental] Geo-aware egress router for underclass: retries OpenAI capacity errors in another region over a Tailscale mesh, keeping prompt caches warm[experimental] Geo-aware egress router for underclass: retries OpenAI capacity errors in another region over a Tailscale mesh, keeping prompt caches warm - ghuntley/geoclassps. socials &#x1f5de;&#xfe0f; pooling OpenAI subscriptions and bypassing regional inference capacity limitshttps://t.co/s10AD5O5Vbtoday I&apos;m releasing a new experimental prototype called geoclass, which routes your requests to different inference regions around the world. set up a Tailscale network&#x2026; pic.twitter.com/2htIMiUdD3&#x2014; geoff (@GeoffreyHuntley) October 17, 2026
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Humanity's Last Gasp"
+    icon="newspaper"
+    href="/kb/articles/ainews-humanitys-last-gasp-fec8efc9"
+  >
+    Swyx · explanation · 69% similar
+  </Card>
+  <Card
+    title="[AINews] Claude Cowork Dispatch: Anthropic's Answer to OpenClaw"
+    icon="newspaper"
+    href="/kb/articles/ainews-claude-cowork-dispatch-anthropics-answer-to-openclaw-963a4413"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+  <Card
+    title="[AINews] The Other vs The Utility"
+    icon="newspaper"
+    href="/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/underclass/](https://ghuntley.com/underclass/).
+</Note>
