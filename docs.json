@@ -904,6 +904,10 @@
       "destination": "/kb/articles/why-a-sabbatical-can-change-everything-2b9becdb"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2bf9038f",
+      "destination": "/kb/articles/inside-the-black-box-of-ai-how-ai-models-actually-think-emma-2bf9038f"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2e3c1d42",
       "destination": "/kb/articles/mastering-midjourney-how-to-create-consistent-beautiful-bran-2e3c1d42"
     },
@@ -1018,6 +1022,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-49b625ed",
       "destination": "/kb/articles/build-an-ai-code-review-bot-in-30-minutes-with-vercel-eve-49b625ed"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-4abd1067",
+      "destination": "/kb/articles/-how-i-ai-meta-muse-wonder-how-brooke-lacey-is-scaling-video-4abd1067"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-4ac279a9",
@@ -1578,6 +1586,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-e7e5c808",
       "destination": "/kb/articles/-how-i-ai-gpt-6-astra-is-a-banger-stripes-ai-playbook-grok-b-e7e5c808"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-e8b15c92",
+      "destination": "/kb/articles/claude-cuts-my-tiktok-how-this-creator-is-scaling-video-with-e8b15c92"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-e8c2b227",
@@ -3064,6 +3076,10 @@
       "destination": "/kb/articles/release-llm-keys-ui-01-797b0daf"
     },
     {
+      "source": "/kb/articles/simon-willison-798ed7da",
+      "destination": "/kb/articles/release-llm-echo-05-798ed7da"
+    },
+    {
       "source": "/kb/articles/simon-willison-79ac62c5",
       "destination": "/kb/articles/sighting-california-brown-pelican-79ac62c5"
     },
@@ -3782,6 +3798,10 @@
     {
       "source": "/kb/articles/simon-willison-b5feb2c2",
       "destination": "/kb/articles/a-quote-from-georgi-gerganov-b5feb2c2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b61274d1",
+      "destination": "/kb/articles/release-llm-tools-datasette-011-b61274d1"
     },
     {
       "source": "/kb/articles/simon-willison-b6226695",

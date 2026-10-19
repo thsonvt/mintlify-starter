@@ -1,0 +1,75 @@
+---
+title: 'Release: llm-echo 0.5'
+description: 'The llm-echo 0.5 release enhances the debug plugin by updating token usage counts to include tool calls and reasoning tokens.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-18'
+sourceUrl: 'https://simonwillison.net/2026/Oct/18/llm-echo/'
+topics: ["llm-echo","debug-plugin","token-usage"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/18/llm-echo/) · 18/10/2026
+</Info>
+
+## Summary
+
+The llm-echo 0.5 release enhances the debug plugin by updating token usage counts to include tool calls and reasoning tokens.
+
+## Key Insights
+
+> "This plugin provides a 'model' which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it."
+>
+> — Description of the llm-echo debug plugin functionality.
+
+> "The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account."
+>
+> — Overview of the improvements in the llm-echo 0.5 release.
+
+## Topics
+
+- [llm-echo](/kb/topics/llm-echo)
+- [debug-plugin](/kb/topics/debug-plugin)
+- [token-usage](/kb/topics/token-usage)
+
+---
+
+## Full Article
+
+I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a "model" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the prompt, then I decide what to say. &#123; "prompt": "hi there", "system": "", "attachments": [], "stream": true, "previous": [] &#125; Token usage: 2 input, 24 output
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm-echo 0.5a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-echo-05a0-5da60b1d"
+  >
+    Simon Willison · reference · 84% similar
+  </Card>
+  <Card
+    title="New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging"
+    icon="newspaper"
+    href="/kb/articles/new-release-of-llm-adds-support-for-reasoning-traces-openai--996b94aa"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Release: llm-echo 0.4"
+    icon="newspaper"
+    href="/kb/articles/release-llm-echo-04-a90df1e1"
+  >
+    Simon Willison · reference · 65% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/18/llm-echo/](https://simonwillison.net/2026/Oct/18/llm-echo/).
+</Note>

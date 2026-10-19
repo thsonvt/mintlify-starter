@@ -1,0 +1,80 @@
+---
+title: '🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI'
+description: 'Lenny Rachitsky discusses Meta''s Muse Wonder model and Brooke Lacey''s innovative video editing techniques using AI tools, highlighting their strengths'
+icon: 'newspaper'
+author: 'Lenny Rachitsky'
+authorId: 'lenny-rachitsky'
+published: '2026-10-19'
+sourceUrl: 'https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke'
+topics: ["ai-agents","video-editing","productivity-tools","content-creation"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Lenny Rachitsky](https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke) · 19/10/2026
+</Info>
+
+## Summary
+
+Lenny Rachitsky discusses Meta's Muse Wonder model and Brooke Lacey's innovative video editing techniques using AI tools, highlighting their strengths and weaknesses.
+
+## Key Insights
+
+> "Muse Wonder is the strongest agentic model Claire has tested at its price tier."
+>
+> — Discussing the performance of Meta's Muse Wonder model in various tasks.
+
+> "Brooke replaced a traditional video editor with a terminal and three simple tools."
+>
+> — Explaining Brooke Lacey's approach to video editing using AI.
+
+> "Creators need to understand the craft before they can delegate it."
+>
+> — Brooke Lacey on the importance of mastering video editing before using AI tools.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [video-editing](/kb/topics/video-editing)
+- [productivity-tools](/kb/topics/productivity-tools)
+- [content-creation](/kb/topics/content-creation)
+
+---
+
+## Full Article
+
+Metas new Muse Wonder model: good for AI agents, bad for designListen now on YouTube Spotify Apple PodcastsBrought to you by:DXEngineering intelligence for the AI eraJira Product DiscoveryPrioritize with insights, build with confidenceClaire puts Metas new Muse Wonder model through nearly 20 real-world tasks covering agentic work, coding, writing, design, and video editing. She explains why its active focus mode made it especially strong at billing support, inbox triage, computer use, and email writing, while its prototypes and visual work consistently fell short. She also shares how Muse compares with Opus 5.5, Astra, and Fable, and why she plans to test it in a few agent workflows without letting it anywhere near her front end.Biggest takeaways:Muse Wonder is the strongest agentic model Claire has tested at its price tier. It ranked first on billing-ticket resolution, inbox triage, computer use, and email writing. Its advantage was clearest on long-running tasks, where it kept trying different approaches until it reached the goal.Muse Wonders active focus appears to be a real capability. The model spent more time on complex agentic tasks than on quick requests, and the stronger results reflected that additional effort. Claire saw a clearer connection between time spent and output quality than she did with competing models.The billing-ticket benchmark shows whether an agent can function in a real SaaS environment. Muse corrected an account-linking error, handled duplicate refund logic, changed the customers plan, drafted a reply, and closed the ticket. It also resisted a prompt-injection attempt and resolved every planted complication.Claire would trust Muse Wonder to write emails on her behalf. It matched her concise, two-sentence style without becoming formal or verbose. Its voice performance was similarly natural and conversational, landing close to Sonnets quality in her testing.Muse Wonder should not be trusted with frontend design. Its work defaults to heavy serif fonts, blurple, rounded corners, and generic SaaS layouts. On the ChatPRD redesign, it ignored the brand guidelines, added emojis, broke image rendering, and produced something disconnected from the original site.Getting 80% of a prototype right is very different from finishing it. Muse often created convincing scaffolding, then failed during interaction testing with broken buttons, incorrect themes, and obstructive overlays. Its biggest weakness wasnt generating the interface but completing it with visual polish and functional fidelity.Muse Wonder has promising video-editing instincts but weak visual execution. It found the right 40-second segment, chose music Claire liked, and nearly nailed the cut timing. Poor overlays, badly placed captions, and flawed audio treatment kept the result from feeling finished.Muse Wonders speed depends heavily on the task. It moves quickly through SVGs, short prototypes, and other one-shot requests but slows considerably during inbox triage, backend implementation, and video editing. That difference likely reflects active focus spending more time on complex goals.Muse Wonder has earned a place in Claires experiments, but not as her daily driver. She plans to test it inside a few agent workflows because its multi-step reasoning and natural voice are strong. It is especially promising for personal agents and knowledge-work orchestration, as long as the job does not involve design.Blog and detailed workflow walkthroughs from this episode:Meta Muse Wonder Review: Agents, Coding, and Design: https://www.chatprd.ai/how-i-ai/meta-muse-wonder-review How to Set Up Metas Muse Wonder for Headless AI Testing: https://www.chatprd.ai/how-i-ai/workflows/muse-wonder-headless-testing How to Test an AI Agent for Complex Customer Support Ticket Resolution: https://www.chatprd.ai/how-i-ai/workflows/ai-agent-billing-ticket-benchmarkClaude cuts my TikTok: How this creator is scaling video with AI | Brooke LaceyListen now on YouTube Spotify Apple PodcastsBrought to you by:FirecrawlGive your AI agents web data and beyondAurosThe human network behind AIBrooke Lacey is a longtime technologist and creator who has built an audience of more than 290,000 followers on TikTok. In this episode, she shows how she uses Claude Code, FFmpeg, and Whisper to turn a raw phone recording into a fully edited, captioned video in about 15 seconds, all without uploading the footage or opening a traditional editor. She also explains how she trained Claude on her exact jump-cut cadence, mines audience comments for new scripts, and runs her projects through a personal operating system built inside Claude Code.Biggest takeaways:Brooke replaced a traditional video editor with a terminal and three simple tools. Her TikTok workflow uses FFmpeg, Whisper, and Python, orchestrated by Claude Code. A raw phone video goes in, and about 15 seconds later, a finished vertical short comes out with captions, jump cuts, and zooms.In Brookes workflow, the entire edit lives in a text file. Each row of a TSV defines the start time, end time, shot size, and label for a cut. Once Claude creates that file, the same command can generate 15-, 30-, and 60-second versions, plus a landscape crop, from one raw take.Brooke taught Claude to recognize her comedic timing. Instead of simply cutting silences, it learned the cadence of her voice, the pause before a punchline, the ideal cut point after a word, and which repeated take had the best rhythm. Encoding that style required deliberate instruction and iteration, not one clever prompt.A TikTok comment section can become an ongoing content brief. Brooke connects each video with its comments, then asks Claude Code to identify what viewers questioned, debated, or wanted next. The result is a list of new ideas grounded in signals from her actual audience.Creators need to understand the craft before they can delegate it. Brooke could teach Claude to edit in her style because she already knew what a good cut sounded like, where a zoom should land, and why the timing mattered. AI amplifies that judgment, but it does not replace the experience required to develop it.A personal AI operating system is more useful than a collection of prompts. Brookes lane OS gives Claude Code separate memory, permissions, and status files for each product. When the system makes a mistake, she traces it back to the relevant instructions and records the correction globally so the mistake doesnt recur.Experienced technologists bring valuable perspective to new platform shifts. Brooke has lived through Windows 3.1, the rise of the internet, Y2K, and todays AI transition. That history helps her recognize genuine platform changes without panicking, and she believes more experienced operators should share that perspective instead of watching from the sidelines.Posting once a week can be enough when the foundation is strong. Brooke has built an audience while publishing about weekly, with older videos continuing to resurface. Her Claude Code workflow didnt help her post more; it removed hours of editing friction so each video no longer consumes an entire day.Blog and detailed workflow walkthroughs from this episode:Claude Code Can Edit a TikTok. Teaching It Whats Funny Is the Hard Part.: https://www.chatprd.ai/how-i-ai/brooke-lacey-claude-code-video-editing Automate Short-Form Video Editing with Claude Code, FFmpeg, and Whisper: https://www.chatprd.ai/how-i-ai/workflows/claude-code-short-form-video-editing Generate New Video Ideas by Analyzing Your TikTok Comments with Claude: https://www.chatprd.ai/how-i-ai/workflows/claude-tiktok-comments-content-ideasIf youre enjoying these episodes, reply and let me know what youd love to learn more about: AI workflows, hiring, growth, product strategyanything.Catch you next week,LennyP.S. Want every new episode delivered the moment it drops? Hit Follow on your favorite podcast app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Meta’s new ‘Muse Wonder’ model: good for AI agents, bad for design"
+    icon="newspaper"
+    href="/kb/articles/metas-new-muse-wonder-model-good-for-ai-agents-bad-for-desig-4d1c7d3a"
+  >
+    Lenny Rachitsky · explanation · 91% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: Meta’s Muse review + How Warp ships 2,000 PRs a month with AI factories "
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-metas-muse-review-how-warp-ships-2000-prs-a-month--4f4aecd0"
+  >
+    Lenny Rachitsky · explanation · 86% similar
+  </Card>
+  <Card
+    title="Muse review: The personal AI agent that gets consumer UX right"
+    icon="newspaper"
+    href="/kb/articles/muse-review-the-personal-ai-agent-that-gets-consumer-ux-righ-9587606c"
+  >
+    Lenny Rachitsky · explanation · 84% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke](https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke).
+</Note>
