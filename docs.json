@@ -3532,6 +3532,10 @@
       "destination": "/kb/articles/whats-new-in-pip-261lockfiles-and-dependency-cooldowns-a2f380d9"
     },
     {
+      "source": "/kb/articles/simon-willison-a34fba63",
+      "destination": "/kb/articles/my-obituary-for-programming-a34fba63"
+    },
+    {
       "source": "/kb/articles/simon-willison-a4073bfb",
       "destination": "/kb/articles/release-datasette-10a37-a4073bfb"
     },
@@ -5638,6 +5642,10 @@
     {
       "source": "/kb/articles/swyx-dae507b8",
       "destination": "/kb/articles/ainews-anthropic-accuses-deepseek-moonshot-and-minimax-of-16-dae507b8"
+    },
+    {
+      "source": "/kb/articles/swyx-daede5b3",
+      "destination": "/kb/articles/ainews-not-much-happened-today-daede5b3"
     },
     {
       "source": "/kb/articles/swyx-db1db1df",
