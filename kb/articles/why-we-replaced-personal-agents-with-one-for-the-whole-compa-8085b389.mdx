@@ -1,0 +1,79 @@
+---
+title: 'Why We Replaced Personal Agents With One for the Whole Company'
+description: 'The article discusses the transition from individual personal agents to a shared company-wide agent, highlighting the challenges faced and the reasons'
+icon: 'newspaper'
+author: 'Dan Shipper (Every)'
+authorId: 'dan-shipper-every'
+published: '2026-10-20'
+sourceUrl: 'https://every.to/source-code/why-we-replaced-personal-agents-with-one-for-the-whole-company'
+topics: ["ai-agents","team-collaboration","product-development"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Dan Shipper (Every)](https://every.to/source-code/why-we-replaced-personal-agents-with-one-for-the-whole-company) · 20/10/2026
+</Info>
+
+## Summary
+
+The article discusses the transition from individual personal agents to a shared company-wide agent, highlighting the challenges faced and the reasons for the change.
+
+## Key Insights
+
+> "Plus One wasn’t working for a couple of reasons."
+>
+> — Introduction to the challenges faced with the personal-agent product.
+
+> "We decided to start over, making two changes together."
+>
+> — Describing the decision to overhaul the personal-agent system.
+
+> "The May 12 rebuild removed 86,730 lines of code."
+>
+> — Highlighting the extent of the changes made during the transition.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [team-collaboration](/kb/topics/team-collaboration)
+- [product-development](/kb/topics/product-development)
+
+---
+
+## Full Article
+
+Moving from single-player agents to a shared Slack coworker made us rethink how conversations, connections, and permissions workOct 20, 2026 · 9 min readWas this newsletter forwarded to you? Sign up to get it in your inbox. Early in May, I told Dan Shipper and Brandon Gell that Plus One, our personal-agent product, wasn’t working. Soon afterwards, I deleted 86,730 lines of its code from the codebase. Plus One wasn’t working for a couple of reasons. First, it was too much work to run: Each user’s agent lived on its own cloud computer running OpenClaw, an open-source agent program, and keeping those machines healthy left our small team little time to improve the product. And many people who tried it stopped using it. We decided to start over, making two changes together: First, we handed over our infrastructure to Anthropic’s Claude Managed Agents, as engineer Paridhi Agarwal detailed in a recent piece. Next, we replaced a fleet of personal agents with one shared agent for the whole company: the Every Agent. The May 12 rebuild removed 86,730 lines of code. Recreated from GitHub’s pull-request totals. (Image courtesy of Every GitHub.)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="We Gave Every Employee an AI Agent. Here's What We're Doing Differently Now."
+    icon="newspaper"
+    href="/kb/articles/we-gave-every-employee-an-ai-agent-heres-what-were-doing-dif-2bd8e7fe"
+  >
+    Dan Shipper (Every) · explanation · 78% similar
+  </Card>
+  <Card
+    title="Why We Handed Our Agent’s Infrastructure to Anthropic"
+    icon="newspaper"
+    href="/kb/articles/why-we-handed-our-agents-infrastructure-to-anthropic-b8482644"
+  >
+    Dan Shipper (Every) · explanation · 69% similar
+  </Card>
+  <Card
+    title="How We Run a 25-person Company on Four AI Agents"
+    icon="newspaper"
+    href="/kb/articles/how-we-run-a-25-person-company-on-four-ai-agents-4274d184"
+  >
+    Dan Shipper (Every) · how-to · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://every.to/source-code/why-we-replaced-personal-agents-with-one-for-the-whole-company](https://every.to/source-code/why-we-replaced-personal-agents-with-one-for-the-whole-company).
+</Note>

@@ -1,0 +1,80 @@
+---
+title: 'patch the planet'
+description: 'Geoffrey Huntley discusses a recent CA key leak and how using Nix allows for efficient security patching of transitive dependencies in software system'
+icon: 'newspaper'
+author: 'Geoffrey Huntley'
+authorId: 'geoffrey-huntley'
+published: '2026-10-20'
+sourceUrl: 'https://ghuntley.com/patch/'
+topics: ["nix","security-patching","transitive-dependencies","cybersecurity"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Geoffrey Huntley](https://ghuntley.com/patch/) · 20/10/2026
+</Info>
+
+## Summary
+
+Geoffrey Huntley discusses a recent CA key leak and how using Nix allows for efficient security patching of transitive dependencies in software systems.
+
+## Key Insights
+
+> "one patch fixes the entire fleet and its transitive dependencies."
+>
+> — Discussing the efficiency of using Nix for security patches.
+
+> "If you build something, you own it, including all the dependencies you rely on."
+>
+> — Emphasizing responsibility in software development and dependency management.
+
+> "This is by far the easiest security patch I’ve ever done."
+>
+> — Reflecting on the simplicity of the patching process using Nix.
+
+## Topics
+
+- [nix](/kb/topics/nix)
+- [security-patching](/kb/topics/security-patching)
+- [transitive-dependencies](/kb/topics/transitive-dependencies)
+- [cybersecurity](/kb/topics/cybersecurity)
+
+---
+
+## Full Article
+
+I don&apos;t know if you&apos;ve seen this, but a CA just got popped. Their keys got leaked, which means the industry as a whole now has some pretty major problems. It was revealed two hours ago.eMudhra Intermediate CA CompromiseeMudhra Intermediate CA CompromiseNow you&apos;re probably wondering why I&apos;m writing up this blog post. It&apos;s simple. This is perhaps one of the easiest security patches I&apos;ve ever done, and I&apos;ve discovered a few new tricks. First, understand that fixing this with ease without Nix is almost impossible. Tens of millions of dollars (if not more) in productivity are being lost worldwide right now as everyone tries to patch their transitive dependencies. Meanwhile, because I&apos;ve used Nix, I can patch the planet, since the ideas behind the blog post below extend into security as well.the world hasn&#x2019;t figured out yet that you can literally just fix everything with a Nix overlayThere are many things that are uncertain in our industry right now, but one thing I am certain about, and have been for almost 13 years, is that Nix is a terrible programming language. I remember when I first learned it, it felt like pushing shit uphill. The learning cliffBecause of Nix&apos;s single source of truth and the ability to patch this single source of truth, I&apos;m able to issue a simple prompt like this:okay is my nixos for my fleet affected by https://emudhra.we-have-a-problem.com/?With results in the following.So the problem here is the transitive dependencies. It&apos;s easy to patch one thing, but the transitive dependencies are the problem, and this is where Nix shines: one fix fixes the transitive dependencies automatically.One patch fixes the entire fleet and its transitive dependencies. Patch, commit, and autodeploy your fleet &#x1f37b;the new trickAlright, I promised a new trick. Here&apos;s the trick. You can prompt an agent to update the AGENTS.MD to automatically back out these patches, let&apos;s say in five days from now, just by using the AGENTS.MD as a reminder &#x1f60e;So it was one simple prompt to identify if I was affected, which turned into a plan, which then automatically fixed it, and now, in a couple of days, it will reassess the situation, give time for the ecosystem and dust to settle, and then automatically back it out once all the upstream transitive dependencies have been resolved. Cool, huh? ## Temporary reminder: eMudhra root blacklist (from 2026-10-22) On or after 2026-10-22, check whether the `nixos-26.05` channel contains nixpkgs commit `7816d39` (the backported `security/ca.nix` distrust of the eMudhra roots), e.g. `nix eval --raw --refresh --impure --expr &apos;(builtins.getFlake "github:NixOS/nixpkgs/nixos-26.05").rev&apos;` then `git merge-base --is-ancestor`. If it does not, check again two days later. Once it does, back out the fleet-wide workaround: update the `nixpkgs` pin to include it, delete `nix/domains/system/public-trust.nix` (contract `fleet-distrust-emudhra-roots`) and its imports in `nix/domains/system/catalog.nix`, `nix/domains/artifacts/guest/configuration.nix` and the `host-kexec` modules in `flake.nix`, and remove the eMudhra paragraph from `marshall/priv/hldd/12-configuration.md`. Then verify that the built host and guest bundles still lack the four roots, and delete this section. Keep Marshall&apos;s system-store TLS defaults (`runtime-postgres-system-trust`, `mail-smtp-system-trust`) and the `rustls-webpki` update; they are not part of the workaround.I can&apos;t stress this enough. If you build something, you own it, including all the dependencies you rely on. We&apos;re entering weird times where cyber offensive models will be continuously on the attack. The game has changed. To defend, you need more inferencing capability than the attacker, and you also need to respond rapidly.This is by far the easiest security patch I&apos;ve ever done, and the best part is I won&apos;t carry this tech debt for long because an agent will automatically back it out in a couple of days. patch the planet ps. socials&#x1f5de;&#xfe0f; patch the planethttps://t.co/7ZwlallBru https://t.co/aSQGD0smx2 pic.twitter.com/tDpIKpp58O&#x2014; geoff (@GeoffreyHuntley) October 20, 2026
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="the world hasn’t figured out yet that you can literally just fix everything with a Nix overlay"
+    icon="newspaper"
+    href="/kb/articles/the-world-hasnt-figured-out-yet-that-you-can-literally-just--af268ef2"
+  >
+    Geoffrey Huntley · explanation · 75% similar
+  </Card>
+  <Card
+    title="a new model for open source: closed to pull requests, open to remix."
+    icon="newspaper"
+    href="/kb/articles/a-new-model-for-open-source-closed-to-pull-requests-open-to--36dba57d"
+  >
+    Geoffrey Huntley · explanation · 65% similar
+  </Card>
+  <Card
+    title="unikernels were hard. key word: were."
+    icon="newspaper"
+    href="/kb/articles/unikernels-were-hard-key-word-were-e44b7737"
+  >
+    Geoffrey Huntley · explanation · 61% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://ghuntley.com/patch/](https://ghuntley.com/patch/).
+</Note>

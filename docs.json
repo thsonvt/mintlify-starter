@@ -300,6 +300,10 @@
       "destination": "/kb/articles/claude-code-is-the-openclaw-alternative-you-already-have-76093318"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-8085b389",
+      "destination": "/kb/articles/why-we-replaced-personal-agents-with-one-for-the-whole-compa-8085b389"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-929cb875",
       "destination": "/kb/articles/how-i-use-claude-code-to-ship-like-a-team-of-five-929cb875"
     },
@@ -442,6 +446,10 @@
     {
       "source": "/kb/articles/geoffrey-huntley-57ce8bac",
       "destination": "/kb/articles/rizzler-stop-crying-over-git-merge-conflicts-and-let-ai-hand-57ce8bac"
+    },
+    {
+      "source": "/kb/articles/geoffrey-huntley-5a132448",
+      "destination": "/kb/articles/patch-the-planet-5a132448"
     },
     {
       "source": "/kb/articles/geoffrey-huntley-5e358fc9",
@@ -3712,6 +3720,10 @@
       "destination": "/kb/articles/release-sqlite-utils-40-ae0efbe3"
     },
     {
+      "source": "/kb/articles/simon-willison-ae16055e",
+      "destination": "/kb/articles/battle-dronesa-vibe-coded-rts-with-audio-based-multiplayer-ae16055e"
+    },
+    {
       "source": "/kb/articles/simon-willison-ae4f0509",
       "destination": "/kb/articles/a-quote-from-jannis-leidel-ae4f0509"
     },
@@ -4106,6 +4118,10 @@
     {
       "source": "/kb/articles/simon-willison-d013d581",
       "destination": "/kb/articles/open-source-ai-gap-map-d013d581"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d04f8e18",
+      "destination": "/kb/articles/emudhra-intermediate-ca-compromise-d04f8e18"
     },
     {
       "source": "/kb/articles/simon-willison-d07d7e8f",
@@ -4872,12 +4888,20 @@
       "destination": "/kb/articles/react-for-agents-astro-creator-brings-hooks-to-his-meta-harn-29f43cb3"
     },
     {
+      "source": "/kb/articles/swyx-2a71eb99",
+      "destination": "/kb/articles/ai-for-the-fortune-2000-how-tenex-builds-an-ai-native-sdlc-a-2a71eb99"
+    },
+    {
       "source": "/kb/articles/swyx-2a8428b0",
       "destination": "/kb/articles/-training-transformers-to-solve-95-failure-rate-of-cancer-tr-2a8428b0"
     },
     {
       "source": "/kb/articles/swyx-2c2e1519",
       "destination": "/kb/articles/ainews-the-end-of-finetuning-2c2e1519"
+    },
+    {
+      "source": "/kb/articles/swyx-2dcca19f",
+      "destination": "/kb/articles/the-programmable-data-center-evan-conrad-sf-compute-2dcca19f"
     },
     {
       "source": "/kb/articles/swyx-2e402cc1",
@@ -5420,6 +5444,10 @@
       "destination": "/kb/articles/causal-models-need-causal-data-xairas-x-cell-model-for-drug--9d4017e1"
     },
     {
+      "source": "/kb/articles/swyx-9de031bf",
+      "destination": "/kb/articles/ainews-deepseek-deepinfer-open-source-sota-inference-running-9de031bf"
+    },
+    {
       "source": "/kb/articles/swyx-9e5a4a3c",
       "destination": "/kb/articles/ainews-not-much-happened-today-9e5a4a3c"
     },
@@ -5818,6 +5846,10 @@
     {
       "source": "/kb/articles/swyx-fba0d39a",
       "destination": "/kb/articles/how-to-kill-the-code-review-fba0d39a"
+    },
+    {
+      "source": "/kb/articles/swyx-fd114d48",
+      "destination": "/kb/articles/claude-mods-flipping-the-harness-inside-out-fd114d48"
     },
     {
       "source": "/kb/articles/swyx-fda49f6c",
