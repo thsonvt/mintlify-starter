@@ -1,0 +1,79 @@
+---
+title: 'Today’s PHP Security Release, and How We’re Strengthening PHP Security'
+description: 'The PHP Foundation has released critical updates addressing two remote code execution vulnerabilities, following a leak that accelerated their disclos'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-21'
+sourceUrl: 'https://simonwillison.net/2026/Oct/21/php-security-release/'
+topics: ["php-security","vulnerabilities","remote-code-execution"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/21/php-security-release/) · 21/10/2026
+</Info>
+
+## Summary
+
+The PHP Foundation has released critical updates addressing two remote code execution vulnerabilities, following a leak that accelerated their disclosure.
+
+## Key Insights
+
+> "it's vital you upgrade - today's updates address two remote code execution holes"
+>
+> — Introduction to the importance of the PHP security release.
+
+> "the actual score is 9.2"
+>
+> — Correction of the CVSS score for the vulnerabilities.
+
+> "Public disclosure."
+>
+> — Final note on the timeline of events surrounding the vulnerabilities.
+
+## Topics
+
+- [php-security](/kb/topics/php-security)
+- [vulnerabilities](/kb/topics/vulnerabilities)
+- [remote-code-execution](/kb/topics/remote-code-execution)
+
+---
+
+## Full Article
+
+21st October 2026 - Link Blog Today's PHP Security Release, and How We're Strengthening PHP Security (via) If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process. This post from the PHP Foundation explain what went so wrong: On Tuesday, October 20th, at around 15:00 UTC, the two CVE IDs began circulating on online forums and social media. They came with a wrong release time and a wrong CVSS score of 10.0 (the actual score is 9.2). No technical details leaked. In response, the PHP project brought its pre-announcement forward and published it at 19:30 UTC. It also moved the release from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC [...] As a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video. It showed their proof of concept working against a number of targets and revealed a few additional, though limited, details about the vulnerabilities. Copies of the deleted video started circulating on social media soon after. The video contributed to accelerated development of various PoCs (exploitation proof of concepts), which then increased circulation on October 21st. This article from the team that discovered the original vulnerability includes a more detailed timeline of the original intended responsible disclosure: August 19, 2026: Wiz Research discovers the first PHP vulnerability using Wiz Atlas, Gemini 4 Argon, and GPT-5.6 Sol. August 20, 2026: Unauthenticated RCE is confirmed against Drupal. August 21, 2026: Unauthenticated RCE is confirmed against WordPress. August 24, 2026: Wiz Research reports the vulnerabilities to the PHP security team. September 21, 2026: PHP acknowledges the reports and begins developing a coordinated fix. October 21, 2026: Patched PHP releases become available. October 21, 2026: Public disclosure.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months"
+    icon="newspaper"
+    href="/kb/articles/ainews-openais-patch-the-planet-program-is-1-of-2-parties-to-8c736228"
+  >
+    Swyx · reference · 76% similar
+  </Card>
+  <Card
+    title="Just a rumour of a bug is enough to find a security exploit these days"
+    icon="newspaper"
+    href="/kb/articles/just-a-rumour-of-a-bug-is-enough-to-find-a-security-exploit--d198c4b1"
+  >
+    Simon Willison · explanation · 61% similar
+  </Card>
+  <Card
+    title="Behind the Scenes Hardening Firefox with Claude Mythos Preview"
+    icon="newspaper"
+    href="/kb/articles/behind-the-scenes-hardening-firefox-with-claude-mythos-previ-128b0cca"
+  >
+    Simon Willison · explanation · 52% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/21/php-security-release/](https://simonwillison.net/2026/Oct/21/php-security-release/).
+</Note>

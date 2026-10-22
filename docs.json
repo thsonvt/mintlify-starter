@@ -792,6 +792,10 @@
       "destination": "/kb/articles/-community-wisdom-beating-the-solo-founder-procrastination-t-09bfa2d9"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-09d70286",
+      "destination": "/kb/articles/claude-duet-is-beautiful-i-still-forgot-to-use-it-09d70286"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-0a3d6458",
       "destination": "/kb/articles/building-ai-product-sense-part-2-0a3d6458"
     },
@@ -3736,6 +3740,10 @@
       "destination": "/kb/articles/free-claude-max-for-large-project-open-source-maintainers-ae6359a2"
     },
     {
+      "source": "/kb/articles/simon-willison-ae816ea1",
+      "destination": "/kb/articles/todays-php-security-release-and-how-were-strengthening-php-s-ae816ea1"
+    },
+    {
       "source": "/kb/articles/simon-willison-ae87c268",
       "destination": "/kb/articles/we-need-rss-for-sharing-abundant-vibe-coded-apps-ae87c268"
     },
@@ -3854,6 +3862,10 @@
     {
       "source": "/kb/articles/simon-willison-bb7416cb",
       "destination": "/kb/articles/release-datasette-agent-02a0-bb7416cb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bbb165c7",
+      "destination": "/kb/articles/panache-rts-belle-poque-pour-mobile-bbb165c7"
     },
     {
       "source": "/kb/articles/simon-willison-bcde966a",
@@ -5370,6 +5382,10 @@
     {
       "source": "/kb/articles/swyx-8c1981c9",
       "destination": "/kb/articles/crossing-the-threshold-how-openai-and-anthropic-approach-aut-8c1981c9"
+    },
+    {
+      "source": "/kb/articles/swyx-8c736228",
+      "destination": "/kb/articles/ainews-openais-patch-the-planet-program-is-1-of-2-parties-to-8c736228"
     },
     {
       "source": "/kb/articles/swyx-8d6f339c",
