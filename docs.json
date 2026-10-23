@@ -1708,6 +1708,10 @@
       "destination": "/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
     },
     {
+      "source": "/kb/articles/simon-willison-03d8435d",
+      "destination": "/kb/articles/donating-agent-skills-to-the-agentic-ai-foundation-03d8435d"
+    },
+    {
       "source": "/kb/articles/simon-willison-05e0e6d1",
       "destination": "/kb/articles/your-executable-is-a-sqlite-database-05e0e6d1"
     },
@@ -3592,6 +3596,10 @@
       "destination": "/kb/articles/a-quote-from-matteo-wong-the-atlantic-a6618876"
     },
     {
+      "source": "/kb/articles/simon-willison-a6976622",
+      "destination": "/kb/articles/a-quote-from-armin-ronacher-a6976622"
+    },
+    {
       "source": "/kb/articles/simon-willison-a6d074f8",
       "destination": "/kb/articles/a-quote-from-daniel-jalkut-a6d074f8"
     },
@@ -4102,6 +4110,10 @@
     {
       "source": "/kb/articles/simon-willison-ce29cef9",
       "destination": "/kb/articles/july-2026-newsletter-ce29cef9"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ce6cdd06",
+      "destination": "/kb/articles/de-staatfreedom-official-music-video-ce6cdd06"
     },
     {
       "source": "/kb/articles/simon-willison-cf26ce4c",
@@ -4960,6 +4972,18 @@
       "destination": "/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
     },
     {
+      "source": "/kb/articles/swyx-3615aa7a",
+      "destination": "/kb/articles/claude-mods-flipping-the-harness-inside-out-3615aa7a"
+    },
+    {
+      "source": "/kb/articles/swyx-36a7dc3f",
+      "destination": "/kb/articles/ainews-not-much-happened-today-36a7dc3f"
+    },
+    {
+      "source": "/kb/articles/swyx-3771d1c0",
+      "destination": "/kb/articles/ainews-high-taste-testers-ep-1-3771d1c0"
+    },
+    {
       "source": "/kb/articles/swyx-377fc1ef",
       "destination": "/kb/articles/codex-from-0-to-10m-users-building-chatgpt-work-akshay-natha-377fc1ef"
     },
@@ -5084,6 +5108,10 @@
       "destination": "/kb/articles/ainews-sci-fi-with-a-touch-of-madness-50b11fd3"
     },
     {
+      "source": "/kb/articles/swyx-5159fc10",
+      "destination": "/kb/articles/why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-c-5159fc10"
+    },
+    {
       "source": "/kb/articles/swyx-51fc7d31",
       "destination": "/kb/articles/ainews-a-quiet-april-fools-51fc7d31"
     },
@@ -5138,6 +5166,10 @@
     {
       "source": "/kb/articles/swyx-57489e33",
       "destination": "/kb/articles/ainews-anthropic-growing-10xyear-while-everyone-else-is-layi-57489e33"
+    },
+    {
+      "source": "/kb/articles/swyx-57a8c574",
+      "destination": "/kb/articles/ainews-black-october-57a8c574"
     },
     {
       "source": "/kb/articles/swyx-592cfb3d",
@@ -5252,6 +5284,10 @@
       "destination": "/kb/articles/ainews-anthropic-spacexais-300mw5byr-deal-for-colossus-i-arr-6ede5258"
     },
     {
+      "source": "/kb/articles/swyx-6fe1a06d",
+      "destination": "/kb/articles/ainews-deepseek-deepinfer-open-source-sota-inference-running-6fe1a06d"
+    },
+    {
       "source": "/kb/articles/swyx-7167fd27",
       "destination": "/kb/articles/ainews-the-future-of-latent-space-7167fd27"
     },
@@ -5278,6 +5314,10 @@
     {
       "source": "/kb/articles/swyx-777f1dfa",
       "destination": "/kb/articles/ainews-fearing-rsi-openai-anthropic-gdm-meta-thinky-cosign-l-777f1dfa"
+    },
+    {
+      "source": "/kb/articles/swyx-77c22575",
+      "destination": "/kb/articles/you-are-the-team-anekha-sokhal-moshi-77c22575"
     },
     {
       "source": "/kb/articles/swyx-77db97f0",
@@ -5438,6 +5478,10 @@
     {
       "source": "/kb/articles/swyx-983c46c3",
       "destination": "/kb/articles/ainews-codex-rises-claude-meters-programmatic-usage-983c46c3"
+    },
+    {
+      "source": "/kb/articles/swyx-984a98d0",
+      "destination": "/kb/articles/ainews-openais-patch-the-planet-program-is-1-of-2-parties-to-984a98d0"
     },
     {
       "source": "/kb/articles/swyx-984f191e",
@@ -5680,6 +5724,10 @@
       "destination": "/kb/articles/how-anthropics-dynamic-workflows-coordinate-claude-agents-d94c0eab"
     },
     {
+      "source": "/kb/articles/swyx-d9b82923",
+      "destination": "/kb/articles/the-programmable-data-center-evan-conrad-sf-compute-d9b82923"
+    },
+    {
       "source": "/kb/articles/swyx-d9e7f998",
       "destination": "/kb/articles/ainews-cursors-60b-acquisition-by-spacexai-closes-d9e7f998"
     },
@@ -5702,6 +5750,10 @@
     {
       "source": "/kb/articles/swyx-dc11a4b7",
       "destination": "/kb/articles/5-trends-that-defined-ai-engineering-at-worlds-fair-2026-dc11a4b7"
+    },
+    {
+      "source": "/kb/articles/swyx-dcb558d9",
+      "destination": "/kb/articles/ai-for-the-fortune-2000-how-tenex-builds-an-ai-native-sdlc-a-dcb558d9"
     },
     {
       "source": "/kb/articles/swyx-dd80598d",
