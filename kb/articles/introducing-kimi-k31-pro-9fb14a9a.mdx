@@ -1,0 +1,79 @@
+---
+title: 'Introducing Kimi K3.1 Pro'
+description: 'The Kimi K3.1 Pro has launched with promising benchmarks and pricing, offering a high-speed version and set to release full model weights by November '
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-23'
+sourceUrl: 'https://simonwillison.net/2026/Oct/23/kimi-k31-pro/'
+topics: ["ai-models","machine-learning","api-integration"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/) · 23/10/2026
+</Info>
+
+## Summary
+
+The Kimi K3.1 Pro has launched with promising benchmarks and pricing, offering a high-speed version and set to release full model weights by November 4, 2026.
+
+## Key Insights
+
+> "Full model weights will be released by Nov 4, 2026."
+>
+> — Announcement regarding the availability of model weights for Kimi K3.1 Pro.
+
+> "Moonshot's own benchmarks show Kimi as approximately level with Opus 5.5 and GPT-6 Astra."
+>
+> — Comparison of Kimi K3.1 Pro's performance against other models.
+
+> "This is the first time a (soon-to-be) open weight model has scored this highly against the frontier."
+>
+> — Highlighting the significance of Kimi K3.1 Pro's benchmark scores.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [machine-learning](/kb/topics/machine-learning)
+- [api-integration](/kb/topics/api-integration)
+
+---
+
+## Full Article
+
+23rd October 2026 - Link Blog Introducing Kimi K3.1 Pro (via) Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise "Full model weights will be released by Nov 4, 2026". They're also offering a "Highspeed" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same). The US dollar pricing is $2.00/million tokens for input and $10/million for output - the same as GPT-6.1 Sol and half the price of Claude Opus 5.5. Moonshot's own benchmarks show Kimi as approximately level with Opus 5.5 and GPT-6 Astra - beating them on a few benchmarks, coming close on others. Artificial Analysis scored Kimi at 55 - ahead of Claude Fable 5.1, GPT-6 Astra, and Gemini 4 Argon (all at 53) and behind only Claude Opus 5.5 (58). This is the first time a (soon-to-be) open weight model has scored this highly against the frontier. I tried it out via the Moonshot API using the llm openai endpoint command I added to LLM 0.32 back in August: llm openai endpoint \ https://api.moonshot.ai/v1 \ --key kimi \ -m kimi-k3.1-pro \ "Generate an SVG of a pelican riding a bicycle" \ --responses \ -o reasoning_effort low \ > kimi-k3.1-pro-pelican-low.stdout.txt \ 2> kimi-k3.1-pro-pelican-low.stderr.txt llm openai endpoint can run prompts against any OpenAI-compatible endpoint but doesn't log the results, hence the extra options to save stdout and stderr (the reasoning trace). Here are the pelicans I got for Kimi K3.1 Pro on the three reasoning levels it supports - low, medium, and max. This is max: For comparison, I ran fresh pelicans against Kimi K3 on those three reasoning levels.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed"
+    icon="newspaper"
+    href="/kb/articles/ainews-kimi-31-pro-104ba-28t-fable-51-class-open-weights-nar-49c0e0dd"
+  >
+    Swyx · reference · 85% similar
+  </Card>
+  <Card
+    title="Kimi K3, and what we can still learn from the pelican benchmark"
+    icon="newspaper"
+    href="/kb/articles/kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchma-9e8da577"
+  >
+    Simon Willison · explanation · 82% similar
+  </Card>
+  <Card
+    title="[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing"
+    icon="newspaper"
+    href="/kb/articles/ainews-kimi-k3-28t-a50b-the-largest-open-model-ever-released-f8180fbb"
+  >
+    Swyx · reference · 80% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/23/kimi-k31-pro/](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/).
+</Note>

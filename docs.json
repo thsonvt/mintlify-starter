@@ -3512,6 +3512,10 @@
       "destination": "/kb/articles/spot-birds-not-golf-9f899988"
     },
     {
+      "source": "/kb/articles/simon-willison-9fb14a9a",
+      "destination": "/kb/articles/introducing-kimi-k31-pro-9fb14a9a"
+    },
+    {
       "source": "/kb/articles/simon-willison-a00bfc11",
       "destination": "/kb/articles/qwen-38-27b-is-excellent-but-it-defaults-to-wildly-overthink-a00bfc11"
     },
@@ -3542,6 +3546,10 @@
     {
       "source": "/kb/articles/simon-willison-a24024f2",
       "destination": "/kb/articles/ai-should-help-us-produce-better-code-agentic-engineering-pa-a24024f2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-a24f49b6",
+      "destination": "/kb/articles/tool-quick-study-a24f49b6"
     },
     {
       "source": "/kb/articles/simon-willison-a2f380d9",
@@ -4860,6 +4868,10 @@
       "destination": "/kb/articles/ainews-ai-cybersecurity-becomes-top-of-mind-1c8ca64e"
     },
     {
+      "source": "/kb/articles/swyx-1d06d524",
+      "destination": "/kb/articles/ai-is-getting-good-at-math-heres-why-1d06d524"
+    },
+    {
       "source": "/kb/articles/swyx-1e7a9528",
       "destination": "/kb/articles/ahmad-osman-on-why-local-ai-is-catching-up-1e7a9528"
     },
@@ -5082,6 +5094,10 @@
     {
       "source": "/kb/articles/swyx-4974943a",
       "destination": "/kb/articles/ainews-fable-and-mythos-officially-too-dangerous-to-release-4974943a"
+    },
+    {
+      "source": "/kb/articles/swyx-49c0e0dd",
+      "destination": "/kb/articles/ainews-kimi-31-pro-104ba-28t-fable-51-class-open-weights-nar-49c0e0dd"
     },
     {
       "source": "/kb/articles/swyx-49c5ea47",
