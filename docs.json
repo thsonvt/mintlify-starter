@@ -1336,6 +1336,14 @@
       "destination": "/kb/articles/the-playbook-for-building-high-talent-density-teams-adam-war-98f8ab27"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-99e4b903",
+      "destination": "/kb/articles/an-86-minute-guide-to-finding-pmf-rob-snyder-author-the-powe-99e4b903"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9a2bf3d2",
+      "destination": "/kb/articles/-community-wisdom-negotiating-a-lowball-offer-designers-earn-9a2bf3d2"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-9a71a187",
       "destination": "/kb/articles/jev-8-real-use-cases-for-the-fastest-cheapest-model-ive-ever-9a71a187"
     },
@@ -4042,6 +4050,10 @@
     {
       "source": "/kb/articles/simon-willison-c8075d93",
       "destination": "/kb/articles/a-quote-from-boris-cherny-c8075d93"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c8500245",
+      "destination": "/kb/articles/release-battledrones-v14-compass-rose-a-four-player-map-c8500245"
     },
     {
       "source": "/kb/articles/simon-willison-c8601f50",
