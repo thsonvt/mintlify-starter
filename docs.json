@@ -1628,6 +1628,10 @@
       "destination": "/kb/articles/computer-and-browser-use-in-codex-5-real-examples-e91c1fcf"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-eb3f16e7",
+      "destination": "/kb/articles/grok-vs-dot-vs-muse-vs-claude-duet-which-one-crushes-the-com-eb3f16e7"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-eb7e49ba",
       "destination": "/kb/articles/-how-i-ai-how-the-engineer-behind-claude-cowork-actually-use-eb7e49ba"
     },
@@ -2152,6 +2156,10 @@
       "destination": "/kb/articles/a-quote-from-spacex-s-1-26492828"
     },
     {
+      "source": "/kb/articles/simon-willison-2727fcfb",
+      "destination": "/kb/articles/game-boy-color-on-my-conference-badge-2727fcfb"
+    },
+    {
       "source": "/kb/articles/simon-willison-28285c28",
       "destination": "/kb/articles/research-pcgamer-article-performance-audit-28285c28"
     },
@@ -2276,6 +2284,10 @@
       "destination": "/kb/articles/release-asyncinject-07-371c30ca"
     },
     {
+      "source": "/kb/articles/simon-willison-3720dc8d",
+      "destination": "/kb/articles/a-quote-from-terk-terkowitz-3720dc8d"
+    },
+    {
       "source": "/kb/articles/simon-willison-372a5c11",
       "destination": "/kb/articles/introducing-hy4-preview-372a5c11"
     },
@@ -2348,6 +2360,10 @@
       "destination": "/kb/articles/a-quote-from-openai-3e856a2a"
     },
     {
+      "source": "/kb/articles/simon-willison-3f63fe59",
+      "destination": "/kb/articles/a-quote-from-ben-hylak-3f63fe59"
+    },
+    {
       "source": "/kb/articles/simon-willison-3fb2d677",
       "destination": "/kb/articles/a-quote-from-tim-schilling-3fb2d677"
     },
@@ -2362,6 +2378,10 @@
     {
       "source": "/kb/articles/simon-willison-401547d8",
       "destination": "/kb/articles/introducing-chatgpt-images-25-401547d8"
+    },
+    {
+      "source": "/kb/articles/simon-willison-407ddbaa",
+      "destination": "/kb/articles/a-quote-from-ted-sanders-407ddbaa"
     },
     {
       "source": "/kb/articles/simon-willison-408ed306",
@@ -3816,6 +3836,10 @@
       "destination": "/kb/articles/thoughts-on-gitlabs-workforce-reduction-b1437402"
     },
     {
+      "source": "/kb/articles/simon-willison-b15433ef",
+      "destination": "/kb/articles/github-octoverse-2026-b15433ef"
+    },
+    {
       "source": "/kb/articles/simon-willison-b1bd4510",
       "destination": "/kb/articles/a-quote-from-boris-cherny-b1bd4510"
     },
@@ -3894,6 +3918,10 @@
     {
       "source": "/kb/articles/simon-willison-b90eddcf",
       "destination": "/kb/articles/how-fast-is-10-tokens-per-second-really-b90eddcf"
+    },
+    {
+      "source": "/kb/articles/simon-willison-bb0a5f38",
+      "destination": "/kb/articles/the-october-inflection-point-for-vibe-game-development-bb0a5f38"
     },
     {
       "source": "/kb/articles/simon-willison-bb0ae254",
@@ -5248,6 +5276,10 @@
       "destination": "/kb/articles/ainews-yann-lecuns-ami-labs-launches-with-a-103b-seed-to-bui-5ce9775c"
     },
     {
+      "source": "/kb/articles/swyx-5d85a863",
+      "destination": "/kb/articles/how-anthropic-ships-claude-with-claude-separating-the-brain--5d85a863"
+    },
+    {
       "source": "/kb/articles/swyx-5deee27a",
       "destination": "/kb/articles/ainews-gpt-56-price-cut-by-20-80-cost-of-gpt-54-intelligence-5deee27a"
     },
@@ -5328,6 +5360,10 @@
       "destination": "/kb/articles/ainews-megakernels-are-so-dead-and-so-back-6d819311"
     },
     {
+      "source": "/kb/articles/swyx-6d8cccdc",
+      "destination": "/kb/articles/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure-6d8cccdc"
+    },
+    {
       "source": "/kb/articles/swyx-6df61051",
       "destination": "/kb/articles/ainews-openai-to-reach-agi-bar-by-end-2026-6df61051"
     },
@@ -5344,6 +5380,10 @@
       "destination": "/kb/articles/ainews-deepseek-deepinfer-open-source-sota-inference-running-6fe1a06d"
     },
     {
+      "source": "/kb/articles/swyx-7151c567",
+      "destination": "/kb/articles/ainews-gemini-4-carbon-tops-leaderboards-launches-for-cyber--7151c567"
+    },
+    {
       "source": "/kb/articles/swyx-7167fd27",
       "destination": "/kb/articles/ainews-the-future-of-latent-space-7167fd27"
     },
@@ -5354,6 +5394,10 @@
     {
       "source": "/kb/articles/swyx-7379e7ff",
       "destination": "/kb/articles/cursors-third-era-cloud-agents-7379e7ff"
+    },
+    {
+      "source": "/kb/articles/swyx-73bf6b82",
+      "destination": "/kb/articles/why-agents-love-supabase-73bf6b82"
     },
     {
       "source": "/kb/articles/swyx-74772026",
@@ -5692,6 +5736,10 @@
       "destination": "/kb/articles/ainews-zai-glm-5-new-sota-open-weights-llm-be70bd66"
     },
     {
+      "source": "/kb/articles/swyx-be980586",
+      "destination": "/kb/articles/coding-from-the-himalayas-with-an-offline-ai-agent-be980586"
+    },
+    {
       "source": "/kb/articles/swyx-bed54565",
       "destination": "/kb/articles/openrouter-from-seed-to-stripe-with-openrouters-alex-atallah-bed54565"
     },
@@ -5738,6 +5786,10 @@
     {
       "source": "/kb/articles/swyx-cf57cb90",
       "destination": "/kb/articles/ainews-much-ado-about-open-weights-cf57cb90"
+    },
+    {
+      "source": "/kb/articles/swyx-cfa1df76",
+      "destination": "/kb/articles/how-anthropic-ships-the-1-llm-in-the-world-safely-separating-cfa1df76"
     },
     {
       "source": "/kb/articles/swyx-d1434027",
