@@ -280,6 +280,10 @@
       "destination": "/kb/articles/i-stopped-reading-code-my-code-reviews-got-better-2e6d3626"
     },
     {
+      "source": "/kb/articles/dan-shipper-every-3ab90e66",
+      "destination": "/kb/articles/what-karl-marx-would-say-about-my-coding-agents-3ab90e66"
+    },
+    {
       "source": "/kb/articles/dan-shipper-every-3d5bc9df",
       "destination": "/kb/articles/how-to-build-agent-native-lessons-from-four-apps-3d5bc9df"
     },
@@ -2164,6 +2168,10 @@
       "destination": "/kb/articles/research-pcgamer-article-performance-audit-28285c28"
     },
     {
+      "source": "/kb/articles/simon-willison-288211bb",
+      "destination": "/kb/articles/dbreunignesformer-288211bb"
+    },
+    {
       "source": "/kb/articles/simon-willison-28888946",
       "destination": "/kb/articles/hack-your-summer-28888946"
     },
@@ -3864,6 +3872,10 @@
       "destination": "/kb/articles/package-managers-need-to-cool-down-b36c4b11"
     },
     {
+      "source": "/kb/articles/simon-willison-b39e0c41",
+      "destination": "/kb/articles/api-credits-benefit-for-eligible-chatgpt-subscriptions-b39e0c41"
+    },
+    {
       "source": "/kb/articles/simon-willison-b418e382",
       "destination": "/kb/articles/understand-to-participate-b418e382"
     },
@@ -3910,6 +3922,10 @@
     {
       "source": "/kb/articles/simon-willison-b781057e",
       "destination": "/kb/articles/the-last-six-months-in-llms-in-five-minutes-b781057e"
+    },
+    {
+      "source": "/kb/articles/simon-willison-b7a23ca3",
+      "destination": "/kb/articles/building-a-multiplayer-game-world-with-autonomous-fable-clas-b7a23ca3"
     },
     {
       "source": "/kb/articles/simon-willison-b7b38925",
@@ -4976,6 +4992,10 @@
       "destination": "/kb/articles/ainews-nano-banana-2-aka-gemini-31-flash-image-preview-the-n-26e65d48"
     },
     {
+      "source": "/kb/articles/swyx-26edc81f",
+      "destination": "/kb/articles/ainews-building-aie-code-the-top-coding-agent-conference-26edc81f"
+    },
+    {
       "source": "/kb/articles/swyx-29298f3d",
       "destination": "/kb/articles/the-bioai-phase-shift-matthew-mcpartlon-neil-patil-chai-disc-29298f3d"
     },
@@ -5708,6 +5728,10 @@
       "destination": "/kb/articles/lovable-cto-the-future-of-saas-is-apps-that-agents-can-use-b3ed459e"
     },
     {
+      "source": "/kb/articles/swyx-b632353b",
+      "destination": "/kb/articles/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-dr-b632353b"
+    },
+    {
       "source": "/kb/articles/swyx-b809118d",
       "destination": "/kb/articles/academia-is-for-ambition-alex-zhang-mit-b809118d"
     },
@@ -5742,6 +5766,10 @@
     {
       "source": "/kb/articles/swyx-bed54565",
       "destination": "/kb/articles/openrouter-from-seed-to-stripe-with-openrouters-alex-atallah-bed54565"
+    },
+    {
+      "source": "/kb/articles/swyx-bf350fe4",
+      "destination": "/kb/articles/can-frontier-models-see-past-a-decoy-elorian-tests-visual-re-bf350fe4"
     },
     {
       "source": "/kb/articles/swyx-c11b8776",
