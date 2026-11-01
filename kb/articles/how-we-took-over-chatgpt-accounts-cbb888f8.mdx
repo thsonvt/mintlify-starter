@@ -1,0 +1,76 @@
+---
+title: 'How We Took Over ChatGPT Accounts'
+description: 'The article discusses a complex exploit found in ChatGPT''s HTML previews that allowed unauthorized access to user data, leading to a $5,000 bug bounty'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-31'
+sourceUrl: 'https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/'
+topics: ["cybersecurity","chatgpt-exploit","data-privacy","vulnerability-research"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/) · 31/10/2026
+</Info>
+
+## Summary
+
+The article discusses a complex exploit found in ChatGPT's HTML previews that allowed unauthorized access to user data, leading to a $5,000 bug bounty from OpenAI.
+
+## Key Insights
+
+> "OpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious."
+>
+> — Conclusion on the severity of the exploit and the response from OpenAI.
+
+> "This meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions."
+>
+> — Explanation of how the exploit worked.
+
+## Topics
+
+- [cybersecurity](/kb/topics/cybersecurity)
+- [chatgpt-exploit](/kb/topics/chatgpt-exploit)
+- [data-privacy](/kb/topics/data-privacy)
+- [vulnerability-research](/kb/topics/vulnerability-research)
+
+---
+
+## Full Article
+
+31st October 2026 - Link Blog How We Took Over ChatGPT Accounts (via) Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this "Canvas" but it looks like the latest revision is called HTML previews), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its own virtual keyboard, which can be triggered in the parent page via postMessage() from the sandboxed iframe. That message receiving code uses innerHTML, so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method. This meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions. OpenAI’s CSP rules blocked inline scripts entirely, and only allowed script loading from a handful of domains, but one of those was YouTube - and the YouTube oEmbed endpoint could be used to reflect JavaScript back in a way that executed it. Once the attack had JavaScript execution on ChatGPT, it was trivial to fetch private user data from APIs and exfiltrate it via an image reference. The end result: you could create a ChatGPT share URL which, when visited by another signed-in user, could exfiltrate their private data or take actions on their behalf. OpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="How I tricked Claude into leaking your deepest, darkest secrets"
+    icon="newspaper"
+    href="/kb/articles/how-i-tricked-claude-into-leaking-your-deepest-darkest-secre-76b3e80f"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+  <Card
+    title="OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened"
+    icon="newspaper"
+    href="/kb/articles/openais-accidental-cyberattack-against-hugging-face-is-scien-035fb1d7"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+  <Card
+    title="Now we have a timeline of the OpenAI accidental attack against Hugging Face"
+    icon="newspaper"
+    href="/kb/articles/now-we-have-a-timeline-of-the-openai-accidental-attack-again-1b53d227"
+  >
+    Simon Willison · explanation · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/).
+</Note>

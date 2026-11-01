@@ -1020,6 +1020,10 @@
       "destination": "/kb/articles/what-a-harness-is-and-how-to-build-one-with-claude-agent-sdk-453356fc"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-45c60017",
+      "destination": "/kb/articles/-community-wisdom-the-biggest-sources-of-interruptions-for-p-45c60017"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-46856582",
       "destination": "/kb/articles/-this-week-on-how-i-ai-how-microsofts-ai-vp-automates-everyt-46856582"
     },
@@ -1170,6 +1174,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-7003f23c",
       "destination": "/kb/articles/build-your-own-company-brain-the-enterprise-ai-playbook-from-7003f23c"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-71466a5e",
+      "destination": "/kb/articles/how-a-19-year-old-intern-built-the-growth-engine-behind-this-71466a5e"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-71b91cdd",
@@ -2078,6 +2086,10 @@
     {
       "source": "/kb/articles/simon-willison-1f635a54",
       "destination": "/kb/articles/the-claude-c-compiler-what-it-reveals-about-the-future-of-so-1f635a54"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1f98209b",
+      "destination": "/kb/articles/release-datasette-llm-01a9-1f98209b"
     },
     {
       "source": "/kb/articles/simon-willison-1fe98c0f",
@@ -4172,6 +4184,10 @@
       "destination": "/kb/articles/release-datasette-10a31-cb4ed50f"
     },
     {
+      "source": "/kb/articles/simon-willison-cbb888f8",
+      "destination": "/kb/articles/how-we-took-over-chatgpt-accounts-cbb888f8"
+    },
+    {
       "source": "/kb/articles/simon-willison-cbfe05b7",
       "destination": "/kb/articles/anthropic-walks-back-policy-that-could-have-sabotaged-ai-res-cbfe05b7"
     },
@@ -5506,6 +5522,10 @@
     {
       "source": "/kb/articles/swyx-8508c5cb",
       "destination": "/kb/articles/ainews-the-biggest-claude-launch-of-all-time-8508c5cb"
+    },
+    {
+      "source": "/kb/articles/swyx-8557e00d",
+      "destination": "/kb/articles/agents-prompt-people-using-agents-for-long-horizon-financial-8557e00d"
     },
     {
       "source": "/kb/articles/swyx-85cb3ec0",

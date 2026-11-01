@@ -1,0 +1,76 @@
+---
+title: 'Release: datasette-llm 0.1a9'
+description: 'The datasette-llm plugin has been updated to automatically use the default model for Datasette Agent, simplifying the user experience.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-10-31'
+sourceUrl: 'https://simonwillison.net/2026/Oct/31/datasette-llm/'
+topics: ["datasette","llm","user-experience","plugin-updates"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Oct/31/datasette-llm/) · 31/10/2026
+</Info>
+
+## Summary
+
+The datasette-llm plugin has been updated to automatically use the default model for Datasette Agent, simplifying the user experience.
+
+## Key Insights
+
+> "It now picks up the default model used by LLM."
+>
+> — Describing the new feature of the datasette-llm plugin.
+
+> "You can start using Datasette Agent without needing to explicitly configure a default model."
+>
+> — Highlighting the improvement in user experience.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [llm](/kb/topics/llm)
+- [user-experience](/kb/topics/user-experience)
+- [plugin-updates](/kb/topics/plugin-updates)
+
+---
+
+## Full Article
+
+I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM, which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-llm 0.1a7"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a7-d4cc68f5"
+  >
+    Simon Willison · reference · 81% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a6"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a6-320c1f29"
+  >
+    Simon Willison · reference · 77% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a1-1a0b581b"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Oct/31/datasette-llm/](https://simonwillison.net/2026/Oct/31/datasette-llm/).
+</Note>

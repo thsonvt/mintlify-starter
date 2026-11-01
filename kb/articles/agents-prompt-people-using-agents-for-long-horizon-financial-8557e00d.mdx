@@ -1,0 +1,80 @@
+---
+title: 'Agents Prompt People: Using Agents for Long-Horizon Financial Work'
+description: 'The article discusses how Arca, an AI-native wealth management firm, utilizes AI agents to assist human advisors while ensuring safety and compliance '
+icon: 'newspaper'
+author: 'Swyx'
+authorId: 'swyx'
+published: '2026-10-31'
+sourceUrl: 'https://latent.space/p/arca/'
+topics: ["ai-agents","financial-services","wealth-management","safety-in-ai"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Swyx](https://latent.space/p/arca/) · 31/10/2026
+</Info>
+
+## Summary
+
+The article discusses how Arca, an AI-native wealth management firm, utilizes AI agents to assist human advisors while ensuring safety and compliance in financial decision-making.
+
+## Key Insights
+
+> "agents prompt people more than people prompt agents"
+>
+> — Aman Singh's perspective on the role of AI in guiding human decision-making.
+
+> "All of our safety restrictions are fully deterministic"
+>
+> — Singh explaining the safety measures in place for AI agents in financial services.
+
+> "We've built systems to make it safe for code inside of that sandbox to access our data"
+>
+> — Singh discussing the security measures for handling sensitive data.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [financial-services](/kb/topics/financial-services)
+- [wealth-management](/kb/topics/wealth-management)
+- [safety-in-ai](/kb/topics/safety-in-ai)
+
+---
+
+## Full Article
+
+At AI Engineer New York this month, we sat down with Aman Singh, the lead AI Engineer at Arca, an “AI-native” company providing wealth management services. We discovered that while agents do most of the background work in the firm, there are guardrails in place to ensure that human advisors are making the final decisions. The goal is for AI to guide the process; or as Singh nicely put it, “agents prompt people more than people prompt agents.” Arca recently raised $48.5 Million in a round led by General Catalyst, with participation from Index Ventures and Venrock. One of the features of using AI in financial services, explained Singh, is that it’s typically long-horizon work — although not long-running. In his AIE presentation, Singh noted that agent tasks at Arca can take up to ten days. “It's very stop-start, there's many actors in between, many decision points, many handoffs,” he said. For this reason, Arca has developed an internal memory system. “So we have this persistence for every client,” Singh said in our podcast discussion. “What has happened so far? What are we tracking for next? What needs to happen immediately in the next couple of days [and] what are we tracking for the long term? Which individual is responsible for which action? All of this is being tracked by our memory systems that our agents contribute to.” Arca uses models from frontier labs like Anthropic and OpenAI, with Claude its primary model provider. The company has built its own harness, which automatically selects the best model to use for a particular task, based on the company’s internal benchmarks. Owning the harness, rather than using a managed agent harness, also means that Arca has the flexibility to change model providers if it needs to. Safety is obviously key for financial services. Singh noted that although agents do much of the work, an agent’s role is limited to analysis and proposing solutions. Trading and any other money movement is handled by a human advisor. “All of our safety restrictions are fully deterministic,” he said. “And they take the decision making off the agent's hands.” In other words, there are certain tools and tasks the agent can execute by itself — but not ones that involve risk to the client. Arca also runs verification checks on known AI security issues, such as prompt injections. Arca’s agent isn’t itself sandboxed, but it does use sandboxes for computation. Singh explained they’ve gone even further, with extra security measures for handling sensitive data. “We've built systems to make it safe for code inside of that sandbox to access our data,” he said. “So we have this thing which translates the code it [the agent] wrote into a strict format that we expect, throw away the code, and you install guardrails on that format before it reaches your back end. So we allow the agents to use code to query our data, which means that they can aggregate it, they can munge it, they can work with it as they see fit to produce [things] like a financial plan.” Another interesting process Arca has implemented is using feedback from human advisors, along with traces from the agents, to improve the harness. A “meta-agent” is used to analyze all this data and suggest changes to the harness. Podcast timestamps00:00 — Introducing Arca’s AI-native wealth management firm 01:40 — How AI supports human financial advisors 02:40 — Choosing models with internal benchmarks 04:01 — Building a custom harness and routing tasks 05:25 — Handling a $100,000 tax bill: Agents and human approvals 07:20 — Agent memory across long-running tasks 09:22 — Safety guardrails and prompt injection defenses 11:02 — Compliance and auditability by default 12:14 — “Agents prompt people more than people prompt agents” 13:46 — Why Arca owns its agent infrastructure 15:05 — AI-native firms versus firms using AI tools 16:09 — Sandboxes and financial plan verification 18:40 — Decision models and checking financial facts 19:51 — Why trade execution stays with human experts 20:32 — Turning staff feedback into evals and improvements 22:22 — Turning operational knowledge into agent context 23:41 — Client examples: Hidden fees and proactive service Watch Aman’s AIE presentation
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents"
+    icon="newspaper"
+    href="/kb/articles/crossing-the-threshold-how-openai-and-anthropic-approach-aut-8c1981c9"
+  >
+    Swyx · explanation · 76% similar
+  </Card>
+  <Card
+    title="AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge"
+    icon="newspaper"
+    href="/kb/articles/ai-native-healthcare-100m-doctor-visits-1020-hours-saved-pri-db1db1df"
+  >
+    Swyx · explanation · 69% similar
+  </Card>
+  <Card
+    title="[AINews] AI is eating Finance; AIE NYC now open "
+    icon="newspaper"
+    href="/kb/articles/ainews-ai-is-eating-finance-aie-nyc-now-open--6138ce53"
+  >
+    Swyx · explanation · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://latent.space/p/arca/](https://latent.space/p/arca/).
+</Note>
