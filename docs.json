@@ -1172,6 +1172,10 @@
       "destination": "/kb/articles/from-skeptic-to-true-believer-how-openclaw-changed-my-life-c-6c6993d4"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-6c85e9ec",
+      "destination": "/kb/articles/-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-figmas-pms-actuall-6c85e9ec"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7003f23c",
       "destination": "/kb/articles/build-your-own-company-brain-the-enterprise-ai-playbook-from-7003f23c"
     },
@@ -1218,6 +1222,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-793a3aad",
       "destination": "/kb/articles/-community-wisdom-getting-started-with-open-source-models-ma-793a3aad"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-7b167a5e",
+      "destination": "/kb/articles/how-figmas-pms-actually-use-ai-every-day-ezra-mechaber-pm-fi-7b167a5e"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-7b6943e4",
@@ -2448,6 +2456,10 @@
       "destination": "/kb/articles/discovering-cryptographic-weaknesses-with-claude-4439d23e"
     },
     {
+      "source": "/kb/articles/simon-willison-446cd092",
+      "destination": "/kb/articles/if-in-doubt-delete-the-uvlock-file-446cd092"
+    },
+    {
       "source": "/kb/articles/simon-willison-447f5269",
       "destination": "/kb/articles/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-sour-447f5269"
     },
@@ -2742,6 +2754,10 @@
     {
       "source": "/kb/articles/simon-willison-5a8c245b",
       "destination": "/kb/articles/til-running-openclaw-in-docker-5a8c245b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-5a921e35",
+      "destination": "/kb/articles/a-quote-from-kyle-kingsbury-5a921e35"
     },
     {
       "source": "/kb/articles/simon-willison-5abed48c",
@@ -4326,6 +4342,10 @@
     {
       "source": "/kb/articles/simon-willison-d5c4c4cb",
       "destination": "/kb/articles/claude-fable-is-relentlessly-proactive-d5c4c4cb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-d619048b",
+      "destination": "/kb/articles/the-us-census-bureau-and-super-intelligence-d619048b"
     },
     {
       "source": "/kb/articles/simon-willison-d666ce8e",

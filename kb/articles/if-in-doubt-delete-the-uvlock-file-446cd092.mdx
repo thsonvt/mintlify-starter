@@ -1,0 +1,75 @@
+---
+title: 'If in doubt, delete the uv.lock file'
+description: 'The article discusses resolving Python dependency errors by deleting the uv.lock file, especially when using Python 3.15.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-01'
+sourceUrl: 'https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/'
+topics: ["python-dependencies","uv-lock-file","python-3-15"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/) · 01/11/2026
+</Info>
+
+## Summary
+
+The article discusses resolving Python dependency errors by deleting the uv.lock file, especially when using Python 3.15.
+
+## Key Insights
+
+> "If in doubt, delete the uv.lock file"
+>
+> — Main rule for resolving dependency issues
+
+> "Deleting that file and running uv run pytest again usually fixes the problem."
+>
+> — Solution to the dependency error
+
+## Topics
+
+- [python-dependencies](/kb/topics/python-dependencies)
+- [uv-lock-file](/kb/topics/uv-lock-file)
+- [python-3-15](/kb/topics/python-3-15)
+
+---
+
+## Full Article
+
+1st November 2026 I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories. But... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today: error: Failed to build `watchfiles==1.1.1` cause: Call to `maturin.build_wheel` failed error: the configured Python interpreter version (3.15) is newer than PyO3's maximum supported version (3.14) Deleting that file and running uv run pytest again usually fixes the problem.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Hello Python 3.15, goodbye 3.10, and now I can use 3.11"
+    icon="newspaper"
+    href="/kb/articles/hello-python-315-goodbye-310-and-now-i-can-use-311-fbff85ae"
+  >
+    Simon Willison · explanation · 67% similar
+  </Card>
+  <Card
+    title="uv 0.12.0"
+    icon="newspaper"
+    href="/kb/articles/uv-0120-98df17c6"
+  >
+    Simon Willison · reference · 59% similar
+  </Card>
+  <Card
+    title="What’s new in pip 26.1—lockfiles and dependency cooldowns!"
+    icon="newspaper"
+    href="/kb/articles/whats-new-in-pip-261lockfiles-and-dependency-cooldowns-a2f380d9"
+  >
+    Simon Willison · explanation · 56% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/).
+</Note>
