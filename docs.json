@@ -1232,6 +1232,10 @@
       "destination": "/kb/articles/the-most-successful-ai-company-youve-never-heard-of-qasar-yo-7b6943e4"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-7c54d3af",
+      "destination": "/kb/articles/lennys-newsletter-holiday-gift-guide-2026-7c54d3af"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-7d8ca69c",
       "destination": "/kb/articles/how-openai-uses-chatgpt-sites-live-at-devday-kath-korevec-pr-7d8ca69c"
     },
@@ -3092,6 +3096,10 @@
       "destination": "/kb/articles/a-quote-from-john-gruber-7178bc01"
     },
     {
+      "source": "/kb/articles/simon-willison-71bbf2f5",
+      "destination": "/kb/articles/october-sponsors-only-newsletter-71bbf2f5"
+    },
+    {
       "source": "/kb/articles/simon-willison-71d11f50",
       "destination": "/kb/articles/ruff-v0160-71d11f50"
     },
@@ -3242,6 +3250,10 @@
     {
       "source": "/kb/articles/simon-willison-81d102c2",
       "destination": "/kb/articles/release-llm-anthropic-026-81d102c2"
+    },
+    {
+      "source": "/kb/articles/simon-willison-827ec11f",
+      "destination": "/kb/articles/release-llm-037-827ec11f"
     },
     {
       "source": "/kb/articles/simon-willison-82ee5038",
@@ -4624,6 +4636,10 @@
       "destination": "/kb/articles/malusclean-room-as-a-service-eb2223a0"
     },
     {
+      "source": "/kb/articles/simon-willison-eb37403b",
+      "destination": "/kb/articles/i-discovered-a-sound-that-leaks-your-exact-location-and-its--eb37403b"
+    },
+    {
       "source": "/kb/articles/simon-willison-eb9ab2b3",
       "destination": "/kb/articles/a-quote-from-chengpeng-mou-eb9ab2b3"
     },
@@ -5296,6 +5312,10 @@
       "destination": "/kb/articles/ainews-anthropic-claude-fable-5-mythos-but-safe-with-controv-5513e199"
     },
     {
+      "source": "/kb/articles/swyx-567d6139",
+      "destination": "/kb/articles/building-legal-agents-when-you-cant-see-the-data-jacob-lauri-567d6139"
+    },
+    {
       "source": "/kb/articles/swyx-56c76c34",
       "destination": "/kb/articles/ainews-cerebras-60b-ipo-slowly-then-all-at-once-56c76c34"
     },
@@ -5374,6 +5394,10 @@
     {
       "source": "/kb/articles/swyx-652538ea",
       "destination": "/kb/articles/ainews-anthropic-files-for-2t-ipo-in-2-weeks-1400-growth-rat-652538ea"
+    },
+    {
+      "source": "/kb/articles/swyx-6529cd87",
+      "destination": "/kb/articles/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora--6529cd87"
     },
     {
       "source": "/kb/articles/swyx-659bbd12",
@@ -5594,6 +5618,10 @@
     {
       "source": "/kb/articles/swyx-8e8765e0",
       "destination": "/kb/articles/ainews-the-unreasonable-effectiveness-of-closing-the-loop-8e8765e0"
+    },
+    {
+      "source": "/kb/articles/swyx-8ea966bf",
+      "destination": "/kb/articles/ainews-llms-can-read-write-neural-network-weights-weight-spa-8ea966bf"
     },
     {
       "source": "/kb/articles/swyx-8ff0e86a",
