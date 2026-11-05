@@ -1956,6 +1956,10 @@
       "destination": "/kb/articles/sqlite-3530-13f0f387"
     },
     {
+      "source": "/kb/articles/simon-willison-13fd6b83",
+      "destination": "/kb/articles/release-datasette-agent-05a0-13fd6b83"
+    },
+    {
       "source": "/kb/articles/simon-willison-14080670",
       "destination": "/kb/articles/a-quote-from-zach-kehs-14080670"
     },
@@ -2050,6 +2054,10 @@
     {
       "source": "/kb/articles/simon-willison-1b54d4b1",
       "destination": "/kb/articles/gpt-54-mini-and-gpt-54-nano-which-can-describe-76000-photos--1b54d4b1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-1b8cbbb6",
+      "destination": "/kb/articles/release-datasette-apps-03a0-1b8cbbb6"
     },
     {
       "source": "/kb/articles/simon-willison-1b93707c",
@@ -2186,6 +2194,10 @@
     {
       "source": "/kb/articles/simon-willison-2727fcfb",
       "destination": "/kb/articles/game-boy-color-on-my-conference-badge-2727fcfb"
+    },
+    {
+      "source": "/kb/articles/simon-willison-2752141f",
+      "destination": "/kb/articles/release-datasette-llm-01a10-2752141f"
     },
     {
       "source": "/kb/articles/simon-willison-28285c28",
@@ -4328,6 +4340,10 @@
       "destination": "/kb/articles/highlights-from-my-conversation-about-agentic-engineering-on-d424d881"
     },
     {
+      "source": "/kb/articles/simon-willison-d42ada5d",
+      "destination": "/kb/articles/release-llm-0371-d42ada5d"
+    },
+    {
       "source": "/kb/articles/simon-willison-d45bbc3d",
       "destination": "/kb/articles/a-quote-from-andreas-phlsson-notini-d45bbc3d"
     },
@@ -4922,6 +4938,14 @@
     {
       "source": "/kb/articles/swyx-0d6836e7",
       "destination": "/kb/articles/skill-engineering-and-the-case-against-one-shot-ai-design-0d6836e7"
+    },
+    {
+      "source": "/kb/articles/swyx-0d9584e8",
+      "destination": "/kb/articles/ainews-its-swapping-season-0d9584e8"
+    },
+    {
+      "source": "/kb/articles/swyx-0d9d244a",
+      "destination": "/kb/articles/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei--0d9d244a"
     },
     {
       "source": "/kb/articles/swyx-0db41a58",

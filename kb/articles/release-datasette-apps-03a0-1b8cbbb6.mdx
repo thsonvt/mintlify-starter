@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-apps 0.3a0'
+description: 'Datasette Apps 0.3a0 enhances integration with Datasette Agent, allowing for easier management of custom HTML applications and stored queries.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-04'
+sourceUrl: 'https://simonwillison.net/2026/Nov/4/datasette-apps/'
+topics: ["datasette","llm-integration","custom-apps"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/4/datasette-apps/) · 04/11/2026
+</Info>
+
+## Summary
+
+Datasette Apps 0.3a0 enhances integration with Datasette Agent, allowing for easier management of custom HTML applications and stored queries.
+
+## Key Insights
+
+> "Apps can now be tagged in Datasette Agent chat messages by typing #."
+>
+> — Describing the new feature for tagging apps in chat.
+
+> "Granting a write query requires approval from the user first."
+>
+> — Explaining the approval process for write queries.
+
+> "app_create() now checks that each requested stored query exists."
+>
+> — Detailing the validation process during app creation.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [llm-integration](/kb/topics/llm-integration)
+- [custom-apps](/kb/topics/custom-apps)
+
+---
+
+## Full Article
+
+Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent. This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing #, which autocompletes from the apps the user has permission to view. New app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first. app_create() now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created. The "View app" buttons shown by the agent tools, and the links on # app references, now open the app full screen in the Datasette Agent panel.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-apps 0.2a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-apps-02a0-fd2ff761"
+  >
+    Simon Willison · reference · 84% similar
+  </Card>
+  <Card
+    title="Release: datasette-agent 0.5a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-agent-05a0-13fd6b83"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+  <Card
+    title="Datasette Apps: Host custom HTML applications inside Datasette"
+    icon="newspaper"
+    href="/kb/articles/datasette-apps-host-custom-html-applications-inside-datasett-d700bbb5"
+  >
+    Simon Willison · explanation · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/4/datasette-apps/](https://simonwillison.net/2026/Nov/4/datasette-apps/).
+</Note>
