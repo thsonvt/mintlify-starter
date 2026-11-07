@@ -2048,6 +2048,10 @@
       "destination": "/kb/articles/how-to-write-with-an-llm-1ad63b56"
     },
     {
+      "source": "/kb/articles/simon-willison-1b24f8e6",
+      "destination": "/kb/articles/a-quote-from-nilay-patel-1b24f8e6"
+    },
+    {
       "source": "/kb/articles/simon-willison-1b53d227",
       "destination": "/kb/articles/now-we-have-a-timeline-of-the-openai-accidental-attack-again-1b53d227"
     },
@@ -5174,6 +5178,10 @@
     {
       "source": "/kb/articles/swyx-3a8f5bf7",
       "destination": "/kb/articles/ainews-anthropic-19b-arr-qwen-team-leaves-gemini-and-gpt-bum-3a8f5bf7"
+    },
+    {
+      "source": "/kb/articles/swyx-3aa7d5cb",
+      "destination": "/kb/articles/ainews-anthropic-ipo-whither-now-3aa7d5cb"
     },
     {
       "source": "/kb/articles/swyx-3adf0e2c",
