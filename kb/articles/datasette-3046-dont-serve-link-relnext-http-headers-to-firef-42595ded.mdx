@@ -1,0 +1,80 @@
+---
+title: 'datasette #3046: Don’t serve link: rel=next HTTP headers to Firefox for HTML pages'
+description: 'The article discusses the issue of Firefox prefetching unnecessary data due to HTTP link headers in Datasette pages, highlighting a long-standing bug.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-07'
+sourceUrl: 'https://simonwillison.net/2026/Nov/7/link-rel-next/'
+topics: ["http-headers","firefox","datasette","web-performance"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/7/link-rel-next/) · 07/11/2026
+</Info>
+
+## Summary
+
+The article discusses the issue of Firefox prefetching unnecessary data due to HTTP link headers in Datasette pages, highlighting a long-standing bug.
+
+## Key Insights
+
+> "This is bad."
+>
+> — Commenting on the inefficiency of prefetching data that users are unlikely to need.
+
+> "Firefox has an issue that has been open for 24 years about this behavior."
+>
+> — Highlighting the long-standing nature of the problem with Firefox's handling of link headers.
+
+> "I had forgotten the feature entirely!"
+>
+> — Reflecting on the author's surprise at the persistence of the issue over the years.
+
+## Topics
+
+- [http-headers](/kb/topics/http-headers)
+- [firefox](/kb/topics/firefox)
+- [datasette](/kb/topics/datasette)
+- [web-performance](/kb/topics/web-performance)
+
+---
+
+## Full Article
+
+7th November 2026 - Link Blog datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages. I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel="next" This is bad. A tiny fraction of the visitors to one of those pages will click the "next" link, which means their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away. I dug in and learned that Firefox has an issue that has been open for 24 years about this behavior... And one of the early comments on that issue links to my blog post from 2002 complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-referrer-policy 0.1"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-referrer-policy-01-e14020ec"
+  >
+    Simon Willison · how-to · 55% similar
+  </Card>
+  <Card
+    title="datasette PR #2689: Replace token-based CSRF with Sec-Fetch-Site header protection"
+    icon="newspaper"
+    href="/kb/articles/datasette-pr-2689-replace-token-based-csrf-with-sec-fetch-si-febc892b"
+  >
+    Simon Willison · explanation · 55% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a29"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a29-1e4ad5f8"
+  >
+    Simon Willison · reference · 54% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/7/link-rel-next/](https://simonwillison.net/2026/Nov/7/link-rel-next/).
+</Note>

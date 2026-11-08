@@ -964,6 +964,10 @@
       "destination": "/kb/articles/essential-books-for-product-builderspart-2-3b30d4d1"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-3d13689e",
+      "destination": "/kb/articles/what-it-actually-takes-to-build-frontier-models-tulsee-doshi-3d13689e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-3d46860d",
       "destination": "/kb/articles/how-warp-ships-2000-prs-a-month-with-ai-factories-zach-lloyd-3d46860d"
     },
@@ -2458,6 +2462,10 @@
     {
       "source": "/kb/articles/simon-willison-41ae3a80",
       "destination": "/kb/articles/ornith-10-self-scaffolding-llms-for-agentic-coding-41ae3a80"
+    },
+    {
+      "source": "/kb/articles/simon-willison-42595ded",
+      "destination": "/kb/articles/datasette-3046-dont-serve-link-relnext-http-headers-to-firef-42595ded"
     },
     {
       "source": "/kb/articles/simon-willison-42b703f1",
