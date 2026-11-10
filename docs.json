@@ -932,6 +932,10 @@
       "destination": "/kb/articles/a-guide-to-advanced-b2b-positioning-2e95e9ec"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-2ea42e8e",
+      "destination": "/kb/articles/claude-fable-52-review-fast-creative-and-finally-not-annoyin-2ea42e8e"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-2f3d6bbc",
       "destination": "/kb/articles/-this-week-on-how-i-ai-opus-vs-codex-showdown-and-ai-for-acc-2f3d6bbc"
     },
@@ -962,6 +966,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-3b30d4d1",
       "destination": "/kb/articles/essential-books-for-product-builderspart-2-3b30d4d1"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-3b781083",
+      "destination": "/kb/articles/-how-i-ai-how-this-founder-built-a-better-duolingo-with-code-3b781083"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-3d13689e",
@@ -1364,6 +1372,10 @@
       "destination": "/kb/articles/the-playbook-for-building-high-talent-density-teams-adam-war-98f8ab27"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-99de2428",
+      "destination": "/kb/articles/state-of-the-tech-job-market-late-2026-99de2428"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-99e4b903",
       "destination": "/kb/articles/an-86-minute-guide-to-finding-pmf-rob-snyder-author-the-powe-99e4b903"
     },
@@ -1430,6 +1442,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-a4b2488e",
       "destination": "/kb/articles/jev-for-beginners-how-to-use-it-and-what-to-build-a4b2488e"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-a54a3675",
+      "destination": "/kb/articles/how-this-founder-built-a-better-duolingo-with-codex-william--a54a3675"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-a66fabc6",
@@ -2072,6 +2088,10 @@
       "destination": "/kb/articles/a-quote-from-ken-jin-1b93707c"
     },
     {
+      "source": "/kb/articles/simon-willison-1bd57155",
+      "destination": "/kb/articles/a-quote-from-prompting-claude-fable-52-1bd57155"
+    },
+    {
       "source": "/kb/articles/simon-willison-1caa288c",
       "destination": "/kb/articles/a-quote-from-matthew-green-1caa288c"
     },
@@ -2376,6 +2396,10 @@
       "destination": "/kb/articles/release-sqlite-utils-40rc1-3ad2d843"
     },
     {
+      "source": "/kb/articles/simon-willison-3bf5d6de",
+      "destination": "/kb/articles/research-parse_number-as-a-sqlite-extension-c-vs-rust-3bf5d6de"
+    },
+    {
       "source": "/kb/articles/simon-willison-3c1fb58c",
       "destination": "/kb/articles/glm-51-towards-long-horizon-tasks-3c1fb58c"
     },
@@ -2654,6 +2678,10 @@
     {
       "source": "/kb/articles/simon-willison-4e18f5f6",
       "destination": "/kb/articles/release-llm-032rc1-4e18f5f6"
+    },
+    {
+      "source": "/kb/articles/simon-willison-4e7141f9",
+      "destination": "/kb/articles/comment-the-web-is-more-than-enough-by-paul-ford-4e7141f9"
     },
     {
       "source": "/kb/articles/simon-willison-4e860aee",
@@ -3136,6 +3164,10 @@
       "destination": "/kb/articles/tool-bluesky-reply-bot-checker-71e5b938"
     },
     {
+      "source": "/kb/articles/simon-willison-71eb5d72",
+      "destination": "/kb/articles/tool-yonkers-rises-71eb5d72"
+    },
+    {
       "source": "/kb/articles/simon-willison-7274da00",
       "destination": "/kb/articles/release-sqlite-utils-421-7274da00"
     },
@@ -3228,12 +3260,20 @@
       "destination": "/kb/articles/a-quote-from-john-carmack-7b7eda20"
     },
     {
+      "source": "/kb/articles/simon-willison-7c1a0e11",
+      "destination": "/kb/articles/release-llm-anthropic-031-7c1a0e11"
+    },
+    {
       "source": "/kb/articles/simon-willison-7c7a8c44",
       "destination": "/kb/articles/a-quote-from-joedaroo-7c7a8c44"
     },
     {
       "source": "/kb/articles/simon-willison-7d8b84f7",
       "destination": "/kb/articles/a-quote-from-matt-webb-7d8b84f7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-7de7b587",
+      "destination": "/kb/articles/comment-terry-pratchetts-study-7de7b587"
     },
     {
       "source": "/kb/articles/simon-willison-7e17d474",
@@ -3334,6 +3374,10 @@
     {
       "source": "/kb/articles/simon-willison-8929886b",
       "destination": "/kb/articles/anthropic-tells-investors-quarterly-revenue-up-nearly-50-to--8929886b"
+    },
+    {
+      "source": "/kb/articles/simon-willison-899e1beb",
+      "destination": "/kb/articles/introducing-our-smallest-most-efficient-model-muse-ember-899e1beb"
     },
     {
       "source": "/kb/articles/simon-willison-89da678b",
@@ -4364,6 +4408,10 @@
       "destination": "/kb/articles/nativ-run-ai-models-locally-on-your-mac-d473012b"
     },
     {
+      "source": "/kb/articles/simon-willison-d47ace22",
+      "destination": "/kb/articles/locating-the-source-of-a-mysterious-beep-with-claude-d47ace22"
+    },
+    {
       "source": "/kb/articles/simon-willison-d4cc68f5",
       "destination": "/kb/articles/release-datasette-llm-01a7-d4cc68f5"
     },
@@ -4526,6 +4574,10 @@
     {
       "source": "/kb/articles/simon-willison-dffadfa3",
       "destination": "/kb/articles/comment-gpt-61-sol-near-astra-intelligence-for-a-fifth-of-th-dffadfa3"
+    },
+    {
+      "source": "/kb/articles/simon-willison-e006c807",
+      "destination": "/kb/articles/hide-your-slop-pr-descriptions-behind-detailssummary-e006c807"
     },
     {
       "source": "/kb/articles/simon-willison-e0353207",
@@ -5080,6 +5132,10 @@
       "destination": "/kb/articles/mistral-voxtral-tts-forge-leanstral-whats-next-for-mistral-4-23a9721a"
     },
     {
+      "source": "/kb/articles/swyx-23d107a0",
+      "destination": "/kb/articles/how-stanford-teaches-ai-native-engineering-mihail-eric-monac-23d107a0"
+    },
+    {
       "source": "/kb/articles/swyx-24b5ce76",
       "destination": "/kb/articles/moonlake-causal-world-models-should-be-multimodal-interactiv-24b5ce76"
     },
@@ -5446,6 +5502,10 @@
     {
       "source": "/kb/articles/swyx-6529cd87",
       "destination": "/kb/articles/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora--6529cd87"
+    },
+    {
+      "source": "/kb/articles/swyx-65898c97",
+      "destination": "/kb/articles/one-million-ai-engineer-special-how-stanford-teaches-ai-nati-65898c97"
     },
     {
       "source": "/kb/articles/swyx-659bbd12",
@@ -5970,6 +6030,14 @@
     {
       "source": "/kb/articles/swyx-d5166615",
       "destination": "/kb/articles/ainews-gpt-6-astra-openais-biggest-llm-launch-of-all-time-d5166615"
+    },
+    {
+      "source": "/kb/articles/swyx-d56ffb00",
+      "destination": "/kb/articles/ainews-fable-52-retakes-world-1-llm-spot-as-ant-ipo-roadshow-d56ffb00"
+    },
+    {
+      "source": "/kb/articles/swyx-d78aed7c",
+      "destination": "/kb/articles/what-frontier-labs-buy-a-data-deep-dive-with-handshake-ai-ga-d78aed7c"
     },
     {
       "source": "/kb/articles/swyx-d9235379",

@@ -1,0 +1,81 @@
+---
+title: 'Hide your slop PR descriptions behind <details><summary>'
+description: 'The article discusses using HTML elements to improve the readability of AI-generated PR descriptions by summarizing key information.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-09'
+sourceUrl: 'https://simonwillison.net/2026/Nov/9/details-summary/'
+topics: ["ai-writing","pull-requests","github","html","developer-tools"]
+diataxisType: 'how-to'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/9/details-summary/) · 09/11/2026
+</Info>
+
+## Summary
+
+The article discusses using HTML elements to improve the readability of AI-generated PR descriptions by summarizing key information.
+
+## Key Insights
+
+> "I want human editorial judgement."
+>
+> — Expressing the desire for a human touch in PR descriptions.
+
+> "My PRs don’t feel nearly as sloppy now!"
+>
+> — Describing the improvement in PR presentation using the &lt;details>&lt;summary> method.
+
+> "Say 'details-summary' out loud just a few times and you’ll never forget the order of the tags again."
+>
+> — A mnemonic technique for remembering the HTML tag order.
+
+## Topics
+
+- [ai-writing](/kb/topics/ai-writing)
+- [pull-requests](/kb/topics/pull-requests)
+- [github](/kb/topics/github)
+- [html](/kb/topics/html)
+- [developer-tools](/kb/topics/developer-tools)
+
+---
+
+## Full Article
+
+9th November 2026 Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work—I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today’s coding agents are great at writing PR descriptions. They’re too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That’s a lot of information to absorb. It’s not necessarily slop, but it reads like slop! It’s very easy to spot an AI-written PR, and as with other forms of AI writing my instant reaction is best summarized as “I’m not reading all of that”. It doesn’t matter how accurate or useful the information is, I’m instantly put off by the thought that it will take me longer to read than it took the driving author to write... even when that driving author is me! I want human editorial judgement. I want someone to have thought just long enough about the PR to give me a human-approved introduction that helps me understand, at a high level, what the PR is for and whether it deserves more of my attention. I think I’ve found a low-effort way to do this that feels right. Hide most of it in a details/summary The HTML &lt;details>&lt;summary> elements render as a collapsed heading (the summary) that can be expanded to view the larger piece of text. The code looks like this: &lt;details> &lt;summary>Claude Opus 5.5&lt;/summary> &lt;h2>The hook&lt;/h2> Plugins implement &lt;code>register_agent_reference_types(datasette)&lt;/code>... &lt;/details> When rendered, it looks like this: Crucially, &lt;details>&lt;summary> is supported in GitHub Markdown. You can drop those tags directly into an issue comment or PR description and GitHub will hide the details and display just the summary plus an expansion arrow. I’ve started using this for my AI-generated pull requests. The opening paragraph of my PRs will be carefully selected to act as a high-level explanation of what’s going on—the shortest text a human can read that will help get them up to speed. I’ll sometimes throw in a screenshot as well, since images are often the best way to quickly illustrate a new feature. The full agent-written essay then follows in a &lt;details>&lt;summary>. I use the model name and often the effort level as that summary, to make it abundantly clear what is going on—“Claude Opus 5.5 Medium” for example. My PRs don’t feel nearly as sloppy now! The information is all still there, but a reader can glance at it and get the top, human-curated information without their eyes glazing over at multiple paragraphs of agent-written details. I don’t always write the introduction myself—sometimes the agent has given me what I need already, hidden away in the avalanche of other text. My promise to the reader is that the short opener will represent my human judgement as to what is definitely worth their time. Here are some recent examples where I’ve used this pattern, including the opener I used: datasette PR #3052: Redesign row page as a vertical list of fields—"The row page showed its single row as a one-row table. For wide tables, like a 46-column GitHub repos table, that scrolled far off to the right and left most of the page blank." (then a screenshot) datasette PR #3043: Pagination bar showing which rows are on the current page—“Table pages that span more than one page now make it obvious where you are, and offer navigation at the top of the page as well as the bottom.” (plus screenshot) datasette PR #3042: Load edit-tools.js on demand via a small loader—"edit-tools.js (~220KB) was loaded on every table, row and database page, even for users who couldn’t edit anything. Now only load it for users who can edit when they first interact with an edit feature (including mouse over an edit link)." datasette-agent PR #51: register_agent_reference_types plugin hook—"Lets plugins add their own kinds of item to the # tagging in the chat composer using a new register_agent_reference_types(datasette) plugin hook."—pictured above. llm PR #1838: Add llm openai endpoint add/list/remove/path commands—"Adds commands for managing the records in extra-openai-models.yaml, so OpenAI-compatible endpoints can be saved from the command line instead of by hand-editing YAML."—then copied --help output. The mnemonic I used to have trouble remembering the order of the tags—is it &lt;details>&lt;summary> or &lt;summary>&lt;details>? Here are two tricks that helped me. First, and most obviously, the &lt;summary> is clearly the bit where you summarize the details. That’s the tag for your line of text that can be clicked to expand—the &lt;details> element must then wrap everything else. An even better trick is to always refer to these two tags as “details-summary”. “details-summary” is two syllables followed by three syllables. That rolls off the tongue more smoothly than the three-two punch of “summary-details”. Say “details-summary” out loud just a few times and you’ll never forget the order of the tags again. (I still wish GitHub would add a button to their Markdown editor for this—partly to save me painstakingly typing it on my mobile keyboard, and partly to help spread the word to more GitHub users that this feature exists.)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Using Claude Code: The Unreasonable Effectiveness of HTML"
+    icon="newspaper"
+    href="/kb/articles/using-claude-code-the-unreasonable-effectiveness-of-html-b2d0a22c"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+  <Card
+    title="How I Polish Software That Agents Built"
+    icon="newspaper"
+    href="/kb/articles/how-i-polish-software-that-agents-built-c417d7d6"
+  >
+    Dan Shipper (Every) · how-to · 65% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: HTML is the new Markdown: How Anthropic engineers are building with Claude Code"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-a-98efb619"
+  >
+    Lenny Rachitsky · how-to · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/9/details-summary/](https://simonwillison.net/2026/Nov/9/details-summary/).
+</Note>

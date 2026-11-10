@@ -1,0 +1,79 @@
+---
+title: 'Release: llm-anthropic 0.31'
+description: 'Anthropic released Fable 5.2 and Mythos 5.2, with Fable 5.2 solving two open problems in black hole physics and offering improved performance and pric'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-09'
+sourceUrl: 'https://simonwillison.net/2026/Nov/9/llm-anthropic/'
+topics: ["ai-models","black-hole-physics","llm-anthropic"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/9/llm-anthropic/) · 09/11/2026
+</Info>
+
+## Summary
+
+Anthropic released Fable 5.2 and Mythos 5.2, with Fable 5.2 solving two open problems in black hole physics and offering improved performance and pricing.
+
+## Key Insights
+
+> "solved two open problems in the physics of black holes"
+>
+> — Describing the advancements made by Anthropic with Fable 5.2.
+
+> "It's priced at $8/million input and $40/million output"
+>
+> — Discussing the pricing structure for Fable 5.2 compared to its predecessor.
+
+> "max failed to return an image at all, running out of tokens"
+>
+> — Noting a bug encountered while using Fable 5.2.
+
+## Topics
+
+- [ai-models](/kb/topics/ai-models)
+- [black-hole-physics](/kb/topics/black-hole-physics)
+- [llm-anthropic](/kb/topics/llm-anthropic)
+
+---
+
+## Full Article
+
+Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis. Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have become more ambitious! I've added the new models to llm-anthropic, so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 "Generate an SVG of a pelican riding a bicycle" I ran pelicans at all five reasoning levels - low, medium, high, xhigh, and max. You can see them all here - here's the best result I got, from xhigh: max failed to return an image at all, running out of tokens after spending 128,000 thinking about them. That's the same bug that I saw with Opus 5.5 - but it's new for the Fable series, both Fable 5 and Fable 5.1 returned max effort pelicans just fine. It's priced at $8/million input and $40/million output, which is a 20% discount on the previous Fable 5.1 ($10/$50). I also used Fable 5.2 to help identify the source of a mysterious beep.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins"
+    icon="newspaper"
+    href="/kb/articles/ainews-fable-52-retakes-world-1-llm-spot-as-ant-ipo-roadshow-d56ffb00"
+  >
+    Swyx · explanation · 76% similar
+  </Card>
+  <Card
+    title="Release: llm-anthropic 0.27"
+    icon="newspaper"
+    href="/kb/articles/release-llm-anthropic-027-60eae651"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+  <Card
+    title="🎙️ How I AI: Claude Fable 5 review & How Braintrust uses AI agents, evals, and CI to ship better software"
+    icon="newspaper"
+    href="/kb/articles/-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agent-9d89a3bb"
+  >
+    Lenny Rachitsky · how-to · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/9/llm-anthropic/](https://simonwillison.net/2026/Nov/9/llm-anthropic/).
+</Note>
