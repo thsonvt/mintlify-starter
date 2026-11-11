@@ -1500,6 +1500,10 @@
       "destination": "/kb/articles/how-to-close-100k-enterprise-deals-step-by-step-jen-abel-bb9c1cad"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-bd47cc43",
+      "destination": "/kb/articles/claude-code-obsidian-my-familys-ai-brain-scott-farrar-bd47cc43"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-be0335ca",
       "destination": "/kb/articles/how-grok-bot-designers-use-ai-agents-to-build-personal-sites-be0335ca"
     },
@@ -2402,6 +2406,10 @@
     {
       "source": "/kb/articles/simon-willison-3c1fb58c",
       "destination": "/kb/articles/glm-51-towards-long-horizon-tasks-3c1fb58c"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3c414834",
+      "destination": "/kb/articles/release-llm-gemini-036-3c414834"
     },
     {
       "source": "/kb/articles/simon-willison-3c945b42",
@@ -4256,6 +4264,10 @@
       "destination": "/kb/articles/a-quote-from-greg-kroah-hartman-c978e84a"
     },
     {
+      "source": "/kb/articles/simon-willison-c9ae824a",
+      "destination": "/kb/articles/anthropics-ipo-roadshow-video-c9ae824a"
+    },
+    {
       "source": "/kb/articles/simon-willison-c9eb3109",
       "destination": "/kb/articles/a-quote-from-openai-c9eb3109"
     },
@@ -5220,6 +5232,10 @@
       "destination": "/kb/articles/ainews-the-other-vs-the-utility-351c2fbe"
     },
     {
+      "source": "/kb/articles/swyx-35380137",
+      "destination": "/kb/articles/designing-for-agents-zeno-rocha-resend-35380137"
+    },
+    {
       "source": "/kb/articles/swyx-3615aa7a",
       "destination": "/kb/articles/claude-mods-flipping-the-harness-inside-out-3615aa7a"
     },
@@ -5348,6 +5364,10 @@
       "destination": "/kb/articles/ainews-hot-chips-openais-jalapeo-cerebras-cs-5-groq-3-lpx-ap-4a0c4308"
     },
     {
+      "source": "/kb/articles/swyx-4cfc5c71",
+      "destination": "/kb/articles/ai-engineer-code-summit-openai-on-new-ways-of-working-with-c-4cfc5c71"
+    },
+    {
       "source": "/kb/articles/swyx-4d56ee27",
       "destination": "/kb/articles/ainews-meta-muse-wonder-wonder-full-msls-claude-55-tier-fron-4d56ee27"
     },
@@ -5434,6 +5454,10 @@
     {
       "source": "/kb/articles/swyx-592cfb3d",
       "destination": "/kb/articles/why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-re-592cfb3d"
+    },
+    {
+      "source": "/kb/articles/swyx-5a48d9f6",
+      "destination": "/kb/articles/naiveai-promises-2100-tokens-per-second-how-well-does-it-cod-5a48d9f6"
     },
     {
       "source": "/kb/articles/swyx-5acd0fdd",
@@ -5734,6 +5758,10 @@
     {
       "source": "/kb/articles/swyx-8ff0e86a",
       "destination": "/kb/articles/ainews-lilian-weng-summarizes-35-papers-on-harness-engineeri-8ff0e86a"
+    },
+    {
+      "source": "/kb/articles/swyx-9001d747",
+      "destination": "/kb/articles/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate-9001d747"
     },
     {
       "source": "/kb/articles/swyx-90022aa3",
