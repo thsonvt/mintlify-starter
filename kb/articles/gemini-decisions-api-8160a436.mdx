@@ -1,0 +1,81 @@
+---
+title: 'Gemini Decisions API'
+description: 'The Gemini Decisions API by Google offers a multi-model decision-making tool similar to Jev and OpenAI, supporting various question types and media fo'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-11'
+sourceUrl: 'https://simonwillison.net/2026/Nov/11/gemini-decisions-api/'
+topics: ["gemini-decisions","api","decision-models","openai","jevs"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/11/gemini-decisions-api/) · 11/11/2026
+</Info>
+
+## Summary
+
+The Gemini Decisions API by Google offers a multi-model decision-making tool similar to Jev and OpenAI, supporting various question types and media formats.
+
+## Key Insights
+
+> "Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs."
+>
+> — Describing the capabilities of the Gemini Decisions API.
+
+> "Jev remains the cheapest of the three, at 4.2 cents per million."
+>
+> — Comparing pricing of decision models.
+
+> "Gemini insists on being a little less confident than that."
+>
+> — Discussing the confidence levels of the Gemini Decisions API in answering questions.
+
+## Topics
+
+- [gemini-decisions](/kb/topics/gemini-decisions)
+- [api](/kb/topics/api)
+- [decision-models](/kb/topics/decision-models)
+- [openai](/kb/topics/openai)
+- [jevs](/kb/topics/jevs)
+
+---
+
+## Full Article
+
+11th November 2026 - Link Blog Gemini Decisions API (via) Google join Jev and OpenAI in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term "Noul" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million. Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs. I tested it against video by passing these questions to it along with my Yonkers stomping robot video file: dragon: Does this video have a dragon in it? robot: Does this video have a robot in it? france: Is this video set in France? usa: Is this video set in the USA? Jev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that: &#123; "dragon": &#123; "type": "yes_no", "probability": 0.04976021841520312 &#125;, "robot": &#123; "type": "yes_no", "probability": 0.9234055387792485 &#125;, "france": &#123; "type": "yes_no", "probability": 0.08329171353166241 &#125;, "usa": &#123; "type": "yes_no", "probability": 0.9230459995157706 &#125; &#125;
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="[AINews] D-Day (Decision Models Day)"
+    icon="newspaper"
+    href="/kb/articles/ainews-d-day-decision-models-day-9d8483ac"
+  >
+    Swyx · explanation · 77% similar
+  </Card>
+  <Card
+    title="Release: llm-openai-decisions 0.1a0"
+    icon="newspaper"
+    href="/kb/articles/release-llm-openai-decisions-01a0-8d1f6e8f"
+  >
+    Simon Willison · reference · 74% similar
+  </Card>
+  <Card
+    title="[AINews] TypeSafe/Jev at >$100M ARR, $7.5B valuation 3 weeks after launch"
+    icon="newspaper"
+    href="/kb/articles/ainews-typesafejev-at-100m-arr-75b-valuation-3-weeks-after-l-d9478693"
+  >
+    Swyx · reference · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/11/gemini-decisions-api/](https://simonwillison.net/2026/Nov/11/gemini-decisions-api/).
+</Note>

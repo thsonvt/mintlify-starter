@@ -592,6 +592,10 @@
       "destination": "/kb/articles/to-kodak-yourself-out-of-business-f1ebf406"
     },
     {
+      "source": "/kb/articles/geoffrey-huntley-f36daa65",
+      "destination": "/kb/articles/the-answer-to-ai-is-engineering-f36daa65"
+    },
+    {
       "source": "/kb/articles/geoffrey-huntley-f4c40d90",
       "destination": "/kb/articles/dear-student-yes-ai-is-here-youre-screwed-unless-you-take-ac-f4c40d90"
     },
@@ -2224,6 +2228,10 @@
       "destination": "/kb/articles/a-quote-from-spacex-s-1-26492828"
     },
     {
+      "source": "/kb/articles/simon-willison-26a36b1a",
+      "destination": "/kb/articles/aws-emulator-26a36b1a"
+    },
+    {
       "source": "/kb/articles/simon-willison-2727fcfb",
       "destination": "/kb/articles/game-boy-color-on-my-conference-badge-2727fcfb"
     },
@@ -2582,6 +2590,10 @@
     {
       "source": "/kb/articles/simon-willison-47b53538",
       "destination": "/kb/articles/moonshotaikimi-k3-47b53538"
+    },
+    {
+      "source": "/kb/articles/simon-willison-47c03d97",
+      "destination": "/kb/articles/release-llm-0372-47c03d97"
     },
     {
       "source": "/kb/articles/simon-willison-47fc8cda",
@@ -3318,6 +3330,10 @@
     {
       "source": "/kb/articles/simon-willison-80b3db71",
       "destination": "/kb/articles/datasette-code-frequency-chart-on-github-80b3db71"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8160a436",
+      "destination": "/kb/articles/gemini-decisions-api-8160a436"
     },
     {
       "source": "/kb/articles/simon-willison-81737517",
@@ -4154,6 +4170,10 @@
     {
       "source": "/kb/articles/simon-willison-c1b6b25f",
       "destination": "/kb/articles/release-datasette-0655-c1b6b25f"
+    },
+    {
+      "source": "/kb/articles/simon-willison-c1e5491a",
+      "destination": "/kb/articles/browse-toolssimonwillisonnet-by-tag-c1e5491a"
     },
     {
       "source": "/kb/articles/simon-willison-c1efb200",
@@ -5460,6 +5480,10 @@
       "destination": "/kb/articles/naiveai-promises-2100-tokens-per-second-how-well-does-it-cod-5a48d9f6"
     },
     {
+      "source": "/kb/articles/swyx-5a96d3d0",
+      "destination": "/kb/articles/the-jev-revolution-what-engineers-are-already-building-with--5a96d3d0"
+    },
+    {
       "source": "/kb/articles/swyx-5acd0fdd",
       "destination": "/kb/articles/claude-code-for-finance-the-global-memory-shortage-doug-olau-5acd0fdd"
     },
@@ -5826,6 +5850,10 @@
     {
       "source": "/kb/articles/swyx-9d4017e1",
       "destination": "/kb/articles/causal-models-need-causal-data-xairas-x-cell-model-for-drug--9d4017e1"
+    },
+    {
+      "source": "/kb/articles/swyx-9d8483ac",
+      "destination": "/kb/articles/ainews-d-day-decision-models-day-9d8483ac"
     },
     {
       "source": "/kb/articles/swyx-9de031bf",

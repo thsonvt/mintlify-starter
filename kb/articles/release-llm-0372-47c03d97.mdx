@@ -1,0 +1,80 @@
+---
+title: 'Release: llm 0.37.2'
+description: 'The release of llm 0.37.2 addresses a security issue that could expose OpenAI API keys when using extra-openai-models.yaml with other providers.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-11'
+sourceUrl: 'https://simonwillison.net/2026/Nov/11/llm/'
+topics: ["security","openai","api-keys","llm"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/11/llm/) · 11/11/2026
+</Info>
+
+## Summary
+
+The release of llm 0.37.2 addresses a security issue that could expose OpenAI API keys when using extra-openai-models.yaml with other providers.
+
+## Key Insights
+
+> "Fixes a security issue reported by Daniel de Araujo"
+>
+> — Introduction of the article
+
+> "LLM has a mechanism called extra-openai-models.yaml"
+>
+> — Description of the feature
+
+> "could accidentally send your configured OpenAI API key to one of those providers"
+>
+> — Explanation of the security risk
+
+## Topics
+
+- [security](/kb/topics/security)
+- [openai](/kb/topics/openai)
+- [api-keys](/kb/topics/api-keys)
+- [llm](/kb/topics/llm)
+
+---
+
+## Full Article
+
+Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w. LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by api_key_name had never been stored, or if a responses: true model was run with -o chat_completions 1.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: llm 0.33"
+    icon="newspaper"
+    href="/kb/articles/release-llm-033-109ceca7"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+  <Card
+    title="Release: llm 0.37"
+    icon="newspaper"
+    href="/kb/articles/release-llm-037-827ec11f"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32rc2"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc2-fd4966fb"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/11/llm/](https://simonwillison.net/2026/Nov/11/llm/).
+</Note>
