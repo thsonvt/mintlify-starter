@@ -2776,6 +2776,10 @@
       "destination": "/kb/articles/release-datasette-10a41-54bf8234"
     },
     {
+      "source": "/kb/articles/simon-willison-55044e75",
+      "destination": "/kb/articles/release-datasette-cluster-map-019-55044e75"
+    },
+    {
       "source": "/kb/articles/simon-willison-550ffbf6",
       "destination": "/kb/articles/release-commit-rewriter-01-550ffbf6"
     },
@@ -4852,6 +4856,10 @@
       "destination": "/kb/articles/a-quote-from-paul-ford-f5e3633c"
     },
     {
+      "source": "/kb/articles/simon-willison-f6387e64",
+      "destination": "/kb/articles/release-datasette-leaflet-03-f6387e64"
+    },
+    {
       "source": "/kb/articles/simon-willison-f670a31d",
       "destination": "/kb/articles/introducing-gptlive-f670a31d"
     },
@@ -5766,6 +5774,10 @@
     {
       "source": "/kb/articles/swyx-8b5d31f4",
       "destination": "/kb/articles/ainews-openai-codex-app-death-of-the-vscode-fork-multitaskin-8b5d31f4"
+    },
+    {
+      "source": "/kb/articles/swyx-8bc5c85a",
+      "destination": "/kb/articles/ainews-the-no-ai-slop-manifesto-8bc5c85a"
     },
     {
       "source": "/kb/articles/swyx-8bf11a58",
