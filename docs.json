@@ -1332,6 +1332,10 @@
       "destination": "/kb/articles/chatgpt-codex-voice-browser-sites-an-experts-ai-workflow-nic-8e680651"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-8ed3aac2",
+      "destination": "/kb/articles/-community-wisdom-when-you-become-the-bottleneck-for-your-ai-8ed3aac2"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-8f9b20a4",
       "destination": "/kb/articles/-community-wisdom-staying-on-a-clients-radar-during-pilot-pu-8f9b20a4"
     },
@@ -1398,6 +1402,10 @@
     {
       "source": "/kb/articles/lenny-rachitsky-9cbc3674",
       "destination": "/kb/articles/the-rise-of-the-professional-vibe-coder-a-new-ai-era-job-laz-9cbc3674"
+    },
+    {
+      "source": "/kb/articles/lenny-rachitsky-9cc581d2",
+      "destination": "/kb/articles/metas-muse-how-we-launched-the-most-successful-consumer-prod-9cc581d2"
     },
     {
       "source": "/kb/articles/lenny-rachitsky-9d366e6c",
@@ -2330,6 +2338,10 @@
     {
       "source": "/kb/articles/simon-willison-32f03f8d",
       "destination": "/kb/articles/release-sqlite-utils-40rc2-32f03f8d"
+    },
+    {
+      "source": "/kb/articles/simon-willison-3328b388",
+      "destination": "/kb/articles/release-datasette-vega-07-3328b388"
     },
     {
       "source": "/kb/articles/simon-willison-3361f458",
@@ -3462,6 +3474,10 @@
     {
       "source": "/kb/articles/simon-willison-8db1edb7",
       "destination": "/kb/articles/release-llm-032a2-8db1edb7"
+    },
+    {
+      "source": "/kb/articles/simon-willison-8e016398",
+      "destination": "/kb/articles/release-datasette-llm-01a11-8e016398"
     },
     {
       "source": "/kb/articles/simon-willison-8f0b7b58",

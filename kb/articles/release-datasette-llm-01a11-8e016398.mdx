@@ -1,0 +1,81 @@
+---
+title: 'Release: datasette-llm 0.1a11'
+description: 'The release of datasette-llm 0.1a11 introduces support for OpenAI-compatible endpoints, allowing Datasette to utilize LLMs hosted anywhere that follow'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-14'
+sourceUrl: 'https://simonwillison.net/2026/Nov/14/datasette-llm/'
+topics: ["datasette","llm","openai","plugins","local-models"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/14/datasette-llm/) · 14/11/2026
+</Info>
+
+## Summary
+
+The release of datasette-llm 0.1a11 introduces support for OpenAI-compatible endpoints, allowing Datasette to utilize LLMs hosted anywhere that follows the OpenAI protocol.
+
+## Key Insights
+
+> "This release adds support for OpenAI-compatible endpoints."
+>
+> — Introduction to the new features of datasette-llm 0.1a11.
+
+> "You can run Datasette via uvx like this: wget https://datasette.io/content.db"
+>
+> — Example command for running Datasette with the new plugin.
+
+> "And you'll get a local server running a Datasette Agent instance powered by your local model!"
+>
+> — Description of the outcome when using the new features.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [llm](/kb/topics/llm)
+- [openai](/kb/topics/openai)
+- [plugins](/kb/topics/plugins)
+- [local-models](/kb/topics/local-models)
+
+---
+
+## Full Article
+
+datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \ --root --secret 1 \ -s plugins.datasette-llm.default_model '&#123; "model": "lmstudio-qwen", "model_name": "qwen/qwen3.8-27b", "api_base": "http://localhost:1234/v1" &#125;' content.db And you'll get a local server running a Datasette Agent instance powered by your local model!
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-llm 0.1a9"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a9-1f98209b"
+  >
+    Simon Willison · reference · 81% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a7"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a7-d4cc68f5"
+  >
+    Simon Willison · reference · 80% similar
+  </Card>
+  <Card
+    title="Release: datasette-llm 0.1a6"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-llm-01a6-320c1f29"
+  >
+    Simon Willison · reference · 77% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/14/datasette-llm/](https://simonwillison.net/2026/Nov/14/datasette-llm/).
+</Note>
