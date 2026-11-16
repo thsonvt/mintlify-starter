@@ -1,0 +1,80 @@
+---
+title: 'Release: datasette-apps 0.4a0'
+description: 'Datasette Apps 0.4a0 introduces linking support, allowing apps to use URL fragments and report supported URL schemes for better inter-app communicatio'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-15'
+sourceUrl: 'https://simonwillison.net/2026/Nov/15/datasette-apps/'
+topics: ["datasette","apps","sql-queries","linking"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/15/datasette-apps/) · 15/11/2026
+</Info>
+
+## Summary
+
+Datasette Apps 0.4a0 introduces linking support, allowing apps to use URL fragments and report supported URL schemes for better inter-app communication.
+
+## Key Insights
+
+> "Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette."
+>
+> — Introduction to Datasette Apps
+
+> "0.4a0 adds support for linking: you can link to an app with #fragments in the URL."
+>
+> — New features in version 0.4a0
+
+> "This means you can have e.g. an app that shows details about a specific record."
+>
+> — Use case for linking between apps
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [apps](/kb/topics/apps)
+- [sql-queries](/kb/topics/sql-queries)
+- [linking](/kb/topics/linking)
+
+---
+
+## Full Article
+
+Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other. This means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their representations in the first app.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-apps 0.3a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-apps-03a0-1b8cbbb6"
+  >
+    Simon Willison · reference · 78% similar
+  </Card>
+  <Card
+    title="Release: datasette-apps 0.2a0"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-apps-02a0-fd2ff761"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+  <Card
+    title="Datasette Apps: Host custom HTML applications inside Datasette"
+    icon="newspaper"
+    href="/kb/articles/datasette-apps-host-custom-html-applications-inside-datasett-d700bbb5"
+  >
+    Simon Willison · explanation · 69% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/15/datasette-apps/](https://simonwillison.net/2026/Nov/15/datasette-apps/).
+</Note>

@@ -1,0 +1,81 @@
+---
+title: 'Release: datasette-maplibre 0.1a0'
+description: 'The datasette-maplibre 0.1a0 plugin integrates MapLibre GL with OpenFreeMap, showcasing innovative features like SVG previews of GeoJSON shapes.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-15'
+sourceUrl: 'https://simonwillison.net/2026/Nov/15/datasette-maplibre/'
+topics: ["geospatial","datasette","maplibre","openfreemap","plugins"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/15/datasette-maplibre/) · 15/11/2026
+</Info>
+
+## Summary
+
+The datasette-maplibre 0.1a0 plugin integrates MapLibre GL with OpenFreeMap, showcasing innovative features like SVG previews of GeoJSON shapes.
+
+## Key Insights
+
+> "Be creative and think outside the box"
+>
+> — Advice given to Claude Fable 5.2 for building the plugin.
+
+> "It displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view."
+>
+> — Description of a notable feature of the plugin.
+
+> "I also had Claude build a comprehensive demo which works in the latest Datasette Lite."
+>
+> — Mention of the demo created for the plugin.
+
+## Topics
+
+- [geospatial](/kb/topics/geospatial)
+- [datasette](/kb/topics/datasette)
+- [maplibre](/kb/topics/maplibre)
+- [openfreemap](/kb/topics/openfreemap)
+- [plugins](/kb/topics/plugins)
+
+---
+
+## Full Article
+
+The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap, the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub.) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have "Be creative and think outside the box" resulted in a few neat ideas - my favorite is that it displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view. I also had Claude build a comprehensive demo which works in the latest Datasette Lite, so you can visit this link to load the plugin and a demo database in your browser via Pyodide and WebAssembly. I like this demo page showing both GeoJSON shapes and lat/lon points on the same map:
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-cluster-map 0.19"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-cluster-map-019-55044e75"
+  >
+    Simon Willison · reference · 72% similar
+  </Card>
+  <Card
+    title="Release: datasette-vega 0.7"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-vega-07-3328b388"
+  >
+    Simon Willison · reference · 62% similar
+  </Card>
+  <Card
+    title="Datasette Agent"
+    icon="newspaper"
+    href="/kb/articles/datasette-agent-0b6bf39a"
+  >
+    Simon Willison · explanation · 61% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/15/datasette-maplibre/](https://simonwillison.net/2026/Nov/15/datasette-maplibre/).
+</Note>

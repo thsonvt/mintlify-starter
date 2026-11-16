@@ -828,6 +828,10 @@
       "destination": "/kb/articles/the-grief-loneliness-and-burnout-sweeping-through-the-tech-i-13655d1a"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-13d5532a",
+      "destination": "/kb/articles/-how-i-ai-fable-52-review-how-i-fight-token-fraud-as-a-solo--13d5532a"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-160e48b9",
       "destination": "/kb/articles/guillermo-rauch-vercel-ceo-on-how-v0-hit-3200-prs-merged-per-160e48b9"
     },
@@ -1592,6 +1596,10 @@
       "destination": "/kb/articles/-how-i-ai-codex-goals-explained-claude-opus-48-review-buildi-d3743ee8"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-d66fa605",
+      "destination": "/kb/articles/how-i-fight-token-fraud-as-a-solo-founder-d66fa605"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-d75dc58c",
       "destination": "/kb/articles/quests-token-leaderboards-and-a-skills-marketplace-the-elite-d75dc58c"
     },
@@ -1838,6 +1846,10 @@
     {
       "source": "/kb/articles/simon-willison-0a783ba5",
       "destination": "/kb/articles/claude-opus-55-gpt-6-sol-gpt-6-luna-and-a-new-price-war-0a783ba5"
+    },
+    {
+      "source": "/kb/articles/simon-willison-0aa33d9f",
+      "destination": "/kb/articles/release-datasette-maplibre-01a0-0aa33d9f"
     },
     {
       "source": "/kb/articles/simon-willison-0ad233f1",
@@ -2680,6 +2692,10 @@
       "destination": "/kb/articles/a-quote-from-ben-affleck-4bf1a0a2"
     },
     {
+      "source": "/kb/articles/simon-willison-4c501c83",
+      "destination": "/kb/articles/release-datasette-0656-4c501c83"
+    },
+    {
       "source": "/kb/articles/simon-willison-4cf009ad",
       "destination": "/kb/articles/release-datasette-llm-accountant-01a4-4cf009ad"
     },
@@ -3268,6 +3284,10 @@
       "destination": "/kb/articles/release-datasette-agent-edit-01a0-78174dc0"
     },
     {
+      "source": "/kb/articles/simon-willison-78b16ea0",
+      "destination": "/kb/articles/release-datasette-agent-06a0-78b16ea0"
+    },
+    {
       "source": "/kb/articles/simon-willison-7918fe9d",
       "destination": "/kb/articles/release-inaturalist-clumper-01-7918fe9d"
     },
@@ -3460,6 +3480,10 @@
       "destination": "/kb/articles/tool-mermaid-to-unicode-box-art-grok-mermaid-8c79d95d"
     },
     {
+      "source": "/kb/articles/simon-willison-8ca1c15a",
+      "destination": "/kb/articles/release-datasette-apps-04a0-8ca1c15a"
+    },
+    {
       "source": "/kb/articles/simon-willison-8cb40258",
       "destination": "/kb/articles/a-quote-from-tom-macwright-8cb40258"
     },
@@ -3510,6 +3534,10 @@
     {
       "source": "/kb/articles/simon-willison-91528908",
       "destination": "/kb/articles/claude-token-counter-now-with-model-comparisons-91528908"
+    },
+    {
+      "source": "/kb/articles/simon-willison-915ab7ec",
+      "destination": "/kb/articles/release-datasette-10a43-915ab7ec"
     },
     {
       "source": "/kb/articles/simon-willison-915b03d0",

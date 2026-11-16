@@ -1,0 +1,71 @@
+---
+title: 'Release: datasette 0.65.6'
+description: 'The release of datasette 0.65.6 includes a backported security fix addressing a vulnerability related to database access permissions.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-15'
+sourceUrl: 'https://simonwillison.net/2026/Nov/15/datasette-2/'
+topics: ["datasette","security-fix","database-access"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/15/datasette-2/) · 15/11/2026
+</Info>
+
+## Summary
+
+The release of datasette 0.65.6 includes a backported security fix addressing a vulnerability related to database access permissions.
+
+## Key Insights
+
+> "Fixed a security issue where a database registered using add_database could be downloaded by actors who were denied access to it."
+>
+> — Description of the security fix in the release notes.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [security-fix](/kb/topics/security-fix)
+- [database-access](/kb/topics/database-access)
+
+---
+
+## Full Article
+
+I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /&lt;route>.db by actors who were denied access to it. [...]
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a38"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a38-5cfe69d3"
+  >
+    Simon Willison · reference · 79% similar
+  </Card>
+  <Card
+    title="Datasette 1.0a39 and 0.65.4 security releases"
+    icon="newspaper"
+    href="/kb/articles/datasette-10a39-and-0654-security-releases-bf67b7e8"
+  >
+    Simon Willison · reference · 73% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a40"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a40-42da1743"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/15/datasette-2/](https://simonwillison.net/2026/Nov/15/datasette-2/).
+</Note>

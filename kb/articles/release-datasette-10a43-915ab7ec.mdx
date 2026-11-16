@@ -1,0 +1,80 @@
+---
+title: 'Release: datasette 1.0a43'
+description: 'Datasette 1.0a43 introduces streaming support for output renderers, security fixes, and numerous improvements, enhancing user experience with new feat'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-15'
+sourceUrl: 'https://simonwillison.net/2026/Nov/15/datasette/'
+topics: ["datasette","software-development","web-components","security-fixes"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/15/datasette/) · 15/11/2026
+</Info>
+
+## Summary
+
+Datasette 1.0a43 introduces streaming support for output renderers, security fixes, and numerous improvements, enhancing user experience with new features.
+
+## Key Insights
+
+> "The biggest 1.0 item in this release is streaming support for output renderers."
+>
+> — Discussing the major feature of the release.
+
+> "The feature I'm most excited about is a pretty tiny one: I've added CSS multi-page view transitions to Datasette!"
+>
+> — Expressing enthusiasm for a new feature.
+
+> "There are a couple of security fixes, one of which I deemed deserving of a GitHub advisory."
+>
+> — Highlighting the importance of security updates in the release.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [software-development](/kb/topics/software-development)
+- [web-components](/kb/topics/web-components)
+- [security-fixes](/kb/topics/security-fixes)
+
+---
+
+## Full Article
+
+I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone, which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method. There are a couple of security fixes, one of which I deemed deserving of a GitHub advisory: private stored queries could be exposed, granting access to the title and SQL of the query (but not allowing that query to be executed). There are dozens of smaller improvements. The row page JSON representation finally has a design suitable for 1.0. A new &lt;datasette-copy-button> Web Component provides copy-schema in various places. JSON in columns on the row page can be pretty-printed. There's a new DatasetteModal.confirm() JavaScript utility method. Plus dozens of bug fixes, including contributions by Zihan Dai, Peter Olkhovets, Ilya Khalafi, and Ankita Advitot. The feature I'm most excited about is a pretty tiny one: I've added CSS multi-page view transitions to Datasette! Here's the commit - key CSS is as follows: /* Enable cross-document view transitions, for anyone without prefers-reduced-motion */ @media (prefers-reduced-motion: no-preference) &#123; @view-transition &#123; navigation: auto; &#125; &#125; /* .facet-results should morph from old position to new */ html:active-view-transition .content > .facet-results &#123; view-transition-name: facet-results; &#125; /* So should a .table-wrapper, provided it contains .rows-and-columns */ html:active-view-transition .table-wrapper:has(> table.rows-and-columns) &#123; view-transition-name: rows-table; &#125; With that in place, navigations within Datasette - still staunchly a multi-page application - feel more like an SPA. This works on Safari and Chrome at the moment and I believe supports for Firefox is due to land in Firefox 162 on December 8th 2026 (seeing as they are no longer feature-flagged in Firefox Nightly.)
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette 1.0a29"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a29-1e4ad5f8"
+  >
+    Simon Willison · reference · 71% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a33"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a33-6f6a085a"
+  >
+    Simon Willison · reference · 70% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a35"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a35-aee31477"
+  >
+    Simon Willison · reference · 68% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/15/datasette/](https://simonwillison.net/2026/Nov/15/datasette/).
+</Note>
