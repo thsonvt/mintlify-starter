@@ -1508,6 +1508,10 @@
       "destination": "/kb/articles/-community-wisdom-catching-people-using-ai-during-an-intervi-b7e8c195"
     },
     {
+      "source": "/kb/articles/lenny-rachitsky-b908d357",
+      "destination": "/kb/articles/35-premium-tools-free-for-a-yearnow-with-openrouter-langchai-b908d357"
+    },
+    {
       "source": "/kb/articles/lenny-rachitsky-b9b16039",
       "destination": "/kb/articles/-how-i-ai-how-meta-designed-muse-with-alex-cornell-b9b16039"
     },
@@ -2384,6 +2388,10 @@
       "destination": "/kb/articles/a-quote-from-anthropic-351b1187"
     },
     {
+      "source": "/kb/articles/simon-willison-358cc3ed",
+      "destination": "/kb/articles/release-llm-0373-358cc3ed"
+    },
+    {
       "source": "/kb/articles/simon-willison-360e7409",
       "destination": "/kb/articles/til-using-blender-with-coding-agents-on-macos-360e7409"
     },
@@ -3124,6 +3132,10 @@
       "destination": "/kb/articles/tool-gemini-31-flash-tts-69e1867f"
     },
     {
+      "source": "/kb/articles/simon-willison-69f0bb6b",
+      "destination": "/kb/articles/external-sandboxes-for-coding-agents-69f0bb6b"
+    },
+    {
       "source": "/kb/articles/simon-willison-6a6efa1a",
       "destination": "/kb/articles/research-sqlite-wal-mode-across-docker-containers-sharing-a--6a6efa1a"
     },
@@ -3222,6 +3234,10 @@
     {
       "source": "/kb/articles/simon-willison-7274da00",
       "destination": "/kb/articles/release-sqlite-utils-421-7274da00"
+    },
+    {
+      "source": "/kb/articles/simon-willison-73aba3a2",
+      "destination": "/kb/articles/gpt62-astra-and-gpt62-sol-73aba3a2"
     },
     {
       "source": "/kb/articles/simon-willison-741115e1",
@@ -3516,6 +3532,10 @@
       "destination": "/kb/articles/til-using-llm-in-the-shebang-line-of-a-script-8f613b8a"
     },
     {
+      "source": "/kb/articles/simon-willison-8f81e71e",
+      "destination": "/kb/articles/a-quote-from-daniel-stenberg-8f81e71e"
+    },
+    {
       "source": "/kb/articles/simon-willison-8fc28d1f",
       "destination": "/kb/articles/release-datasette-agent-charts-01a2-8fc28d1f"
     },
@@ -3780,6 +3800,10 @@
       "destination": "/kb/articles/the-pelican-comparison-grid-for-astra-is-pretty-interesting-a10fbf5e"
     },
     {
+      "source": "/kb/articles/simon-willison-a1a1f580",
+      "destination": "/kb/articles/running-the-full-server-side-datasette-python-app-in-the-bro-a1a1f580"
+    },
+    {
       "source": "/kb/articles/simon-willison-a1ad656f",
       "destination": "/kb/articles/introducing-gpt53codexspark-a1ad656f"
     },
@@ -3978,6 +4002,10 @@
     {
       "source": "/kb/articles/simon-willison-ade422a1",
       "destination": "/kb/articles/oxide-and-friends-the-open-weight-revolution-with-simon-will-ade422a1"
+    },
+    {
+      "source": "/kb/articles/simon-willison-adf025ef",
+      "destination": "/kb/articles/the-psf-end-of-year-fundraiser-adf025ef"
     },
     {
       "source": "/kb/articles/simon-willison-ae0efbe3",
@@ -4394,6 +4422,10 @@
     {
       "source": "/kb/articles/simon-willison-cdfcfdee",
       "destination": "/kb/articles/i-vibe-coded-my-dream-macos-presentation-app-cdfcfdee"
+    },
+    {
+      "source": "/kb/articles/simon-willison-ce21fa9f",
+      "destination": "/kb/articles/quoting-go-proverbs-ce21fa9f"
     },
     {
       "source": "/kb/articles/simon-willison-ce29cef9",
@@ -5868,6 +5900,10 @@
       "destination": "/kb/articles/ainews-why-openai-should-build-slack-907a164c"
     },
     {
+      "source": "/kb/articles/swyx-918a87d7",
+      "destination": "/kb/articles/building-visual-intelligence-andreas-blattmann-dustin-podell-918a87d7"
+    },
+    {
       "source": "/kb/articles/swyx-91fc2890",
       "destination": "/kb/articles/ainews-qwen-image-2-and-seedance-2-91fc2890"
     },
@@ -5980,6 +6016,10 @@
       "destination": "/kb/articles/-the-coolest-diffusion-research-isnt-in-llms-evan-feinberg-s-aa94504d"
     },
     {
+      "source": "/kb/articles/swyx-aab17e24",
+      "destination": "/kb/articles/cloudflare-joins-the-jevolution-and-labels-itself-a-neolab-aab17e24"
+    },
+    {
       "source": "/kb/articles/swyx-aae99147",
       "destination": "/kb/articles/ainews-gemma-4-crosses-2-million-downloads-aae99147"
     },
@@ -6038,6 +6078,10 @@
     {
       "source": "/kb/articles/swyx-b809118d",
       "destination": "/kb/articles/academia-is-for-ambition-alex-zhang-mit-b809118d"
+    },
+    {
+      "source": "/kb/articles/swyx-b8bf8a88",
+      "destination": "/kb/articles/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026-b8bf8a88"
     },
     {
       "source": "/kb/articles/swyx-b8f20132",
@@ -6366,6 +6410,10 @@
     {
       "source": "/kb/articles/swyx-fba0d39a",
       "destination": "/kb/articles/how-to-kill-the-code-review-fba0d39a"
+    },
+    {
+      "source": "/kb/articles/swyx-fc650254",
+      "destination": "/kb/articles/ainews-gpt-62-astra-the-2-frontier-model-is-better-and-20-60-fc650254"
     },
     {
       "source": "/kb/articles/swyx-fd114d48",

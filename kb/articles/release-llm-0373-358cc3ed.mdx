@@ -1,0 +1,75 @@
+---
+title: 'Release: llm 0.37.3'
+description: 'This release addresses a bug in LLM caused by changes in the latest SQLite version, which affected logging code functionality.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-16'
+sourceUrl: 'https://simonwillison.net/2026/Nov/16/llm/'
+topics: ["bug-fix","sqlite","llm"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/16/llm/) · 16/11/2026
+</Info>
+
+## Summary
+
+This release addresses a bug in LLM caused by changes in the latest SQLite version, which affected logging code functionality.
+
+## Key Insights
+
+> "That was a bug fix."
+>
+> — D. Richard Hipp regarding the change in SQLite behavior.
+
+> "select json_object('a', json((select json_array(1))))"
+>
+> — Workaround for the logging issue introduced in SQLite 3.54.1.
+
+## Topics
+
+- [bug-fix](/kb/topics/bug-fix)
+- [sqlite](/kb/topics/sqlite)
+- [llm](/kb/topics/llm)
+
+---
+
+## Full Article
+
+A bug fix release for LLM, mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1, which includes a fix that broke LLM's logging code. Short version: in SQLite 3.54.0 the following SQL: select json_object('a', (select json_array(1))) Returns this: &#123;"a":[1]&#125; But in 3.54.1 the same query returns this: &#123;"a":"[1]"&#125; According to D. Richard Hipp: That was a bug fix. Per the documentation, (SELECT json_array(...)) returns SQL text, not JSON. Hence the 3.54.1 behavior is correct and 3.54.0 was a bug. The workaround looks like this: select json_object('a', json((select json_array(1))))
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="SQLite 3.53.0"
+    icon="newspaper"
+    href="/kb/articles/sqlite-3530-13f0f387"
+  >
+    Simon Willison · reference · 61% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32rc1"
+    icon="newspaper"
+    href="/kb/articles/release-llm-032rc1-4e18f5f6"
+  >
+    Simon Willison · reference · 59% similar
+  </Card>
+  <Card
+    title="Release: llm 0.32.1"
+    icon="newspaper"
+    href="/kb/articles/release-llm-0321-ac41bf01"
+  >
+    Simon Willison · reference · 58% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/16/llm/](https://simonwillison.net/2026/Nov/16/llm/).
+</Note>

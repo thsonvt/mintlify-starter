@@ -1,0 +1,76 @@
+---
+title: 'External sandboxes for coding agents'
+description: 'Simon Willison explores external sandboxes for coding agents, focusing on safe execution of code to prevent damaging actions on machines.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-17'
+sourceUrl: 'https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/'
+topics: ["ai-agents","sandboxing","code-execution","security"]
+diataxisType: 'explanation'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/) · 17/11/2026
+</Info>
+
+## Summary
+
+Simon Willison explores external sandboxes for coding agents, focusing on safe execution of code to prevent damaging actions on machines.
+
+## Key Insights
+
+> "I've been exploring new ways to sandbox code that is executed by agents."
+>
+> — Introduction to the topic of external sandboxes.
+
+> "This external sandbox pattern provides a neat way to experiment with different approaches."
+>
+> — Conclusion emphasizing the utility of the sandbox pattern.
+
+## Topics
+
+- [ai-agents](/kb/topics/ai-agents)
+- [sandboxing](/kb/topics/sandboxing)
+- [code-execution](/kb/topics/code-execution)
+- [security](/kb/topics/security)
+
+---
+
+## Full Article
+
+17th November 2026 - Link Blog External sandboxes for coding agents. I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant, the AI research lab behind Superpowers and other projects. My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox. To demonstrate this pattern we've released three sandbox server implementations: external-sandbox-v86 runs a Node.js server which then uses v86 to run Alpine Linux inside WebAssembly. external-sandbox-container is a Python web server which runs the sandbox in Alpine Linux inside an Apple Containers instance. external-sandbox-quicksand is another Python web server, this time using Microsoft's Quicksand sandboxing library, which bundles QEMU and Alpine Linux in a Python package! Each of these implementations offers the same localhost API. You can then configure Pi, Claude Code, or Codex to send API calls to that sandbox any time they want to execute code. The sandboxes also include an optional HTTP/HTTPS allow-list proxy, so you can control exactly which hosts your agent's code is allowed to communicate with - plus a credential replacement mechanism to make authenticated API calls without sharing a secret with the agent. Here's the UI you can use to reconfigure that proxy while the sandbox is still running: I continue to be fascinated by the challenge of safely running untrusted code. This external sandbox pattern provides a neat way to experiment with different approaches.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Running Python code in a sandbox with MicroPython and WASM"
+    icon="newspaper"
+    href="/kb/articles/running-python-code-in-a-sandbox-with-micropython-and-wasm-9c4318b0"
+  >
+    Simon Willison · how-to · 70% similar
+  </Card>
+  <Card
+    title="How we contain Claude across products"
+    icon="newspaper"
+    href="/kb/articles/how-we-contain-claude-across-products-21bd1716"
+  >
+    Simon Willison · explanation · 68% similar
+  </Card>
+  <Card
+    title="A quote from Matthew Green"
+    icon="newspaper"
+    href="/kb/articles/a-quote-from-matthew-green-1caa288c"
+  >
+    Simon Willison · explanation · 66% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/).
+</Note>
