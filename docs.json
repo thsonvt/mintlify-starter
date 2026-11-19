@@ -3332,6 +3332,10 @@
       "destination": "/kb/articles/python-3150-added-to-actionspython-versions-7b250b0d"
     },
     {
+      "source": "/kb/articles/simon-willison-7b695854",
+      "destination": "/kb/articles/release-llm-gemini-038-7b695854"
+    },
+    {
       "source": "/kb/articles/simon-willison-7b7eda20",
       "destination": "/kb/articles/a-quote-from-john-carmack-7b7eda20"
     },
@@ -3642,6 +3646,10 @@
     {
       "source": "/kb/articles/simon-willison-969c5220",
       "destination": "/kb/articles/gemini-31-flash-lite-969c5220"
+    },
+    {
+      "source": "/kb/articles/simon-willison-96d5a3f0",
+      "destination": "/kb/articles/release-datasette-arrows-01a0-96d5a3f0"
     },
     {
       "source": "/kb/articles/simon-willison-96f648a0",
@@ -6018,6 +6026,10 @@
     {
       "source": "/kb/articles/swyx-aab17e24",
       "destination": "/kb/articles/cloudflare-joins-the-jevolution-and-labels-itself-a-neolab-aab17e24"
+    },
+    {
+      "source": "/kb/articles/swyx-aae4fe31",
+      "destination": "/kb/articles/ainews-gemini-4-neon-gdms-opussol-contender-aae4fe31"
     },
     {
       "source": "/kb/articles/swyx-aae99147",

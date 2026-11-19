@@ -1,0 +1,79 @@
+---
+title: 'Release: datasette-arrows 0.1a0'
+description: 'The release of datasette-arrows 0.1a0 introduces support for streaming export formats in Datasette, allowing efficient data export using Apache Arrow.'
+icon: 'newspaper'
+author: 'Simon Willison'
+authorId: 'simon-willison'
+published: '2026-11-18'
+sourceUrl: 'https://simonwillison.net/2026/Nov/18/datasette-arrows/'
+topics: ["datasette","data-export","streaming-formats"]
+diataxisType: 'reference'
+---
+
+<Info>
+**Original**: [Simon Willison](https://simonwillison.net/2026/Nov/18/datasette-arrows/) · 18/11/2026
+</Info>
+
+## Summary
+
+The release of datasette-arrows 0.1a0 introduces support for streaming export formats in Datasette, allowing efficient data export using Apache Arrow.
+
+## Key Insights
+
+> "I've learned never to release a new plugin feature without accompanying it with a plugin that uses it."
+>
+> — On the importance of providing practical examples with new features.
+
+> "Claude Fable 5.2 suggested the Apache Arrow streaming format as a good option."
+>
+> — Acknowledging the contribution of Claude Fable in suggesting the new format.
+
+> "Add the plugin to Datasette (datasette install datasette-arrows) and the export dialog gains this new Arrow option."
+>
+> — Instructions on how to install the new plugin and its functionality.
+
+## Topics
+
+- [datasette](/kb/topics/datasette)
+- [data-export](/kb/topics/data-export)
+- [streaming-formats](/kb/topics/streaming-formats)
+
+---
+
+## Full Article
+
+Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memory, because those two file formats support streaming data in chunks. The register_output_renderer() plugin hook can now be used to implement the same pattern for other formats. I've learned never to release a new plugin feature without accompanying it with a plugin that uses it. Claude Fable 5.2 suggested the Apache Arrow streaming format as a good option, and built this plugin in almost a single shot. Add the plugin to Datasette (datasette install datasette-arrows) and the export dialog gains this new Arrow option: This screenshot is from Datasette's main branch - the most recent release doesn't yet group streaming formats such as Arrow with the TSV and CSV in the "All rows in this table" section, but that's coming in the next alpha release.
+
+---
+
+## Related Articles
+
+<CardGroup cols={1}>
+  <Card
+    title="Release: datasette-files 0.1a2"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-files-01a2-6715930b"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a43"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a43-915ab7ec"
+  >
+    Simon Willison · reference · 66% similar
+  </Card>
+  <Card
+    title="Release: datasette 1.0a27"
+    icon="newspaper"
+    href="/kb/articles/release-datasette-10a27-e0fc849e"
+  >
+    Simon Willison · reference · 64% similar
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+Originally published at [https://simonwillison.net/2026/Nov/18/datasette-arrows/](https://simonwillison.net/2026/Nov/18/datasette-arrows/).
+</Note>
